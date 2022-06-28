@@ -21,8 +21,9 @@
     <!-- Swiper-CSS -->
     <link rel="stylesheet" href="https://unpkg.com/swiper@7.0.6/swiper-bundle.min.css" />
 
-    <!-- Discoverize CSS bundled with Bootstrap-CSS -->
+    <!-- CSS bundled with Bootstrap-CSS -->
     <link rel="stylesheet" type="text/css" href="../../web/css/discoverize-default.css" />
+    <link rel="stylesheet" type="text/css" href="../../web/css/style.css" />
 
     <title>Iglesia Pacto de Vida</title>
 </head>

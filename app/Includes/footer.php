@@ -404,6 +404,7 @@
 
 <!-- Discoverize JS -->
 <script src="../../web/js/discoverize.js"></script>
+<script src="../../web/js//carousel.js"></script>
 </body>
 
 </html>
