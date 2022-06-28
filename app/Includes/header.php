@@ -39,8 +39,6 @@
                         style="width: 100%; " class="navbar-brand-img-light" alt="Pacto de Vida" /></a>
 
                 <div class="ms-auto ps-3 navbar-end d-flex flex-row justify-content-end">
-                    <button class="btn btn-link p-0 ms-3 shadow-none" data-bs-toggle="modal"
-                        data-bs-target="#searchModal"><i class="fas fa-search"></i></button>
 
                     <button class="btn btn-link p-0 ms-3 shadow-none" data-bs-toggle="modal"
                         data-bs-target="#userSignInModal"><i class="fas fa-user"></i></button>
