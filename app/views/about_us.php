@@ -4,7 +4,7 @@
     <!-- /.bg bg-img position-absolute -->
 
     <div class="container-xl position-relative section-content text-center py-4">
-        <h2 class="display-5 text-white mt-3 mt-lg-4">Listing</h2>
+        <h2 class="display-5 text-white mt-3 mt-lg-4">Sobre Nosotros</h2>
 
         <p class="lead mb-4 mb-lg-5">Discover Your Dream House</p>
     </div>
@@ -22,11 +22,12 @@
         </header>
         <!-- /.section-header mb-5 visually-hidden -->
 
+
         <div class="mapouter">
-            <div class="gmap_canvas"><iframe width="1000" height="800" id="gmap_canvas"
-                    src="https://maps.google.com/maps?q=Iglesia%20Cristiana%20Pacto%20de%20Vida,%20V5JM+G7Q,%20Provincia%20de%20Cartago,%20Cervantes&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                    frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
-                    href="https://putlocker-is.org"></a><br>
+            <div class="gmap_canvas"><iframe width="2000" height="900" id="gmap_canvas"
+                    src="https://maps.google.com/maps?q=V5JM+G7Q,%20Provincia%20de%20Cartago,%20Cervantes&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                    frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+
             </div>
         </div>
     </div>
