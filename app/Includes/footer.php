@@ -257,7 +257,7 @@
                     <div class="mb-3">
                         <button type="submit" class="btn btn-primary w-100 text-uppercase fw-bold"> <a href="#"
                                 class="text-decoration-line" style="color: white;" data-bs-dismiss="modal"
-                                data-bs-toggle="modal" data-bs-target="#userSignupModal_location">Siguiente</a>
+                                data-bs-toggle="modal" data-bs-target="#userSignup_location_contact">Siguiente</a>
                         </button>
                     </div>
                 </form>
@@ -318,7 +318,7 @@
                     </div>
 
                     <div class="row gx-2">
-                        <!-- <div class="col-12 col-sm-6">
+                        <div class="col-12 col-sm-6">
                             <div class="mb-3">
                                 <button type="submit" class="btn btn-light w-100 text-uppercase fw-bold"> <a href="#"
                                         class="text-decoration-line" style="color: gray;" data-bs-dismiss="modal"
@@ -326,19 +326,20 @@
                                 </button>
 
                             </div>
-                        </div> -->
+                        </div>
                         <div class="col-12 col-sm-6">
                             <div class="mb-3">
                                 <button type="submit"
                                     class="btn btn-primary w-100 text-uppercase fw-bold">Siguiente</button>
                             </div>
                         </div>
+                    </div>
                 </form>
                 <!-- /.modal-body -->
                 <div class="text-center text-secondary fs-sm">
                     <p class="mb-0">Ya tienes una cuenta? <a href="#" class="text-decoration-underline"
                             data-bs-dismiss="modal" data-bs-toggle="modal"
-                            data-bs-target="#userSignupModal">Atr&aacute;s</a>
+                            data-bs-target="#userSignInModal">Ingresar</a>
                     </p>
                 </div>
                 <!-- /.text-center -->
@@ -362,18 +363,17 @@
 
             <div class="modal-body p-4">
                 <form action="#" method="post">
-                    <h6 class="mb-4">Forgot password?</h6>
+                    <h6 class="mb-4">Olvidaste tu contrase&ntilde;a?</h6>
 
-                    <p>Enter your details below to request an <span class="text-primary">Discoverize</span> account
-                        password reset.</p>
+                    <p>Introduzca sus datos a continuación para solicitar el restablecimiento de la contraseña.</p>
 
                     <div class="mb-3">
-                        <label for="userForgotEmail" class="form-label fs-sm fw-bold">Email</label>
+                        <label for="userForgotEmail" class="form-label fs-sm fw-bold">Correo Electr&oacute;nico</label>
                         <input type="email" class="form-control shadow-none" id="userForgotEmail" />
                     </div>
 
                     <div class="mb-3">
-                        <button type="submit" class="btn btn-primary w-100 text-uppercase fw-bold">Submit</button>
+                        <button type="submit" class="btn btn-primary w-100 text-uppercase fw-bold">Enviar</button>
                     </div>
                 </form>
 
@@ -381,7 +381,7 @@
                     <p class="mb-0">
                         <a href="#" class="" data-bs-dismiss="modal" data-bs-toggle="modal"
                             data-bs-target="#userSignInModal"><i class="fas fa-angle-left"></i>&nbsp;<span
-                                class="text-decoration-underline">Back</span></a>
+                                class="text-decoration-underline">Atr&aacute;s</span></a>
                     </p>
                 </div>
                 <!-- /.text-center -->
