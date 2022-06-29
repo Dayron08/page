@@ -6,7 +6,7 @@
     <div class="container-xl position-relative section-content text-center py-4">
         <h2 class="display-5 text-white mt-3 mt-lg-4">Sobre Nosotros</h2>
 
-        <p class="lead mb-4 mb-lg-5">Discover Your Dream House</p>
+        <p class="lead mb-4 mb-lg-5">¡Tenemos servicio todos los domingos a las 10:30 AM!</p>
     </div>
     <!-- /.container-xl position-relative -->
 </section>
