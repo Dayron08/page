@@ -55,8 +55,8 @@
                     <div class="mt-4 d-lg-none"></div>
 
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li><a class="nav-link active" href="#">Inicio</a></li>
-                        <li><a class="nav-link" href="#">Sobre Nosotros</a></li>
+                        <li><a class="nav-link active" href="../views/home.php">Inicio</a></li>
+                        <li><a class="nav-link" href="../views/about_us.php">Sobre Nosotros</a></li>
                         <li class="nav-item nav-dropdown dropdown dropdown-hover">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDocs" role="button"
                                 data-bs-toggle="dropdown">Recursos</a>
@@ -75,7 +75,7 @@
 
                                 <li>
                                     <span class="dropdown-header text-uppercase fw-bold"><a class=""
-                                            href="">Lives</a></span>
+                                            href="">En vivos </a></span>
                                 </li>
 
                                 <li>
