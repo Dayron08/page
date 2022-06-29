@@ -1,0 +1,117 @@
+-------------------------------------------------------------PERSONA-----------------------------------------------------
+--INSERTAR
+DELIMITER $$
+USE PacVi $$
+CREATE OR REPLACE PROCEDURE P_INSERTAR_PERSONA
+    (
+        -- PERSONA 
+        IN P_ID_REGISTRO_PERSONA VARCHAR(50),
+        IN P_ID_PERSONA VARCHAR(30),
+        IN P_NOMBRE VARCHAR(30),
+        IN P_APPELLIDOS VARCHAR(60),
+        IN P_FECH_NACIMIENTO DATE,
+        IN P_GENERO VARCHAR(2)
+    )
+    BEGIN
+            INSERT INTO PERSONA     
+            (
+                ID_REGISTRO_PERSONA, 
+                ID_PERSONA, 
+                NOMBRE, 
+                APPELLIDOS, 
+                FECH_NACIMIENTO, 
+                GENERO
+            )
+            VALUES 
+            (
+                P_ID_REGISTRO_PERSONA, 
+                P_ID_PERSONA, 
+                P_NOMBRE, 
+                P_APPELLIDOS, 
+                P_FECH_NACIMIENTO, 
+                P_GENERO
+            );
+            COMMIT;
+    END$$
+DELIMITER ;
+--PRUEBA DE INSERCCION
+CALL P_INSERTAR_PERSONA('PER_1',305200304,'RANDALL','GUZMAN QUIROS','1999/09/27','M');
+
+--ACTUALIZAR 
+DELIMITER $$
+USE PacVi $$
+CREATE OR REPLACE PROCEDURE P_ACTUALIZAR_PERSONA
+    (
+        IN P_ID_PERSONA VARCHAR(30),
+        IN P_NOMBRE VARCHAR(30),
+        IN P_APPELLIDOS VARCHAR(60),
+        IN P_FECH_NACIMIENTO DATE,
+        IN P_GENERO VARCHAR(2)
+    )
+    BEGIN 
+        UPDATE PERSONA SET 
+            NOMBRE = P_NOMBRE ,
+            APPELLIDOS = P_APPELLIDOS ,
+            FECH_NACIMIENTO = P_FECH_NACIMIENTO ,
+            GENERO = P_GENERO 
+        WHERE 
+            ID_PERSONA = P_ID_PERSONA;
+        COMMIT;
+    END$$
+DELIMITER;
+--PRUEBA DE ACTUALIZAR
+CALL P_ACTUALIZAR_PERSONA(305200304,'RANDALL DE JESUS','GUZMAN QUIROS','1999/09/27','M');
+--ELIMINAR
+DELIMITER $$
+USE PacVi $$
+CREATE OR REPLACE PROCEDURE P_ELIMINAR_PERSONA
+    (
+        IN P_ID_REGISTRO_PERSONA VARCHAR(30),
+        IN P_FK1_ID_REGISTRO_PERSONA VARCHAR(30),
+        IN P_FK1_ID_REGISTRO_PERSONA VARCHAR(30),
+        IN P_FK1_ID_REGISTRO_PERSONA VARCHAR(30),
+        IN P_FK1_ID_REGISTRO_PERSONA VARCHAR(30)
+    )
+    BEGIN
+        DELETE FROM PERSONA where
+            ID_REGISTRO_PERSONA = P_ID_REGISTRO_PERSONA;
+
+        DELETE FROM PERSONA_UBICACION where
+            FK1_PERSONA_UBICACION =P_FK1_PERSONA_UBICACION;
+
+        DELETE FROM PERSONA_CONTACTO where
+            FK1_PERSONA_UBICACION =P_FK1_PERSONA_UBICACION;
+
+        DELETE FROM TIPO_PERSONA where
+            FK1_PERSONA_UBICACION =P_FK1_PERSONA_UBICACION;
+            
+        DELETE FROM PASSWORD_PERSONA where
+            FK1_PERSONA_UBICACION =P_FK1_PERSONA_UBICACION;
+
+    END$$
+DELIMITER ;
+
+--VER
+DELIMITER $$
+USE PacVi $$
+CREATE OR REPLACE PROCEDURE P_VER_PERSONAS()
+    BEGIN
+        SELECT
+            TP.DSC_TIPO,
+            P.ID_PERSONA,
+            P.NOMBRE,
+            P.APPELLIDOS,
+            TIMESTAMPDIFF(YEAR,P.FECH_NACIMIENTO,CURDATE()) AS EDAD,
+            P.GENERO,
+            PU.PAIS,
+            PU.CODIGO_POSTAL,
+            PC.EMAIL,
+            PC.TELEFONO
+        FROM PERSONA P 
+        INNER JOIN PERSONA_UBICACION PU ON (PU.FK1_ID_REGISTRO_PERSONA = P.ID_REGISTRO_PERSONA)
+        INNER JOIN PERSONA_CONTACTO PC ON (PC.FK1_ID_REGISTRO_PERSONA = P.ID_REGISTRO_PERSONA)
+        INNER JOIN TIPO_PERSONA TP ON (TP.FK1_ID_REGISTRO_PERSONA = P.ID_REGISTRO_PERSONA);
+    END$$
+DELIMITER;
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
