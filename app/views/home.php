@@ -1758,7 +1758,7 @@
     <!-- /.container-xl position-relative -->
 </section>
 <!-- #see-how-3.section py-5 pt-lg-6 pb-lg-7 -->
-
+  
 
 <section id="types-swiper-3" class="section py-5 pt-lg-7 pb-lg-6">
     <div class="bg bg-img position-absolute" data-bg-img=".img"></div>
