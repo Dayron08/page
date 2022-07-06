@@ -21,23 +21,14 @@
                 <div class="col-12 col-lg d-flex flex-column flex-sm-row flex-lg-column">
                     <h6 class="mt-1 mb-3 text-uppercase fw-bold w-sm-50 w-md-25 w-lg-100">Listing</h6>
                     <ul class="list-unstyled row g-2 mb-1 w-sm-50 w-md-75 w-lg-100 ps-sm-2 ps-lg-0">
-                        <li class="col-6 col-sm-6 col-md-4 col-lg-12"><a href="#">Browse Homes</a></li>
+                        <li class="col-6 col-sm-6 col-md-4 col-lg-12"><a href="#">Testimonios</a></li>
 
-                        <li class="col-6 col-sm-6 col-md-4 col-lg-12"><a href="#">How It Works</a></li>
-
-                        <li class="col-6 col-sm-6 col-md-4 col-lg-12"><a href="#">Pricing</a></li>
-
-                        <li class="col-6 col-sm-6 col-md-4 col-lg-12"><a href="#">Finance</a></li>
-
-                        <li class="col-6 col-sm-6 col-md-4 col-lg-12"><a href="#">Testimonial</a></li>
-
-                        <li class="col-6 col-sm-6 col-md-4 col-lg-12"><a href="#">Agents</a></li>
                     </ul>
                 </div>
                 <!-- /.col-12 col-lg -->
 
                 <div class="col-12 col-lg d-flex flex-column flex-sm-row flex-lg-column">
-                    <h6 class="mt-1 mb-3 text-uppercase fw-bold w-sm-50 w-md-25 w-lg-100">Resources</h6>
+                    <h6 class="mt-1 mb-3 text-uppercase fw-bold w-sm-50 w-md-25 w-lg-100">Recursos</h6>
                     <ul class="list-unstyled row g-2 mb-1 w-sm-50 w-md-75 w-lg-100 ps-sm-2 ps-lg-0">
                         <li class="col-6 col-sm-6 col-md-4 col-lg-12"><a href="#">Imagenes</a></li>
 
@@ -53,17 +44,13 @@
                 <!-- /.col-12 col-lg -->
 
                 <div class="col-12 col-lg d-flex flex-column flex-sm-row flex-lg-column">
-                    <h6 class="mt-1 mb-3 text-uppercase fw-bold w-sm-50 w-md-25 w-lg-100">Company</h6>
+                    <h6 class="mt-1 mb-3 text-uppercase fw-bold w-sm-50 w-md-25 w-lg-100">Congregación</h6>
                     <ul class="list-unstyled row g-2 mb-1 w-sm-50 w-md-75 w-lg-100 ps-sm-2 ps-lg-0">
-                        <li class="col-6 col-sm-6 col-md-4 col-lg-12"><a href="#">About Us</a></li>
+                        <li class="col-6 col-sm-6 col-md-4 col-lg-12"><a href="../views/about_us.php">Sobre nosotros</a></li>
 
-                        <li class="col-6 col-sm-6 col-md-4 col-lg-12"><a href="#">Careers</a></li>
+                        <li class="col-6 col-sm-6 col-md-4 col-lg-12"><a href="#">Contáctenos</a></li>
 
-                        <li class="col-6 col-sm-6 col-md-4 col-lg-12"><a href="#">Contact Us</a></li>
-
-                        <li class="col-6 col-sm-6 col-md-4 col-lg-12"><a href="#">Partners</a></li>
-
-                        <li class="col-6 col-sm-6 col-md-4 col-lg-12"><a href="#">Press</a></li>
+                       
                     </ul>
                 </div>
                 <!-- /.col-12 col-lg -->
