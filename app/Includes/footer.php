@@ -7,7 +7,8 @@
             <div class="row gy-4 gx-4 section-content">
                 <div class="col-12 col-lg-3 col-xl-4 pe-lg-4 pe-xl-5 d-flex flex-column flex-sm-row flex-lg-column">
                     <p class="mb-3 w-sm-50 w-md-25 w-lg-100">
-                        <a href="#"><img src="../../web/img/LOGO02.png" alt="Discoverize"  style="width: 25%; border-radius: 100%;" /></a>
+                        <a href="#"><img src="../../web/img/LOGO02.png" alt="Discoverize"
+                                style="width: 25%; border-radius: 100%;" /></a>
                     </p>
 
                     <p class="mb-1 w-sm-50 w-md-75 w-lg-100 ps-sm-2 ps-lg-0">Pacto de vida es una Iglesia Cristiana
@@ -38,7 +39,7 @@
 
                         <li class="col-6 col-sm-6 col-md-4 col-lg-12"><a href="#">Eventos</a></li>
 
-                       
+
                     </ul>
                 </div>
                 <!-- /.col-12 col-lg -->
@@ -46,25 +47,17 @@
                 <div class="col-12 col-lg d-flex flex-column flex-sm-row flex-lg-column">
                     <h6 class="mt-1 mb-3 text-uppercase fw-bold w-sm-50 w-md-25 w-lg-100">Congregación</h6>
                     <ul class="list-unstyled row g-2 mb-1 w-sm-50 w-md-75 w-lg-100 ps-sm-2 ps-lg-0">
-                        <li class="col-6 col-sm-6 col-md-4 col-lg-12"><a href="../views/about_us.php">Sobre nosotros</a></li>
+                        <li class="col-6 col-sm-6 col-md-4 col-lg-12"><a href="../views/about_us.php">Sobre nosotros</a>
+                        </li>
 
                         <li class="col-6 col-sm-6 col-md-4 col-lg-12"><a href="#">Contáctenos</a></li>
 
-                       
+
                     </ul>
                 </div>
                 <!-- /.col-12 col-lg -->
 
                 <div class="col-12 col-lg-3">
-                    <div class="d-flex flex-column flex-sm-row flex-lg-column">
-                        <h6 class="mt-1 mb-3 text-uppercase fw-bold w-sm-50 w-md-25 w-lg-100">Subscribe</h6>
-
-                        <div class="w-sm-50 w-md-75 w-lg-100 ps-sm-2 ps-lg-0 mb-4">
-                            <form action="http://html.coolorize.com/discoverize/default/#" class="mb-0"><input
-                                    class="form-control" type="text" placeholder="Your Email" /></form>
-                        </div>
-                    </div>
-                    <!-- /.d-flex -->
 
                     <div class="d-flex flex-column flex-sm-row flex-lg-column">
                         <h6 class="mt-1 mb-3 text-uppercase fw-bold w-sm-50 w-md-25 w-lg-100">Follow Us</h6>
