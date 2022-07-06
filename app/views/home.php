@@ -1912,9 +1912,4 @@
 </section>
 <!-- #types-swiper-3.section py-5 pt-lg-7 pb-lg-6 -->
 
-
-
-
-
-
 <?php require_once("../Includes/footer.php");?>

@@ -41,8 +41,7 @@
 
                 <div class="ms-auto ps-3 navbar-end d-flex flex-row justify-content-end">
 
-                    <button class="btn btn-link p-0 ms-3 shadow-none" data-bs-toggle="modal"
-                        data-bs-target="#userSignInModal"><i class="fas fa-user"></i></button>
+                    <button class="btn btn-link btn-light p-0 ms-3 shadow-none"><a class="fas fa-user" href="../views/login.php"></a></button>
 
                     <button class="btn-close btn-close-menu collapsed ms-3" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false"
@@ -80,12 +79,12 @@
 
                                 <li>
                                     <span class="dropdown-header text-uppercase fw-bold"><a class=""
-                                            href="">Eventos</a></span>
+                                            href="../views/events.php">Eventos</a></span>
                                 </li>
 
                             </ul>
                         </li>
-                        <li><a class="nav-link" href="#">Cont&aacute;ctenos</a></li>
+                        <li><a class="nav-link" href="../views/contact.php">Cont&aacute;ctenos</a></li>
 
                     </ul>
                     <!-- /.navbar-nav -->
