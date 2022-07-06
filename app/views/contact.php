@@ -97,7 +97,7 @@
                 <div class="col-12">
                   <div class="form-floating">
                     <textarea class="form-control border-0 bg-light" placeholder="" style="height: 150px"></textarea>
-                    <label >Mensaje</label>
+                    <label >Consulta</label>
                   </div>
                 </div>
               
