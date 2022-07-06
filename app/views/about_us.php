@@ -67,7 +67,7 @@
     <!-- /.container-xl position-relative -->
 </section>
 <!-- #sell-1.section pb-6 mt-n4 mt-lg-n5 mt-xl-n6 -->
-<section id="map" class="section mt-n4 mt-lg-n5 mt-xl-n6 vh-75" style="margin-bottom: 10%;">
+<section id="map" class="section mt-n4 mt-lg-n5 mt-xl-n6 vh-75" style="margin-bottom: 5%;">
     <div class="bg bg-img position-absolute" data-bg-img=".img"></div>
     <!-- /.bg bg-img position-absolute -->
 
