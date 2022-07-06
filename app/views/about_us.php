@@ -91,9 +91,4 @@
 </section>
 <!-- #map.section mt-n4 mt-lg-n5 mt-xl-n6 vh-75 -->
 
-
-<<<<<<< HEAD
-=======
-<!-- #listing-1.section py-5 py-lg-6 -->
->>>>>>> d6017c54546946386006f0766f25c799dfdf2e87
 <?php require_once("../Includes/footer.php");?>
