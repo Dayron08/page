@@ -91,7 +91,7 @@
                 <div class="col-12">
                   <div class="form-floating">
                     <input type="text" class="form-control border-0 bg-light" placeholder="Subject"/>
-                    <label >Tema</label>
+                    <label >Asunto</label>
                   </div>
                 </div>
                 <div class="col-12">
