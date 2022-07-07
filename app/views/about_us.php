@@ -116,7 +116,7 @@
     <div class="bg bg-img position-absolute bg-white" data-bg-img=".img"></div>
     <!-- /.bg bg-img position-absolute bg-white -->
 
-    <div class="container-xl position-relative">>
+    <div class="container-xl position-relative">
 
         <div class="row properties g-6 mb-5">
             <div class="col-12 col-lg-5">
