@@ -30,7 +30,7 @@
     <!-- /.container-xl position-relative -->
 </section>
 <!-- #we-do-2.section bg-dark py-5 py-lg-6 -->
-<section id="cities-grid-2" class="section py-5 py-lg-6">
+<!-- <section id="cities-grid-2" class="section py-5 py-lg-6">
     <div class="bg bg-img position-absolute" data-bg-img=".img"></div>
     <!-- /.bg bg-img position-absolute -->
 
@@ -184,7 +184,7 @@
         <!-- /.section-footer d-flex justify-content-center -->
     </div>
     <!-- /.container-xl -->
-</section>
+<!--</section> -->
 <!-- #cities-grid-2.section py-5 py-lg-6 -->
 
 
