@@ -118,7 +118,7 @@
 
     <div class="container-xl position-relative">
 
-        <div class="row properties g-6 mb-5">
+        <div class="row properties g-6 mb-5" style="margin-left: 10%;">
             <div class="col-12 col-lg-5">
                 <div class="card h-100 o-hover-all zoom-bg-img">
                     <div class="card-img bg bg-img" data-bg-img=".img">

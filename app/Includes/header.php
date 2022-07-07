@@ -34,14 +34,15 @@
         data-sticky-hide="true" data-switch-class="shadow-none|shadow">
         <nav class="navbar navbar-light navbar-default">
             <div class="container-xl justify-content-start">
-                <a class="navbar-brand d-flex position-relative mb-1" href="#"><img src="../../web/img/LOGO02.png"
-                        class="navbar-brand-img-dark" alt="Pacto de Vida"
+                <a class="navbar-brand d-flex position-relative mb-1" href="home.php"><img
+                        src="../../web/img/LOGO02.png" class="navbar-brand-img-dark" alt="Pacto de Vida"
                         style="width: 35%; border-radius: 100%;" /><img src="../../web/img/Logo_recortado.png"
                         style="width: 100%; " class="navbar-brand-img-light" alt="Pacto de Vida" /></a>
 
                 <div class="ms-auto ps-3 navbar-end d-flex flex-row justify-content-end">
 
-                    <button class="btn btn-link btn-light p-0 ms-3 shadow-none"><a class="fas fa-user" href="../views/login.php"></a></button>
+                    <button class="btn btn-link btn-light p-0 ms-3 shadow-none"><a class="fas fa-user"
+                            href="../views/login.php"></a></button>
 
                     <button class="btn-close btn-close-menu collapsed ms-3" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false"
@@ -64,9 +65,9 @@
                                     <span class="dropdown-header text-uppercase fw-bold">Galer&iacute;a</span>
                                 </li>
 
-                                <li><a class="dropdown-item" href="#">Videos</a></li>
+                                <li><a class="dropdown-item" href="../views/videos.php">Videos</a></li>
 
-                                <li><a class="dropdown-item" href="#">Im&aacute;genes</a></li>
+                                <li><a class="dropdown-item" href="../views/images.php">Im&aacute;genes</a></li>
 
                                 <li>
                                     <hr class="dropdown-divider" />
