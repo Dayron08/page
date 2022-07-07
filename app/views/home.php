@@ -16,7 +16,7 @@
                 </h2>
 
                 <p class="lead me-lg-3 text-light mb-5">"Justificados, pues, por la fe, tenemos paz para con Dios por
-                    medio de neustro se&ntilde;or Jesucristo". Romanos 5:1</p>
+                    medio de nuestro se&ntilde;or Jesucristo". Romanos 5:1</p>
 
                 <p class="text-light">
                     <button class="btn btn-primary rounded-pill shadow-none me-2 px-4 fw-bold" data-bs-toggle="modal"
