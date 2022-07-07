@@ -30,9 +30,9 @@
     <!-- /.container-xl position-relative -->
 </section>
 <!-- #we-do-2.section bg-dark py-5 py-lg-6 -->
-<!-- <section id="cities-grid-2" class="section py-5 py-lg-6">
+<section id="cities-grid-2" class="section py-5 py-lg-6">
     <div class="bg bg-img position-absolute" data-bg-img=".img"></div>
-    <!-- /.bg bg-img position-absolute -->
+    <!-- /.bg bg-img position-absolute --> -->
 
     <div class="container-xl position-relative h-100">
         <header class="section-header mb-5">
@@ -184,7 +184,7 @@
         <!-- /.section-footer d-flex justify-content-center -->
     </div>
     <!-- /.container-xl -->
-<!--</section> -->
+</section>
 <!-- #cities-grid-2.section py-5 py-lg-6 -->
 
 
@@ -197,7 +197,8 @@
             <div
                 class="col-12 col-lg-6 col-xl-6 py-4 py-lg-7 pe-lg-6 d-flex flex-column justify-content-center section-content ">
                 <h2 class="fs-1 mb-3 text-bla">Thinking of Selling Your House?</h2>
-                <p class="lead mb-4">We buy your home in your terms. Get an instant offer and options within 24 hours or
+                <p class="lead mb-4">We buy your home in your terms. Get an instant offer and options within 24
+                    hours or
                     you can easily lists with us.</p>
 
                 <form action="#" method="post" class="">
@@ -278,7 +279,8 @@
                                                 class="fs-5 fw-bold trans-base text-white">$255,000</a>
                                         </p>
 
-                                        <p class="card-text text-light mb-1 text-truncate mt-1">70 Sagamoga Hill Road,
+                                        <p class="card-text text-light mb-1 text-truncate mt-1">70 Sagamoga Hill
+                                            Road,
                                             San Jose, NY 110000</p>
 
                                         <p class="row gx-0 gx-md-2 text-light mb-2 text-truncate d-block">
@@ -331,7 +333,8 @@
                                                 class="fs-5 fw-bold trans-base text-white">$225,000</a>
                                         </p>
 
-                                        <p class="card-text text-light mb-1 text-truncate mt-1">878 Auburn City, Port
+                                        <p class="card-text text-light mb-1 text-truncate mt-1">878 Auburn City,
+                                            Port
                                             Washington, CA 110000</p>
 
                                         <p class="row gx-0 gx-md-2 text-light mb-2 text-truncate d-block">
@@ -384,7 +387,8 @@
                                                 class="fs-5 fw-bold trans-base text-white">$275,000</a>
                                         </p>
 
-                                        <p class="card-text text-light mb-1 text-truncate mt-1">456 Park Avenue, 256A,
+                                        <p class="card-text text-light mb-1 text-truncate mt-1">456 Park Avenue,
+                                            256A,
                                             Westlake, NY 110000</p>
 
                                         <p class="row gx-0 gx-md-2 text-light mb-2 text-truncate d-block">
@@ -594,7 +598,8 @@
                                                 class="fs-5 fw-bold trans-base text-white">$386,000</a>
                                         </p>
 
-                                        <p class="card-text text-light mb-1 text-truncate mt-1">70 Mogajaya Hill Road,
+                                        <p class="card-text text-light mb-1 text-truncate mt-1">70 Mogajaya Hill
+                                            Road,
                                             Port Washington, NY 110000</p>
 
                                         <p class="row gx-0 gx-md-2 text-light mb-2 text-truncate d-block">
@@ -647,7 +652,8 @@
                                                 class="fs-5 fw-bold trans-base text-white">$390,000</a>
                                         </p>
 
-                                        <p class="card-text text-light mb-1 text-truncate mt-1">40 Sunburn Hill Road,
+                                        <p class="card-text text-light mb-1 text-truncate mt-1">40 Sunburn Hill
+                                            Road,
                                             Port Washington, NY 110000</p>
 
                                         <p class="row gx-0 gx-md-2 text-light mb-2 text-truncate d-block">
@@ -700,7 +706,8 @@
                                                 class="fs-5 fw-bold trans-base text-white">$385,000</a>
                                         </p>
 
-                                        <p class="card-text text-light mb-1 text-truncate mt-1">50 Ground Hound Road,
+                                        <p class="card-text text-light mb-1 text-truncate mt-1">50 Ground Hound
+                                            Road,
                                             Port Washington, NY 110000</p>
 
                                         <p class="row gx-0 gx-md-2 text-light mb-2 text-truncate d-block">
@@ -753,7 +760,8 @@
                                                 class="fs-5 fw-bold trans-base text-white">$275,000</a>
                                         </p>
 
-                                        <p class="card-text text-light mb-1 text-truncate mt-1">456 Park Avenue, 256A,
+                                        <p class="card-text text-light mb-1 text-truncate mt-1">456 Park Avenue,
+                                            256A,
                                             Westlake, NY 110000</p>
 
                                         <p class="row gx-0 gx-md-2 text-light mb-2 text-truncate d-block">
@@ -833,7 +841,8 @@
                     <div class="position-relative pt-4 px-4">
                         <h1 class="fs-3 mb-2 position-relative">Discover Your Dream House</h1>
 
-                        <p class="mb-4 text-secondary position-relative">Search and find home from our trusted sources.
+                        <p class="mb-4 text-secondary position-relative">Search and find home from our trusted
+                            sources.
                         </p>
 
                         <div class="mb-3 position-relative">
@@ -878,16 +887,19 @@
 
                                     <li><a class="dropdown-item small" href="#" data-value="4">Condominiums</a></li>
 
-                                    <li><a class="dropdown-item small" href="#" data-value="5">Co-op Properties</a></li>
+                                    <li><a class="dropdown-item small" href="#" data-value="5">Co-op Properties</a>
+                                    </li>
 
-                                    <li><a class="dropdown-item small" href="#" data-value="6">Farm and Ranch</a></li>
+                                    <li><a class="dropdown-item small" href="#" data-value="6">Farm and Ranch</a>
+                                    </li>
 
                                     <li><a class="dropdown-item small" href="#" data-value="7">Land</a></li>
 
                                     <li><a class="dropdown-item small" href="#" data-value="8">Multi Family Home</a>
                                     </li>
 
-                                    <li><a class="dropdown-item small" href="#" data-value="9">Single Family Home</a>
+                                    <li><a class="dropdown-item small" href="#" data-value="9">Single Family
+                                            Home</a>
                                     </li>
 
                                     <li><a class="dropdown-item small" href="#" data-value="10">Townhome</a></li>
@@ -1320,7 +1332,8 @@
                                 <figure class="card testimonial h-100 text-start bg-transparent mb-0">
                                     <blockquote
                                         class="blockquote card-body bg-white shadow-sm rounded d-flex flex-column px-lg-5">
-                                        <p class="fs-1 text-secondary o-25 mb-0"><i class="fas fa-quote-right"></i></p>
+                                        <p class="fs-1 text-secondary o-25 mb-0"><i class="fas fa-quote-right"></i>
+                                        </p>
                                         <p class="fs-6">Lorem ipsum, dolor sit amet consectetur, adipisicing elit
                                             tenetur. Omnis unde totam minima hic in mollitia</p>
                                         <p class="text-secondary text-decoration-none fs-sm mt-auto mb-3 o-75">
@@ -1339,8 +1352,10 @@
                                 <figure class="card testimonial h-100 text-start bg-transparent mb-0">
                                     <blockquote
                                         class="blockquote card-body bg-white shadow-sm rounded d-flex flex-column px-lg-5">
-                                        <p class="fs-1 text-secondary o-25 mb-0"><i class="fas fa-quote-right"></i></p>
-                                        <p class="fs-6">Omnis unde totam consequatur minima hic in mollitia lorem ipsum,
+                                        <p class="fs-1 text-secondary o-25 mb-0"><i class="fas fa-quote-right"></i>
+                                        </p>
+                                        <p class="fs-6">Omnis unde totam consequatur minima hic in mollitia lorem
+                                            ipsum,
                                             dolor sit amet consectetur, adipisicing elit</p>
                                         <p class="text-secondary text-decoration-none fs-sm mt-auto mb-3 o-75">
                                             &mdash;<span class="fw-bold"> John Doe</span> - Sales Representative</p>
@@ -1358,8 +1373,10 @@
                                 <figure class="card testimonial h-100 text-start bg-transparent mb-0">
                                     <blockquote
                                         class="blockquote card-body bg-white shadow-sm rounded d-flex flex-column px-lg-5">
-                                        <p class="fs-1 text-secondary o-25 mb-0"><i class="fas fa-quote-right"></i></p>
-                                        <p class="fs-6">Veniam iste, vitae maiores. tenetur Quis voluptates consequatur
+                                        <p class="fs-1 text-secondary o-25 mb-0"><i class="fas fa-quote-right"></i>
+                                        </p>
+                                        <p class="fs-6">Veniam iste, vitae maiores. tenetur Quis voluptates
+                                            consequatur
                                             unde culpa perspiciatis odit vero beatae</p>
                                         <p class="text-secondary text-decoration-none fs-sm mt-auto mb-3 o-75">
                                             &mdash;<span class="fw-bold"> John Doe</span> - Marketing Manager</p>
@@ -1386,8 +1403,10 @@
                                 <figure class="card testimonial h-100 text-start bg-transparent mb-0">
                                     <blockquote
                                         class="blockquote card-body bg-white shadow-sm rounded d-flex flex-column px-lg-5">
-                                        <p class="fs-1 text-secondary o-25 mb-0"><i class="fas fa-quote-right"></i></p>
-                                        <p class="fs-6">Explicabo facere maxime fuga voluptates saepe veniam iste, vitae
+                                        <p class="fs-1 text-secondary o-25 mb-0"><i class="fas fa-quote-right"></i>
+                                        </p>
+                                        <p class="fs-6">Explicabo facere maxime fuga voluptates saepe veniam iste,
+                                            vitae
                                             maiores. Quis voluptates consequatur</p>
 
                                         <p class="text-secondary text-decoration-none fs-sm mt-auto mb-3 o-75">
@@ -1406,8 +1425,10 @@
                                 <figure class="card testimonial h-100 text-start bg-transparent mb-0">
                                     <blockquote
                                         class="blockquote card-body bg-white shadow-sm rounded d-flex flex-column px-lg-5">
-                                        <p class="fs-1 text-secondary o-25 mb-0"><i class="fas fa-quote-right"></i></p>
-                                        <p class="fs-6">Unde culpa perspiciatis odit vero beatae tenetur facere tenetur
+                                        <p class="fs-1 text-secondary o-25 mb-0"><i class="fas fa-quote-right"></i>
+                                        </p>
+                                        <p class="fs-6">Unde culpa perspiciatis odit vero beatae tenetur facere
+                                            tenetur
                                             dolor sit amet consectetur adipisicing</p>
                                         <p class="text-secondary text-decoration-none fs-sm mt-auto mb-3 o-75">
                                             &mdash;<span class="fw-bold"> John Doe</span> - Freelancer</p>
@@ -1425,7 +1446,8 @@
                                 <figure class="card testimonial h-100 text-start bg-transparent mb-0">
                                     <blockquote
                                         class="blockquote card-body bg-white shadow-sm rounded d-flex flex-column px-lg-5">
-                                        <p class="fs-1 text-secondary o-25 mb-0"><i class="fas fa-quote-right"></i></p>
+                                        <p class="fs-1 text-secondary o-25 mb-0"><i class="fas fa-quote-right"></i>
+                                        </p>
                                         <p class="fs-6">Explicabo facere maxime fuga voluptates saepe tenetur veniam
                                             iste, vitae maiores. Quis voluptates unde culpa</p>
                                         <p class="text-secondary text-decoration-none fs-sm mt-auto mb-3 o-75">
@@ -1453,8 +1475,10 @@
                                 <figure class="card testimonial h-100 text-start bg-transparent mb-0">
                                     <blockquote
                                         class="blockquote card-body bg-white shadow-sm rounded d-flex flex-column px-lg-5">
-                                        <p class="fs-1 text-secondary o-25 mb-0"><i class="fas fa-quote-right"></i></p>
-                                        <p class="fs-6">Maxime fuga voluptates saepe veniam iste, vitae maiores. Quis
+                                        <p class="fs-1 text-secondary o-25 mb-0"><i class="fas fa-quote-right"></i>
+                                        </p>
+                                        <p class="fs-6">Maxime fuga voluptates saepe veniam iste, vitae maiores.
+                                            Quis
                                             maxime voluptates consequatur unde culpa beatae</p>
                                         <p class="text-secondary text-decoration-none fs-sm mt-auto mb-3 o-75">
                                             &mdash;<span class="fw-bold"> John Doe</span> - Designer</p>
@@ -1472,7 +1496,8 @@
                                 <figure class="card testimonial h-100 text-start bg-transparent mb-0">
                                     <blockquote
                                         class="blockquote card-body bg-white shadow-sm rounded d-flex flex-column px-lg-5">
-                                        <p class="fs-1 text-secondary o-25 mb-0"><i class="fas fa-quote-right"></i></p>
+                                        <p class="fs-1 text-secondary o-25 mb-0"><i class="fas fa-quote-right"></i>
+                                        </p>
                                         <p class="fs-6">Perspiciatis odit vero beatae tenetur facere dolor sit amet
                                             consectetur voluptates adipisicing elit animi</p>
                                         <p class="text-secondary text-decoration-none fs-sm mt-auto mb-3 o-75">
@@ -1491,8 +1516,10 @@
                                 <figure class="card testimonial h-100 text-start bg-transparent mb-0">
                                     <blockquote
                                         class="blockquote card-body bg-white shadow-sm rounded d-flex flex-column px-lg-5">
-                                        <p class="fs-1 text-secondary o-25 mb-0"><i class="fas fa-quote-right"></i></p>
-                                        <p class="fs-6">Facere maxime fuga voluptates saepe veniam iste, Veniam beatae
+                                        <p class="fs-1 text-secondary o-25 mb-0"><i class="fas fa-quote-right"></i>
+                                        </p>
+                                        <p class="fs-6">Facere maxime fuga voluptates saepe veniam iste, Veniam
+                                            beatae
                                             vitae maiores. Quis voluptates perspiciatis odit</p>
                                         <p class="text-secondary text-decoration-none fs-sm mt-auto mb-3 o-75">
                                             &mdash;<span class="fw-bold"> John Doe</span> - Country Manager</p>
@@ -1542,374 +1569,5 @@
 </section>
 <!-- #testimonials-swiper-1.section py-5 py-lg-6 -->
 
-<section id="stat-2" class="section mt-n5">
-    <div class="bg bg-img position-absolute" data-bg-img=".img"></div>
-    <!-- /.bg bg-img position-absolute -->
-
-    <div class="container-xl position-relative">
-        <header class="section-header mb-4 visually-hidden">
-            <h2 class="fs-3 section-title mb-3"></h2>
-        </header>
-        <!-- /.section-header mb-4 visually-hidden -->
-
-        <div class="row">
-            <div class="col-12 col-lg-8 position-relative">
-                <div class="bg position-absolute bg-primary shadow-sm expand-w-start"></div>
-
-                <div class="position-relative py-4">
-                    <div class="row position-relative g-4">
-                        <div class="col-6 col-md-3">
-                            <p class="text-white fs-3 lh-1 mb-1"><strong data-countup
-                                    data-countup-duration="2500">300</strong><small>+</small></p>
-                            <p class="text-light o-75 fw-bold fs-sm mb-0">Total Personas</p>
-                        </div>
-                        <!-- /.col-6 col-md-3 -->
-
-                        <div class="col-6 col-md-3">
-                            <p class="text-white fs-3 lh-1 mb-1"><strong data-countup
-                                    data-countup-duration="1000">195000</strong><small>+</small></p>
-                            <p class="text-light o-75 fw-bold fs-sm mb-0">Properties Sold</p>
-                        </div>
-                        <!-- /.col-6 col-md-3 -->
-
-                        <div class="col-6 col-md-3">
-                            <p class="text-white fs-3 lh-1 mb-1"><strong data-countup
-                                    data-countup-duration="1500">450000</strong><small>+</small></p>
-                            <p class="text-light o-75 fw-bold fs-sm mb-0">Properties Rented</p>
-                        </div>
-                        <!-- /.col-6 col-md-3 -->
-
-                        <div class="col-6 col-md-3">
-                            <p class="text-white fs-3 lh-1 mb-1"><strong data-countup
-                                    data-countup-duration="2000">350000</strong><small>+</small></p>
-                            <p class="text-light o-75 fw-bold fs-sm mb-0">Properties Bought</p>
-                        </div>
-                        <!-- /.col-6 col-md-3 -->
-                    </div>
-                    <!-- /.row position-relative g-4 -->
-                </div>
-                <!-- /.position-relative -->
-            </div>
-            <!-- /.col-12 col-lg-8 position-relative -->
-        </div>
-        <!-- /.row -->
-    </div>
-    <!-- /.container-xl position-relative -->
-</section>
-<!-- #stat-2.section mt-n5 -->
-
-<section id="see-how-3" class="section py-5 pt-lg-6 pb-lg-7">
-    <div class="bg bg-img position-absolute" data-bg-img=".img"></div>
-    <!-- /.bg bg-img position-absolute -->
-
-    <div class="container-xl position-relative">
-        <div class="row gx-5">
-            <div class="col-12 col-lg-4 col-xl-4">
-                <header class="section-header mb-4">
-                    <h2 class="fs-3 section-title mb-3">See How Discoverize Can Help You</h2>
-
-                    <p class="leadmb-0 o-75">Lists of things that you can do with Discoverize</p>
-                </header>
-                <!-- /.section-header mb-4 -->
-            </div>
-            <!-- /.col-12 col-lg-4 col-xl-4 -->
-
-            <div class="col-12 col-lg-8 col-xl-8">
-                <div class="row gy-5 mb-5">
-                    <div class="col-12 col-sm-6">
-                        <div class="card h-100 bg-transparent">
-                            <div class="row">
-                                <div class="col-auto">
-                                    <div class="card-img-top mb-3">
-                                        <i class="fas fa-home icon bg-primary text-light rounded-circle"></i>
-                                    </div>
-                                    <!-- /.card-img-top position-relative -->
-                                </div>
-                                <!-- /.col-auto -->
-                                <div class="col">
-                                    <div class="card-body p-0">
-                                        <h3 class="h5 mb-3">Buy / Rent A Home</h3>
-                                        <p class="text-secondary">With over 1 million+ homes for Sale, Discoverize can
-                                            help you easily find house you will want to call home</p>
-                                    </div>
-                                    <!-- /.card-body -->
-
-                                    <div class="card-footer bg-transparent p-0">
-                                        <a href="listing-1.html"
-                                            class="btn btn-link btn-sm btn-more text-uppercase fw-bold shadow-none o-50 o-100-hover trans-base p-0">Browse
-                                            Now<i class="fas fa-long-arrow-alt-right"></i></a>
-                                    </div>
-                                    <!-- /.card-footer -->
-                                </div>
-                                <!-- /.col -->
-                            </div>
-                            <!-- /.row -->
-                        </div>
-                        <!-- /.card h-100 -->
-                    </div>
-                    <!-- /.col-12 col-sm-6 -->
-
-                    <div class="col-12 col-sm-6">
-                        <div class="card h-100 bg-transparent">
-                            <div class="row">
-                                <div class="col-auto">
-                                    <div class="card-img-top mb-3">
-                                        <i class="fas fa-house-user icon bg-primary text-light rounded-circle"></i>
-                                    </div>
-                                    <!-- /.card-img-top position-relative -->
-                                </div>
-                                <!-- /.col-auto -->
-                                <div class="col">
-                                    <div class="card-body p-0">
-                                        <h3 class="h5 mb-3">Rent A Home</h3>
-                                        <p class="text-secondary">Advance Search Feature that can be personally tailored
-                                            to match you with home or appartment that you'll love.</p>
-                                    </div>
-                                    <!-- /.card-body -->
-
-                                    <div class="card-footer bg-transparent p-0">
-                                        <a href="listing-search-top-1.html"
-                                            class="btn btn-link btn-sm btn-more text-uppercase fw-bold shadow-none o-50 o-100-hover trans-base p-0">Browse
-                                            Now<i class="fas fa-long-arrow-alt-right"></i></a>
-                                    </div>
-                                    <!-- /.card-footer -->
-                                </div>
-                                <!-- /.col -->
-                            </div>
-                            <!-- /.row -->
-                        </div>
-                        <!-- /.card h-100 -->
-                    </div>
-                    <!-- /.col-12 col-sm-6 -->
-
-                    <div class="col-12 col-sm-6">
-                        <div class="card h-100 bg-transparent">
-                            <div class="row">
-                                <div class="col-auto">
-                                    <div class="card-img-top mb-3">
-                                        <i
-                                            class="fas fa-file-invoice-dollar icon bg-primary text-light rounded-circle"></i>
-                                    </div>
-                                    <!-- /.card-img-top position-relative -->
-                                </div>
-                                <!-- /.col-auto -->
-                                <div class="col">
-                                    <div class="card-body p-0">
-                                        <h3 class="h5 mb-3">Sell Your Home</h3>
-                                        <p class="text-secondary">We buy your home in your terms. Get an instant offer
-                                            and options within 24 hours or lists your home with us.</p>
-                                    </div>
-                                    <!-- /.card-body -->
-
-                                    <div class="card-footer bg-transparent p-0">
-                                        <a href="page-sell-1.html"
-                                            class="btn btn-link btn-sm btn-more text-uppercase fw-bold shadow-none o-50 o-100-hover trans-base p-0">Sell
-                                            Now<i class="fas fa-long-arrow-alt-right"></i></a>
-                                    </div>
-                                    <!-- /.card-footer -->
-                                </div>
-                                <!-- /.col -->
-                            </div>
-                            <!-- /.row -->
-                        </div>
-                        <!-- /.card h-100 -->
-                    </div>
-                    <!-- /.col-12 col-sm-6 -->
-
-                    <div class="col-12 col-sm-6">
-                        <div class="card h-100 bg-transparent">
-                            <div class="row">
-                                <div class="col-auto">
-                                    <div class="card-img-top mb-3">
-                                        <i class="fas fa-map-marker-alt icon bg-primary text-light rounded-circle"></i>
-                                    </div>
-                                    <!-- /.card-img-top position-relative -->
-                                </div>
-                                <!-- /.col-auto -->
-                                <div class="col">
-                                    <div class="card-body p-0">
-                                        <h3 class="h5 mb-3">Explore Neighbourhoud</h3>
-                                        <p class="text-secondary">Complete neighbourhoud insight from Discoverize to
-                                            help you choose the best place to start you search for home.</p>
-                                    </div>
-                                    <!-- /.card-body -->
-
-                                    <div class="card-footer bg-transparent p-0">
-                                        <a href="cities-1.html"
-                                            class="btn btn-link btn-sm btn-more text-uppercase fw-bold shadow-none o-50 o-100-hover trans-base p-0">Explore
-                                            Now<i class="fas fa-long-arrow-alt-right"></i></a>
-                                    </div>
-                                    <!-- /.card-footer -->
-                                </div>
-                                <!-- /.col -->
-                            </div>
-                            <!-- /.row -->
-                        </div>
-                        <!-- /.card h-100 -->
-                    </div>
-                    <!-- /.col-12 col-sm-6 -->
-                </div>
-                <!-- /.row -->
-            </div>
-            <!-- /.col-12 col-lg-8 col-xl-8 -->
-        </div>
-        <!-- /.row -->
-    </div>
-    <!-- /.container-xl position-relative -->
-</section>
-<!-- #see-how-3.section py-5 pt-lg-6 pb-lg-7 -->
-  
-
-<section id="types-swiper-3" class="section py-5 pt-lg-7 pb-lg-6">
-    <div class="bg bg-img position-absolute" data-bg-img=".img"></div>
-    <!-- /.bg bg-img position-absolute -->
-
-    <div class="container-xl position-relative h-100">
-        <div class="row">
-            <div class="col-12 col-lg-4">
-                <header class="section-header mb-4">
-                    <h2 class="fs-3 section-title mb-3">Browse by Category</h2>
-
-                    <p class="leadmb-0 o-75">Browse our properties by cateogory ipsum dolor sit amet</p>
-                </header>
-                <!-- /.section-header mb-4 -->
-            </div>
-            <!-- /.col-12 col-lg-4 -->
-
-            <div class="col-12 col-lg-8">
-                <div class="swiper-container">
-                    <div id="types-swiper-3-swiper" class="swiper" data-js-swiper="auto">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="swiper-slide-container">
-                                    <div class="row g-4">
-                                        <div class="col-6 col-md-3 position-relative">
-                                            <a href="http://html.coolorize.com/discoverize/default/listing-search-header.html"
-                                                class="btn btn-outline-primary btn-default btn-icon flex-grow-1 py-3 d-block w-100 h-100 shadow-sm">
-                                                <span class="d-block fs-1"><i class="flaticon-apartment"></i></span>
-                                                <span class="d-block">Apartments</span>
-                                            </a>
-                                        </div>
-                                        <!-- /.col-6 col-md-3 -->
-
-                                        <div class="col-6 col-md-3 position-relative">
-                                            <a href="http://html.coolorize.com/discoverize/default/listing-search-header.html"
-                                                class="btn btn-outline-primary btn-default btn-icon flex-grow-1 py-3 d-block w-100 h-100 shadow-sm">
-                                                <span class="d-block fs-1"><i class="flaticon-bungalow"></i></span>
-                                                <span class="d-block">Bungalow</span>
-                                            </a>
-                                        </div>
-                                        <!-- /.col-6 col-md-3 -->
-
-                                        <div class="col-6 col-md-3 position-relative">
-                                            <a href="http://html.coolorize.com/discoverize/default/listing-search-header.html"
-                                                class="btn btn-outline-primary btn-default btn-icon flex-grow-1 py-3 d-block w-100 h-100 shadow-sm">
-                                                <span class="d-block fs-1"><i class="flaticon-condominium"></i></span>
-                                                <span class="d-block">Condominiums</span>
-                                            </a>
-                                        </div>
-                                        <!-- /.col-6 col-md-3 -->
-
-                                        <div class="col-6 col-md-3 position-relative">
-                                            <a href="http://html.coolorize.com/discoverize/default/listing-search-header.html"
-                                                class="btn btn-outline-primary btn-default btn-icon flex-grow-1 py-3 d-block w-100 h-100 shadow-sm">
-                                                <span class="d-block fs-1"><i class="flaticon-appartment"></i></span>
-                                                <span class="d-block">Co-op Properties</span>
-                                            </a>
-                                        </div>
-                                        <!-- /.col-6 col-md-3 -->
-                                    </div>
-                                    <!-- /.row -->
-                                </div>
-                                <!-- /.swiper-slide-container -->
-                            </div>
-                            <!-- /..swiper-slide -->
-
-                            <div class="swiper-slide">
-                                <div class="swiper-slide-container">
-                                    <div class="row g-4">
-                                        <div class="col-6 col-md-3 position-relative">
-                                            <a href="http://html.coolorize.com/discoverize/default/listing-search-header.html"
-                                                class="btn btn-outline-primary btn-default btn-icon flex-grow-1 py-3 d-block w-100 h-100 shadow-sm">
-                                                <span class="d-block fs-1"><i class="flaticon-barn"></i></span>
-                                                <span class="d-block">Farm and Ranch</span>
-                                            </a>
-                                        </div>
-                                        <!-- /.col-6 col-md-3 -->
-
-                                        <div class="col-6 col-md-3 position-relative">
-                                            <a href="http://html.coolorize.com/discoverize/default/listing-search-header.html"
-                                                class="btn btn-outline-primary btn-default btn-icon flex-grow-1 py-3 d-block w-100 h-100 shadow-sm">
-                                                <span class="d-block fs-1"><i class="flaticon-land"></i></span>
-                                                <span class="d-block">Land</span>
-                                            </a>
-                                        </div>
-                                        <!-- /.col-6 col-md-3 -->
-
-                                        <div class="col-6 col-md-3 position-relative">
-                                            <a href="http://html.coolorize.com/discoverize/default/listing-search-header.html"
-                                                class="btn btn-outline-primary btn-default btn-icon flex-grow-1 py-3 d-block w-100 h-100 shadow-sm">
-                                                <span class="d-block fs-1"><i class="flaticon-semi-detached"></i></span>
-                                                <span class="d-block">Multi Family Home</span>
-                                            </a>
-                                        </div>
-                                        <!-- /.col-6 col-md-3 -->
-
-                                        <div class="col-6 col-md-3 position-relative">
-                                            <a href="http://html.coolorize.com/discoverize/default/listing-search-header.html"
-                                                class="btn btn-outline-primary btn-default btn-icon flex-grow-1 py-3 d-block w-100 h-100 shadow-sm">
-                                                <span class="d-block fs-1"><i class="flaticon-home"></i></span>
-                                                <span class="d-block">Single Family Home</span>
-                                            </a>
-                                        </div>
-                                        <!-- /.col-6 col-md-3 -->
-                                    </div>
-                                    <!-- /.row -->
-                                </div>
-                                <!-- /.swiper-slide-container -->
-                            </div>
-                            <!-- /..swiper-slide -->
-
-                            <div class="swiper-slide">
-                                <div class="swiper-slide-container">
-                                    <div class="row g-4">
-                                        <div class="col-6 col-md-3 position-relative">
-                                            <a href="http://html.coolorize.com/discoverize/default/listing-search-header.html"
-                                                class="btn btn-outline-primary btn-default btn-icon flex-grow-1 py-3 d-block w-100 h-100 shadow-sm">
-                                                <span class="d-block fs-1"><i class="flaticon-townhouse"></i></span>
-                                                <span class="d-block">Townhome</span>
-                                            </a>
-                                        </div>
-                                        <!-- /.col-6 col-md-3 -->
-                                    </div>
-                                    <!-- /.row -->
-                                </div>
-                                <!-- /.swiper-slide-container -->
-                            </div>
-                            <!-- /..swiper-slide -->
-                        </div>
-                        <!-- /.swiper-wrapper -->
-                    </div>
-                    <!-- /#types-swiper-3-swiper.swiper -->
-
-                    <div class="swiper-navigation-container">
-                        <a href="#types-swiper-3-swiper"
-                            class="swiper-button-next btn btn-primary btn-default shadow-none o-50 o-100-hover"><i
-                                class="d-inline-block fas fa-angle-right"></i></a>
-                        <a href="#types-swiper-3-swiper"
-                            class="swiper-button-prev btn btn-primary btn-default shadow-none o-50 o-100-hover"><i
-                                class="d-inline-block fas fa-angle-left"></i></a>
-                    </div>
-                    <!-- /.swiper-navigation -->
-                </div>
-                <!-- .swiper-container -->
-            </div>
-            <!-- /.col-12 col-lg-8 -->
-        </div>
-        <!-- /.row -->
-    </div>
-    <!-- /.container-xl position-relative -->
-</section>
-<!-- #types-swiper-3.section py-5 pt-lg-7 pb-lg-6 -->
 
 <?php require_once("../Includes/footer.php");?>
