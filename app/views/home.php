@@ -29,9 +29,162 @@
     </div>
     <!-- /.container-xl position-relative -->
 </section>
+<<<<<<< HEAD
+=======
+<!-- #we-do-2.section bg-dark py-5 py-lg-6 -->
+<section id="cities-grid-2" class="section py-5 py-lg-6">
+    <div class="bg bg-img position-absolute" data-bg-img=".img"></div>
+    <!-- /.bg bg-img position-absolute --> -->
+>>>>>>> 66bb8e1c7b0a96334673e2efcf3482a676025e18
 
 
 
+<<<<<<< HEAD
+=======
+        <div class="row cities g-4 mb-5">
+            <div class="col-6 col-md-3 d-flex align-items-stretch">
+                <div class="card shadow-sm shadow-hover trans-base trans-base o-hover-all zoom-bg-img">
+                    <div class="card-img bg bg-img" data-bg-img=".img">
+                        <img src="http://assets.coolorize.com/5-3/lg/photo-1444084316824-dc26d6657664.jpg" class="img"
+                            alt="Image" />
+                        <div class="overlay position-absolute bg-dark o-25 o-10-hover trans-base"></div>
+                    </div>
+                    <!-- /.card-img bg bg-img -->
+
+                    <div class="card-img-overlay d-flex flex-column">
+                        <h3 class="card-title fs-6 mt-auto mb-1"><a
+                                href="http://html.coolorize.com/discoverize/default/listing-2.html"
+                                class="text-white stretched-link text-decoration-none">New York</a></h3>
+                        <p class="mb-0 text-white"><small>12025 Properties</small></p>
+                    </div>
+                    <!-- /.card-img-overlay d-flex flex-column -->
+                </div>
+                <!-- /.card -->
+            </div>
+            <!-- /.col-12 col-md-3 d-flex align-items-stretch -->
+
+            <div class="col-6 col-md-3 d-flex align-items-stretch">
+                <div class="card shadow-sm shadow-hover trans-base trans-base o-hover-all zoom-bg-img">
+                    <div class="card-img bg bg-img" data-bg-img=".img">
+                        <img src="http://assets.coolorize.com/5-3/lg/photo-1423655156442-ccc11daa4e99.jpg" class="img"
+                            alt="Image" />
+                        <div class="overlay position-absolute bg-dark o-25 o-10-hover trans-base"></div>
+                    </div>
+                    <!-- /.card-img bg bg-img -->
+
+                    <div class="card-img-overlay d-flex flex-column">
+                        <h3 class="card-title fs-6 mt-auto mb-1"><a
+                                href="http://html.coolorize.com/discoverize/default/listing-2.html"
+                                class="text-white stretched-link text-decoration-none">New Jersey</a></h3>
+                        <p class="mb-0 text-white"><small>11325 Properties</small></p>
+                    </div>
+                    <!-- /.card-img-overlay d-flex flex-column -->
+                </div>
+                <!-- /.card -->
+            </div>
+            <!-- /.col-6 col-md-3 d-flex align-items-stretch -->
+
+            <div class="col-12 col-md-6">
+                <div class="row g-4">
+                    <div class="col-6 d-flex align-items-stretch">
+                        <div class="card shadow-sm shadow-hover trans-base trans-base o-hover-all zoom-bg-img">
+                            <div class="card-img bg bg-img" data-bg-img=".img">
+                                <img src="http://assets.coolorize.com/5-3/lg/photo-1428342628092-61f9e5d578f2.jpg"
+                                    class="img" alt="Image" />
+                                <div class="overlay position-absolute bg-dark o-25 o-10-hover trans-base"></div>
+                            </div>
+                            <!-- /.card-img bg bg-img -->
+
+                            <div class="card-img-overlay d-flex flex-column">
+                                <h3 class="card-title fs-6 mt-auto mb-1"><a
+                                        href="http://html.coolorize.com/discoverize/default/listing-2.html"
+                                        class="text-white stretched-link text-decoration-none">Amsterdam</a></h3>
+                                <p class="mb-0 text-white"><small>11025 Properties</small></p>
+                            </div>
+                            <!-- /.card-img-overlay d-flex flex-column -->
+                        </div>
+                        <!-- /.card -->
+                    </div>
+
+                    <div class="col-6 d-flex align-items-stretch">
+                        <div class="card shadow-sm shadow-hover trans-base trans-base o-hover-all zoom-bg-img">
+                            <div class="card-img bg bg-img" data-bg-img=".img">
+                                <img src="http://assets.coolorize.com/5-3/lg/piotr-chrobot-276746.jpg" class="img"
+                                    alt="Image" />
+                                <div class="overlay position-absolute bg-dark o-25 o-10-hover trans-base"></div>
+                            </div>
+                            <!-- /.card-img bg bg-img -->
+
+                            <div class="card-img-overlay d-flex flex-column">
+                                <h3 class="card-title fs-6 mt-auto mb-1"><a
+                                        href="http://html.coolorize.com/discoverize/default/listing-2.html"
+                                        class="text-white stretched-link text-decoration-none">Bristol</a></h3>
+                                <p class="mb-0 text-white"><small>11025 Properties</small></p>
+                            </div>
+                            <!-- /.card-img-overlay d-flex flex-column -->
+                        </div>
+                        <!-- /.card -->
+                    </div>
+
+                    <div class="col-6 d-flex align-items-stretch">
+                        <div class="card shadow-sm shadow-hover trans-base trans-base o-hover-all zoom-bg-img">
+                            <div class="card-img bg bg-img" data-bg-img=".img">
+                                <img src="http://assets.coolorize.com/5-3/lg/reserve-HwHDcyQARvK6rFF84VT8_15154010855_3ac36f3e56_o.jpg"
+                                    class="img" alt="Image" />
+                                <div class="overlay position-absolute bg-dark o-25 o-10-hover trans-base"></div>
+                            </div>
+                            <!-- /.card-img bg bg-img -->
+
+                            <div class="card-img-overlay d-flex flex-column">
+                                <h3 class="card-title fs-6 mt-auto mb-1"><a
+                                        href="http://html.coolorize.com/discoverize/default/listing-2.html"
+                                        class="text-white stretched-link text-decoration-none">Amsterdam</a></h3>
+                                <p class="mb-0 text-white"><small>11025 Properties</small></p>
+                            </div>
+                            <!-- /.card-img-overlay d-flex flex-column -->
+                        </div>
+                        <!-- /.card -->
+                    </div>
+
+                    <div class="col-6 d-flex align-items-stretch">
+                        <div class="card shadow-sm shadow-hover trans-base trans-base o-hover-all zoom-bg-img">
+                            <div class="card-img bg bg-img" data-bg-img=".img">
+                                <img src="http://assets.coolorize.com/5-3/lg/uploads-1412408486325945f081a-09b0f9e1.jpg"
+                                    class="img" alt="Image" />
+                                <div class="overlay position-absolute bg-dark o-25 o-10-hover trans-base"></div>
+                            </div>
+                            <!-- /.card-img bg bg-img -->
+
+                            <div class="card-img-overlay d-flex flex-column">
+                                <h3 class="card-title fs-6 mt-auto mb-1"><a
+                                        href="http://html.coolorize.com/discoverize/default/listing-2.html"
+                                        class="text-white stretched-link text-decoration-none">Dallas</a></h3>
+                                <p class="mb-0 text-white"><small>11025 Properties</small></p>
+                            </div>
+                            <!-- /.card-img-overlay d-flex flex-column -->
+                        </div>
+                        <!-- /.card -->
+                    </div>
+                </div>
+                <!-- /.row g-4 -->
+            </div>
+            <!-- /.col-12 col-md-6 -->
+        </div>
+        <!-- /.row cities -->
+
+        <footer class="section-footer d-flex justify-content-center">
+            <p class="mb-0">
+                <a href="http://html.coolorize.com/discoverize/default/cities-1.html"
+                    class="btn btn-link btn-sm btn-more text-uppercase fw-bold shadow-none o-50 o-100-hover trans-base px-0">More
+                    Cities<i class="fas fa-long-arrow-alt-right"></i></a>
+            </p>
+        </footer>
+        <!-- /.section-footer d-flex justify-content-center -->
+    </div>
+    <!-- /.container-xl -->
+</section>
+<!-- #cities-grid-2.section py-5 py-lg-6 -->
+>>>>>>> 66bb8e1c7b0a96334673e2efcf3482a676025e18
 
 
 <section id="callout-sell-1" class="section section__inverse py-0">
@@ -43,7 +196,8 @@
             <div
                 class="col-12 col-lg-6 col-xl-6 py-4 py-lg-7 pe-lg-6 d-flex flex-column justify-content-center section-content ">
                 <h2 class="fs-1 mb-3 text-bla">Thinking of Selling Your House?</h2>
-                <p class="lead mb-4">We buy your home in your terms. Get an instant offer and options within 24 hours or
+                <p class="lead mb-4">We buy your home in your terms. Get an instant offer and options within 24
+                    hours or
                     you can easily lists with us.</p>
 
                 <form action="#" method="post" class="">
@@ -84,6 +238,584 @@
 <!-- #callout-sell-1.section section__inverse py-0 -->
 
 
+<<<<<<< HEAD
+=======
+    <div class="container-xl position-relative">
+        <header class="section-header mb-5">
+            <h2 class="fs-3 section-title mb-3">Galer&iacute;a de im&aacute;genes</h2>
+
+            <p class="leadmb-0 o-75">Best properties handpicked professionally by our expert</p>
+        </header>
+        <!-- /.section-header mb-5 -->
+
+        <div class="swiper-container with-pagination">
+            <div id="listing-swiper-1-expand-swiper" class="swiper expand-w" data-js-swiper="auto">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide w-330px h-330px pe-4 d-flex">
+                        <div class="card shadow-sm shadow-hover trans-base zoom-bg-img o-hover-all">
+                            <div class="card-img bg bg-img" data-bg-img=".img">
+                                <img src="http://assets.coolorize.com/homes/5-3/lg/aubrey-odom-ITzfgP77DTg-unsplash.jpg"
+                                    class="img" alt="Image" />
+                                <div class="overlay bg-dark position-absolute o-25 o-50-hover"></div>
+                            </div>
+                            <!-- /.card-img bg bg-img -->
+
+                            <div class="card-img-overlay d-flex flex-column px-0">
+                                <a href="http://html.coolorize.com/discoverize/default/listing-detail-1.html"
+                                    class="stretched-link"></a>
+
+                                <div class="overlay-top d-flex flex-row px-3">
+                                    <a href="http://html.coolorize.com/discoverize/default/listing-search-header.html"
+                                        class="position-relative zi-20 badge text-dark bg-white o-50 o-100-hover trans-base">Apartments</a>
+                                </div>
+                                <!-- /.overlay-top d-flex flex-row -->
+
+                                <div class="card-peek overlay-bottom position-absolute bottom-0 mb-3 px-3 w-100">
+                                    <div class="card-peek-show">
+                                        <p class="card-text mb-0 d-flex flex-row align-items-center w-100">
+                                            <a href="http://html.coolorize.com/discoverize/default/listing-detail-1.html"
+                                                class="fs-5 fw-bold trans-base text-white">$255,000</a>
+                                        </p>
+
+                                        <p class="card-text text-light mb-1 text-truncate mt-1">70 Sagamoga Hill
+                                            Road,
+                                            San Jose, NY 110000</p>
+
+                                        <p class="row gx-0 gx-md-2 text-light mb-2 text-truncate d-block">
+                                            <span class="col-auto">Beds: <strong>2</strong></span>
+                                            <span class="col-auto px-0 o-50">&bullet;</span>
+                                            <span class="col-auto">Baths: <strong>2</strong></span>
+                                            <span class="col-auto px-0 o-50">&bullet;</span>
+                                            <span class="col-auto">Sqft: <strong>5434</strong></span>
+                                        </p>
+                                    </div>
+
+                                    <p class="mb-0">
+                                        <a href="http://html.coolorize.com/discoverize/default/listing-detail-1.html"
+                                            class="btn btn-link btn-sm btn-more text-light text-uppercase fw-bold shadow-none o-75 o-100-hover p-0">View
+                                            Detail<i class="fas fa-long-arrow-alt-right"></i></a>
+                                    </p>
+                                </div>
+                                <!-- /.overlay-bottom mt-auto -->
+                            </div>
+                            <!-- /.card-img-overlay d-flex flex-column -->
+                        </div>
+                        <!-- /.card -->
+                    </div>
+                    <!-- /.swiper-slide w-330px h-330px pe-4 d-flex -->
+
+                    <div class="swiper-slide w-330px h-330px pe-4 d-flex">
+                        <div class="card shadow-sm shadow-hover trans-base zoom-bg-img o-hover-all">
+                            <div class="card-img bg bg-img" data-bg-img=".img">
+                                <img src="http://assets.coolorize.com/homes/5-3/lg/chi-m-R1uiDu8vBh0-unsplash.jpg"
+                                    class="img" alt="Image" />
+                                <div class="overlay bg-dark position-absolute o-25 o-50-hover"></div>
+                            </div>
+                            <!-- /.card-img bg bg-img -->
+
+                            <div class="card-img-overlay d-flex flex-column px-0">
+                                <a href="http://html.coolorize.com/discoverize/default/listing-detail-1.html"
+                                    class="stretched-link"></a>
+
+                                <div class="overlay-top d-flex flex-row px-3">
+                                    <a href="http://html.coolorize.com/discoverize/default/listing-search-header.html"
+                                        class="position-relative zi-20 badge text-dark bg-white o-50 o-100-hover trans-base">Multi-Family
+                                        Home</a>
+                                </div>
+                                <!-- /.overlay-top d-flex flex-row -->
+
+                                <div class="card-peek overlay-bottom position-absolute bottom-0 mb-3 px-3 w-100">
+                                    <div class="card-peek-show">
+                                        <p class="card-text mb-0 d-flex flex-row align-items-center w-100">
+                                            <a href="http://html.coolorize.com/discoverize/default/listing-detail-1.html"
+                                                class="fs-5 fw-bold trans-base text-white">$225,000</a>
+                                        </p>
+
+                                        <p class="card-text text-light mb-1 text-truncate mt-1">878 Auburn City,
+                                            Port
+                                            Washington, CA 110000</p>
+
+                                        <p class="row gx-0 gx-md-2 text-light mb-2 text-truncate d-block">
+                                            <span class="col-auto">Beds: <strong>2</strong></span>
+                                            <span class="col-auto px-0 o-50">&bullet;</span>
+                                            <span class="col-auto">Baths: <strong>2</strong></span>
+                                            <span class="col-auto px-0 o-50">&bullet;</span>
+                                            <span class="col-auto">Sqft: <strong>5434</strong></span>
+                                        </p>
+                                    </div>
+
+                                    <p class="mb-0">
+                                        <a href="http://html.coolorize.com/discoverize/default/listing-detail-1.html"
+                                            class="btn btn-link btn-sm btn-more text-light text-uppercase fw-bold shadow-none o-75 o-100-hover p-0">View
+                                            Detail<i class="fas fa-long-arrow-alt-right"></i></a>
+                                    </p>
+                                </div>
+                                <!-- /.overlay-bottom mt-auto -->
+                            </div>
+                            <!-- /.card-img-overlay d-flex flex-column -->
+                        </div>
+                        <!-- /.card -->
+                    </div>
+                    <!-- /.swiper-slide w-330px h-330px pe-4 d-flex -->
+
+                    <div class="swiper-slide w-330px h-330px pe-4 d-flex">
+                        <div class="card shadow-sm shadow-hover trans-base zoom-bg-img o-hover-all">
+                            <div class="card-img bg bg-img" data-bg-img=".img">
+                                <img src="http://assets.coolorize.com/homes/5-3/lg/florian-schmidinger-b_79nOqf95I-unsplash.jpg"
+                                    class="img" alt="Image" />
+                                <div class="overlay bg-dark position-absolute o-25 o-50-hover"></div>
+                            </div>
+                            <!-- /.card-img bg bg-img -->
+
+                            <div class="card-img-overlay d-flex flex-column px-0">
+                                <a href="http://html.coolorize.com/discoverize/default/listing-detail-1.html"
+                                    class="stretched-link"></a>
+
+                                <div class="overlay-top d-flex flex-row px-3">
+                                    <a href="http://html.coolorize.com/discoverize/default/listing-search-header.html"
+                                        class="position-relative zi-20 badge text-dark bg-white o-50 o-100-hover trans-base">Single-Family
+                                        Home</a>
+                                </div>
+                                <!-- /.overlay-top d-flex flex-row -->
+
+                                <div class="card-peek overlay-bottom position-absolute bottom-0 mb-3 px-3 w-100">
+                                    <div class="card-peek-show">
+                                        <p class="card-text mb-0 d-flex flex-row align-items-center w-100">
+                                            <a href="http://html.coolorize.com/discoverize/default/listing-detail-1.html"
+                                                class="fs-5 fw-bold trans-base text-white">$275,000</a>
+                                        </p>
+
+                                        <p class="card-text text-light mb-1 text-truncate mt-1">456 Park Avenue,
+                                            256A,
+                                            Westlake, NY 110000</p>
+
+                                        <p class="row gx-0 gx-md-2 text-light mb-2 text-truncate d-block">
+                                            <span class="col-auto">Beds: <strong>2</strong></span>
+                                            <span class="col-auto px-0 o-50">&bullet;</span>
+                                            <span class="col-auto">Baths: <strong>2</strong></span>
+                                            <span class="col-auto px-0 o-50">&bullet;</span>
+                                            <span class="col-auto">Sqft: <strong>5434</strong></span>
+                                        </p>
+                                    </div>
+
+                                    <p class="mb-0">
+                                        <a href="http://html.coolorize.com/discoverize/default/listing-detail-1.html"
+                                            class="btn btn-link btn-sm btn-more text-light text-uppercase fw-bold shadow-none o-75 o-100-hover p-0">View
+                                            Detail<i class="fas fa-long-arrow-alt-right"></i></a>
+                                    </p>
+                                </div>
+                                <!-- /.overlay-bottom mt-auto -->
+                            </div>
+                            <!-- /.card-img-overlay d-flex flex-column -->
+                        </div>
+                        <!-- /.card -->
+                    </div>
+                    <!-- /.swiper-slide w-330px h-330px pe-4 d-flex -->
+
+                    <div class="swiper-slide w-330px h-330px pe-4 d-flex">
+                        <div class="card shadow-sm shadow-hover trans-base zoom-bg-img o-hover-all">
+                            <div class="card-img bg bg-img" data-bg-img=".img">
+                                <img src="http://assets.coolorize.com/homes/5-3/lg/gabriel-WVT8Eck_3AQ-unsplash.jpg"
+                                    class="img" alt="Image" />
+                                <div class="overlay bg-dark position-absolute o-25 o-50-hover"></div>
+                            </div>
+                            <!-- /.card-img bg bg-img -->
+
+                            <div class="card-img-overlay d-flex flex-column px-0">
+                                <a href="http://html.coolorize.com/discoverize/default/listing-detail-1.html"
+                                    class="stretched-link"></a>
+
+                                <div class="overlay-top d-flex flex-row px-3">
+                                    <a href="http://html.coolorize.com/discoverize/default/listing-search-header.html"
+                                        class="position-relative zi-20 badge text-dark bg-white o-50 o-100-hover trans-base">Bungalow</a>
+                                </div>
+                                <!-- /.overlay-top d-flex flex-row -->
+
+                                <div class="card-peek overlay-bottom position-absolute bottom-0 mb-3 px-3 w-100">
+                                    <div class="card-peek-show">
+                                        <p class="card-text mb-0 d-flex flex-row align-items-center w-100">
+                                            <a href="http://html.coolorize.com/discoverize/default/listing-detail-1.html"
+                                                class="fs-5 fw-bold trans-base text-white">$254,000</a>
+                                        </p>
+
+                                        <p class="card-text text-light mb-1 text-truncate mt-1">283 Travus High, San
+                                            Jose, TX 110000</p>
+
+                                        <p class="row gx-0 gx-md-2 text-light mb-2 text-truncate d-block">
+                                            <span class="col-auto">Beds: <strong>2</strong></span>
+                                            <span class="col-auto px-0 o-50">&bullet;</span>
+                                            <span class="col-auto">Baths: <strong>2</strong></span>
+                                            <span class="col-auto px-0 o-50">&bullet;</span>
+                                            <span class="col-auto">Sqft: <strong>5434</strong></span>
+                                        </p>
+                                    </div>
+
+                                    <p class="mb-0">
+                                        <a href="http://html.coolorize.com/discoverize/default/listing-detail-1.html"
+                                            class="btn btn-link btn-sm btn-more text-light text-uppercase fw-bold shadow-none o-75 o-100-hover p-0">View
+                                            Detail<i class="fas fa-long-arrow-alt-right"></i></a>
+                                    </p>
+                                </div>
+                                <!-- /.overlay-bottom mt-auto -->
+                            </div>
+                            <!-- /.card-img-overlay d-flex flex-column -->
+                        </div>
+                        <!-- /.card -->
+                    </div>
+                    <!-- /.swiper-slide w-330px h-330px pe-4 d-flex -->
+
+                    <div class="swiper-slide w-330px h-330px pe-4 d-flex">
+                        <div class="card shadow-sm shadow-hover trans-base zoom-bg-img o-hover-all">
+                            <div class="card-img bg bg-img" data-bg-img=".img">
+                                <img src="http://assets.coolorize.com/homes/5-3/lg/jacques-bopp-wtzOhxEX4WU-unsplash.jpg"
+                                    class="img" alt="Image" />
+                                <div class="overlay bg-dark position-absolute o-25 o-50-hover"></div>
+                            </div>
+                            <!-- /.card-img bg bg-img -->
+
+                            <div class="card-img-overlay d-flex flex-column px-0">
+                                <a href="http://html.coolorize.com/discoverize/default/listing-detail-1.html"
+                                    class="stretched-link"></a>
+
+                                <div class="overlay-top d-flex flex-row px-3">
+                                    <a href="http://html.coolorize.com/discoverize/default/listing-search-header.html"
+                                        class="position-relative zi-20 badge text-dark bg-white o-50 o-100-hover trans-base">Bungalow</a>
+                                </div>
+                                <!-- /.overlay-top d-flex flex-row -->
+
+                                <div class="card-peek overlay-bottom position-absolute bottom-0 mb-3 px-3 w-100">
+                                    <div class="card-peek-show">
+                                        <p class="card-text mb-0 d-flex flex-row align-items-center w-100">
+                                            <a href="http://html.coolorize.com/discoverize/default/listing-detail-1.html"
+                                                class="fs-5 fw-bold trans-base text-white">$650,000</a>
+                                        </p>
+
+                                        <p class="card-text text-light mb-1 text-truncate mt-1">30 Beach Road, Port
+                                            Washington, NY 110000</p>
+
+                                        <p class="row gx-0 gx-md-2 text-light mb-2 text-truncate d-block">
+                                            <span class="col-auto">Beds: <strong>2</strong></span>
+                                            <span class="col-auto px-0 o-50">&bullet;</span>
+                                            <span class="col-auto">Baths: <strong>2</strong></span>
+                                            <span class="col-auto px-0 o-50">&bullet;</span>
+                                            <span class="col-auto">Sqft: <strong>5434</strong></span>
+                                        </p>
+                                    </div>
+
+                                    <p class="mb-0">
+                                        <a href="http://html.coolorize.com/discoverize/default/listing-detail-1.html"
+                                            class="btn btn-link btn-sm btn-more text-light text-uppercase fw-bold shadow-none o-75 o-100-hover p-0">View
+                                            Detail<i class="fas fa-long-arrow-alt-right"></i></a>
+                                    </p>
+                                </div>
+                                <!-- /.overlay-bottom mt-auto -->
+                            </div>
+                            <!-- /.card-img-overlay d-flex flex-column -->
+                        </div>
+                        <!-- /.card -->
+                    </div>
+                    <!-- /.swiper-slide w-330px h-330px pe-4 d-flex -->
+
+                    <div class="swiper-slide w-330px h-330px pe-4 d-flex">
+                        <div class="card shadow-sm shadow-hover trans-base zoom-bg-img o-hover-all">
+                            <div class="card-img bg bg-img" data-bg-img=".img">
+                                <img src="http://assets.coolorize.com/homes/5-3/lg/kevin-angelso-Vfq3hU_LyKc-unsplash.jpg"
+                                    class="img" alt="Image" />
+                                <div class="overlay bg-dark position-absolute o-25 o-50-hover"></div>
+                            </div>
+                            <!-- /.card-img bg bg-img -->
+
+                            <div class="card-img-overlay d-flex flex-column px-0">
+                                <a href="http://html.coolorize.com/discoverize/default/listing-detail-1.html"
+                                    class="stretched-link"></a>
+
+                                <div class="overlay-top d-flex flex-row px-3">
+                                    <a href="http://html.coolorize.com/discoverize/default/listing-search-header.html"
+                                        class="position-relative zi-20 badge text-dark bg-white o-50 o-100-hover trans-base">Single-Family
+                                        Home</a>
+                                </div>
+                                <!-- /.overlay-top d-flex flex-row -->
+
+                                <div class="card-peek overlay-bottom position-absolute bottom-0 mb-3 px-3 w-100">
+                                    <div class="card-peek-show">
+                                        <p class="card-text mb-0 d-flex flex-row align-items-center w-100">
+                                            <a href="http://html.coolorize.com/discoverize/default/listing-detail-1.html"
+                                                class="fs-5 fw-bold trans-base text-white">$150,000</a>
+                                        </p>
+
+                                        <p class="card-text text-light mb-1 text-truncate mt-1">70 Lambok Hill Road,
+                                            Port Washington, NY 110000</p>
+
+                                        <p class="row gx-0 gx-md-2 text-light mb-2 text-truncate d-block">
+                                            <span class="col-auto">Beds: <strong>2</strong></span>
+                                            <span class="col-auto px-0 o-50">&bullet;</span>
+                                            <span class="col-auto">Baths: <strong>2</strong></span>
+                                            <span class="col-auto px-0 o-50">&bullet;</span>
+                                            <span class="col-auto">Sqft: <strong>5434</strong></span>
+                                        </p>
+                                    </div>
+
+                                    <p class="mb-0">
+                                        <a href="http://html.coolorize.com/discoverize/default/listing-detail-1.html"
+                                            class="btn btn-link btn-sm btn-more text-light text-uppercase fw-bold shadow-none o-75 o-100-hover p-0">View
+                                            Detail<i class="fas fa-long-arrow-alt-right"></i></a>
+                                    </p>
+                                </div>
+                                <!-- /.overlay-bottom mt-auto -->
+                            </div>
+                            <!-- /.card-img-overlay d-flex flex-column -->
+                        </div>
+                        <!-- /.card -->
+                    </div>
+                    <!-- /.swiper-slide w-330px h-330px pe-4 d-flex -->
+
+                    <div class="swiper-slide w-330px h-330px pe-4 d-flex">
+                        <div class="card shadow-sm shadow-hover trans-base zoom-bg-img o-hover-all">
+                            <div class="card-img bg bg-img" data-bg-img=".img">
+                                <img src="http://assets.coolorize.com/homes/5-3/lg/pexels-binyamin-mellish-186077.jpg"
+                                    class="img" alt="Image" />
+                                <div class="overlay bg-dark position-absolute o-25 o-50-hover"></div>
+                            </div>
+                            <!-- /.card-img bg bg-img -->
+
+                            <div class="card-img-overlay d-flex flex-column px-0">
+                                <a href="http://html.coolorize.com/discoverize/default/listing-detail-1.html"
+                                    class="stretched-link"></a>
+
+                                <div class="overlay-top d-flex flex-row px-3">
+                                    <a href="http://html.coolorize.com/discoverize/default/listing-search-header.html"
+                                        class="position-relative zi-20 badge text-dark bg-white o-50 o-100-hover trans-base">Multi-Family
+                                        Home</a>
+                                </div>
+                                <!-- /.overlay-top d-flex flex-row -->
+
+                                <div class="card-peek overlay-bottom position-absolute bottom-0 mb-3 px-3 w-100">
+                                    <div class="card-peek-show">
+                                        <p class="card-text mb-0 d-flex flex-row align-items-center w-100">
+                                            <a href="http://html.coolorize.com/discoverize/default/listing-detail-1.html"
+                                                class="fs-5 fw-bold trans-base text-white">$386,000</a>
+                                        </p>
+
+                                        <p class="card-text text-light mb-1 text-truncate mt-1">70 Mogajaya Hill
+                                            Road,
+                                            Port Washington, NY 110000</p>
+
+                                        <p class="row gx-0 gx-md-2 text-light mb-2 text-truncate d-block">
+                                            <span class="col-auto">Beds: <strong>2</strong></span>
+                                            <span class="col-auto px-0 o-50">&bullet;</span>
+                                            <span class="col-auto">Baths: <strong>2</strong></span>
+                                            <span class="col-auto px-0 o-50">&bullet;</span>
+                                            <span class="col-auto">Sqft: <strong>5434</strong></span>
+                                        </p>
+                                    </div>
+
+                                    <p class="mb-0">
+                                        <a href="http://html.coolorize.com/discoverize/default/listing-detail-1.html"
+                                            class="btn btn-link btn-sm btn-more text-light text-uppercase fw-bold shadow-none o-75 o-100-hover p-0">View
+                                            Detail<i class="fas fa-long-arrow-alt-right"></i></a>
+                                    </p>
+                                </div>
+                                <!-- /.overlay-bottom mt-auto -->
+                            </div>
+                            <!-- /.card-img-overlay d-flex flex-column -->
+                        </div>
+                        <!-- /.card -->
+                    </div>
+                    <!-- /.swiper-slide w-330px h-330px pe-4 d-flex -->
+
+                    <div class="swiper-slide w-330px h-330px pe-4 d-flex">
+                        <div class="card shadow-sm shadow-hover trans-base zoom-bg-img o-hover-all">
+                            <div class="card-img bg bg-img" data-bg-img=".img">
+                                <img src="http://assets.coolorize.com/homes/5-3/lg/pexels-trygve-finkelsen-2893177.jpg"
+                                    class="img" alt="Image" />
+                                <div class="overlay bg-dark position-absolute o-25 o-50-hover"></div>
+                            </div>
+                            <!-- /.card-img bg bg-img -->
+
+                            <div class="card-img-overlay d-flex flex-column px-0">
+                                <a href="http://html.coolorize.com/discoverize/default/listing-detail-1.html"
+                                    class="stretched-link"></a>
+
+                                <div class="overlay-top d-flex flex-row px-3">
+                                    <a href="http://html.coolorize.com/discoverize/default/listing-search-header.html"
+                                        class="position-relative zi-20 badge text-dark bg-white o-50 o-100-hover trans-base">Multi-Family
+                                        Home</a>
+                                </div>
+                                <!-- /.overlay-top d-flex flex-row -->
+
+                                <div class="card-peek overlay-bottom position-absolute bottom-0 mb-3 px-3 w-100">
+                                    <div class="card-peek-show">
+                                        <p class="card-text mb-0 d-flex flex-row align-items-center w-100">
+                                            <a href="http://html.coolorize.com/discoverize/default/listing-detail-1.html"
+                                                class="fs-5 fw-bold trans-base text-white">$390,000</a>
+                                        </p>
+
+                                        <p class="card-text text-light mb-1 text-truncate mt-1">40 Sunburn Hill
+                                            Road,
+                                            Port Washington, NY 110000</p>
+
+                                        <p class="row gx-0 gx-md-2 text-light mb-2 text-truncate d-block">
+                                            <span class="col-auto">Beds: <strong>2</strong></span>
+                                            <span class="col-auto px-0 o-50">&bullet;</span>
+                                            <span class="col-auto">Baths: <strong>2</strong></span>
+                                            <span class="col-auto px-0 o-50">&bullet;</span>
+                                            <span class="col-auto">Sqft: <strong>5434</strong></span>
+                                        </p>
+                                    </div>
+
+                                    <p class="mb-0">
+                                        <a href="http://html.coolorize.com/discoverize/default/listing-detail-1.html"
+                                            class="btn btn-link btn-sm btn-more text-light text-uppercase fw-bold shadow-none o-75 o-100-hover p-0">View
+                                            Detail<i class="fas fa-long-arrow-alt-right"></i></a>
+                                    </p>
+                                </div>
+                                <!-- /.overlay-bottom mt-auto -->
+                            </div>
+                            <!-- /.card-img-overlay d-flex flex-column -->
+                        </div>
+                        <!-- /.card -->
+                    </div>
+                    <!-- /.swiper-slide w-330px h-330px pe-4 d-flex -->
+
+                    <div class="swiper-slide w-330px h-330px pe-4 d-flex">
+                        <div class="card shadow-sm shadow-hover trans-base zoom-bg-img o-hover-all">
+                            <div class="card-img bg bg-img" data-bg-img=".img">
+                                <img src="http://assets.coolorize.com/homes/5-3/lg/phil-hearing-IYfp2Ixe9nM-unsplash.jpg"
+                                    class="img" alt="Image" />
+                                <div class="overlay bg-dark position-absolute o-25 o-50-hover"></div>
+                            </div>
+                            <!-- /.card-img bg bg-img -->
+
+                            <div class="card-img-overlay d-flex flex-column px-0">
+                                <a href="http://html.coolorize.com/discoverize/default/listing-detail-1.html"
+                                    class="stretched-link"></a>
+
+                                <div class="overlay-top d-flex flex-row px-3">
+                                    <a href="http://html.coolorize.com/discoverize/default/listing-search-header.html"
+                                        class="position-relative zi-20 badge text-dark bg-white o-50 o-100-hover trans-base">Multi-Family
+                                        Home</a>
+                                </div>
+                                <!-- /.overlay-top d-flex flex-row -->
+
+                                <div class="card-peek overlay-bottom position-absolute bottom-0 mb-3 px-3 w-100">
+                                    <div class="card-peek-show">
+                                        <p class="card-text mb-0 d-flex flex-row align-items-center w-100">
+                                            <a href="http://html.coolorize.com/discoverize/default/listing-detail-1.html"
+                                                class="fs-5 fw-bold trans-base text-white">$385,000</a>
+                                        </p>
+
+                                        <p class="card-text text-light mb-1 text-truncate mt-1">50 Ground Hound
+                                            Road,
+                                            Port Washington, NY 110000</p>
+
+                                        <p class="row gx-0 gx-md-2 text-light mb-2 text-truncate d-block">
+                                            <span class="col-auto">Beds: <strong>2</strong></span>
+                                            <span class="col-auto px-0 o-50">&bullet;</span>
+                                            <span class="col-auto">Baths: <strong>2</strong></span>
+                                            <span class="col-auto px-0 o-50">&bullet;</span>
+                                            <span class="col-auto">Sqft: <strong>5434</strong></span>
+                                        </p>
+                                    </div>
+
+                                    <p class="mb-0">
+                                        <a href="http://html.coolorize.com/discoverize/default/listing-detail-1.html"
+                                            class="btn btn-link btn-sm btn-more text-light text-uppercase fw-bold shadow-none o-75 o-100-hover p-0">View
+                                            Detail<i class="fas fa-long-arrow-alt-right"></i></a>
+                                    </p>
+                                </div>
+                                <!-- /.overlay-bottom mt-auto -->
+                            </div>
+                            <!-- /.card-img-overlay d-flex flex-column -->
+                        </div>
+                        <!-- /.card -->
+                    </div>
+                    <!-- /.swiper-slide w-330px h-330px pe-4 d-flex -->
+
+                    <div class="swiper-slide w-330px h-330px pe-4 d-flex">
+                        <div class="card shadow-sm shadow-hover trans-base zoom-bg-img o-hover-all">
+                            <div class="card-img bg bg-img" data-bg-img=".img">
+                                <img src="http://assets.coolorize.com/homes/5-3/lg/pexels-binyamin-mellish-1396132.jpg"
+                                    class="img" alt="Image" />
+                                <div class="overlay bg-dark position-absolute o-25 o-50-hover"></div>
+                            </div>
+                            <!-- /.card-img bg bg-img -->
+
+                            <div class="card-img-overlay d-flex flex-column px-0">
+                                <a href="http://html.coolorize.com/discoverize/default/listing-detail-1.html"
+                                    class="stretched-link"></a>
+
+                                <div class="overlay-top d-flex flex-row px-3">
+                                    <a href="http://html.coolorize.com/discoverize/default/listing-search-header.html"
+                                        class="position-relative zi-20 badge text-dark bg-white o-50 o-100-hover trans-base">Single-Family
+                                        Home</a>
+                                </div>
+                                <!-- /.overlay-top d-flex flex-row -->
+
+                                <div class="card-peek overlay-bottom position-absolute bottom-0 mb-3 px-3 w-100">
+                                    <div class="card-peek-show">
+                                        <p class="card-text mb-0 d-flex flex-row align-items-center w-100">
+                                            <a href="http://html.coolorize.com/discoverize/default/listing-detail-1.html"
+                                                class="fs-5 fw-bold trans-base text-white">$275,000</a>
+                                        </p>
+
+                                        <p class="card-text text-light mb-1 text-truncate mt-1">456 Park Avenue,
+                                            256A,
+                                            Westlake, NY 110000</p>
+
+                                        <p class="row gx-0 gx-md-2 text-light mb-2 text-truncate d-block">
+                                            <span class="col-auto">Beds: <strong>2</strong></span>
+                                            <span class="col-auto px-0 o-50">&bullet;</span>
+                                            <span class="col-auto">Baths: <strong>2</strong></span>
+                                            <span class="col-auto px-0 o-50">&bullet;</span>
+                                            <span class="col-auto">Sqft: <strong>5434</strong></span>
+                                        </p>
+                                    </div>
+
+                                    <p class="mb-0">
+                                        <a href="http://html.coolorize.com/discoverize/default/listing-detail-1.html"
+                                            class="btn btn-link btn-sm btn-more text-light text-uppercase fw-bold shadow-none o-75 o-100-hover p-0">View
+                                            Detail<i class="fas fa-long-arrow-alt-right"></i></a>
+                                    </p>
+                                </div>
+                                <!-- /.overlay-bottom mt-auto -->
+                            </div>
+                            <!-- /.card-img-overlay d-flex flex-column -->
+                        </div>
+                        <!-- /.card -->
+                    </div>
+                    <!-- /.swiper-slide w-330px h-330px pe-4 d-flex -->
+                </div>
+                <!-- /.swiper-wrapper -->
+            </div>
+            <!-- /#listing-swiper-1-expand-swiper.swiper -->
+
+            <div class="swiper-navigation-container">
+                <a href="#listing-swiper-1-expand-swiper"
+                    class="swiper-button-next btn btn-primary btn-default shadow-none o-50 o-100-hover"><i
+                        class="d-inline-block fas fa-angle-right"></i></a>
+                <a href="#listing-swiper-1-expand-swiper"
+                    class="swiper-button-prev btn btn-primary btn-default shadow-none o-50 o-100-hover"><i
+                        class="d-inline-block fas fa-angle-left"></i></a>
+            </div>
+            <!-- /.swiper-navigation -->
+
+            <div class="swiper-pagination-container">
+                <div class="d-flex flex-row justify-content-start">
+                    <div data-swiper-id="#listing-swiper-1-expand-swiper" class="swiper-pagination w-auto bottom-0"
+                        data-swiper-pagination-limit="2"></div>
+
+                    <a href="http://html.coolorize.com/discoverize/default/listing-search-header.html"
+                        class="btn btn-link btn-sm btn-more text-uppercase fw-bold shadow-none o-50 o-100-hover ms-3 trans-base px-0">All
+                        Properties<i class="fas fa-long-arrow-alt-right"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- /.swiper-container with-pagination -->
+    </div>
+    <!-- /.container-xl position-relative -->
+</section>
+<!-- #listing-swiper-1-expand.section py-5 py-lg-6 -->
+>>>>>>> 66bb8e1c7b0a96334673e2efcf3482a676025e18
 
 <section id="searchbox-2" class="section bg-dark py-5 py-lg-7">
     <div class="bg bg-img position-absolute" data-bg-img=".img">
@@ -108,7 +840,8 @@
                     <div class="position-relative pt-4 px-4">
                         <h1 class="fs-3 mb-2 position-relative">Discover Your Dream House</h1>
 
-                        <p class="mb-4 text-secondary position-relative">Search and find home from our trusted sources.
+                        <p class="mb-4 text-secondary position-relative">Search and find home from our trusted
+                            sources.
                         </p>
 
                         <div class="mb-3 position-relative">
@@ -153,16 +886,19 @@
 
                                     <li><a class="dropdown-item small" href="#" data-value="4">Condominiums</a></li>
 
-                                    <li><a class="dropdown-item small" href="#" data-value="5">Co-op Properties</a></li>
+                                    <li><a class="dropdown-item small" href="#" data-value="5">Co-op Properties</a>
+                                    </li>
 
-                                    <li><a class="dropdown-item small" href="#" data-value="6">Farm and Ranch</a></li>
+                                    <li><a class="dropdown-item small" href="#" data-value="6">Farm and Ranch</a>
+                                    </li>
 
                                     <li><a class="dropdown-item small" href="#" data-value="7">Land</a></li>
 
                                     <li><a class="dropdown-item small" href="#" data-value="8">Multi Family Home</a>
                                     </li>
 
-                                    <li><a class="dropdown-item small" href="#" data-value="9">Single Family Home</a>
+                                    <li><a class="dropdown-item small" href="#" data-value="9">Single Family
+                                            Home</a>
                                     </li>
 
                                     <li><a class="dropdown-item small" href="#" data-value="10">Townhome</a></li>
@@ -572,6 +1308,7 @@
 <!-- #searchbox-2.section bg-dark py-5 py-lg-6 -->
 
 
+<<<<<<< HEAD
 <!-- #testimonials-swiper-1.section py-5 py-lg-6 -->
 
 
@@ -583,5 +1320,264 @@
 
 
 <!-- #types-swiper-3.section py-5 pt-lg-7 pb-lg-6 -->
+=======
+    <div class="container-xl position-relative">
+        <header class="section-header mb-5">
+            <h2 class="fs-3 section-title mb-3">Testimonios</h2>
+
+            <p class="leadmb-0 o-75">Lo que nuestra comunidad dice de nosotros</p>
+        </header>
+        <!-- /.section-header mb-5 -->
+    </div>
+    <!-- /.container-xl position-relative -->
+
+    <div class="swiper-container with-pagination">
+        <div id="testimonials-swiper-1-swiper" class="swiper" data-js-swiper="auto">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="container-xl position-relative">
+                        <div class="row testimonials g-4">
+                            <div class="col-12 col-md d-flex align-items-stretch">
+                                <figure class="card testimonial h-100 text-start bg-transparent mb-0">
+                                    <blockquote
+                                        class="blockquote card-body bg-white shadow-sm rounded d-flex flex-column px-lg-5">
+                                        <p class="fs-1 text-secondary o-25 mb-0"><i class="fas fa-quote-right"></i>
+                                        </p>
+                                        <p class="fs-6">Lorem ipsum, dolor sit amet consectetur, adipisicing elit
+                                            tenetur. Omnis unde totam minima hic in mollitia</p>
+                                        <p class="text-secondary text-decoration-none fs-sm mt-auto mb-3 o-75">
+                                            &mdash;<span class="fw-bold"> John Doe</span> - IT Profesional</p>
+                                        <div class="img px-3 px-lg-4">
+                                            <img src="../../web/img/LOGO02.png" class="img rounded-circle"
+                                                alt="Image" />
+                                        </div>
+                                    </blockquote>
+                                </figure>
+                                <!-- /.card -->
+                            </div>
+                            <!-- /.col-12 col-md d-flex align-items-stretch -->
+
+                            <div class="col-6 col-md d-flex align-items-stretch">
+                                <figure class="card testimonial h-100 text-start bg-transparent mb-0">
+                                    <blockquote
+                                        class="blockquote card-body bg-white shadow-sm rounded d-flex flex-column px-lg-5">
+                                        <p class="fs-1 text-secondary o-25 mb-0"><i class="fas fa-quote-right"></i>
+                                        </p>
+                                        <p class="fs-6">Omnis unde totam consequatur minima hic in mollitia lorem
+                                            ipsum,
+                                            dolor sit amet consectetur, adipisicing elit</p>
+                                        <p class="text-secondary text-decoration-none fs-sm mt-auto mb-3 o-75">
+                                            &mdash;<span class="fw-bold"> John Doe</span> - Sales Representative</p>
+                                        <div class="img px-3 px-lg-4">
+                                            <img src="../../web/img/LOGO02.png" class="img rounded-circle"
+                                                alt="Image" />
+                                        </div>
+                                    </blockquote>
+                                </figure>
+                                <!-- /.card -->
+                            </div>
+                            <!-- /.col-6 col-md d-flex align-items-stretch -->
+
+                            <div class="col-6 col-md d-flex align-items-stretch">
+                                <figure class="card testimonial h-100 text-start bg-transparent mb-0">
+                                    <blockquote
+                                        class="blockquote card-body bg-white shadow-sm rounded d-flex flex-column px-lg-5">
+                                        <p class="fs-1 text-secondary o-25 mb-0"><i class="fas fa-quote-right"></i>
+                                        </p>
+                                        <p class="fs-6">Veniam iste, vitae maiores. tenetur Quis voluptates
+                                            consequatur
+                                            unde culpa perspiciatis odit vero beatae</p>
+                                        <p class="text-secondary text-decoration-none fs-sm mt-auto mb-3 o-75">
+                                            &mdash;<span class="fw-bold"> John Doe</span> - Marketing Manager</p>
+                                        <div class="img px-3 px-lg-4">
+                                            <img src="../../web/img/LOGO02.png" class="img rounded-circle"
+                                                alt="Image" />
+                                        </div>
+                                    </blockquote>
+                                </figure>
+                                <!-- /.card -->
+                            </div>
+                            <!-- /.col-6 col-md d-flex align-items-stretch -->
+                        </div>
+                        <!-- /.row testimonials  -->
+                    </div>
+                    <!-- /.container-xl position-relative -->
+                </div>
+                <!-- /.swiper-slide -->
+
+                <div class="swiper-slide">
+                    <div class="container-xl position-relative">
+                        <div class="row testimonials g-4">
+                            <div class="col-12 col-md d-flex align-items-stretch">
+                                <figure class="card testimonial h-100 text-start bg-transparent mb-0">
+                                    <blockquote
+                                        class="blockquote card-body bg-white shadow-sm rounded d-flex flex-column px-lg-5">
+                                        <p class="fs-1 text-secondary o-25 mb-0"><i class="fas fa-quote-right"></i>
+                                        </p>
+                                        <p class="fs-6">Explicabo facere maxime fuga voluptates saepe veniam iste,
+                                            vitae
+                                            maiores. Quis voluptates consequatur</p>
+
+                                        <p class="text-secondary text-decoration-none fs-sm mt-auto mb-3 o-75">
+                                            &mdash;<span class="fw-bold"> John Doe</span> - General Manager</p>
+                                        <div class="img px-3 px-lg-4">
+                                            <img src="../../web/img/LOGO02.png" class="img rounded-circle"
+                                                alt="Image" />
+                                        </div>
+                                    </blockquote>
+                                </figure>
+                                <!-- /.card -->
+                            </div>
+                            <!-- /.col-12 col-md d-flex align-items-stretch -->
+
+                            <div class="col-6 col-md d-flex align-items-stretch">
+                                <figure class="card testimonial h-100 text-start bg-transparent mb-0">
+                                    <blockquote
+                                        class="blockquote card-body bg-white shadow-sm rounded d-flex flex-column px-lg-5">
+                                        <p class="fs-1 text-secondary o-25 mb-0"><i class="fas fa-quote-right"></i>
+                                        </p>
+                                        <p class="fs-6">Unde culpa perspiciatis odit vero beatae tenetur facere
+                                            tenetur
+                                            dolor sit amet consectetur adipisicing</p>
+                                        <p class="text-secondary text-decoration-none fs-sm mt-auto mb-3 o-75">
+                                            &mdash;<span class="fw-bold"> John Doe</span> - Freelancer</p>
+                                        <div class="img px-3 px-lg-4">
+                                            <img src="../../web/img/LOGO02.png" class="img rounded-circle"
+                                                alt="Image" />
+                                        </div>
+                                    </blockquote>
+                                </figure>
+                                <!-- /.card -->
+                            </div>
+                            <!-- /.col-6 col-md d-flex align-items-stretch -->
+
+                            <div class="col-6 col-md d-flex align-items-stretch">
+                                <figure class="card testimonial h-100 text-start bg-transparent mb-0">
+                                    <blockquote
+                                        class="blockquote card-body bg-white shadow-sm rounded d-flex flex-column px-lg-5">
+                                        <p class="fs-1 text-secondary o-25 mb-0"><i class="fas fa-quote-right"></i>
+                                        </p>
+                                        <p class="fs-6">Explicabo facere maxime fuga voluptates saepe tenetur veniam
+                                            iste, vitae maiores. Quis voluptates unde culpa</p>
+                                        <p class="text-secondary text-decoration-none fs-sm mt-auto mb-3 o-75">
+                                            &mdash;<span class="fw-bold"> John Doe</span> - Software Deveoloper</p>
+                                        <div class="img px-3 px-lg-4">
+                                            <img src="../../web/img/LOGO02.png" class="img rounded-circle"
+                                                alt="Image" />
+                                        </div>
+                                    </blockquote>
+                                </figure>
+                                <!-- /.card -->
+                            </div>
+                            <!-- /.col-6 col-md d-flex align-items-stretch -->
+                        </div>
+                        <!-- /.row testimonials  -->
+                    </div>
+                    <!-- /.container-xl position-relative -->
+                </div>
+                <!-- /.swiper-slide -->
+
+                <div class="swiper-slide">
+                    <div class="container-xl position-relative">
+                        <div class="row testimonials g-4">
+                            <div class="col-12 col-md d-flex align-items-stretch">
+                                <figure class="card testimonial h-100 text-start bg-transparent mb-0">
+                                    <blockquote
+                                        class="blockquote card-body bg-white shadow-sm rounded d-flex flex-column px-lg-5">
+                                        <p class="fs-1 text-secondary o-25 mb-0"><i class="fas fa-quote-right"></i>
+                                        </p>
+                                        <p class="fs-6">Maxime fuga voluptates saepe veniam iste, vitae maiores.
+                                            Quis
+                                            maxime voluptates consequatur unde culpa beatae</p>
+                                        <p class="text-secondary text-decoration-none fs-sm mt-auto mb-3 o-75">
+                                            &mdash;<span class="fw-bold"> John Doe</span> - Designer</p>
+                                        <div class="img px-3 px-lg-4">
+                                            <img src="../../web/img/LOGO02.png" class="img rounded-circle"
+                                                alt="Image" />
+                                        </div>
+                                    </blockquote>
+                                </figure>
+                                <!-- /.card -->
+                            </div>
+                            <!-- /.col-12 col-md d-flex align-items-stretch -->
+
+                            <div class="col-6 col-md d-flex align-items-stretch">
+                                <figure class="card testimonial h-100 text-start bg-transparent mb-0">
+                                    <blockquote
+                                        class="blockquote card-body bg-white shadow-sm rounded d-flex flex-column px-lg-5">
+                                        <p class="fs-1 text-secondary o-25 mb-0"><i class="fas fa-quote-right"></i>
+                                        </p>
+                                        <p class="fs-6">Perspiciatis odit vero beatae tenetur facere dolor sit amet
+                                            consectetur voluptates adipisicing elit animi</p>
+                                        <p class="text-secondary text-decoration-none fs-sm mt-auto mb-3 o-75">
+                                            &mdash;<span class="fw-bold"> John Doe</span> - Sales Manager</p>
+                                        <div class="img px-3 px-lg-4">
+                                            <img src="../../web/img/LOGO02.png" class="img rounded-circle"
+                                                alt="Image" />
+                                        </div>
+                                    </blockquote>
+                                </figure>
+                                <!-- /.card -->
+                            </div>
+                            <!-- /.col-6 col-md d-flex align-items-stretch -->
+
+                            <div class="col-6 col-md d-flex align-items-stretch">
+                                <figure class="card testimonial h-100 text-start bg-transparent mb-0">
+                                    <blockquote
+                                        class="blockquote card-body bg-white shadow-sm rounded d-flex flex-column px-lg-5">
+                                        <p class="fs-1 text-secondary o-25 mb-0"><i class="fas fa-quote-right"></i>
+                                        </p>
+                                        <p class="fs-6">Facere maxime fuga voluptates saepe veniam iste, Veniam
+                                            beatae
+                                            vitae maiores. Quis voluptates perspiciatis odit</p>
+                                        <p class="text-secondary text-decoration-none fs-sm mt-auto mb-3 o-75">
+                                            &mdash;<span class="fw-bold"> John Doe</span> - Country Manager</p>
+                                        <div class="img px-3 px-lg-4">
+                                            <img src="../../web/img/LOGO02.png" class="img rounded-circle"
+                                                alt="Image" />
+                                        </div>
+                                    </blockquote>
+                                </figure>
+                                <!-- /.card -->
+                            </div>
+                            <!-- /.col-6 col-md d-flex align-items-stretch -->
+                        </div>
+                        <!-- /.row testimonials  -->
+                    </div>
+                    <!-- /.container-xl position-relative -->
+                </div>
+                <!-- /.swiper-slide -->
+
+            </div>
+            <!-- /.swiper-wrapper -->
+        </div>
+        <!-- /#testimonials-swiper-1-swiper.swiper -->
+
+        <div class="swiper-navigation-container container-xl">
+            <a href="#testimonials-swiper-1-swiper"
+                class="swiper-button-next btn btn-primary btn-default shadow-none o-50 o-100-hover"><i
+                    class="d-inline-block fas fa-angle-right"></i></a>
+            <a href="#testimonials-swiper-1-swiper"
+                class="swiper-button-prev btn btn-primary btn-default shadow-none o-50 o-100-hover"><i
+                    class="d-inline-block fas fa-angle-left"></i></a>
+        </div>
+        <!-- /.swiper-navigation container-xl -->
+
+        <div class="swiper-pagination-container container-xl">
+            <div class="d-flex flex-row justify-content-start">
+                <div data-swiper-id="#testimonials-swiper-1-swiper" class="swiper-pagination w-auto bottom-0"
+                    data-swiper-pagination-limit="2"></div>
+
+                <a href="#"
+                    class="btn btn-link btn-sm btn-more text-uppercase fw-bold shadow-none o-50 o-100-hover ms-3 trans-base px-0">Todos
+                    los testimonios<i class="fas fa-long-arrow-alt-right"></i></a>
+            </div>
+        </div>
+    </div>
+    <!-- /.swiper-container with-pagination -->
+</section>
+<!-- #testimonials-swiper-1.section py-5 py-lg-6 -->
+
+>>>>>>> 66bb8e1c7b0a96334673e2efcf3482a676025e18
 
 <?php require_once("../Includes/footer.php");?>
