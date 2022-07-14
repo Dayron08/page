@@ -17,12 +17,13 @@
     
 
         <main>
-
+            <div class="text-center textmenu">
+            <h3><a  href="../views/home.php">Menu principal</a></h3>
+            </div>
       
            <!--Cuadros de iniciar sesion o registrarse-->
             <div class="contenedor__principal">
-                <h2>IGLESIA PACTO DE VIDA</h2>
-                
+                <h2>IGLESIA PACTO DE VIDA</h2><br>
                 <div class="contenedor__inferior">
                     <div class="contenedor__inferior-login">
                         <h3>Si tienes una cuenta:</h3>
