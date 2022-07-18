@@ -24,8 +24,11 @@
     <!-- CSS bundled with Bootstrap-CSS -->
     <link rel="stylesheet" type="text/css" href="../../web/css/discoverize-default.css" />
     <link rel="stylesheet" type="text/css" href="../../web/css/style.css" />
-
+    <script src="../../web/js/script.js"></script>
     <title>Iglesia Pacto de Vida</title>
+    <style>
+
+    </style>
 </head>
 
 <body>

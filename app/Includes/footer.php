@@ -374,7 +374,8 @@
 
 <!-- Discoverize JS -->
 <script src="../../web/js/discoverize.js"></script>
-<script src="../../web/js//carousel.js"></script>
+<script src="../../web/js/carousel.js"></script>
+<script src="../../web/js/script.js"></script>
 </body>
 
 </html>
