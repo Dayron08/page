@@ -6,7 +6,7 @@
     <div class="container-xl position-relative">
         <div id="searchbox-hero-2Searchbox" class="searchbox position-relative mt-1 px-4 px-lg-5 h-330px h-lg-480px">
             <div class="bg bg-img position-absolute shadow rounded-3" data-bg-img=".img">
-                <img src="../../web/img/bee-balogun-azEIxYe2usQ-unsplash.jpg" class="img" alt="Image" />
+                <img src="../../web/img/about_us_wallpaper.jpg" class="img" alt="Image" />
                 <div class="overlay bg-dark position-absolute o-50"></div>
             </div>
             <!-- /.bg bg-img position-absolute shadow rounded-3 -->
