@@ -182,82 +182,97 @@ CALL P_ELIMINAR_IMAGEN('1');
 --ACTUALIZAR (NO SE)
 
 ---------------------------------------------------------PERSONA_CONTACTO()-------------------------------------------------------------------------
----------------------------------------------------------PERSONA_UBICACION()-------------------------------------------------------------------------
 ---------------------------------------------------------PERSONA_TESTIMONIOS(Mariay Randall)-------------------------------------------------------------------------
----------------------------------------------------------PASSWORD_PERSONA()-------------------------------------------------------------------------
----------------------------------------------------------HISTORICO_PASSWORD()-------------------------------------------------------------------------
 ---------------------------------------------------------CONSULTAS(Josue y Dayron)-------------------------------------------------------------------------
 
+---------------------------------------------------------EVENTOS------------------------------------------------------------------------------
+--INSERTAR
+INSERT INTO `eventos`(`ID_EVENT`, `ENCARGADO`, `NOMBRE_EVENTO`, `IMG_PATH`, `DSC_EVENTO`, `FECHA_EVENTO`, `FECHA_ACTUAL`) 
+VALUES (NULL,'JUAN PEREZ','APOYO A LOS NIÑOS','../../','REGALOS PARA LOS NIÑOS','2022-07-11',current_timestamp());
 
----------------------------------------------------------EVENTOS()------------------------------------------------------------------------------
+--VER PERSONA
+DELIMITER $$
+USE PacVi $$
+CREATE OR REPLACE PROCEDURE P_VER_EVENTOS()
+    BEGIN
+        SELECT ENCARGADO,NOMBRE_EVENTO,DSC_EVENTO,FECHA_EVENTO
+        FROM EVENTOS 
+        WHERE FECHA_EVENTO >=  FECHA_ACTUAL
+        ORDER BY  FECHA_EVENTO ;
+    END$$
+DELIMITER;
+--PRUEBA EXITOSA
+CALL P_VER_EVENTOS();
+SELECT * FROM EVENTOS;
+
 --INSERTAR
 DELIMITER $$
 USE PacVi $$
 CREATE OR REPLACE PROCEDURE P_INSERTAR_EVENTO
     (
         IN P_ID_EVENT INT,
-        IN P_NOMBRE VARCHAR(100),
+        IN P_ENCARGADO VARCHAR(200),
+        IN P_NOMBRE_EVENTO VARCHAR(100),
         IN P_IMG_PATH VARCHAR(500),
         IN P_DSC_EVENTO VARCHAR(100),
         IN P_FECHA_EVENTO DATE,
-        IN P_FECHA_ACTUAL DATE,
-        IN P_ENCARGADO VARCHAR(50)
+        IN P_FECHA_ACTUAL DATE
     )
     BEGIN
             INSERT INTO EVENTOS     
             (
-                ID_EVENT, 
-                NOMBRE, 
+                ID_EVENT,
+                ENCARGADO, 
+                NOMBRE_EVENTO, 
                 IMG_PATH, 
                 DSC_EVENTO, 
                 FECHA_EVENTO, 
-                FECHA_ACTUAL,
-                ENCARGADO
+                FECHA_ACTUAL
             )
             VALUES 
             (
-                NULL, 
-                P_NOMBRE, 
+                NULL,
+                P_ENCARGADO, 
+                P_NOMBRE_EVENTO, 
                 P_IMG_PATH, 
                 P_DSC_EVENTO, 
                 P_FECHA_EVENTO, 
-                current_timestamp(),
-                P_ENCARGADO
+                current_timestamp()
             );
             COMMIT;
     END$$
-DELIMITER ;
---PRUEBA EXITOSA
-CALL P_INSERTAR_EVENTO(NULL, 'ORACION NIÑOS X4', '../../', 'ORACION POR TODOS LAS PERSONAS', '2022-07-13', current_date(), 'PER_1');
+DELIMITER;
 
---ACTUALIZAR
+CALL P_INSERTAR_EVENTO(NULL,'CARLOS', 'ORACION NIÑOS X2', '../../', 'ORACION POR TODOS LAS PERSONAS', '2022-07-13', current_date());
+
+--ACTUALIZAR 
 DELIMITER $$
 USE PacVi $$
 CREATE OR REPLACE PROCEDURE P_ACTUALIZAR_EVENTO
     (
         IN P_ID_EVENT INT,
-        IN P_NOMBRE VARCHAR(100),
-        IN P_IMG_PATH VARCHAR(500) ,
-        IN P_DSC_EVENTO VARCHAR(100) ,
-        IN P_FECHA_EVENTO DATE ,
-        IN P_ENCARGADO VARCHAR(100) 
+        IN P_ENCARGADO VARCHAR(200),
+        IN P_NOMBRE_EVENTO VARCHAR(100),
+        IN P_IMG_PATH VARCHAR(500),
+        IN P_DSC_EVENTO VARCHAR(100),
+        IN P_FECHA_EVENTO DATE
     )
     BEGIN 
         UPDATE EVENTOS SET 
-            NOMBRE = P_NOMBRE ,
+            ENCARGADO = P_ENCARGADO ,
+            NOMBRE_EVENTO = P_NOMBRE_EVENTO ,
             IMG_PATH = P_IMG_PATH ,
-            DSC_EVENTO = P_DSC_EVENTO ,
-            FECHA_EVENTO = P_FECHA_EVENTO,
-            ENCARGADO = P_ENCARGADO
+            DSC_EVENTO = P_DSC_EVENTO,
+            FECHA_EVENTO = P_FECHA_EVENTO
         WHERE 
             ID_EVENT = P_ID_EVENT;
         COMMIT;
     END$$
 DELIMITER;
---PRUEBA EXITOSA
-CALL P_ACTUALIZAR_EVENTO(1,'ORACION NIÑOS X4','../../','ORACION POR TODOS LAS PERSONASSS','2022-07-13','PER_1');
+CALL P_ACTUALIZAR_EVENTO(2,'CARLOS DANIEL', 'ORACION NIÑOS X2', '../../', 'ORACION POR TODOS LAS PERSONAS', '2022-07-18');
 
---ELIMINAR
+-- ELIMINAR 
+
 DELIMITER $$
 USE PacVi $$
 CREATE OR REPLACE PROCEDURE P_ELIMINAR_EVENTO
@@ -270,20 +285,4 @@ CREATE OR REPLACE PROCEDURE P_ELIMINAR_EVENTO
     END$$
 DELIMITER ;
 --PRUEBA EXITOSA
-CALL P_ELIMINAR_EVENTO(5);
-
---VER EVENTOS
-DELIMITER $$
-USE PacVi $$
-CREATE OR REPLACE PROCEDURE P_VER_EVENTOS()
-    BEGIN
-        SELECT P.NOMBRE AS ENCARGADO_DEL_EVENTO,P.APPELLIDOS,E.NOMBRE,E.DSC_EVENTO,E.FECHA_EVENTO 
-        FROM EVENTOS E
-            INNER JOIN PERSONA P ON (P.ID_REGISTRO_PERSONA = E.ENCARGADO)
-        WHERE FECHA_EVENTO >=  FECHA_ACTUAL
-        ORDER BY  E.FECHA_EVENTO ;
-    END$$
-DELIMITER;
---PRUEBA EXITOSA
-CALL P_VER_EVENTOS();
-SELECT * FROM EVENTOS;
+CALL P_ELIMINAR_EVENTO(2);
