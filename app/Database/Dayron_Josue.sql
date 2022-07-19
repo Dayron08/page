@@ -328,3 +328,32 @@ CREATE OR REPLACE PROCEDURE P_INSERTAR_CONSULTA
     END$$
 DELIMITER ;
 CALL P_INSERTAR_CONSULTA('Dayron', 'Luna Gamboa', 'ldayron500@gmail.com', 'Me podrían brindar información sobre los horarios de las reuniones, saludos.');
+
+---------------------ELIMINAR----------------------------
+
+DELIMITER $$
+USE Pacvi $$
+CREATE OR REPLACE PROCEDURE P_ELIMINAR_CONSULTA
+    (
+        IN P_ID_CONSULTAS INT
+    )
+    BEGIN
+        DELETE FROM CONSULTAS where
+            ID_CONSULTAS = P_ID_CONSULTAS;
+    END$$
+DELIMITER ;
+
+CALL P_ELIMINAR_CONSULTA (1);
+
+----------------------------------VER CONSULTAS-------
+DELIMITER $$
+USE PacVi $$
+CREATE OR REPLACE PROCEDURE P_VER_CONSULTAS()
+    BEGIN
+        SELECT NOMBRE,APPELLIDOS,CORREO,DSC_ASUNTO
+        FROM CONSULTAS 
+        ORDER BY  NOMBRE ;
+    END$$
+DELIMITER;
+
+CALL P_VER_CONSULTAS();
