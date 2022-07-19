@@ -293,30 +293,36 @@ CREATE TABLE CONSULTAS(
     NOMBRE VARCHAR(30),
     APPELLIDOS VARCHAR(30),
     CORREO VARCHAR(50),
-    DSC_ASUNTO VARCHAR(300)
+    DSC_ASUNTO VARCHAR(500)
 );
 
 DELIMITER $$
 USE PacVi $$
-CREATE OR REPLACE PROCEDURE P_INSERTAR_GALERIA
+CREATE OR REPLACE PROCEDURE P_INSERTAR_CONSULTA 
     (
 
-        IN P_IMG_PATH VARCHAR(300),
-        IN P_FECHA DATE
+        IN P_NOMBRE VARCHAR(30),
+        IN P_APELLIDOS VARCHAR(30),
+        IN P_CORREO VARCHAR(50),
+        IN P_DSC_ASUNTO VARCHAR(500)
 
     )
     BEGIN
-            INSERT INTO GALERIA     
+            INSERT INTO CONSULTAS     
             (
-
-                IMG_PATH, 
-                FECHA 
+                ID_CONSULTAS,
+                NOMBRE,
+                APPELLIDOS,
+                CORREO,
+                DSC_ASUNTO
             )
             VALUES 
             (
-
-                P_IMG_PATH,
-                P_FECHA
+                NULL,
+                P_NOMBRE,
+                P_APPELLIDOS,
+                P_CORREO,
+                P_DSC_ASUNTO
             );
             COMMIT;
     END$$
