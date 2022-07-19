@@ -124,7 +124,7 @@
                     <div class="swiper-slide w-330px h-330px pe-4 d-flex">
                         <div class="card shadow-sm shadow-hover trans-base zoom-bg-img o-hover-all">
                             <div class="card-img bg bg-img" data-bg-img=".img">
-                                <img src="http://assets.coolorize.com/homes/5-3/lg/aubrey-odom-ITzfgP77DTg-unsplash.jpg"
+                                <img src="../../web/img/church/image_01.jpg"
                                     class="img" alt="Image" />
                                 <div class="overlay bg-dark position-absolute o-25 o-50-hover"></div>
                             </div>
@@ -151,47 +151,21 @@
                     <div class="swiper-slide w-330px h-330px pe-4 d-flex">
                         <div class="card shadow-sm shadow-hover trans-base zoom-bg-img o-hover-all">
                             <div class="card-img bg bg-img" data-bg-img=".img">
-                                <img src="http://assets.coolorize.com/homes/5-3/lg/chi-m-R1uiDu8vBh0-unsplash.jpg"
+                                <img src="../../web/img/church/image_02.jpg"
                                     class="img" alt="Image" />
                                 <div class="overlay bg-dark position-absolute o-25 o-50-hover"></div>
                             </div>
                             <!-- /.card-img bg bg-img -->
 
                             <div class="card-img-overlay d-flex flex-column px-0">
-                                <a href="http://html.coolorize.com/discoverize/default/listing-detail-1.html"
-                                    class="stretched-link"></a>
-
-                                <div class="overlay-top d-flex flex-row px-3">
-                                    <a href="http://html.coolorize.com/discoverize/default/listing-search-header.html"
-                                        class="position-relative zi-20 badge text-dark bg-white o-50 o-100-hover trans-base">Multi-Family
-                                        Home</a>
-                                </div>
                                 <!-- /.overlay-top d-flex flex-row -->
 
                                 <div class="card-peek overlay-bottom position-absolute bottom-0 mb-3 px-3 w-100">
                                     <div class="card-peek-show">
-                                        <p class="card-text mb-0 d-flex flex-row align-items-center w-100">
-                                            <a href="http://html.coolorize.com/discoverize/default/listing-detail-1.html"
-                                                class="fs-5 fw-bold trans-base text-white">$225,000</a>
-                                        </p>
-
-                                        <p class="card-text text-light mb-1 text-truncate mt-1">878 Auburn City, Port
-                                            Washington, CA 110000</p>
-
-                                        <p class="row gx-0 gx-md-2 text-light mb-2 text-truncate d-block">
-                                            <span class="col-auto">Beds: <strong>2</strong></span>
-                                            <span class="col-auto px-0 o-50">&bullet;</span>
-                                            <span class="col-auto">Baths: <strong>2</strong></span>
-                                            <span class="col-auto px-0 o-50">&bullet;</span>
-                                            <span class="col-auto">Sqft: <strong>5434</strong></span>
-                                        </p>
+                                        <p class="card-text text-light mb-1 text-truncate mt-1">70 Sagamoga Hill Road,
+                                            San Jose, NY 110000</p>
                                     </div>
 
-                                    <p class="mb-0">
-                                        <a href="http://html.coolorize.com/discoverize/default/listing-detail-1.html"
-                                            class="btn btn-link btn-sm btn-more text-light text-uppercase fw-bold shadow-none o-75 o-100-hover p-0">View
-                                            Detail<i class="fas fa-long-arrow-alt-right"></i></a>
-                                    </p>
                                 </div>
                                 <!-- /.overlay-bottom mt-auto -->
                             </div>
@@ -204,47 +178,21 @@
                     <div class="swiper-slide w-330px h-330px pe-4 d-flex">
                         <div class="card shadow-sm shadow-hover trans-base zoom-bg-img o-hover-all">
                             <div class="card-img bg bg-img" data-bg-img=".img">
-                                <img src="http://assets.coolorize.com/homes/5-3/lg/florian-schmidinger-b_79nOqf95I-unsplash.jpg"
+                                <img src="../../web/img/church/image_01.jpg"
                                     class="img" alt="Image" />
                                 <div class="overlay bg-dark position-absolute o-25 o-50-hover"></div>
                             </div>
                             <!-- /.card-img bg bg-img -->
 
                             <div class="card-img-overlay d-flex flex-column px-0">
-                                <a href="http://html.coolorize.com/discoverize/default/listing-detail-1.html"
-                                    class="stretched-link"></a>
-
-                                <div class="overlay-top d-flex flex-row px-3">
-                                    <a href="http://html.coolorize.com/discoverize/default/listing-search-header.html"
-                                        class="position-relative zi-20 badge text-dark bg-white o-50 o-100-hover trans-base">Single-Family
-                                        Home</a>
-                                </div>
                                 <!-- /.overlay-top d-flex flex-row -->
 
                                 <div class="card-peek overlay-bottom position-absolute bottom-0 mb-3 px-3 w-100">
                                     <div class="card-peek-show">
-                                        <p class="card-text mb-0 d-flex flex-row align-items-center w-100">
-                                            <a href="http://html.coolorize.com/discoverize/default/listing-detail-1.html"
-                                                class="fs-5 fw-bold trans-base text-white">$275,000</a>
-                                        </p>
-
-                                        <p class="card-text text-light mb-1 text-truncate mt-1">456 Park Avenue, 256A,
-                                            Westlake, NY 110000</p>
-
-                                        <p class="row gx-0 gx-md-2 text-light mb-2 text-truncate d-block">
-                                            <span class="col-auto">Beds: <strong>2</strong></span>
-                                            <span class="col-auto px-0 o-50">&bullet;</span>
-                                            <span class="col-auto">Baths: <strong>2</strong></span>
-                                            <span class="col-auto px-0 o-50">&bullet;</span>
-                                            <span class="col-auto">Sqft: <strong>5434</strong></span>
-                                        </p>
+                                        <p class="card-text text-light mb-1 text-truncate mt-1">70 Sagamoga Hill Road,
+                                            San Jose, NY 110000</p>
                                     </div>
 
-                                    <p class="mb-0">
-                                        <a href="http://html.coolorize.com/discoverize/default/listing-detail-1.html"
-                                            class="btn btn-link btn-sm btn-more text-light text-uppercase fw-bold shadow-none o-75 o-100-hover p-0">View
-                                            Detail<i class="fas fa-long-arrow-alt-right"></i></a>
-                                    </p>
                                 </div>
                                 <!-- /.overlay-bottom mt-auto -->
                             </div>
@@ -257,46 +205,21 @@
                     <div class="swiper-slide w-330px h-330px pe-4 d-flex">
                         <div class="card shadow-sm shadow-hover trans-base zoom-bg-img o-hover-all">
                             <div class="card-img bg bg-img" data-bg-img=".img">
-                                <img src="http://assets.coolorize.com/homes/5-3/lg/gabriel-WVT8Eck_3AQ-unsplash.jpg"
+                                <img src="../../web/img/church/image_01.jpg"
                                     class="img" alt="Image" />
                                 <div class="overlay bg-dark position-absolute o-25 o-50-hover"></div>
                             </div>
                             <!-- /.card-img bg bg-img -->
 
                             <div class="card-img-overlay d-flex flex-column px-0">
-                                <a href="http://html.coolorize.com/discoverize/default/listing-detail-1.html"
-                                    class="stretched-link"></a>
-
-                                <div class="overlay-top d-flex flex-row px-3">
-                                    <a href="http://html.coolorize.com/discoverize/default/listing-search-header.html"
-                                        class="position-relative zi-20 badge text-dark bg-white o-50 o-100-hover trans-base">Bungalow</a>
-                                </div>
                                 <!-- /.overlay-top d-flex flex-row -->
 
                                 <div class="card-peek overlay-bottom position-absolute bottom-0 mb-3 px-3 w-100">
                                     <div class="card-peek-show">
-                                        <p class="card-text mb-0 d-flex flex-row align-items-center w-100">
-                                            <a href="http://html.coolorize.com/discoverize/default/listing-detail-1.html"
-                                                class="fs-5 fw-bold trans-base text-white">$254,000</a>
-                                        </p>
-
-                                        <p class="card-text text-light mb-1 text-truncate mt-1">283 Travus High, San
-                                            Jose, TX 110000</p>
-
-                                        <p class="row gx-0 gx-md-2 text-light mb-2 text-truncate d-block">
-                                            <span class="col-auto">Beds: <strong>2</strong></span>
-                                            <span class="col-auto px-0 o-50">&bullet;</span>
-                                            <span class="col-auto">Baths: <strong>2</strong></span>
-                                            <span class="col-auto px-0 o-50">&bullet;</span>
-                                            <span class="col-auto">Sqft: <strong>5434</strong></span>
-                                        </p>
+                                        <p class="card-text text-light mb-1 text-truncate mt-1">70 Sagamoga Hill Road,
+                                            San Jose, NY 110000</p>
                                     </div>
 
-                                    <p class="mb-0">
-                                        <a href="http://html.coolorize.com/discoverize/default/listing-detail-1.html"
-                                            class="btn btn-link btn-sm btn-more text-light text-uppercase fw-bold shadow-none o-75 o-100-hover p-0">View
-                                            Detail<i class="fas fa-long-arrow-alt-right"></i></a>
-                                    </p>
                                 </div>
                                 <!-- /.overlay-bottom mt-auto -->
                             </div>
@@ -309,46 +232,21 @@
                     <div class="swiper-slide w-330px h-330px pe-4 d-flex">
                         <div class="card shadow-sm shadow-hover trans-base zoom-bg-img o-hover-all">
                             <div class="card-img bg bg-img" data-bg-img=".img">
-                                <img src="http://assets.coolorize.com/homes/5-3/lg/jacques-bopp-wtzOhxEX4WU-unsplash.jpg"
+                                <img src="../../web/img/church/image_01.jpg"
                                     class="img" alt="Image" />
                                 <div class="overlay bg-dark position-absolute o-25 o-50-hover"></div>
                             </div>
                             <!-- /.card-img bg bg-img -->
 
                             <div class="card-img-overlay d-flex flex-column px-0">
-                                <a href="http://html.coolorize.com/discoverize/default/listing-detail-1.html"
-                                    class="stretched-link"></a>
-
-                                <div class="overlay-top d-flex flex-row px-3">
-                                    <a href="http://html.coolorize.com/discoverize/default/listing-search-header.html"
-                                        class="position-relative zi-20 badge text-dark bg-white o-50 o-100-hover trans-base">Bungalow</a>
-                                </div>
                                 <!-- /.overlay-top d-flex flex-row -->
 
                                 <div class="card-peek overlay-bottom position-absolute bottom-0 mb-3 px-3 w-100">
                                     <div class="card-peek-show">
-                                        <p class="card-text mb-0 d-flex flex-row align-items-center w-100">
-                                            <a href="http://html.coolorize.com/discoverize/default/listing-detail-1.html"
-                                                class="fs-5 fw-bold trans-base text-white">$650,000</a>
-                                        </p>
-
-                                        <p class="card-text text-light mb-1 text-truncate mt-1">30 Beach Road, Port
-                                            Washington, NY 110000</p>
-
-                                        <p class="row gx-0 gx-md-2 text-light mb-2 text-truncate d-block">
-                                            <span class="col-auto">Beds: <strong>2</strong></span>
-                                            <span class="col-auto px-0 o-50">&bullet;</span>
-                                            <span class="col-auto">Baths: <strong>2</strong></span>
-                                            <span class="col-auto px-0 o-50">&bullet;</span>
-                                            <span class="col-auto">Sqft: <strong>5434</strong></span>
-                                        </p>
+                                        <p class="card-text text-light mb-1 text-truncate mt-1">70 Sagamoga Hill Road,
+                                            San Jose, NY 110000</p>
                                     </div>
 
-                                    <p class="mb-0">
-                                        <a href="http://html.coolorize.com/discoverize/default/listing-detail-1.html"
-                                            class="btn btn-link btn-sm btn-more text-light text-uppercase fw-bold shadow-none o-75 o-100-hover p-0">View
-                                            Detail<i class="fas fa-long-arrow-alt-right"></i></a>
-                                    </p>
                                 </div>
                                 <!-- /.overlay-bottom mt-auto -->
                             </div>
@@ -361,47 +259,21 @@
                     <div class="swiper-slide w-330px h-330px pe-4 d-flex">
                         <div class="card shadow-sm shadow-hover trans-base zoom-bg-img o-hover-all">
                             <div class="card-img bg bg-img" data-bg-img=".img">
-                                <img src="http://assets.coolorize.com/homes/5-3/lg/kevin-angelso-Vfq3hU_LyKc-unsplash.jpg"
+                                <img src="../../web/img/church/image_01.jpg"
                                     class="img" alt="Image" />
                                 <div class="overlay bg-dark position-absolute o-25 o-50-hover"></div>
                             </div>
                             <!-- /.card-img bg bg-img -->
 
                             <div class="card-img-overlay d-flex flex-column px-0">
-                                <a href="http://html.coolorize.com/discoverize/default/listing-detail-1.html"
-                                    class="stretched-link"></a>
-
-                                <div class="overlay-top d-flex flex-row px-3">
-                                    <a href="http://html.coolorize.com/discoverize/default/listing-search-header.html"
-                                        class="position-relative zi-20 badge text-dark bg-white o-50 o-100-hover trans-base">Single-Family
-                                        Home</a>
-                                </div>
                                 <!-- /.overlay-top d-flex flex-row -->
 
                                 <div class="card-peek overlay-bottom position-absolute bottom-0 mb-3 px-3 w-100">
                                     <div class="card-peek-show">
-                                        <p class="card-text mb-0 d-flex flex-row align-items-center w-100">
-                                            <a href="http://html.coolorize.com/discoverize/default/listing-detail-1.html"
-                                                class="fs-5 fw-bold trans-base text-white">$150,000</a>
-                                        </p>
-
-                                        <p class="card-text text-light mb-1 text-truncate mt-1">70 Lambok Hill Road,
-                                            Port Washington, NY 110000</p>
-
-                                        <p class="row gx-0 gx-md-2 text-light mb-2 text-truncate d-block">
-                                            <span class="col-auto">Beds: <strong>2</strong></span>
-                                            <span class="col-auto px-0 o-50">&bullet;</span>
-                                            <span class="col-auto">Baths: <strong>2</strong></span>
-                                            <span class="col-auto px-0 o-50">&bullet;</span>
-                                            <span class="col-auto">Sqft: <strong>5434</strong></span>
-                                        </p>
+                                        <p class="card-text text-light mb-1 text-truncate mt-1">70 Sagamoga Hill Road,
+                                            San Jose, NY 110000</p>
                                     </div>
 
-                                    <p class="mb-0">
-                                        <a href="http://html.coolorize.com/discoverize/default/listing-detail-1.html"
-                                            class="btn btn-link btn-sm btn-more text-light text-uppercase fw-bold shadow-none o-75 o-100-hover p-0">View
-                                            Detail<i class="fas fa-long-arrow-alt-right"></i></a>
-                                    </p>
                                 </div>
                                 <!-- /.overlay-bottom mt-auto -->
                             </div>
@@ -414,47 +286,21 @@
                     <div class="swiper-slide w-330px h-330px pe-4 d-flex">
                         <div class="card shadow-sm shadow-hover trans-base zoom-bg-img o-hover-all">
                             <div class="card-img bg bg-img" data-bg-img=".img">
-                                <img src="http://assets.coolorize.com/homes/5-3/lg/pexels-binyamin-mellish-186077.jpg"
+                                <img src="../../web/img/church/image_02.jpg"
                                     class="img" alt="Image" />
                                 <div class="overlay bg-dark position-absolute o-25 o-50-hover"></div>
                             </div>
                             <!-- /.card-img bg bg-img -->
 
                             <div class="card-img-overlay d-flex flex-column px-0">
-                                <a href="http://html.coolorize.com/discoverize/default/listing-detail-1.html"
-                                    class="stretched-link"></a>
-
-                                <div class="overlay-top d-flex flex-row px-3">
-                                    <a href="http://html.coolorize.com/discoverize/default/listing-search-header.html"
-                                        class="position-relative zi-20 badge text-dark bg-white o-50 o-100-hover trans-base">Multi-Family
-                                        Home</a>
-                                </div>
                                 <!-- /.overlay-top d-flex flex-row -->
 
                                 <div class="card-peek overlay-bottom position-absolute bottom-0 mb-3 px-3 w-100">
                                     <div class="card-peek-show">
-                                        <p class="card-text mb-0 d-flex flex-row align-items-center w-100">
-                                            <a href="http://html.coolorize.com/discoverize/default/listing-detail-1.html"
-                                                class="fs-5 fw-bold trans-base text-white">$386,000</a>
-                                        </p>
-
-                                        <p class="card-text text-light mb-1 text-truncate mt-1">70 Mogajaya Hill Road,
-                                            Port Washington, NY 110000</p>
-
-                                        <p class="row gx-0 gx-md-2 text-light mb-2 text-truncate d-block">
-                                            <span class="col-auto">Beds: <strong>2</strong></span>
-                                            <span class="col-auto px-0 o-50">&bullet;</span>
-                                            <span class="col-auto">Baths: <strong>2</strong></span>
-                                            <span class="col-auto px-0 o-50">&bullet;</span>
-                                            <span class="col-auto">Sqft: <strong>5434</strong></span>
-                                        </p>
+                                        <p class="card-text text-light mb-1 text-truncate mt-1">70 Sagamoga Hill Road,
+                                            San Jose, NY 110000</p>
                                     </div>
 
-                                    <p class="mb-0">
-                                        <a href="http://html.coolorize.com/discoverize/default/listing-detail-1.html"
-                                            class="btn btn-link btn-sm btn-more text-light text-uppercase fw-bold shadow-none o-75 o-100-hover p-0">View
-                                            Detail<i class="fas fa-long-arrow-alt-right"></i></a>
-                                    </p>
                                 </div>
                                 <!-- /.overlay-bottom mt-auto -->
                             </div>
@@ -464,164 +310,6 @@
                     </div>
                     <!-- /.swiper-slide w-330px h-330px pe-4 d-flex -->
 
-                    <div class="swiper-slide w-330px h-330px pe-4 d-flex">
-                        <div class="card shadow-sm shadow-hover trans-base zoom-bg-img o-hover-all">
-                            <div class="card-img bg bg-img" data-bg-img=".img">
-                                <img src="http://assets.coolorize.com/homes/5-3/lg/pexels-trygve-finkelsen-2893177.jpg"
-                                    class="img" alt="Image" />
-                                <div class="overlay bg-dark position-absolute o-25 o-50-hover"></div>
-                            </div>
-                            <!-- /.card-img bg bg-img -->
-
-                            <div class="card-img-overlay d-flex flex-column px-0">
-                                <a href="http://html.coolorize.com/discoverize/default/listing-detail-1.html"
-                                    class="stretched-link"></a>
-
-                                <div class="overlay-top d-flex flex-row px-3">
-                                    <a href="http://html.coolorize.com/discoverize/default/listing-search-header.html"
-                                        class="position-relative zi-20 badge text-dark bg-white o-50 o-100-hover trans-base">Multi-Family
-                                        Home</a>
-                                </div>
-                                <!-- /.overlay-top d-flex flex-row -->
-
-                                <div class="card-peek overlay-bottom position-absolute bottom-0 mb-3 px-3 w-100">
-                                    <div class="card-peek-show">
-                                        <p class="card-text mb-0 d-flex flex-row align-items-center w-100">
-                                            <a href="http://html.coolorize.com/discoverize/default/listing-detail-1.html"
-                                                class="fs-5 fw-bold trans-base text-white">$390,000</a>
-                                        </p>
-
-                                        <p class="card-text text-light mb-1 text-truncate mt-1">40 Sunburn Hill Road,
-                                            Port Washington, NY 110000</p>
-
-                                        <p class="row gx-0 gx-md-2 text-light mb-2 text-truncate d-block">
-                                            <span class="col-auto">Beds: <strong>2</strong></span>
-                                            <span class="col-auto px-0 o-50">&bullet;</span>
-                                            <span class="col-auto">Baths: <strong>2</strong></span>
-                                            <span class="col-auto px-0 o-50">&bullet;</span>
-                                            <span class="col-auto">Sqft: <strong>5434</strong></span>
-                                        </p>
-                                    </div>
-
-                                    <p class="mb-0">
-                                        <a href="http://html.coolorize.com/discoverize/default/listing-detail-1.html"
-                                            class="btn btn-link btn-sm btn-more text-light text-uppercase fw-bold shadow-none o-75 o-100-hover p-0">View
-                                            Detail<i class="fas fa-long-arrow-alt-right"></i></a>
-                                    </p>
-                                </div>
-                                <!-- /.overlay-bottom mt-auto -->
-                            </div>
-                            <!-- /.card-img-overlay d-flex flex-column -->
-                        </div>
-                        <!-- /.card -->
-                    </div>
-                    <!-- /.swiper-slide w-330px h-330px pe-4 d-flex -->
-
-                    <div class="swiper-slide w-330px h-330px pe-4 d-flex">
-                        <div class="card shadow-sm shadow-hover trans-base zoom-bg-img o-hover-all">
-                            <div class="card-img bg bg-img" data-bg-img=".img">
-                                <img src="http://assets.coolorize.com/homes/5-3/lg/phil-hearing-IYfp2Ixe9nM-unsplash.jpg"
-                                    class="img" alt="Image" />
-                                <div class="overlay bg-dark position-absolute o-25 o-50-hover"></div>
-                            </div>
-                            <!-- /.card-img bg bg-img -->
-
-                            <div class="card-img-overlay d-flex flex-column px-0">
-                                <a href="http://html.coolorize.com/discoverize/default/listing-detail-1.html"
-                                    class="stretched-link"></a>
-
-                                <div class="overlay-top d-flex flex-row px-3">
-                                    <a href="http://html.coolorize.com/discoverize/default/listing-search-header.html"
-                                        class="position-relative zi-20 badge text-dark bg-white o-50 o-100-hover trans-base">Multi-Family
-                                        Home</a>
-                                </div>
-                                <!-- /.overlay-top d-flex flex-row -->
-
-                                <div class="card-peek overlay-bottom position-absolute bottom-0 mb-3 px-3 w-100">
-                                    <div class="card-peek-show">
-                                        <p class="card-text mb-0 d-flex flex-row align-items-center w-100">
-                                            <a href="http://html.coolorize.com/discoverize/default/listing-detail-1.html"
-                                                class="fs-5 fw-bold trans-base text-white">$385,000</a>
-                                        </p>
-
-                                        <p class="card-text text-light mb-1 text-truncate mt-1">50 Ground Hound Road,
-                                            Port Washington, NY 110000</p>
-
-                                        <p class="row gx-0 gx-md-2 text-light mb-2 text-truncate d-block">
-                                            <span class="col-auto">Beds: <strong>2</strong></span>
-                                            <span class="col-auto px-0 o-50">&bullet;</span>
-                                            <span class="col-auto">Baths: <strong>2</strong></span>
-                                            <span class="col-auto px-0 o-50">&bullet;</span>
-                                            <span class="col-auto">Sqft: <strong>5434</strong></span>
-                                        </p>
-                                    </div>
-
-                                    <p class="mb-0">
-                                        <a href="http://html.coolorize.com/discoverize/default/listing-detail-1.html"
-                                            class="btn btn-link btn-sm btn-more text-light text-uppercase fw-bold shadow-none o-75 o-100-hover p-0">View
-                                            Detail<i class="fas fa-long-arrow-alt-right"></i></a>
-                                    </p>
-                                </div>
-                                <!-- /.overlay-bottom mt-auto -->
-                            </div>
-                            <!-- /.card-img-overlay d-flex flex-column -->
-                        </div>
-                        <!-- /.card -->
-                    </div>
-                    <!-- /.swiper-slide w-330px h-330px pe-4 d-flex -->
-
-                    <div class="swiper-slide w-330px h-330px pe-4 d-flex">
-                        <div class="card shadow-sm shadow-hover trans-base zoom-bg-img o-hover-all">
-                            <div class="card-img bg bg-img" data-bg-img=".img">
-                                <img src="http://assets.coolorize.com/homes/5-3/lg/pexels-binyamin-mellish-1396132.jpg"
-                                    class="img" alt="Image" />
-                                <div class="overlay bg-dark position-absolute o-25 o-50-hover"></div>
-                            </div>
-                            <!-- /.card-img bg bg-img -->
-
-                            <div class="card-img-overlay d-flex flex-column px-0">
-                                <a href="http://html.coolorize.com/discoverize/default/listing-detail-1.html"
-                                    class="stretched-link"></a>
-
-                                <div class="overlay-top d-flex flex-row px-3">
-                                    <a href="http://html.coolorize.com/discoverize/default/listing-search-header.html"
-                                        class="position-relative zi-20 badge text-dark bg-white o-50 o-100-hover trans-base">Single-Family
-                                        Home</a>
-                                </div>
-                                <!-- /.overlay-top d-flex flex-row -->
-
-                                <div class="card-peek overlay-bottom position-absolute bottom-0 mb-3 px-3 w-100">
-                                    <div class="card-peek-show">
-                                        <p class="card-text mb-0 d-flex flex-row align-items-center w-100">
-                                            <a href="http://html.coolorize.com/discoverize/default/listing-detail-1.html"
-                                                class="fs-5 fw-bold trans-base text-white">$275,000</a>
-                                        </p>
-
-                                        <p class="card-text text-light mb-1 text-truncate mt-1">456 Park Avenue, 256A,
-                                            Westlake, NY 110000</p>
-
-                                        <p class="row gx-0 gx-md-2 text-light mb-2 text-truncate d-block">
-                                            <span class="col-auto">Beds: <strong>2</strong></span>
-                                            <span class="col-auto px-0 o-50">&bullet;</span>
-                                            <span class="col-auto">Baths: <strong>2</strong></span>
-                                            <span class="col-auto px-0 o-50">&bullet;</span>
-                                            <span class="col-auto">Sqft: <strong>5434</strong></span>
-                                        </p>
-                                    </div>
-
-                                    <p class="mb-0">
-                                        <a href="http://html.coolorize.com/discoverize/default/listing-detail-1.html"
-                                            class="btn btn-link btn-sm btn-more text-light text-uppercase fw-bold shadow-none o-75 o-100-hover p-0">View
-                                            Detail<i class="fas fa-long-arrow-alt-right"></i></a>
-                                    </p>
-                                </div>
-                                <!-- /.overlay-bottom mt-auto -->
-                            </div>
-                            <!-- /.card-img-overlay d-flex flex-column -->
-                        </div>
-                        <!-- /.card -->
-                    </div>
-                    <!-- /.swiper-slide w-330px h-330px pe-4 d-flex -->
                 </div>
                 <!-- /.swiper-wrapper -->
             </div>
