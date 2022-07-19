@@ -183,7 +183,7 @@ CALL P_ELIMINAR_IMAGEN('1');
 
 ---------------------------------------------------------PERSONA_CONTACTO()-------------------------------------------------------------------------
 ---------------------------------------------------------PERSONA_TESTIMONIOS(Mariay Randall)-------------------------------------------------------------------------
----------------------------------------------------------CONSULTAS(Josue y Dayron)-------------------------------------------------------------------------
+
 
 ---------------------------------------------------------EVENTOS------------------------------------------------------------------------------
 --INSERTAR
@@ -286,3 +286,29 @@ CREATE OR REPLACE PROCEDURE P_ELIMINAR_EVENTO
 DELIMITER ;
 --PRUEBA EXITOSA
 CALL P_ELIMINAR_EVENTO(2);
+---------------------------------------------------------CONSULTAS(Josue y Dayron)-------------------------------------------------------------------------
+DELIMITER $$
+USE PacVi $$
+CREATE OR REPLACE PROCEDURE P_INSERTAR_GALERIA
+    (
+
+        IN P_IMG_PATH VARCHAR(300),
+        IN P_FECHA DATE
+
+    )
+    BEGIN
+            INSERT INTO GALERIA     
+            (
+
+                IMG_PATH, 
+                FECHA 
+            )
+            VALUES 
+            (
+
+                P_IMG_PATH,
+                P_FECHA
+            );
+            COMMIT;
+    END$$
+DELIMITER ;
