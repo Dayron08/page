@@ -123,13 +123,14 @@
         <header class="section-header mb-5">
             <h2 class="fs-3 section-title mb-3">Galer&iacute;a de im&aacute;genes</h2>
 
-            <p class="leadmb-0 o-75">Best properties handpicked professionally by our expert</p>
+            <p class="leadmb-0 o-75">Conoce nuestra Iglesia</p>
         </header>
         <!-- /.section-header mb-5 -->
 
         <div class="swiper-container with-pagination">
             <div id="listing-swiper-1-expand-swiper" class="swiper expand-w" data-js-swiper="auto">
                 <div class="swiper-wrapper">
+
                     <div class="swiper-slide w-330px h-330px pe-4 d-flex">
                         <div class="card shadow-sm shadow-hover trans-base zoom-bg-img o-hover-all">
                             <div class="card-img bg bg-img" data-bg-img=".img">
@@ -140,39 +141,14 @@
                             <!-- /.card-img bg bg-img -->
 
                             <div class="card-img-overlay d-flex flex-column px-0">
-                                <a href="http://html.coolorize.com/discoverize/default/listing-detail-1.html"
-                                    class="stretched-link"></a>
-
-                                <div class="overlay-top d-flex flex-row px-3">
-                                    <a href="http://html.coolorize.com/discoverize/default/listing-search-header.html"
-                                        class="position-relative zi-20 badge text-dark bg-white o-50 o-100-hover trans-base">Apartments</a>
-                                </div>
                                 <!-- /.overlay-top d-flex flex-row -->
 
                                 <div class="card-peek overlay-bottom position-absolute bottom-0 mb-3 px-3 w-100">
                                     <div class="card-peek-show">
-                                        <p class="card-text mb-0 d-flex flex-row align-items-center w-100">
-                                            <a href="http://html.coolorize.com/discoverize/default/listing-detail-1.html"
-                                                class="fs-5 fw-bold trans-base text-white">$255,000</a>
-                                        </p>
-
                                         <p class="card-text text-light mb-1 text-truncate mt-1">70 Sagamoga Hill Road,
                                             San Jose, NY 110000</p>
-
-                                        <p class="row gx-0 gx-md-2 text-light mb-2 text-truncate d-block">
-                                            <span class="col-auto">Beds: <strong>2</strong></span>
-                                            <span class="col-auto px-0 o-50">&bullet;</span>
-                                            <span class="col-auto">Baths: <strong>2</strong></span>
-                                            <span class="col-auto px-0 o-50">&bullet;</span>
-                                            <span class="col-auto">Sqft: <strong>5434</strong></span>
-                                        </p>
                                     </div>
 
-                                    <p class="mb-0">
-                                        <a href="http://html.coolorize.com/discoverize/default/listing-detail-1.html"
-                                            class="btn btn-link btn-sm btn-more text-light text-uppercase fw-bold shadow-none o-75 o-100-hover p-0">View
-                                            Detail<i class="fas fa-long-arrow-alt-right"></i></a>
-                                    </p>
                                 </div>
                                 <!-- /.overlay-bottom mt-auto -->
                             </div>
