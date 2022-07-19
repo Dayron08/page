@@ -184,6 +184,7 @@ CALL P_ELIMINAR_IMAGEN('1');
 ---------------------------------------------------------PERSONA_CONTACTO()-------------------------------------------------------------------------
 ---------------------------------------------------------PERSONA_TESTIMONIOS(Mariay Randall)-------------------------------------------------------------------------
 
+Holaaaaa
 DELIMITER $$
 USE PacVi $$
 CREATE OR REPLACE PROCEDURE P_VER_PERSONA_TESTIMONIO()
