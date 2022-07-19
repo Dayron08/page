@@ -88,7 +88,7 @@
             </div>
             <!-- /.col-12 col-md-3 d-flex align-items-stretch -->
 
-            <iframe width="100" height="500" src="https://www.youtube.com/embed/Lo3RbQw1ics"
+            <iframe width="100" height="500" src="https://www.youtube.com/embed/IjYcHbYnDmA"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
