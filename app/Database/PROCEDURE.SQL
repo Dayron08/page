@@ -55,7 +55,7 @@ CREATE OR REPLACE PROCEDURE P_INSERTAR_DATOS_PERSONA
     END$$
 DELIMITER ;
 --PRUEBA DE INSERCCION,EXITOSA
-CALL P_INSERTAR_DATOS_PERSONA('PER_1','RANDALL','GUZMAN QUIROS','1999/09/27','M','1','HOLA','ran@gmail.com','83195333');
+CALL P_INSERTAR_DATOS_PERSONA('305200304','RANDALL','GUZMAN QUIROS','1999/09/27','M','1','HOLA','ran@gmail.com','83195333');
 
 ----------------ACTUALIZAR  LISTO
 DELIMITER $$
@@ -181,98 +181,75 @@ CALL P_ELIMINAR_IMAGEN('1');
 
 --ACTUALIZAR (NO SE)
 
----------------------------------------------------------PERSONA_CONTACTO()-------------------------------------------------------------------------
+
 ---------------------------------------------------------PERSONA_TESTIMONIOS(Mariay Randall)-------------------------------------------------------------------------
 
-Holaaaaa
-DELIMITER $$
-USE PacVi $$
-CREATE OR REPLACE PROCEDURE P_VER_PERSONA_TESTIMONIO()
-    BEGIN
-        SELECT
-         
-               PT.DSC_TESTIMONIO, 
-               P.NOMBRE,
-               P.APPELLIDOS
-            
-        FROM PERSONA_TESTIMONIOS PT 
-        INNER JOIN PERSONA P ON (P.ID_REGISTRO_PERSONA = PT.ID_REGISTRO_PERSONA); 
-    END$$
-DELIMITER;
-
-CALL P_VER_PERSONA_TESTIMONIO();
-
-DELIMITER $$
-USE PacVi $$
-CREATE OR REPLACE PROCEDURE P_INSERTAR_PERSONA_TESTIMONIO
-    (
-        -- PERSONA TESTIMONIO
-        IN P_DSC_TESTIMONIO VARCHAR(500),
-        IN P_ID_REGISTRO_PERSONA VARCHAR(50)
-    
-    )
-
-    BEGIN
-            INSERT INTO PERSONA_TESTIMONIOS    
-            (
-                ID_TESTI,  
-                DSC_TESTIMONIO, 
-                ID_REGISTRO_PERSONA
-            )
-            VALUES 
-            (
-                null,  
-                P_DSC_TESTIMONIO, 
-                P_ID_REGISTRO_PERSONA
-            );
-           
-            COMMIT;
-    END$$
-DELIMITER ;
-
-
-DELIMITER $$
-USE PacVi $$
-CREATE OR REPLACE PROCEDURE P_ELIMINAR_PERSONA_TESTIMONIO
-    (
-        IN P_ID_TESTI INT
-    )
-    BEGIN
-        DELETE FROM PERSONA_TESTIMONIOS where
-            ID_TESTI = P_ID_TESTI;
-    END$$
-DELIMITER ;
-
-
-DELIMITER $$
-USE PacVi $$
-CREATE OR REPLACE PROCEDURE P_ACTUALIZAR_PERSONA_TESTIMONIO
-    (
-        IN P_ID_TESTI INT,
-        IN P_DSC_TESTIMONIO VARCHAR(500)
-    )
-    BEGIN 
-        UPDATE PERSONA_TESTIMONIOS SET 
-            
-           DSC_TESTIMONIO= P_DSC_TESTIMONIO
-
-
-        WHERE 
-            ID_TESTI = P_ID_TESTI;
-        COMMIT;
-    END$$
-DELIMITER;
-
-
-
-DROP PROCEDURE P_ACTUALIZAR_PERSONA_TESTIMONIO;
-
-CALL P_ACTUALIZAR_PERSONA_TESTIMONIO( 2 ,'HOLA');
 
 
 
 ---------------------------------------------------------CONSULTAS(Josue y Dayron)-------------------------------------------------------------------------
+-------INSERTAR-
+DELIMITER $$
+USE Pacvi $$ 
+CREATE OR REPLACE PROCEDURE P_INSERTAR_CONSULTA 
+    (
 
+        IN P_NOMBRE VARCHAR(30),
+        IN P_APPELLIDOS VARCHAR(30),
+        IN P_CORREO VARCHAR(50),
+        IN P_DSC_ASUNTO VARCHAR(500)
+
+    )
+    BEGIN
+            INSERT INTO CONSULTAS     
+            (
+                ID_CONSULTAS,
+                NOMBRE,
+                APPELLIDOS,
+                CORREO,
+                DSC_ASUNTO
+            )
+            VALUES 
+            (
+                NULL,
+                P_NOMBRE,
+                P_APPELLIDOS,
+                P_CORREO,
+                P_DSC_ASUNTO
+            );
+            COMMIT;
+    END$$
+DELIMITER ;
+CALL P_INSERTAR_CONSULTA('Dayron', 'Luna Gamboa', 'ldayron500@gmail.com', 'Me podrían brindar información sobre los horarios de las reuniones, saludos.');
+
+-----ELIMINAR-
+
+DELIMITER $$
+USE Pacvi $$
+CREATE OR REPLACE PROCEDURE P_ELIMINAR_CONSULTA
+    (
+        IN P_ID_CONSULTAS INT
+    )
+    BEGIN
+        DELETE FROM CONSULTAS where
+            ID_CONSULTAS = P_ID_CONSULTAS;
+    END$$
+DELIMITER ;
+
+CALL P_ELIMINAR_CONSULTA (1);
+
+---VER CONSULTAS
+DELIMITER $$
+USE PacVi $$
+CREATE OR REPLACE PROCEDURE P_VER_CONSULTAS()
+    BEGIN
+        SELECT NOMBRE,APPELLIDOS,CORREO,DSC_ASUNTO
+        FROM CONSULTAS 
+        ORDER BY  NOMBRE ;
+    END$$
+DELIMITER;
+
+CALL P_VER_CONSULTAS();
 ---------------------------------------------------------EVENTOS------------------------------------------------------------------------------
 --INSERTAR
 INSERT INTO `eventos`(`ID_EVENT`, `ENCARGADO`, `NOMBRE_EVENTO`, `IMG_PATH`, `DSC_EVENTO`, `FECHA_EVENTO`, `FECHA_ACTUAL`) 
@@ -298,7 +275,6 @@ DELIMITER $$
 USE PacVi $$
 CREATE OR REPLACE PROCEDURE P_INSERTAR_EVENTO
     (
-        IN P_ID_EVENT INT,
         IN P_ENCARGADO VARCHAR(200),
         IN P_NOMBRE_EVENTO VARCHAR(100),
         IN P_IMG_PATH VARCHAR(500),
@@ -331,7 +307,7 @@ CREATE OR REPLACE PROCEDURE P_INSERTAR_EVENTO
     END$$
 DELIMITER;
 
-CALL P_INSERTAR_EVENTO(NULL,'CARLOS', 'ORACION NIÑOS X2', '../../', 'ORACION POR TODOS LAS PERSONAS', '2022-07-13', current_date());
+CALL P_INSERTAR_EVENTO('JELTY', 'ORACION NIÑOS X2', '../../', 'ORACION POR TODOS LAS PERSONAS', '2022-07-13', current_date());
 
 --ACTUALIZAR 
 DELIMITER $$
@@ -360,7 +336,6 @@ DELIMITER;
 CALL P_ACTUALIZAR_EVENTO(2,'CARLOS DANIEL', 'ORACION NIÑOS X2', '../../', 'ORACION POR TODOS LAS PERSONAS', '2022-07-18');
 
 -- ELIMINAR 
-
 DELIMITER $$
 USE PacVi $$
 CREATE OR REPLACE PROCEDURE P_ELIMINAR_EVENTO
