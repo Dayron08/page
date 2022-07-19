@@ -613,7 +613,7 @@
 
     <div class="container-xl position-relative">
         <header class="section-header mb-5">
-            <h2 class="fs-3 section-title mb-3">Galer&iacute;a de im&aacute;genes</h2>
+            <h2 class="fs-3 section-title mb-3">Galer&iacute;a de <strong>im&aacute;genes</strong></h2>
 
             <p class="leadmb-0 o-75">Conoce nuestra Iglesia</p>
         </header>
@@ -623,7 +623,7 @@
             <div id="listing-swiper-1-expand-swiper" class="swiper expand-w" data-js-swiper="auto">
                 <div class="swiper-wrapper">
 
-                    <div class="swiper-slide w-330px h-330px pe-4 d-flex">
+                <div class="swiper-slide w-330px h-330px pe-4 d-flex">
                         <div class="card shadow-sm shadow-hover trans-base zoom-bg-img o-hover-all">
                             <div class="card-img bg bg-img" data-bg-img=".img">
                                 <img src="../../web/img/church/image_01.jpg"
@@ -631,24 +631,10 @@
                                 <div class="overlay bg-dark position-absolute o-25 o-50-hover"></div>
                             </div>
                             <!-- /.card-img bg bg-img -->
-
-                            <div class="card-img-overlay d-flex flex-column px-0">
-                                <!-- /.overlay-top d-flex flex-row -->
-
-                                <div class="card-peek overlay-bottom position-absolute bottom-0 mb-3 px-3 w-100">
-                                    <div class="card-peek-show">
-                                        <p class="card-text text-light mb-1 text-truncate mt-1">70 Sagamoga Hill Road,
-                                            San Jose, NY 110000</p>
-                                    </div>
-
-                                </div>
-                                <!-- /.overlay-bottom mt-auto -->
-                            </div>
-                            <!-- /.card-img-overlay d-flex flex-column -->
+                            
                         </div>
                         <!-- /.card -->
                     </div>
-                    <!-- /.swiper-slide w-330px h-330px pe-4 d-flex -->
 
                     <div class="swiper-slide w-330px h-330px pe-4 d-flex">
                         <div class="card shadow-sm shadow-hover trans-base zoom-bg-img o-hover-all">
@@ -658,24 +644,10 @@
                                 <div class="overlay bg-dark position-absolute o-25 o-50-hover"></div>
                             </div>
                             <!-- /.card-img bg bg-img -->
-
-                            <div class="card-img-overlay d-flex flex-column px-0">
-                                <!-- /.overlay-top d-flex flex-row -->
-
-                                <div class="card-peek overlay-bottom position-absolute bottom-0 mb-3 px-3 w-100">
-                                    <div class="card-peek-show">
-                                        <p class="card-text text-light mb-1 text-truncate mt-1">70 Sagamoga Hill Road,
-                                            San Jose, NY 110000</p>
-                                    </div>
-
-                                </div>
-                                <!-- /.overlay-bottom mt-auto -->
-                            </div>
-                            <!-- /.card-img-overlay d-flex flex-column -->
+                            
                         </div>
                         <!-- /.card -->
                     </div>
-                    <!-- /.swiper-slide w-330px h-330px pe-4 d-flex -->
 
                     <div class="swiper-slide w-330px h-330px pe-4 d-flex">
                         <div class="card shadow-sm shadow-hover trans-base zoom-bg-img o-hover-all">
@@ -685,105 +657,10 @@
                                 <div class="overlay bg-dark position-absolute o-25 o-50-hover"></div>
                             </div>
                             <!-- /.card-img bg bg-img -->
-
-                            <div class="card-img-overlay d-flex flex-column px-0">
-                                <!-- /.overlay-top d-flex flex-row -->
-
-                                <div class="card-peek overlay-bottom position-absolute bottom-0 mb-3 px-3 w-100">
-                                    <div class="card-peek-show">
-                                        <p class="card-text text-light mb-1 text-truncate mt-1">70 Sagamoga Hill Road,
-                                            San Jose, NY 110000</p>
-                                    </div>
-
-                                </div>
-                                <!-- /.overlay-bottom mt-auto -->
-                            </div>
-                            <!-- /.card-img-overlay d-flex flex-column -->
+                            
                         </div>
                         <!-- /.card -->
                     </div>
-                    <!-- /.swiper-slide w-330px h-330px pe-4 d-flex -->
-
-                    <div class="swiper-slide w-330px h-330px pe-4 d-flex">
-                        <div class="card shadow-sm shadow-hover trans-base zoom-bg-img o-hover-all">
-                            <div class="card-img bg bg-img" data-bg-img=".img">
-                                <img src="../../web/img/church/image_01.jpg"
-                                    class="img" alt="Image" />
-                                <div class="overlay bg-dark position-absolute o-25 o-50-hover"></div>
-                            </div>
-                            <!-- /.card-img bg bg-img -->
-
-                            <div class="card-img-overlay d-flex flex-column px-0">
-                                <!-- /.overlay-top d-flex flex-row -->
-
-                                <div class="card-peek overlay-bottom position-absolute bottom-0 mb-3 px-3 w-100">
-                                    <div class="card-peek-show">
-                                        <p class="card-text text-light mb-1 text-truncate mt-1">70 Sagamoga Hill Road,
-                                            San Jose, NY 110000</p>
-                                    </div>
-
-                                </div>
-                                <!-- /.overlay-bottom mt-auto -->
-                            </div>
-                            <!-- /.card-img-overlay d-flex flex-column -->
-                        </div>
-                        <!-- /.card -->
-                    </div>
-                    <!-- /.swiper-slide w-330px h-330px pe-4 d-flex -->
-
-                    <div class="swiper-slide w-330px h-330px pe-4 d-flex">
-                        <div class="card shadow-sm shadow-hover trans-base zoom-bg-img o-hover-all">
-                            <div class="card-img bg bg-img" data-bg-img=".img">
-                                <img src="../../web/img/church/image_01.jpg"
-                                    class="img" alt="Image" />
-                                <div class="overlay bg-dark position-absolute o-25 o-50-hover"></div>
-                            </div>
-                            <!-- /.card-img bg bg-img -->
-
-                            <div class="card-img-overlay d-flex flex-column px-0">
-                                <!-- /.overlay-top d-flex flex-row -->
-
-                                <div class="card-peek overlay-bottom position-absolute bottom-0 mb-3 px-3 w-100">
-                                    <div class="card-peek-show">
-                                        <p class="card-text text-light mb-1 text-truncate mt-1">70 Sagamoga Hill Road,
-                                            San Jose, NY 110000</p>
-                                    </div>
-
-                                </div>
-                                <!-- /.overlay-bottom mt-auto -->
-                            </div>
-                            <!-- /.card-img-overlay d-flex flex-column -->
-                        </div>
-                        <!-- /.card -->
-                    </div>
-                    <!-- /.swiper-slide w-330px h-330px pe-4 d-flex -->
-
-                    <div class="swiper-slide w-330px h-330px pe-4 d-flex">
-                        <div class="card shadow-sm shadow-hover trans-base zoom-bg-img o-hover-all">
-                            <div class="card-img bg bg-img" data-bg-img=".img">
-                                <img src="../../web/img/church/image_01.jpg"
-                                    class="img" alt="Image" />
-                                <div class="overlay bg-dark position-absolute o-25 o-50-hover"></div>
-                            </div>
-                            <!-- /.card-img bg bg-img -->
-
-                            <div class="card-img-overlay d-flex flex-column px-0">
-                                <!-- /.overlay-top d-flex flex-row -->
-
-                                <div class="card-peek overlay-bottom position-absolute bottom-0 mb-3 px-3 w-100">
-                                    <div class="card-peek-show">
-                                        <p class="card-text text-light mb-1 text-truncate mt-1">70 Sagamoga Hill Road,
-                                            San Jose, NY 110000</p>
-                                    </div>
-
-                                </div>
-                                <!-- /.overlay-bottom mt-auto -->
-                            </div>
-                            <!-- /.card-img-overlay d-flex flex-column -->
-                        </div>
-                        <!-- /.card -->
-                    </div>
-                    <!-- /.swiper-slide w-330px h-330px pe-4 d-flex -->
 
                     <div class="swiper-slide w-330px h-330px pe-4 d-flex">
                         <div class="card shadow-sm shadow-hover trans-base zoom-bg-img o-hover-all">
@@ -793,20 +670,35 @@
                                 <div class="overlay bg-dark position-absolute o-25 o-50-hover"></div>
                             </div>
                             <!-- /.card-img bg bg-img -->
+                            
+                        </div>
+                        <!-- /.card -->
+                    </div>
 
-                            <div class="card-img-overlay d-flex flex-column px-0">
-                                <!-- /.overlay-top d-flex flex-row -->
-
-                                <div class="card-peek overlay-bottom position-absolute bottom-0 mb-3 px-3 w-100">
-                                    <div class="card-peek-show">
-                                        <p class="card-text text-light mb-1 text-truncate mt-1">70 Sagamoga Hill Road,
-                                            San Jose, NY 110000</p>
-                                    </div>
-
-                                </div>
-                                <!-- /.overlay-bottom mt-auto -->
+                    <div class="swiper-slide w-330px h-330px pe-4 d-flex">
+                        <div class="card shadow-sm shadow-hover trans-base zoom-bg-img o-hover-all">
+                            <div class="card-img bg bg-img" data-bg-img=".img">
+                                <img src="../../web/img/church/image_02.jpg"
+                                    class="img" alt="Image" />
+                                <div class="overlay bg-dark position-absolute o-25 o-50-hover"></div>
                             </div>
-                            <!-- /.card-img-overlay d-flex flex-column -->
+                            <!-- /.card-img bg bg-img -->
+                            
+                        </div>
+                        <!-- /.card -->
+                    </div>
+
+                
+
+                    <div class="swiper-slide w-330px h-330px pe-4 d-flex">
+                        <div class="card shadow-sm shadow-hover trans-base zoom-bg-img o-hover-all">
+                            <div class="card-img bg bg-img" data-bg-img=".img">
+                                <img src="../../web/img/church/image_02.jpg"
+                                    class="img" alt="Image" />
+                                <div class="overlay bg-dark position-absolute o-25 o-50-hover"></div>
+                            </div>
+                            <!-- /.card-img bg bg-img -->
+                            
                         </div>
                         <!-- /.card -->
                     </div>
@@ -832,7 +724,7 @@
                     <div data-swiper-id="#listing-swiper-1-expand-swiper" class="swiper-pagination w-auto bottom-0"
                         data-swiper-pagination-limit="2"></div>
 
-                    <a href="http://html.coolorize.com/discoverize/default/listing-search-header.html"
+                    <a href="../views/images.php"
                         class="btn btn-link btn-sm btn-more text-uppercase fw-bold shadow-none o-50 o-100-hover ms-3 trans-base px-0">All
                         Properties<i class="fas fa-long-arrow-alt-right"></i></a>
                 </div>
