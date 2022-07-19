@@ -19,9 +19,11 @@
                     medio de neustro se&ntilde;or Jesucristo". Romanos 5:1</p>
 
                 <p class="text-light">
-                    <button class="btn btn-primary rounded-pill shadow-none me-2 px-4 fw-bold" data-bs-toggle="modal"
-                        data-bs-target="#userSignInModal"><i class="fas fa-user"></i> Se parte de nosotros</button>
+                
+                <a class="btn btn-primary rounded-pill shadow-none me-2 px-4 fw-bold " href="../views/login.php" id="btn_login"><i class="fas fa-user"></i> Se parte de nosotros</a>
                 </p>
+
+               
             </div>
             <!-- /.col-12 col-md-6 -->
         </div>
