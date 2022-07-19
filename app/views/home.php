@@ -33,14 +33,16 @@
     <!-- /.container-xl position-relative -->
 </section>
 <!-- #we-do-2.section bg-dark py-5 py-lg-6 -->
-<section id="cities-grid-2" class="section  py-lg-6">
+<div style="margin-top: 5%;">
+    <header class="section-header mb-5">
+        <h2 class="fs-3 text-center section-title mb-3">Bienvenidos</h2>
+    </header>
+</div>
+<section id="cities-grid-2" class="section  py-lg-2 bg-black h-100 w-100">
     <!-- /.bg bg-img position-absolute -->
 
     <div class="container-xl position-relative">
-        <header class="section-header mb-5">
-            <h2 class="fs-3 text-center section-title mb-3">Bienvenidos</h2>
-        </header>
-        <!-- /.section-header mb-5 -->
+
 
         <div class="row cities g-4 mb-5">
             <iframe width="560" height="700" src="https://www.youtube.com/embed/Lo3RbQw1ics"
@@ -54,56 +56,6 @@
     <!-- /.container-xl -->
 </section>
 <!-- #cities-grid-2.section py-5 py-lg-6 -->
-
-
-<section id="callout-sell-1" class="section section__inverse py-0">
-    <div class="bg bg-img position-absolute bg-black" data-bg-img=".img"></div>
-    <!-- /.bg bg-img position-absolute bg-primary -->
-
-    <div class="container-xl position-relative">
-        <div class="row">
-            <div
-                class="col-12 col-lg-6 col-xl-6 py-4 py-lg-7 pe-lg-6 d-flex flex-column justify-content-center section-content ">
-                <h2 class="fs-1 mb-3 text-bla">Thinking of Selling Your House?</h2>
-                <p class="lead mb-4">We buy your home in your terms. Get an instant offer and options within 24 hours or
-                    you can easily lists with us.</p>
-
-                <form action="#" method="post" class="">
-                    <div class="input-group mb-3">
-                        <input type="text" class="form-control form-control-lg" placeholder="Your Home Address"
-                            aria-label="Recipient's username" aria-describedby="button-addon2" />
-                        <button class="btn btn-warning btn-lg px-4" type="button" id="button-addon2">Submit</button>
-                    </div>
-                </form>
-            </div>
-            <!-- /.col-12 col-lg-6 col-xl-6 py-4 py-lg-7 pe-lg-6 d-flex flex-column justify-content-center -->
-
-            <div class="col-12 col-lg-6 col-xl-6">
-                <div class="position-relative expand-w h-100 o-75">
-                    <div class="bg bg-img position-absolute" data-bg-img=".img">
-                        <video width="800" height="550"
-                            src="../../web/video/Take Heart (MMXX) - Hillsong Worship(1080P_HD).mp4" autoplay muted
-                            loop=1>
-                            <source type="video/mp4">
-                        </video>
-                        <!-- <iframe width="850" height="560"
-                            src="https://www.youtube-nocookie.com/embed/pRSC06T4lKs?autoplay=1&mute=1&loop=1"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe> -->
-
-                        <div class="overlay bg-dark position-absolute o-25"></div>
-                    </div>
-                    <!-- /.bg bg-img position-absolute -->
-                </div>
-            </div>
-            <!-- /.col-12 col-lg-6 col-xl-6 -->
-        </div>
-        <!-- /.row -->
-    </div>
-    <!-- /.container-xl -->
-</section>
-<!-- #callout-sell-1.section section__inverse py-0 -->
 
 <section id="listing-swiper-1-expand" class="section py-5 py-lg-6">
     <div class="bg bg-img position-absolute bg-white" data-bg-img=".img"></div>
@@ -124,8 +76,7 @@
                     <div class="swiper-slide w-330px h-330px pe-4 d-flex">
                         <div class="card shadow-sm shadow-hover trans-base zoom-bg-img o-hover-all">
                             <div class="card-img bg bg-img" data-bg-img=".img">
-                                <img src="../../web/img/church/image_01.jpg"
-                                    class="img" alt="Image" />
+                                <img src="../../web/img/church/image_01.jpg" class="img" alt="Image" />
                                 <div class="overlay bg-dark position-absolute o-25 o-50-hover"></div>
                             </div>
                             <!-- /.card-img bg bg-img -->
@@ -151,8 +102,7 @@
                     <div class="swiper-slide w-330px h-330px pe-4 d-flex">
                         <div class="card shadow-sm shadow-hover trans-base zoom-bg-img o-hover-all">
                             <div class="card-img bg bg-img" data-bg-img=".img">
-                                <img src="../../web/img/church/image_02.jpg"
-                                    class="img" alt="Image" />
+                                <img src="../../web/img/church/image_02.jpg" class="img" alt="Image" />
                                 <div class="overlay bg-dark position-absolute o-25 o-50-hover"></div>
                             </div>
                             <!-- /.card-img bg bg-img -->
@@ -178,8 +128,7 @@
                     <div class="swiper-slide w-330px h-330px pe-4 d-flex">
                         <div class="card shadow-sm shadow-hover trans-base zoom-bg-img o-hover-all">
                             <div class="card-img bg bg-img" data-bg-img=".img">
-                                <img src="../../web/img/church/image_01.jpg"
-                                    class="img" alt="Image" />
+                                <img src="../../web/img/church/image_01.jpg" class="img" alt="Image" />
                                 <div class="overlay bg-dark position-absolute o-25 o-50-hover"></div>
                             </div>
                             <!-- /.card-img bg bg-img -->
@@ -205,8 +154,7 @@
                     <div class="swiper-slide w-330px h-330px pe-4 d-flex">
                         <div class="card shadow-sm shadow-hover trans-base zoom-bg-img o-hover-all">
                             <div class="card-img bg bg-img" data-bg-img=".img">
-                                <img src="../../web/img/church/image_01.jpg"
-                                    class="img" alt="Image" />
+                                <img src="../../web/img/church/image_01.jpg" class="img" alt="Image" />
                                 <div class="overlay bg-dark position-absolute o-25 o-50-hover"></div>
                             </div>
                             <!-- /.card-img bg bg-img -->
@@ -232,8 +180,7 @@
                     <div class="swiper-slide w-330px h-330px pe-4 d-flex">
                         <div class="card shadow-sm shadow-hover trans-base zoom-bg-img o-hover-all">
                             <div class="card-img bg bg-img" data-bg-img=".img">
-                                <img src="../../web/img/church/image_01.jpg"
-                                    class="img" alt="Image" />
+                                <img src="../../web/img/church/image_01.jpg" class="img" alt="Image" />
                                 <div class="overlay bg-dark position-absolute o-25 o-50-hover"></div>
                             </div>
                             <!-- /.card-img bg bg-img -->
@@ -259,8 +206,7 @@
                     <div class="swiper-slide w-330px h-330px pe-4 d-flex">
                         <div class="card shadow-sm shadow-hover trans-base zoom-bg-img o-hover-all">
                             <div class="card-img bg bg-img" data-bg-img=".img">
-                                <img src="../../web/img/church/image_01.jpg"
-                                    class="img" alt="Image" />
+                                <img src="../../web/img/church/image_01.jpg" class="img" alt="Image" />
                                 <div class="overlay bg-dark position-absolute o-25 o-50-hover"></div>
                             </div>
                             <!-- /.card-img bg bg-img -->
@@ -286,8 +232,7 @@
                     <div class="swiper-slide w-330px h-330px pe-4 d-flex">
                         <div class="card shadow-sm shadow-hover trans-base zoom-bg-img o-hover-all">
                             <div class="card-img bg bg-img" data-bg-img=".img">
-                                <img src="../../web/img/church/image_02.jpg"
-                                    class="img" alt="Image" />
+                                <img src="../../web/img/church/image_02.jpg" class="img" alt="Image" />
                                 <div class="overlay bg-dark position-absolute o-25 o-50-hover"></div>
                             </div>
                             <!-- /.card-img bg bg-img -->
@@ -341,6 +286,60 @@
     <!-- /.container-xl position-relative -->
 </section>
 <!-- #listing-swiper-1-expand.section py-5 py-lg-6 -->
+
+<section id="callout-sell-1" class="section section__inverse py-0">
+    <div class="bg bg-img position-absolute bg-black" data-bg-img=".img"></div>
+    <!-- /.bg bg-img position-absolute bg-primary -->
+
+    <div class="container-xl position-relative">
+        <div class="row">
+            <div
+                class="col-12 col-lg-6 col-xl-6 py-4 py-lg-7 pe-lg-6 d-flex flex-column justify-content-center section-content ">
+                <h2 class="fs-1 mb-3 text-bla">Thinking of Selling Your House?</h2>
+                <p class="lead mb-4">We buy your home in your terms. Get an instant offer and options within 24 hours or
+                    you can easily lists with us.</p>
+
+                <form action="#" method="post" class="">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control form-control-lg" placeholder="Your Home Address"
+                            aria-label="Recipient's username" aria-describedby="button-addon2" />
+                        <button class="btn btn-warning btn-lg px-4" type="button" id="button-addon2">Submit</button>
+                    </div>
+                </form>
+            </div>
+            <!-- /.col-12 col-lg-6 col-xl-6 py-4 py-lg-7 pe-lg-6 d-flex flex-column justify-content-center -->
+
+            <div class="col-12 col-lg-6 col-xl-6">
+                <div class="position-relative expand-w h-100 o-75">
+                    <div class="bg bg-img position-absolute" data-bg-img=".img">
+                        <video width="800" height="550"
+                            src="../../web/video/Take Heart (MMXX) - Hillsong Worship(1080P_HD).mp4" autoplay muted
+                            loop=1>
+                            <source type="video/mp4">
+                        </video>
+                        <!-- <iframe width="850" height="560"
+                            src="https://www.youtube-nocookie.com/embed/pRSC06T4lKs?autoplay=1&mute=1&loop=1"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe> -->
+
+                        <div class="overlay bg-dark position-absolute o-25"></div>
+                    </div>
+                    <!-- /.bg bg-img position-absolute -->
+                </div>
+            </div>
+            <!-- /.col-12 col-lg-6 col-xl-6 -->
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container-xl -->
+</section>
+<!-- #callout-sell-1.section section__inverse py-0 -->
+<div style="margin-top: 5%;">
+    <header class="section-header mb-5">
+        <h2 class="fs-3 text-center section-title mb-3">Bienvenidos</h2>
+    </header>
+</div>
 
 <section id="searchbox-2" class="section bg-dark py-5 py-lg-7">
     <div class="bg bg-img position-absolute" data-bg-img=".img">
