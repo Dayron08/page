@@ -297,7 +297,7 @@ CREATE TABLE CONSULTAS(
 );
 
 DELIMITER $$
-USE PacVi $$
+USE Pacvi $$ /*El nombre del pacvi varía dependiendo de cada uno*/
 CREATE OR REPLACE PROCEDURE P_INSERTAR_CONSULTA 
     (
 
