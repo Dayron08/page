@@ -810,8 +810,7 @@
 
     <div class="container-xl position-relative">
         <header class="section-header mb-5">
-            <h2 class="fs-3 section-title mb-3">Testimonios</h2>
-
+            <h2 class="fs-3 section-title mb-3"><strong>Testimonios</strong> sobre la congregaci&oacute;n </h2>
             <p class="leadmb-0 o-75">Lo que nuestra comunidad dice de nosotros</p>
         </header>
         <!-- /.section-header mb-5 -->
@@ -829,13 +828,12 @@
                                     <blockquote
                                         class="blockquote card-body bg-white shadow-sm rounded d-flex flex-column px-lg-5">
                                         <p class="fs-1 text-secondary o-25 mb-0"><i class="fas fa-quote-right"></i></p>
-                                        <p class="fs-6">Lorem ipsum, dolor sit amet consectetur, adipisicing elit
-                                            tenetur. Omnis unde totam minima hic in mollitia</p>
+                                        <p class="fs-6">La Hermana Arredondo testifica cómo conoció la Iglesia y cómo ésta
+                                         le ha ayudado en su vida. Ella sabe que ha sido guiada por el Espíritu</p>
                                         <p class="text-secondary text-decoration-none fs-sm mt-auto mb-3 o-75">
                                             &mdash;<span class="fw-bold"> John Doe</span> - IT Profesional</p>
                                         <div class="img px-3 px-lg-4">
-                                            <img src="../../web/img/LOGO02.png" class="img rounded-circle"
-                                                alt="Image" />
+                                            <img src="" />
                                         </div>
                                     </blockquote>
                                 </figure>
@@ -848,8 +846,8 @@
                                     <blockquote
                                         class="blockquote card-body bg-white shadow-sm rounded d-flex flex-column px-lg-5">
                                         <p class="fs-1 text-secondary o-25 mb-0"><i class="fas fa-quote-right"></i></p>
-                                        <p class="fs-6">Omnis unde totam consequatur minima hic in mollitia lorem ipsum,
-                                            dolor sit amet consectetur, adipisicing elit</p>
+                                        <p class="fs-6">La Hermana Arredondo testifica cómo conoció la Iglesia y cómo ésta
+                                         le ha ayudado en su vida. Ella sabe que ha sido guiada por el Espíritu</p>
                                         <p class="text-secondary text-decoration-none fs-sm mt-auto mb-3 o-75">
                                             &mdash;<span class="fw-bold"> John Doe</span> - Sales Representative</p>
                                         <div class="img px-3 px-lg-4">
@@ -953,73 +951,6 @@
                     <!-- /.container-xl position-relative -->
                 </div>
                 <!-- /.swiper-slide -->
-
-                <div class="swiper-slide">
-                    <div class="container-xl position-relative">
-                        <div class="row testimonials g-4">
-                            <div class="col-12 col-md d-flex align-items-stretch">
-                                <figure class="card testimonial h-100 text-start bg-transparent mb-0">
-                                    <blockquote
-                                        class="blockquote card-body bg-white shadow-sm rounded d-flex flex-column px-lg-5">
-                                        <p class="fs-1 text-secondary o-25 mb-0"><i class="fas fa-quote-right"></i></p>
-                                        <p class="fs-6">Maxime fuga voluptates saepe veniam iste, vitae maiores. Quis
-                                            maxime voluptates consequatur unde culpa beatae</p>
-                                        <p class="text-secondary text-decoration-none fs-sm mt-auto mb-3 o-75">
-                                            &mdash;<span class="fw-bold"> John Doe</span> - Designer</p>
-                                        <div class="img px-3 px-lg-4">
-                                            <img src="../../web/img/LOGO02.png" class="img rounded-circle"
-                                                alt="Image" />
-                                        </div>
-                                    </blockquote>
-                                </figure>
-                                <!-- /.card -->
-                            </div>
-                            <!-- /.col-12 col-md d-flex align-items-stretch -->
-
-                            <div class="col-6 col-md d-flex align-items-stretch">
-                                <figure class="card testimonial h-100 text-start bg-transparent mb-0">
-                                    <blockquote
-                                        class="blockquote card-body bg-white shadow-sm rounded d-flex flex-column px-lg-5">
-                                        <p class="fs-1 text-secondary o-25 mb-0"><i class="fas fa-quote-right"></i></p>
-                                        <p class="fs-6">Perspiciatis odit vero beatae tenetur facere dolor sit amet
-                                            consectetur voluptates adipisicing elit animi</p>
-                                        <p class="text-secondary text-decoration-none fs-sm mt-auto mb-3 o-75">
-                                            &mdash;<span class="fw-bold"> John Doe</span> - Sales Manager</p>
-                                        <div class="img px-3 px-lg-4">
-                                            <img src="../../web/img/LOGO02.png" class="img rounded-circle"
-                                                alt="Image" />
-                                        </div>
-                                    </blockquote>
-                                </figure>
-                                <!-- /.card -->
-                            </div>
-                            <!-- /.col-6 col-md d-flex align-items-stretch -->
-
-                            <div class="col-6 col-md d-flex align-items-stretch">
-                                <figure class="card testimonial h-100 text-start bg-transparent mb-0">
-                                    <blockquote
-                                        class="blockquote card-body bg-white shadow-sm rounded d-flex flex-column px-lg-5">
-                                        <p class="fs-1 text-secondary o-25 mb-0"><i class="fas fa-quote-right"></i></p>
-                                        <p class="fs-6">Facere maxime fuga voluptates saepe veniam iste, Veniam beatae
-                                            vitae maiores. Quis voluptates perspiciatis odit</p>
-                                        <p class="text-secondary text-decoration-none fs-sm mt-auto mb-3 o-75">
-                                            &mdash;<span class="fw-bold"> John Doe</span> - Country Manager</p>
-                                        <div class="img px-3 px-lg-4">
-                                            <img src="../../web/img/LOGO02.png" class="img rounded-circle"
-                                                alt="Image" />
-                                        </div>
-                                    </blockquote>
-                                </figure>
-                                <!-- /.card -->
-                            </div>
-                            <!-- /.col-6 col-md d-flex align-items-stretch -->
-                        </div>
-                        <!-- /.row testimonials  -->
-                    </div>
-                    <!-- /.container-xl position-relative -->
-                </div>
-                <!-- /.swiper-slide -->
-
             </div>
             <!-- /.swiper-wrapper -->
         </div>
