@@ -287,6 +287,15 @@ DELIMITER ;
 --PRUEBA EXITOSA
 CALL P_ELIMINAR_EVENTO(2);
 ---------------------------------------------------------CONSULTAS(Josue y Dayron)-------------------------------------------------------------------------
+--CONSULTAS
+CREATE TABLE CONSULTAS(
+    ID_CONSULTAS INT AUTO_INCREMENT PRIMARY KEY,
+    NOMBRE VARCHAR(30),
+    APPELLIDOS VARCHAR(30),
+    CORREO VARCHAR(50),
+    DSC_ASUNTO VARCHAR(300)
+);
+
 DELIMITER $$
 USE PacVi $$
 CREATE OR REPLACE PROCEDURE P_INSERTAR_GALERIA
