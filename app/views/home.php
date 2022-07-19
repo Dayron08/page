@@ -33,14 +33,12 @@
     <!-- /.container-xl position-relative -->
 </section>
 <!-- #we-do-2.section bg-dark py-5 py-lg-6 -->
-<div style="margin-top: 5%;">
-    <header class="section-header mb-5">
-        <h2 class="fs-3 text-center section-title mb-3">Bienvenidos</h2>
-    </header>
-</div>
+
 <section id="cities-grid-2" class="section  py-lg-2 bg-black h-100 w-100">
     <!-- /.bg bg-img position-absolute -->
-
+    <header class="section-header mb-5">
+        <h2 class="fs-3 text-center section-title mb-3"><strong> Bienvenidos </strong></h2>
+    </header>
     <div class="container-xl position-relative">
 
 
@@ -108,7 +106,7 @@
                         </div>
                         <!-- /.card -->
                     </div>
-                    
+
                     <div class="swiper-slide w-330px h-330px pe-4 d-flex">
                         <div class="card shadow-sm shadow-hover trans-base zoom-bg-img o-hover-all">
                             <div class="card-img bg bg-img" data-bg-img=".img">
@@ -171,8 +169,7 @@
                         data-swiper-pagination-limit="2"></div>
 
                     <a href="../views/images.php"
-                        class="btn btn-link btn-sm btn-more text-uppercase fw-bold shadow-none o-50 o-100-hover ms-3 trans-base px-0">All
-                        Properties<i class="fas fa-long-arrow-alt-right"></i></a>
+                        class="btn btn-link btn-sm btn-more text-uppercase fw-bold shadow-none o-50 o-100-hover ms-3 trans-base px-0">Todos las imagenes<i class="fas fa-long-arrow-alt-right"></i></a>
                 </div>
             </div>
         </div>
@@ -230,11 +227,6 @@
     <!-- /.container-xl -->
 </section>
 <!-- #callout-sell-1.section section__inverse py-0 -->
-<div style="margin-top: 5%;">
-    <header class="section-header mb-5">
-        <h2 class="fs-3 text-center section-title mb-3">Bienvenidos</h2>
-    </header>
-</div>
 
 <section id="searchbox-2" class="section bg-dark py-5 py-lg-7">
     <div class="bg bg-img position-absolute" data-bg-img=".img">
