@@ -184,7 +184,89 @@ CALL P_ELIMINAR_IMAGEN('1');
 
 ---------------------------------------------------------PERSONA_TESTIMONIOS(Mariay Randall)-------------------------------------------------------------------------
 
+DELIMITER $$
+USE PacVi $$
+CREATE OR REPLACE PROCEDURE P_VER_PERSONA_TESTIMONIO()
+    BEGIN
+        SELECT
+         
+               PT.DSC_TESTIMONIO, 
+               P.NOMBRE,
+               P.APPELLIDOS
+            
+        FROM PERSONA_TESTIMONIOS PT 
+        INNER JOIN PERSONA P ON (P.ID_REGISTRO_PERSONA = PT.ID_REGISTRO_PERSONA); 
+    END$$
+DELIMITER;
 
+CALL P_VER_PERSONA_TESTIMONIO();
+
+DELIMITER $$
+USE PacVi $$
+CREATE OR REPLACE PROCEDURE P_INSERTAR_PERSONA_TESTIMONIO
+    (
+        -- PERSONA TESTIMONIO
+        IN P_DSC_TESTIMONIO VARCHAR(500),
+        IN P_ID_REGISTRO_PERSONA VARCHAR(50)
+    
+    )
+
+    BEGIN
+            INSERT INTO PERSONA_TESTIMONIOS    
+            (
+                ID_TESTI,  
+                DSC_TESTIMONIO, 
+                ID_REGISTRO_PERSONA
+            )
+            VALUES 
+            (
+                null,  
+                P_DSC_TESTIMONIO, 
+                P_ID_REGISTRO_PERSONA
+            );
+           
+            COMMIT;
+    END$$
+DELIMITER ;
+
+
+DELIMITER $$
+USE PacVi $$
+CREATE OR REPLACE PROCEDURE P_ELIMINAR_PERSONA_TESTIMONIO
+    (
+        IN P_ID_TESTI INT
+    )
+    BEGIN
+        DELETE FROM PERSONA_TESTIMONIOS where
+            ID_TESTI = P_ID_TESTI;
+    END$$
+DELIMITER ;
+
+
+DELIMITER $$
+USE PacVi $$
+CREATE OR REPLACE PROCEDURE P_ACTUALIZAR_PERSONA_TESTIMONIO
+    (
+        IN P_ID_TESTI INT,
+        IN P_DSC_TESTIMONIO VARCHAR(500)
+    )
+    BEGIN 
+        UPDATE PERSONA_TESTIMONIOS SET 
+            
+           DSC_TESTIMONIO= P_DSC_TESTIMONIO
+
+
+        WHERE 
+            ID_TESTI = P_ID_TESTI;
+        COMMIT;
+    END$$
+DELIMITER;
+
+
+
+DROP PROCEDURE P_ACTUALIZAR_PERSONA_TESTIMONIO;
+
+CALL P_ACTUALIZAR_PERSONA_TESTIMONIO( 2 ,'HOLA');
 
 
 ---------------------------------------------------------CONSULTAS(Josue y Dayron)-------------------------------------------------------------------------
