@@ -327,3 +327,4 @@ CREATE OR REPLACE PROCEDURE P_INSERTAR_CONSULTA
             COMMIT;
     END$$
 DELIMITER ;
+CALL P_INSERTAR_CONSULTA('Dayron', 'Luna Gamboa', 'ldayron500@gmail.com', 'Me podrían brindar información sobre los horarios de las reuniones, saludos.');
