@@ -295,7 +295,7 @@ CREATE TABLE CONSULTAS(
     CORREO VARCHAR(50),
     DSC_ASUNTO VARCHAR(500)
 );
-
+---------------------INSERTAR----------------------------
 DELIMITER $$
 USE Pacvi $$ /*El nombre del pacvi varía dependiendo de cada uno*/
 CREATE OR REPLACE PROCEDURE P_INSERTAR_CONSULTA 
