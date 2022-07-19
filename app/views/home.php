@@ -19,11 +19,12 @@
                     medio de neustro se&ntilde;or Jesucristo". Romanos 5:1</p>
 
                 <p class="text-light">
-                
-                <a class="btn btn-primary rounded-pill shadow-none me-2 px-4 fw-bold " href="../views/login.php" id="btn_login"><i class="fas fa-user"></i> Se parte de nosotros</a>
+
+                    <a class="btn btn-primary rounded-pill shadow-none me-2 px-4 fw-bold " href="../views/login.php"
+                        id="btn_login"><i class="fas fa-user"></i> Se parte de nosotros</a>
                 </p>
 
-               
+
             </div>
             <!-- /.col-12 col-md-6 -->
         </div>
@@ -46,17 +47,10 @@
         <!-- /.section-header mb-5 -->
 
         <div class="row cities g-4 mb-5">
-            <!-- <div class='video-wrap'>
-                <video autoplay width="1000" height="800" id="video_video">
-                    <source src="../../web/video/Take Heart (MMXX) - Hillsong Worship(1080P_HD).mp4" type="video/mp4">
-                    <source src="../../web/video/Take Heart (MMXX) - Hillsong Worship(1080P_HD).mp4" type="video/ogg">
-                </video>
-            </div> -->
-            <!-- <video autoplay muted playsinline loop poster="http://placehold.it/350x350">
-                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-                <source src="https://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg">
-                Your browser does not support HTML5 video.
-            </video> -->
+            <iframe width="560" height="700" src="https://www.youtube.com/embed/Lo3RbQw1ics"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
         </div>
         <!-- /.row cities -->
 
