@@ -52,8 +52,8 @@
 </section>
 <!-- #cities-grid-2.section py-5 py-lg-6 -->
 
-<section id="listing-swiper-1-expand" class="section py-5 py-lg-6">
-    <div class="bg bg-img position-absolute bg-light" data-bg-img=".img"></div>
+<section id="galery" class="section py-5 py-lg-6">
+    <div class="bg bg-img position-absolute" data-bg-img=".img"></div>
     <!-- /.bg bg-img position-absolute bg-white -->
 
     <div class="container-xl position-relative">
@@ -175,10 +175,8 @@
 </section>
 <!-- #listing-swiper-1-expand.section py-5 py-lg-6 -->
 
-<section id="callout-sell-1" class="section section__inverse py-0">
-    <div class="bg bg-img position-absolute bg-black" data-bg-img=".img"></div>
-    <!-- /.bg bg-img position-absolute bg-primary -->
-
+<section id="testimonial" class="section section__inverse py-0">
+   
     <div class="container-xl position-relative">
         <div class="row">
             <div
@@ -226,9 +224,8 @@
 <!-- #callout-sell-1.section section__inverse py-0 -->
 
 
-<section id="testimonials-swiper-1" class="section py-5 py-lg-6 bg-light">
-    <div class="bg bg-img position-absolute" data-bg-img=".img"></div>
-    <!-- /.bg bg-img position-absolute -->
+<section id="testimonials" class="section py-5 py-lg-6 ">
+    
 
     <div class="container-xl position-relative">
         <header class="section-header mb-5">
