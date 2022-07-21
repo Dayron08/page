@@ -57,54 +57,54 @@
     <div class="bg bg-img position-absolute" data-bg-img=".img"></div>
     <!-- /.bg bg-img position-absolute -->
 
-    <div class="container-xl position-relative">
-        <div class="row">
-            <div class="col-12 col-md-6 d-flex">
-                <div class="card bg-light">
-                    <div class="card-body mx-lg-2 px-4 pt-4 pb-0">
-                        <h3 class="fs-5 mt-2 mb-4 fw-bold" style="text-align:center;">Misi&oacute;n</h3>
+    <div class="container-xl position-relative" ">
+        <div class=" row">
+        <div class="col-12 col-md-6 d-flex">
+            <div class="card bg-light">
+                <div class="card-body mx-lg-2 px-4 pt-4 pb-0">
+                    <h3 class="fs-5 mt-2 mb-4 fw-bold" style="text-align:center;">Misi&oacute;n</h3>
 
-                        <ul class="mt-4 pt-1 list-unstyled">
-                            <li class="mb-2 row gx-3">
-                                <div class="col" style="text-align:justify;">
-                                    <p>Ser una comunidad cristiana comprometida para difundir en las personas una
-                                        relaci&oacute;n de amor entre Dios y su criatura especial y escogida, el ser
-                                        humano.</p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- /.card-body -->
+                    <ul class="mt-4 pt-1 list-unstyled">
+                        <li class="mb-2 row gx-3">
+                            <div class="col" style="text-align:justify;">
+                                <p>Ser una comunidad cristiana comprometida para difundir en las personas una
+                                    relaci&oacute;n de amor entre Dios y su criatura especial y escogida, el ser
+                                    humano.</p>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-                <!-- .card -->
+                <!-- /.card-body -->
             </div>
-            <!-- /.col-12 col-md-6 -->
-
-            <div class="col-12 col-md-6 d-flex">
-                <div class="card bg-light">
-                    <div class="card-body mx-lg-2 px-4 pt-4 pb-0">
-                        <h3 class="fs-5 mt-2 mb-4 fw-bold" style="text-align:center;">Visi&oacute;n</h3>
-
-                        <ul class="mt-4 pt-1 list-unstyled">
-                            <li class="mb-2 row gx-3">
-                                <div class="col" style="text-align:justify;">
-                                    <p>Promover el desaroollo integral de la comunidad cristiana, fortaleciendo los
-                                        principios y valores familiares, y motiv&aacute;ndolos a proyectarse hacia la
-                                        comunidad a trav&eacute;s de programas de apoyo que fomentan la creaci&oacute;n
-                                        de un ambiente saludable y una mejor calidad de vida para las familias, de
-                                        acuerdo con los principios b&iacute;blicos.</p>
-                                </div>
-                            </li>
-
-                        </ul>
-                    </div>
-                    <!-- /.card-body -->
-                </div>
-                <!-- .card -->
-            </div>
-            <!-- /.col-12 col-md-6 -->
+            <!-- .card -->
         </div>
-        <!-- /.row -->
+        <!-- /.col-12 col-md-6 -->
+
+        <div class="col-12 col-md-6 d-flex">
+            <div class="card bg-light">
+                <div class="card-body mx-lg-2 px-4 pt-4 pb-0">
+                    <h3 class="fs-5 mt-2 mb-4 fw-bold" style="text-align:center;">Visi&oacute;n</h3>
+
+                    <ul class="mt-4 pt-1 list-unstyled">
+                        <li class="mb-2 row gx-3">
+                            <div class="col" style="text-align:justify;">
+                                <p>Promover el desaroollo integral de la comunidad cristiana, fortaleciendo los
+                                    principios y valores familiares, y motiv&aacute;ndolos a proyectarse hacia la
+                                    comunidad a trav&eacute;s de programas de apoyo que fomentan la creaci&oacute;n
+                                    de un ambiente saludable y una mejor calidad de vida para las familias, de
+                                    acuerdo con los principios b&iacute;blicos.</p>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+                <!-- /.card-body -->
+            </div>
+            <!-- .card -->
+        </div>
+        <!-- /.col-12 col-md-6 -->
+    </div>
+    <!-- /.row -->
     </div>
     <!-- /.container-xl position-relative -->
 </section>
