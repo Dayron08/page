@@ -180,11 +180,6 @@
                         </div>
                         <!-- /.input-group -->
 
-
-                        <a class="searchbox-btn-close btn-close form-is-focus position-absolute top-0 start-100 translate-middle"
-                            data-bs-toggle="collapse" href="#searchbox-hero-2FormOptionsCollapse" role="button"
-                            aria-expanded="false" aria-controls="searchbox-hero-2FormOptionsCollapse"><span
-                                class="btn-close-icon"></span></a>
                     </form>
             <div class="gmap_canvas"><iframe width="2000" height="700" id="gmap_canvas"
                     src="https://maps.google.com/maps?q=V5JM+G7Q,%20Provincia%20de%20Cartago,%20Cervantes&t=&z=13&ie=UTF8&iwloc=&output=embed"
