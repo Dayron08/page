@@ -56,11 +56,21 @@
                 </div>
 
                 <div class="collapse navbar-collapse" id="navbarMenu">
-                    <div class="mt-4 d-lg-none"></div> 
+                    <div class="mt-4 d-lg-none"></div>
 
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li><a class="nav-link active" href="../views/home.php">Inicio</a></li>
-                        <li><a class="nav-link" href="../views/about_us.php">Sobre Nosotros</a></li>
+                        <li class="nav-item nav-dropdown dropdown dropdown-hover">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDocs" role="button"
+                                data-bs-toggle="dropdown">Sobre Nosotros</a>
+                            <ul class="nav-dropdown-menu dropdown-menu dropdown-menu-end shadow" data-bs-popper>
+
+                                <li><a class="dropdown-item" href="../views/about_us.php">Iglesia</a></li>
+
+                                <li><a class="dropdown-item" href="../views/testimonials.php">Testimonios</a></li>
+
+                            </ul>
+                        </li>
                         <li class="nav-item nav-dropdown dropdown dropdown-hover">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDocs" role="button"
                                 data-bs-toggle="dropdown">Recursos</a>
