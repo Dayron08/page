@@ -77,7 +77,7 @@
                                 </li>
 
                                 <li>
-                                    <span class="dropdown-header text-uppercase fw-bold"><a class="" href="">En vivos
+                                    <span class="dropdown-header text-uppercase fw-bold"><a class="" href="../views/live.php">En vivos
                                         </a></span>
                                 </li>
 
