@@ -22,51 +22,8 @@
 
         <div class="container-xl position-relative">
             <div class="container">
-                <div class="text-center">
-
-                    <h1 class="text-center mb-5 fs-1 text-dark">Disponibilidad en <span
-                            class="text-primary">todas</span> las plataformas</h1>
-                </div>
-                <div class="row text-center">
-                    <div class="col-md-3">
-                        <a href="https://www.facebook.com/pactodevida">
-                            <span class="fa-stack fa-4x">
-                                <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                                <i class="fas fa fa-facebook fa-stack-1x fa-inverse"></i>
-                            </span>
-                            <h4 class="my-3">Facebook</h4>
-                            <p class="text-muted">Iglesia Pacto de vida</p>
-                        </a>
-                    </div>
-                    <div class="col-md-3">
-                        <a href="">
-                            <span class="fa-stack fa-4x">
-                                <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                                <i class="fas fa fa-instagram fa-stack-1x fa-inverse"></i>
-                            </span>
-                            <h4 class="my-3">Instagram</h4>
-                            <p class="text-muted">Iglesia Pacto de vida</p>
-                        </a>
-                    </div>
-                    <div class="col-md-3">
-                        <a href="">
-                            <span class="fa-stack fa-4x">
-                                <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                                <i class="fas fa fa-whatsapp fa-stack-1x fa-inverse"></i>
-                            </span>
-                            <h4 class="my-3">Whatsapp</h4>
-                            <p class="text-muted">88889999</p>
-                        </a>
-                    </div>
-                    <div class="col-md-3">
-                        <a href="https://www.youtube.com/watch?v=93SOsI9wFQs">
-                            <span class="fa-stack fa-4x">
-                                <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                                <i class="fas fa fa-youtube-play fa-stack-1x fa-inverse"></i>
-                            </span>
-                            <h4 class="my-3">You Tube</h4>
-                            <p class="text-muted">Pacto de Vida</p>
-                            =======
+               
+                  
                             <h1 class="text-center mb-5 fs-1 text-dark">Disponibilidad en <span
                                     class="text-black">todas</span> las plataformas</h1>
                     </div>
