@@ -92,7 +92,7 @@
     <!-- /.bg bg-img position-absolute -->
 
     <div class="container-xl position-relative h-100">
-        <header class="section-header mb-5">
+        <header class="section-header mb-4">
             <h2 class="fs-3 text-center section-title mb-3">Nuestros J&oacute;venes</h2>
 
             <p class="lead text-center mb-0 o-75">Imag&eacute;nes relacionadas
@@ -109,7 +109,7 @@
     </div>
     <!-- /.container-xl -->
 </section>
-<section id="news-1" class="section pb-6 mt-n4 mt-lg-n5 mt-xl-n6">
+<section id="news-1" class="section pb-4 mt-n4 mt-lg-n5 mt-xl-n6">
     <div class="bg bg-img position-absolute" data-bg-img=".img"></div>
     <!-- /.bg bg-img position-absolute -->
 
@@ -165,8 +165,8 @@
     <!-- /.bg bg-img position-absolute -->
 
     <div class="container-xl position-relative h-100">
-        <header class="section-header mb-5">
-            <h2 class="fs-3 text-center section-title mb-3">Nuestros nin&ntilde;os</h2>
+        <header class="section-header mb-2">
+            <h2 class="fs-3 text-center section-title mb-3">Nuestros ni&ntilde;os</h2>
 
             <p class="lead text-center mb-0 o-75">Imag&eacute;nes relacionadas
             </p>
@@ -182,7 +182,7 @@
     </div>
     <!-- /.container-xl -->
 </section>
-<section id="news-1" class="section pb-6 mt-n4 mt-lg-n5 mt-xl-n6">
+<section id="news-1" class="section pb-4 mt-n4 mt-lg-n5 mt-xl-n6">
     <div class="bg bg-img position-absolute" data-bg-img=".img"></div>
     <!-- /.bg bg-img position-absolute -->
 
