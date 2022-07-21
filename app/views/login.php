@@ -24,8 +24,9 @@
 
     <main>
         <!--Cuadros de iniciar sesion o registrarse-->
+        <h2 id="title">IGLESIA PACTO DE VIDA</h2><br>
         <div class="contenedor__principal">
-            <h2 id="title">IGLESIA PACTO DE VIDA</h2><br>
+            <br>
             <div class="contenedor__inferior">
                 <div class="contenedor__inferior-login">
                     <h3>Si tienes una cuenta:</h3>
