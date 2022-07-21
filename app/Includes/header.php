@@ -34,7 +34,7 @@
 
 <body id="body">
     <!-- header -->
-    <header class="header is-sticky-inverse is-sticky-bg-o-0 position-absolute" data-spy="scroll" data-scroll="sticky"
+    <header class=" header is-sticky-inverse is-sticky-bg-o-0 position-absolute" data-spy="scroll" data-scroll="sticky"
         data-sticky-hide="true" data-switch-class="shadow-none|shadow">
         <nav class="navbar navbar-light navbar-default">
             <div class="container-xl justify-content-start">
