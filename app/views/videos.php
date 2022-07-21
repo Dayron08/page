@@ -76,17 +76,7 @@
                     allowfullscreen></iframe>
                 <!-- /.card -->
             </div>
-            <!-- /.col-12 col-md-3 d-flex align-items-stretch -->
 
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex align-items-stretch">
-                <iframe
-                    src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FMielsanmarcosoficial%2Fvideos%2F1231334631039134%2F&show_text=false&width=560&t=0"
-                    width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
-                    allowfullscreen="true"
-                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-                    allowFullScreen="true"></iframe>
-                <!-- /.card -->
-            </div>
             <!-- /.col-12 col-md-3 d-flex align-items-stretch -->
         </div>
         <!-- /.row properties -->
