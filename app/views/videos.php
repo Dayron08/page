@@ -31,6 +31,7 @@
         <div class="section-filter mb-4 mb-lg-5">
             <div class="row g-3">
                 <div class="col-12 col-md section-content text-center text-md-start">
+                    <br>
                     <p class="mb-0"><strong>80</strong>&nbsp;Results&nbsp;Found</p>
                 </div>
                 <!-- /.col-12 col-md -->
@@ -87,13 +88,6 @@
                 <!-- /.card -->
             </div>
             <!-- /.col-12 col-md-3 d-flex align-items-stretch -->
-
-            <iframe width="100" height="500" src="https://www.youtube.com/embed/IjYcHbYnDmA"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-
-
         </div>
         <!-- /.row properties -->
 
