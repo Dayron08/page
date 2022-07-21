@@ -56,7 +56,7 @@
                 </div>
 
                 <div class="collapse navbar-collapse" id="navbarMenu">
-                    <div class="mt-4 d-lg-none"></div>
+                    <div class="mt-4 d-lg-none"></div> 
 
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li><a class="nav-link active" href="../views/home.php">Inicio</a></li>
