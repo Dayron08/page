@@ -199,11 +199,16 @@
             <div class="col-12 col-lg-6 col-xl-6">
                 <div class="position-relative expand-w h-100 o-75">
                     <div class="bg bg-img position-absolute" data-bg-img=".img">
-                        <video width="800" height="550"
+                        <!-- <video width="800" height="550"
                             src="../../web/video/Take Heart (MMXX) - Hillsong Worship(1080P_HD).mp4" autoplay muted
                             loop=1>
                             <source type="video/mp4">
-                        </video>
+                        </video> -->
+                        <iframe width="650" height="600"
+                            src="https://www.youtube.com/embed/s-SR7Xc0yhM?autoplay=1&mute=1&loop=1&start=50&controls=0"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
                         <!-- <iframe width="850" height="560"
                             src="https://www.youtube-nocookie.com/embed/pRSC06T4lKs?autoplay=1&mute=1&loop=1"
                             title="YouTube video player" frameborder="0"
