@@ -20,27 +20,7 @@
                     <p class="lead position-relative text-light">¡Tenemos servicio todos los domingos a las 10:30 AM!
                     </p>
 
-                    <form action="#" class="searchbox-form position-relative bg-white rounded shadow-sm">
-                        <div class="bg position-absolute bg-white rounded-top form-is-focus"></div>
-
-                        <div class="input-group position-relative px-3">
-                            <label for="searchboxKeyword"
-                                class="input-group-text bg-transparent px-0 border-0 text-secondary"><i
-                                    class="fas fa-map-marker-alt"></i></label>
-                            <input id="searchboxKeyword" name="searchboxKeyword" type="text"
-                                class="form-control pe-5 form-control-lg border-0 shadow-none position-relative bg-transparent"
-                                placeholder="Cartago, Cervantes, Costa Rica"
-                                data-show-bs-collapse-id="#searchbox-hero-2FormOptionsCollapse"
-                                data-scroll-to="#searchBox" />
-                        </div>
-                        <!-- /.input-group -->
-
-
-                        <a class="searchbox-btn-close btn-close form-is-focus position-absolute top-0 start-100 translate-middle"
-                            data-bs-toggle="collapse" href="#searchbox-hero-2FormOptionsCollapse" role="button"
-                            aria-expanded="false" aria-controls="searchbox-hero-2FormOptionsCollapse"><span
-                                class="btn-close-icon"></span></a>
-                    </form>
+                   
                     <!-- /.searchbox-form position-relative bg-white rounded  shadow-sm -->
                 </div>
                 <!-- /.col-12 col-lg-7 -->
@@ -184,6 +164,28 @@
         <h2 class="fs-3 section-title mb-3" style="text-align:center;"><strong>Nuestra Ubicaci&oacute;n</strong> </h2>
         <div class="mapouter">
 
+
+                    <form action="#" class="searchbox-form position-relative bg-white rounded shadow-sm">
+                        <div class="bg position-absolute bg-white rounded-top form-is-focus"></div>
+
+                        <div class="input-group position-relative px-3">
+                            <label for="searchboxKeyword"
+                                class="input-group-text bg-transparent px-0 border-0 text-secondary"><i
+                                    class="fas fa-map-marker-alt"></i></label>
+                            <input id="searchboxKeyword" name="searchboxKeyword" type="text"
+                                class="form-control pe-5 form-control-lg border-0 shadow-none position-relative bg-transparent"
+                                placeholder="Cartago, Cervantes, Costa Rica"
+                                data-show-bs-collapse-id="#searchbox-hero-2FormOptionsCollapse"
+                                data-scroll-to="#searchBox" />
+                        </div>
+                        <!-- /.input-group -->
+
+
+                        <a class="searchbox-btn-close btn-close form-is-focus position-absolute top-0 start-100 translate-middle"
+                            data-bs-toggle="collapse" href="#searchbox-hero-2FormOptionsCollapse" role="button"
+                            aria-expanded="false" aria-controls="searchbox-hero-2FormOptionsCollapse"><span
+                                class="btn-close-icon"></span></a>
+                    </form>
             <div class="gmap_canvas"><iframe width="2000" height="700" id="gmap_canvas"
                     src="https://maps.google.com/maps?q=V5JM+G7Q,%20Provincia%20de%20Cartago,%20Cervantes&t=&z=13&ie=UTF8&iwloc=&output=embed"
                     frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
