@@ -34,13 +34,13 @@
 </section>
 <!-- #we-do-2.section bg-dark py-5 py-lg-6 -->
 
-<section id="cities-grid-2" class="section  py-lg-2 bg-black h-100 w-100">
+<section  class="section bg-black h-100 w-100">
     <!-- /.bg bg-img position-absolute -->
     <div class="container-xl position-relative">
 
 
-        <div class="row cities g-4 mb-5">
-            <iframe width="560" height="700" src="https://www.youtube.com/embed/Lo3RbQw1ics"
+        <div class="row cities g-4 mb-5 mt-3">
+            <iframe width="700" height="700" src="https://www.youtube.com/embed/Lo3RbQw1ics"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
