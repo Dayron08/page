@@ -53,7 +53,7 @@
 <!-- #cities-grid-2.section py-5 py-lg-6 -->
 
 <section id="listing-swiper-1-expand" class="section py-5 py-lg-6">
-    <div class="bg bg-img position-absolute bg-white" data-bg-img=".img"></div>
+    <div class="bg bg-img position-absolute bg-light" data-bg-img=".img"></div>
     <!-- /.bg bg-img position-absolute bg-white -->
 
     <div class="container-xl position-relative">
@@ -225,7 +225,7 @@
 <!-- #callout-sell-1.section section__inverse py-0 -->
 
 
-<section id="testimonials-swiper-1" class="section py-5 py-lg-6">
+<section id="testimonials-swiper-1" class="section py-5 py-lg-6 bg-light">
     <div class="bg bg-img position-absolute" data-bg-img=".img"></div>
     <!-- /.bg bg-img position-absolute -->
 
