@@ -29,18 +29,24 @@
 
 #testimonials{
 
-    background-color: #FFFBF5;
+    background-color: #F2F2F2;
 
 }
 
 #galery{
 
-    background-color: #FFFBF5;
+    background-color: #F2F2F2;
 
 }
 
 #testimonial{
 
     background-color: #0d0c0e;
+}
+
+#welcome_video{
+    background-color: #0A0A0D;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 

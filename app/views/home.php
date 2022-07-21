@@ -34,7 +34,7 @@
 </section>
 <!-- #we-do-2.section bg-dark py-5 py-lg-6 -->
 
-<section class="section bg-black h-100 w-100">
+<section class="section " id="welcome_video">
     <!-- /.bg bg-img position-absolute -->
     <div class="container-xl position-relative">
 
@@ -176,7 +176,7 @@
 <!-- #listing-swiper-1-expand.section py-5 py-lg-6 -->
 
 <section id="testimonial" class="section section__inverse py-0">
-   
+
     <div class="container-xl position-relative">
         <div class="row">
             <div
@@ -225,7 +225,7 @@
 
 
 <section id="testimonials" class="section py-5 py-lg-6 ">
-    
+
 
     <div class="container-xl position-relative">
         <header class="section-header mb-5">
