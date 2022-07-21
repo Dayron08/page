@@ -17,11 +17,6 @@
     
 
         <main>
-            <div class="text-center textmenu">
-            <a class="btn btn-warning rounded-pill shadow-none me-2 px-4 fw-bold " href="../views/home.php"
-                ></i>Menu principal</a>
-            </div>
-      
            <!--Cuadros de iniciar sesion o registrarse-->
             <div class="contenedor__principal">
                 <h2>IGLESIA PACTO DE VIDA</h2><br>
@@ -45,7 +40,10 @@
                         <h2>Iniciar Sesión</h2>
                         <input type="text" placeholder="Correo Electronico">
                         <input type="password" placeholder="Contraseña">
-                        <button>Entrar</button>
+                        <button>Entrar</button> 
+                        <br>
+                        <a class="btn rounded-pill shadow-none me-2 px-4 fw-bold " href="../views/home.php"
+                        >Menu principal</a>
                     </form>
 
                     <!--Register-->
@@ -58,6 +56,9 @@
                         <input type="text" placeholder="Correo Electronico">
                         <input type="password" placeholder="Contraseña">
                         <button>Regístrarse</button>
+                        <br>
+                        <a class="rounded-pill shadow-none me-2 px-4 fw-bold" href="../views/home.php"
+                        >Menu principal</a>
                     </form>
                 </div>
             </div>
