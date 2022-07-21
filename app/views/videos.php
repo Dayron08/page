@@ -31,6 +31,7 @@
         <div class="section-filter mb-4 mb-lg-5">
             <div class="row g-3">
                 <div class="col-12 col-md section-content text-center text-md-start">
+                    <br>
                     <p class="mb-0"><strong>80</strong>&nbsp;Results&nbsp;Found</p>
                 </div>
                 <!-- /.col-12 col-md -->
@@ -75,25 +76,8 @@
                     allowfullscreen></iframe>
                 <!-- /.card -->
             </div>
+
             <!-- /.col-12 col-md-3 d-flex align-items-stretch -->
-
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex align-items-stretch">
-                <iframe
-                    src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FMielsanmarcosoficial%2Fvideos%2F1231334631039134%2F&show_text=false&width=560&t=0"
-                    width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
-                    allowfullscreen="true"
-                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-                    allowFullScreen="true"></iframe>
-                <!-- /.card -->
-            </div>
-            <!-- /.col-12 col-md-3 d-flex align-items-stretch -->
-
-            <iframe width="100" height="500" src="https://www.youtube.com/embed/IjYcHbYnDmA"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-
-
         </div>
         <!-- /.row properties -->
 
