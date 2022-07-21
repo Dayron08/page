@@ -7,13 +7,13 @@
 }
 
 body{
-    background-image: url();
+    background-image: url(../images/nathan-mullet-GoFys2bZJaE-unsplash.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-    background-color: #F2F2F2;
 }
+
 
 main{
     width: 100%;

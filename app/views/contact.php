@@ -22,10 +22,8 @@
 
         <div class="container-xl position-relative">
             <div class="container">
-               
-                  
-                            <h1 class="text-center mb-5 fs-1 text-dark">Disponibilidad en <span
-                                    class="text-black">todas</span> las plataformas</h1>
+                    <h1 class="text-center mb-5 fs-1 text-dark">Disponibilidad en <span
+                            class="text-black">todas</span> las plataformas</h1>
                     </div>
                     <div class="row text-center">
                         <div class="col-md-3">
@@ -77,7 +75,7 @@
 
     <section id="searchbox-2" class="section bg-dark py-5 py-lg-6">
         <div class="bg bg-img position-absolute o-75 " data-bg-img=".img">
-            <img src="../../web/img/JA2TI5OW75FTZBMGHY46TMOS4Q.jpg" class="img" alt="Image" />
+            <img src="../../web/img/contact_form.jpg" class="img" alt="Image" />
 
             <div class="overlay bg-dark position-absolute o-25"></div>
         </div>
