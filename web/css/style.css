@@ -29,13 +29,13 @@
 
 #testimonials{
 
-    background-color: #FFFBF5;
+    background-color: #F2F2F2;
 
 }
 
 #galery{
 
-    background-color: #FFFBF5;
+    background-color: #F2F2F2;
 
 }
 
@@ -44,7 +44,21 @@
     background-color: #0d0c0e;
 }
 
+
+#welcome_video{
+    background-color: #0A0A0D;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+
 .cardsbg{
 
+<<<<<<< HEAD
+    background-color: #bf1b39;
+}
+
+=======
     background-color: #ffffff;
 }
+>>>>>>> 2047af0a14a86fa5bcb50b3fadd1a594af848acd
