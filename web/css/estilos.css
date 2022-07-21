@@ -7,7 +7,7 @@
 }
 
 body{
-    background-image: url(../../web/img/login.jpg);
+    background-image: url(../../web/img/home.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -34,7 +34,7 @@ main{
     transition: all 500ms;
 }
 
-.textmenu a{
+#textmenu a{
    
     border: 5px rgb(246, 218, 6);
     transition: all 0.3s;
@@ -90,7 +90,7 @@ main{
 
 .contenedor__inferior button:hover{
     background: #fff;
-    background:-webkit-linear-gradient(left, #1F34A6, #A60D0D);
+    background:-webkit-linear-gradient(left, #9fa0a1, #bf1b39);
     border: 2px rgb(22, 1, 1);
     transition: all 0.3s;
 }
@@ -122,7 +122,7 @@ main{
     font-size: 30px;
     text-align: center;
     margin-bottom: 20px;
-    color: #42699f;
+    color: #0c0c0c;
 }
 
 .contenedor__login-register form input{
@@ -140,15 +140,23 @@ main{
     margin-top: 30px;
     border: none;
     font-size: 14px;
-    background:  #42699f;
+    background:  #ffc107;
     font-weight: 600;
     cursor: pointer;
-    color: white;
+    color: rgb(8, 8, 8);
+    outline: none;
+}
+
+.contenedor__login-register form a{
+   text-align:center;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(8, 8, 8);
     outline: none;
 }
 .contenedor__login-register button:hover{
     background: #fff;
-    background:-webkit-linear-gradient(left, #1F34A6, #A60D0D);
+    background:-webkit-linear-gradient(left, #9fa0a1, #bf1b39);
     transition: all 0.3s;
 }
 
