@@ -29,8 +29,7 @@
                         <div class="col-md-3">
                             <a href="https://www.facebook.com/pactodevida">
                                 <span class="fa-stack fa-4x">
-                                    <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                                    <i class="fas fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                   <img src="../../web/img/facebook.png" class="img" alt="Image" width="100"/>  
                                 </span>
                                 <h4 class="my-3">Facebook</h4>
                                 <p class="text-muted">Iglesia Pacto de vida</p>
@@ -39,8 +38,7 @@
                         <div class="col-md-3">
                             <a href="">
                                 <span class="fa-stack fa-4x">
-                                    <i class="fas fa-circle fa-stack-2x text-warning"></i>
-                                    <i class="fas fa fa-instagram fa-stack-1x fa-inverse"></i>
+                                    <img src="../../web/img/instagram.png" class="img" alt="Image" width="100"/>
                                 </span>
                                 <h4 class="my-3">Instagram</h4>
                                 <p class="text-muted">Iglesia Pacto de vida</p>
@@ -49,8 +47,7 @@
                         <div class="col-md-3">
                             <a href="">
                                 <span class="fa-stack fa-4x">
-                                    <i class="fas fa-circle fa-stack-2x text-success"></i>
-                                    <i class="fas fa fa-whatsapp fa-stack-1x fa-inverse"></i>
+                                  <img src="../../web/img/WhatsApp.png" class="img" alt="Image" width="180"/>
                                 </span>
                                 <h4 class="my-3">Whatsapp</h4>
                                 <p class="text-muted">88889999</p>
@@ -59,8 +56,7 @@
                         <div class="col-md-3">
                             <a href="https://www.youtube.com/watch?v=93SOsI9wFQs">
                                 <span class="fa-stack fa-4x">
-                                    <i class="fas fa-circle fa-stack-2x text-danger"></i>
-                                    <i class="fas fa fa-youtube-play fa-stack-1x fa-inverse"></i>
+                                <img src="../../web/img/Youtube.png" class="img" alt="Image" width="100"/>
                                 </span>
                                 <h4 class="my-3">You Tube</h4>
                                 <p class="text-muted">Pacto de Vida</p>
