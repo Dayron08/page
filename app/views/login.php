@@ -18,7 +18,8 @@
 
         <main>
             <div class="text-center textmenu">
-            <h3><a  href="../views/home.php">Menu principal</a></h3>
+            <a class="btn btn-warning rounded-pill shadow-none me-2 px-4 fw-bold " href="../views/home.php"
+                ></i>Menu principal</a>
             </div>
       
            <!--Cuadros de iniciar sesion o registrarse-->
@@ -49,10 +50,11 @@
 
                     <!--Register-->
                     <form action="" class="formulario__register">
+                        
                         <h2>Regístrarse</h2>
                         <input type="text" placeholder="Cedula">
                         <input type="text" placeholder="Nombre">
-                        <input type="text" placeholder="Apellido">
+                        <input type="text" placeholder="Apellidos">
                         <input type="text" placeholder="Correo Electronico">
                         <input type="password" placeholder="Contraseña">
                         <button>Regístrarse</button>
