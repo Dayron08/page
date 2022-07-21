@@ -249,8 +249,7 @@
                                         class="blockquote card-body bg-white shadow-sm rounded d-flex flex-column px-lg-5">
                                         <p class="fs-1 text-secondary o-25 mb-0"><i class="fas fa-quote-right"></i></p>
                                         <p class="fs-6">La Hermana Arredondo testifica cómo conoció la Iglesia y cómo
-                                            ésta
-                                            le ha ayudado en su vida. Ella sabe que ha sido guiada por el Espíritu</p>
+                                            ésta le ha ayudado en su vida. Ella sabe que ha sido guiada por el Espíritu</p>
                                         <p class="text-secondary text-decoration-none fs-sm mt-auto mb-3 o-75">
                                             &mdash;<span class="fw-bold"> John Doe</span> - IT Profesional</p>
                                         <div class="img px-3 px-lg-4">
@@ -284,16 +283,15 @@
 
                             <div class="col-6 col-md d-flex align-items-stretch">
                                 <figure class="card testimonial h-100 text-start bg-transparent mb-0">
-                                    <blockquote
+                                <blockquote
                                         class="blockquote card-body bg-white shadow-sm rounded d-flex flex-column px-lg-5">
                                         <p class="fs-1 text-secondary o-25 mb-0"><i class="fas fa-quote-right"></i></p>
-                                        <p class="fs-6">Veniam iste, vitae maiores. tenetur Quis voluptates consequatur
-                                            unde culpa perspiciatis odit vero beatae</p>
+                                        <p class="fs-6">La Hermana Arredondo testifica cómo conoció la Iglesia y cómo
+                                            ésta le ha ayudado en su vida. Ella sabe que ha sido guiada por el Espíritu</p>
                                         <p class="text-secondary text-decoration-none fs-sm mt-auto mb-3 o-75">
-                                            &mdash;<span class="fw-bold"> John Doe</span> - Marketing Manager</p>
+                                            &mdash;<span class="fw-bold"> John Doe</span> - IT Profesional</p>
                                         <div class="img px-3 px-lg-4">
-                                            <img src="../../web/img/LOGO02.png" class="img rounded-circle"
-                                                alt="Image" />
+                                            <img src="" />
                                         </div>
                                     </blockquote>
                                 </figure>
@@ -312,19 +310,17 @@
                         <div class="row testimonials g-4">
                             <div class="col-12 col-md d-flex align-items-stretch">
                                 <figure class="card testimonial h-100 text-start bg-transparent mb-0">
-                                    <blockquote
+                                <blockquote
                                         class="blockquote card-body bg-white shadow-sm rounded d-flex flex-column px-lg-5">
                                         <p class="fs-1 text-secondary o-25 mb-0"><i class="fas fa-quote-right"></i></p>
-                                        <p class="fs-6">Explicabo facere maxime fuga voluptates saepe veniam iste, vitae
-                                            maiores. Quis voluptates consequatur</p>
-
+                                        <p class="fs-6">La Hermana Arredondo testifica cómo conoció la Iglesia y cómo
+                                            ésta le ha ayudado en su vida. Ella sabe que ha sido guiada por el Espíritu</p>
                                         <p class="text-secondary text-decoration-none fs-sm mt-auto mb-3 o-75">
-                                            &mdash;<span class="fw-bold"> John Doe</span> - General Manager</p>
+                                            &mdash;<span class="fw-bold"> John Doe</span> - IT Profesional</p>
                                         <div class="img px-3 px-lg-4">
-                                            <img src="../../web/img/LOGO02.png" class="img rounded-circle"
-                                                alt="Image" />
+                                            <img src="" />
                                         </div>
-                                    </blockquote>
+                                </blockquote>
                                 </figure>
                                 <!-- /.card -->
                             </div>
@@ -332,16 +328,15 @@
 
                             <div class="col-6 col-md d-flex align-items-stretch">
                                 <figure class="card testimonial h-100 text-start bg-transparent mb-0">
-                                    <blockquote
+                                <blockquote
                                         class="blockquote card-body bg-white shadow-sm rounded d-flex flex-column px-lg-5">
                                         <p class="fs-1 text-secondary o-25 mb-0"><i class="fas fa-quote-right"></i></p>
-                                        <p class="fs-6">Unde culpa perspiciatis odit vero beatae tenetur facere tenetur
-                                            dolor sit amet consectetur adipisicing</p>
+                                        <p class="fs-6">La Hermana Arredondo testifica cómo conoció la Iglesia y cómo
+                                            ésta le ha ayudado en su vida. Ella sabe que ha sido guiada por el Espíritu</p>
                                         <p class="text-secondary text-decoration-none fs-sm mt-auto mb-3 o-75">
-                                            &mdash;<span class="fw-bold"> John Doe</span> - Freelancer</p>
+                                            &mdash;<span class="fw-bold"> John Doe</span> - IT Profesional</p>
                                         <div class="img px-3 px-lg-4">
-                                            <img src="../../web/img/LOGO02.png" class="img rounded-circle"
-                                                alt="Image" />
+                                            <img src="" />
                                         </div>
                                     </blockquote>
                                 </figure>
