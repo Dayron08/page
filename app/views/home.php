@@ -391,7 +391,7 @@
                 <div data-swiper-id="#testimonials-swiper-1-swiper" class="swiper-pagination w-auto bottom-0"
                     data-swiper-pagination-limit="2"></div>
 
-                <a href="#"
+                <a href="../views/testimonials.php"
                     class="btn btn-link btn-sm btn-more text-uppercase fw-bold shadow-none o-50 o-100-hover ms-3 trans-base px-0">Todos
                     los testimonios<i class="fas fa-long-arrow-alt-right"></i></a>
             </div>
