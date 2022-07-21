@@ -184,13 +184,12 @@
             <div
                 class="col-12 col-lg-6 col-xl-6 py-4 py-lg-7 pe-lg-6 d-flex flex-column justify-content-center section-content ">
                 <h2 class="fs-1 mb-3 text-bla">Cuentanos tu experiencia</h2>
-                <p class="lead mb-4">We buy your home in your terms. Get an instant offer and options within 24 hours or
-                    you can easily lists with us.</p>
+                <p class="lead mb-4">Comparte un testimonio para que las otras personas puedan conocer tu experiencia</p>
 
                 <form action="#" method="post" class="">
                     <div class="input-group mb-3">
-                        <input type="text" class="form-control form-control-lg" placeholder="Testimonio"
-                            aria-label="Recipient's username" aria-describedby="button-addon2" />
+                        <textarea type="text" class="form-control form-control-lg" placeholder="Testimonio"
+                            aria-label="Recipient's username" aria-describedby="button-addon2" ></textarea>
                         <button class="btn btn-warning btn-lg px-4" type="button" id="button-addon2">Subir</button>
                     </div>
                 </form>
