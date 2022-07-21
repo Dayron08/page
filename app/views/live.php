@@ -16,11 +16,14 @@
     </section>
     <!-- #page-hero.section section__inverse justify-content-center pt-6 pb-4 pb-lg-5 pb-xl-6 -->
 
-    <section id="news-1" class="section pb-6 mt-n4 mt-lg-n5 mt-xl-n6">
-        <div class="bg bg-img position-absolute" data-bg-img=".img"></div>
-        <!-- /.bg bg-img position-absolute -->
-
-
+    <section id="lives" class="section bg-ligth ">
+       
+        <div class="row cities g-3 mb-4">
+            <iframe width="700" height="700" src="https://www.youtube.com/embed/Lo3RbQw1ics"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+        </div>
 
     </section>
     <!-- #news-1.section pb-6 mt-n4 mt-lg-n5 mt-xl-n6 -->
