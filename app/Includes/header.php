@@ -25,6 +25,7 @@
     <link rel="stylesheet" type="text/css" href="../../web/css/discoverize-default.css" />
     <link rel="stylesheet" type="text/css" href="../../web/css/style.css" />
     <script src="../../web/js/script.js"></script>
+
     <title>Iglesia Pacto de Vida</title>
     <style>
 
@@ -77,7 +78,8 @@
                                 </li>
 
                                 <li>
-                                    <span class="dropdown-header text-uppercase fw-bold"><a class="" href="../views/live.php">En vivos
+                                    <span class="dropdown-header text-uppercase fw-bold"><a class=""
+                                            href="../views/live.php">En vivos
                                         </a></span>
                                 </li>
 
