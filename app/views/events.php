@@ -185,10 +185,13 @@
             <footer class="section-footer d-flex justify-content-center">
                 <div class="btn-toolbar mb-0 me-3" role="toolbar">
                     <div class="btn-group me-2" role="group">
-                        <a href="#" class="btn btn-outline-primary btn-default btn-sm px-3">Previous</a>
-                        <a href="#" class="btn btn-outline-primary btn-default btn-sm active px-3">1</a>
-                        <a href="#" class="btn btn-outline-primary btn-default btn-sm px-3">2</a>
-                        <a href="#" class="btn btn-outline-primary btn-default btn-sm px-3">Next</a>
+                        <a href="#" class="btn btn-outline-dark btn-default btn-sm px-3">Anterior</a>
+                        <a href="#" class="btn btn-outline-dark btn-default btn-sm active px-3">1</a>
+                        <a href="#" class="btn btn-outline-dark btn-default btn-sm px-3">2</a>
+                        <a href="#" class="btn btn-outline-dark btn-default btn-sm px-3">3</a>
+                        <a href="#" class="btn btn-outline-dark btn-default btn-sm px-3">4</a>
+                        <a href="#" class="btn btn-outline-dark btn-default btn-sm px-3">5</a>
+                        <a href="#" class="btn btn-outline-dark btn-default btn-sm px-3">Siguiente</a>
                     </div>
                 </div>
             </footer>
