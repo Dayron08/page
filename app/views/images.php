@@ -93,7 +93,7 @@
     <!-- /.bg bg-img position-absolute -->
 
     <div class="container-xl position-relative h-100">
-        <header class="section-header mb-4">
+        <header class="section-header mb-0">
             <h2 class="fs-3 text-center section-title mb-3">Nuestros J&oacute;venes</h2>
 
             <p class="lead text-center mb-0 o-75">Imag&eacute;nes relacionadas
