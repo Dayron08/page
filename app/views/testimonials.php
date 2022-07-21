@@ -14,7 +14,7 @@
         <div class="section-filter pt-4">
             <div class="row g-3">
                 <div class="col-12 col-md section-content text-center text-md-start">
-                    <p class="mb-0"><strong>80</strong>&nbsp;Resultados&nbsp;Encontrados</p>
+                    <p class="mb-0 text-white"><strong>80</strong>&nbsp;Resultados&nbsp;Encontrados</p>
                 </div>
                 <!-- /.col-12 col-md -->
 
@@ -27,9 +27,10 @@
                             data-bs-toggle="dropdown" aria-expanded="false">Recientes</button>
 
                         <ul class="dropdown-menu dropdown-menu-end w-100">
-                            <li><a class="dropdown-item fs-sm active" href="#" data-value="1">Recientes</a></li>
+                            <li><a class="dropdown-item fs-sm active text-black" href="#" data-value="1">Recientes</a>
+                            </li>
 
-                            <li><a class="dropdown-item fs-sm" href="#" data-value="2">Por nombre</a></li>
+                            <li><a class="dropdown-item fs-sm text-black" href="#" data-value="2">Por nombre</a></li>
                         </ul>
                         <!-- /.dropdown-menu w-100 -->
                     </div>
