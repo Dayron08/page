@@ -44,9 +44,16 @@
     background-color: #0d0c0e;
 }
 
+
 #welcome_video{
     background-color: #0A0A0D;
     margin-left: 100px;
     margin-right: 100px;
+}
+
+
+.cardsbg{
+
+    background-color: #bf1b39;
 }
 
