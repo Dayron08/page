@@ -26,7 +26,7 @@
     margin-right: 5%;
     height: 50%;
     width: 50%;
-   
+    background-color: #0A0A0D;
 
 }
 
@@ -55,6 +55,12 @@
 
 #welcome_video{
     background-color: #0A0A0D;
+    margin-bottom: 2%;
+    
+}
+
+#welcome_video{
+    background-color: #fbfbff;
     margin-bottom: 2%;
     
 }

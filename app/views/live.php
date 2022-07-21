@@ -19,16 +19,23 @@
     </section>
     <!-- #page-hero.section section__inverse justify-content-center pt-6 pb-4 pb-lg-5 pb-xl-6 -->
 
-    <section id="lives" class="section">
+    <section class="section " id="welcome_vide">
+    <!-- /.bg bg-img position-absolute -->
+        <div class="container-xl position-relative">
 
-        <div class="container row bg-black g-3 mb-4">
-            <iframe width="700" height="700" src="https://www.youtube.com/embed/Lo3RbQw1ics"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
+
+            <div class="row cities g-4 mb-5 mt-3">
+                <iframe width="700" height="700" src="https://www.youtube.com/embed/Lo3RbQw1ics"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <!-- /.row cities -->
+
         </div>
-
+    <!-- /.container-xl -->
     </section>
+<!-- #cities-grid-2.section py-5 py-lg-6 -->
     <!-- #news-1.section pb-6 mt-n4 mt-lg-n5 mt-xl-n6 -->
 
     <?php require_once("../Includes/footer.php");?>
