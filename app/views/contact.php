@@ -54,12 +54,12 @@
                     </a>
                 </div>
                 <div class="col-md-3">
-                    <a href="https://www.youtube.com/watch?v=93SOsI9wFQs">
+                    <a href="https://www.youtube.com/channel/UCjQ7pvR-L9Kh8SGJPBQ0mIw">
                         <span class="fa-stack fa-4x">
                             <img src="../../web/img/Youtube.png" class="img" alt="Image" width="100" />
                         </span>
                         <h4 class="my-3">You Tube</h4>
-                        <p class="text-muted">Pacto de Vida</p>
+                        <p class="text-muted">Iglesia Pacto de Vida</p>
                     </a>
                 </div>
             </div>
