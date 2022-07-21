@@ -264,7 +264,7 @@
                             <div class="col-6 col-md d-flex align-items-stretch">
                                 <figure class="card testimonial h-100 text-start bg-transparent mb-0">
                                     <blockquote
-                                        class="blockquote card-body bg-white shadow-sm rounded d-flex flex-column px-lg-5">
+                                        class="cardsbg blockquote card-body  shadow-sm rounded d-flex flex-column px-lg-5">
                                         <p class="fs-1 text-secondary o-25 mb-0"><i class="fas fa-quote-right"></i></p>
                                         <p class="fs-6">La Hermana Arredondo testifica cómo conoció la Iglesia y cómo
                                             ésta
@@ -284,7 +284,7 @@
                             <div class="col-6 col-md d-flex align-items-stretch">
                                 <figure class="card testimonial h-100 text-start bg-transparent mb-0">
                                     <blockquote
-                                        class="blockquote card-body bg-white shadow-sm rounded d-flex flex-column px-lg-5">
+                                        class="cardsbg blockquote card-body shadow-sm rounded d-flex flex-column px-lg-5">
                                         <p class="fs-1 text-secondary o-25 mb-0"><i class="fas fa-quote-right"></i></p>
                                         <p class="fs-6">La Hermana Arredondo testifica cómo conoció la Iglesia y cómo
                                             ésta le ha ayudado en su vida. Ella sabe que ha sido guiada por el Espíritu
@@ -312,7 +312,7 @@
                             <div class="col-12 col-md d-flex align-items-stretch">
                                 <figure class="card testimonial h-100 text-start bg-transparent mb-0">
                                     <blockquote
-                                        class="blockquote card-body bg-white shadow-sm rounded d-flex flex-column px-lg-5">
+                                        class="cardsbg blockquote card-body  shadow-sm rounded d-flex flex-column px-lg-5">
                                         <p class="fs-1 text-secondary o-25 mb-0"><i class="fas fa-quote-right"></i></p>
                                         <p class="fs-6">La Hermana Arredondo testifica cómo conoció la Iglesia y cómo
                                             ésta le ha ayudado en su vida. Ella sabe que ha sido guiada por el Espíritu
@@ -331,7 +331,7 @@
                             <div class="col-6 col-md d-flex align-items-stretch">
                                 <figure class="card testimonial h-100 text-start bg-transparent mb-0">
                                     <blockquote
-                                        class="blockquote card-body bg-white shadow-sm rounded d-flex flex-column px-lg-5">
+                                        class="cardsbg blockquote card-body shadow-sm rounded d-flex flex-column px-lg-5">
                                         <p class="fs-1 text-secondary o-25 mb-0"><i class="fas fa-quote-right"></i></p>
                                         <p class="fs-6">La Hermana Arredondo testifica cómo conoció la Iglesia y cómo
                                             ésta le ha ayudado en su vida. Ella sabe que ha sido guiada por el Espíritu
@@ -350,7 +350,7 @@
                             <div class="col-6 col-md d-flex align-items-stretch">
                                 <figure class="card testimonial h-100 text-start bg-transparent mb-0">
                                     <blockquote
-                                        class="blockquote card-body bg-white shadow-sm rounded d-flex flex-column px-lg-5">
+                                        class="cardsbg blockquote card-body shadow-sm rounded d-flex flex-column px-lg-5">
                                         <p class="fs-1 text-secondary o-25 mb-0"><i class="fas fa-quote-right"></i></p>
                                         <p class="fs-6">Explicabo facere maxime fuga voluptates saepe tenetur veniam
                                             iste, vitae maiores. Quis voluptates unde culpa</p>
