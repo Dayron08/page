@@ -1,6 +1,10 @@
 #body{
     background-color: #F2F2F2;
 }
+
+#header{
+    background-color: #F2F2F2;
+}
 .mapouter {
     position: relative;
     text-align: right;
