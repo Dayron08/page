@@ -20,7 +20,7 @@
 
                 <p class="text-light">
 
-                    <a class="btn btn-primary rounded-pill shadow-none me-2 px-4 fw-bold " href="../views/login.php"
+                    <a class="btn btn-warning rounded-pill shadow-none me-2 px-4 fw-bold " href="../views/login.php"
                         id="btn_login"><i class="fas fa-user"></i> Se parte de nosotros</a>
                 </p>
 
