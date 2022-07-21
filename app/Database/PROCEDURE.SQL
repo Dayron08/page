@@ -174,6 +174,17 @@ DELIMITER ;
 --PRUEBA EXITOSA
 CALL P_ELIMINAR_IMAGEN('1');
 
+--SELECT
+DELIMITER $$
+USE PacVi $$
+CREATE OR REPLACE PROCEDURE P_VER_FOTOS()
+    BEGIN
+        SELECT
+            IMG_PATH AS DIRECCION_DE_IMAGEN
+        FROM GALERIA ;
+    END$$
+DELIMITER;
+CALL P_VER_FOTOS();
 --ACTUALIZAR (NO SE)
 
 ---------------------------------------------------------PERSONA_TESTIMONIOS(Mariay Randall)-------------------------------------------------------------------------
@@ -190,6 +201,7 @@ CREATE OR REPLACE PROCEDURE P_VER_PERSONA_TESTIMONIO()
         INNER JOIN PERSONA P ON (P.ID_REGISTRO_PERSONA = PT.ID_REGISTRO_PERSONA); 
     END$$
 DELIMITER;
+--POR FECHA,RECIENTE CAMBIAR 
 ---PRUEBA EXITOSA
 CALL P_VER_PERSONA_TESTIMONIO();
 
@@ -415,3 +427,55 @@ CREATE OR REPLACE PROCEDURE P_ELIMINAR_EVENTO
 DELIMITER ;
 --PRUEBA EXITOSA
 CALL P_ELIMINAR_EVENTO(5);
+----------------------------------------------------------VIDEOS--------------------------------------------------------------------------
+DELIMITER $$
+USE PacVi $$
+CREATE OR REPLACE PROCEDURE P_INSERTAR_VIDEO
+    (
+        IN P_URL VARCHAR(300)
+    )
+    BEGIN
+            INSERT INTO VIDEOS     
+            (
+                URL, 
+                FECHA 
+            )
+            VALUES 
+            (
+                P_URL,
+                current_timestamp()
+            );
+            COMMIT;
+    END$$
+DELIMITER ;
+DROP PROCEDURE P_INSERTAR_VIDEO;
+--PRUEBA EXITOSA
+CALL P_INSERTAR_VIDEO('../../');
+
+-- ELIMINAR 
+DELIMITER $$
+USE PacVi $$
+CREATE OR REPLACE PROCEDURE P_ELIMINAR_VIDEO
+    (
+        IN P_ID_VIDEO VARCHAR(30)
+    )
+    BEGIN
+        DELETE FROM VIDEOS where
+            ID_VIDEO = P_ID_VIDEO;
+    END$$
+DELIMITER ;
+--PRUEBA EXITOSA
+CALL P_ELIMINAR_VIDEO('1');
+
+--SELECT
+DELIMITER $$
+USE PacVi $$
+CREATE OR REPLACE PROCEDURE P_VER_VIDEO()
+    BEGIN
+        SELECT
+            URL AS DIRECCION_DE_VIDEO
+        FROM VIDEOS ;
+    END$$
+DELIMITER;
+
+CALL P_VER_VIDEO();
