@@ -1,7 +1,5 @@
-<footer class="bg-dark">
-    <div id="footer-1" class="section section__inverse py-5 py-lg-6">
-        <div class="bg bg-img position-absolute" data-bg-img=".img"></div>
-        <!-- /.bg bg-img position-absolute -->
+<footer id= "footer">
+    <div id="footer" class="section section__inverse py-5 py-lg-6">
 
         <div class="container-xl position-relative">
             <div class="row gy-4 gx-4 section-content">
@@ -90,8 +88,7 @@
     <!-- #footer-1.section section__inverse py-5 py-lg-6 -->
 
     <div id="footer-bottom-1" class="section section__inverse py-3">
-        <div class="bg bg-img position-absolute bg-black o-25" data-bg-img=".img"></div>
-        <!-- /.bg bg-img position-absolute bg-black o-25 -->
+        
 
         <div class="container-xl position-relative">
             <div class="row section-content">
