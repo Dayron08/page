@@ -1,15 +1,13 @@
 <?php require_once("../Includes/header.php");?>
 <section id="searchbox-hero-2" class="section section__inverse pt-6">
-    <div class="bg bg-img position-absolute h-90" data-bg-img=".img"></div>
+    <div class="bg bg-img position-absolute h-90" data-bg-img=".img">
+        <img src="../../web/img/about_us_wallpaper.jpg" class="img" alt="Image" />
+        <div class="overlay bg-black position-absolute o-50"></div>
+    </div>
     <!-- /.bg bg-img position-absolute h-90 -->
 
     <div class="container-xl position-relative">
         <div id="searchbox-hero-2Searchbox" class="searchbox position-relative mt-1 px-4 px-lg-5 h-330px h-lg-480px">
-            <div class="bg bg-img position-absolute shadow rounded-3" data-bg-img=".img">
-                <img src="../../web/img/about_us_wallpaper.jpg" class="img" alt="Image" />
-                <div class="overlay bg-dark position-absolute o-50"></div>
-            </div>
-            <!-- /.bg bg-img position-absolute shadow rounded-3 -->
 
             <div class="row position-relative h-100">
                 <div class="col-12 col-lg-7 py-4 d-flex flex-column justify-content-center">
