@@ -5,6 +5,7 @@
         <img src="../../web/img/image_wallpaper.jpg" class="img" alt="Image" />
 
         <div class="overlay bg-dark position-absolute o-50"></div>
+
     </div>
     <!-- /.bg bg-img position-absolute -->
 
