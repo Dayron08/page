@@ -1,4 +1,4 @@
-<footer id= "footer">
+<footer id="footer">
     <div id="footer" class="section section__inverse py-5 py-lg-6">
 
         <div class="container-xl position-relative">
@@ -88,7 +88,7 @@
     <!-- #footer-1.section section__inverse py-5 py-lg-6 -->
 
     <div id="footer-bottom-1" class="section section__inverse py-3">
-        
+
 
         <div class="container-xl position-relative">
             <div class="row section-content">
@@ -115,9 +115,9 @@
 
 <!-- Discoverize JS -->
 
-<script src="../../Views/js/discoverize.js"></script>
-<script src="../../Views/js/carousel.js"></script>
-<script src="../../Views/js/script.js"></script>
+<script src="../js/discoverize.js"></script>
+<script src="../js/carousel.js"></script>
+<script src="../js/script.js"></script>
 </body>
 
 </html>
