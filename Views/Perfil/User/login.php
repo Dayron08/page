@@ -48,7 +48,7 @@
                     <input type="password" placeholder="Contraseña">
                     <button>Entrar</button>
                     <br>
-                    <a class="btn rounded-pill shadow-none me-2 px-4 fw-bold " href="../views/home.php">Menu
+                    <a class="btn rounded-pill shadow-none me-2 px-4 fw-bold " href="../User/home.php">Menu
                         principal</a>
                 </form>
 
@@ -63,7 +63,7 @@
                     <input type="password" placeholder="Contraseña">
                     <button>Regístrarse</button>
                     <br>
-                    <a class="rounded-pill shadow-none me-2 px-4 fw-bold" href="../views/home.php">Menu principal</a>
+                    <a class="rounded-pill shadow-none me-2 px-4 fw-bold" href="../User/home.php">Menu principal</a>
                 </form>
             </div>
         </div>
