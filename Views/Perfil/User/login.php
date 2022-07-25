@@ -15,7 +15,7 @@
         href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&family=Oswald&family=Zen+Old+Mincho&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="../../web/css/estilos.css">
+    <link rel="stylesheet" href="../../css/estilos.css">
 </head>
 
 

@@ -2,7 +2,7 @@
 <section id="page-hero"
     class="section section__inverse justify-content-center py-5 py-lg-6 mb-n5 vh-50 h-lg-480px min-h-330px">
     <div class="bg bg-img position-absolute" data-bg-img=".img">
-        <img src="../../web/img/image_wallpaper.jpg" class="img" alt="Image" />
+        <img src="../../img/image_wallpaper.jpg" class="img" alt="Image" />
 
         <div class="overlay bg-dark position-absolute o-50"></div>
     </div>
@@ -46,7 +46,7 @@
             <div class="col-12 col-sm-6 col-md-3 d-flex">
                 <div class="card card__minimal h-100">
                     <div class="card-img-top overflow-hidden position-relative">
-                        <img src="../../web/img/church/image_01.jpg" class="w-100" alt="Image"
+                        <img src="../../img/church/image_01.jpg" class="w-100" alt="Image"
                             style="width: 100%; height : 250px;" />
                     </div>
                 </div>
@@ -57,7 +57,7 @@
             <div class="col-12 col-sm-6 col-md-3 d-flex">
                 <div class="card card__minimal h-100">
                     <div class="card-img-top overflow-hidden position-relative">
-                        <img src="../../web/img/church/image_02.JPG" class="w-100" alt="Image"
+                        <img src="../../img/church/image_02.JPG" class="w-100" alt="Image"
                             style="width: 100%; height : 250px;" />
                     </div>
                 </div>
@@ -119,7 +119,7 @@
             <div class="col-12 col-sm-6 col-md-3 d-flex">
                 <div class="card card__minimal h-100">
                     <div class="card-img-top overflow-hidden position-relative">
-                        <img src="../../web/img/young_people/image_01.jpg" class="w-100" alt="Image"
+                        <img src="../../img/young_people/image_01.jpg" class="w-100" alt="Image"
                             style="width: 100%; height : 250px;" />
                     </div>
                 </div>
@@ -130,7 +130,7 @@
             <div class="col-12 col-sm-6 col-md-3 d-flex">
                 <div class="card card__minimal h-100">
                     <div class="card-img-top overflow-hidden position-relative">
-                        <img src="../../web/img/young_people/image_02.jpg" class="w-100" alt="Image"
+                        <img src="../../img/young_people/image_02.jpg" class="w-100" alt="Image"
                             style="width: 100%; height : 250px;" />
                     </div>
                 </div>
@@ -193,7 +193,7 @@
             <div class="col-12 col-sm-6 col-md-3 d-flex">
                 <div class="card card__minimal h-100">
                     <div class="card-img-top overflow-hidden position-relative">
-                        <img src="../../web/img/children/image_02.jpg" class="w-100" alt="Image"
+                        <img src="../../img/children/image_02.jpg" class="w-100" alt="Image"
                             style="width: 100%; height : 250px;" />
                     </div>
                 </div>
@@ -204,7 +204,7 @@
             <div class="col-12 col-sm-6 col-md-3 d-flex">
                 <div class="card card__minimal h-100">
                     <div class="card-img-top overflow-hidden position-relative">
-                        <img src="../../web/img/children/image_03.jpg" class="w-100" alt="Image"
+                        <img src="../../img/children/image_03.jpg" class="w-100" alt="Image"
                             style="width: 100%; height : 250px;" />
                     </div>
                 </div>

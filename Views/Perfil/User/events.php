@@ -96,7 +96,7 @@
                 <div class="col-12 col-sm-6 col-md-3 d-flex">
                     <div class="card card__minimal h-100">
                         <div class="card-img-top overflow-hidden position-relative">
-                            <img src="../../web/img/spirituality-and-religion-hands-folded-in-prayer-on-holy-bible-in-church-concept-for-faith.jpg"
+                            <img src="../../img/spirituality-and-religion-hands-folded-in-prayer-on-holy-bible-in-church-concept-for-faith.jpg"
                                 class="w-100" alt="Image" />
                         </div>
                         <div class="card-body pt-3">
@@ -114,7 +114,7 @@
                 <div class="col-12 col-sm-6 col-md-3 d-flex">
                     <div class="card card__minimal h-100">
                         <div class="card-img-top overflow-hidden position-relative">
-                            <img src="../../web/img/nathan-mullet-GoFys2bZJaE-unsplash.jpg" class="w-100" alt="Image" />
+                            <img src="../../img/nathan-mullet-GoFys2bZJaE-unsplash.jpg" class="w-100" alt="Image" />
                         </div>
                         <div class="card-body pt-3">
                             <h3 class="fs-5"><a href="" class="stretched-link">Japan Through The lenses</a></h3>
@@ -131,7 +131,7 @@
                 <div class="col-12 col-sm-6 col-md-3 d-flex">
                     <div class="card card__minimal h-100">
                         <div class="card-img-top overflow-hidden position-relative">
-                            <img src="../../web/img/edward-cisneros-lpqwPxMVUv0-unsplash.jpg" class="w-100"
+                            <img src="../../img/edward-cisneros-lpqwPxMVUv0-unsplash.jpg" class="w-100"
                                 alt="Image" />
                         </div>
                         <div class="card-body pt-3">
@@ -149,7 +149,7 @@
                 <div class="col-12 col-sm-6 col-md-3 d-flex">
                     <div class="card card__minimal h-100">
                         <div class="card-img-top overflow-hidden position-relative">
-                            <img src="../../web/img/bible_picture.jpg" class="w-100" alt="Image" />
+                            <img src="../../img/bible_picture.jpg" class="w-100" alt="Image" />
                         </div>
                         <div class="card-body pt-3">
                             <h3 class="fs-5"><a href="" class="stretched-link">Japan Through The lenses</a></h3>
@@ -166,7 +166,7 @@
                 <div class="col-12 col-sm-6 col-md-3 d-flex">
                     <div class="card card__minimal h-100">
                         <div class="card-img-top overflow-hidden position-relative">
-                            <img src="../../web/img/bee-balogun-azEIxYe2usQ-unsplash.jpg" class="w-100" alt="Image" />
+                            <img src="../../img/bee-balogun-azEIxYe2usQ-unsplash.jpg" class="w-100" alt="Image" />
                         </div>
                         <div class="card-body pt-3">
                             <h3 class="fs-5"><a href="" class="stretched-link">Japan Through The lenses</a></h3>
