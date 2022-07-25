@@ -38,8 +38,9 @@
         data-sticky-hide="true" data-switch-class="shadow-none|shadow">
         <nav class="navbar navbar-light navbar-default">
             <div class="container-xl justify-content-start">
-                <a class="navbar-brand d-flex position-relative mb-1" href="home.php"><img src="../../img/LOGO02.png"
-                        class="navbar-brand-img" alt="Pacto de Vida" style="width: 35%; border-radius: 100%;" /><img
+                <a class="navbar-brand d-flex position-relative mb-1" href="home.php"><img loading="lazy"
+                        src="../../img/LOGO02.png" class="navbar-brand-img" alt="Pacto de Vida"
+                        style="width: 35%; border-radius: 100%;" /><img loading="lazy"
                         src="../../img/Logo_recortado.png" style="width: 100%; " class="navbar-brand-img-light"
                         alt="Pacto de Vida" /></a>
 

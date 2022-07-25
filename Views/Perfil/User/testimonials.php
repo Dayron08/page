@@ -2,7 +2,7 @@
 
 <section id="page-hero" class="section section__inverse justify-content-center pt-6 pb-4 pb-lg-5 pb-xl-6">
     <div class="bg bg-img position-absolute" data-bg-img=".img">
-        <img src="../../img/testimonials_wallpaper.jpg" class="img" alt="Image" />
+        <img loading="lazy" src="../../img/testimonials_wallpaper.jpg" class="img" alt="Image" />
     </div>
     <!-- /.bg bg-img position-absolute -->
 
@@ -63,7 +63,7 @@
                         <p class="text-secondary text-decoration-none fs-sm mt-auto mb-3 o-75">&mdash;<span
                                 class="fw-bold"> John Doe</span> - IT Profesional</p>
                         <div class="img px-3 px-lg-4">
-                            <img src="http://assets.coolorize.com/avatar/256x256/ariel-lustre-368240.jpg"
+                            <img loading="lazy" src="http://assets.coolorize.com/avatar/256x256/ariel-lustre-368240.jpg"
                                 class="img rounded-circle" alt="Image" />
                         </div>
                     </blockquote>
@@ -81,7 +81,7 @@
                         <p class="text-secondary text-decoration-none fs-sm mt-auto mb-3 o-75">&mdash;<span
                                 class="fw-bold"> John Doe</span> - Sales Representative</p>
                         <div class="img px-3 px-lg-4">
-                            <img src="http://assets.coolorize.com/avatar/256x256/ben-white-190081.jpg"
+                            <img loading="lazy" src="http://assets.coolorize.com/avatar/256x256/ben-white-190081.jpg"
                                 class="img rounded-circle" alt="Image" />
                         </div>
                     </blockquote>
@@ -99,7 +99,8 @@
                         <p class="text-secondary text-decoration-none fs-sm mt-auto mb-3 o-75">&mdash;<span
                                 class="fw-bold"> John Doe</span> - Marketing Manager</p>
                         <div class="img px-3 px-lg-4">
-                            <img src="http://assets.coolorize.com/avatar/256x256/dmitriy-ilkevich-437760.jpg"
+                            <img loading="lazy"
+                                src="http://assets.coolorize.com/avatar/256x256/dmitriy-ilkevich-437760.jpg"
                                 class="img rounded-circle" alt="Image" />
                         </div>
                     </blockquote>
@@ -117,7 +118,8 @@
                         <p class="text-secondary text-decoration-none fs-sm mt-auto mb-3 o-75">&mdash;<span
                                 class="fw-bold"> John Doe</span> - General Manager</p>
                         <div class="img px-3 px-lg-4">
-                            <img src="http://assets.coolorize.com/avatar/256x256/melissa-mjoen-385845.jpg"
+                            <img loading="lazy"
+                                src="http://assets.coolorize.com/avatar/256x256/melissa-mjoen-385845.jpg"
                                 class="img rounded-circle" alt="Image" />
                         </div>
                     </blockquote>
@@ -135,7 +137,8 @@
                         <p class="text-secondary text-decoration-none fs-sm mt-auto mb-3 o-75">&mdash;<span
                                 class="fw-bold"> John Doe</span> - Freelancer</p>
                         <div class="img px-3 px-lg-4">
-                            <img src="http://assets.coolorize.com/avatar/256x256/mubariz-mehdizadeh-427362.jpg"
+                            <img loading="lazy"
+                                src="http://assets.coolorize.com/avatar/256x256/mubariz-mehdizadeh-427362.jpg"
                                 class="img rounded-circle" alt="Image" />
                         </div>
                     </blockquote>
@@ -153,7 +156,8 @@
                         <p class="text-secondary text-decoration-none fs-sm mt-auto mb-3 o-75">&mdash;<span
                                 class="fw-bold"> John Doe</span> - Software Deveoloper</p>
                         <div class="img px-3 px-lg-4">
-                            <img src="http://assets.coolorize.com/avatar/256x256/photo-1423483786645-576de98dcbed.jpg"
+                            <img loading="lazy"
+                                src="http://assets.coolorize.com/avatar/256x256/photo-1423483786645-576de98dcbed.jpg"
                                 class="img rounded-circle" alt="Image" />
                         </div>
                     </blockquote>

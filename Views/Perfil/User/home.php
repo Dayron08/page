@@ -71,7 +71,7 @@
                     <div class="swiper-slide w-330px h-330px pe-4 d-flex">
                         <div class="card shadow-sm shadow-hover trans-base zoom-bg-img o-hover-all">
                             <div class="card-img bg bg-img" data-bg-img=".img">
-                                <img src="../../img/church/image_01.jpg" class="img" alt="Image" />
+                                <img loading="lazy" src="../../img/church/image_01.jpg" class="img" alt="Image" />
                                 <div class="overlay bg-dark position-absolute o-25 o-50-hover"></div>
                             </div>
                             <!-- /.card-img bg bg-img -->
@@ -83,7 +83,7 @@
                     <div class="swiper-slide w-330px h-330px pe-4 d-flex">
                         <div class="card shadow-sm shadow-hover trans-base zoom-bg-img o-hover-all">
                             <div class="card-img bg bg-img" data-bg-img=".img">
-                                <img src="../../img/church/image_02.jpg" class="img" alt="Image" />
+                                <img loading="lazy" src="../../img/church/image_02.jpg" class="img" alt="Image" />
                                 <div class="overlay bg-dark position-absolute o-25 o-50-hover"></div>
                             </div>
                             <!-- /.card-img bg bg-img -->
@@ -95,7 +95,7 @@
                     <div class="swiper-slide w-330px h-330px pe-4 d-flex">
                         <div class="card shadow-sm shadow-hover trans-base zoom-bg-img o-hover-all">
                             <div class="card-img bg bg-img" data-bg-img=".img">
-                                <img src="../../img/church/image_01.jpg" class="img" alt="Image" />
+                                <img loading="lazy" src="../../img/church/image_01.jpg" class="img" alt="Image" />
                                 <div class="overlay bg-dark position-absolute o-25 o-50-hover"></div>
                             </div>
                             <!-- /.card-img bg bg-img -->
@@ -107,7 +107,7 @@
                     <div class="swiper-slide w-330px h-330px pe-4 d-flex">
                         <div class="card shadow-sm shadow-hover trans-base zoom-bg-img o-hover-all">
                             <div class="card-img bg bg-img" data-bg-img=".img">
-                                <img src="../../img/church/image_02.jpg" class="img" alt="Image" />
+                                <img loading="lazy" src="../../img/church/image_02.jpg" class="img" alt="Image" />
                                 <div class="overlay bg-dark position-absolute o-25 o-50-hover"></div>
                             </div>
                             <!-- /.card-img bg bg-img -->
@@ -119,7 +119,7 @@
                     <div class="swiper-slide w-330px h-330px pe-4 d-flex">
                         <div class="card shadow-sm shadow-hover trans-base zoom-bg-img o-hover-all">
                             <div class="card-img bg bg-img" data-bg-img=".img">
-                                <img src="../../img/church/image_02.jpg" class="img" alt="Image" />
+                                <img loading="lazy" src="../../img/church/image_02.jpg" class="img" alt="Image" />
                                 <div class="overlay bg-dark position-absolute o-25 o-50-hover"></div>
                             </div>
                             <!-- /.card-img bg bg-img -->
@@ -133,7 +133,7 @@
                     <div class="swiper-slide w-330px h-330px pe-4 d-flex">
                         <div class="card shadow-sm shadow-hover trans-base zoom-bg-img o-hover-all">
                             <div class="card-img bg bg-img" data-bg-img=".img">
-                                <img src="../../img/church/image_02.JPG" class="img" alt="Image" />
+                                <img loading="lazy" src="../../img/church/image_02.JPG" class="img" alt="Image" />
                                 <div class="overlay bg-dark position-absolute o-25 o-50-hover"></div>
                             </div>
                             <!-- /.card-img bg bg-img -->
@@ -277,8 +277,8 @@
                                         <p class="text-secondary text-decoration-none fs-sm mt-auto mb-3 o-75">
                                             &mdash;<span class="fw-bold"> John Doe</span> - Sales Representative</p>
                                         <div class="img px-3 px-lg-4">
-                                            <img src="../../web/img/LOGO02.png" class="img rounded-circle"
-                                                alt="Image" />
+                                            <img loading="lazy" src="../../web/img/LOGO02.png"
+                                                class="img rounded-circle" alt="Image" />
                                         </div>
                                     </blockquote>
                                 </figure>
@@ -362,8 +362,8 @@
                                         <p class="text-secondary text-decoration-none fs-sm mt-auto mb-3 o-75">
                                             &mdash;<span class="fw-bold"> John Doe</span> - Software Deveoloper</p>
                                         <div class="img px-3 px-lg-4">
-                                            <img src="../../web/img/LOGO02.png" class="img rounded-circle"
-                                                alt="Image" />
+                                            <img loading="lazy" src="../../web/img/LOGO02.png"
+                                                class="img rounded-circle" alt="Image" />
                                         </div>
                                     </blockquote>
                                 </figure>
