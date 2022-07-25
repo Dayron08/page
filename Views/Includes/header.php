@@ -46,7 +46,7 @@
                 <div class="ms-auto ps-3 navbar-end d-flex flex-row justify-content-end">
 
                     <button class="btn btn-link btn-light p-0 ms-3 shadow-none"><a class="fas fa-user"
-                            href="../Perfil/User/login.php"></a></button>
+                            href="login.php"></a></button>
 
                     <button class="btn-close btn-close-menu collapsed ms-3" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false"
