@@ -1,4 +1,4 @@
-<?php require_once("../Includes/header.php");?>
+<?php require_once("../../Includes/header.php");?>
 
 <body>
     <section id="page-hero" class="section section__inverse justify-content-center pt-6 pb-4 pb-lg-5 pb-xl-6">

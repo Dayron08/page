@@ -1,4 +1,4 @@
-<?php require_once("Includes/header.php");?>
+<?php require_once("../../Includes/header.php");?>
 <section id="searchbox-hero-2" class="section section__inverse pt-6">
     <div class="bg bg-img position-absolute h-90" data-bg-img=".img">
         <img src="../img/about_us_wallpaper.jpg" class="img" alt="Image" />
