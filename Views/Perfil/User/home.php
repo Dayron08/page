@@ -133,7 +133,7 @@
                     <div class="swiper-slide w-330px h-330px pe-4 d-flex">
                         <div class="card shadow-sm shadow-hover trans-base zoom-bg-img o-hover-all">
                             <div class="card-img bg bg-img" data-bg-img=".img">
-                                <img src="../../img/church/image_02.jpg" class="img" alt="Image" />
+                                <img src="../../img/church/image_02.JPG" class="img" alt="Image" />
                                 <div class="overlay bg-dark position-absolute o-25 o-50-hover"></div>
                             </div>
                             <!-- /.card-img bg bg-img -->

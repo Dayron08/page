@@ -59,7 +59,7 @@
                     <div class="mt-4 d-lg-none"></div>
 
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li><a class="nav-link active" href="../Perfil/User/home.php">Inicio</a></li>
+                        <li><a class="nav-link active" href="../User/home.php">Inicio</a></li>
                         <li class="nav-item nav-dropdown dropdown dropdown-hover">
                             <a class="nav-link dropdown-toggle" href="" id="navbarDocs" role="button"
                                 data-bs-toggle="dropdown">Sobre Nosotros</a>
