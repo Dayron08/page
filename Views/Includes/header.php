@@ -40,7 +40,7 @@
             <div class="container-xl justify-content-start">
                 <a class="navbar-brand d-flex position-relative mb-1" href="home.php"><img src="../../img/LOGO02.png"
                         class="navbar-brand-img" alt="Pacto de Vida" style="width: 35%; border-radius: 100%;" /><img
-                        src="../img/Logo_recortado.png" style="width: 100%; " class="navbar-brand-img-light"
+                        src="../../img/Logo_recortado.png" style="width: 100%; " class="navbar-brand-img-light"
                         alt="Pacto de Vida" /></a>
 
                 <div class="ms-auto ps-3 navbar-end d-flex flex-row justify-content-end">
