@@ -1,7 +1,7 @@
 <?php require_once("../../Includes/header.php");?>
 <section id="searchbox-hero-2" class="section section__inverse pt-6">
     <div class="bg bg-img position-absolute h-90" data-bg-img=".img">
-        <img src="../img/about_us_wallpaper.jpg" class="img" alt="Image" />
+        <img src="../User/about_us_wallpaper.jpg" class="img" alt="Image" />
         <div class="overlay bg-black position-absolute o-50"></div>
     </div>
     <!-- /.bg bg-img position-absolute h-90 -->
@@ -19,8 +19,6 @@
 
                     <p class="lead position-relative text-light">¡Tenemos servicio todos los domingos a las 10:30 AM!
                     </p>
-
-                   
                     <!-- /.searchbox-form position-relative bg-white rounded  shadow-sm -->
                 </div>
                 <!-- /.col-12 col-lg-7 -->
@@ -100,7 +98,7 @@
             <div class="col-12 col-lg-5">
                 <div class="card h-100 o-hover-all zoom-bg-img">
                     <div class="card-img bg bg-img" data-bg-img=".img">
-                        <img src="../../web/img/pastores.jpeg" class="img" alt="Image" />
+                        <img src="../../img/pastores.jpeg" class="img" alt="Image" />
                         <div class="overlay position-absolute bg-dark o-25 o-50-hover trans-base"></div>
                     </div>
                     <!-- /.card-img bg bg-img -->
@@ -165,22 +163,21 @@
         <div class="mapouter">
 
 
-                    <form action="#" class="searchbox-form position-relative bg-white rounded shadow-sm">
-                        <div class="bg position-absolute bg-white rounded-top form-is-focus"></div>
+            <form action="#" class="searchbox-form position-relative bg-white rounded shadow-sm">
+                <div class="bg position-absolute bg-white rounded-top form-is-focus"></div>
 
-                        <div class="input-group position-relative px-3">
-                            <label for="searchboxKeyword"
-                                class="input-group-text bg-transparent px-0 border-0 text-secondary"><i
-                                    class="fas fa-map-marker-alt"></i></label>
-                            <input id="searchboxKeyword" name="searchboxKeyword" type="text"
-                                class="form-control pe-5 form-control-lg border-0 shadow-none position-relative bg-transparent"
-                                placeholder="Cartago, Cervantes, Costa Rica"
-                                data-show-bs-collapse-id="#searchbox-hero-2FormOptionsCollapse"
-                                data-scroll-to="#searchBox" />
-                        </div>
-                        <!-- /.input-group -->
+                <div class="input-group position-relative px-3">
+                    <label for="searchboxKeyword"
+                        class="input-group-text bg-transparent px-0 border-0 text-secondary"><i
+                            class="fas fa-map-marker-alt"></i></label>
+                    <input id="searchboxKeyword" name="searchboxKeyword" type="text"
+                        class="form-control pe-5 form-control-lg border-0 shadow-none position-relative bg-transparent"
+                        placeholder="Cartago, Cervantes, Costa Rica"
+                        data-show-bs-collapse-id="#searchbox-hero-2FormOptionsCollapse" data-scroll-to="#searchBox" />
+                </div>
+                <!-- /.input-group -->
 
-                    </form>
+            </form>
             <div class="gmap_canvas"><iframe width="2000" height="700" id="gmap_canvas"
                     src="https://maps.google.com/maps?q=V5JM+G7Q,%20Provincia%20de%20Cartago,%20Cervantes&t=&z=13&ie=UTF8&iwloc=&output=embed"
                     frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
