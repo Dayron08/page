@@ -29,7 +29,7 @@
                 <div class="col-md-3">
                     <a href="https://www.facebook.com/pactodevida">
                         <span class="fa-stack fa-4x">
-                            <img src="../../img/facebook.png" class="img" alt="Image" width="100" />
+                            <img src="../../img/Facebook.png" class="img" alt="Image" width="100" />
                         </span>
                         <h4 class="my-3">Facebook</h4>
                         <p class="text-muted">Iglesia Pacto de vida</p>
