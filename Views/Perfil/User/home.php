@@ -406,4 +406,4 @@
 </section>
 <!-- #testimonials-swiper-1.section py-5 py-lg-6 -->
 
-<?php require_once("../Includes/footer.php");?>
+<?php require_once("../../Includes/footer.php");?>

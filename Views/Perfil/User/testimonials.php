@@ -183,4 +183,4 @@
 </section>
 <!-- #testimonials-1.section pb-6 mt-n4 mt-lg-n5 mt-xl-n6 -->
 
-<?php require_once("../Includes/footer.php");?>
+<?php require_once("../../Includes/footer.php");?>
