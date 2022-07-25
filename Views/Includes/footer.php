@@ -115,9 +115,9 @@
 
 <!-- Discoverize JS -->
 
-<script src="../js/discoverize.js"></script>
-<script src="../js/carousel.js"></script>
-<script src="../js/script.js"></script>
+<script src="../../js/discoverize.js"></script>
+<script src="../../js/carousel.js"></script>
+<script src="../../js/script.js"></script>
 </body>
 
 </html>
