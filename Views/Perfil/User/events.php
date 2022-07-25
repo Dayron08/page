@@ -3,8 +3,8 @@
 <body>
 
     <section id="page-hero" class="section section__inverse justify-content-center pt-6 pb-4 pb-lg-5 pb-xl-6">
-        <div class="bg bg-img position-absolute" data-bg-img=".img"><img src="./../img/events_wallpaper.jpg" class="img"
-                alt="Image" /></div>
+        <div class="bg bg-img position-absolute" data-bg-img=".img"><img src="../../img/events_wallpaper.jpg"
+                class="img" alt="Image" /></div>
         <!-- /.bg bg-img position-absolute -->
 
         <div class="container-xl position-relative section-content text-center py-4">
