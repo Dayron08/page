@@ -1,4 +1,4 @@
-<?php require_once("../Includes/header.php");?>
+<?php require_once("../../Includes/header.php");?>
 <section id="page-hero"
     class="section section__inverse justify-content-center py-5 py-lg-6 mb-n5 vh-50 h-lg-480px min-h-330px">
     <div class="bg bg-img position-absolute" data-bg-img=".img">
@@ -236,4 +236,4 @@
 
 
 
-<?php require_once("../Includes/footer.php");?>
+<?php require_once("../../Includes/footer.php");?>

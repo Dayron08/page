@@ -189,4 +189,4 @@
 </section>
 <!-- #map.section mt-n4 mt-lg-n5 mt-xl-n6 vh-75 -->
 
-<?php require_once("../Includes/footer.php");?>
+<?php require_once("../../Includes/footer.php");?>

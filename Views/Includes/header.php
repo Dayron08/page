@@ -59,15 +59,15 @@
                     <div class="mt-4 d-lg-none"></div>
 
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li><a class="nav-link active" href="../views/home.php">Inicio</a></li>
+                        <li><a class="nav-link active" href="../User/home.php">Inicio</a></li>
                         <li class="nav-item nav-dropdown dropdown dropdown-hover">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDocs" role="button"
+                            <a class="nav-link dropdown-toggle" href="" id="navbarDocs" role="button"
                                 data-bs-toggle="dropdown">Sobre Nosotros</a>
                             <ul class="nav-dropdown-menu dropdown-menu dropdown-menu-end shadow" data-bs-popper>
 
-                                <li><a class="dropdown-item" href="../views/about_us.php">Iglesia</a></li>
+                                <li><a class="dropdown-item" href="../User/about_us.php">Iglesia</a></li>
 
-                                <li><a class="dropdown-item" href="../views/testimonials.php">Testimonios</a></li>
+                                <li><a class="dropdown-item" href="../User/testimonials.php">Testimonios</a></li>
 
                             </ul>
                         </li>
@@ -79,9 +79,9 @@
                                     <span class="dropdown-header text-uppercase fw-bold">Galer&iacute;a</span>
                                 </li>
 
-                                <li><a class="dropdown-item" href="../views/videos.php">Videos</a></li>
+                                <li><a class="dropdown-item" href="../User/videos.php">Videos</a></li>
 
-                                <li><a class="dropdown-item" href="../views/images.php">Im&aacute;genes</a></li>
+                                <li><a class="dropdown-item" href="../User/images.php">Im&aacute;genes</a></li>
 
                                 <li>
                                     <hr class="dropdown-divider" />
@@ -89,18 +89,18 @@
 
                                 <li>
                                     <span class="dropdown-header text-uppercase fw-bold"><a class=""
-                                            href="../views/live.php">En vivos
+                                            href="../User/live.php">En vivos
                                         </a></span>
                                 </li>
 
                                 <li>
                                     <span class="dropdown-header text-uppercase fw-bold"><a class=""
-                                            href="../views/events.php">Eventos</a></span>
+                                            href="../User/events.php">Eventos</a></span>
                                 </li>
 
                             </ul>
                         </li>
-                        <li><a class="nav-link" href="../views/contact.php">Cont&aacute;ctenos</a></li>
+                        <li><a class="nav-link" href="../User/contact.php">Cont&aacute;ctenos</a></li>
 
                     </ul>
                     <!-- /.navbar-nav -->

@@ -1,4 +1,4 @@
-<?php require_once("../Includes/header.php");?>
+<?php require_once("../../Includes/header.php");?>
 
 <body>
 
@@ -38,4 +38,4 @@
 <!-- #cities-grid-2.section py-5 py-lg-6 -->
     <!-- #news-1.section pb-6 mt-n4 mt-lg-n5 mt-xl-n6 -->
 
-    <?php require_once("../Includes/footer.php");?>
+    <?php require_once("../../Includes/footer.php");?>
