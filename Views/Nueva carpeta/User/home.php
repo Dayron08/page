@@ -1,4 +1,4 @@
-<?php require_once("../Includes/header.php");?>
+<?php require_once("Includes/header.php");?>
 <section id="we-do-2" class="section bg-dark py-5 py-lg-6">
     <div class="bg bg-img position-absolute " data-bg-img=".img">
         <img src="../../web/img/home.jpg" class="img" alt="Image" />
