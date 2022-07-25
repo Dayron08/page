@@ -22,9 +22,9 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper@7.0.6/swiper-bundle.min.css" />
 
     <!-- CSS bundled with Bootstrap-CSS -->
-    <link rel="stylesheet" type="text/css" href="../css/discoverize-default.css" />
-    <link rel="stylesheet" type="text/css" href="../css/style.css" />
-    <script src="../js/script.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../Views/css/discoverize-default.css" />
+    <link rel="stylesheet" type="text/css" href="../../Views/css/style.css" />
+    <script src="../../Views/js/script.js"></script>
 
     <title>Iglesia Pacto de Vida</title>
     <style>
