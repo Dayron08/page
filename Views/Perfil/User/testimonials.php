@@ -2,7 +2,7 @@
 
 <section id="page-hero" class="section section__inverse justify-content-center pt-6 pb-4 pb-lg-5 pb-xl-6">
     <div class="bg bg-img position-absolute" data-bg-img=".img">
-        <img src="../../web/img/testimonials_wallpaper.jpg" class="img" alt="Image" />
+        <img src="../../img/testimonials_wallpaper.jpg" class="img" alt="Image" />
     </div>
     <!-- /.bg bg-img position-absolute -->
 
