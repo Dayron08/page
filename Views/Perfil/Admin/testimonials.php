@@ -197,7 +197,7 @@
             </div>
         </footer>
         <p class="text-light">
-            <a class="btn btn-danger rounded-pill shadow-none me-2 px-4 fw-bold " href="../testimonials/login.php"
+            <a class="btn btn-danger rounded-pill shadow-none me-2 px-4 fw-bold " href="#"
                 id="btn_login"><i class="fas fa-trash"></i> Eliminar todos </a>
         </p>
         <!-- /.section-footer d-flex justify-content-center -->
