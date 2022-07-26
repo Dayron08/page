@@ -181,39 +181,20 @@
         <div class="row">
             <div
                 class="col-12 col-lg-6 col-xl-6 py-4 py-lg-7 pe-lg-6 d-flex flex-column justify-content-center section-content ">
-                <h2 class="fs-1 mb-3 text-bla">Cuentanos tu experiencia</h2>
-                <p class="lead mb-4">Comparte un testimonio para que las otras personas puedan conocer tu experiencia
-                </p>
-
-                <form action="#" method="post" class="">
-                    <div class="input-group mb-3">
-                        <textarea type="text" class="form-control form-control-lg" placeholder="Testimonio"
-                            aria-label="Recipient's username" aria-describedby="button-addon2" rows="3" cols="10"
-                            maxlength="200"></textarea>
-                    </div>
-                    <button class="btn btn-warning btn-lg px-4" type="button" id="button-addon2">Subir</button>
-                </form>
+                <h2 class="fs-1 mb-3 text-bla">"Guíame, pues eres mi roca y mi fortaleza,dirígeme por amor a tu nombre"</h2>
+                <p class="lead mb-4">Salmo 31:3 </p>
             </div>
             <!-- /.col-12 col-lg-6 col-xl-6 py-4 py-lg-7 pe-lg-6 d-flex flex-column justify-content-center -->
 
             <div class="col-12 col-lg-6 col-xl-6">
                 <div class="position-relative expand-w h-100 o-75">
                     <div class="bg bg-img position-absolute" data-bg-img=".img">
-                        <!-- <video width="800" height="550"
-                            src="../../web/video/Take Heart (MMXX) - Hillsong Worship(1080P_HD).mp4" autoplay muted
-                            loop=1>
-                            <source type="video/mp4">
-                        </video> -->
-                        <iframe width="650" height="600"
+                       
+                        <iframe width="650" height="450"
                             src="https://www.youtube.com/embed/s-SR7Xc0yhM?autoplay=1&mute=1&loop=1&start=50&controls=0"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
-                        <!-- <iframe width="850" height="560"
-                            src="https://www.youtube-nocookie.com/embed/pRSC06T4lKs?autoplay=1&mute=1&loop=1"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe> -->
 
                         <div class="overlay bg-dark position-absolute o-25"></div>
                     </div>
