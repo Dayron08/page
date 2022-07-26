@@ -101,7 +101,18 @@
 
                             </ul>
                         </li>
-                        <li><a class="nav-link" href="../Admin/contact.php">Cont&aacute;ctenos</a></li>
+                        <li class="nav-item nav-dropdown dropdown dropdown-hover">
+                            <a class="nav-link dropdown-toggle" href="" id="navbarDocs" role="button"
+                                data-bs-toggle="dropdown">Cont&aacute;ctenos</a>
+                            <ul class="nav-dropdown-menu dropdown-menu dropdown-menu-end shadow" data-bs-popper>
+
+                                <li><a class="dropdown-item" href="../Admin/contact.php">Iglesia</a></li>
+
+                                <li><a class="dropdown-item" href="../Admin/consultation.php">Consultas</a></li>
+
+                            </ul>
+                        </li>
+                       
 
                     </ul>
                     <!-- /.navbar-nav -->
