@@ -78,6 +78,7 @@
 #buttondelete{
 
     padding-left: 300px;
+    padding-right: 125px;
     margin-bottom: 2px;
     padding-top: 2px;
     
@@ -90,4 +91,16 @@
 a:hover {
     color: #c92d2a;
     text-decoration: none;
+}
+#check{
+    /* padding-right: 350px; */
+    width: 20px;
+    height: 20px;
+    margin-left: 300px; 
+    
+    margin-top: -23px ;
+    /* vertical-align: bottom;
+    position: relative;
+    top: 1px;
+    *overflow: hidden; */
 }

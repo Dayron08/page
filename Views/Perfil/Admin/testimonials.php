@@ -58,6 +58,10 @@
                 <figure class="card testimonial h-100 text-center bg-transparent mb-0">
                     <blockquote class="blockquote card-body bg-white shadow-sm rounded d-flex flex-column px-lg-5">
                         <button class="btn btn-link p-0 ms-4 shadow-none"><a id="buttondelete" class="fa fa-trash fa-lg" href="#"></a></button>
+
+                        <input type="checkbox" id="check" name="" value=""> <!-- seleccion-->
+
+
                         <p class="fs-1 text-secondary o-25 mb-0"><i class="fas fa-quote-right"></i></p>
                         <p class="fs-6">Lorem ipsum, dolor sit amet consectetur, adipisicing elit tenetur. Omnis
                             unde totam minima hic in mollitia</p>
@@ -77,6 +81,7 @@
                 <figure class="card testimonial h-100 text-center bg-transparent mb-0">
                     <blockquote class="blockquote card-body bg-white shadow-sm rounded d-flex flex-column px-lg-5">
                         <button class="btn btn-link p-0 ms-4 shadow-none"><a id="buttondelete" class="fa fa-trash fa-lg" href="#"></a></button>
+                        <input type="checkbox" id="check" name="" value=""> <!-- seleccion-->
                         <p class="fs-1 text-secondary o-25 mb-0"><i class="fas fa-quote-right"></i></p>
                         <p class="fs-6">Omnis unde totam consequatur minima hic in mollitia lorem ipsum, dolor sit
                             amet consectetur, adipisicing elit</p>
@@ -96,6 +101,7 @@
                 <figure class="card testimonial h-100 text-center bg-transparent mb-0">
                     <blockquote class="blockquote card-body bg-white shadow-sm rounded d-flex flex-column px-lg-5">
                          <button class="btn btn-link p-0 ms-4 shadow-none"><a id="buttondelete" class="fa fa-trash fa-lg" href="#"></a></button>
+                         <input type="checkbox" id="check" name="" value=""> <!-- seleccion-->
                         <p class="fs-1 text-secondary o-25 mb-0"><i class="fas fa-quote-right"></i></p>
                         <p class="fs-6">Veniam iste, vitae maiores. tenetur Quis voluptates consequatur unde culpa
                             perspiciatis odit vero beatae</p>
@@ -116,6 +122,7 @@
                 <figure class="card testimonial h-100 text-center bg-transparent mb-0">
                     <blockquote class="blockquote card-body bg-white shadow-sm rounded d-flex flex-column px-lg-5">
                         <button class="btn btn-link p-0 ms-4 shadow-none"><a id="buttondelete" class="fa fa-trash fa-lg" href="#"></a></button>
+                        <input type="checkbox" id="check" name="" value=""> <!-- seleccion-->
                         <p class="fs-1 text-secondary o-25 mb-0"><i class="fas fa-quote-right"></i></p>
                         <p class="fs-6">Explicabo facere maxime fuga voluptates saepe veniam iste, vitae maiores.
                             Quis voluptates consequatur</p>
@@ -136,6 +143,7 @@
                 <figure class="card testimonial h-100 text-center bg-transparent mb-0">
                     <blockquote class="blockquote card-body bg-white shadow-sm rounded d-flex flex-column px-lg-5">
                         <button class="btn btn-link p-0 ms-4 shadow-none"><a id="buttondelete" class="fa fa-trash fa-lg" href="#"></a></button>
+                        <input type="checkbox" id="check" name="" value=""> <!-- seleccion-->
                         <p class="fs-1 text-secondary o-25 mb-0"><i class="fas fa-quote-right"></i></p>
                         <p class="fs-6">Unde culpa perspiciatis odit vero beatae tenetur facere tenetur dolor sit
                             amet consectetur adipisicing</p>
@@ -155,7 +163,8 @@
             <div class="col-12 col-sm-6 col-lg-4 d-flex align-items-stretch">
                 <figure class="card testimonial h-100 text-center bg-transparent mb-0">
                     <blockquote class="blockquote card-body bg-white shadow-sm rounded d-flex flex-column px-lg-5">
-                         <button class="btn btn-link p-0 ms-4 shadow-none"><a id="buttondelete" class="fa fa-trash fa-lg" href="#"></a></button>
+                        <button class="btn btn-link p-0 ms-4 shadow-none"><a id="buttondelete" class="fa fa-trash fa-lg" href="#"></a></button>
+                        <input type="checkbox" id="check" name="" value=""> <!-- seleccion-->
                         <p class="fs-1 text-secondary o-25 mb-0"><i class="fas fa-quote-right"></i></p>
                         <p class="fs-6">Explicabo facere maxime fuga voluptates saepe tenetur veniam iste, vitae
                             maiores. Quis voluptates unde culpa</p>
@@ -187,6 +196,10 @@
                 </div>
             </div>
         </footer>
+        <p class="text-light">
+            <a class="btn btn-danger rounded-pill shadow-none me-2 px-4 fw-bold " href="../testimonials/login.php"
+                id="btn_login"><i class="fas fa-trash"></i> Eliminar todos </a>
+        </p>
         <!-- /.section-footer d-flex justify-content-center -->
     </div>
     <!-- /.container-xl position-relative -->
