@@ -73,3 +73,21 @@
 .cal{
     background-color: #FFFFFF;
 }
+
+
+#buttondelete{
+
+    padding-left: 300px;
+    margin-bottom: 2px;
+    padding-top: 2px;
+    
+
+}
+
+
+/* #buttondelete i.screen-reader-text:hover {color:#1717FF !important} */
+
+a:hover {
+    color: #c92d2a;
+    text-decoration: none;
+}
