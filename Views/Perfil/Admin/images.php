@@ -199,20 +199,59 @@
     <!-- /.bg bg-img position-absolute -->
 
     <div class="container-xl position-relative h-100">
-        <header class="section-header mb-2">
-            <h2 class="fs-3 text-center section-title mb-3">Nuestros ni&ntilde;os</h2>
+        <div class="section-filter mb-4 mb-lg-5">
+            <div class="row g-3">
+                <div class="col col-md-auto text-md-auto ms-md-5">
+                    <br>
+                    <p class="mb-0"><strong>80</strong>&nbsp;Results&nbsp;Found</p>
+                    <p class="text-light mt-3">
+                        <input type="text" id="example" class="form-control me-2 px-4 fw-bold "
+                            placeholder="Cargar C&oacute;digo del video">
+                    </p>
+                    <!-- /.text-light -->
 
-            <p class="lead text-center mb-0 o-75">Imag&eacute;nes relacionadas
-            </p>
-        </header>
-        <!-- /.section-header mb-5 -->
-        <div class="row g-3">
-            <div class="col-12 col-md section-content text-center text-md-start">
-                <p class="mb-0" style="color: black;"><strong>80</strong>&nbsp;Results&nbsp;Found</p>
+                    <p class="text-light mt-3">
+                        <a class="btn btn-success  shadow-none me-2 px-4 fw-bold mt-3" href="#" id="btn_insert"><i
+                                class="fas fa-check"></i> Cargar Video</a>
+                    </p>
+                    <!-- /.text-light -->
+
+                    <p class="text-light mt-3">
+                        <a class="btn btn-success  shadow-none me-2 px-4 fw-bold mt-3" href="#" id="btn_insert"><i
+                                class="fas fa-plus"></i> Insertar Video</a>
+                    </p>
+                    <!-- /.text-light -->
+
+
+                </div>
+                <!-- /.col-12 col-md -->
+                <div class="col col-md-auto text-md-end ms-md-auto">
+                    <div class="btn-group btn-select-dropdown w-100 mt-3">
+
+                        <p class="text-light">
+                            <input type="date" id="example" class="form-control me-2 px-4 fw-bold ">
+                        </p>
+                        <!-- /.text-light -->
+
+                        <p class="text-light">
+                            <a class="btn btn-danger  shadow-none me-2 px-4 fw-bold " href="#" id="btn_delete"><i
+                                    class="fas fa-trash"></i></a>
+                        </p>
+                        <!-- /.text-light -->
+                    </div>
+                    <!-- /.btn-group w-100 btn-select-dropdown -->
+                    <p class="text-light">
+                        <a class="btn btn-danger  shadow-none me-2 px-4 fw-bold " href="#" id="btn_delete"><i
+                                class="fas fa-trash"></i> Eliminar videos seleccionados</a>
+                    </p>
+                    <!-- /.text-light -->
+
+                </div>
+                <!-- /.col col-md-auto text-md-end ms-md-auto -->
             </div>
-            <!-- /.col-12 col-md -->
+            <!-- /.row -->
         </div>
-        <!-- /.row -->
+        <!-- /.section-filter -->
     </div>
     <!-- /.container-xl -->
 </section>
