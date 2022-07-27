@@ -85,6 +85,10 @@
 
 }
 
+#button_delete_videos{
+margin-left: 100%;
+}
+
 
 /* #buttondelete i.screen-reader-text:hover {color:#1717FF !important} */
 
@@ -103,4 +107,18 @@ a:hover {
     position: relative;
     top: 1px;
     *overflow: hidden; */
+}
+
+#checkbox_videos{
+    width: 20px;
+    height: 20px;
+    margin-left: 95%; 
+    margin-bottom: 3%;
+}
+
+#checkbox_images{
+    width: 20px;
+    height: 20px;
+    margin-left: 90%; 
+    margin-bottom: 3%;
 }

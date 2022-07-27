@@ -1,4 +1,4 @@
-<?php require_once("../../Includes/header.php");?>
+<?php require_once("../../Includes/headerAdmin.php");?>
 <section id="page-hero"
     class="section section__inverse justify-content-center py-5 py-lg-6 mb-n5 vh-50 h-lg-480px min-h-330px">
     <div class="bg bg-img position-absolute" data-bg-img=".img">
@@ -22,12 +22,41 @@
 
     <div class="container-xl position-relative section-content text-center py-4">
 
-        <div class="section-filter pt-4">
+        <div class="section-filter mb-4 mb-lg-5">
             <div class="row g-3">
                 <div class="col-12 col-md section-content text-center text-md-start">
+                    <br>
                     <p class="mb-0" style="color: black;"><strong>80</strong>&nbsp;Results&nbsp;Found</p>
+                    <p class="text-light mt-3">
+                        <a class="btn btn-success  shadow-none me-2 px-4 fw-bold " href="#" id="btn_insert"><i
+                                class="fas fa-plus"></i> Insertar Video</a>
+                    </p>
+                    <!-- /.text-light -->
                 </div>
                 <!-- /.col-12 col-md -->
+                <div class="col col-md-auto text-md-end ms-md-auto">
+                    <div class="btn-group btn-select-dropdown w-100 mt-3">
+
+                        <p class="text-light">
+                            <input type="date" id="example" class="form-control me-2 px-4 fw-bold ">
+                        </p>
+                        <!-- /.text-light -->
+
+                        <p class="text-light">
+                            <a class="btn btn-danger  shadow-none me-2 px-4 fw-bold " href="#" id="btn_delete"><i
+                                    class="fas fa-trash"></i></a>
+                        </p>
+                        <!-- /.text-light -->
+                    </div>
+                    <!-- /.btn-group w-100 btn-select-dropdown -->
+                    <p class="text-light">
+                        <a class="btn btn-danger  shadow-none me-2 px-4 fw-bold " href="#" id="btn_delete"><i
+                                class="fas fa-trash"></i> Eliminar videos seleccionados</a>
+                    </p>
+                    <!-- /.text-light -->
+
+                </div>
+                <!-- /.col col-md-auto text-md-end ms-md-auto -->
             </div>
             <!-- /.row -->
         </div>
@@ -44,24 +73,26 @@
 
         <div class="row g-3 mb-5">
             <div class="col-12 col-sm-6 col-md-3 d-flex">
-                <div class="card card__minimal h-100">
+                <div class="card-body bg-white shadow-sm rounded d-flex flex-column px-lg-10">
                     <div class="card-img-top overflow-hidden position-relative">
+                        <input type="checkbox" value="" id="checkbox_images">
                         <img loading="lazy" src="../../img/church/image_01.jpg" class="w-100" alt="Image"
                             style="width: 100%; height : 250px;" />
                     </div>
                 </div>
-                <!-- /.card card__minimal -->
+                <!-- /.card-body -->
             </div>
             <!-- /.col-12 col-sm-6 col-md-3 d-flex -->
 
             <div class="col-12 col-sm-6 col-md-3 d-flex">
-                <div class="card card__minimal h-100">
+                <div class="card-body bg-white shadow-sm rounded d-flex flex-column px-lg-10">
                     <div class="card-img-top overflow-hidden position-relative">
+                        <input type="checkbox" value="" id="checkbox_images">
                         <img loading="lazy" src="../../img/church/image_02.JPG" class="w-100" alt="Image"
                             style="width: 100%; height : 250px;" />
                     </div>
                 </div>
-                <!-- /.card card__minimal -->
+                <!-- /.card-body -->
             </div>
             <!-- /.col-12 col-sm-6 col-md-3 d-flex -->
 
@@ -116,25 +147,28 @@
     <div class="container-xl position-relative">
 
         <div class="row g-3 mb-5">
+
             <div class="col-12 col-sm-6 col-md-3 d-flex">
-                <div class="card card__minimal h-100">
+                <div class="card-body bg-white shadow-sm rounded d-flex flex-column px-lg-10">
                     <div class="card-img-top overflow-hidden position-relative">
+                        <input type="checkbox" value="" id="checkbox_images">
                         <img loading="lazy" src="../../img/young_people/image_01.jpg" class="w-100" alt="Image"
                             style="width: 100%; height : 250px;" />
                     </div>
                 </div>
-                <!-- /.card card__minimal -->
+                <!-- /.card-body -->
             </div>
             <!-- /.col-12 col-sm-6 col-md-3 d-flex -->
 
             <div class="col-12 col-sm-6 col-md-3 d-flex">
-                <div class="card card__minimal h-100">
+                <div class="card-body bg-white shadow-sm rounded d-flex flex-column px-lg-10">
                     <div class="card-img-top overflow-hidden position-relative">
+                        <input type="checkbox" value="" id="checkbox_images">
                         <img loading="lazy" src="../../img/young_people/image_02.jpg" class="w-100" alt="Image"
                             style="width: 100%; height : 250px;" />
                     </div>
                 </div>
-                <!-- /.card card__minimal -->
+                <!-- /.card-body -->
             </div>
             <!-- /.col-12 col-sm-6 col-md-3 d-flex -->
 
@@ -191,24 +225,27 @@
         <div class="row g-3 mb-5">
 
             <div class="col-12 col-sm-6 col-md-3 d-flex">
-                <div class="card card__minimal h-100">
+                <div class="card-body bg-white shadow-sm rounded d-flex flex-column px-lg-10">
                     <div class="card-img-top overflow-hidden position-relative">
+                        <input type="checkbox" value="" id="checkbox_images">
                         <img loading="lazy" src="../../img/children/image_02.jpg" class="w-100" alt="Image"
                             style="width: 100%; height : 250px;" />
                     </div>
                 </div>
-                <!-- /.card card__minimal -->
+                <!-- /.card-body -->
             </div>
             <!-- /.col-12 col-sm-6 col-md-3 d-flex -->
 
+
             <div class="col-12 col-sm-6 col-md-3 d-flex">
-                <div class="card card__minimal h-100">
+                <div class="card-body bg-white shadow-sm rounded d-flex flex-column px-lg-10">
                     <div class="card-img-top overflow-hidden position-relative">
+                        <input type="checkbox" value="" id="checkbox_images">
                         <img loading="lazy" src="../../img/children/image_03.jpg" class="w-100" alt="Image"
                             style="width: 100%; height : 250px;" />
                     </div>
                 </div>
-                <!-- /.card card__minimal -->
+                <!-- /.card-body -->
             </div>
             <!-- /.col-12 col-sm-6 col-md-3 d-flex -->
 
@@ -236,4 +273,4 @@
 
 
 
-<?php require_once("../../Includes/footer.php");?>
+<?php require_once("../../Includes/footerAdmin.php");?>
