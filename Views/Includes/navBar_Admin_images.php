@@ -33,11 +33,6 @@
                         <input type="date" id="example" class="form-control me-2 px-4 fw-bold ">
                     </p>
                     <!-- /.text-light -->
-
-                    <p class="text-light">
-                        <a class="btn btn-danger  shadow-none me-2 px-4 fw-bold " href="#" id="btn_delete"><i
-                                class="fas fa-trash"></i></a>
-                    </p>
                     <!-- /.text-light -->
                 </div>
                 <!-- /.btn-group w-100 btn-select-dropdown -->
