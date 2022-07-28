@@ -12,17 +12,6 @@
             <h2 class="display-5 text-white mt-3 mt-lg-4">Proximos eventos</h2>
 
             <p class="lead mb-4 mb-lg-5">Comparte con nosotros!</p>
-
-            <div class="section-filter pt-4">
-                <div class="row g-3">
-                    <div class="col-12 col-md section-content text-center text-md-start">
-                        <p class="mb-0"><strong>80</strong>&nbsp;Results&nbsp;Found</p>
-                    </div>
-                    <!-- /.col-12 col-md -->
-                </div>
-                <!-- /.row -->
-            </div>
-            <!-- /.section-filter -->
         </div>
         <!-- /.container-xl position-relative -->
     </section>
@@ -43,50 +32,34 @@
 
             <!-- ////////////////////////////////////////////////////////////////////////// -->
 
-            <!-- <div>
-                <p class="text-light mt-3">
-                    <a class="btn btn-success  shadow-none me-2 px-4 fw-bold " href="#" id="btn_insert_event"><i
-                                class="fas fa-plus"></i> Insertar Video</a>
-                </p>
-            </div>
-
-            <div>
-                <p class="text-light">
-                    <a class="btn btn-danger  shadow-none me-2 px-4 fw-bold " href="#" id="btn_delete_event"><i
-                                class="fas fa-trash"></i> Eliminar evento</a>
-                </p>
-            </div> -->
-
-
-            <!-- ////////////////////////////////////////////////////////////////////////// -->
-
             <div class="section-filter mb-4 mb-lg-5">
             <div class="row g-3">
                 <div class="col-12 col-md section-content text-center text-md-start">
                     <br>
-                    <p class="mb-0"><strong>80</strong>&nbsp;Results&nbsp;Found</p>
-                    <p class="text-light mt-3">
+                    <p class="mb-0" id="result_found_events"><strong>80</strong>&nbsp;Results&nbsp;Found</p>
+
+                </div>
+                <!-- /.col-12 col-md -->
+                <div class="col col-md-auto text-md-end ms-md-auto" style="display: flex;">
+                <p class="text-light " >
                         <a class="btn btn-success  shadow-none me-2 px-4 fw-bold " href="#" id="btn_insert_event"><i
                                 class="fas fa-plus"></i> Insertar evento</a>
                     </p>
                     <!-- /.text-light -->
-                </div>
-                <!-- /.col-12 col-md -->
-                <div class="col col-md-auto text-md-end ms-md-auto">
+
                     <p class="text-light">
                         <a class="btn btn-danger  shadow-none me-2 px-4 fw-bold " href="#" id="btn_delete_event"><i
                                 class="fas fa-trash"></i> Eliminar eventos</a>
                     </p>
                     <!-- /.text-light -->
-                </div>
-                <!-- /.col col-md-auto text-md-end ms-md-auto -->
-                <div class="col col-md-auto text-md-end ms-md-auto">
+
                     <p class="text-light">
                         <a class="btn btn-warning shadow-none me-2 px-4 fw-bold " href="#" id="btn_update_event"><i class="fas fa-pen"></i> Editar eventos</a>
                     </p>
                     <!-- /.text-light -->
                 </div>
                 <!-- /.col col-md-auto text-md-end ms-md-auto -->
+
             </div>
             <!-- /.row -->
         </div>
