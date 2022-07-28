@@ -13,12 +13,6 @@
 
                 <p class="text-light mt-3">
                     <a class="btn btn-success rounded-pill  shadow-none me-2 px-4 fw-bold mt-3" href="#" id="btn_insert"><i
-                            class="fas fa-check"></i> Cargar Imagen</a>
-                </p>
-                <!-- /.text-light -->
-
-                <p class="text-light mt-3">
-                    <a class="btn btn-success rounded-pill  shadow-none me-2 px-4 fw-bold mt-3" href="#" id="btn_insert"><i
                             class="fas fa-plus"></i> Insertar Imagen</a>
                 </p>
                 <!-- /.text-light -->
