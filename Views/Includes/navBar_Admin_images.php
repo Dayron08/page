@@ -12,13 +12,13 @@
                 <!-- /.text-light -->
 
                 <p class="text-light mt-3">
-                    <a class="btn btn-success  shadow-none me-2 px-4 fw-bold mt-3" href="#" id="btn_insert"><i
+                    <a class="btn btn-success rounded-pill  shadow-none me-2 px-4 fw-bold mt-3" href="#" id="btn_insert"><i
                             class="fas fa-check"></i> Cargar Imagen</a>
                 </p>
                 <!-- /.text-light -->
 
                 <p class="text-light mt-3">
-                    <a class="btn btn-success  shadow-none me-2 px-4 fw-bold mt-3" href="#" id="btn_insert"><i
+                    <a class="btn btn-success rounded-pill  shadow-none me-2 px-4 fw-bold mt-3" href="#" id="btn_insert"><i
                             class="fas fa-plus"></i> Insertar Imagen</a>
                 </p>
                 <!-- /.text-light -->
@@ -42,7 +42,7 @@
                 </div>
                 <!-- /.btn-group w-100 btn-select-dropdown -->
                 <p class="text-light">
-                    <a class="btn btn-danger  shadow-none me-2 px-4 fw-bold " href="#" id="btn_delete"><i
+                    <a class="btn btn-danger rounded-pill shadow-none me-2 px-4 fw-bold " href="#" id="btn_delete"><i
                             class="fas fa-trash"></i> Eliminar imagenes seleccionadas</a>
                 </p>
                 <!-- /.text-light -->
