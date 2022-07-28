@@ -21,47 +21,7 @@
     <!-- /.bg bg-img position-absolute -->
 
     <div class="container-xl position-relative">
-
-        <div class="section-filter mb-4 mb-lg-5">
-            <div class="row g-3">
-                <div class="col-12 col-md section-content text-center text-md-start">
-                    <br>
-                    <p class="mb-0"><strong>80</strong>&nbsp;Results&nbsp;Found</p>
-                    <p class="text-light mt-3">
-                        <a class="btn btn-success  shadow-none me-2 px-4 fw-bold " href="#" id="btn_insert"><i
-                                class="fas fa-plus"></i> Insertar Video</a>
-                    </p>
-                    <!-- /.text-light -->
-                </div>
-                <!-- /.col-12 col-md -->
-                <div class="col col-md-auto text-md-end ms-md-auto">
-                    <div class="btn-group btn-select-dropdown w-100 mt-3">
-
-                        <p class="text-light">
-                            <input type="date" id="example" class="form-control me-2 px-4 fw-bold ">
-                        </p>
-                        <!-- /.text-light -->
-
-                        <p class="text-light">
-                            <a class="btn btn-danger  shadow-none me-2 px-4 fw-bold " href="#" id="btn_delete"><i
-                                    class="fas fa-trash"></i></a>
-                        </p>
-                        <!-- /.text-light -->
-                    </div>
-                    <!-- /.btn-group w-100 btn-select-dropdown -->
-                    <p class="text-light">
-                        <a class="btn btn-danger  shadow-none me-2 px-4 fw-bold " href="#" id="btn_delete"><i
-                                class="fas fa-trash"></i> Eliminar videos seleccionados</a>
-                    </p>
-                    <!-- /.text-light -->
-
-                </div>
-                <!-- /.col col-md-auto text-md-end ms-md-auto -->
-            </div>
-            <!-- /.row -->
-        </div>
-        <!-- /.section-filter -->
-
+        <?php require("../../Includes/navBar_Admin_video.php"); ?>
         <div class="row properties g-4 mb-6">
 
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex align-items-stretch">
