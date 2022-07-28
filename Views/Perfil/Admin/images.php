@@ -17,9 +17,12 @@
 </section>
 
 <!-- #page-hero.section section__inverse justify-content-center py-5 py-lg-6 mb-n5 vh-50 h-lg-480px min-h-330px -->
+
 <?php require("../../Includes/navBar_Admin_images.php");  ?>
 <!-- #page-hero.section section__inverse justify-content-center pt-6 pb-4 pb-lg-5 pb-xl-6 -->
 <section id="news-1" class="section pb-6 mt-n4 mt-lg-n5 mt-xl-n6">
+
+    <h1>Nuestro Pueblo</h1>
 
     <div class="container-xl position-relative">
 
@@ -64,6 +67,8 @@
 </section>
 <!-- #news-1.section pb-6 mt-n4 mt-lg-n5 mt-xl-n6 -->
 
+<h1>Nuestros Jóvenes</h1>
+
 <?php require("../../Includes/navBar_Admin_images.php");  ?>
 <section id="news-1" class="section pb-4 mt-n4 mt-lg-n5 mt-xl-n6">
 
@@ -87,12 +92,9 @@
             <?php
             }
             ?>
-
-
-
-
         </div>
         <!-- /.row g-4 mb-5 -->
+
 
         <footer class="section-footer d-flex justify-content-center">
             <div class="btn-toolbar mb-0 me-3" role="toolbar">
