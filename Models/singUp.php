@@ -6,9 +6,17 @@ class SingUp extends Connection_Mysql {
 	private $name;
 	private $surname;
 	private $password;
+	private $result;
+	private $database;
 
 	public $status_id;
 	public $status;
+
+	public function __construct()
+	{
+		$this->database = new Connection_Mysql();
+
+	}
 
 	public function set_user_id($user_id){
         $this->user_id = $user_id;
@@ -42,6 +50,13 @@ class SingUp extends Connection_Mysql {
         return $this->password;
     }
 
+	private function execute($query){
+		$this->result = $this-> database->set_query($this->query);
+		$this-> database->db_close();
+		return $this->result;
+	}
+	
+
 	public function create() {
 		$this->query = "CALL P_INSERTAR_DATOS_PERSONA_USU(                
 			'".$this->user_id."', 
@@ -53,7 +68,8 @@ class SingUp extends Connection_Mysql {
 			'ran@676gmail.com',
 			83195333,
 			'../NUEVA_FOTO');";
-		$this->set_query($this->query);
+		$this->execute($this->query);
+
 	}
 
 	public function read() {

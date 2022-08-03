@@ -1,6 +1,6 @@
 <?php 
 //Clase Abstracta que nos permitirá conectarnos a MySQL
-abstract class Connection_Mysql {
+class Connection_Mysql {
 	//Atributos
 	private static $db_host = 'localhost';
 	private static $db_user = 'root';
@@ -14,6 +14,7 @@ abstract class Connection_Mysql {
 
 	//método privado para conectarse a la base de datos
 	public function db_open() {
+
 		$this->conn = new mysqli(
 			self::$db_host,
 			self::$db_user,
@@ -31,11 +32,11 @@ abstract class Connection_Mysql {
 	}
 
 	//establecer un query que afecte datos (INSERT, DELETE o UPDATE)
-	protected function set_query($query) {
+	public function set_query($query) {
 		$this->db_open();
 		$this->result = $this->conn->query($query);
 		return $this->result;
-		$this->db_close();
+		
 	}
 
 	//obtener datos de un query (SELECT)
