@@ -1,13 +1,49 @@
 <?php 
 require_once('main_model.php');
 
-class People extends Connection_Mysql {
+class SingUp extends Connection_Mysql {
+	private $user_id;
+	private $name;
+	private $surname;
+	private $password;
 	public $status_id;
 	public $status;
 
 	public function __construct() {
 		$this->db_name = 'pacvi';
 	}
+
+	public function set_user_id($user_id){
+        $this->user_id = $user_id;
+    }
+
+    public function get_user_id(){
+        return $this->user_id;
+    }
+
+	public function set_name($name){
+        $this->name = $name;
+    }
+
+    public function get_name(){
+        return $this->name;
+    }
+
+	public function set_surname($surname){
+        $this->surname = $surname;
+    }
+
+    public function get_surname(){
+        return $this->surname;
+    }
+
+	public function set_password($password){
+        $this->password = $password;
+    }
+
+    public function get_password(){
+        return $this->password;
+    }
 
 	public function create( $status_data = array() ) {
 		foreach ($status_data as $key => $value) {
@@ -16,7 +52,11 @@ class People extends Connection_Mysql {
 			$$key = $value;
 		}
 
-		$this->query = "INSERT INTO status (status_id, status) VALUES ($status_id, '$status')";
+		$this->query = "CALL P_INSERTAR_DATOS_PERSONA_USU(                
+			'".$this->user_id."', 
+			'".$this->name."',
+			'".$this->surname."',
+			'".$this->password."');";
 		$this->set_query();
 	}
 
