@@ -1,3 +1,42 @@
+
+document.getElementById("btn_singUp").addEventListener("click",registro);
+
+function registro(){
+
+    
+    e.preventDefault();
+
+   
+    var id = $("#id").val();
+    var name = $("#name").val();
+    var lastname = $("#lastname").val();
+    var gmail = $("#gmail").val();
+    var password = $("#password").val();
+
+    alert("hola")
+
+    $.ajax({
+        url: "../../Models/insert.php",
+        method: "POST",
+        data:{id: id, name: name, lastname: lastname, gmail: gmail, password: password},
+        success: function(dataresponse, statustext, response){
+
+
+        },
+        error: function(request, errorcode, errortext){
+            $("#respuesta").html(errorcode);
+        }
+  
+
+    
+    });
+
+    
+
+
+}
+
+
 //Ejecutando funciones
 document.getElementById("btn__iniciar-sesion").addEventListener("click", iniciarSesion);
 document.getElementById("btn__registrarse").addEventListener("click", register);
@@ -11,6 +50,9 @@ var caja_trasera_login = document.querySelector(".contenedor__inferior-login");
 var caja_trasera_register = document.querySelector(".contenedor__inferior-register");
 
 //FUNCIONES
+
+
+
 
 function anchoPage(){
 
@@ -63,4 +105,3 @@ anchoPage();
             caja_trasera_login.style.opacity = "1";
         }
 }
-
