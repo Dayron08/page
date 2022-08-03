@@ -5,40 +5,36 @@ abstract class Connection_Mysql {
 	private static $db_host = 'localhost';
 	private static $db_user = 'root';
 	private static $db_pass = '';
-	//private static $db_name = 'mexflix';
-	protected $db_name;
+	private static $db_name = 'pacvi';
 	private static $db_charset = 'utf8';
 	private $conn;
+	
 	protected $query;
 	protected $rows = array();
 
-	//Métodos
-	//métodos abstractos para CRUD de clases que hereden
-	abstract protected function create();
-	abstract protected function read();
-	abstract protected function update();
-	abstract protected function delete();
-
 	//método privado para conectarse a la base de datos
-	private function db_open() {
+	public function db_open() {
 		$this->conn = new mysqli(
 			self::$db_host,
 			self::$db_user,
 			self::$db_pass,
-			$this->db_name
+			self::$db_name
 		);
 		$this->conn->set_charset(self::$db_charset);
+		if($this->conn->connect_errno){
+			die("We have an error to connect with the database: (".$this->conn->connect_errno.")");
+		}
 	}
-
 	//método privado para desconectarse de la base de datos
-	private function db_close() {
+	public function db_close() {
 		$this->conn->close();
 	}
 
 	//establecer un query que afecte datos (INSERT, DELETE o UPDATE)
-	protected function set_query() {
+	protected function set_query($query) {
 		$this->db_open();
-		$this->conn->query($this->query);
+		$this->result = $this->conn->query($query);
+		return $this->result;
 		$this->db_close();
 	}
 

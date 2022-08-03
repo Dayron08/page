@@ -6,12 +6,9 @@ class SingUp extends Connection_Mysql {
 	private $name;
 	private $surname;
 	private $password;
+
 	public $status_id;
 	public $status;
-
-	public function __construct() {
-		$this->db_name = 'pacvi';
-	}
 
 	public function set_user_id($user_id){
         $this->user_id = $user_id;
@@ -45,19 +42,18 @@ class SingUp extends Connection_Mysql {
         return $this->password;
     }
 
-	public function create( $status_data = array() ) {
-		foreach ($status_data as $key => $value) {
-			//Variables Variables
-			//http://php.net/manual/es/language.variables.variable.php
-			$$key = $value;
-		}
-
+	public function create() {
 		$this->query = "CALL P_INSERTAR_DATOS_PERSONA_USU(                
 			'".$this->user_id."', 
 			'".$this->name."',
 			'".$this->surname."',
-			'".$this->password."');";
-		$this->set_query();
+			'1999/09/27',
+			'M',
+			'".$this->password."',
+			'ran@676gmail.com',
+			83195333,
+			'../NUEVA_FOTO');";
+		$this->set_query($this->query);
 	}
 
 	public function read() {
@@ -86,12 +82,12 @@ class SingUp extends Connection_Mysql {
 		}
 
 		$this->query = "UPDATE status SET status_id = $status_id, status = '$status' WHERE status_id = $status_id";
-		$this->set_query();
+		$this->set_query($this->query);
 	}
 
 	public function delete( $status_id = '' ) {
 		$this->query = "DELETE FROM status WHERE status_id = $status_id";
-		$this->set_query();
+		$this->set_query($this->query);
 	}
 
 	public function __destruct() {
