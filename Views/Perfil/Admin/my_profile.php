@@ -2,7 +2,7 @@
 <section id="page-hero"
     class="section section__inverse justify-content-center py-5 py-lg-6 mb-n5 vh-50 h-lg-480px min-h-330px">
     <div class="bg bg-img position-absolute" data-bg-img=".img">
-        <img loading="lazy" src="../../img/image_wallpaper.jpg" class="img" alt="Image" />
+        <img loading="lazy" src="../../img/home.jpg" class="img" alt="Image" />
 
         <div class="overlay bg-dark position-absolute o-50"></div>
     </div>
