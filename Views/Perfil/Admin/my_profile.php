@@ -21,46 +21,16 @@
     <!-- /.bg bg-img position-absolute -->
 
     <div class="container-xl position-relative pt-4 pt-lg-5">
-        <header class="section-header mb-5 visually-hidden">
-            <h2 class="fs-3 text-center section-title mb-3">Property Detail</h2>
-        </header>
-        <!-- /.section-header mb-5 visually-hidden -->
 
         <div class="row">
             <div class="col-12 col-lg-9">
 
-
                 <div class="accordion mb-4" id="accordionOverview">
-                    <div class="accordion-item rounded shadow-sm">
-                        <h2 class="accordion-header" id="accordionOverviewHeading">
-                            <button class="accordion-button fs-5" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#accordionOverviewCollapse" aria-expanded="true"
-                                aria-controls="accordionOverviewCollapse">Overview</button>
-                        </h2>
-
-                        <div id="accordionOverviewCollapse" class="accordion-collapse collapse show"
-                            aria-labelledby="accordionOverviewHeading" data-bs-parent="#accordionOverview">
-                            <div class="accordion-body">
-                                <p>This beautiful house in the lorem ipsum, dolor sit amet consectetur adipisicing,
-                                    elit. Vero facilis praesentium repellendus impedit nam molestias sequi nobis ea,
-                                    quis, eaque illum doloribus beatae vel. Accusantium eius vero adipisci sit,
-                                    eveniet amet consectetur adipisicing elit. Distinctio libero sunt suscipit enim
-                                    quod esse ipsam nisi atque et, aut aliquam maxime nam adipisci impedit ipsum
-                                    beatae, culpa error iusto.</p>
-                            </div>
-                        </div>
-                        <!-- /#accordionOverviewCollapse.accordion-collapse collapse  show -->
-                    </div>
-                    <!-- /.accordion-item  rounded shadow-sm -->
-                </div>
-                <!-- /.accordion  mb-4" id="accordionOverview -->
-
-                <div class="accordion mb-4" id="accordionPropertyDetails">
                     <div class="accordion-item rounded shadow-sm">
                         <h2 class="accordion-header" id="accordionPropertyDetailsHeading">
                             <button class="accordion-button fs-5" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#accordionPropertyDetailsCollapse" aria-expanded="true"
-                                aria-controls="accordionPropertyDetailsCollapse">Property Details</button>
+                                aria-controls="accordionPropertyDetailsCollapse">Datos Personales</button>
                         </h2>
 
                         <div id="accordionPropertyDetailsCollapse" class="accordion-collapse collapse show"
@@ -69,93 +39,94 @@
                             <div class="accordion-body">
                                 <div class="row g-2 mb-3">
                                     <dl class="col-6 col-lg-4 my-0">
-                                        <dt class="fw-normal fs-sm text-uppercase text-secondary">Status</dt>
-                                        <dd class="fw-bold">For Sale</dd>
+                                        <dt class="fw-normal fs-sm text-uppercase text-secondary">N&uacute;mero de
+                                            identificaci&oacute;n</dt>
+                                        <dd class="fw-bold">----</dd>
                                     </dl>
                                     <!-- /.col-6 -->
 
                                     <dl class="col-6 col-lg-4 my-0">
-                                        <dt class="fw-normal fs-sm text-uppercase text-secondary">Type</dt>
-                                        <dd class="fw-bold">Apartments</dd>
+                                        <dt class="fw-normal fs-sm text-uppercase text-secondary">Nombre</dt>
+                                        <dd class="fw-bold">----</dd>
                                     </dl>
                                     <!-- /.col-6 -->
 
                                     <dl class="col-6 col-lg-4 my-0">
-                                        <dt class="fw-normal fs-sm text-uppercase text-secondary">Year Build</dt>
-                                        <dd class="fw-bold">2005</dd>
+                                        <dt class="fw-normal fs-sm text-uppercase text-secondary">Apellidos</dt>
+                                        <dd class="fw-bold">----</dd>
                                     </dl>
                                     <!-- /.col-6 -->
 
                                     <dl class="col-6 col-lg-4 my-0">
-                                        <dt class="fw-normal fs-sm text-uppercase text-secondary">Size</dt>
-                                        <dd class="fw-bold">2,804 sqft</dd>
-                                    </dl>
-                                    <!-- /.col-6 -->
-
-                                    <dl class="col-6 col-lg-4 my-0">
-                                        <dt class="fw-normal fs-sm text-uppercase text-secondary">Lot Size</dt>
-                                        <dd class="fw-bold">2,804 sqft</dd>
-                                    </dl>
-                                    <!-- /.col-6 -->
-
-                                    <dl class="col-6 col-lg-4 my-0">
-                                        <dt class="fw-normal fs-sm text-uppercase text-secondary">$ per square foot
+                                        <dt class="fw-normal fs-sm text-uppercase text-secondary">Fecha de nacimiento
                                         </dt>
-                                        <dd class="fw-bold">$125/sqft</dd>
+                                        <dd class="fw-bold">----</dd>
                                     </dl>
                                     <!-- /.col-6 -->
 
                                     <dl class="col-6 col-lg-4 my-0">
-                                        <dt class="fw-normal fs-sm text-uppercase text-secondary">Construction</dt>
-                                        <dd class="fw-bold">Frame</dd>
+                                        <dt class="fw-normal fs-sm text-uppercase text-secondary">G&eacute;nero</dt>
+                                        <dd class="fw-bold">----</dd>
                                     </dl>
                                     <!-- /.col-6 -->
 
                                     <dl class="col-6 col-lg-4 my-0">
-                                        <dt class="fw-normal fs-sm text-uppercase text-secondary">Roof</dt>
-                                        <dd class="fw-bold">Asphalt/Composite Shingles</dd>
+                                        <dt class="fw-normal fs-sm text-uppercase text-secondary">Constrase&ntilde;a
+                                        </dt>
+                                        <dd class="fw-bold">----</dd>
                                     </dl>
                                     <!-- /.col-6 -->
 
                                     <dl class="col-6 col-lg-4 my-0">
-                                        <dt class="fw-normal fs-sm text-uppercase text-secondary">Exterior</dt>
-                                        <dd class="fw-bold">FinishBrick</dd>
+                                        <dt class="fw-normal fs-sm text-uppercase text-secondary">Fecha de ingreso</dt>
+                                        <dd class="fw-bold">----</dd>
                                     </dl>
                                     <!-- /.col-6 -->
 
                                     <dl class="col-6 col-lg-4 my-0">
-                                        <dt class="fw-normal fs-sm text-uppercase text-secondary">Stories</dt>
-                                        <dd class="fw-bold">1</dd>
+                                        <dt class="fw-normal fs-sm text-uppercase text-secondary">Tipo de persona</dt>
+                                        <dd class="fw-bold">----</dd>
                                     </dl>
                                     <!-- /.col-6 -->
 
                                     <dl class="col-6 col-lg-4 my-0">
-                                        <dt class="fw-normal fs-sm text-uppercase text-secondary">Bedrooms</dt>
-                                        <dd class="fw-bold">4</dd>
+                                        <dt class="fw-normal fs-sm text-uppercase text-secondary">Correo</dt>
+                                        <dd class="fw-bold">----</dd>
+                                    </dl>
+                                    <!-- /.col-6 -->
+                                </div>
+                                <!-- /.row -->
+                            </div>
+                        </div>
+                        <!-- /#accordionPropertyDetailsCollapse.accordion-collapse collapse  show -->
+                    </div>
+                    <!-- /.accordion-item  rounded shadow-sm -->
+                </div>
+                <!-- /.accordion  mb-4" id="accordionPropertyDetails -->
+
+                <div class="accordion mb-4" id="accordionPropertyDetails">
+                    <div class="accordion-item rounded shadow-sm">
+                        <h2 class="accordion-header" id="accordionPropertyDetailsHeading">
+                            <button class="accordion-button fs-5" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#accordionPropertyDetailsCollapse" aria-expanded="true"
+                                aria-controls="accordionPropertyDetailsCollapse">Datos de contacto</button>
+                        </h2>
+
+                        <div id="accordionPropertyDetailsCollapse" class="accordion-collapse collapse show"
+                            aria-labelledby="accordionPropertyDetailsHeading"
+                            data-bs-parent="#accordionPropertyDetails">
+                            <div class="accordion-body">
+                                <div class="row g-2 mb-3">
+
+                                    <dl class="col-6 col-lg-4 my-0">
+                                        <dt class="fw-normal fs-sm text-uppercase text-secondary">Correo</dt>
+                                        <dd class="fw-bold">----</dd>
                                     </dl>
                                     <!-- /.col-6 -->
 
                                     <dl class="col-6 col-lg-4 my-0">
-                                        <dt class="fw-normal fs-sm text-uppercase text-secondary">Bathrooms</dt>
-                                        <dd class="fw-bold">2</dd>
-                                    </dl>
-                                    <!-- /.col-6 -->
-
-                                    <dl class="col-6 col-lg-4 my-0">
-                                        <dt class="fw-normal fs-sm text-uppercase text-secondary">Dining Room</dt>
-                                        <dd class="fw-bold">Dining / Family Combo</dd>
-                                    </dl>
-                                    <!-- /.col-6 -->
-
-                                    <dl class="col-6 col-lg-4 my-0">
-                                        <dt class="fw-normal fs-sm text-uppercase text-secondary">Family Room</dt>
-                                        <dd class="fw-bold">Dining / Family Combo</dd>
-                                    </dl>
-                                    <!-- /.col-6 -->
-
-                                    <dl class="col-6 col-lg-4 my-0">
-                                        <dt class="fw-normal fs-sm text-uppercase text-secondary">Garage</dt>
-                                        <dd class="fw-bold">1</dd>
+                                        <dt class="fw-normal fs-sm text-uppercase text-secondary">Tel&eacute;fono</dt>
+                                        <dd class="fw-bold">----</dd>
                                     </dl>
                                     <!-- /.col-6 -->
                                 </div>
