@@ -41,61 +41,66 @@
                                     <dl class="col-6 col-lg-4 my-0">
                                         <dt class="fw-normal fs-sm text-uppercase text-secondary">N&uacute;mero de
                                             identificaci&oacute;n</dt>
-                                        <dd class="fw-bold">----</dd>
+                                        <input type="text" class="form-control shadow-none mt-3 mb-3">
                                     </dl>
                                     <!-- /.col-6 -->
 
                                     <dl class="col-6 col-lg-4 my-0">
                                         <dt class="fw-normal fs-sm text-uppercase text-secondary">Nombre</dt>
-                                        <dd class="fw-bold">----</dd>
+                                        <input type="text" class="form-control shadow-none mt-3 mb-3">
                                     </dl>
                                     <!-- /.col-6 -->
 
                                     <dl class="col-6 col-lg-4 my-0">
                                         <dt class="fw-normal fs-sm text-uppercase text-secondary">Apellidos</dt>
-                                        <dd class="fw-bold">----</dd>
+                                        <input type="text" class="form-control shadow-none mt-3 mb-3">
                                     </dl>
                                     <!-- /.col-6 -->
 
                                     <dl class="col-6 col-lg-4 my-0">
                                         <dt class="fw-normal fs-sm text-uppercase text-secondary">Fecha de nacimiento
                                         </dt>
-                                        <dd class="fw-bold">----</dd>
+                                        <input type="text" class="form-control shadow-none mt-3 mb-3">
                                     </dl>
                                     <!-- /.col-6 -->
 
                                     <dl class="col-6 col-lg-4 my-0">
                                         <dt class="fw-normal fs-sm text-uppercase text-secondary">G&eacute;nero</dt>
-                                        <dd class="fw-bold">----</dd>
+                                        <input type="text" class="form-control shadow-none mt-3 mb-3">
                                     </dl>
                                     <!-- /.col-6 -->
 
                                     <dl class="col-6 col-lg-4 my-0">
                                         <dt class="fw-normal fs-sm text-uppercase text-secondary">Constrase&ntilde;a
                                         </dt>
-                                        <dd class="fw-bold">----</dd>
+                                        <input type="text" class="form-control shadow-none mt-3 mb-3">
                                     </dl>
                                     <!-- /.col-6 -->
 
                                     <dl class="col-6 col-lg-4 my-0">
                                         <dt class="fw-normal fs-sm text-uppercase text-secondary">Fecha de ingreso</dt>
-                                        <dd class="fw-bold">----</dd>
+                                        <input type="text" class="form-control shadow-none mt-3 mb-3">
                                     </dl>
                                     <!-- /.col-6 -->
 
                                     <dl class="col-6 col-lg-4 my-0">
                                         <dt class="fw-normal fs-sm text-uppercase text-secondary">Tipo de persona</dt>
-                                        <dd class="fw-bold">----</dd>
+                                        <input type="text" class="form-control shadow-none mt-3 mb-3">
                                     </dl>
                                     <!-- /.col-6 -->
 
                                     <dl class="col-6 col-lg-4 my-0">
                                         <dt class="fw-normal fs-sm text-uppercase text-secondary">Correo</dt>
-                                        <dd class="fw-bold">----</dd>
+                                        <input type="text" class="form-control shadow-none mt-3 mb-3">
                                     </dl>
                                     <!-- /.col-6 -->
                                 </div>
                                 <!-- /.row -->
+                                <p class="text-light mt-3 d-grid gap-2 d-md-flex justify-content-md-end"">
+                                    <a class=" btn btn-warning shadow-none px-4 fw-bold mt-1" href="#"
+                                    id="btn_savePersonalInformation"><i class="fas fa-pen"></i> Guardar cambios</a>
+                                </p>
+                                <!-- /.text-light -->
                             </div>
                         </div>
                         <!-- /#accordionPropertyDetailsCollapse.accordion-collapse collapse  show -->
@@ -120,18 +125,24 @@
 
                                     <dl class="col-6 col-lg-4 my-0">
                                         <dt class="fw-normal fs-sm text-uppercase text-secondary">Correo</dt>
-                                        <dd class="fw-bold">----</dd>
+                                        <input type="text" class="form-control shadow-none mt-3 mb-3">
                                     </dl>
                                     <!-- /.col-6 -->
 
                                     <dl class="col-6 col-lg-4 my-0">
                                         <dt class="fw-normal fs-sm text-uppercase text-secondary">Tel&eacute;fono</dt>
-                                        <dd class="fw-bold">----</dd>
+                                        <input type="text" class="form-control shadow-none mt-3 mb-3">
                                     </dl>
                                     <!-- /.col-6 -->
                                 </div>
                                 <!-- /.row -->
+                                <p class="text-light mt-3 d-grid gap-2 d-md-flex justify-content-md-end">
+                                    <a class=" btn btn-warning shadow-none px-4 fw-bold mt-1" href="#"
+                                        id="btn_saveContactData"><i class="fas fa-pen"></i> Guardar cambios</a>
+                                </p>
+                                <!-- /.text-light -->
                             </div>
+
                         </div>
                         <!-- /#accordionPropertyDetailsCollapse.accordion-collapse collapse  show -->
                     </div>
@@ -143,18 +154,12 @@
             <!-- /.col-12 col-lg-9 -->
 
             <div class="col-12 col-lg-3">
-                <div class="sticky-top pt-6 mt-n6 mb-4 zi-1">
-                    <ul class="nav nav-tabs" id="contactTab" role="tablist">
-                        <li class="nav-item w-50" role="presentation">
-                            <button class="nav-link w-100 active shadow-sm border-0 py-3" id="schedulleTab"
-                                data-bs-toggle="tab" data-bs-target="#schedulle" type="button" role="tab"
-                                aria-controls="schedulle" aria-selected="true">Schedulle a tour</button>
-                        </li>
-                        <li class="nav-item w-50" role="presentation">
-                            <button class="nav-link w-100 shadow-sm border-0 py-3" id="requestInfoTab"
-                                data-bs-toggle="tab" data-bs-target="#requestInfo" type="button" role="tab"
-                                aria-controls="requestInfo" aria-selected="false">Request Info</button>
-                        </li>
+                <div class="sticky-top pt-6 mt-n6 mb-4 zi-1 ">
+                    <ul class="nav nav-tabs " id="contactTab" role="tablist">
+
+                        <p class="nav-link w-100 active shadow-sm border-0 py-3" id="schedulleTab" type="button"
+                            role="tab" aria-controls="schedulle" aria-selected="true">Mi perfil</p>
+
                     </ul>
                     <!-- /.nav nav-tabs -->
 
@@ -163,84 +168,29 @@
                             aria-labelledby="schedulleTab">
                             <form action="#" class="">
                                 <div class="btn-group w-100 mb-3" role="group">
-                                    <input type="radio" class="btn-check" name="schedulleVia" id="schedulleViaInPerson"
-                                        checked />
-                                    <label class="btn btn-outline-primary btn-default shadow-none fw-bold w-50"
-                                        for="schedulleViaInPerson"><i class="fas fa-check"></i>In&nbsp;Person</label>
-                                    <input type="radio" class="btn-check" name="schedulleVia"
-                                        id="schedulleViavideoChat" />
-                                    <label class="btn btn-outline-primary btn-default shadow-none fw-bold w-50"
-                                        for="schedulleViavideoChat"><i class="fas fa-check"></i>Video&nbsp;Chat</label>
+                                    <img loading="lazy" src="../../img/20210710_021750_112124.jpg" class="w-100"
+                                        alt="Image" style="border-radius: 50%; width: 100%; height : 200px; " />
                                 </div>
                                 <!-- /.btn-group -->
 
-                                <div class="mb-3">
-                                    <label for="schedulleName" class="form-label fw-bold fs-sm">Full Name</label>
-                                    <input type="text" class="form-control shadow-none" id="schedulleName"
-                                        placeholder="Your Full Name" />
-                                </div>
-
-                                <div class="mb-3">
-                                    <label for="schedulleEmail" class="form-label fw-bold fs-sm">Email</label>
-                                    <input type="email" class="form-control shadow-none" id="schedulleEmail"
-                                        placeholder="Your Email" />
-                                </div>
-
-                                <div class="mb-3">
-                                    <label for="schedullePhone" class="form-label fw-bold fs-sm">Phone</label>
-                                    <input type="text" class="form-control shadow-none" id="schedullePhone"
-                                        placeholder="Your Phone" />
-                                </div>
-
-                                <div class="mb-3">
-                                    <label for="schedulleMessage" class="form-label fw-bold fs-sm">Message</label>
-                                    <textarea class="form-control shadow-none" id="schedulleMessage"
-                                        rows="3">I'm Interested in buying home at 70 Sagamoga Hill Road, San Jose, NY 110000</textarea>
-                                </div>
-
                                 <div>
-                                    <button type="submit" class="btn btn-primary w-100 mb-2 fw-bold"><i
-                                            class="fas fa-calendar-alt me-2"></i>Schedulle a Tour</button>
-                                    <p class="fs-sm text-secondary">Its free, with no obligation &mdash; cancel
-                                        anytime.</p>
+
+
+
+                                    <p class="text-light mt-3 text-center">
+                                        <a data-bs-toggle="modal" data-bs-target="#new_imageProfile"
+                                            class="btn btn-danger rounded-pill  shadow-none me-2 px-4 fw-bold mt-3 "
+                                            href="#" id="btn_insert"><i class="fas fa-pen-alt me-2"></i> Cambiar
+                                            foto</a>
+                                    </p>
+                                    <!-- /.text-light -->
+
                                 </div>
                             </form>
                         </div>
                         <!-- /.tab-pane -->
 
-                        <div class="tab-pane fade p-3" id="requestInfo" role="tabpanel"
-                            aria-labelledby="requestInfoTab">
-                            <form action="#">
-                                <div class="mb-3">
-                                    <label for="requestName" class="form-label fw-bold fs-sm">Full Name</label>
-                                    <input type="text" class="form-control shadow-none" id="requestName"
-                                        placeholder="Your Full Name" />
-                                </div>
 
-                                <div class="mb-3">
-                                    <label for="requestEmail" class="form-label fw-bold fs-sm">Email</label>
-                                    <input type="email" class="form-control shadow-none" id="requestEmail"
-                                        placeholder="Your Email" />
-                                </div>
-
-                                <div class="mb-3">
-                                    <label for="requestPhone" class="form-label fw-bold fs-sm">Phone</label>
-                                    <input type="text" class="form-control shadow-none" id="requestPhone"
-                                        placeholder="Your Phone" />
-                                </div>
-
-                                <div class="mb-3">
-                                    <label for="requestMessage" class="form-label fw-bold fs-sm">Message</label>
-                                    <textarea class="form-control shadow-none" id="requestMessage"
-                                        rows="3">I'm Interested in buying home at 70 Sagamoga Hill Road, San Jose, NY 110000</textarea>
-                                </div>
-
-                                <div>
-                                    <button type="submit" class="btn btn-primary w-100 fw-bold"><i
-                                            class="fas fa-info-circle me-2"></i>Request Info</button>
-                                </div>
-                            </form>
-                        </div>
                         <!-- /.tab-pane -->
                     </div>
                     <!-- /.tab-content -->
@@ -253,7 +203,36 @@
     <!-- /.container-xl position-relative -->
 </section>
 <!-- /.section -->
+<div class="modal fade" id="new_imageProfile" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-sm">
+        <div class="modal-content">
+            <button class="btn-close btn-close-menu position-absolute top-0 start-100 translate-middle" type="button"
+                data-bs-dismiss="modal" aria-label="Close">
+                <span class="btn-close-icon"></span>
+            </button>
 
+            <div class="modal-body p-4">
+                <form action="" method="post">
+                    <h6 class="mb-4" style="text-align: center;">Ingresar nueva imagen</h6>
+
+                    <div class="mb-3 ">
+                        <input type="file" class="form-control shadow-none" id="video_code" />
+                    </div>
+                    <div class="mb-3">
+                        <button type="submit" class="btn btn-primary w-100 text-uppercase fw-bold">Agregar</button>
+                    </div>
+
+
+                </form>
+
+            </div>
+            <!-- /.modal-body -->
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- modal-dialog modal-dialog-centered -->
+</div>
+<!-- #new_imageProfile -->
 
 
 <?php require_once("../../Includes/footerAdmin.php");?>
