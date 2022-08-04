@@ -5,15 +5,11 @@
             <div class="col col-md-auto text-md-auto ms-md-5">
                 <br>
                 <p class="mb-0"><strong>80</strong>&nbsp;Results&nbsp;Found</p>
-                <p class="text-light mt-3">
-                    <input type="text" id="example" class="form-control me-2 px-4 fw-bold "
-                        placeholder="Cargar C&oacute;digo del video">
-                </p>
-                <!-- /.text-light -->
 
                 <p class="text-light mt-3">
-                    <a class="btn btn-success rounded-pill shadow-none me-2 px-4 fw-bold mt-3" href="#" id="btn_insert"><i
-                            class="fas fa-plus"></i> Insertar Video</a>
+                    <a data-bs-toggle="modal" data-bs-target="#new_video"
+                        class="btn btn-success rounded-pill shadow-none me-2 px-4 fw-bold mt-3" href="#"
+                        id="btn_insert"><i class="fas fa-plus"></i> Insertar Video</a>
                 </p>
                 <!-- /.text-light -->
 
@@ -23,9 +19,10 @@
             <div class="col col-md-auto text-md-end ms-md-auto">
                 <div class="btn-group btn-select-dropdown w-100 mt-3">
 
-                   
+
                     <p class="text-dark text-center">
-                    <Label >Buscar por fecha</Label> <input type="date" id="example" class="form-control me-2 px-4 fw-bold ">
+                        <Label>Buscar por fecha</Label> <input type="date" id="example"
+                            class="form-control me-2 px-4 fw-bold ">
                     </p>
                     <!-- /.text-light -->
 

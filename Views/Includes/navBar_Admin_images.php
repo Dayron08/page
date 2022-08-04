@@ -5,15 +5,11 @@
             <div class="col col-md-auto text-md-auto ms-md-5">
                 <br>
                 <p class="mb-0"><strong>80</strong>&nbsp;Results&nbsp;Found</p>
-                <p class="text-light mt-3">
-                    <input type="file" id="example" class="form-control me-2 px-4 fw-bold "
-                        placeholder="Cargar C&oacute;digo del video">
-                </p>
-                <!-- /.text-light -->
 
                 <p class="text-light mt-3">
-                    <a class="btn btn-success rounded-pill  shadow-none me-2 px-4 fw-bold mt-3" href="#" id="btn_insert"><i
-                            class="fas fa-plus"></i> Insertar Imagen</a>
+                    <a data-bs-toggle="modal" data-bs-target="#new_image"
+                        class="btn btn-success rounded-pill  shadow-none me-2 px-4 fw-bold mt-3" href="#"
+                        id="btn_insert"><i class="fas fa-plus"></i> Insertar Imagen</a>
                 </p>
                 <!-- /.text-light -->
 

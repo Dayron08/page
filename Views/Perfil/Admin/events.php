@@ -41,9 +41,12 @@
                     </div>
                     <!-- /.col-12 col-md -->
                     <div class="col col-md-auto text-md-end ms-md-auto" style="display: flex;">
+                        <!-- <button class="btn btn-link p-0 ms-3 shadow-none" data-bs-toggle="modal"
+                            data-bs-target="#userSignInModal"><i class="fas fa-user"></i></button> -->
                         <p class="text-light ">
-                            <a class="btn btn-success  shadow-none me-2 px-4 fw-bold " href="#" id="btn_insert_event"><i
-                                    class="fas fa-plus"></i> Insertar evento</a>
+                            <a data-bs-toggle="modal" data-bs-target="#new_event"
+                                class="btn btn-success  shadow-none me-2 px-4 fw-bold " href="#"
+                                id="btn_insert_event"><i class="fas fa-plus"></i> Insertar evento</a>
                         </p>
                         <!-- /.text-light -->
 
@@ -119,5 +122,59 @@
         <!-- /.container-xl -->
     </section>
     <!-- #news-1.section pb-6 mt-n4 mt-lg-n5 mt-xl-n6 -->
+    <div class="modal fade" id="new_event" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-sm">
+            <div class="modal-content">
+                <button class="btn-close btn-close-menu position-absolute top-0 start-100 translate-middle"
+                    type="button" data-bs-dismiss="modal" aria-label="Close">
+                    <span class="btn-close-icon"></span>
+                </button>
 
+                <div class="modal-body p-4">
+                    <form action="" method="post">
+                        <h6 class="mb-4" style="text-align: center;">Ingrese el Evento</h6>
+
+                        <div class="mb-3 ">
+                            <label for="event_managerName" class="form-label fs-sm fw-bold">Nombre del encargado</label>
+                            <input type="text" class="form-control shadow-none" id="event_managerName" />
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="event_name" class="form-label fs-sm fw-bold">Nombre del evento</label>
+                            <input type="text" class="form-control shadow-none" id="event_name" />
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="event_desc" class="form-label fs-sm fw-bold">Descripci&oacute;n</label>
+                            <textarea class="form-control shadow-none" id="event_desc" cols="35" rows="2"></textarea>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="event_date" class="form-label fs-sm fw-bold">Fecha del evento</label>
+                            <input type="date" class="form-control shadow-none" id="event_date" />
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="event_time" class="form-label fs-sm fw-bold">Hora</label>
+                            <input type="time" class="form-control shadow-none" id="event_time" />
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="event_image" class="form-label fs-sm fw-bold">Insertar Imagen</label>
+                            <input type="file" class="form-control shadow-none" id="event_image" />
+                        </div>
+
+                        <div class="mb-3">
+                            <button type="submit" class="btn btn-primary w-100 text-uppercase fw-bold">Agregar</button>
+                        </div>
+                    </form>
+
+                </div>
+                <!-- /.modal-body -->
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- modal-dialog modal-dialog-centered -->
+    </div>
+    <!-- #new_event -->
     <?php require_once("../../Includes/footerAdmin.php");?>
