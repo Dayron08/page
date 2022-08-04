@@ -169,7 +169,7 @@
                             <form action="#" class="">
                                 <div class="btn-group w-100 mb-3" role="group">
                                     <img loading="lazy" src="../../img/20210710_021750_112124.jpg" class="w-100"
-                                        alt="Image" style="border-radius: 50%; width: 100%; height : 200px; " />
+                                        alt="Image" style="border-radius: 45%; width: 100%; height : 200px; " />
                                 </div>
                                 <!-- /.btn-group -->
 
