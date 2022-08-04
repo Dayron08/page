@@ -72,37 +72,69 @@ anchoPage();
 
 
 
+
+function validar(){
+    
+
+    var id = document.getElementById("id").value;
+   
+    if(id == 0 ){
+        alert("Debe ingresar la cedula");
+        return false;
+    }else if(id.length != 9){
+
+        alert("El formato de cedula no es correcto");
+        return false;
+    }
+
+     
+    var name = document.getElementById("name").value;
+    if(name==0){
+        alert("El nombre esta vacio");
+        return false;
+    }
+
+    var name = document.getElementById("name").value;
+    if(name==0){
+        alert("El nombre esta vacio");
+        return false;
+    }
+   
+
+}
+
+
 // document.getElementById("btn_singUp").addEventListener("click",registro);
 
-function registro(){
+// function registro(){
 
 
    
     
-    var id= document.getElementById("id").value;
-    var name= document.getElementById("name").value;
-    var lastname= document.getElementById("lastname").value;
-    var gmail= document.getElementById("gmail").value;
-    var password= document.getElementById("password").value;
+//     var id= document.getElementById("id").value;
+//     var name= document.getElementById("name").value;
+//     var lastname= document.getElementById("lastname").value;
+//     var gmail= document.getElementById("gmail").value;
+//     var password= document.getElementById("password").value;
     
 
-    $.ajax({
-        url: "insert.php",
-        method: "POST",
-        data:{id: id, name: name, lastname: lastname, gmail: gmail, password: password},
-        success: function(dataresponse, statustext, response){
-            alert("hola")
+//     $.ajax({
+//         url: "insert.php",
+//         method: "POST",
+//         data:{id: id, name: name, lastname: lastname, gmail: gmail, password: password},
+//         success: function(dataresponse, statustext, response){
+//             alert("hola")
 
-        },
-        error: function(request, errorcode, errortext){
-            $("#respuesta").html(errorcode);
-        }
+//         },
+//         error: function(request, errorcode, errortext){
+//             $("#respuesta").html(errorcode);
+//         }
   
 
     
-    });
+//     });
 
     
 
 
-}
+// }
