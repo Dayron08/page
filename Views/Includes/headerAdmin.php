@@ -27,9 +27,7 @@
     <script src="../../js/script.js"></script>
 
     <title>Iglesia Pacto de Vida</title>
-    <style>
-
-    </style>
+    <script src="../../js/formEvent.js"></script>
 </head>
 
 <body id="body">
