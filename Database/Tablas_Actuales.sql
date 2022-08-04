@@ -46,6 +46,7 @@ CREATE TABLE  GALERIA(
     IMG_PATH VARCHAR(100),
     FECHA DATE
 ); 
+
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 --PERSONA_TESTIMONIOS
 CREATE TABLE PERSONA_TESTIMONIOS(
