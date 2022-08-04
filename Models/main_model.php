@@ -1,5 +1,5 @@
 <?php 
-//Clase Abstracta que nos permitirá conectarnos a MySQL
+
 class Connection_Mysql {
 	//Atributos
 	private static $db_host = 'localhost';
@@ -13,7 +13,7 @@ class Connection_Mysql {
 	protected $rows = array();
 
 	//método privado para conectarse a la base de datos
-	public function db_open() {
+	private function db_open() {
 
 		$this->conn = new mysqli(
 			self::$db_host,
@@ -27,12 +27,12 @@ class Connection_Mysql {
 		}
 	}
 	//método privado para desconectarse de la base de datos
-	public function db_close() {
+	protected function db_close() {
 		$this->conn->close();
 	}
 
 	//establecer un query que afecte datos (INSERT, DELETE o UPDATE)
-	public function set_query($query) {
+	protected function set_query($query) {
 		$this->db_open();
 		$this->result = $this->conn->query($query);
 		return $this->result;

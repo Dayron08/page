@@ -1,13 +1,17 @@
 <?php
+class Configuration{
+	
+	private static $SERVER="localhost";
+	private static $DB="pacvi";
+	private static $USER="root";
+	private static $PASS="";
+	private static $SGBD;
 
-	const SERVER="localhost";
-	const DB="pacvi";
-	const USER="root";
-	const PASS="";
+	private function SGBD(){
+		$this->SGBD="mysql:host=".$this->SERVER.";dbname=".$this->DB;
+	}
 
-	const SGBD="mysql:host=".SERVER.";dbname=".DB;
-
-
-	const METHOD="AES-256-CBC";
-	const SECRET_KEY='$PRESTAMOS@2020';
-	const SECRET_IV='037970';
+	private static $METHOD="AES-256-CBC";
+	private static $SECRET_KEY='$PRESTAMOS@2020';
+	private static $SECRET_IV='037970';
+}
