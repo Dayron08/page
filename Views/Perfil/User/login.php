@@ -16,8 +16,8 @@
         rel="stylesheet">
 
     <link rel="stylesheet" href="../../css/estilos.css">
-    <script src="../../js/jquery-3.4.1.min.js"></script>
-    <script src="../../js/jquery.js"></script>
+    <scrip src="../../js/jquery-3.6.0.min.js"></script>
+    <script src="../../js/script.js"></script>
 
 </head>
 
@@ -26,16 +26,16 @@
 
 
     <main>
-    <form action="#" method="POST" class="">
+    <form action="#" method="POST" class="" id="">
 
     <h2>Regístrarse</h2>
-    <input type="text" placeholder="Cedula" id="id" >
-    <input type="text" placeholder="Nombre" id="name" >
+    <input type="text" id="id" placeholder="Cedula"  >
+    <input type="text"  id="name" placeholder="Nombre" >
     <input type="text" placeholder="Apellidos" id="lastname" >
     <input type="text" placeholder="Correo Electronico" id="gmail" > 
     <input type="password" placeholder="Contraseña" id="password" >
 
-    <button class="btn btn-info" id="btn_singUp" type="submit" >Registrarse</button>
+    <button class="btn btn-info" id="btn_singUp" type="submit" onclick="return registro();" >Registrarse</button>
 
     <br>
     <a class="rounded-pill shadow-none me-2 px-4 fw-bold" href="../User/home.php">Menu principal</a>

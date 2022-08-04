@@ -1,40 +1,4 @@
 
-document.getElementById("btn_singUp").addEventListener("click",registro);
-
-function registro(){
-
-    
-    e.preventDefault();
-
-   
-    var id = $("#id").val();
-    var name = $("#name").val();
-    var lastname = $("#lastname").val();
-    var gmail = $("#gmail").val();
-    var password = $("#password").val();
-
-    alert("hola")
-
-    $.ajax({
-        url: "../../Models/insert.php",
-        method: "POST",
-        data:{id: id, name: name, lastname: lastname, gmail: gmail, password: password},
-        success: function(dataresponse, statustext, response){
-
-
-        },
-        error: function(request, errorcode, errortext){
-            $("#respuesta").html(errorcode);
-        }
-  
-
-    
-    });
-
-    
-
-
-}
 
 
 //Ejecutando funciones
@@ -104,4 +68,41 @@ anchoPage();
             caja_trasera_login.style.display = "block";
             caja_trasera_login.style.opacity = "1";
         }
+}
+
+
+
+// document.getElementById("btn_singUp").addEventListener("click",registro);
+
+function registro(){
+
+
+   
+    
+    var id= document.getElementById("id").value;
+    var name= document.getElementById("name").value;
+    var lastname= document.getElementById("lastname").value;
+    var gmail= document.getElementById("gmail").value;
+    var password= document.getElementById("password").value;
+    
+
+    $.ajax({
+        url: "insert.php",
+        method: "POST",
+        data:{id: id, name: name, lastname: lastname, gmail: gmail, password: password},
+        success: function(dataresponse, statustext, response){
+            alert("hola")
+
+        },
+        error: function(request, errorcode, errortext){
+            $("#respuesta").html(errorcode);
+        }
+  
+
+    
+    });
+
+    
+
+
 }

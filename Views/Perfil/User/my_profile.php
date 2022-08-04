@@ -1,22 +1,14 @@
 <?php require_once("../../Includes/header.php");?>
-<section id="page-hero"
-    class="section section__inverse justify-content-center py-5 py-lg-6 mb-n5 vh-50 h-lg-480px min-h-330px">
-    <div class="bg bg-img position-absolute" data-bg-img=".img">
-        <img loading="lazy" src="../../img/image_wallpaper.jpg" class="img" alt="Image" />
 
-        <div class="overlay bg-dark position-absolute o-50"></div>
-    </div>
-    <!-- /.bg bg-img position-absolute -->
 
-    <div class="container-xl position-relative section-content text-center py-4">
-        <h2 class="display-5 text-white mt-3 mt-lg-4">María José Maroto Alvarado</h2>
+<section id="listing-detail-1" class="section pb-5 pb-lg-6">
+
+    <div class="container-xl position-relative section-content text-center  py-4">
+        <h2 class="display-5 text-dark mt-3 mt-lg-4">María José Maroto Alvarado</h2>
 
         <p class="lead mb-4 mb-lg-5">Usuario</p>
     </div>
-    <!-- /.container-xl position-relative -->
-</section>
 
-<section id="listing-detail-1" class="section pb-5 pb-lg-6">
     <div class="bg bg-img position-absolute" data-bg-img=".img"></div>
     <!-- /.bg bg-img position-absolute -->
 
