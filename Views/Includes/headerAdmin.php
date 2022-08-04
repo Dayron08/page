@@ -28,7 +28,7 @@
     <script src="../../js/script.js"></script>
 
     <title>Iglesia Pacto de Vida</title>
-    <script src="../../js/formEvent.js"></script>
+
 </head>
 
 <body id="body">
@@ -46,81 +46,80 @@
                 <div class="ms-auto ps-3 navbar-end d-flex flex-row justify-content-end">
 
 
-                    <div class="ms-auto ps-6 navbar-end d-flex flex-row justify-content-end">
+                    <button class="btn-close btn-close-menu collapsed ms-3" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="btn-close-icon"></span>
+                    </button>
+                    <button class="btn btn-link btn-light p-0 ms-3 shadow-none"><a class="fas fa-user"
+                            href="login.php"></a></button>
 
-                        <button class="btn btn-link light p-0 ms-3 shadow-none""><a
-                                class=" fas fa-user" href="login.php"></a></button>
-                        <button class="btn-close btn-close-menu collapsed ms-3" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false"
-                            aria-label="Toggle navigation">
-                            <span class="btn-close-icon"></span>
-                        </button>
-                    </div>
-
-                    <div class="collapse navbar-collapse" id="navbarMenu">
-                        <div class="mt-4 d-lg-none"></div>
-
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                            <li><a class="nav-link active" href="../Admin/home.php">Inicio</a></li>
-                            <li class="nav-item nav-dropdown dropdown dropdown-hover">
-                                <a class="nav-link dropdown-toggle" href="" id="navbarDocs" role="button"
-                                    data-bs-toggle="dropdown">Sobre Nosotros</a>
-                                <ul class="nav-dropdown-menu dropdown-menu dropdown-menu-end shadow" data-bs-popper>
-
-                                    <li><a class="dropdown-item" href="../Admin/about_us.php">Iglesia</a></li>
-
-                                    <li><a class="dropdown-item" href="../Admin/testimonials.php">Testimonios</a></li>
-
-                                </ul>
-                            </li>
-                            <li class="nav-item nav-dropdown dropdown dropdown-hover">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDocs" role="button"
-                                    data-bs-toggle="dropdown">Recursos</a>
-                                <ul class="nav-dropdown-menu dropdown-menu dropdown-menu-end shadow" data-bs-popper>
-                                    <li>
-                                        <span class="dropdown-header text-uppercase fw-bold">Galer&iacute;a</span>
-                                    </li>
-
-                                    <li><a class="dropdown-item" href="../Admin/videos.php">Videos</a></li>
-
-                                    <li><a class="dropdown-item" href="../Admin/images.php">Im&aacute;genes</a></li>
-
-                                    <li>
-                                        <hr class="dropdown-divider" />
-                                    </li>
-
-                                    <li>
-                                        <span class="dropdown-header text-uppercase fw-bold"><a class=""
-                                                href="../Admin/live.php">En vivos
-                                            </a></span>
-                                    </li>
-
-                                    <li>
-                                        <span class="dropdown-header text-uppercase fw-bold"><a class=""
-                                                href="../Admin/events.php">Eventos</a></span>
-                                    </li>
-
-                                </ul>
-                            </li>
-                            <li class="nav-item nav-dropdown dropdown dropdown-hover">
-                                <a class="nav-link dropdown-toggle" href="" id="navbarDocs" role="button"
-                                    data-bs-toggle="dropdown">Cont&aacute;ctenos</a>
-                                <ul class="nav-dropdown-menu dropdown-menu dropdown-menu-end shadow" data-bs-popper>
-
-                                    <li><a class="dropdown-item" href="../Admin/contact.php">Iglesia</a></li>
-
-                                    <li><a class="dropdown-item" href="../Admin/consultation.php">Consultas</a></li>
-
-                                </ul>
-                            </li>
-
-
-                        </ul>
-                        <!-- /.navbar-nav -->
-                    </div>
-                    <!-- /.collapse navbar-collapse -->
                 </div>
-                <!-- /.container-fluid -->
+
+                <div class="collapse navbar-collapse" id="navbarMenu">
+                    <div class="mt-4 d-lg-none"></div>
+
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li><a class="nav-link active" href="../Admin/home.php">Inicio</a></li>
+                        <li class="nav-item nav-dropdown dropdown dropdown-hover">
+                            <a class="nav-link dropdown-toggle" href="" id="navbarDocs" role="button"
+                                data-bs-toggle="dropdown">Sobre Nosotros</a>
+                            <ul class="nav-dropdown-menu dropdown-menu dropdown-menu-end shadow" data-bs-popper>
+
+                                <li><a class="dropdown-item" href="../Admin/about_us.php">Iglesia</a></li>
+
+                                <li><a class="dropdown-item" href="../Admin/testimonials.php">Testimonios</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item nav-dropdown dropdown dropdown-hover">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDocs" role="button"
+                                data-bs-toggle="dropdown">Recursos</a>
+                            <ul class="nav-dropdown-menu dropdown-menu dropdown-menu-end shadow" data-bs-popper>
+                                <li>
+                                    <span class="dropdown-header text-uppercase fw-bold">Galer&iacute;a</span>
+                                </li>
+
+                                <li><a class="dropdown-item" href="../Admin/videos.php">Videos</a></li>
+
+                                <li><a class="dropdown-item" href="../Admin/images.php">Im&aacute;genes</a></li>
+
+                                <li>
+                                    <hr class="dropdown-divider" />
+                                </li>
+
+                                <li>
+                                    <span class="dropdown-header text-uppercase fw-bold"><a class=""
+                                            href="../Admin/live.php">En vivos
+                                        </a></span>
+                                </li>
+
+                                <li>
+                                    <span class="dropdown-header text-uppercase fw-bold"><a class=""
+                                            href="../Admin/events.php">Eventos</a></span>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item nav-dropdown dropdown dropdown-hover">
+                            <a class="nav-link dropdown-toggle" href="" id="navbarDocs" role="button"
+                                data-bs-toggle="dropdown">Cont&aacute;ctenos</a>
+                            <ul class="nav-dropdown-menu dropdown-menu dropdown-menu-end shadow" data-bs-popper>
+
+                                <li><a class="dropdown-item" href="../Admin/contact.php">Iglesia</a></li>
+
+                                <li><a class="dropdown-item" href="../Admin/consultation.php">Consultas</a></li>
+
+                            </ul>
+                        </li>
+
+
+                    </ul>
+                    <!-- /.navbar-nav -->
+                </div>
+                <!-- /.collapse navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
         </nav>
 
         <div class="bg header-bg position-absolute trans-base"></div>
