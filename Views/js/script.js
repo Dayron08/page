@@ -79,6 +79,7 @@ function validar(){
     var id = document.getElementById("id").value;
    
     if(id == 0 ){
+        
         alert("Debe ingresar la cedula");
         return false;
     }else if(id.length != 9){
@@ -87,20 +88,24 @@ function validar(){
         return false;
     }
 
-     
     var name = document.getElementById("name").value;
     if(name==0){
         alert("El nombre esta vacio");
         return false;
     }
 
-    var name = document.getElementById("name").value;
-    if(name==0){
-        alert("El nombre esta vacio");
+    var lastname = document.getElementById("lastname").value;
+    if(lastname==0){
+        alert("El apellido esta vacio");
         return false;
     }
-   
 
+    var password = document.getElementById("password").value;
+    if(password==0){
+        alert("La contraseña esta vacia");
+        return false;
+    }
+    
 }
 
 

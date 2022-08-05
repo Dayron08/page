@@ -57,6 +57,7 @@
                 <form action="#" method="POST" class="formulario__register">
 
                 <h2>Regístrarse</h2>
+                <span  id ="alertId"> </span>
                 <input type="text" placeholder="Cedula" id="id" >
                 <input type="text" placeholder="Nombre" id="name" >
                 <input type="text" placeholder="Apellidos" id="lastname" >
