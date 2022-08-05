@@ -16,7 +16,7 @@
         rel="stylesheet">
 
     <link rel="stylesheet" href="../../css/estilos.css">
-   
+
 </head>
 
 
@@ -43,7 +43,7 @@
             <!--Formularios de datos-->
             <div class="contenedor__login-register">
                 <!--Login-->
-                <form action="" class="formulario__login">
+                <form action="../../../Controllers/singUp.php" class="formulario__login">
                     <h2>Iniciar Sesión</h2>
                     <input type="text" placeholder="Correo Electronico">
                     <input type="password" placeholder="Contraseña">
@@ -56,17 +56,24 @@
                 <!--Register-->
                 <form action="#" method="POST" class="formulario__register">
 
-                <h2>Regístrarse</h2>
-                <span  id ="alertId"> </span>
-                <input type="text" placeholder="Cedula" id="id" >
-                <input type="text" placeholder="Nombre" id="name" >
-                <input type="text" placeholder="Apellidos" id="lastname" >
-                <input type="text" placeholder="Correo Electronico" id="gmail" > 
-                <input type="password" placeholder="Contraseña" id="password" >
+                    <h2>Regístrarse</h2>
+                    <span id="alertId"> </span>
+                    <input type="text" placeholder="Cedula" id="id">
+                    <input type="text" placeholder="Nombre" id="name">
+                    <input type="text" placeholder="Apellidos" id="lastname">
+                    <input type="text" placeholder="Correo Electronico" id="gmail">
+                    <input type="password" placeholder="Contraseña" id="password">
 
+<<<<<<< HEAD
                 <button class="btn btn-info" id="btn_singUp" type="submit" >Registrarse</button>
                 <br>
                 <a class="rounded-pill shadow-none me-2 px-4 fw-bold" href="../User/home.php">Menu principal</a>
+=======
+                    <button class="btn btn-info" id="btn_singUp" type="submit"
+                        onclick="return validar();">Registrarse</button>
+                    <br>
+                    <a class="rounded-pill shadow-none me-2 px-4 fw-bold" href="../User/home.php">Menu principal</a>
+>>>>>>> 08708ebdc0abbaec544c734b4990980ab44b6334
                 </form>
             </div>
         </div>
