@@ -133,3 +133,11 @@ a:hover {
 #result_found_events{
     color: #F2F2F2;
 }
+
+#listing-detail-1{
+    background-image: url(../img/contact_wallpaper.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}

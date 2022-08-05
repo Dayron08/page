@@ -1,18 +1,18 @@
 <?php require_once("../../Includes/header.php");?>
 
 
-<section id="listing-detail-1" class="section pb-5 pb-lg-6">
+<section id="listing-detail-1" class="section pb-5 pb-lg-6 mb-n-5 vh-350 h-lg-800px" >
 
-    <div class="container-xl position-relative section-content text-center  py-4">
-        <h2 class="display-5 text-dark mt-3 mt-lg-4">María José Maroto Alvarado</h2>
+    <div class="container-xl position-relative section-content text-center py-4 mt-6 ">
+        <h2 class="display-5 text-white mt-2 mt-lg-4">María José Maroto Alvarado</h2>
 
-        <p class="lead mb-4 mb-lg-5">Usuario</p>
+        <p class="text-white lead ">Usuario</p>
     </div>
 
     <div class="bg bg-img position-absolute" data-bg-img=".img"></div>
     <!-- /.bg bg-img position-absolute -->
 
-    <div class="container-xl position-relative pt-4 pt-lg-5">
+    <div class="container-xl position-relative pt-5 pt-lg-5">
 
         <div class="row">
             <div class="col-12 col-lg-9">
