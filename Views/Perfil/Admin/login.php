@@ -64,16 +64,11 @@
                     <input type="text" placeholder="Correo Electronico" id="gmail">
                     <input type="password" placeholder="Contraseña" id="password">
 
-<<<<<<< HEAD
+
                 <button class="btn btn-info" id="btn_singUp" type="submit" >Registrarse</button>
                 <br>
                 <a class="rounded-pill shadow-none me-2 px-4 fw-bold" href="../User/home.php">Menu principal</a>
-=======
-                    <button class="btn btn-info" id="btn_singUp" type="submit"
-                        onclick="return validar();">Registrarse</button>
-                    <br>
-                    <a class="rounded-pill shadow-none me-2 px-4 fw-bold" href="../User/home.php">Menu principal</a>
->>>>>>> 08708ebdc0abbaec544c734b4990980ab44b6334
+
                 </form>
             </div>
         </div>
