@@ -30,6 +30,7 @@ $(document).ready(function () {
             alert("La contraseña esta vacia");
             return false;
         }
+        
         $.ajax({
             url: "../../../Controllers/singUp.php",
             method: "POST",
