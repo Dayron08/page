@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <form action="../../../Controllers/singUp.php" method="POST" class="formulario__register">
+    <form action="" method="POST" class="formulario__register">
 
         <h2>Regístrarse</h2>
         <input type="text" placeholder="Cedula" id="txt_user_id" name="txt_user_id">
