@@ -68,6 +68,7 @@ class SingUp extends Connection_Mysql {
 			'ran@676gmail.com',
 			83195333,
 			'../NUEVA_FOTO');";
+			
 		$this->execute($this->query);
 
 	}

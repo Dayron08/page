@@ -17,7 +17,8 @@
 
     <link rel="stylesheet" href="../../css/estilos.css">
     <script src="../../js/jquery-3.6.0.min.js"></script>
-    <script src="../../../ajax/ajax.js"></script>
+    <script src="../../js/ajax/ajax.js"></script>
+    
    
 </head>
 
@@ -69,7 +70,7 @@
 
                     <button class="btn btn-info" id="btn_singUp" type="submit">Registrarse</button>
                     <br>
-                    <a class="rounded-pill shadow-none me-2 px-4 fw-bold" href="../User/home.php">Menu principal</a>
+                    <a class="rounded-pill shadow-none me-2 px-4 fw-bold" href="../Admin/home.php">Menu principal</a>
 
                 </form>
             </div>

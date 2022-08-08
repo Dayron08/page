@@ -16,9 +16,10 @@
         rel="stylesheet">
 
     <link rel="stylesheet" href="../../css/estilos.css">
-    <scrip src="../../js/jquery-3.6.0.min.js"></script>
-  
-
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script src="../../js/ajax/ajax.js"></script>
+    
+   
 </head>
 
 
@@ -26,25 +27,58 @@
 
 
     <main>
-    <form action="#" method="POST" class="" id="">
+        <!--Cuadros de iniciar sesion o registrarse-->
+        <div class="contenedor__principal">
+            <h2 id="title">IGLESIA PACTO DE VIDA</h2><br>
+            <div class="contenedor__inferior">
+                <div class="contenedor__inferior-login">
+                    <h3>Si tienes una cuenta:</h3>
+                    <p>Inicia sesión para entrar en la página</p>
+                    <button id="btn__iniciar-sesion">Iniciar Sesión</button>
+                </div>
+                <div class="contenedor__inferior-register">
+                    <h3>¿Deseas crear una cuenta?</h3>
+                    <p>Regístrate para que acceder a la página</p>
+                    <button id="btn__registrarse">Regístrarse</button>
+                </div>
+            </div>
 
-    <h2>Regístrarse</h2>
-    <input type="text" id="id" name="id" placeholder="Cedula"  >
-    <input type="text"  id="name" placeholder="Nombre" >
-    <input type="text" placeholder="Apellidos" id="lastname" >
-    <input type="text" placeholder="Correo Electronico" id="gmail" > 
-    <input type="password" placeholder="Contraseña" id="password" >
+            <!--Formularios de datos-->
+            <div class="contenedor__login-register">
+                <!--Login-->
+                <form action="" class="formulario__login">
+                    <h2>Iniciar Sesión</h2>
+                    <input type="text" placeholder="Correo Electronico">
+                    <input type="password" placeholder="Contraseña">
+                    <button>Entrar</button>
+                    <br>
+                    <a class="btn rounded-pill shadow-none me-2 px-4 fw-bold " href="../User/home.php">Menu
+                        principal</a>
+                </form>
 
-    <button class="btn btn-info" id="btn_singUp" type="submit" onclick="return registro();">Registrarse</button>
+                <!--Register-->
+                <form action="" method="POST" class="formulario__register">
 
-    <br>
-    <a class="rounded-pill shadow-none me-2 px-4 fw-bold" href="../User/home.php">Menu principal</a>
-    </form>
+                    <h2>Regístrarse</h2>
+                    <span id="alertId"> </span>
+                    <input type="text" placeholder="Cedula" id="txt_user_id">
+                    <input type="text" placeholder="Nombre" id="txt_name">
+                    <input type="text" placeholder="Apellidos" id="txt_surname">
+                    <input type="text" placeholder="Correo Electronico" id="txt_gmail">
+                    <input type="password" placeholder="Contraseña" id="txt_password">
+
+
+                    <button class="btn btn-info" id="btn_singUp" type="submit">Registrarse</button>
+                    <br>
+                    <a class="rounded-pill shadow-none me-2 px-4 fw-bold" href="../User/home.php">Menu principal</a>
+
+                </form>
+            </div>
+        </div>
 
     </main>
-    <script src="../../js/script.js"></script>
-    
-</body>
 
+    <script src="../../js/script.js"></script>
+</body>
 
 </html>
