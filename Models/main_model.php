@@ -1,5 +1,6 @@
 <?php 
 
+
 class Connection_Mysql {
 	//Atributos
 	private static $db_host = 'localhost';
@@ -40,7 +41,7 @@ class Connection_Mysql {
 	}
 
 	//obtener datos de un query (SELECT)
-	protected function get_query() {
+	public function get_query() {
 		$this->db_open();
 
 		$result = $this->conn->query($this->query);

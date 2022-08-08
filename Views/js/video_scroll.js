@@ -3,6 +3,7 @@
 window.addEventListener('load', videoScroll);
 window.addEventListener('scroll', videoScroll);
 
+
 function videoScroll() {
     alert ("entrooo")
 

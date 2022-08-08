@@ -46,11 +46,11 @@
             <!--Formularios de datos-->
             <div class="contenedor__login-register">
                 <!--Login-->
-                <form action="" class="formulario__login">
+                <form action="" method="POST" class="formulario__login">
                     <h2>Iniciar Sesión</h2>
-                    <input type="text" placeholder="Correo Electronico">
-                    <input type="password" placeholder="Contraseña">
-                    <button>Entrar</button>
+                    <input type="text" placeholder="Correo Electronico" id="txt_email">
+                    <input type="password" placeholder="Contraseña" id="txt_pass">
+                    <button type="submit" id="btn_entrar">Entrar</button>
                     <br>
                     <a class="btn rounded-pill shadow-none me-2 px-4 fw-bold " href="../Admin/home.php">Menu
                         principal</a>

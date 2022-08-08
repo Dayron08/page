@@ -8,6 +8,7 @@ class SingUp extends Connection_Mysql {
 	private $password;
 	private $result;
 	private $database;
+	public $null = null;
 
 	public $status_id;
 	public $status;
@@ -50,48 +51,113 @@ class SingUp extends Connection_Mysql {
         return $this->password;
     }
 
+	public function set_gmail($gmail){
+        $this->gmail = $gmail;
+    }
+
+    public function get_gmail(){
+        return $this->gmail;
+    }
+
+	public function set_query($query){
+        $this->query = $query;
+    }
+
+    public function get_query(){
+        return $this->query;
+    }
+
+
+
 	private function execute($query){
+
 		$this->result = $this-> database->set_query($this->query);
 		$this-> database->db_close();
 		return $this->result;
 	}
 	
-
 	public function create() {
 		$this->query = "CALL P_INSERTAR_DATOS_PERSONA_USU(                
 			'".$this->user_id."', 
 			'".$this->name."',
 			'".$this->surname."',
-			'1999/09/27',
-			'M',
+			NULL,
+			NULL,
 			'".$this->password."',
-			'ran@676gmail.com',
-			83195333,
-			'../NUEVA_FOTO');";
+			'".$this->gmail."',
+			NULL,
+			NULL);";
 			
 		$this->execute($this->query);
 
 	}
 
 	public function read() {
-		$this->query = "SELECT * FROM persona";
-		
-		$this->get_query();
-		//var_dump($this->rows);
 
-		$num_rows = count($this->rows);
-		//echo $num_rows;
+		session_start();
+
+		$this->query = "CALL P_VALI_LOGIN(
+		'".$this->gmail."',
+		'".$this->password."');";
+		
+		
+		// echo $this->query;
+
+		$this->get_query();
+
+		
+	    var_dump($this->get_query());
+		var_dump($this->rows);
 
 		$data = array();
 
-		//http://php.net/manual/es/control-structures.foreach.php
-		foreach ($this->rows as $key => $value) {
-			array_push($data, $value);
-			//$data[$key] =  $value;
+		foreach ($this->rows as $value) {
+					array_push($data, $value);
+					//$data[$key] =  $value;
 		}
+		
+		
+
+		// $_SESSION['ID_REGISTO_PERSON'] = isset($this->rows["ID_REGISTO_PERSONA"]); 
+		
+		// if($this->rows== null){
+		// echo "2";
+		// }else{
+		// 	if($this->rows["TIPO_PERSONA"] == 0){  
+		// 		echo "0";
+		// 	}else if($this->rows["TIPO_PERSONA"] == 1){
+		// 		echo "1";
+		// 	}
+		// }
+
+		
 
 		return $data;
+
 	}
+
+
+	// public function read() {
+	// 	$this->query = "SELECT * FROM persona";
+		
+	// 	$this->get_query();
+	// 	//var_dump($this->rows);
+
+	// 	$num_rows = count($this->rows);
+	// 	//echo $num_rows;
+
+	// 	$data = array();
+
+	// 	//http://php.net/manual/es/control-structures.foreach.php
+	// 	foreach ($this->rows as $key => $value) {
+	// 		array_push($data, $value);
+	// 		//$data[$key] =  $value;
+	// 	}
+
+	// 	return $data;
+	// }
+
+
 
 	public function update( $status_data = array() ) {
 		foreach ($status_data as $key => $value) {

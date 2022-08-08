@@ -1,7 +1,7 @@
 
 
 //Ejecutando funciones
-document.getElementById("btn_singUp").addEventListener("click",validar);
+// document.getElementById("btn_singUp").addEventListener("click",validar);
 document.getElementById("btn__iniciar-sesion").addEventListener("click", iniciarSesion);
 document.getElementById("btn__registrarse").addEventListener("click", register);
 window.addEventListener("resize", anchoPage);
@@ -73,67 +73,67 @@ anchoPage();
 
 
 
-function validar(){
+// function validar(){
     
 
-    var id = document.getElementById("id").value;
+//     var id = document.getElementById("id").value;
    
-    if(id == 0 ){
+//     if(id == 0 ){
         
-        alert("Debe ingresar la cedula");
-        return false;
-    }else if(id.length != 9){
+//         alert("Debe ingresar la cedula");
+//         return false;
+//     }else if(id.length != 9){
 
-        alert("El formato de cedula no es correcto");
-        return false;
-    }
+//         alert("El formato de cedula no es correcto");
+//         return false;
+//     }
 
-    var name = document.getElementById("name").value;
-    if(name==0){
-        alert("El nombre esta vacio");
-        return false;
-    }
+//     var name = document.getElementById("name").value;
+//     if(name==0){
+//         alert("El nombre esta vacio");
+//         return false;
+//     }
 
-    var lastname = document.getElementById("lastname").value;
-    if(lastname==0){
-        alert("El apellido esta vacio");
-        return false;
-    }
+//     var lastname = document.getElementById("lastname").value;
+//     if(lastname==0){
+//         alert("El apellido esta vacio");
+//         return false;
+//     }
 
-    var password = document.getElementById("password").value;
-    if(password==0){
-        alert("La contraseña esta vacia");
-        return false;
-    }
+//     var password = document.getElementById("password").value;
+//     if(password==0){
+//         alert("La contraseña esta vacia");
+//         return false;
+//     }
     
-}
+// }
 
 
 
 
-function registro(){
+// function registro(){
 
 
-    var id= document.getElementById("id").value;
-    var name= document.getElementById("name").value;
-    var lastname= document.getElementById("lastname").value;
-    var gmail= document.getElementById("gmail").value;
-    var password= document.getElementById("password").value;
+//     var id= document.getElementById("id").value;
+//     var name= document.getElementById("name").value;
+//     var lastname= document.getElementById("lastname").value;
+//     var gmail= document.getElementById("gmail").value;
+//     var password= document.getElementById("password").value;
         
 
-    // $.ajax({
-    //     url: "../../Controllers/singUp.php",
-    //     method : "POST",
-    //     data : {id : id, name : name, lastname : lastname, gmail : gmail, password : password},
-    //     error : function(request, errorcode, errortext){
-    //     },
-    //     success : function(dataresponse, statustext, response){
-    //         alert('esto')
-    //     }            
-    // });  
+//     // $.ajax({
+//     //     url: "../../Controllers/singUp.php",
+//     //     method : "POST",
+//     //     data : {id : id, name : name, lastname : lastname, gmail : gmail, password : password},
+//     //     error : function(request, errorcode, errortext){
+//     //     },
+//     //     success : function(dataresponse, statustext, response){
+//     //         alert('esto')
+//     //     }            
+//     // });  
 
 
- }
+//  }
 
 
 
