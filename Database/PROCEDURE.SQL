@@ -265,6 +265,29 @@ DELIMITER;
 --PRUEBA VER,PERSONA, EXITOSA
 CALL P_VER_PERSONAS();
 
+
+
+--------------------PD PARA VER TIPO DE PERSONA
+DELIMITER $$
+USE PacVi $$
+CREATE OR REPLACE PROCEDURE P_VALI_LOGIN
+    (
+        IN P_CORREO VARCHAR(50),
+        IN P_PASSWORD VARCHAR(50)
+    )
+        BEGIN
+            SELECT
+                TP.DSC_TIPO AS ROL,
+                P.ID_REGISTRO_PERSONA AS CEDULA
+            FROM TIPO_PERSONA TP
+            INNER JOIN PERSONA P ON (P.TIPO_PERSONA = TP.ID_TIPO)
+            INNER JOIN PERSONA_CONTACTO PC ON (PC.ID_REGISTRO_PERSONA = P.ID_REGISTRO_PERSONA)
+            WHERE PC.EMAIL =P_CORREO  AND P.PASSWORD_PERSONA = P_PASSWORD;
+        END$$
+DELIMITER;
+
+CALL P_VALI_LOGIN('HANNAH@gmail.coM','HOLA');
+
 ---------------------------------------------------------GALERIA-------------------------------------------------------------------------
 --INSERTAR, 
 DELIMITER $$
