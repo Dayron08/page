@@ -1,7 +1,7 @@
 $(document).ready(function () {
     $("#btn_singUp").click(function (e) { 
 
-        e.preventDefault();
+        
         var txt_user_id = $("#txt_user_id").val();
         if(txt_user_id == 0 ){
         

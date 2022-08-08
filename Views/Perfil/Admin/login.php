@@ -18,8 +18,7 @@
     <link rel="stylesheet" href="../../css/estilos.css">
     <script src="../../js/jquery-3.6.0.min.js"></script>
     <script src="../../../ajax/ajax.js"></script>
-    <script src="../../js/script.js"></script>
-    <script src="../../../ajax/validation.js"></script>
+   
 </head>
 
 
