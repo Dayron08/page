@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="../../css/estilos.css">
     <script src="../../js/jquery-3.6.0.min.js"></script>
     <script src="../../js/ajax/ajax.js"></script>
-    <!-- <script src="validate.js"></script> -->
+
     
    
 </head>
@@ -61,9 +61,9 @@
                 <form action="" method="POST" class="formulario__register">
 
                     <h2>Regístrarse</h2>
-                    
-                    <input type="number" placeholder="Cedula" id="txt_user_id">
                     <p id="alert_id"></p>
+                    <input type="number" placeholder="Cedula" id="txt_user_id">
+                    
 
                     <input type="text" placeholder="Nombre" id="txt_name">
                     <p id="alert_name"></p>
@@ -76,7 +76,6 @@
 
                     <input type="password" placeholder="Contraseña" id="txt_password">
                     <p id="alert_password"></p>
-
 
                     <button class="btn btn-info" id="btn_singUp" type="submit">Registrarse</button>
                     <br>
