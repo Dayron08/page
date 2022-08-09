@@ -22,7 +22,7 @@ $(document).ready(function () {
             }else{
                 return true;
             }
-            
+            asd
             
             // var txt_user_id = $("#txt_user_id").val();
             // if(txt_user_id == 0 ){
