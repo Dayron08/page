@@ -81,17 +81,24 @@
                     ?>
                 <div class="col-12 col-sm-6 col-md-3 d-flex">
                     <div class="card card__minimal h-100">
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                            <button class="btn btn-link me-md-1 mr-1" type="button"><a id="" class="fa fa-trash fa-lg" href="#"></a></button>
+                            <button class="btn btn-link" type="button"><a id="" class="fa fa-pen fa-lg" href="#"></a></button>
+                        </div>
+                    
+                        <!-- seleccion-->
                         <div class="card-img-top overflow-hidden position-relative">
-                            <img loading="lazy" src="../../img/nathan-mullet-GoFys2bZJaE-unsplash.jpg" class="w-100"
-                                alt="Image" />
-                        </div>
+                            <img loading="lazy" src="../../img/nathan-mullet-GoFys2bZJaE-unsplash.jpg" class="w-100" alt="Image" />
+                        </div> 
+
                         <div class="card-body pt-3">
-                            <h3 class="fs-5"><a href="" class="stretched-link">Japan Through The lenses</a></h3>
+                            <h3 class="fs-5"><a href="" class="stretched-link">Japan</a></h3>
                         </div>
-                        <div class="card-footer bg-transparent fs-sm"><span class="o-50">By</span> <a href=""
-                                class="fw-bold o-50 o-100-hover trans-base position-relative zi-20">John Doe</a> <span
-                                class="o-50">in</span> <a href=""
-                                class="fw-bold o-50 o-100-hover trans-base position-relative zi-20">News</a></div>
+                            <div class="card-footer bg-transparent fs-sm"><span class="o-50">By</span> <a href=""
+                                    class="fw-bold o-50 o-100-hover trans-base position-relative zi-20">John Doe</a> <span
+                                    class="o-50">in</span> <a href=""
+                                    class="fw-bold o-50 o-100-hover trans-base position-relative zi-20">News</a>
+                            </div>
                     </div>
                     <!-- /.card card__minimal -->
                 </div>
