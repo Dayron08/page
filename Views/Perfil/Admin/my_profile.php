@@ -95,7 +95,7 @@
                                     <!-- /.col-6 -->
                                 </div>
                                 <!-- /.row -->
-                                <p class="text-light mt-3 d-grid gap-2 d-md-flex justify-content-md-end"">
+                                <p class="text-light mt-3 d-grid gap-2 d-md-flex justify-content-md-end">
                 <a class=" btn btn-warning shadow-none px-4 fw-bold mt-1" href="#" id="btn_savePersonalInformation"><i
                                         class="fas fa-pen"></i> Guardar cambios</a>
                                 </p>
