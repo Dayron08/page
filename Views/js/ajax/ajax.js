@@ -6,43 +6,45 @@ $(document).ready(function () {
 
             e.preventDefault();
     
-            // var txt_user_id=$("txt_user_id").val();
-            // if(txt_user_id == ''){
-            //     $("#alert_id").text("No se permiten campos vacios");
-            //     $("#alert_id").css({"background-color":"#F38B77","font-family": "Times New Roman', Times, serif;"})
-            //     return false;
-            // }else if(!isNaN(txt_user_id)){
-            //     $("#alert_id").text("No se permiten letras");
-            //     $("#alert_id").css({"background-color":"#F38B77","font-family": "Times New Roman', Times, serif;"})
-            //     return false;
-            // }
-            // }else if(txt_user_id.length == 9){
-            //     $("#alert_id").text("Número de Cedula no valido");
-            //     $("#alert_id").css({"background-color":"#F38B77","font-family": "Times New Roman', Times, serif;"})
-            //     return false;
-            // }
-    
-            var txt_name = $("#txt_name").val();
-            if(txt_name == ''){
-                $("#alert_name").text("No se permiten campos vacios");
-                $("#alert_name").css({"color" : "red"});
-                $("#alert_name").css({"background-color":"#F38B77","font-family": "Times New Roman', Times, serif;"})
+            var txt_user_id=$("#txt_user_id").val();
+            if(txt_user_id == '' ){
+                $("#alert_id").text("✘ Espacio obligatorio");
+                $("#alert_id").css({"color" : "red","font-family": "Times New Roman', Times, serif;"});
                 return false;
-            }else if (!isNaN(txt_name)){
-                $("#alert_name").text("No se permiten números");
-                $("#alert_name").css({"background-color":"#F38B77","font-family": "Times New Roman', Times, serif;"})
+            }else if(isNaN(txt_user_id)){
+                $("#alert_id").text("✘ No se permiten letras");
+                $("#alert_id").css({"color" : "red","font-family": "Times New Roman', Times, serif;"});
+                return false;
+            }else if(txt_user_id.length != 9){
+                $("#alert_id").text("✘ Número de Cedula no valido");
+                $("#alert_id").css({"color" : "red","font-family": "Times New Roman', Times, serif;"});
                 return false;
             }else{
-              
-                $("#alert_name").hide();
+                $("#alert_id").text("");
             }
-            // var txt_surname = $("#txt_surname").val();
+    
+            var txt_name = $("#txt_name").val();
+
+            if(txt_name == ''){
+                $("#alert_name").text("✘ No se permiten campos vacios");
+                $("#alert_name").css({"color" : "red","font-family": "Times New Roman', Times, serif;"});
+                return false;
+            }else if (!isNaN(txt_name)){
+                $("#alert_name").text("✘ No se permiten números");
+                $("#alert_name").css({"color" : "red","font-family": "Times New Roman', Times, serif;"});
+                return false;
+            }else{
+                $("#alert_name").text("");
+                
+            }
+
+            var txt_surname = $("#txt_surname").val();
             // if(txt_surname==0){
             //     alert("El apellido esta vacio");
             //     return false;
             // }
     
-            // var txt_password = $("#txt_password").val();
+            var txt_password = $("#txt_password").val();
             // if(txt_password==0){
             //     alert("La contraseña esta vacia");
             //     return false;

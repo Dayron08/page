@@ -61,9 +61,9 @@
                 <form action="" method="POST" class="formulario__register">
 
                     <h2>Regístrarse</h2>
-                    <p id="alert_id"></p>
-                    <input type="number" placeholder="Cedula" id="txt_user_id">
                     
+                    <input type="number" placeholder="Cedula" id="txt_user_id">
+                    <p id="alert_id"></p>
 
                     <input type="text" placeholder="Nombre" id="txt_name">
                     <p id="alert_name"></p>
