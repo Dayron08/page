@@ -181,7 +181,8 @@
         <div class="row">
             <div
                 class="col-12 col-lg-6 col-xl-6 py-4 py-lg-7 pe-lg-6 d-flex flex-column justify-content-center section-content ">
-                <h2 class="fs-1 mb-3 text-bla">"Guíame, pues eres mi roca y mi fortaleza,dirígeme por amor a tu nombre"</h2>
+                <h2 class="fs-1 mb-3 text-bla">"Guíame, pues eres mi roca y mi fortaleza,dirígeme por amor a tu nombre"
+                </h2>
                 <p class="lead mb-4">Salmo 31:3 </p>
             </div>
             <!-- /.col-12 col-lg-6 col-xl-6 py-4 py-lg-7 pe-lg-6 d-flex flex-column justify-content-center -->
@@ -189,7 +190,7 @@
             <div class="col-12 col-lg-6 col-xl-6">
                 <div class="position-relative expand-w h-100 o-75">
                     <div class="bg bg-img position-absolute" data-bg-img=".img">
-                       
+
                         <iframe width="650" height="450"
                             src="https://www.youtube.com/embed/s-SR7Xc0yhM?autoplay=1&mute=1&loop=1&start=50&controls=0"
                             title="YouTube video player" frameborder="0"

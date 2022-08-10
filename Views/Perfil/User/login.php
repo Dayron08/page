@@ -16,6 +16,10 @@
         rel="stylesheet">
 
     <link rel="stylesheet" href="../../css/estilos.css">
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script src="../../js/ajax/ajax.js"></script>
+    
+   
 </head>
 
 
@@ -53,17 +57,21 @@
                 </form>
 
                 <!--Register-->
-                <form action="" class="formulario__register">
+                <form action="" method="POST" class="formulario__register">
 
                     <h2>Regístrarse</h2>
-                    <input type="text" placeholder="Cedula">
-                    <input type="text" placeholder="Nombre">
-                    <input type="text" placeholder="Apellidos">
-                    <input type="text" placeholder="Correo Electronico">
-                    <input type="password" placeholder="Contraseña">
-                    <button>Regístrarse</button>
+                    <span id="alertId"> </span>
+                    <input type="text" placeholder="Cedula" id="txt_user_id">
+                    <input type="text" placeholder="Nombre" id="txt_name">
+                    <input type="text" placeholder="Apellidos" id="txt_surname">
+                    <input type="text" placeholder="Correo Electronico" id="txt_gmail">
+                    <input type="password" placeholder="Contraseña" id="txt_password">
+
+
+                    <button class="btn btn-info" id="btn_singUp" type="submit">Registrarse</button>
                     <br>
                     <a class="rounded-pill shadow-none me-2 px-4 fw-bold" href="../User/home.php">Menu principal</a>
+
                 </form>
             </div>
         </div>
