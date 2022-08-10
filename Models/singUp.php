@@ -139,25 +139,15 @@ class SingUp extends Connection_Mysql {
 
 	}
 
-
-	// public function read() {
-	// 	$this->query = "SELECT * FROM persona";
-		
-	// 	$this->get_query();
-	// 	//var_dump($this->rows);
-
-	// 	$num_rows = count($this->rows);
-	// 	//echo $num_rows;
-
-	// 	$data = array();
-
-	// 	//http://php.net/manual/es/control-structures.foreach.php
-	// 	foreach ($this->rows as $key => $value) {
-	// 		array_push($data, $value);
-	// 		//$data[$key] =  $value;
-	// 	}
-
-	// 	return $data;
+	// function to call data profile
+	// public function call_profile() {
+    //         $this->query = 
+    //         "CALL P_VER_MAQUINARIA(".$this->cod_machine.");";
+    //         $this->result = $this->database->execute_query($this->query);
+    //         // var_dump($this->result);
+    //         $this->database->close_connection();
+    //         $this->result = mysqli_fetch_assoc($this->result);
+    //         return $this->result;
 	// }
 
 
@@ -176,7 +166,9 @@ class SingUp extends Connection_Mysql {
 		$this->set_query($this->query);
 	}
 
+	//to destroy $this
 	public function __destruct() {
-		unset($this->db_name);
+		unset($this->database);
 	}
+	
 }

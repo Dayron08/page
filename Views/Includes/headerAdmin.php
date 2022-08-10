@@ -25,7 +25,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/discoverize-default.css" />
     <link rel="stylesheet" type="text/css" href="../../css/discoverize-minimal.css" />
     <link rel="stylesheet" type="text/css" href="../../css/style.css" />
-    <script src="../../js/script.js"></script>
+    <script src="../js/ajax/profileData.js"></script>
 
     <title>Iglesia Pacto de Vida</title>
 
