@@ -47,11 +47,8 @@ class Connection_Mysql {
 
 		$result = $this->conn->query($this->query);
 
-		// while( $this->rows[] = $result->fetch_assoc() );
-		// $result->close();
-		$this->rows = ['hola','m'];
-		
-
+		while($this->rows[] = $result->fetch_assoc() );
+		$result->close();
 		$this->db_close();
 
 		return array_pop($this->rows);
