@@ -24,7 +24,6 @@ $(document).ready(function () {
             }
     
             var txt_name = $("#txt_name").val();
-
             if(txt_name == ''){
                 $("#alert_name").text("✘ No se permiten campos vacios");
                 $("#alert_name").css({"color" : "red","font-family": "Times New Roman', Times, serif;"});
@@ -39,21 +38,36 @@ $(document).ready(function () {
             }
 
             var txt_surname = $("#txt_surname").val();
-            // if(txt_surname==0){
-            //     alert("El apellido esta vacio");
-            //     return false;
-            // }
-    
-            var txt_password = $("#txt_password").val();
-            // if(txt_password==0){
-            //     alert("La contraseña esta vacia");
-            //     return false;
-            // }
-            
-    
-            var txt_gmail = $("#txt_gmail").val();
+            if(txt_surname == ''){
+                $("#alert_surname").text("✘ No se permiten campos vacios");
+                $("#alert_surname").css({"color" : "red","font-family": "Times New Roman', Times, serif;"});
+                return false;
+            }else if (!isNaN(txt_surname)){
+                $("#alert_surname").text("✘ No se permiten números");
+                $("#alert_surname").css({"color" : "red","font-family": "Times New Roman', Times, serif;"});
+                return false;
+            }else{
+                $("#alert_surname").text("");
+                
+            }
 
-    
+            var txt_gmail = $("#txt_gmail").val();
+            var validacion=/^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
+            vali= validacion.test(txt_gmail);
+            if(vali=='' || vali!=true){
+                $("#alert_name").text("✘ No se permiten números");
+                $("#alert_name").css({"color" : "red","font-family": "Times New Roman', Times, serif;"});
+                return false;
+            }else{
+                $("#alert_name").text("");
+            }
+
+
+
+            var txt_password = $("#txt_password").val();
+            
+            
+
             $.ajax({
                 url: "../../../Controllers/singUp.php",
                 method: "POST",
