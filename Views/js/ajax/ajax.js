@@ -16,6 +16,65 @@ $(document).ready(function () {
             flag = 0;
         }
     }
+    
+
+    // //validates that no field is empty
+    // $('#btn_procesar').click(function (e) { 
+    //     var cedula=$("#userSignup_num_ide").val();
+    //     var nombre=$("#userSignup_name").val();
+    //     var apellidos=$("#userSignup_lastNames").val();
+    //     var correo=$("#userSignUp_email").val();
+    //     var date_born=$("#userSignup_date_born").val();
+    //     var phone_number=$("#userSignUp_phone_number").val();
+    //     var password=$("#userSignUp_Password").val();
+    //     var rd_gender = $("#userSignUp_rd_gender input").val();
+
+    //     // alert(cedula + "-" +nombre+ "-" +apellidos+ "-" +correo+ "-" +date_born+ "-" +phone_number+ "-" +password+ "-" +rd_gender)
+    //     if(!rd_genero()){
+    //         return false;
+    //     }else{
+    //         if(cedula ==''||nombre == '' || apellidos ==''||correo == '' || phone_number == '' || password == '' || date_born == '' ){
+    //             Swal.fire({
+    //                 icon: 'error',
+    //                 title: 'Oops...',
+    //                 text: '¡Datos incompletos!',
+    //                 footer: 'Complete el formulario'
+    //             })
+    //             return false;
+    //         }else{
+    //             $.ajax({
+    //                 url: "../../app/Controllers/insert.php",
+    //                 method: "POST",
+    //                 data: {
+    //                     userSignup_num_ide : cedula, 
+    //                     userSignup_name : nombre, 
+    //                     userSignup_lastNames : apellidos, 
+    //                     userSignUp_email : correo, 
+    //                     userSignup_date_born : date_born, 
+    //                     userSignUp_phone_number : phone_number, 
+    //                     userSignUp_Password : password,
+    //                     userSignUp_rd_gender : rd_gender
+    //                 }
+    //             }).done(function(resp){ 
+    //                 if(resp != 0){
+    //                     Swal.fire({
+    //                         position: 'top',
+    //                         icon: 'success',
+    //                         title: 'Se ha Creado la Cuenta',
+    //                         showConfirmButton: false,
+    //                         footer: '<h3  style="color: rgb(245, 94, 94);">¡Debe iniciar sesion!</h3>',
+    //                         timer: 50000
+                            
+    //                     });
+    //                     // time_refresh(3000);
+    //                     message('¡Inicia sesi\u00f3n!');
+    //                 }else{
+    //                     Swal.fire("Error", "Error al insertar los datos", "error");
+    //                 }
+    //             });
+    //         } 
+    //     }
+
 
 
     $("#btn_singUp").click(function (e) {
@@ -90,8 +149,6 @@ $(document).ready(function () {
 
             }
         }
-
-
 
 
         $.ajax({
