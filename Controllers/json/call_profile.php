@@ -3,9 +3,9 @@ require_once("../../Models/singUp.php");
 
 echo"estoy aqui";
 $profile = new SingUp();
-if(isset($_REQUEST["P_CORREO"])){
-    $profile->set_p_email($_REQUEST['P_CORREO']);
-    $profile->set_p_password($_REQUEST['P_PASSWORD']);
+if(isset($_REQUEST["email"])){
+    $profile->set_p_email($_REQUEST['email']);
+    $profile->set_p_password($_REQUEST['password']);
 
     $result = $profile -> call_profile();
     
@@ -20,7 +20,7 @@ if(isset($_REQUEST["P_CORREO"])){
     "PASSWORD_PERSONA" => $result["PASSWORD_PERSONA"]
     );
     $json_string = json_encode($data);
-    // echo $json_string;
+    echo $json_string;
     $file_name = 'data_profile.json';
     file_put_contents($file_name, $json_string);
 }

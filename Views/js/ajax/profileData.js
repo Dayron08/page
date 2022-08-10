@@ -1,9 +1,10 @@
-addEventListener("load",hola);
+addEventListener("load",dataProfile);
 
-function hola(){
+function dataProfile(){
     var email = "ran@676gmail.com";
     var password = "X!J_gD27";
-    alert("estoy en succes")
+    // alert("estoy en succes")
+    alert(email+' - '+password)
     $.ajax({
         
         method : "POST",
