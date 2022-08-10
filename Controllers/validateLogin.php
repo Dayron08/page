@@ -6,8 +6,8 @@ $select = new SingUp();
 if(isset($_REQUEST['txt_email'])){
     $select -> set_gmail($_REQUEST["txt_email"]);
     $select -> set_password($_REQUEST["txt_pass"]);
-
-    var_dump($select);
+ 
+    // var_dump($select);
 
     if($select->read()){
         echo "Exitosamente";
