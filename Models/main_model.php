@@ -40,13 +40,17 @@ class Connection_Mysql {
 		
 	}
 
+
 	//obtener datos de un query (SELECT)
 	public function get_query() {
 		$this->db_open();
 
 		$result = $this->conn->query($this->query);
-		while( $this->rows[] = $result->fetch_assoc() );
-		$result->close();
+
+		// while( $this->rows[] = $result->fetch_assoc() );
+		// $result->close();
+		$this->rows = ['hola','m'];
+		
 
 		$this->db_close();
 

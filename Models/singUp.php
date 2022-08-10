@@ -99,15 +99,19 @@ class SingUp extends Connection_Mysql {
 		$this->query = "CALL P_VALI_LOGIN(
 		'".$this->gmail."',
 		'".$this->password."');";
-		
+		 
 		
 		// echo $this->query;
 
 		$this->get_query();
 
 		
-	    var_dump($this->get_query());
+	    // var_dump($this->get_query());
+
+		// $this->rows = ['hola','m'];
+		
 		var_dump($this->rows);
+
 
 		$data = array();
 
@@ -116,19 +120,18 @@ class SingUp extends Connection_Mysql {
 					//$data[$key] =  $value;
 		}
 		
+		$_SESSION['ID_REGISTO_PERSON'] = isset($this->rows["ID_REGISTO_PERSONA"]); 
 		
 
-		// $_SESSION['ID_REGISTO_PERSON'] = isset($this->rows["ID_REGISTO_PERSONA"]); 
-		
-		// if($this->rows== null){
-		// echo "2";
-		// }else{
-		// 	if($this->rows["TIPO_PERSONA"] == 0){  
-		// 		echo "0";
-		// 	}else if($this->rows["TIPO_PERSONA"] == 1){
-		// 		echo "1";
-		// 	}
-		// }
+		if($this->rows== null){
+		echo "2";
+		}else{
+			if($this->rows["TIPO_PERSONA"] == 0){  
+				echo "0";
+			}else if($this->rows["TIPO_PERSONA"] == 1){
+				echo "1";
+			}
+		}
 
 		
 

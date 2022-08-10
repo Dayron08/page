@@ -36,7 +36,7 @@ $(document).ready(function () {
             }else{
                 $("#alert_name").text("");
                 
-            }
+            } 
 
             var txt_surname = $("#txt_surname").val();
             // if(txt_surname==0){
