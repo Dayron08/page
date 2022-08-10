@@ -2,10 +2,17 @@
 require_once('main_model.php');
 
 class SingUp extends Connection_Mysql {
+	// variables to register
 	private $user_id;
 	private $name;
 	private $surname;
 	private $password;
+
+
+	// variables to view profile 
+	private $p_email;
+	private $p_password;
+
 	private $result;
 	private $database;
 	public $null = null;
@@ -23,50 +30,34 @@ class SingUp extends Connection_Mysql {
         $this->user_id = $user_id;
     }
 
-    public function get_user_id(){
-        return $this->user_id;
-    }
-
 	public function set_name($name){
         $this->name = $name;
-    }
-
-    public function get_name(){
-        return $this->name;
     }
 
 	public function set_surname($surname){
         $this->surname = $surname;
     }
 
-    public function get_surname(){
-        return $this->surname;
-    }
-
 	public function set_password($password){
         $this->password = $password;
-    }
-
-    public function get_password(){
-        return $this->password;
     }
 
 	public function set_gmail($gmail){
         $this->gmail = $gmail;
     }
 
-    public function get_gmail(){
-        return $this->gmail;
-    }
-
 	public function set_query($query){
         $this->query = $query;
     }
 
-    public function get_query(){
-        return $this->query;
+	// methods to view profile 
+	public function set_p_email($p_email){
+        $this->p_email = $p_email;
     }
 
+	public function set_p_password($p_password){
+        $this->p_password = $p_password;
+    }
 
 
 	private function execute($query){
@@ -90,6 +81,16 @@ class SingUp extends Connection_Mysql {
 			
 		$this->execute($this->query);
 
+	}
+
+	// function to call data profile
+	public function call_profile() {
+		$this->query = "CALL P_VER_USUARIO_PERFIL(
+		'".$this->p_email."',
+		'".$this->p_password."');"; 
+		$this->execute($this->query);
+		$this->result = mysqli_fetch_assoc($this->result);
+		return $this->result;
 	}
 
 	public function read() {
@@ -139,16 +140,7 @@ class SingUp extends Connection_Mysql {
 
 	}
 
-	// function to call data profile
-	// public function call_profile() {
-    //         $this->query = 
-    //         "CALL P_VER_MAQUINARIA(".$this->cod_machine.");";
-    //         $this->result = $this->database->execute_query($this->query);
-    //         // var_dump($this->result);
-    //         $this->database->close_connection();
-    //         $this->result = mysqli_fetch_assoc($this->result);
-    //         return $this->result;
-	// }
+
 
 
 

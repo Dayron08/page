@@ -1,4 +1,16 @@
-<?php require_once("../../Includes/headerAdmin.php");
+<?php
+if(isset($_REQUEST("TELEFONO"))){
+    $profile_photo = $_REQUEST['FOTO_PERFIL'];
+    $name = $_REQUEST['NOMBRE'];
+    $surname = $_REQUEST['APPELLIDOS'];
+    $date_of_birth = $_REQUEST['FECH_NACIMIENTO'];
+    $gender = $_REQUEST['GENERO'];
+    $email = $_REQUEST['EMAIL'];
+    $phone = $_REQUEST['TELEFONO'];
+    $pass = $_REQUEST['PASSWORD_PERSONA'];
+
+    var_dump($_REQUEST);
+    require_once("../../Includes/headerAdmin.php");
 
 ?>
 <section id="page-hero"
@@ -241,7 +253,12 @@
 
 
 
-<?php require_once("../../Includes/footerAdmin.php");?>
+<?php require_once("../../Includes/footerAdmin.php");
+}else{
+    echo "error al esperar los datos";
+    }
+    
+    ?>
 </body>
 
 </html>
