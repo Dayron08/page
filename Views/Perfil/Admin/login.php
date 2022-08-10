@@ -74,9 +74,13 @@
                     <input type="text" placeholder="Correo Electronico" id="txt_gmail">
                     <p id="alert_email"></p>
 
+                    <div class="campo">
                     <input type="password" placeholder="Contraseña" id="txt_password">
+                    <img src="../../img/eyes1 .png" alt="" id="eyes">
                     <p id="alert_password"></p>
+                    </div>
 
+                   
                     <button class="btn btn-info" id="btn_singUp" type="submit">Registrarse</button>
                     <br>
                     <a class="rounded-pill shadow-none me-2 px-4 fw-bold" href="../Admin/home.php">Menu principal</a>
@@ -84,6 +88,7 @@
                 </form>
             </div>
         </div>
+
 
     </main>
 
