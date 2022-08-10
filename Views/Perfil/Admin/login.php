@@ -50,7 +50,14 @@
                 <form action="" method="POST" class="formulario__login">
                     <h2>Iniciar Sesión</h2>
                     <input type="text" placeholder="Correo Electronico" id="txt_email">
+                    <p id="alert_emaill"></p>
+
+                    <div class="campoo">
                     <input type="password" placeholder="Contraseña" id="txt_pass">
+                    <img src="../../img/eyes1 .png" alt="" id="eye">
+                    <p id="alert_passwordd"></p>
+                    </div>
+
                     <button type="submit" id="btn_entrar">Entrar</button>
                     <br>
                     <a class="btn rounded-pill shadow-none me-2 px-4 fw-bold " href="../Admin/home.php">Menu
