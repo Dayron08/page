@@ -206,3 +206,33 @@ main{
         position: relative;
     }
 }
+
+
+#eyes{
+    
+    width: 12%;
+    
+}
+
+
+.campo {
+    position: relative;
+}
+ 
+
+input {
+    width: 100%;
+    padding: 7px;
+}
+ 
+.campo img{
+
+    position: absolute;
+    right: 5px;
+    top: 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 2px 10px;
+   
+
+}
