@@ -93,6 +93,16 @@ class SingUp extends Connection_Mysql {
 		return $this->result;
 	}
 
+	// function to validate profile profile
+	public function validate_person() {
+		$this->query = "CALL P_VER_USUARIO_PERFIL(
+		'".$this->p_email."',
+		'".$this->p_password."');"; 
+		$this->execute($this->query);
+		$this->result = mysqli_fetch_assoc($this->result);
+		return $this->result;
+	}
+
 	public function read() {
 
 		session_start();
@@ -100,12 +110,6 @@ class SingUp extends Connection_Mysql {
 		$this->query = "CALL P_VALI_LOGIN(
 		'".$this->gmail."',
 		'".$this->password."');";
-		 
-		
-		// echo $this->query;
-
-		$this->get_query();
-
 		
 	    // var_dump($this->get_query());
 
@@ -143,24 +147,24 @@ class SingUp extends Connection_Mysql {
 
 
 
+	//maria esto no se usa
+	// public function update( $status_data = array() ) {
+	// 	foreach ($status_data as $key => $value) {
+	// 		$$key = $value;
+	// 	}
 
-	public function update( $status_data = array() ) {
-		foreach ($status_data as $key => $value) {
-			$$key = $value;
-		}
+	// 	$this->query = "UPDATE status SET status_id = $status_id, status = '$status' WHERE status_id = $status_id";
+	// 	$this->set_query($this->query);
+	// }
 
-		$this->query = "UPDATE status SET status_id = $status_id, status = '$status' WHERE status_id = $status_id";
-		$this->set_query($this->query);
-	}
+	// public function delete( $status_id = '' ) {
+	// 	$this->query = "DELETE FROM status WHERE status_id = $status_id";
+	// 	$this->set_query($this->query);
+	// }
 
-	public function delete( $status_id = '' ) {
-		$this->query = "DELETE FROM status WHERE status_id = $status_id";
-		$this->set_query($this->query);
-	}
-
-	//to destroy $this
-	public function __destruct() {
-		unset($this->database);
-	}
+	// //to destroy $this
+	// public function __destruct() {
+	// 	unset($this->database);
+	// }
 	
 }

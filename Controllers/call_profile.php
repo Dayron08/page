@@ -1,14 +1,14 @@
 <?php
-require_once("../../Models/singUp.php");
+require_once("../Models/singUp.php");
 
-echo"estoy aqui";
+
 $profile = new SingUp();
 if(isset($_REQUEST["email"])){
     $profile->set_p_email($_REQUEST['email']);
     $profile->set_p_password($_REQUEST['password']);
 
     $result = $profile -> call_profile();
-    
+    var_dump($result);
     $data = array(
     "FOTO_PERFIL" => $result["FOTO_PERFIL"], 
     "NOMBRE" => $result["NOMBRE"], 
@@ -21,6 +21,6 @@ if(isset($_REQUEST["email"])){
     );
     $json_string = json_encode($data);
     echo $json_string;
-    $file_name = 'data_profile.json';
+    $file_name = '../Views/js/json/data_profile.json';
     file_put_contents($file_name, $json_string);
 }

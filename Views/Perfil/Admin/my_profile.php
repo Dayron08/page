@@ -1,5 +1,7 @@
 <?php require_once("../../Includes/headerAdmin.php");
-
+if(isset($_REQUEST['TELEFONO'])){
+    $name = $_REQUEST['NOMBRE'];
+}
 ?>
 <section id="page-hero"
     class="section section__inverse justify-content-center py-5 py-lg-6 mb-n5 vh-350 h-lg-1000px min-h-1000px">

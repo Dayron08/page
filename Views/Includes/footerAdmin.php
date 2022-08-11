@@ -115,7 +115,7 @@
 </script>
 
 <!-- Discoverize JS -->
-
+<script rel="stylesheet" type="text/css" href="../js/jquery-3.6.0.min.js"></script>
 <script src="../../js/discoverize.js"></script>
 <script src="../../js/carousel.js"></script>
 

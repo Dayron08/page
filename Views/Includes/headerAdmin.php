@@ -24,6 +24,7 @@
     <!-- CSS bundled with Bootstrap-CSS -->
     <link rel="stylesheet" type="text/css" href="../../css/discoverize-default.css" />
     <link rel="stylesheet" type="text/css" href="../../css/style.css" />
+    <script src="../../js/jquery-3.6.0.min.js"></script>
     <script src="../../js/ajax/profileData.js"></script>
 
     <title>Iglesia Pacto de Vida</title>
@@ -46,8 +47,8 @@
 
                 <div class="ms-auto ps-3 navbar-end d-flex flex-row justify-content-end">
 
-                    <button class="btn btn-link btn-light p-0 ms-3 shadow-none"><a class="fas fa-user"
-                            href="login.php"></a></button>
+                    <button class="btn btn-link btn-light p-0 ms-3 shadow-none"><a class="fas fa-user" href=""
+                            id="user_icon"></a></button>
 
                     <button class="btn-close btn-close-menu collapsed ms-3" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false"
