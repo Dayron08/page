@@ -282,6 +282,7 @@ CREATE OR REPLACE PROCEDURE P_VALI_LOGIN
     )
         BEGIN
             SELECT
+                TP.ID_TIPO,
                 TP.DSC_TIPO AS ROL,
                 P.ID_REGISTRO_PERSONA AS CEDULA
             FROM TIPO_PERSONA TP
