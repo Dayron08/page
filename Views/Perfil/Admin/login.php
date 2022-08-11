@@ -64,7 +64,7 @@
                     <a class="btn rounded-pill shadow-none me-2 px-4 fw-bold " href="../Admin/home.php">Menu
                         principal</a>
                 </form>
- 
+
                 <!--Register-->
                 <form action="" method="POST" class="formulario__register">
 
@@ -72,6 +72,13 @@
                     
                     <input type="number" placeholder="Cedula" id="txt_user_id">
                     <p id="alert_id"></p>
+
+                    <select name="select" id="" >
+                        <option >Seleccione rol</option>
+                        <option value="0" id="txt_user">Usuario</option>
+                        <option value="1" id="txt_admin">Administrador</option>
+                    </select>
+
 
                     <input type="text" placeholder="Nombre" id="txt_name">
                     <p id="alert_name"></p>
@@ -87,8 +94,7 @@
                     <img src="../../img/eyes1 .png" alt="" id="eyes">
                     <p id="alert_password"></p>
                     </div>
- 
-                   
+
                     <button class="btn btn-info" id="btn_singUp" type="submit">Registrarse</button>
                     <br>
                     <a class="rounded-pill shadow-none me-2 px-4 fw-bold" href="../Admin/home.php">Menu principal</a>
