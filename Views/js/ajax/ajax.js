@@ -162,6 +162,7 @@ $(document).ready(function () {
             url: "../../../Controllers/validateLogin.php",
             method: "POST",
             data:{txt_email: txt_email, txt_pass: txt_pass},
+           
             success: function(dataresponse, statustext, response){
                 if(statustext == "success"){
                     $("#respuesta").html(dataresponse);
@@ -189,7 +190,7 @@ $(document).ready(function () {
                     }
                 }
             },
-
+ 
             error: function(request, errorcode, errortext){
                 $("#respuesta").html(errorcode);
             }

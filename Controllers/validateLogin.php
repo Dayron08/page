@@ -18,5 +18,5 @@ if(isset($_REQUEST['txt_email'])){
             echo "1";
         }
     }
-
+ 
 }

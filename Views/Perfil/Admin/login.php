@@ -86,7 +86,7 @@
                     <img src="../../img/eyes1 .png" alt="" id="eyes">
                     <p id="alert_password"></p>
                     </div>
-
+ 
                    
                     <button class="btn btn-info" id="btn_singUp" type="submit">Registrarse</button>
                     <br>
