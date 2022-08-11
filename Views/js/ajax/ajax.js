@@ -172,7 +172,7 @@ $(document).ready(function () {
                             icon: 'success',
                             title: 'Iniciando Sesion',
                             showConfirmButton: false,
-                            timer: 1000
+                            timer: 400
                         })
                         location.href="../User/home.php";
                     }else if(dataresponse == 1){
@@ -181,9 +181,8 @@ $(document).ready(function () {
                             icon: 'success',
                             title: 'Iniciando Sesion',
                             showConfirmButton: false,
-                            timer: 1000
+                            timer: 400
                         })
-
                         location.href="../Admin/home.php";
                     }else if (dataresponse == 2 || dataresponse== null){
                         
