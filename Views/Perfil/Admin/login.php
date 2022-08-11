@@ -73,11 +73,12 @@
                     <input type="number" placeholder="Cedula" id="txt_user_id">
                     <p id="alert_id"></p>
 
+                    <label>Rol</label>
                     <select name="select" id="txt_rol" >
-                        <option >Seleccione rol</option>
-                        <option value="0" >Usuario</option>
                         <option value="1" >Administrador</option>
+                        <option value="0" >Usuario</option>
                     </select>
+                    <p id="alert_rol"></p>
 
 
                     <input type="text" placeholder="Nombre" id="txt_name">

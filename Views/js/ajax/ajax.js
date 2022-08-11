@@ -51,6 +51,14 @@ $(document).ready(function () {
             return false;
         }else{
             $("#alert_id").text("");
+            var txt_rol = $("#txt_rol").val();
+                    
+            // if(txt_rol == ''){
+            //     $("#alert_rol").text(" Debe de Seleccionar un rol");
+            //     $("#alert_rol").css({"color" : "red","font-family": "Times New Roman', Times, serif;"});
+            // }else{
+            //     return false;
+            // }
         }
 
         var txt_name = $("#txt_name").val();
@@ -97,9 +105,8 @@ $(document).ready(function () {
                         return false;
                     }else{
                         $("#alert_password").text("");
+                    
                     }
-
-                    var txt_rol = $("#txt_rol").val();
                     
                 }
 
