@@ -131,7 +131,7 @@ $(document).ready(function () {
       
     $("#btn_entrar").click(function(e){
 
-        e.preventDefault();
+    //   e.preventDefault();
 
         var txt_email = $("#txt_email").val();
         // var validacion=/^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
@@ -166,16 +166,24 @@ $(document).ready(function () {
                 if(statustext == "success"){
                     $("#respuesta").html(dataresponse);
 
-                // alert(dataresponse);
-                    //alert(dataresponse);
                     if(dataresponse == 0){
-                        alert(ad);
-                        location.href="../../Views/Perfil/User/home.php";
+                        // Swal.fire({
+                        //     position: 'top-end',
+                        //     icon: 'success',
+                        //     title: 'Sesión Iniciada',
+                        //     showConfirmButton: false,
+                        //     timer: 1500
+                        // })
+                        location.href="../User/home.php";
                     }else if(dataresponse == 1){
-                        alert(us);
-                        location.href="../../Views/Perfil/Admin/home.php";
-                    }else if (dataresponse == 2){
-                        alert("Usuario incorrecto");
+                        location.href="../Admin/home.php";
+                    }else if (dataresponse == 2 || dataresponse== null){
+                        Swal.fire({
+                            icon: 'error',
+                            title: 'Oops...',
+                            text: 'Usuario no Encontrado!',
+                            footer: '<a href="">No Tienes una Cuenta</a>'
+                        })
                     }
                 }
             },
