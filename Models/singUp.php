@@ -106,42 +106,43 @@ class SingUp extends Connection_Mysql {
 	public function read() {
 
 		session_start();
-
 		$this->query = "CALL P_VALI_LOGIN(
 		'".$this->gmail."',
 		'".$this->password."');";
 		
-	    // var_dump($this->get_query());
-
-		// $this->rows = ['hola','m'];
+		$this->execute($this->query);
+	    
+		$row = mysqli_fetch_assoc($this->result);
 		
-		var_dump($this->rows);
-
-
-		$data = array();
-
-		foreach ($this->rows as $value) {
-					array_push($data, $value);
-					//$data[$key] =  $value;
-		}
 		
-		$_SESSION['ID_REGISTO_PERSON'] = isset($this->rows["ID_REGISTO_PERSONA"]); 
+		var_dump($row);
+
+
+		// $data = array();
+
+		// foreach ($this->rows as $value) {
+		// 			array_push($data, $value);
+		// 			//$data[$key] =  $value;
+		// }
+		
+		$_SESSION['ID_TIPO'] = $row["ID_TIPO"]; 
 		
 
-		if($this->rows== null){
+		if($row== null){
 		echo "2";
 		}else{
-			if($this->rows["TIPO_PERSONA"] == 0){  
+
+			if($row["ID_TIPO"] == 0){  
 				echo "0";
-			}else if($this->rows["TIPO_PERSONA"] == 1){
+			}else if($row["ID_TIPO"] == 1){
 				echo "1";
 			}
+
 		}
 
+		mysqli_free_result($this->result);
+
 		
-
-		return $data;
-
 	}
 
 

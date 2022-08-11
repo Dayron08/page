@@ -14,7 +14,7 @@ if(isset($_REQUEST['txt_email'])){
     }else{
         echo "Error";
     }
-    
+     
 }else{
     echo ("Error al esperar los datos");
 }
