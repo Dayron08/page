@@ -186,7 +186,8 @@ $(document).ready(function () {
                         })
                         location.href="../Admin/home.php";
                     }else if (dataresponse == 2 || dataresponse== null){
-                        
+                        alert("Datos no encontrados");
+                        location.href="#";
                     }
                 }
             },
