@@ -134,28 +134,28 @@ $(document).ready(function () {
     //   e.preventDefault();
 
         var txt_email = $("#txt_email").val();
-        // var validacion=/^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
-        // vali= validacion.test(txt_email);
-        // if(vali=='' || vali!=true){
-        //     $("#alert_emaill").text("✘ Formato no valido");
-        //     $("#alert_emaill").css({"color" : "red","font-family": "Times New Roman', Times, serif;"});
-        //     return false;
-        // }else{
-        //     $("#alert_emaill").text("");
+        var validacion=/^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
+        vali= validacion.test(txt_email);
+        if(vali=='' || vali!=true){
+            $("#alert_emaill").text("✘ Formato no valido");
+            $("#alert_emaill").css({"color" : "red","font-family": "Times New Roman', Times, serif;"});
+            return false;
+        }else{
+            $("#alert_emaill").text("");
             var txt_pass = $("#txt_pass").val();
-        //     if(txt_pass == ''){
-        //         $("#alert_passwordd").text("✘ No se permiten campos vacios");
-        //         $("#alert_passwordd").css({"color" : "red","font-family": "Times New Roman', Times, serif;"});
-        //         return false;
-        //     }else if(txt_pass.length<8){
-        //         $("#alert_passwordd").text("✘ La contraseña debe de tener al menos 8 caracteres");
-        //         $("#alert_passwordd").css({"color" : "red","font-family": "Times New Roman', Times, serif;"});
-        //         return false;
-        //     }else{
-        //         $("#alert_passwordd").text("");
-        //     }
+            if(txt_pass == ''){
+                $("#alert_passwordd").text("✘ No se permiten campos vacios");
+                $("#alert_passwordd").css({"color" : "red","font-family": "Times New Roman', Times, serif;"});
+                return false;
+            }else if(txt_pass.length<8){
+                $("#alert_passwordd").text("✘ La contraseña debe de tener al menos 8 caracteres");
+                $("#alert_passwordd").css({"color" : "red","font-family": "Times New Roman', Times, serif;"});
+                return false;
+            }else{
+                $("#alert_passwordd").text("");
+            }
    
-        // }
+        }
  
         
         $.ajax({
@@ -167,23 +167,26 @@ $(document).ready(function () {
                     $("#respuesta").html(dataresponse);
 
                     if(dataresponse == 0){
-                        // Swal.fire({
-                        //     position: 'top-end',
-                        //     icon: 'success',
-                        //     title: 'Sesión Iniciada',
-                        //     showConfirmButton: false,
-                        //     timer: 1500
-                        // })
+                        Swal.fire({
+                            position: 'top-end',
+                            icon: 'success',
+                            title: 'Iniciando Sesion',
+                            showConfirmButton: false,
+                            timer: 1000
+                        })
                         location.href="../User/home.php";
                     }else if(dataresponse == 1){
+                        Swal.fire({
+                            position: 'top-end',
+                            icon: 'success',
+                            title: 'Iniciando Sesion',
+                            showConfirmButton: false,
+                            timer: 1000
+                        })
+
                         location.href="../Admin/home.php";
                     }else if (dataresponse == 2 || dataresponse== null){
-                        Swal.fire({
-                            icon: 'error',
-                            title: 'Oops...',
-                            text: 'Usuario no Encontrado!',
-                            footer: '<a href="">No Tienes una Cuenta</a>'
-                        })
+                        
                     }
                 }
             },
