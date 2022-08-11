@@ -15,7 +15,7 @@ $(document).ready(function () {
             flagg = 3;
         }
     }
-
+ 
     var inputt = document.getElementById('txt_pass')
     var imglogin = document.getElementById('eye' );
     //we create a flag to see the status

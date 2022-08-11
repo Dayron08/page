@@ -16,7 +16,7 @@ if(isset($_REQUEST['txt_user_id'])){
     }else{
         echo "Error";
     }
-     
+      
 }else{
     echo ("Error al esperar los datos");
 }
