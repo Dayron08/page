@@ -32,6 +32,10 @@ class SingUp extends Connection_Mysql {
 
 	public function set_name($name){
         $this->name = $name;
+    } 
+
+	public function set_rol($rol){
+        $this->rol = $rol;
     }
 
 	public function set_surname($surname){
@@ -74,6 +78,23 @@ class SingUp extends Connection_Mysql {
 			'".$this->surname."',
 			NULL,
 			NULL,
+			'".$this->password."',
+			'".$this->gmail."',
+			NULL,
+			NULL);";
+			
+		$this->execute($this->query);
+
+	}
+
+	public function insertAdmin() {
+		$this->query = "CALL P_INSERTAR_DATOS_PERSONA_ADMIN(                
+			'".$this->user_id."', 
+			'".$this->name."',
+			'".$this->surname."',
+			NULL,
+			NULL,
+			'".$this->rol."',
 			'".$this->password."',
 			'".$this->gmail."',
 			NULL,
