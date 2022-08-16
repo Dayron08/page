@@ -64,83 +64,34 @@
         </header>
         <!-- /.section-header mb-5 -->
 
+
+    <div class="container pt-5">
+    <p class="leadmb-0 o-75">Conoce nuestra Iglesia</p>
+      <div class="row" id="tbody">
+    
+  
+      </div>
+    </div> 
+
+
         <div class="swiper-container with-pagination">
             <div id="listing-swiper-1-expand-swiper" class="swiper expand-w" data-js-swiper="auto">
-                <div class="swiper-wrapper">
+                <div class="swiper-wrapper row " id="">
 
-                    <div class="swiper-slide w-330px h-330px pe-4 d-flex">
+                    <!-- <div class="swiper-slide w-330px h-330px pe-4 d-flex">
                         <div class="card shadow-sm shadow-hover trans-base zoom-bg-img o-hover-all">
                             <div class="card-img bg bg-img" data-bg-img=".img">
                                 <img src="../../img/church/image_01.jpg" class="img" alt="Image" />
                                 <div class="overlay bg-dark position-absolute o-25 o-50-hover"></div>
-                            </div>
+                            </div> -->
                             <!-- /.card-img bg bg-img -->
 
-                        </div>
+                        <!-- </div> -->
                         <!-- /.card -->
-                    </div>
-
-                    <div class="swiper-slide w-330px h-330px pe-4 d-flex">
-                        <div class="card shadow-sm shadow-hover trans-base zoom-bg-img o-hover-all">
-                            <div class="card-img bg bg-img" data-bg-img=".img">
-                                <img src="../../img/church/image_02.jpg" class="img" alt="Image" />
-                                <div class="overlay bg-dark position-absolute o-25 o-50-hover"></div>
-                            </div>
-                            <!-- /.card-img bg bg-img -->
-
-                        </div>
-                        <!-- /.card -->
-                    </div>
-
-                    <div class="swiper-slide w-330px h-330px pe-4 d-flex">
-                        <div class="card shadow-sm shadow-hover trans-base zoom-bg-img o-hover-all">
-                            <div class="card-img bg bg-img" data-bg-img=".img">
-                                <img src="../../img/church/image_01.jpg" class="img" alt="Image" />
-                                <div class="overlay bg-dark position-absolute o-25 o-50-hover"></div>
-                            </div>
-                            <!-- /.card-img bg bg-img -->
-
-                        </div>
-                        <!-- /.card -->
-                    </div>
-
-                    <div class="swiper-slide w-330px h-330px pe-4 d-flex">
-                        <div class="card shadow-sm shadow-hover trans-base zoom-bg-img o-hover-all">
-                            <div class="card-img bg bg-img" data-bg-img=".img">
-                                <img src="../../img/church/image_02.jpg" class="img" alt="Image" />
-                                <div class="overlay bg-dark position-absolute o-25 o-50-hover"></div>
-                            </div>
-                            <!-- /.card-img bg bg-img -->
-
-                        </div>
-                        <!-- /.card -->
-                    </div>
-
-                    <div class="swiper-slide w-330px h-330px pe-4 d-flex">
-                        <div class="card shadow-sm shadow-hover trans-base zoom-bg-img o-hover-all">
-                            <div class="card-img bg bg-img" data-bg-img=".img">
-                                <img src="../../img/church/image_02.jpg" class="img" alt="Image" />
-                                <div class="overlay bg-dark position-absolute o-25 o-50-hover"></div>
-                            </div>
-                            <!-- /.card-img bg bg-img -->
-
-                        </div>
-                        <!-- /.card -->
-                    </div>
+                    <!-- </div> -->
 
 
 
-                    <div class="swiper-slide w-330px h-330px pe-4 d-flex">
-                        <div class="card shadow-sm shadow-hover trans-base zoom-bg-img o-hover-all">
-                            <div class="card-img bg bg-img" data-bg-img=".img">
-                                <img src="../../img/church/image_02.JPG" class="img" alt="Image" />
-                                <div class="overlay bg-dark position-absolute o-25 o-50-hover"></div>
-                            </div>
-                            <!-- /.card-img bg bg-img -->
-
-                        </div>
-                        <!-- /.card -->
-                    </div>
                     <!-- /.swiper-slide w-330px h-330px pe-4 d-flex -->
 
                 </div>
