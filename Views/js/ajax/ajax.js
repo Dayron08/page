@@ -15,7 +15,7 @@ $(document).ready(function () {
             flagg = 3;
         }
     }
-
+ 
     var inputt = document.getElementById('txt_pass')
     var imglogin = document.getElementById('eye' );
     //we create a flag to see the status
@@ -51,6 +51,14 @@ $(document).ready(function () {
             return false;
         }else{
             $("#alert_id").text("");
+            var txt_rol = $("#txt_rol").val();
+                    
+            // if(txt_rol == ''){
+            //     $("#alert_rol").text(" Debe de Seleccionar un rol");
+            //     $("#alert_rol").css({"color" : "red","font-family": "Times New Roman', Times, serif;"});
+            // }else{
+            //     return false;
+            // }
         }
 
         var txt_name = $("#txt_name").val();
@@ -97,19 +105,19 @@ $(document).ready(function () {
                         return false;
                     }else{
                         $("#alert_password").text("");
+                    
                     }
-
                     
                 }
 
             }
         }
-
+ 
 
         $.ajax({
-            url: "../../../Controllers/singUp.php",
+            url: "../../../Controllers/singUp_admin.php",
             method: "POST",
-            data : {txt_user_id : txt_user_id, txt_name : txt_name, txt_surname : txt_surname, txt_password : txt_password, txt_gmail : txt_gmail},
+            data : {txt_user_id : txt_user_id, txt_rol: txt_rol, txt_name : txt_name, txt_surname : txt_surname, txt_password : txt_password, txt_gmail : txt_gmail},
             success: function(dataresponse, statustext, response){
                 if(statustext == "success"){
                     console.log("exitosamente")

@@ -24,7 +24,7 @@
    
 </head> 
 
-
+ 
 <body>
 
 
@@ -73,11 +73,12 @@
                     <input type="number" placeholder="Cedula" id="txt_user_id">
                     <p id="alert_id"></p>
 
-                    <select name="select" id="" >
-                        <option >Seleccione rol</option>
-                        <option value="0" id="txt_user">Usuario</option>
-                        <option value="1" id="txt_admin">Administrador</option>
+                    <label>Rol</label>
+                    <select name="select" id="txt_rol" >
+                        <option value="1" >Administrador</option>
+                        <option value="0" >Usuario</option>
                     </select>
+                    <p id="alert_rol"></p>
 
 
                     <input type="text" placeholder="Nombre" id="txt_name">

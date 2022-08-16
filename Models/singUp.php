@@ -32,6 +32,10 @@ class SingUp extends Connection_Mysql {
 
 	public function set_name($name){
         $this->name = $name;
+    } 
+
+	public function set_rol($rol){
+        $this->rol = $rol;
     }
 
 	public function set_surname($surname){
@@ -83,6 +87,23 @@ class SingUp extends Connection_Mysql {
 
 	}
 
+	public function insertAdmin() {
+		$this->query = "CALL P_INSERTAR_DATOS_PERSONA_ADMIN(                
+			'".$this->user_id."', 
+			'".$this->name."',
+			'".$this->surname."',
+			NULL,
+			NULL,
+			'".$this->rol."',
+			'".$this->password."',
+			'".$this->gmail."',
+			NULL,
+			NULL);";
+			
+		$this->execute($this->query);
+
+	}
+
 	// function to call data profile
 	public function call_profile() {
 		$this->query = "CALL P_VER_USUARIO_PERFIL(
@@ -93,15 +114,7 @@ class SingUp extends Connection_Mysql {
 		return $this->result;
 	}
 
-	// function to validate profile profile
-	public function validate_person() {
-		$this->query = "CALL P_VER_USUARIO_PERFIL(
-		'".$this->p_email."',
-		'".$this->p_password."');"; 
-		$this->execute($this->query);
-		$this->result = mysqli_fetch_assoc($this->result);
-		return $this->result;
-	}
+	
 
 	public function read() {
 
@@ -117,27 +130,35 @@ class SingUp extends Connection_Mysql {
 		return $row;
 	}
 
+	// public function readimages() {
 
-
-
-	//maria esto no se usa
-	// public function update( $status_data = array() ) {
-	// 	foreach ($status_data as $key => $value) {
-	// 		$$key = $value;
+		
+	// 	$this->query = "SELECT `IMG_PATH` FROM `galeria`";
+	// 	$this->execute($this->query);
+	//     // $row = mysqli_fetch_assoc($this->result);
+	// 	$images = array();
+	// 	while ($row = mysqli_fetch_assoc($this->result)) {
+	// 		$images[] = array("image" => $row["IMG_PATH"]);
 	// 	}
 
-	// 	$this->query = "UPDATE status SET status_id = $status_id, status = '$status' WHERE status_id = $status_id";
-	// 	$this->set_query($this->query);
+	// 	$json_string = json_encode($images);
+
+	// 	echo $json_string;
+
+	// 	$file = "../Views/js/json/images.json";
+
+	// 	file_put_contents($file, $json_string);
+
+	// 	return $row;
 	// }
 
-	// public function delete( $status_id = '' ) {
-	// 	$this->query = "DELETE FROM status WHERE status_id = $status_id";
-	// 	$this->set_query($this->query);
-	// }
+	public function readimages() {
 
-	// //to destroy $this
-	// public function __destruct() {
-	// 	unset($this->database);
-	// }
-	
+		
+		$this->query = "SELECT `ID_IMAGEN`, `IMG_PATH` FROM `galeria`";
+		$this->execute($this->query);
+	    $row = mysqli_fetch_assoc($this->result);
+		return $row;
+	}
+
 }

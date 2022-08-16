@@ -2,7 +2,7 @@
 require_once("../Models/singUp.php");
 
 $select = new SingUp();
-
+ 
 if(isset($_REQUEST['txt_email'])){
     $select -> set_gmail($_REQUEST["txt_email"]);
     $select -> set_password($_REQUEST["txt_pass"]);
