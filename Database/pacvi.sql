@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 11, 2022 at 05:33 AM
+-- Generation Time: Aug 16, 2022 at 09:57 PM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 8.1.6
 
@@ -498,6 +498,7 @@ INSERT INTO `eventos` (`ID_EVENT`, `ENCARGADO`, `NOMBRE_EVENTO`, `HORA_EVENTO`, 
 
 CREATE TABLE `galeria` (
   `ID_IMAGEN` int(11) NOT NULL,
+  `CODIGO_IMG` varchar(3) NOT NULL,
   `IMG_PATH` varchar(100) DEFAULT NULL,
   `FECHA` date DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -506,9 +507,9 @@ CREATE TABLE `galeria` (
 -- Dumping data for table `galeria`
 --
 
-INSERT INTO `galeria` (`ID_IMAGEN`, `IMG_PATH`, `FECHA`) VALUES
-(1, '../../IMG1', '2022-07-28'),
-(2, '../../IMG2', '2022-07-28');
+INSERT INTO `galeria` (`ID_IMAGEN`, `CODIGO_IMG`, `IMG_PATH`, `FECHA`) VALUES
+(1, 'C-P', '../../IMG1', '2022-07-28'),
+(2, 'C-N', '../../IMG2', '2022-07-28');
 
 -- --------------------------------------------------------
 
