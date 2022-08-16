@@ -18,9 +18,8 @@
 </section>
 
 <!-- #page-hero.section section__inverse justify-content-center py-5 py-lg-6 mb-n5 vh-50 h-lg-480px min-h-330px -->
-
 <!-- #page-hero.section section__inverse justify-content-center pt-6 pb-4 pb-lg-5 pb-xl-6 -->
-<section id="news-1" class="section pb-6 mt-n4 mt-lg-n5 mt-xl-n6 ">
+<section id="news-1" class="section pb-6 mt-7 mt-n4 mt-lg-n5 mt-xl-n6 ">
 
     <h1 class="titulo_galeria" style="text-align: center;">Nuestro Pueblo</h1>
 
@@ -33,7 +32,7 @@
             <div class="col-12 col-sm-6 col-md-3 d-flex">
                 <div class="card-body bg-white shadow-sm rounded d-flex flex-column px-lg-10">
                     <div class="card-img-top overflow-hidden position-relative">
-                        <input type="checkbox" value="" id="checkbox_images">
+                      
                         <img loading="lazy" src="../../img/church/image_01.jpg" class="w-100" alt="Image"
                             style="width: 100%; height : 250px;" />
                     </div>
@@ -80,7 +79,7 @@
             <div class="col-12 col-sm-6 col-md-3 d-flex">
                 <div class="card-body bg-white shadow-sm rounded d-flex flex-column px-lg-10">
                     <div class="card-img-top overflow-hidden position-relative">
-                        <input type="checkbox" value="" id="checkbox_images">
+                       
                         <img loading="lazy" src="../../img/young_people/image_01.jpg" class="w-100" alt="Image"
                             style="width: 100%; height : 250px;" />
                     </div>
@@ -126,7 +125,7 @@
             <div class="col-12 col-sm-6 col-md-3 d-flex">
                 <div class="card-body bg-white shadow-sm rounded d-flex flex-column px-lg-10">
                     <div class="card-img-top overflow-hidden position-relative">
-                        <input type="checkbox" value="" id="checkbox_images">
+                        
                         <img loading="lazy" src="../../img/children/image_02.jpg" class="w-100" alt="Image"
                             style="width: 100%; height : 250px;" />
                     </div>

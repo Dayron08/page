@@ -131,7 +131,7 @@ class SingUp extends Connection_Mysql {
 	}
 
 	// public function readimages() {
-
+ 
 		
 	// 	$this->query = "SELECT `IMG_PATH` FROM `galeria`";
 	// 	$this->execute($this->query);
@@ -153,12 +153,30 @@ class SingUp extends Connection_Mysql {
 	// }
 
 	public function readimages() {
-
 		
-		$this->query = "SELECT `ID_IMAGEN`, `IMG_PATH` FROM `galeria`";
+		
+		$this->query = 
+		"CALL P_VER_FOTOS();";
+		// $this->query = "SELECT `ID_IMAGEN`, `IMG_PATH` FROM `galeria`";
+		$this->execute($this->query);
+	    $row = mysqli_fetch_assoc($this->result);
+		
+		return $row;
+
+	}
+
+
+	public function readTestimonials() {
+		
+		$this->query = "SELECT `DSC_TESTIMONIO` FROM `persona_testimonios`";
 		$this->execute($this->query);
 	    $row = mysqli_fetch_assoc($this->result);
 		return $row;
+
 	}
 
 }
+
+
+
+

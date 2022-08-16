@@ -5,18 +5,22 @@ $selectimage = new SingUp();
  
 $result = $selectimage->readimages();
 
-// var_dump($result);
-
 
 $images[]= array(
 "id"=> $result["ID_IMAGEN"],
 "image" => $result["IMG_PATH"]);
 
-   
+// $images = array();
+// while ($result = mysqli_fetch_assoc($this->result)) {
+//     $images[]= array(
+//         "id"=> $result["ID_IMAGEN"],
+//         "image" => $result["IMG_PATH"]);
+//     }
+
 
 $json_string = json_encode($images);
 
-// echo $json_string;
+echo $json_string;
 
 $file = "../Views/js/json/images.json";
 
