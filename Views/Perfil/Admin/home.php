@@ -65,18 +65,9 @@
         <!-- /.section-header mb-5 -->
 
 
-    <div class="container pt-5">
-    <p class="leadmb-0 o-75">Conoce nuestra Iglesia</p>
-      <div class="row" id="tbody">
-    
-  
-      </div>
-    </div> 
-
-
         <div class="swiper-container with-pagination">
             <div id="listing-swiper-1-expand-swiper" class="swiper expand-w" data-js-swiper="auto">
-                <div class="swiper-wrapper row " id="">
+                <div class="swiper-wrapper row w-330px h-330px pe-4 d-flex" id="tbodyimg">
 
                     <!-- <div class="swiper-slide w-330px h-330px pe-4 d-flex">
                         <div class="card shadow-sm shadow-hover trans-base zoom-bg-img o-hover-all">
