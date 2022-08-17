@@ -117,6 +117,34 @@ $(document).ready(function(e){
         }); 
        
 
+        $("#btn_query").click(function (e) {
+
+            var txt_names = $("#txt_names").val();
+            var txt_lastnames = $("#txt_lastnames").val();
+            var txt_gmail = $("#txt_gmail").val();
+            var txt_subject = $("#txt_subject").val();
+            var txt_text = $("#txt_text").val();
+                
+            $.ajax({
+                url: "../../../Controllers/insertQuery.php",
+                method: "POST",
+                data : {txt_names : txt_names, txt_lastnames : txt_lastnames, txt_gmail : txt_gmail, txt_subject : txt_subject, txt_text : txt_text},
+                success: function(dataresponse, statustext, response){
+                    if(statustext == "success"){
+                        console.log("exitosamente")
+
+
+                    }
+                },
+                error: function(request, errorcode, errortext){
+                    console.log("errorrrrrr")
+
+                }
+            });
+
+        });
+
+
 
  });
 

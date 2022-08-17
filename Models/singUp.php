@@ -54,6 +54,11 @@ class SingUp extends Connection_Mysql {
         $this->query = $query;
     }
 
+	public function set_consul($consul){
+        $this->consul = $consul;
+    }
+
+
 	// methods to view profile 
 	public function set_p_email($p_email){
         $this->p_email = $p_email;
@@ -61,6 +66,10 @@ class SingUp extends Connection_Mysql {
 
 	public function set_p_password($p_password){
         $this->p_password = $p_password;
+    }
+
+	public function set_subjet($subject){
+        $this->subject = $subject;
     }
 
 
@@ -86,6 +95,19 @@ class SingUp extends Connection_Mysql {
 		$this->execute($this->query);
 
 	}
+
+	public function insertQuery() {
+		$this->query = "CALL P_INSERTAR_DATOS_PERSONA_USU(                
+			'".$this->name."',
+			'".$this->surname."',
+			'".$this->gmail."',
+			'".$this->subject."',
+			'".$this->consul."');";
+			
+		$this->execute($this->query);
+
+	} 
+
 
 	public function insertAdmin() {
 		$this->query = "CALL P_INSERTAR_DATOS_PERSONA_ADMIN(                
