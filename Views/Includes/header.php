@@ -66,7 +66,7 @@
                                 data-bs-toggle="dropdown">Sobre Nosotros</a>
                             <ul class="nav-dropdown-menu dropdown-menu dropdown-menu-end shadow" data-bs-popper>
 
-                                <li><a class="dropdown-item" href="../User/about_us.php">Iglesia</a></li>
+                                <li><a class="dropdown-item" href="index.php?access=2">Iglesia</a></li>
 
                                 <li><a class="dropdown-item" href="../User/testimonials.php">Testimonios</a></li>
 
