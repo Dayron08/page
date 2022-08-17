@@ -159,19 +159,31 @@ class SingUp extends Connection_Mysql {
 		"CALL P_VER_FOTOS();";
 		// $this->query = "SELECT `ID_IMAGEN`, `IMG_PATH` FROM `galeria`";
 		$this->execute($this->query);
-	    $row = mysqli_fetch_assoc($this->result);
-		
-		return $row;
+		$images = array();
+		while ($result = mysqli_fetch_assoc($this->result)) {
+			$images[]= array(
+				"id"=> $result["ID_IMAGEN"],
+				"image" => $result["IMG_PATH"]);
+		}
+		return $images;
 
 	}
 
 
 	public function readTestimonials() {
 		
-		$this->query = "SELECT `DSC_TESTIMONIO` FROM `persona_testimonios`";
+		$this->query = "CALL P_VER_PERSONA_TESTIMONIO();";
 		$this->execute($this->query);
-	    $row = mysqli_fetch_assoc($this->result);
-		return $row;
+
+	   $testimonials = array();
+		while ($result = mysqli_fetch_assoc($this->result)) {
+			$testimonials []= array(
+				"dsc"=> $result["DSC_TESTIMONIO"],
+				"name" => $result["NOMBRE"],
+				"lastname" => $result["APPELLIDOS"]);
+		}
+		
+		return $testimonials ;
 
 	}
 
