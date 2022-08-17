@@ -109,8 +109,8 @@
                     <div data-swiper-id="#listing-swiper-1-expand-swiper" class="swiper-pagination w-auto bottom-0"
                         data-swiper-pagination-limit="2"></div>
 
-                    <a href="#"
-                        class="btn btn-link btn-sm btn-more text-uppercase fw-bold shadow-none o-50 o-100-hover ms-3 trans-base px-0">Todos
+                    <a href="../Admin/images.php"
+                        class="btn btn-link btn-sm btn-more text-uppercase fw-bold shadow-none o-50 o-100-hover ms-3 trans-base px-0">Todas
                         las imagenes<i class="fas fa-long-arrow-alt-right"></i></a>
                 </div>
             </div>
