@@ -66,7 +66,7 @@
 
         <div class="swiper-container with-pagination">
             <div id="listing-swiper-1-expand-swiper" class="swiper expand-w" data-js-swiper="auto">
-                <div class="swiper-wrapper">
+                <div class="swiper-wrapper" id="tbodyimg">
 
                     <div class="swiper-slide w-330px h-330px pe-4 d-flex">
                         <div class="card shadow-sm shadow-hover trans-base zoom-bg-img o-hover-all">
@@ -92,56 +92,12 @@
                         <!-- /.card -->
                     </div>
 
-                    <div class="swiper-slide w-330px h-330px pe-4 d-flex">
-                        <div class="card shadow-sm shadow-hover trans-base zoom-bg-img o-hover-all">
-                            <div class="card-img bg bg-img" data-bg-img=".img">
-                                <img loading="lazy" src="../../img/church/image_01.jpg" class="img" alt="Image" />
-                                <div class="overlay bg-dark position-absolute o-25 o-50-hover"></div>
-                            </div>
-                            <!-- /.card-img bg bg-img -->
+                   
 
-                        </div>
-                        <!-- /.card -->
-                    </div>
+                   
 
-                    <div class="swiper-slide w-330px h-330px pe-4 d-flex">
-                        <div class="card shadow-sm shadow-hover trans-base zoom-bg-img o-hover-all">
-                            <div class="card-img bg bg-img" data-bg-img=".img">
-                                <img loading="lazy" src="../../img/church/image_02.jpg" class="img" alt="Image" />
-                                <div class="overlay bg-dark position-absolute o-25 o-50-hover"></div>
-                            </div>
-                            <!-- /.card-img bg bg-img -->
-
-                        </div>
-                        <!-- /.card -->
-                    </div>
-
-                    <div class="swiper-slide w-330px h-330px pe-4 d-flex">
-                        <div class="card shadow-sm shadow-hover trans-base zoom-bg-img o-hover-all">
-                            <div class="card-img bg bg-img" data-bg-img=".img">
-                                <img loading="lazy" src="../../img/church/image_02.jpg" class="img" alt="Image" />
-                                <div class="overlay bg-dark position-absolute o-25 o-50-hover"></div>
-                            </div>
-                            <!-- /.card-img bg bg-img -->
-
-                        </div>
-                        <!-- /.card -->
-                    </div>
-
-
-
-                    <div class="swiper-slide w-330px h-330px pe-4 d-flex">
-                        <div class="card shadow-sm shadow-hover trans-base zoom-bg-img o-hover-all">
-                            <div class="card-img bg bg-img" data-bg-img=".img">
-                                <img loading="lazy" src="../../img/church/image_02.JPG" class="img" alt="Image" />
-                                <div class="overlay bg-dark position-absolute o-25 o-50-hover"></div>
-                            </div>
-                            <!-- /.card-img bg bg-img -->
-
-                        </div>
-                        <!-- /.card -->
-                    </div>
-                    <!-- /.swiper-slide w-330px h-330px pe-4 d-flex -->
+                  
+                   
 
                 </div>
                 <!-- /.swiper-wrapper -->
@@ -163,8 +119,8 @@
                     <div data-swiper-id="#listing-swiper-1-expand-swiper" class="swiper-pagination w-auto bottom-0"
                         data-swiper-pagination-limit="2"></div>
 
-                    <a href="../views/images.php"
-                        class="btn btn-link btn-sm btn-more text-uppercase fw-bold shadow-none o-50 o-100-hover ms-3 trans-base px-0">Todos
+                    <a href="../User/images.php"
+                        class="btn btn-link btn-sm btn-more text-uppercase fw-bold shadow-none o-50 o-100-hover ms-3 trans-base px-0">Todas
                         las imagenes<i class="fas fa-long-arrow-alt-right"></i></a>
                 </div>
             </div>
@@ -209,11 +165,6 @@
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
-                        <!-- <iframe width="850" height="560"
-                            src="https://www.youtube-nocookie.com/embed/pRSC06T4lKs?autoplay=1&mute=1&loop=1"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe> -->
 
                         <div class="overlay bg-dark position-absolute o-25"></div>
                     </div>
@@ -246,63 +197,9 @@
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="container-xl position-relative">
-                        <div class="row testimonials g-4">
-                            <div class="col-12 col-md d-flex align-items-stretch">
-                                <figure class="card testimonial h-100 text-start bg-transparent mb-0">
-                                    <blockquote
-                                        class=" cardsbg blockquote card-body shadow-sm rounded d-flex flex-column px-lg-5">
-                                        <p class="fs-1 text-secondary o-25 mb-0"><i class="fas fa-quote-right"></i></p>
-                                        <p class="fs-6">La Hermana Arredondo testifica cómo conoció la Iglesia y cómo
-                                            ésta le ha ayudado en su vida. Ella sabe que ha sido guiada por el Espíritu
-                                        </p>
-                                        <p class="text-secondary text-decoration-none fs-sm mt-auto mb-3 o-75">
-                                            &mdash;<span class="fw-bold"> John Doe</span> - IT Profesional</p>
-                                        <div class="img px-3 px-lg-4">
-                                            <img src="" />
-                                        </div>
-                                    </blockquote>
-                                </figure>
-                                <!-- /.card -->
-                            </div>
-                            <!-- /.col-12 col-md d-flex align-items-stretch -->
+                        <div class="row testimonials g-4" id="tbodytestimonial">
 
-                            <div class="col-6 col-md d-flex align-items-stretch">
-                                <figure class="card testimonial h-100 text-start bg-transparent mb-0">
-                                    <blockquote
-                                        class="cardsbg blockquote card-body  shadow-sm rounded d-flex flex-column px-lg-5">
-                                        <p class="fs-1 text-secondary o-25 mb-0"><i class="fas fa-quote-right"></i></p>
-                                        <p class="fs-6">La Hermana Arredondo testifica cómo conoció la Iglesia y cómo
-                                            ésta
-                                            le ha ayudado en su vida. Ella sabe que ha sido guiada por el Espíritu</p>
-                                        <p class="text-secondary text-decoration-none fs-sm mt-auto mb-3 o-75">
-                                            &mdash;<span class="fw-bold"> John Doe</span> - Sales Representative</p>
-                                        <div class="img px-3 px-lg-4">
-                                            <img loading="lazy" src="../../web/img/LOGO02.png"
-                                                class="img rounded-circle" alt="Image" />
-                                        </div>
-                                    </blockquote>
-                                </figure>
-                                <!-- /.card -->
-                            </div>
-                            <!-- /.col-6 col-md d-flex align-items-stretch -->
-
-                            <div class="col-6 col-md d-flex align-items-stretch">
-                                <figure class="card testimonial h-100 text-start bg-transparent mb-0">
-                                    <blockquote
-                                        class="cardsbg blockquote card-body shadow-sm rounded d-flex flex-column px-lg-5">
-                                        <p class="fs-1 text-secondary o-25 mb-0"><i class="fas fa-quote-right"></i></p>
-                                        <p class="fs-6">La Hermana Arredondo testifica cómo conoció la Iglesia y cómo
-                                            ésta le ha ayudado en su vida. Ella sabe que ha sido guiada por el Espíritu
-                                        </p>
-                                        <p class="text-secondary text-decoration-none fs-sm mt-auto mb-3 o-75">
-                                            &mdash;<span class="fw-bold"> John Doe</span> - IT Profesional</p>
-                                        <div class="img px-3 px-lg-4">
-                                            <img src="" />
-                                        </div>
-                                    </blockquote>
-                                </figure>
-                                <!-- /.card -->
-                            </div>
+ 
                             <!-- /.col-6 col-md d-flex align-items-stretch -->
                         </div>
                         <!-- /.row testimonials  -->

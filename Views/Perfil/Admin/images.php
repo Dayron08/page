@@ -7,7 +7,7 @@
         <div class="overlay bg-dark position-absolute o-50"></div>
     </div>
     <!-- /.bg bg-img position-absolute -->
-
+ 
     <div class="container-xl position-relative section-content text-center py-4">
         <h2 class="display-5 text-white mt-3 mt-lg-4">Imagenes Relacionadas</h2>
 

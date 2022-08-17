@@ -318,8 +318,8 @@ USE PacVi $$
 CREATE OR REPLACE PROCEDURE P_VER_FOTOS()
     BEGIN
         SELECT
-            IMG_PATH AS DIRECCION_DE_IMAGEN,
-            FECHA AS FOTO_SUBIDA
+            ID_IMAGEN,
+            IMG_PATH 
         FROM GALERIA ;
     END$$
 DELIMITER;

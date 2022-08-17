@@ -15,7 +15,7 @@ $(document).ready(function () {
             flagg = 3;
         }
     }
-
+ 
     var inputt = document.getElementById('txt_pass')
     var imglogin = document.getElementById('eye' );
     //we create a flag to see the status
@@ -51,6 +51,14 @@ $(document).ready(function () {
             return false;
         }else{
             $("#alert_id").text("");
+            var txt_rol = $("#txt_rol").val();
+                    
+            // if(txt_rol == ''){
+            //     $("#alert_rol").text(" Debe de Seleccionar un rol");
+            //     $("#alert_rol").css({"color" : "red","font-family": "Times New Roman', Times, serif;"});
+            // }else{
+            //     return false;
+            // }
         }
 
         var txt_name = $("#txt_name").val();
@@ -97,19 +105,19 @@ $(document).ready(function () {
                         return false;
                     }else{
                         $("#alert_password").text("");
+                    
                     }
-
                     
                 }
 
             }
         }
-
+ 
 
         $.ajax({
-            url: "../../../Controllers/singUp.php",
+            url: "../../../Controllers/singUp_admin.php",
             method: "POST",
-            data : {txt_user_id : txt_user_id, txt_name : txt_name, txt_surname : txt_surname, txt_password : txt_password, txt_gmail : txt_gmail},
+            data : {txt_user_id : txt_user_id, txt_rol: txt_rol, txt_name : txt_name, txt_surname : txt_surname, txt_password : txt_password, txt_gmail : txt_gmail},
             success: function(dataresponse, statustext, response){
                 if(statustext == "success"){
                     console.log("exitosamente")
@@ -131,7 +139,7 @@ $(document).ready(function () {
       
     $("#btn_entrar").click(function(e){
 
-        e.preventDefault();
+    //   e.preventDefault();
 
         var txt_email = $("#txt_email").val();
         var validacion=/^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
@@ -156,30 +164,42 @@ $(document).ready(function () {
             }
    
         }
-
+ 
         
         $.ajax({
             url: "../../../Controllers/validateLogin.php",
             method: "POST",
             data:{txt_email: txt_email, txt_pass: txt_pass},
+           
             success: function(dataresponse, statustext, response){
                 if(statustext == "success"){
                     $("#respuesta").html(dataresponse);
 
-                // alert(dataresponse);
-                    //alert(dataresponse);
                     if(dataresponse == 0){
-                        alert(ad);
-                        location.href="../../Views/Perfil/User/home.php";
+                        Swal.fire({
+                            position: 'top-end',
+                            icon: 'success',
+                            title: 'Iniciando Sesion',
+                            showConfirmButton: false,
+                            timer: 400
+                        })
+                        location.href="../User/home.php";
                     }else if(dataresponse == 1){
-                        alert(us);
-                        location.href="../../Views/Perfil/Admin/home.php";
-                    }else if (dataresponse == 2){
-                        alert("Usuario incorrecto");
+                        Swal.fire({
+                            position: 'top-end',
+                            icon: 'success',
+                            title: 'Iniciando Sesion',
+                            showConfirmButton: false,
+                            timer: 400
+                        })
+                        location.href="../Admin/home.php";
+                    }else if (dataresponse == 2 || dataresponse== null){
+                        alert("Datos no encontrados");
+                        location.href="#";
                     }
                 }
             },
-
+ 
             error: function(request, errorcode, errortext){
                 $("#respuesta").html(errorcode);
             }
