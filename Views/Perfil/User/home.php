@@ -165,11 +165,6 @@
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
-                        <!-- <iframe width="850" height="560"
-                            src="https://www.youtube-nocookie.com/embed/pRSC06T4lKs?autoplay=1&mute=1&loop=1"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe> -->
 
                         <div class="overlay bg-dark position-absolute o-25"></div>
                     </div>
@@ -202,63 +197,9 @@
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="container-xl position-relative">
-                        <div class="row testimonials g-4">
-                            <div class="col-12 col-md d-flex align-items-stretch">
-                                <figure class="card testimonial h-100 text-start bg-transparent mb-0">
-                                    <blockquote
-                                        class=" cardsbg blockquote card-body shadow-sm rounded d-flex flex-column px-lg-5">
-                                        <p class="fs-1 text-secondary o-25 mb-0"><i class="fas fa-quote-right"></i></p>
-                                        <p class="fs-6">La Hermana Arredondo testifica cómo conoció la Iglesia y cómo
-                                            ésta le ha ayudado en su vida. Ella sabe que ha sido guiada por el Espíritu
-                                        </p>
-                                        <p class="text-secondary text-decoration-none fs-sm mt-auto mb-3 o-75">
-                                            &mdash;<span class="fw-bold"> John Doe</span> - IT Profesional</p>
-                                        <div class="img px-3 px-lg-4">
-                                            <img src="" />
-                                        </div>
-                                    </blockquote>
-                                </figure>
-                                <!-- /.card -->
-                            </div>
-                            <!-- /.col-12 col-md d-flex align-items-stretch -->
+                        <div class="row testimonials g-4" id="tbodytestimonial">
 
-                            <div class="col-6 col-md d-flex align-items-stretch">
-                                <figure class="card testimonial h-100 text-start bg-transparent mb-0">
-                                    <blockquote
-                                        class="cardsbg blockquote card-body  shadow-sm rounded d-flex flex-column px-lg-5">
-                                        <p class="fs-1 text-secondary o-25 mb-0"><i class="fas fa-quote-right"></i></p>
-                                        <p class="fs-6">La Hermana Arredondo testifica cómo conoció la Iglesia y cómo
-                                            ésta
-                                            le ha ayudado en su vida. Ella sabe que ha sido guiada por el Espíritu</p>
-                                        <p class="text-secondary text-decoration-none fs-sm mt-auto mb-3 o-75">
-                                            &mdash;<span class="fw-bold"> John Doe</span> - Sales Representative</p>
-                                        <div class="img px-3 px-lg-4">
-                                            <img loading="lazy" src="../../web/img/LOGO02.png"
-                                                class="img rounded-circle" alt="Image" />
-                                        </div>
-                                    </blockquote>
-                                </figure>
-                                <!-- /.card -->
-                            </div>
-                            <!-- /.col-6 col-md d-flex align-items-stretch -->
-
-                            <div class="col-6 col-md d-flex align-items-stretch">
-                                <figure class="card testimonial h-100 text-start bg-transparent mb-0">
-                                    <blockquote
-                                        class="cardsbg blockquote card-body shadow-sm rounded d-flex flex-column px-lg-5">
-                                        <p class="fs-1 text-secondary o-25 mb-0"><i class="fas fa-quote-right"></i></p>
-                                        <p class="fs-6">La Hermana Arredondo testifica cómo conoció la Iglesia y cómo
-                                            ésta le ha ayudado en su vida. Ella sabe que ha sido guiada por el Espíritu
-                                        </p>
-                                        <p class="text-secondary text-decoration-none fs-sm mt-auto mb-3 o-75">
-                                            &mdash;<span class="fw-bold"> John Doe</span> - IT Profesional</p>
-                                        <div class="img px-3 px-lg-4">
-                                            <img src="" />
-                                        </div>
-                                    </blockquote>
-                                </figure>
-                                <!-- /.card -->
-                            </div>
+ 
                             <!-- /.col-6 col-md d-flex align-items-stretch -->
                         </div>
                         <!-- /.row testimonials  -->
