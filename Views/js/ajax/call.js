@@ -2,7 +2,7 @@ $(document).ready(function(e){
  
  
     // lectura todos las imagenes
-     var url = "../../../Controllers/call_images.php";
+     var url = "../../../Controllers/call_imagesHome.php";
      $.getJSON(url, function(datos){
  
          $.each(datos, function(i, images){

@@ -66,7 +66,7 @@
 
         <div class="swiper-container with-pagination">
             <div id="listing-swiper-1-expand-swiper" class="swiper expand-w" data-js-swiper="auto">
-                <div class="swiper-wrapper">
+                <div class="swiper-wrapper" id="tbodyimg">
 
                     <div class="swiper-slide w-330px h-330px pe-4 d-flex">
                         <div class="card shadow-sm shadow-hover trans-base zoom-bg-img o-hover-all">
@@ -92,56 +92,12 @@
                         <!-- /.card -->
                     </div>
 
-                    <div class="swiper-slide w-330px h-330px pe-4 d-flex">
-                        <div class="card shadow-sm shadow-hover trans-base zoom-bg-img o-hover-all">
-                            <div class="card-img bg bg-img" data-bg-img=".img">
-                                <img loading="lazy" src="../../img/church/image_01.jpg" class="img" alt="Image" />
-                                <div class="overlay bg-dark position-absolute o-25 o-50-hover"></div>
-                            </div>
-                            <!-- /.card-img bg bg-img -->
+                   
 
-                        </div>
-                        <!-- /.card -->
-                    </div>
+                   
 
-                    <div class="swiper-slide w-330px h-330px pe-4 d-flex">
-                        <div class="card shadow-sm shadow-hover trans-base zoom-bg-img o-hover-all">
-                            <div class="card-img bg bg-img" data-bg-img=".img">
-                                <img loading="lazy" src="../../img/church/image_02.jpg" class="img" alt="Image" />
-                                <div class="overlay bg-dark position-absolute o-25 o-50-hover"></div>
-                            </div>
-                            <!-- /.card-img bg bg-img -->
-
-                        </div>
-                        <!-- /.card -->
-                    </div>
-
-                    <div class="swiper-slide w-330px h-330px pe-4 d-flex">
-                        <div class="card shadow-sm shadow-hover trans-base zoom-bg-img o-hover-all">
-                            <div class="card-img bg bg-img" data-bg-img=".img">
-                                <img loading="lazy" src="../../img/church/image_02.jpg" class="img" alt="Image" />
-                                <div class="overlay bg-dark position-absolute o-25 o-50-hover"></div>
-                            </div>
-                            <!-- /.card-img bg bg-img -->
-
-                        </div>
-                        <!-- /.card -->
-                    </div>
-
-
-
-                    <div class="swiper-slide w-330px h-330px pe-4 d-flex">
-                        <div class="card shadow-sm shadow-hover trans-base zoom-bg-img o-hover-all">
-                            <div class="card-img bg bg-img" data-bg-img=".img">
-                                <img loading="lazy" src="../../img/church/image_02.JPG" class="img" alt="Image" />
-                                <div class="overlay bg-dark position-absolute o-25 o-50-hover"></div>
-                            </div>
-                            <!-- /.card-img bg bg-img -->
-
-                        </div>
-                        <!-- /.card -->
-                    </div>
-                    <!-- /.swiper-slide w-330px h-330px pe-4 d-flex -->
+                  
+                   
 
                 </div>
                 <!-- /.swiper-wrapper -->
@@ -163,8 +119,8 @@
                     <div data-swiper-id="#listing-swiper-1-expand-swiper" class="swiper-pagination w-auto bottom-0"
                         data-swiper-pagination-limit="2"></div>
 
-                    <a href="../views/images.php"
-                        class="btn btn-link btn-sm btn-more text-uppercase fw-bold shadow-none o-50 o-100-hover ms-3 trans-base px-0">Todos
+                    <a href="../User/images.php"
+                        class="btn btn-link btn-sm btn-more text-uppercase fw-bold shadow-none o-50 o-100-hover ms-3 trans-base px-0">Todas
                         las imagenes<i class="fas fa-long-arrow-alt-right"></i></a>
                 </div>
             </div>

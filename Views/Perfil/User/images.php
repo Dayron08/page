@@ -19,7 +19,7 @@
 
 <!-- #page-hero.section section__inverse justify-content-center py-5 py-lg-6 mb-n5 vh-50 h-lg-480px min-h-330px -->
 <!-- #page-hero.section section__inverse justify-content-center pt-6 pb-4 pb-lg-5 pb-xl-6 -->
-<section id="news-1" class="section pb-6 mt-7 mt-n4 mt-lg-n5 mt-xl-n6 ">
+<section id="news-1" class="section pb-6 pt-7 mt-7 mt-n4 mt-lg-n5 mt-xl-n6 ">
 
     <h1 class="titulo_galeria" style="text-align: center;">Nuestro Pueblo</h1>
 

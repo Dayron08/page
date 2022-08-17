@@ -2,7 +2,7 @@
 <section id="we-do-2" class="section bg-dark py-5 py-lg-6">
     <div class="bg bg-img position-absolute " data-bg-img=".img">
         <img src="../../img/home.jpg" class="img" alt="Image" />
-
+ 
         <div class="overlay bg-black position-absolute o-50"></div> <!-- on image-->
     </div>
     <!-- /.bg bg-img position-absolute bg-dark -->
@@ -70,24 +70,19 @@
                 <div class="swiper-wrapper" id="tbodyimg">
                 
 
+                    
+                    <div class="swiper-slide w-330px h-330px pe-4 d-flex">
+                            <div class="card shadow-sm shadow-hover trans-base zoom-bg-img o-hover-all">
+                                <div class="card-img bg bg-img" data-bg-img=".img">
+                                    <img loading="lazy" src="../../img/church/image_01.jpg" class="img" alt="Image" />
+                                    <div class="overlay bg-dark position-absolute o-25 o-50-hover"></div>
+                                </div>
+                                <!-- /.card-img bg bg-img -->
 
-
-
-
-
-                
-                <div class="swiper-slide w-330px h-330px pe-4 d-flex">
-                        <div class="card shadow-sm shadow-hover trans-base zoom-bg-img o-hover-all">
-                            <div class="card-img bg bg-img" data-bg-img=".img">
-                                <img loading="lazy" src="../../img/church/image_01.jpg" class="img" alt="Image" />
-                                <div class="overlay bg-dark position-absolute o-25 o-50-hover"></div>
                             </div>
-                            <!-- /.card-img bg bg-img -->
-
-                        </div>
-                        <!-- /.card -->
-                </div>
-                   
+                            <!-- /.card -->
+                    </div>
+                    
 
                 </div>
                 <!-- /.swiper-wrapper -->
