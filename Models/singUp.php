@@ -97,7 +97,7 @@ class SingUp extends Connection_Mysql {
 	}
 
 	public function insertQuery() {
-		$this->query = "CALL P_INSERTAR_DATOS_PERSONA_USU(                
+		$this->query = "CALL P_INSERTAR_CONSULTA(                
 			'".$this->name."',
 			'".$this->surname."',
 			'".$this->gmail."',
