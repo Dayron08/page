@@ -13,6 +13,7 @@ if(isset($_REQUEST("TELEFONO"))){
     require_once("../../Includes/headerAdmin.php");
 
 ?>
+
 <section id="page-hero"
     class="section section__inverse justify-content-center py-5 py-lg-6 mb-n5 vh-350 h-lg-1000px min-h-1000px">
     <div class="bg bg-img position-absolute" data-bg-img=".img">

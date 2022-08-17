@@ -319,7 +319,7 @@ CREATE OR REPLACE PROCEDURE P_VER_FOTOS()
     BEGIN
         SELECT
             ID_IMAGEN,
-            IMG_PATH,
+            IMG_PATH 
         FROM GALERIA ;
     END$$
 DELIMITER;

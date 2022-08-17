@@ -14,7 +14,7 @@
         <!-- /.container-xl position-relative -->
     </section>
     <!-- #page-hero.section section__inverse justify-content-center pt-6 pb-4 pb-lg-5 pb-xl-6 -->
-
+ 
 
     <section id="see-how-4" class="section py-5 py-lg-6">
         <div class="bg bg-img position-absolute bg-light" data-bg-img=".img"></div>
@@ -93,31 +93,38 @@
                             <h1 class="fs-3 mb-2 position-relative">Si deseas realizar una consulta, escribenos</h1>
 
                             <div class="row g-3">
-                                <div class="col-md-6">
+                                <div class="col-md-4">
                                     <div class="form-floating">
                                         <input type="text" class="form-control border-0 bg-light"
-                                            placeholder="Your Name" />
+                                            placeholder="Your Name" id="txt_names"/>
                                         <label>Nombre</label>
                                     </div>
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-md-4">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control border-0 bg-light"
+                                            placeholder="Your LastName" id="txt_lastnames"/>
+                                        <label>Apellidos</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
                                     <div class="form-floating">
                                         <input type="email" class="form-control border-0 bg-light" id="email"
-                                            placeholder="Your Email" />
+                                            placeholder="Your Email" id="txt_gmail"/>
                                         <label>Email</label>
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="form-floating">
                                         <input type="text" class="form-control border-0 bg-light"
-                                            placeholder="Subject" />
+                                            placeholder="Subject" id="txt_subject" />
                                         <label>Asunto</label>
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="form-floating">
                                         <textarea class="form-control border-0 bg-light" placeholder=""
-                                            style="height: 150px"></textarea>
+                                            style="height: 150px"  id="txt_text"></textarea>
                                         <label>Consulta</label>
                                     </div>
                                 </div>
@@ -126,7 +133,7 @@
 
 
                             <div class="d-flex position-relative flex-column">
-                                <button class="btn btn-primary d-block fw-bold" type="submit">Enviar</button><br>
+                                <button class="btn btn-primary d-block fw-bold" type="submit" id="btn_query" >Enviar</button><br>
                                 <button class="btn btn-primary d-block fw-bold" type="submit">Cancelar</button><br>
                             </div>
                         </div>
