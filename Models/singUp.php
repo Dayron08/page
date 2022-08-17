@@ -130,28 +130,7 @@ class SingUp extends Connection_Mysql {
 		return $row;
 	}
 
-	// public function readimages() {
- 
-		
-	// 	$this->query = "SELECT `IMG_PATH` FROM `galeria`";
-	// 	$this->execute($this->query);
-	//     // $row = mysqli_fetch_assoc($this->result);
-	// 	$images = array();
-	// 	while ($row = mysqli_fetch_assoc($this->result)) {
-	// 		$images[] = array("image" => $row["IMG_PATH"]);
-	// 	}
-
-	// 	$json_string = json_encode($images);
-
-	// 	echo $json_string;
-
-	// 	$file = "../Views/js/json/images.json";
-
-	// 	file_put_contents($file, $json_string);
-
-	// 	return $row;
-	// }
-
+	
 	public function readimages() {
 		
 		
@@ -184,6 +163,25 @@ class SingUp extends Connection_Mysql {
 		}
 		
 		return $testimonials ;
+
+	}
+
+
+	public function readTestimonialsHome() {
+		
+		$this->query = "CALL P_VER_PERSONA_TESTIMONIO();";
+		$this->execute($this->query);
+
+	   $testimonial = array();
+		while ($result = mysqli_fetch_assoc($this->result)) {
+			$testimonial []= array(
+				"dsc"=> $result["DSC_TESTIMONIO"],
+				"name" => $result["NOMBRE"],
+				"lastname" => $result["APPELLIDOS"]);
+		}
+		
+		
+		return $testimonial;
 
 	}
 

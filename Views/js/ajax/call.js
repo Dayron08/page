@@ -35,29 +35,29 @@ $(document).ready(function(e){
 
 
     //  // lectura testimonios en home 
-    //  var url = "../../../Controllers/call_testimonials.php";
-    //  $.getJSON(url, function(dato){
+     var url = "../../../Controllers/call_testimonialsHome.php";
+     $.getJSON(url, function(dato){
  
-    //      $.each(dato, function(i, testimonials){
+         $.each(dato, function(i, testimonial){
             
-    //         var t = 
-    //         "<div class=\"col-12 col-md d-flex align-items-stretch\">"+
-    //             "<figure class=\"card testimonial h-100 text-start bg-transparent mb-0\">"+
-    //                 "<blockquote class=\" cardsbg blockquote card-body shadow-sm rounded d-flex flex-column px-lg-5\">"+
-    //                     "<p class=\"fs-1 text-secondary o-25 mb-0\"><i class=\"fas fa-quote-right\"></i></p>"+
-    //                     "<p class=\"fs-6\">"+testimonials.dsc+"</p>"+
-    //                     "<p class=\"text-secondary text-decoration-none fs-sm mt-auto mb-3 o-75\">"+
-    //                         "&mdash;<span class=\"fw-bold\">"+testimonials.name+" </span> "+testimonials.lastname+"</p>"+
-    //                 "</blockquote>"+
-    //             "</figure>"+
-    //       "</div>";
+            var t = 
+            "<div class=\"col-12 col-md d-flex align-items-stretch\">"+
+                "<figure class=\"card testimonial h-100 text-start bg-transparent mb-0\">"+
+                    "<blockquote class=\" cardsbg blockquote card-body shadow-sm rounded d-flex flex-column px-lg-5\">"+
+                        "<p class=\"fs-1 text-secondary o-25 mb-0\"><i class=\"fas fa-quote-right\"></i></p>"+
+                        "<p class=\"fs-6\">"+testimonial.dsc+"</p>"+
+                        "<p class=\"text-secondary text-decoration-none fs-sm mt-auto mb-3 o-75\">"+
+                            "&mdash;<span class=\"fw-bold\">"+testimonial.name+" </span> "+testimonial.lastname+"</p>"+
+                    "</blockquote>"+
+                "</figure>"+
+          "</div>";
             
            
-    //          $(t).appendTo("#tbodytestimonials");   
+             $(t).appendTo("#tbodytestimonial");   
                                                   
-    //      });
+         });
  
-    //  }); 
+     }); 
 
 
        // lectura para todos los testimonios 
