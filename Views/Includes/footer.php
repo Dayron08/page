@@ -5,7 +5,7 @@
             <div class="row gy-4 gx-4 section-content">
                 <div class="col-12 col-lg-3 col-xl-4 pe-lg-4 pe-xl-5 d-flex flex-column flex-sm-row flex-lg-column">
                     <p class="mb-3 w-sm-50 w-md-25 w-lg-100">
-                        <a href="#"><img loading="lazy" src="../../img/LOGO02.png" alt="Pacto de vida"
+                        <a href="#"><img loading="lazy" src="Views/img/LOGO02.png" alt="Pacto de vida"
                                 style="width: 15%;" /></a>
                     </p>
 
@@ -116,9 +116,9 @@
 
 <!-- Discoverize JS -->
 
-<script src="../../js/discoverize.js"></script>
-<script src="../../js/carousel.js"></script>
-<script src="../../js/script.js"></script>
+<script src="Views/js/discoverize.js"></script>
+<script src="Views/js/carousel.js"></script>
+<script src="Views/js/script.js"></script>
 </body>
 
 </html>
