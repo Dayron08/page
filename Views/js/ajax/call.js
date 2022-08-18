@@ -6,7 +6,7 @@ $(document).ready(function(e){
      $.getJSON(url, function(datos){
  
          $.each(datos, function(i, images){
-            
+             
             var tr = 
                 "<div class=\"swiper-slide w-330px h-330px pe-4 d-flex\">"+
                     "<div class=\"card shadow-sm shadow-hover trans-base zoom-bg-img o-hover-all\">"+

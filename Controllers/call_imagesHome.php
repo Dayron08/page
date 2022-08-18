@@ -1,6 +1,6 @@
 <?php
 require_once("../Models/singUp.php");
-echo "estou awui";
+
 $selectimage = new SingUp();
  
 $result = $selectimage->readimages();
