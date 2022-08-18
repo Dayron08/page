@@ -1,8 +1,8 @@
-<?php require_once("../../Includes/headerAdmin.php");?>
+<?php require_once("Views/Includes/headerAdmin.php");?>
 <section id="page-hero"
     class="section section__inverse justify-content-center py-5 py-lg-6 mb-n5 vh-50 h-lg-480px min-h-330px">
     <div class="bg bg-img position-absolute" data-bg-img=".img">
-        <img loading="lazy" src="../../img/videos_wallpaper.jpg" class="img" alt="Image" />
+        <img loading="lazy" src="Views/img/videos_wallpaper.jpg" class="img" alt="Image" />
 
         <div class="overlay bg-dark position-absolute o-50"></div>
     </div>
@@ -21,7 +21,7 @@
     <!-- /.bg bg-img position-absolute -->
 
     <div class="container-xl position-relative">
-        <?php require("../../Includes/navBar_Admin_video.php"); ?>
+        <?php require("Views/Includes/navBar_Admin_video.php"); ?>
         <div class="row properties g-4 mb-6">
 
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex align-items-stretch">
@@ -160,4 +160,36 @@
     <!-- /.container-xl -->
 </section>
 <!-- #listing-1.section py-5 -->
-<?php require_once("../../Includes/footerAdmin.php");?>
+
+<div class="modal fade" id="new_video" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-sm">
+        <div class="modal-content">
+            <button class="btn-close btn-close-menu position-absolute top-0 start-100 translate-middle" type="button"
+                data-bs-dismiss="modal" aria-label="Close">
+                <span class="btn-close-icon"></span>
+            </button>
+
+            <div class="modal-body p-4">
+                <form action="" method="post">
+                    <h6 class="mb-4" style="text-align: center;">Ingresar c&oacute;digo del evento</h6>
+
+                    <div class="mb-3 ">
+                        <label for="video_code" class="form-label fs-sm fw-bold">C&oacute;digo</label>
+                        <input type="text" class="form-control shadow-none" id="video_code"
+                            placeholder="Ingrese el c&oacute;digo" />
+                    </div>
+
+                    <div class="mb-3">
+                        <button type="submit" class="btn btn-primary w-100 text-uppercase fw-bold">Agregar</button>
+                    </div>
+                </form>
+
+            </div>
+            <!-- /.modal-body -->
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- modal-dialog modal-dialog-centered -->
+</div>
+<!-- #new_event -->
+<?php require_once("Views/Includes/footerAdmin.php");?>

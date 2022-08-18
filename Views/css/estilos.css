@@ -1,12 +1,12 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    font-family: 'Oswald','Zen Old Micho';
+    font-family: 'Oswald', 'Zen Old Micho';
 }
 
-body{
+body {
     background-image: url(../img/login.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -15,31 +15,34 @@ body{
 }
 
 
-main{
+main {
     width: 100%;
     padding: 20px;
     margin: auto;
     margin-top: 100px;
 }
 
-#title{
+#title {
     color: #0c0c0c;
 }
 
-.contenedor__principal{
+.contenedor__principal {
     width: 100%;
     max-width: 800px;
-    margin: auto;/* para centrar*/
-    position: relative;/* para centrar*/
+    margin: auto;
+    /* para centrar*/
+    position: relative;
+    /* para centrar*/
 }
 
-.contenedor__principal h2{
-    color: #fdfdfd;/* texto*/
+.contenedor__principal h2 {
+    color: #fdfdfd;
+    /* texto*/
     transition: all 500ms;
 }
 
-#textmenu a{
-   
+#textmenu a {
+
     border: 5px rgb(246, 218, 6);
     transition: all 0.3s;
     color: rgb(248, 247, 247);
@@ -47,61 +50,66 @@ main{
     margin-right: 500px;
 }
 
-.contenedor__inferior{
+.contenedor__inferior {
     width: 100%;
     padding: 10px 20px;
     display: flex;
     justify-content: center;
     -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);/* desenfoque */
+    backdrop-filter: blur(10px);
+    /* desenfoque */
     background-color: rgba(29, 24, 25, 0.5);
 
 }
 
-.contenedor__inferior div{
+.contenedor__inferior div {
     margin: 100px 40px;
-    color: white;/* texto*/
+    color: white;
+    /* texto*/
     transition: all 500ms;
 }
 
 
 .contenedor__inferior div p,
-.contenedor__inferior button{
+.contenedor__inferior button {
     margin-top: 30px;
 }
 
-.contenedor__inferior div h3{
-    font-weight: 400;/* menos grosor*/
+.contenedor__inferior div h3 {
+    font-weight: 400;
+    /* menos grosor*/
     font-size: 26px;
 }
 
-.contenedor__inferior div p{
+.contenedor__inferior div p {
     font-size: 20px;
     font-weight: 300;
 }
 
-.contenedor__inferior button{
+.contenedor__inferior button {
     padding: 10px 40px;
     border: 2px solid #fff;
     font-size: 14px;
     background: transparent;
     font-weight: 600;
-    cursor: pointer;/* para dar click*/
+    cursor: pointer;
+    /* para dar click*/
     color: white;
-    outline: none;/* quitar linea*/
+    outline: none;
+    /* quitar linea*/
     transition: all 300ms;
 }
 
-.contenedor__inferior button:hover{
+.contenedor__inferior button:hover {
     background: #fff;
-    background:-webkit-linear-gradient(left, #9fa0a1, #bf1b39);
+    background: -webkit-linear-gradient(left, #9fa0a1, #bf1b39);
     border: 2px rgb(22, 1, 1);
     transition: all 0.3s;
 }
 
 /*Formularios*/
 
-.contenedor__login-register{
+.contenedor__login-register {
     display: flex;
     align-items: center;
     width: 100%;
@@ -110,11 +118,11 @@ main{
     top: -185px;
     left: 10px;
 
-   /*Esto es una animacion de JS la transicion va despues del codigo JS*/
+    /*Esto es una animacion de JS la transicion va despues del codigo JS*/
     transition: left 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
 }
 
-.contenedor__login-register form{
+.contenedor__login-register form {
     width: 100%;
     padding: 80px 20px;
     background: white;
@@ -122,14 +130,14 @@ main{
     border-radius: 20px;
 }
 
-.contenedor__login-register form h2{
+.contenedor__login-register form h2 {
     font-size: 30px;
     text-align: center;
     margin-bottom: 20px;
     color: #0c0c0c;
 }
 
-.contenedor__login-register form input{
+.contenedor__login-register form input {
     width: 100%;
     margin-top: 8px;
     padding: 5px;
@@ -139,56 +147,68 @@ main{
     outline: none;
 }
 
-.contenedor__login-register form button{
+.contenedor__login-register form select {
+    width: 100%;
+    margin-top: 8px;
+    padding: 5px;
+    border: none;
+    background: #F2F2F2;
+    font-size: 16px;
+    outline: none;
+}
+
+.contenedor__login-register form button {
     padding: 10px 40px;
     margin-top: 30px;
     border: none;
     font-size: 14px;
-    background:  #ffc107;
+    background: #ffc107;
     font-weight: 600;
     cursor: pointer;
     color: rgb(8, 8, 8);
     outline: none;
 }
 
-.contenedor__login-register form a{
-   text-align:center;
+.contenedor__login-register form a {
+    text-align: center;
     font-size: 14px;
     font-weight: 600;
     color: rgb(8, 8, 8);
     outline: none;
 }
-.contenedor__login-register button:hover{
+
+.contenedor__login-register button:hover {
     background: #fff;
-    background:-webkit-linear-gradient(left, #9fa0a1, #bf1b39);
+    background: -webkit-linear-gradient(left, #9fa0a1, #bf1b39);
     transition: all 0.3s;
 }
 
 
-.formulario__login{
+.formulario__login {
     opacity: 1;
     display: block;
 }
-.formulario__register{
+
+.formulario__register {
     display: none;
 }
 
 
 /* responsive */
-@media screen and (max-width: 850px){
+@media screen and (max-width: 850px) {
 
-    main{
+    main {
         margin-top: 50px;
     }
 
-    .contenedor__inferior{
+    .contenedor__inferior {
         max-width: 350px;
         height: 300px;
         flex-direction: column;
         margin: auto;
     }
 
-    .contenedor__inferior div{
+    .contenedor__inferior div {
         margin: 0px;
         position: absolute;
     }
@@ -196,13 +216,70 @@ main{
 
     /*Formularios*/
 
-    .contenedor__login-register{
+    .contenedor__login-register {
         top: -10px;
         left: -5px;
         margin: auto;
     }
 
-    .contenedor__login-register form{
+    .contenedor__login-register form {
         position: relative;
     }
+}
+
+
+#eyes {
+
+    width: 12%;
+
+}
+
+#eye {
+
+    width: 12%;
+
+}
+
+.campo {
+    position: relative;
+}
+
+
+input {
+    width: 100%;
+    padding: 7px;
+}
+
+.campo img {
+
+    position: absolute;
+    right: 5px;
+    top: 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 2px 10px;
+
+
+}
+
+.campoo {
+    position: relative;
+}
+
+
+input {
+    width: 100%;
+    padding: 7px;
+}
+
+.campoo img {
+
+    position: absolute;
+    right: 5px;
+    top: 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 2px 10px;
+
+
 }
