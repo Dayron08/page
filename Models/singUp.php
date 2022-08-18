@@ -2,10 +2,17 @@
 require_once('main_model.php');
 
 class SingUp extends Connection_Mysql {
+	// variables to register
 	private $user_id;
 	private $name;
 	private $surname;
 	private $password;
+
+
+	// variables to view profile 
+	private $p_email;
+	private $p_password;
+
 	private $result;
 	private $database;
 	public $null = null;
@@ -23,50 +30,47 @@ class SingUp extends Connection_Mysql {
         $this->user_id = $user_id;
     }
 
-    public function get_user_id(){
-        return $this->user_id;
-    }
-
 	public function set_name($name){
         $this->name = $name;
-    }
+    } 
 
-    public function get_name(){
-        return $this->name;
+	public function set_rol($rol){
+        $this->rol = $rol;
     }
 
 	public function set_surname($surname){
         $this->surname = $surname;
     }
 
-    public function get_surname(){
-        return $this->surname;
-    }
-
 	public function set_password($password){
         $this->password = $password;
-    }
-
-    public function get_password(){
-        return $this->password;
     }
 
 	public function set_gmail($gmail){
         $this->gmail = $gmail;
     }
 
-    public function get_gmail(){
-        return $this->gmail;
-    }
-
 	public function set_query($query){
         $this->query = $query;
     }
 
-    public function get_query(){
-        return $this->query;
+	public function set_consul($consul){
+        $this->consul = $consul;
     }
 
+
+	// methods to view profile 
+	public function set_p_email($p_email){
+        $this->p_email = $p_email;
+    }
+
+	public function set_p_password($p_password){
+        $this->p_password = $p_password;
+    }
+
+	public function set_subjet($subject){
+        $this->subject = $subject;
+    }
 
 
 	private function execute($query){
@@ -75,7 +79,7 @@ class SingUp extends Connection_Mysql {
 		$this-> database->db_close();
 		return $this->result;
 	}
-	
+	 
 	public function create() {
 		$this->query = "CALL P_INSERTAR_DATOS_PERSONA_USU(                
 			'".$this->user_id."', 
@@ -92,91 +96,121 @@ class SingUp extends Connection_Mysql {
 
 	}
 
+	public function insertQuery() {
+		$this->query = "CALL P_INSERTAR_CONSULTA(                
+			'".$this->name."',
+			'".$this->surname."',
+			'".$this->gmail."',
+			'".$this->subject."',
+			'".$this->consul."');";
+			
+		$this->execute($this->query);
+
+	} 
+
+
+	public function insertAdmin() {
+		$this->query = "CALL P_INSERTAR_DATOS_PERSONA_ADMIN(                
+			'".$this->user_id."', 
+			'".$this->name."',
+			'".$this->surname."',
+			NULL,
+			NULL,
+			'".$this->rol."',
+			'".$this->password."',
+			'".$this->gmail."',
+			NULL,
+			NULL);";
+			
+		$this->execute($this->query);
+
+	}
+
+	// function to call data profile
+	public function call_profile() {
+		$this->query = "CALL P_VER_USUARIO_PERFIL(
+		'".$this->p_email."',
+		'".$this->p_password."');"; 
+		$this->execute($this->query);
+		$this->result = mysqli_fetch_assoc($this->result);
+		return $this->result;
+	}
+
+	
+
 	public function read() {
 
 		session_start();
-
+		
 		$this->query = "CALL P_VALI_LOGIN(
 		'".$this->gmail."',
 		'".$this->password."');";
-		 
+		$this->execute($this->query);
+	    $row = mysqli_fetch_assoc($this->result);
 		
-		// echo $this->query;
-
-		$this->get_query();
-
+		$_SESSION['ID_TIPO'] = ISSET($row["ID_TIPO"]); 
 		
-	    // var_dump($this->get_query());
+		return $row;
+	}
 
-		// $this->rows = ['hola','m'];
+	
+
+	public function readimages() {
 		
-		var_dump($this->rows);
+		
+		$this->query = 
+		"CALL P_VER_FOTOS();";
+		// $this->query = "SELECT `ID_IMAGEN`, `IMG_PATH` FROM `galeria`";
+		$this->execute($this->query);
+		$images = array();
+		while ($result = mysqli_fetch_assoc($this->result)) {
+			$images[]= array(
+				"id"=> $result["ID_IMAGEN"],
+				"image" => $result["IMG_PATH"]);
+		}
+		return $images;
+
+	}
 
 
-		$data = array();
+	public function readTestimonials() {
+		
+		$this->query = "CALL P_VER_PERSONA_TESTIMONIO();";
+		$this->execute($this->query);
 
-		foreach ($this->rows as $value) {
-					array_push($data, $value);
-					//$data[$key] =  $value;
+	   $testimonials = array();
+		while ($result = mysqli_fetch_assoc($this->result)) {
+			$testimonials []= array(
+				"dsc"=> $result["DSC_TESTIMONIO"],
+				"name" => $result["NOMBRE"],
+				"lastname" => $result["APPELLIDOS"]);
 		}
 		
-		$_SESSION['ID_REGISTO_PERSON'] = isset($this->rows["ID_REGISTO_PERSONA"]); 
-		
+		return $testimonials ;
 
-		if($this->rows== null){
-		echo "2";
-		}else{
-			if($this->rows["TIPO_PERSONA"] == 0){  
-				echo "0";
-			}else if($this->rows["TIPO_PERSONA"] == 1){
-				echo "1";
-			}
+	}
+
+
+	public function readTestimonialsHome() {
+		
+		$this->query = "CALL P_VER_PERSONA_TESTIMONIO();";
+		$this->execute($this->query);
+
+	   $testimonial = array();
+		while ($result = mysqli_fetch_assoc($this->result)) {
+			$testimonial []= array(
+				"dsc"=> $result["DSC_TESTIMONIO"],
+				"name" => $result["NOMBRE"],
+				"lastname" => $result["APPELLIDOS"]);
 		}
-
 		
-
-		return $data;
-
-	}
-
-
-	// public function read() {
-	// 	$this->query = "SELECT * FROM persona";
 		
-	// 	$this->get_query();
-	// 	//var_dump($this->rows);
+		return $testimonial;
 
-	// 	$num_rows = count($this->rows);
-	// 	//echo $num_rows;
-
-	// 	$data = array();
-
-	// 	//http://php.net/manual/es/control-structures.foreach.php
-	// 	foreach ($this->rows as $key => $value) {
-	// 		array_push($data, $value);
-	// 		//$data[$key] =  $value;
-	// 	}
-
-	// 	return $data;
-	// }
-
-
-
-	public function update( $status_data = array() ) {
-		foreach ($status_data as $key => $value) {
-			$$key = $value;
-		}
-
-		$this->query = "UPDATE status SET status_id = $status_id, status = '$status' WHERE status_id = $status_id";
-		$this->set_query($this->query);
 	}
 
-	public function delete( $status_id = '' ) {
-		$this->query = "DELETE FROM status WHERE status_id = $status_id";
-		$this->set_query($this->query);
-	}
-
-	public function __destruct() {
-		unset($this->db_name);
-	}
 }
+
+
+
+

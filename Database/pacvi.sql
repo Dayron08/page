@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 30, 2022 at 12:03 AM
+-- Generation Time: Aug 16, 2022 at 09:57 PM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 8.1.6
 
@@ -20,6 +20,7 @@ SET time_zone = "+00:00";
 --
 -- Database: `pacvi`
 --
+HOLA
 
 DELIMITER $$
 --
@@ -314,6 +315,17 @@ CREATE DEFINER=`root`@`localhost` PROCEDURE `P_INSERTAR_VIDEO` (IN `P_URL` VARCH
             COMMIT;
     END$$
 
+CREATE DEFINER=`root`@`localhost` PROCEDURE `P_VALI_LOGIN` (IN `P_CORREO` VARCHAR(50), IN `P_PASSWORD` VARCHAR(50))   BEGIN
+            SELECT
+                TP.ID_TIPO,
+                TP.DSC_TIPO AS ROL,
+                P.ID_REGISTRO_PERSONA AS CEDULA
+            FROM TIPO_PERSONA TP
+            INNER JOIN PERSONA P ON (P.TIPO_PERSONA = TP.ID_TIPO)
+            INNER JOIN PERSONA_CONTACTO PC ON (PC.ID_REGISTRO_PERSONA = P.ID_REGISTRO_PERSONA)
+            WHERE PC.EMAIL =P_CORREO  AND P.PASSWORD_PERSONA = P_PASSWORD;
+        END$$
+
 CREATE DEFINER=`root`@`localhost` PROCEDURE `P_VER_CONSULTAS_BY_FECHA` ()   BEGIN
         SELECT FECHA_ACTUAL AS FECHA_DE_RECIBIDO, NOMBRE,APPELLIDOS,CORREO,DSC_ASUNTO
         FROM CONSULTAS 
@@ -388,7 +400,7 @@ CREATE DEFINER=`root`@`localhost` PROCEDURE `P_VER_PERSONA_TESTIMONIO_ORDER_ASC`
         ORDER BY P.NOMBRE ASC;
     END$$
 
-CREATE DEFINER=`root`@`localhost` PROCEDURE `P_VER_USUARIO_PERFIL` ()   BEGIN
+CREATE DEFINER=`root`@`localhost` PROCEDURE `P_VER_USUARIO_PERFIL` (IN `P_CORREO` VARCHAR(50), IN `P_PASSWORD` VARCHAR(50))   BEGIN
         SELECT
             PC.FOTO_PERFIL,
             P.NOMBRE,
@@ -400,7 +412,8 @@ CREATE DEFINER=`root`@`localhost` PROCEDURE `P_VER_USUARIO_PERFIL` ()   BEGIN
             P.PASSWORD_PERSONA
         FROM TIPO_PERSONA TP 
         INNER JOIN PERSONA P ON (P.TIPO_PERSONA = TP.ID_TIPO)
-        INNER JOIN PERSONA_CONTACTO PC ON (PC.ID_REGISTRO_PERSONA = P.ID_REGISTRO_PERSONA);
+        INNER JOIN PERSONA_CONTACTO PC ON (PC.ID_REGISTRO_PERSONA = P.ID_REGISTRO_PERSONA)
+        WHERE PC.EMAIL =P_CORREO  AND P.PASSWORD_PERSONA = P_PASSWORD;
     END$$
 
 CREATE DEFINER=`root`@`localhost` PROCEDURE `P_VER_VIDEO_FECHA_ANTIGUO` ()   BEGIN
@@ -486,6 +499,7 @@ INSERT INTO `eventos` (`ID_EVENT`, `ENCARGADO`, `NOMBRE_EVENTO`, `HORA_EVENTO`, 
 
 CREATE TABLE `galeria` (
   `ID_IMAGEN` int(11) NOT NULL,
+  `CODIGO_IMG` varchar(3) NOT NULL,
   `IMG_PATH` varchar(100) DEFAULT NULL,
   `FECHA` date DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -494,9 +508,9 @@ CREATE TABLE `galeria` (
 -- Dumping data for table `galeria`
 --
 
-INSERT INTO `galeria` (`ID_IMAGEN`, `IMG_PATH`, `FECHA`) VALUES
-(1, '../../IMG1', '2022-07-28'),
-(2, '../../IMG2', '2022-07-28');
+INSERT INTO `galeria` (`ID_IMAGEN`, `CODIGO_IMG`, `IMG_PATH`, `FECHA`) VALUES
+(1, 'C-P', '../../IMG1', '2022-07-28'),
+(2, 'C-N', '../../IMG2', '2022-07-28');
 
 -- --------------------------------------------------------
 

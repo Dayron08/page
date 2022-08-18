@@ -2,19 +2,21 @@
 require_once("../Models/singUp.php");
 
 $select = new SingUp();
-
+ 
 if(isset($_REQUEST['txt_email'])){
     $select -> set_gmail($_REQUEST["txt_email"]);
     $select -> set_password($_REQUEST["txt_pass"]);
  
-    // var_dump($select);
-
-    if($select->read()){
-        echo "Exitosamente";
+    $result=$select->read();
+    // var_dump($result);
+    if($result== null){
+        echo "2";
     }else{
-        echo "Error";
+        if($result["ID_TIPO"] == 0){ 
+            echo "0";
+        }else if($result["ID_TIPO"] == 1){
+            echo "1";
+        }
     }
-    
-}else{
-    echo ("Error al esperar los datos");
+ 
 }

@@ -1,8 +1,8 @@
-<?php require_once("../../Includes/header.php");?>
+<?php require_once("Views/Includes/header.php");?>
 
 <section id="page-hero" class="section section__inverse justify-content-center pt-6 pb-4 pb-lg-5 pb-xl-6">
     <div class="bg bg-img position-absolute" data-bg-img=".img">
-        <img loading="lazy" src="../../img/testimonials_wallpaper.jpg" class="img" alt="Image" />
+        <img loading="lazy" src="Views/img/testimonials_wallpaper.jpg" class="img" alt="Image" />
     </div>
     <!-- /.bg bg-img position-absolute -->
 
@@ -53,7 +53,8 @@
 
     <div class="container-xl position-relative h-100">
 
-        <div class="row cities g-4 mb-5">
+        <div class="row cities g-4 mb-5" id="bodytestimonialUser">
+
             <div class="col-12 col-sm-6 col-lg-4 d-flex align-items-stretch">
                 <figure class="card testimonial h-100 text-center bg-transparent mb-0">
                     <blockquote class="blockquote card-body bg-white shadow-sm rounded d-flex flex-column px-lg-5">
@@ -90,81 +91,10 @@
             </div>
             <!-- /.col-12 col-sm-6 col-lg-4 -->
 
-            <div class="col-12 col-sm-6 col-lg-4 d-flex align-items-stretch">
-                <figure class="card testimonial h-100 text-center bg-transparent mb-0">
-                    <blockquote class="blockquote card-body bg-white shadow-sm rounded d-flex flex-column px-lg-5">
-                        <p class="fs-1 text-secondary o-25 mb-0"><i class="fas fa-quote-right"></i></p>
-                        <p class="fs-6">Veniam iste, vitae maiores. tenetur Quis voluptates consequatur unde culpa
-                            perspiciatis odit vero beatae</p>
-                        <p class="text-secondary text-decoration-none fs-sm mt-auto mb-3 o-75">&mdash;<span
-                                class="fw-bold"> John Doe</span> - Marketing Manager</p>
-                        <div class="img px-3 px-lg-4">
-                            <img loading="lazy"
-                                src="http://assets.coolorize.com/avatar/256x256/dmitriy-ilkevich-437760.jpg"
-                                class="img rounded-circle" alt="Image" />
-                        </div>
-                    </blockquote>
-                </figure>
-                <!-- /.card -->
-            </div>
-            <!-- /.col-12 col-sm-6 col-lg-4 -->
 
-            <div class="col-12 col-sm-6 col-lg-4 d-flex align-items-stretch">
-                <figure class="card testimonial h-100 text-center bg-transparent mb-0">
-                    <blockquote class="blockquote card-body bg-white shadow-sm rounded d-flex flex-column px-lg-5">
-                        <p class="fs-1 text-secondary o-25 mb-0"><i class="fas fa-quote-right"></i></p>
-                        <p class="fs-6">Explicabo facere maxime fuga voluptates saepe veniam iste, vitae maiores.
-                            Quis voluptates consequatur</p>
-                        <p class="text-secondary text-decoration-none fs-sm mt-auto mb-3 o-75">&mdash;<span
-                                class="fw-bold"> John Doe</span> - General Manager</p>
-                        <div class="img px-3 px-lg-4">
-                            <img loading="lazy"
-                                src="http://assets.coolorize.com/avatar/256x256/melissa-mjoen-385845.jpg"
-                                class="img rounded-circle" alt="Image" />
-                        </div>
-                    </blockquote>
-                </figure>
-                <!-- /.card -->
-            </div>
-            <!-- /.col-12 col-sm-6 col-lg-4 -->
 
-            <div class="col-12 col-sm-6 col-lg-4 d-flex align-items-stretch">
-                <figure class="card testimonial h-100 text-center bg-transparent mb-0">
-                    <blockquote class="blockquote card-body bg-white shadow-sm rounded d-flex flex-column px-lg-5">
-                        <p class="fs-1 text-secondary o-25 mb-0"><i class="fas fa-quote-right"></i></p>
-                        <p class="fs-6">Unde culpa perspiciatis odit vero beatae tenetur facere tenetur dolor sit
-                            amet consectetur adipisicing</p>
-                        <p class="text-secondary text-decoration-none fs-sm mt-auto mb-3 o-75">&mdash;<span
-                                class="fw-bold"> John Doe</span> - Freelancer</p>
-                        <div class="img px-3 px-lg-4">
-                            <img loading="lazy"
-                                src="http://assets.coolorize.com/avatar/256x256/mubariz-mehdizadeh-427362.jpg"
-                                class="img rounded-circle" alt="Image" />
-                        </div>
-                    </blockquote>
-                </figure>
-                <!-- /.card -->
-            </div>
-            <!-- /.col-12 col-sm-6 col-lg-4 -->
 
-            <div class="col-12 col-sm-6 col-lg-4 d-flex align-items-stretch">
-                <figure class="card testimonial h-100 text-center bg-transparent mb-0">
-                    <blockquote class="blockquote card-body bg-white shadow-sm rounded d-flex flex-column px-lg-5">
-                        <p class="fs-1 text-secondary o-25 mb-0"><i class="fas fa-quote-right"></i></p>
-                        <p class="fs-6">Explicabo facere maxime fuga voluptates saepe tenetur veniam iste, vitae
-                            maiores. Quis voluptates unde culpa</p>
-                        <p class="text-secondary text-decoration-none fs-sm mt-auto mb-3 o-75">&mdash;<span
-                                class="fw-bold"> John Doe</span> - Software Deveoloper</p>
-                        <div class="img px-3 px-lg-4">
-                            <img loading="lazy"
-                                src="http://assets.coolorize.com/avatar/256x256/photo-1423483786645-576de98dcbed.jpg"
-                                class="img rounded-circle" alt="Image" />
-                        </div>
-                    </blockquote>
-                </figure>
-                <!-- /.card -->
-            </div>
-            <!-- /.col-12 col-sm-6 col-lg-4 -->
+
         </div>
         <!-- /.row cities -->
 
@@ -187,4 +117,4 @@
 </section>
 <!-- #testimonials-1.section pb-6 mt-n4 mt-lg-n5 mt-xl-n6 -->
 
-<?php require_once("../../Includes/footer.php");?>
+<?php require_once("Views/Includes/footer.php");?>

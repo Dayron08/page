@@ -1,4 +1,8 @@
-<?php require_once("../../Includes/headerAdmin.php");?>
+<?php require_once("../../Includes/headerAdmin.php");
+if(isset($_REQUEST['TELEFONO'])){
+    $name = $_REQUEST['NOMBRE'];
+}
+?>
 <section id="page-hero"
     class="section section__inverse justify-content-center py-5 py-lg-6 mb-n5 vh-350 h-lg-1000px min-h-1000px">
     <div class="bg bg-img position-absolute" data-bg-img=".img">
@@ -37,19 +41,21 @@
                                     <dl class="col-6 col-lg-4 my-0">
                                         <dt class="fw-normal fs-sm text-uppercase text-secondary">N&uacute;mero de
                                             identificaci&oacute;n</dt>
-                                        <input type="text" class="form-control shadow-none mt-3 mb-3">
+                                        <input type="text" class="form-control shadow-none mt-3 mb-3" value="NO">
                                     </dl>
                                     <!-- /.col-6 -->
 
                                     <dl class="col-6 col-lg-4 my-0">
                                         <dt class="fw-normal fs-sm text-uppercase text-secondary">Nombre</dt>
-                                        <input type="text" class="form-control shadow-none mt-3 mb-3">
+                                        <input type="text" class="form-control shadow-none mt-3 mb-3"
+                                            value="<?=$name?>">
                                     </dl>
                                     <!-- /.col-6 -->
 
                                     <dl class="col-6 col-lg-4 my-0">
                                         <dt class="fw-normal fs-sm text-uppercase text-secondary">Apellidos</dt>
-                                        <input type="text" class="form-control shadow-none mt-3 mb-3">
+                                        <input type="text" class="form-control shadow-none mt-3 mb-3"
+                                            value="<?=$surname?>">
                                     </dl>
                                     <!-- /.col-6 -->
 
@@ -57,47 +63,45 @@
                                         <dt class="fw-normal fs-sm text-uppercase text-secondary">Fecha de
                                             nacimiento
                                         </dt>
-                                        <input type="text" class="form-control shadow-none mt-3 mb-3">
+                                        <input type="text" class="form-control shadow-none mt-3 mb-3"
+                                            value="<?=$date_of_birth?>">
                                     </dl>
                                     <!-- /.col-6 -->
 
                                     <dl class="col-6 col-lg-4 my-0">
                                         <dt class="fw-normal fs-sm text-uppercase text-secondary">G&eacute;nero</dt>
-                                        <input type="text" class="form-control shadow-none mt-3 mb-3">
+                                        <input type="text" class="form-control shadow-none mt-3 mb-3"
+                                            value="<?=$gender?>">
                                     </dl>
                                     <!-- /.col-6 -->
 
                                     <dl class="col-6 col-lg-4 my-0">
                                         <dt class="fw-normal fs-sm text-uppercase text-secondary">Constrase&ntilde;a
                                         </dt>
-                                        <input type="text" class="form-control shadow-none mt-3 mb-3">
+                                        <input type="password" class="form-control shadow-none mt-3 mb-3"
+                                            value="<?=$pass?>">
                                     </dl>
                                     <!-- /.col-6 -->
 
                                     <dl class="col-6 col-lg-4 my-0">
                                         <dt class="fw-normal fs-sm text-uppercase text-secondary">Fecha de ingreso
                                         </dt>
-                                        <input type="text" class="form-control shadow-none mt-3 mb-3">
+                                        <input type="text" class="form-control shadow-none mt-3 mb-3" value="NO">
                                     </dl>
                                     <!-- /.col-6 -->
 
                                     <dl class="col-6 col-lg-4 my-0">
                                         <dt class="fw-normal fs-sm text-uppercase text-secondary">Tipo de persona
                                         </dt>
-                                        <input type="text" class="form-control shadow-none mt-3 mb-3">
+                                        <input type="text" class="form-control shadow-none mt-3 mb-3" value="NO">
                                     </dl>
                                     <!-- /.col-6 -->
 
-                                    <dl class="col-6 col-lg-4 my-0">
-                                        <dt class="fw-normal fs-sm text-uppercase text-secondary">Correo</dt>
-                                        <input type="text" class="form-control shadow-none mt-3 mb-3">
-                                    </dl>
-                                    <!-- /.col-6 -->
                                 </div>
                                 <!-- /.row -->
                                 <p class="text-light mt-3 d-grid gap-2 d-md-flex justify-content-md-end">
-                <a class=" btn btn-warning shadow-none px-4 fw-bold mt-1" href="#" id="btn_savePersonalInformation"><i
-                                        class="fas fa-pen"></i> Guardar cambios</a>
+                                    <a class=" btn btn-warning shadow-none px-4 fw-bold mt-1" href="#"
+                                        id="btn_savePersonalInformation"><i class="fas fa-pen"></i> Guardar cambios</a>
                                 </p>
                                 <!-- /.text-light -->
                             </div>
@@ -124,14 +128,16 @@
 
                                     <dl class="col-6 col-lg-4 my-0">
                                         <dt class="fw-normal fs-sm text-uppercase text-secondary">Correo</dt>
-                                        <input type="text" class="form-control shadow-none mt-3 mb-3">
+                                        <input type="text" class="form-control shadow-none mt-3 mb-3"
+                                            alue="<?=$email?>">
                                     </dl>
                                     <!-- /.col-6 -->
 
                                     <dl class="col-6 col-lg-4 my-0">
                                         <dt class="fw-normal fs-sm text-uppercase text-secondary">Tel&eacute;fono
                                         </dt>
-                                        <input type="text" class="form-control shadow-none mt-3 mb-3">
+                                        <input type="text" class="form-control shadow-none mt-3 mb-3"
+                                            alue="<?=$phone?>">
                                     </dl>
                                     <!-- /.col-6 -->
                                 </div>
@@ -168,7 +174,7 @@
                             aria-labelledby="schedulleTab">
                             <form action="#" class="">
                                 <div class="btn-group w-100 mb-3" role="group">
-                                    <img loading="lazy" src="../../img/20210710_021750_112124.jpg" class="w-100"
+                                    <img loading="lazy" src="../../img/<?=$profile_photo?>.jpg" class="w-100"
                                         alt="Image" style="border-radius: 45%; width: 100%; height : 200px; " />
                                 </div>
                                 <!-- /.btn-group -->
@@ -234,6 +240,7 @@
     <!-- modal-dialog modal-dialog-centered -->
 </div>
 <!-- #new_imageProfile -->
+
 
 
 <?php require_once("../../Includes/footerAdmin.php");?>
