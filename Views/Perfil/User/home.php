@@ -91,14 +91,6 @@
                         </div>
                         <!-- /.card -->
                     </div>
-
-
-
-
-
-
-
-
                 </div>
                 <!-- /.swiper-wrapper -->
             </div>

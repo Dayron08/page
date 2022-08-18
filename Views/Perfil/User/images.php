@@ -1,14 +1,14 @@
-<?php require_once("../../Includes/header.php");?>
+<?php require_once("Views/Includes/header.php");?>
 
 <section id="page-hero"
     class="section section__inverse justify-content-center py-5 py-lg-6 mb-n5 vh-50 h-lg-480px min-h-330px">
     <div class="bg bg-img position-absolute" data-bg-img=".img">
-        <img loading="lazy" src="../../img/image_wallpaper.jpg" class="img" alt="Image" />
+        <img loading="lazy" src="Views/img/image_wallpaper.jpg" class="img" alt="Image" />
 
         <div class="overlay bg-dark position-absolute o-50"></div>
     </div>
     <!-- /.bg bg-img position-absolute -->
- 
+
     <div class="container-xl position-relative section-content text-center py-4">
         <h2 class="display-5 text-white mt-3 mt-lg-4">Imagenes Relacionadas</h2>
 
@@ -32,8 +32,8 @@
             <div class="col-12 col-sm-6 col-md-3 d-flex">
                 <div class="card-body bg-white shadow-sm rounded d-flex flex-column px-lg-10">
                     <div class="card-img-top overflow-hidden position-relative">
-                      
-                        <img loading="lazy" src="../../img/church/image_01.jpg" class="w-100" alt="Image"
+
+                        <img loading="lazy" src="Views/img/church/image_01.jpg" class="w-100" alt="Image"
                             style="width: 100%; height : 250px;" />
                     </div>
                 </div>
@@ -79,8 +79,8 @@
             <div class="col-12 col-sm-6 col-md-3 d-flex">
                 <div class="card-body bg-white shadow-sm rounded d-flex flex-column px-lg-10">
                     <div class="card-img-top overflow-hidden position-relative">
-                       
-                        <img loading="lazy" src="../../img/young_people/image_01.jpg" class="w-100" alt="Image"
+
+                        <img loading="lazy" src="Views/img/young_people/image_01.jpg" class="w-100" alt="Image"
                             style="width: 100%; height : 250px;" />
                     </div>
                 </div>
@@ -125,8 +125,8 @@
             <div class="col-12 col-sm-6 col-md-3 d-flex">
                 <div class="card-body bg-white shadow-sm rounded d-flex flex-column px-lg-10">
                     <div class="card-img-top overflow-hidden position-relative">
-                        
-                        <img loading="lazy" src="../../img/children/image_02.jpg" class="w-100" alt="Image"
+
+                        <img loading="lazy" src="Views/img/children/image_02.jpg" class="w-100" alt="Image"
                             style="width: 100%; height : 250px;" />
                     </div>
                 </div>
@@ -203,4 +203,4 @@
 
 
 
-<?php require_once("../../Includes/footer.php");?>
+<?php require_once("Views/Includes/footer.php");?>
