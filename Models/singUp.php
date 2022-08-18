@@ -210,7 +210,3 @@ class SingUp extends Connection_Mysql {
 	}
 
 }
-
-
-
-
