@@ -16,9 +16,9 @@
         rel="stylesheet">
 
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <link rel="stylesheet" href="Views/css/estilos.css">
-    <script src="Views/js/jquery-3.6.0.min.js"></script>
-    <script src="Views/js/ajax/ajaxUser.js"></script>
+    <link rel="stylesheet" href="../../css/estilos.css">
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script src="../../js/ajax/ajaxUser.js"></script>
 
 
 </head>
@@ -54,7 +54,7 @@
 
                     <div class="campoo">
                         <input type="password" placeholder="Contraseña" id="txt_pass">
-                        <img src="Views/img/eyes1 .png" alt="" id="eye">
+                        <img src="../../img/eyes1 .png" alt="" id="eye">
                         <p id="alert_passwordd"></p>
                     </div>
 
@@ -83,7 +83,7 @@
 
                     <div class="campo">
                         <input type="password" placeholder="Contraseña" id="txt_password">
-                        <img src="Views/img/eyes1 .png" alt="" id="eyes">
+                        <img src="../../img/eyes1 .png" alt="" id="eyes">
                         <p id="alert_password"></p>
                     </div>
 
@@ -99,7 +99,7 @@
 
     </main>
 
-    <script src="Views/js/script.js"></script>
+    <script src="../../js/script.js"></script>
 </body>
 
 </html>

@@ -1,6 +1,6 @@
 <?php
 require_once("../Models/singUp.php");
-
+echo "estou awui";
 $selectimage = new SingUp();
  
 $result = $selectimage->readimages();
@@ -12,4 +12,3 @@ echo $json_string;
 $file = "../Views/js/json/images.json";
 
 file_put_contents($file, $json_string);
-

@@ -1,9 +1,9 @@
-<?php require_once("Views/Includes/header.php");?>
+<?php require_once("../../Includes/header.php");?>
 
 <body>
     <section id="page-hero" class="section section__inverse justify-content-center pt-6 pb-4 pb-lg-5 pb-xl-6">
         <div class="bg bg-img position-absolute" data-bg-img=".img">
-            <img loading="lazy" src="Views/img/contact_wallpaper.jpg" class="img" alt="Image" />
+            <img loading="lazy" src="../../img/contact_wallpaper.jpg" class="img" alt="Image" />
         </div>
         <!-- /.bg bg-img position-absolute -->
         <div class="container-xl position-relative section-content text-center py-4">
@@ -29,7 +29,7 @@
                 <div class="col-md-3">
                     <a href="https://www.facebook.com/pactodevida">
                         <span class="fa-stack fa-4x">
-                            <img loading="lazy" src="Views/img/Facebook.png" class="img" alt="Image" width="100" />
+                            <img loading="lazy" src="../../img/Facebook.png" class="img" alt="Image" width="100" />
                         </span>
                         <h4 class="my-3">Facebook</h4>
                         <p class="text-muted">Iglesia Pacto de vida</p>
@@ -38,7 +38,7 @@
                 <div class="col-md-3">
                     <a href="">
                         <span class="fa-stack fa-4x">
-                            <img src="Views/img/instagram.png" class="img" alt="Image" width="100" />
+                            <img src="../../img/instagram.png" class="img" alt="Image" width="100" />
                         </span>
                         <h4 class="my-3">Instagram</h4>
                         <p class="text-muted">Iglesia Pacto de vida</p>
@@ -47,7 +47,7 @@
                 <div class="col-md-3">
                     <a href="https://api.whatsapp.com/send?phone=83195333">
                         <span class="fa-stack fa-4x">
-                            <img loading="lazy" src="Views/img/WhatsApp.png" class="img" alt="Image" width="180" />
+                            <img loading="lazy" src="../../img/WhatsApp.png" class="img" alt="Image" width="180" />
                         </span>
                         <h4 class="my-3">Whatsapp</h4>
                         <p class="text-muted">88889999</p>
@@ -56,7 +56,7 @@
                 <div class="col-md-3">
                     <a href="https://www.youtube.com/channel/UCjQ7pvR-L9Kh8SGJPBQ0mIw">
                         <span class="fa-stack fa-4x">
-                            <img loading="lazy" src="Views/img/Youtube.png" class="img" alt="Image" width="100" />
+                            <img loading="lazy" src="../../img/Youtube.png" class="img" alt="Image" width="100" />
                         </span>
                         <h4 class="my-3">You Tube</h4>
                         <p class="text-muted">Iglesia Pacto de Vida</p>
@@ -71,7 +71,7 @@
 
     <section id="searchbox-2" class="section bg-dark py-5 py-lg-6">
         <div class="bg bg-img position-absolute o-75 " data-bg-img=".img">
-            <img loading="lazy" src="Views/img/contact_form.jpg" class="img" alt="Image" />
+            <img loading="lazy" src="../../img/contact_form.jpg" class="img" alt="Image" />
 
             <div class="overlay bg-dark position-absolute o-25"></div>
         </div>
@@ -155,4 +155,4 @@
         </div>
     </section>
 
-    <?php require_once("Views/Includes/footer.php");?>
+    <?php require_once("../../Includes/footer.php");?>
