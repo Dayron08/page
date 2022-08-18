@@ -2,7 +2,7 @@ $(document).ready(function (e) {
 
 
     // lectura todos las imagenes
-    var url = "../../../Controllers/call_imagesHome.php";
+    var url = "Controllers/call_imagesHome.php";
     $.getJSON(url, function (datos) {
 
         $.each(datos, function (i, images) {
@@ -35,7 +35,7 @@ $(document).ready(function (e) {
 
 
     //  // lectura testimonios en home 
-    var url = "../../../Controllers/call_testimonialsHome.php";
+    var url = "Controllers/call_testimonialsHome.php";
     $.getJSON(url, function (dato) {
 
         $.each(dato, function (i, testimonial) {
@@ -61,7 +61,7 @@ $(document).ready(function (e) {
 
 
     // lectura para todos los testimonios 
-    var url = "../../../Controllers/call_testimonials.php";
+    var url = "Controllers/call_testimonials.php";
     $.getJSON(url, function (dato) {
 
         $.each(dato, function (i, testimonials) {
@@ -90,7 +90,7 @@ $(document).ready(function (e) {
     });
 
     // lectura para todos las consultas
-    var url = "../../../Controllers/call_consul.php";
+    var url = "Controllers/call_consul.php";
     $.getJSON(url, function (dato) {
 
         $.each(dato, function (i, consul) {
@@ -115,7 +115,7 @@ $(document).ready(function (e) {
     });
 
     // lectura para todos los testimonios User
-    var url = "../../../Controllers/call_testimonials.php";
+    var url = "Controllers/call_testimonials.php";
     $.getJSON(url, function (dato) {
 
         $.each(dato, function (i, testimonials) {
@@ -151,7 +151,7 @@ $(document).ready(function (e) {
         var txt_text = $("#txt_text").val();
 
         $.ajax({
-            url: "../../../Controllers/insertQuery.php",
+            url: "Controllers/insertQuery.php",
             method: "POST",
             data: { txt_names: txt_names, txt_lastnames: txt_lastnames, txt_gmail: txt_gmail, txt_subject: txt_subject, txt_text: txt_text },
             success: function (dataresponse, statustext, response) {
@@ -179,7 +179,7 @@ $(document).ready(function (e) {
 
 
         $.ajax({
-            url: "../../../Controllers/insertTestimony.php",
+            url: "Controllers/insertTestimony.php",
             method: "POST",
             data: { txt_testimony: txt_testimony, txt_person: txt_person },
             success: function (dataresponse, statustext, response) {

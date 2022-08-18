@@ -10,14 +10,14 @@ if(isset($_REQUEST("TELEFONO"))){
     $pass = $_REQUEST['PASSWORD_PERSONA'];
 
     var_dump($_REQUEST);
-    require_once("../../Includes/headerAdmin.php");
+    require_once("Views/Includes/headerAdmin.php");
 
 ?>
 
 <section id="page-hero"
     class="section section__inverse justify-content-center py-5 py-lg-6 mb-n5 vh-350 h-lg-1000px min-h-1000px">
     <div class="bg bg-img position-absolute" data-bg-img=".img">
-        <img loading="lazy" src="../../img/home.jpg" class="img" alt="Image" />
+        <img loading="lazy" src="Views/img/home.jpg" class="img" alt="Image" />
 
         <div class="overlay bg-dark position-absolute o-50"></div>
     </div>
@@ -185,7 +185,7 @@ if(isset($_REQUEST("TELEFONO"))){
                             aria-labelledby="schedulleTab">
                             <form action="#" class="">
                                 <div class="btn-group w-100 mb-3" role="group">
-                                    <img loading="lazy" src="../../img/<?=$profile_photo?>.jpg" class="w-100"
+                                    <img loading="lazy" src="Views/img/<?=$profile_photo?>.jpg" class="w-100"
                                         alt="Image" style="border-radius: 45%; width: 100%; height : 200px; " />
                                 </div>
                                 <!-- /.btn-group -->
@@ -254,7 +254,7 @@ if(isset($_REQUEST("TELEFONO"))){
 
 
 
-<?php require_once("../../Includes/footerAdmin.php");
+<?php require_once("Views/Includes/footerAdmin.php");
 }else{
     echo "error al esperar los datos";
     }

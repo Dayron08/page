@@ -13,4 +13,3 @@ echo $json_string;
 $file = "../Views/js/json/testimonialsHome.json";
 
 file_put_contents($file, $json_string);
-

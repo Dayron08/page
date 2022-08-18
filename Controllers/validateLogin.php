@@ -1,4 +1,6 @@
 <?php
+
+echo"Estoy";
 require_once("../Models/singUp.php");
 
 $select = new SingUp();

@@ -138,7 +138,7 @@ $(document).ready(function () {
     //login
 
     $("#btn_entrar").click(function (e) {
-        var data;
+        // var data;
 
         //   e.preventDefault();
 
@@ -199,7 +199,7 @@ $(document).ready(function () {
                         alert("Datos no encontrados");
                         location.href = "#";
                     }
-                    data = dataresponse;
+                    // data = dataresponse;
                 }
             },
 

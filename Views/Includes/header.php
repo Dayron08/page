@@ -99,12 +99,6 @@
                                 </li>
 
                                 <li><a class="dropdown-item" href="index.php?access=U-105">Im&aacute;genes</a></li>
-
-                                <li><a class="dropdown-item" href="../User/videos.php">Videos</a></li>
-
-                                <li><a class="dropdown-item" href="../User/images.php">Im&aacute;genes</a></li>
-
-
                                 <li>
                                     <hr class="dropdown-divider" />
                                 </li>

@@ -61,7 +61,7 @@
 
                     <button type="submit" id="btn_entrar">Entrar</button>
                     <br>
-                    <a class="btn rounded-pill shadow-none me-2 px-4 fw-bold " href="../Admin/home.php">Menu
+                    <a class="btn rounded-pill shadow-none me-2 px-4 fw-bold " href="index.php?access=A-201">Menu
                         principal</a>
                 </form>
 
@@ -98,7 +98,8 @@
 
                     <button class="btn btn-info" id="btn_singUp" type="submit">Registrarse</button>
                     <br>
-                    <a class="rounded-pill shadow-none me-2 px-4 fw-bold" href="../Admin/home.php">Menu principal</a>
+                    <a class="rounded-pill shadow-none me-2 px-4 fw-bold" href="index.php?access=A-201">Menu
+                        principal</a>
 
                 </form>
             </div>
