@@ -89,11 +89,11 @@ $(document).ready(function (e) {
 
     });
 
-    // lectura para todos las consultas
-    var url = "Controllers/call_consul.php";
+    // lectura para todos las videostas
+    var url = "Controllers/call_videos.php";
     $.getJSON(url, function (dato) {
 
-        $.each(dato, function (i, consul) {
+        $.each(dato, function (i, videos) {
 
             var t =
                 "<div class=\"col-12 col-sm-6 col-lg-4 d-flex align-items-stretch\">" +
@@ -101,14 +101,14 @@ $(document).ready(function (e) {
                 "<blockquote class=\"blockquote card-body bg-white shadow-sm rounded d-flex flex-column px-lg-5\">" +
                 "<button class=\"btn btn-link p-0 ms-4 shadow-none\"><a id=\"buttondelete\" class=\"fa fa-trash fa-lg\" href=\"#\"></a></button>" +
                 "<input type=\"checkbox\" id=\"check\" >" +
-                "<p class=\"fs-1 text-secondary o-25 mb-0\">" + consul.subject + "</p>" +
-                "<p class=\"fs-6\">" + consul.consul + "</p>" +
-                "<p class=\"text-secondary text-decoration-none fs-sm mt-auto mb-3 o-75\">&mdash;<span class=\"fw-bold\">" + consul.name + "</span>  -" + consul.gmail + "</p>" +
+                "<p class=\"fs-1 text-secondary o-25 mb-0\">" + videos.subject + "</p>" +
+                "<p class=\"fs-6\">" + videos.videos + "</p>" +
+                "<p class=\"text-secondary text-decoration-none fs-sm mt-auto mb-3 o-75\">&mdash;<span class=\"fw-bold\">" + videos.name + "</span>  -" + videos.gmail + "</p>" +
                 "</blockquote>" +
                 "</figure>" +
                 "</div>";
 
-            $(t).appendTo("#bodyconsul");
+            $(t).appendTo("#bodyvideos");
 
         });
 
@@ -140,6 +140,58 @@ $(document).ready(function (e) {
         });
 
     });
+
+    // this is to see videos in user
+    var url = "Controllers/call_videos.php";
+    $.getJSON(url, function (dato) {
+
+        $.each(dato, function (i, videos) {
+
+            var v =
+
+                "<div class=\"col-12 col-sm-6 col-md-4 col-lg-3 d-flex align-items-stretch\">" +
+
+                "<div class=\"card-body bg-white shadow-sm rounded d-flex flex-column px-lg-10\">"
+            "<input type=\"checkbox\" id = \"checkbox_videos\">"
+            "< iframe class=\"w - 100\" src = \"https://www.youtube.com/embed/" + videos.url + " title = \"YouTube video player\"frameborder = \"0\"allow = \"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\"allowfullscreen ></iframe > " +
+
+                "</div >" +
+
+                "</div >";
+
+
+            $(v).appendTo("#all_videos");
+
+        });
+
+    });
+
+    // this is to see videos in admin
+    var url = "Controllers/call_videos.php";
+    $.getJSON(url, function (dato) {
+
+        $.each(dato, function (i, videos) {
+
+            var v =
+
+                "<div class=\"col-12 col-sm-6 col-md-4 col-lg-3 d-flex align-items-stretch\">" +
+
+                "<div class=\"card-body bg-white shadow-sm rounded d-flex flex-column px-lg-10\">"
+            "<input type=\"checkbox\" id = \"checkbox_videos\">"
+            "< iframe class=\"w - 100\" src = \"https://www.youtube.com/embed/" + videos.url + " title = \"YouTube video player\"frameborder = \"0\"allow = \"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\"allowfullscreen ></iframe > " +
+
+                "</div >" +
+
+                "</div >";
+
+
+            $(v).appendTo("#all_videos");
+
+        });
+
+    });
+
+
 
 
     $("#btn_query").click(function (e) {

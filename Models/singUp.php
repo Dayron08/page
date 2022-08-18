@@ -204,6 +204,22 @@ class SingUp extends Connection_Mysql {
 
 	}
 
+	
+	public function view_videos() {
+		
+		$this->query = "CALL P_VER_VIDEO_RECIENTE();";
+		$this->execute($this->query);
+
+	   $video = array();
+		while ($result = mysqli_fetch_assoc($this->result)) {
+			$video []= array(
+				"url"=> $result["URL"]);
+		}
+		
+		return $video;
+
+	}
+
 	public function readConsul() {
 		
 		$this->query = "CALL P_VER_CONSULTAS_BY_FECHA();";
