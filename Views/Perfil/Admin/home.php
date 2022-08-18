@@ -1,8 +1,8 @@
-<?php require_once("../../Includes/headerAdmin.php");?>
+<?php require_once("Views/Includes/headerAdmin.php");?>
 <section id="we-do-2" class="section bg-dark py-5 py-lg-6">
     <div class="bg bg-img position-absolute " data-bg-img=".img">
-        <img src="../../img/home.jpg" class="img" alt="Image" />
- 
+        <img src="Views/img/home.jpg" class="img" alt="Image" />
+
         <div class="overlay bg-black position-absolute o-50"></div> <!-- on image-->
     </div>
     <!-- /.bg bg-img position-absolute bg-dark -->
@@ -63,26 +63,26 @@
             <p class="leadmb-0 o-75">Conoce nuestra Iglesia</p>
         </header>
         <!-- /.section-header mb-5 -->
- 
+
 
         <div class="swiper-container with-pagination">
             <div id="listing-swiper-1-expand-swiper" class="swiper expand-w" data-js-swiper="auto">
                 <div class="swiper-wrapper" id="tbodyimg">
-                
 
-                    
+
+
                     <div class="swiper-slide w-330px h-330px pe-4 d-flex">
-                            <div class="card shadow-sm shadow-hover trans-base zoom-bg-img o-hover-all">
-                                <div class="card-img bg bg-img" data-bg-img=".img">
-                                    <img loading="lazy" src="../../img/church/image_01.jpg" class="img" alt="Image" />
-                                    <div class="overlay bg-dark position-absolute o-25 o-50-hover"></div>
-                                </div>
-                                <!-- /.card-img bg bg-img -->
-
+                        <div class="card shadow-sm shadow-hover trans-base zoom-bg-img o-hover-all">
+                            <div class="card-img bg bg-img" data-bg-img=".img">
+                                <img loading="lazy" src="Views/img/church/image_01.jpg" class="img" alt="Image" />
+                                <div class="overlay bg-dark position-absolute o-25 o-50-hover"></div>
                             </div>
-                            <!-- /.card -->
+                            <!-- /.card-img bg bg-img -->
+
+                        </div>
+                        <!-- /.card -->
                     </div>
-                     
+
 
                 </div>
                 <!-- /.swiper-wrapper -->
@@ -104,7 +104,7 @@
                     <div data-swiper-id="#listing-swiper-1-expand-swiper" class="swiper-pagination w-auto bottom-0"
                         data-swiper-pagination-limit="2"></div>
 
-                    <a href="../Admin/images.php"
+                    <a href="Views/Perfil/Admin/images.php"
                         class="btn btn-link btn-sm btn-more text-uppercase fw-bold shadow-none o-50 o-100-hover ms-3 trans-base px-0">Todas
                         las imagenes<i class="fas fa-long-arrow-alt-right"></i></a>
                 </div>
@@ -132,7 +132,7 @@
                 <div class="position-relative expand-w h-100 o-75">
                     <div class="bg bg-img position-absolute" data-bg-img=".img">
 
-                    <iframe width="650" height="450"
+                        <iframe width="650" height="450"
                             src="https://www.youtube.com/embed/s-SR7Xc0yhM?autoplay=1&mute=1&loop=1&start=50&controls=0"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -169,13 +169,13 @@
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="container-xl position-relative">
-                        <div class="row testimonials g-4" id="tbodytestimonial" >
-                            
-                            
-                             
-                            
-                            
-                          
+                        <div class="row testimonials g-4" id="tbodytestimonial">
+
+
+
+
+
+
                             <!-- /.col-6 col-md d-flex align-items-stretch -->
                         </div>
                         <!-- /.row testimonials  -->
@@ -202,10 +202,10 @@
                                         </div>
                                     </blockquote>
                                 </figure> -->
-                                <!-- /.card -->
-                            <!-- </div> -->
-                            <!-- /.col-12 col-md d-flex align-items-stretch -->
-<!-- 
+                <!-- /.card -->
+                <!-- </div> -->
+                <!-- /.col-12 col-md d-flex align-items-stretch -->
+                <!-- 
                             <div class="col-6 col-md d-flex align-items-stretch">
                                 <figure class="card testimonial h-100 text-start bg-transparent mb-0">
                                     <blockquote
@@ -221,11 +221,11 @@
                                         </div>
                                     </blockquote>
                                 </figure> -->
-                                <!-- /.card -->
-                            <!-- </div> -->
-                            <!-- /.col-6 col-md d-flex align-items-stretch -->
+                <!-- /.card -->
+                <!-- </div> -->
+                <!-- /.col-6 col-md d-flex align-items-stretch -->
 
-                            <!-- <div class="col-6 col-md d-flex align-items-stretch">
+                <!-- <div class="col-6 col-md d-flex align-items-stretch">
                                 <figure class="card testimonial h-100 text-start bg-transparent mb-0">
                                     <blockquote
                                         class="cardsbg blockquote card-body shadow-sm rounded d-flex flex-column px-lg-5">
@@ -240,13 +240,13 @@
                                         </div>
                                     </blockquote>
                                 </figure> -->
-                                <!-- /.card -->
-                            <!-- </div> -->
-                            <!-- /.col-6 col-md d-flex align-items-stretch -->
-                        <!-- </div> -->
-                        <!-- /.row testimonials  -->
-                    <!-- </div> -->
-                    <!-- /.container-xl position-relative -->
+                <!-- /.card -->
+                <!-- </div> -->
+                <!-- /.col-6 col-md d-flex align-items-stretch -->
+                <!-- </div> -->
+                <!-- /.row testimonials  -->
+                <!-- </div> -->
+                <!-- /.container-xl position-relative -->
                 <!-- </div> -->
                 <!-- /.swiper-slide -->
             </div>
@@ -269,7 +269,7 @@
                 <div data-swiper-id="#testimonials-swiper-1-swiper" class="swiper-pagination w-auto bottom-0"
                     data-swiper-pagination-limit="2"></div>
 
-                <a href="../Admin/testimonials.php"
+                <a href="Views/Perfil/Admin/testimonials.php"
                     class="btn btn-link btn-sm btn-more text-uppercase fw-bold shadow-none o-50 o-100-hover ms-3 trans-base px-0">Todos
                     los testimonios<i class="fas fa-long-arrow-alt-right"></i></a>
             </div>
@@ -279,4 +279,4 @@
 </section>
 <!-- #testimonials-swiper-1.section py-5 py-lg-6 -->
 
-<?php require_once("../../Includes/footerAdmin.php");?>
+<?php require_once("Views/Includes/footerAdmin.php");?>

@@ -3,7 +3,7 @@
 session_start();
 
 if(!isset($_GET['access'])){
-    require_once("Controllers/contents/home_user.php");
+    require_once("Controllers/contents/home_admin.php");
 }else{
     require_once("Controllers/util.php");
     $util = new Util();
