@@ -213,7 +213,7 @@ class SingUp extends Connection_Mysql {
 	   $video = array();
 		while ($result = mysqli_fetch_assoc($this->result)) {
 			$video []= array(
-				"url"=> $result["URL"]);
+				"url"=> $result["DIRECCION_DE_VIDEO"]);
 		}
 		
 		return $video;
