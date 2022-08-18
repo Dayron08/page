@@ -146,17 +146,17 @@ $(document).ready(function(e){
          var url = "../../../Controllers/call_events.php";
          $.getJSON(url, function(dato){
  
-             $.each(dato, function(i, testimonials){
+             $.each(dato, function(i, events){
                  
                  var t = 
                     "<div class=\"col-12 col-sm-6 col-md-3 d-flex\">"+
                         "<div class=\"card\" style=\"width: 18rem;\">"+
-                            "<img src=\"../../img/nathan-mullet-GoFys2bZJaE-unsplash.jpg\" class=\"card-img-top\" alt=\"...\">"+
+                            "<img style=\"width: 287px; height: 200px;\" src=\"../../img/"+events.img+"\" class=\"card-img-top\" alt=\"...\">"+
                             "<div class=\"card-body\">"+
-                                "<h5 class=\"card-title\">Japan</h5>"+
-                                "<div class=\"card-footer bg-transparent fs-sm\"><span class=\"o-50\">By</span> <a href=\"\""+
-                                                "class=\"fw-bold o-50 o-100-hover trans-base position-relative zi-20\">John Doe</a> <span"+
-                                                "class=\"o-50\">in</span> <a href=\"\""+
+                                "<h5 class=\"card-title\">"+events.nameEvent+"</h5>"+
+                                "<div class=\"card-footer bg-transparent fs-sm\"><span class=\"o-50\"> Por </span> <a "+
+                                                "class=\"fw-bold o-50 o-100-hover trans-base position-relative zi-20\">"+events.name+"</a><br> <span"+
+                                                "class=\"o-50\"> Fecha: </span>"+events.date+"<a href=\"\""+
                                                 "class=\"fw-bold o-50 o-100-hover trans-base position-relative zi-20\">News</a>"+
                                 "</div>"+
                                 "<div class=\"d-grid gap-2 d-md-flex justify-content-md-end\">"+

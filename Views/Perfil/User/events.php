@@ -42,6 +42,8 @@
             <!-- /.section-header mb-5 visually-hidden -->
 
             <div class="row g-4 mb-5">
+
+            
                 <div class="col-12 col-sm-6 col-md-3 d-flex">
                     <div class="card card__minimal h-100">
                         <div class="card-img-top overflow-hidden position-relative">

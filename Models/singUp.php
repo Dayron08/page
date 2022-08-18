@@ -203,6 +203,25 @@ class SingUp extends Connection_Mysql {
 
 	}
 
+	public function readEvents() {
+		
+		$this->query = "CALL P_HISTORICO_EVENTO();";
+		$this->execute($this->query);
+
+	   $events = array();
+		while ($result = mysqli_fetch_assoc($this->result)) {
+			$events []= array(
+				"nameEvent"=> $result["NOMBRE_EVENTO"],
+				"name" => $result["ENCARGADO"],
+				"dsc" => $result["DSC_EVENTO"],
+				"img" => $result["IMG_PATH"],
+				"date" => $result["FECHA_EVENTO"]);
+		}
+		
+		return $events ;
+
+	}
+
 	public function readConsul() {
 		
 		$this->query = "CALL P_VER_CONSULTAS_BY_FECHA();";
