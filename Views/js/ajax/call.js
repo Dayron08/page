@@ -141,32 +141,8 @@ $(document).ready(function (e) {
 
     });
 
-    // this is to see videos in user
-    var url = "Controllers/call_videos.php";
-    $.getJSON(url, function (dato) {
 
-        $.each(dato, function (i, videos) {
-
-            var v =
-
-                "<div class=\"col-12 col-sm-6 col-md-4 col-lg-3 d-flex align-items-stretch\">" +
-
-                "<div class=\"card-body bg-white shadow-sm rounded d-flex flex-column px-lg-10\">"
-            "<input type=\"checkbox\" id = \"checkbox_videos\">"
-            "< iframe class=\"w - 100\" src = \"https://www.youtube.com/embed/" + videos.url + " title = \"YouTube video player\"frameborder = \"0\"allow = \"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\"allowfullscreen ></iframe > " +
-
-                "</div >" +
-
-                "</div >";
-
-
-            $(v).appendTo("#all_videos");
-
-        });
-
-    });
-
-    // this is to see videos in admin
+    // this is to see videos
     var url = "Controllers/call_videos.php";
     $.getJSON(url, function (dato) {
 

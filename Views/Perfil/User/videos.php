@@ -41,43 +41,8 @@
         </div>
         <!-- /.section-filter -->
 
-        <div class="row properties g-4 mb-6">
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex align-items-stretch">
-                <iframe class="w-100" src="https://www.youtube.com/embed/8ZZODSL8pBA" title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-                <!-- /.card -->
-            </div>
-            <!-- /.col-12 col-md-3 d-flex align-items-stretch -->
+        <div class="row properties g-4 mb-6" id="all_videos">
 
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex align-items-stretch">
-                <iframe class="w-100" src="https://www.youtube.com/embed/a5VcoPEaFGM" title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-                <!-- /.card -->
-            </div>
-            <!-- /.col-12 col-md-3 d-flex align-items-stretch -->
-
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex align-items-stretch">
-                <iframe class="w-100" src="https://www.youtube.com/embed/kjHJMYH4w0Q" title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-                <!-- /.card -->
-            </div>
-            <!-- /.col-12 col-md-3 d-flex align-items-stretch -->
-
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex align-items-stretch">
-                <iframe class="w-100" src="https://www.youtube.com/embed/Lo3RbQw1ics" title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-                <!-- /.card -->
-            </div>
-
-            <!-- /.col-12 col-md-3 d-flex align-items-stretch -->
         </div>
         <!-- /.row properties -->
 
