@@ -99,7 +99,7 @@
                                             placeholder="Your Name" id="txt_names" />
                                         <label>Nombre</label>
                                     </div>
-                                </div>
+                                </div> 
                                 <div class="col-md-4">
                                     <div class="form-floating">
                                         <input type="text" class="form-control border-0 bg-light"
