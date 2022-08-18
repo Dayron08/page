@@ -1,7 +1,7 @@
-<?php require_once("../../Includes/headerAdmin.php");?>
+<?php require_once("Views/Includes/headerAdmin.php");?>
 <section id="we-do-2" class="section bg-dark py-5 py-lg-6">
     <div class="bg bg-img position-absolute " data-bg-img=".img">
-        <img src="../../img/home.jpg" class="img" alt="Image" />
+        <img src="Views/img/home.jpg" class="img" alt="Image" />
 
         <div class="overlay bg-black position-absolute o-50"></div> <!-- on image-->
     </div>
@@ -74,7 +74,7 @@
                     <div class="swiper-slide w-330px h-330px pe-4 d-flex">
                         <div class="card shadow-sm shadow-hover trans-base zoom-bg-img o-hover-all">
                             <div class="card-img bg bg-img" data-bg-img=".img">
-                                <img loading="lazy" src="../../img/church/image_01.jpg" class="img" alt="Image" />
+                                <img loading="lazy" src="Views/img/church/image_01.jpg" class="img" alt="Image" />
                                 <div class="overlay bg-dark position-absolute o-25 o-50-hover"></div>
                             </div>
                             <!-- /.card-img bg bg-img -->
@@ -104,7 +104,7 @@
                     <div data-swiper-id="#listing-swiper-1-expand-swiper" class="swiper-pagination w-auto bottom-0"
                         data-swiper-pagination-limit="2"></div>
 
-                    <a href="../../Perfil/Admin/images.php"
+                    <a href="Views/Perfil/Admin/images.php"
                         class="btn btn-link btn-sm btn-more text-uppercase fw-bold shadow-none o-50 o-100-hover ms-3 trans-base px-0">Todas
                         las imagenes<i class="fas fa-long-arrow-alt-right"></i></a>
                 </div>
@@ -269,7 +269,7 @@
                 <div data-swiper-id="#testimonials-swiper-1-swiper" class="swiper-pagination w-auto bottom-0"
                     data-swiper-pagination-limit="2"></div>
 
-                <a href="../../Perfil/Admin/testimonials.php"
+                <a href="Views/Perfil/Admin/testimonials.php"
                     class="btn btn-link btn-sm btn-more text-uppercase fw-bold shadow-none o-50 o-100-hover ms-3 trans-base px-0">Todos
                     los testimonios<i class="fas fa-long-arrow-alt-right"></i></a>
             </div>
@@ -279,4 +279,4 @@
 </section>
 <!-- #testimonials-swiper-1.section py-5 py-lg-6 -->
 
-<?php require_once("../../Includes/footerAdmin.php");?>
+<?php require_once("Views/Includes/footerAdmin.php");?>
