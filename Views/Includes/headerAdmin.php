@@ -63,15 +63,15 @@
                     <div class="mt-4 d-lg-none"></div>
 
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li><a class="nav-link active" href="index.php?access=201">Inicio</a></li>
+                        <li><a class="nav-link active" href="index.php?access=A-201">Inicio</a></li>
                         <li class="nav-item nav-dropdown dropdown dropdown-hover">
                             <a class="nav-link dropdown-toggle" href="" id="navbarDocs" role="button"
                                 data-bs-toggle="dropdown">Sobre Nosotros</a>
                             <ul class="nav-dropdown-menu dropdown-menu dropdown-menu-end shadow" data-bs-popper>
 
-                                <li><a class="dropdown-item" href="index.php?access=202">Iglesia</a></li>
+                                <li><a class="dropdown-item" href="index.php?access=A-202">Iglesia</a></li>
 
-                                <li><a class="dropdown-item" href="index.php?access=202">Testimonios</a></li>
+                                <li><a class="dropdown-item" href="index.php?access=A-203">Testimonios</a></li>
 
                             </ul>
                         </li>
@@ -83,9 +83,9 @@
                                     <span class="dropdown-header text-uppercase fw-bold">Galer&iacute;a</span>
                                 </li>
 
-                                <li><a class="dropdown-item" href="index.php?access=203">Videos</a></li>
+                                <li><a class="dropdown-item" href="index.php?access=A-204">Videos</a></li>
 
-                                <li><a class="dropdown-item" href="index.php?access=204">Im&aacute;genes</a></li>
+                                <li><a class="dropdown-item" href="index.php?access=A-205">Im&aacute;genes</a></li>
 
                                 <li>
                                     <hr class="dropdown-divider" />
@@ -93,14 +93,30 @@
 
                                 <li>
                                     <span class="dropdown-header text-uppercase fw-bold"><a class=""
-                                            href="index.php?access=205">En vivos
+                                            href="index.php?access=A-206">En vivos
                                         </a></span>
                                 </li>
 
                                 <li>
                                     <span class="dropdown-header text-uppercase fw-bold"><a class=""
-                                            href="index.php?access=206">Eventos</a></span>
+                                            href="index.php?access=A-207">Eventos</a></span>
                                 </li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item nav-dropdown dropdown dropdown-hover">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDocs" role="button"
+                                data-bs-toggle="dropdown">Cuenta</a>
+                            <ul class="nav-dropdown-menu dropdown-menu dropdown-menu-end shadow" data-bs-popper>
+                                <li><a class="dropdown-item" href="index.php?access=A-208">Perfil</a></li>
+
+                                <li><a class="dropdown-item" href="index.php?access=A-209">Privacidad</a></li>
+
+                                <li><a class="dropdown-item" href="index.php?access=A-210">T&eacute;rmino y
+                                        condiciones</a></li>
+
+                                <li><a class="dropdown-item" href="index.php?access=A-211">Cerrar Sesi&oacute;n</a></li>
+
 
                             </ul>
                         </li>
@@ -109,9 +125,9 @@
                                 data-bs-toggle="dropdown">Cont&aacute;ctenos</a>
                             <ul class="nav-dropdown-menu dropdown-menu dropdown-menu-end shadow" data-bs-popper>
 
-                                <li><a class="dropdown-item" href="index.php?access=207">Iglesia</a></li>
+                                <li><a class="dropdown-item" href="">Iglesia</a></li>
 
-                                <li><a class="dropdown-item" href=".index.php?access=208">Consultas</a></li>
+                                <li><a class="dropdown-item" href=".index.php?access=A-212">Consultas</a></li>
 
                             </ul>
                         </li>

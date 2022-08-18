@@ -1,4 +1,4 @@
-<?php require_once("../../Includes/header.php");?>
+<?php require_once("Views/Includes/header.php");?>
 <section id="we-do-2" class="section bg-dark py-5 py-lg-6">
     <div class="bg bg-img position-absolute " data-bg-img=".img">
         <img loading="lazy" src="Views/img/home.jpg" class="img" alt="Image" />
@@ -148,7 +148,7 @@
                 <div class="position-relative expand-w h-100 o-75">
                     <div class="bg bg-img position-absolute" data-bg-img=".img">
                         <!-- <video width="800" height="550"
-                            src="../../web/video/Take Heart (MMXX) - Hillsong Worship(1080P_HD).mp4" autoplay muted
+                            src="Views/web/video/Take Heart (MMXX) - Hillsong Worship(1080P_HD).mp4" autoplay muted
                             loop=1>
                             <source type="video/mp4">
                         </video> -->
@@ -295,4 +295,4 @@
 </section>
 <!-- #testimonials-swiper-1.section py-5 py-lg-6 -->
 
-<?php require_once("../../Includes/footer.php");?>
+<?php require_once("Views/Includes/footer.php");?>

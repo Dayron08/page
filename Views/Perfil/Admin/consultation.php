@@ -1,8 +1,8 @@
-<?php require_once("../../Includes/headerAdmin.php");?>
+<?php require_once("Views/Includes/headerAdmin.php");?>
 
 <section id="page-hero" class="section section__inverse justify-content-center pt-6 pb-4 pb-lg-5 pb-xl-6">
     <div class="bg bg-img position-absolute" data-bg-img=".img">
-        <img loading="lazy" src="../../img/events_wallpaper-2.jpg" class="img" alt="Image" />
+        <img loading="lazy" src="Views/img/events_wallpaper-2.jpg" class="img" alt="Image" />
     </div>
     <!-- /.bg bg-img position-absolute -->
 
@@ -182,4 +182,4 @@
 </section>
 <!-- #testimonials-1.section pb-6 mt-n4 mt-lg-n5 mt-xl-n6 -->
 
-<?php require_once("../../Includes/footerAdmin.php");?>
+<?php require_once("Views/Includes/footerAdmin.php");?>

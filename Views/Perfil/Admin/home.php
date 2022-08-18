@@ -235,7 +235,7 @@
                                         <p class="text-secondary text-decoration-none fs-sm mt-auto mb-3 o-75">
                                             &mdash;<span class="fw-bold"> John Doe</span> - Software Deveoloper</p>
                                         <div class="img px-3 px-lg-4">
-                                            <img src="../../web/img/LOGO02.png" class="img rounded-circle"
+                                            <img src="Views/web/img/LOGO02.png" class="img rounded-circle"
                                                 alt="Image" />
                                         </div>
                                     </blockquote>

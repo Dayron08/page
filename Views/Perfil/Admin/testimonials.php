@@ -1,8 +1,8 @@
-<?php require_once("../../Includes/headerAdmin.php");?>
+<?php require_once("Views/Includes/headerAdmin.php");?>
 
 <section id="page-hero" class="section section__inverse justify-content-center pt-6 pb-4 pb-lg-5 pb-xl-6">
     <div class="bg bg-img position-absolute" data-bg-img=".img">
-        <img loading="lazy" src="../../img/testimonials_wallpaper.jpg" class="img" alt="Image" />
+        <img loading="lazy" src="Views/img/testimonials_wallpaper.jpg" class="img" alt="Image" />
     </div>
     <!-- /.bg bg-img position-absolute -->
 
@@ -17,7 +17,7 @@
                     <p class="mb-0 text-white"><strong>80</strong>&nbsp;Resultados&nbsp;Encontrados</p>
                 </div>
                 <!-- /.col-12 col-md -->
- 
+
                 <div class="col col-md-auto text-md-end ms-md-auto">
                     <div class="btn-group btn-select-dropdown w-100">
                         <span class="input-group-text fs-sm rounded-0 rounded-start py-0">Ordenar por</span>
@@ -73,8 +73,8 @@
             </div>
         </footer>
         <p class="text-light">
-            <a class="btn btn-danger rounded-pill shadow-none me-2 px-4 fw-bold " href="#"
-                id=""><i class="fas fa-trash"></i> Eliminar todos </a>
+            <a class="btn btn-danger rounded-pill shadow-none me-2 px-4 fw-bold " href="#" id=""><i
+                    class="fas fa-trash"></i> Eliminar todos </a>
         </p>
         <!-- /.section-footer d-flex justify-content-center -->
     </div>
@@ -82,4 +82,4 @@
 </section>
 <!-- #testimonials-1.section pb-6 mt-n4 mt-lg-n5 mt-xl-n6 -->
 
-<?php require_once("../../Includes/footerAdmin.php");?>
+<?php require_once("Views/Includes/footerAdmin.php");?>

@@ -1,10 +1,10 @@
 <?php
-class viewsModels{
-    protected static function get_models_views($views){
-        $white_List=["home_user","about-us_user","testimonials_user","videos_user","images_user", "lives_user", "events_user", "contact-us_user", "my-profile_user","home_admin","about-us_admin","testimonials_admin","videos_admin","images_admin", "lives_admin", "events_admin", "contact-us_admin", "my-profile_admin"];
-        $get_list=["U-101","U-102","U-103","U-104","U-105","U-106","U-107","U-108","U-109","A-201","A-202","A-203","A-204","A-205","A-206","A-207","A-208","A-209",];
-        if(in_array($views, $get_list)){
-            switch ($views) {
+class viewModels{
+    protected static function get_models_view($route){
+        $white_List=["User/home","User/about_us","User/testimonials","User/videos","User/images", "User/live", "User/events", "User/my_profile","User/privacy","User/terms_and_conditions","User/close_session","User/contact", "Admin/home","Admin/about_us","Admin/testimonials","Admin/videos","Admin/images", "Admin/lives", "Admin/events","Admin/my_profile","Admin/privacy","Admin/terms_and_conditions","Admin/close_session", "Admin/contact"];
+        $get_list=["U-101","U-102","U-103","U-104","U-105","U-106","U-107","U-108","U-109","U-110","U-111","U-112","A-201","A-202","A-203","A-204","A-205","A-206","A-207","A-208","A-209","A-210","A-211","A-212"];
+        if(in_array($route, $get_list)){
+            switch ($route) {
                 //user
                 case 'U-101':
                     $module_access = $white_List[0];
@@ -33,33 +33,52 @@ class viewsModels{
                 case 'U-109':
                     $module_access = $white_List[8];
                     break;
-                    //admin
-                case "A-201":
+                case 'U-110':
                     $module_access = $white_List[9];
                     break;
-                case "A-202":
+                case 'U-111':
                     $module_access = $white_List[10];
-                    break;
-                case "A-203":
+                    break;   
+                case 'U-112':
                     $module_access = $white_List[11];
-                    break;
-                case "A-204":
+                    break;     
+                    
+                    //admin
+                case "A-201":
                     $module_access = $white_List[12];
                     break;
-                case "A-205":
+                case "A-202":
                     $module_access = $white_List[13];
                     break;
-                case "A-206":
+                case "A-203":
                     $module_access = $white_List[14];
                     break;
-                case "A-207":
+                case "A-204":
                     $module_access = $white_List[15];
                     break;
-                case "A-208":
+                case "A-205":
                     $module_access = $white_List[16];
                     break;
-                case "A-209":
+                case "A-206":
                     $module_access = $white_List[17];
+                    break;
+                case "A-207":
+                    $module_access = $white_List[18];
+                    break;
+                case "A-208":
+                    $module_access = $white_List[19];
+                    break;
+                case "A-209":
+                    $module_access = $white_List[20];
+                    break;
+                case "A-210":
+                    $module_access = $white_List[21];
+                    break;
+                case "A-211":
+                    $module_access = $white_List[22];
+                    break;
+                case "A-212":
+                    $module_access = $white_List[23];
                     break;
                 
             }

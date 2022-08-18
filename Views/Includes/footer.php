@@ -5,7 +5,7 @@
             <div class="row gy-4 gx-4 section-content">
                 <div class="col-12 col-lg-3 col-xl-4 pe-lg-4 pe-xl-5 d-flex flex-column flex-sm-row flex-lg-column">
                     <p class="mb-3 w-sm-50 w-md-25 w-lg-100">
-                        <a href="#"><img loading="lazy" src="../../img/LOGO02.png" alt="Pacto de vida"
+                        <a href="#"><img loading="lazy" src="Views/img/LOGO02.png" alt="Pacto de vida"
                                 style="width: 15%;" /></a>
                     </p>
 
@@ -45,7 +45,7 @@
                 <div class="col-12 col-lg d-flex flex-column flex-sm-row flex-lg-column">
                     <h6 class="mt-1 mb-3 text-uppercase fw-bold w-sm-50 w-md-25 w-lg-100">Congregación</h6>
                     <ul class="list-unstyled row g-2 mb-1 w-sm-50 w-md-75 w-lg-100 ps-sm-2 ps-lg-0">
-                        <li class="col-6 col-sm-6 col-md-4 col-lg-12"><a href="../../../about_us.php">Sobre nosotros</a>
+                        <li class="col-6 col-sm-6 col-md-4 col-lg-12"><a href="Views/../about_us.php">Sobre nosotros</a>
                         </li>
 
                         <li class="col-6 col-sm-6 col-md-4 col-lg-12"><a href="#">Contáctenos</a></li>
@@ -116,9 +116,9 @@
 
 <!-- Discoverize JS -->
 
-<script src="../../js/discoverize.js"></script>
-<script src="../../js/carousel.js"></script>
-<script src="../../js/script.js"></script>
+<script src="Views/js/discoverize.js"></script>
+<script src="Views/js/carousel.js"></script>
+<script src="Views/js/script.js"></script>
 </body>
 
 </html>

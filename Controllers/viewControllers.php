@@ -1,14 +1,14 @@
 <?php
 
 
-require_once "../Models/views_models.php";
-class viewControllers extends viewsModels{
-    public function get_controllers_views(){
-        if(!isset($_GET['access'])){
-            $result ="home_user";
+require_once "Models/viewsModels.php";
+class viewControllers extends viewModels{
+    public function get_controllers_views($access){
+        if(!isset($access)){
+            $result ="User/home";
         }else{
-            $route =($_GET['access']);
-            $result = viewsModels::get_models_views($route);
+            $route = $access;
+            $result = viewModels::get_models_view($route);
             // require_once("Controllers/contents/".$module.".php");
         }
         return $result;
