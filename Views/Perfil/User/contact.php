@@ -109,7 +109,7 @@
                                 </div>
                                 <div class="col-md-4">
                                     <div class="form-floating">
-                                        <input type="email" class="form-control border-0 bg-light" id="email"
+                                        <input type="email" class="form-control border-0 bg-light"
                                             placeholder="Your Email" id="txt_gmail" />
                                         <label>Email</label>
                                     </div>
@@ -133,9 +133,7 @@
 
 
                             <div class="d-flex position-relative flex-column">
-                                <button class="btn btn-primary d-block fw-bold" type="submit"
-                                    id="btn_query">Enviar</button><br>
-                                <button class="btn btn-primary d-block fw-bold" type="submit">Cancelar</button><br>
+                                <button class="btn btn-primary d-block fw-bold" type="submit" id="btn_query">Enviar</button><br>
                             </div>
                         </div>
                         <!-- /.position-relative -->

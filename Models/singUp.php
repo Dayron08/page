@@ -58,6 +58,9 @@ class SingUp extends Connection_Mysql {
         $this->consul = $consul;
     }
 
+	public function set_testimony($testimony){
+        $this->testimony = $testimony;
+    }
 
 	// methods to view profile 
 	public function set_p_email($p_email){
@@ -79,7 +82,7 @@ class SingUp extends Connection_Mysql {
 		$this-> database->db_close();
 		return $this->result;
 	}
-	 
+	  
 	public function create() {
 		$this->query = "CALL P_INSERTAR_DATOS_PERSONA_USU(                
 			'".$this->user_id."', 
@@ -103,6 +106,15 @@ class SingUp extends Connection_Mysql {
 			'".$this->gmail."',
 			'".$this->subject."',
 			'".$this->consul."');";
+			
+		$this->execute($this->query);
+
+	} 
+
+	public function insertTestimonials() {
+		$this->query = "CALL P_INSERTAR_PERSONA_TESTIMONIO(                
+			'".$this->testimony."',
+			'30528745');";
 			
 		$this->execute($this->query);
 

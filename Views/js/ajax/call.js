@@ -145,6 +145,30 @@ $(document).ready(function(e){
         });
 
 
+        $("#btn_testimony").click(function (e) {
+
+            var txt_testimony = $("#txt_testimony").val();
+            var txt_person = "30528745";
+                
+            $.ajax({
+                url: "../../../Controllers/insertTestimony.php",
+                method: "POST", 
+                data : {txt_testimony : txt_testimony, txt_person : txt_person},
+                success: function(dataresponse, statustext, response){
+                    if(statustext == "success"){
+                        console.log("exitosamente")
+
+
+                    }
+                },
+                error: function(request, errorcode, errortext){
+                    console.log("errorrrrrr")
+
+                }
+            });
+
+        });
+
 
  });
 
