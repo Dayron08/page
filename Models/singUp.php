@@ -203,6 +203,24 @@ class SingUp extends Connection_Mysql {
 
 	}
 
+	public function readConsul() {
+		
+		$this->query = "CALL P_VER_CONSULTAS_BY_FECHA();";
+		$this->execute($this->query);
+
+	   $consul = array();
+		while ($result = mysqli_fetch_assoc($this->result)) {
+			$consul []= array(
+				"subject"=> $result["ASUNTO"],
+				"consul" => $result["DSC_ASUNTO"],
+				"name" => $result["NOMBRE"],
+				"gmail" => $result["CORREO"]);
+		}
+		
+		return $consul ;
+
+	}
+
 
 	public function readTestimonialsHome() {
 		

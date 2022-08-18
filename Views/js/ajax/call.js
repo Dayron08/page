@@ -89,6 +89,31 @@ $(document).ready(function(e){
    
        }); 
 
+         // lectura para todos las consultas
+         var url = "../../../Controllers/call_consul.php";
+         $.getJSON(url, function(dato){
+     
+             $.each(dato, function(i, consul){
+                
+                var t = 
+                "<div class=\"col-12 col-sm-6 col-lg-4 d-flex align-items-stretch\">"+
+                  "<figure class=\"card testimonial h-100 text-center bg-transparent mb-0\">"+
+                      "<blockquote class=\"blockquote card-body bg-white shadow-sm rounded d-flex flex-column px-lg-5\">"+
+                          "<button class=\"btn btn-link p-0 ms-4 shadow-none\"><a id=\"buttondelete\" class=\"fa fa-trash fa-lg\" href=\"#\"></a></button>"+
+                          "<input type=\"checkbox\" id=\"check\" >"+
+                          "<p class=\"fs-1 text-secondary o-25 mb-0\">"+consul.subject+"</p>"+
+                          "<p class=\"fs-6\">"+consul.consul+"</p>"+
+                         "<p class=\"text-secondary text-decoration-none fs-sm mt-auto mb-3 o-75\">&mdash;<span class=\"fw-bold\">"+consul.name+"</span>  -"+consul.gmail+"</p>"+
+                        "</blockquote>"+
+                  "</figure>"+
+              "</div>";
+
+                 $(t).appendTo("#bodyconsul");   
+                                                      
+             });
+     
+         }); 
+
         // lectura para todos los testimonios User
         var url = "../../../Controllers/call_testimonials.php";
         $.getJSON(url, function(dato){
@@ -171,6 +196,10 @@ $(document).ready(function(e){
             });
 
         });
+
+
+
+
 
 
  });
