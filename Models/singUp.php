@@ -79,7 +79,7 @@ class SingUp extends Connection_Mysql {
 		$this-> database->db_close();
 		return $this->result;
 	}
-	
+	 
 	public function create() {
 		$this->query = "CALL P_INSERTAR_DATOS_PERSONA_USU(                
 			'".$this->user_id."', 
@@ -141,6 +141,7 @@ class SingUp extends Connection_Mysql {
 	public function read() {
 
 		session_start();
+		
 		$this->query = "CALL P_VALI_LOGIN(
 		'".$this->gmail."',
 		'".$this->password."');";
@@ -153,6 +154,7 @@ class SingUp extends Connection_Mysql {
 	}
 
 	
+
 	public function readimages() {
 		
 		
