@@ -431,7 +431,7 @@ CREATE OR REPLACE PROCEDURE P_INSERTAR_PERSONA_TESTIMONIO
             (
                 NULL,  
                 P_DSC_TESTIMONIO, 
-                current_timestamp,
+                current_timestamp(),
                 P_ID_REGISTRO_PERSONA
             );
             COMMIT;

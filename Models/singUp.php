@@ -110,12 +110,13 @@ class SingUp extends Connection_Mysql {
 		$this->execute($this->query);
 
 	} 
-
+ 
 	public function insertTestimony() {
-		$this->query = "CALL P_INSERTAR_PERSONA_TESTIMONIO(                
-			'".$this->testimony."',
-			'".$this->user_id."');";
+		// $this->query = "CALL P_INSERTAR_PERSONA_TESTIMONIO(                
+		// 	'".$this->testimony."',
+		// 	'".$this->user_id."');";
 		
+		$this->query = "INSERT INTO `persona_testimonios`(`ID_TESTI`, `DSC_TESTIMONIO`, `FECHA_INGRESO`, `ID_REGISTRO_PERSONA`) VALUES (NULL, '".$this->testimony."', '2022/08/17','".$this->user_id."')";
 		$this->execute($this->query);
 
 	} 
