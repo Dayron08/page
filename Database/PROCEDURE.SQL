@@ -404,7 +404,7 @@ CREATE OR REPLACE PROCEDURE P_VER_PERSONA_TESTIMONIO_BY_FECHA_RECIENTE()
             P.APPELLIDOS
         FROM PERSONA_TESTIMONIOS PT 
         INNER JOIN PERSONA P ON (P.ID_REGISTRO_PERSONA = PT.ID_REGISTRO_PERSONA)
-        ORDER BY PT.FECHA_ACTUAL AS FECHA_INGRESO DESC;
+        ORDER BY PT.FECHA_ACTUAL DESC;
     END$$
 DELIMITER;
 --PRUEBA EXITOSA
@@ -422,16 +422,20 @@ CREATE OR REPLACE PROCEDURE P_INSERTAR_PERSONA_TESTIMONIO
     BEGIN
             INSERT INTO PERSONA_TESTIMONIOS    
             (
-                ID_TESTI,  
+                ID_TESTI, 
+                FECHA_ACTUAL, 
                 DSC_TESTIMONIO,
-                FECHA_ACTUAL,
                 ID_REGISTRO_PERSONA
             )
             VALUES 
             (
-                NULL,  
+                NULL,
+                current_timestamp(),  
                 P_DSC_TESTIMONIO, 
+<<<<<<< HEAD
                 current_timestamp(),
+=======
+>>>>>>> 87796a8061bde8979d6c2348db71d97154665cdc
                 P_ID_REGISTRO_PERSONA
             );
             COMMIT;
