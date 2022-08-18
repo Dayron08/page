@@ -147,7 +147,7 @@ $(document).ready(function(e){
 
         $("#btn_testimony").click(function (e) {
 
-            e.preventDefault();
+           
 
             var txt_testimony = $("#txt_testimony").val();
             var txt_person = "30528745";
