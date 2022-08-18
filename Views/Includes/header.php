@@ -22,19 +22,19 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper@7.0.6/swiper-bundle.min.css" />
 
     <!-- CSS bundled with Bootstrap-CSS -->
-<<<<<<< HEAD
+
     <link rel="stylesheet" type="text/css" href="Views/css/discoverize-default.css" />
     <link rel="stylesheet" type="text/css" href="Views/css/style.css" />
     <!-- <script src="Views/js/script.js"></script> -->
     <script src="Views/js/jquery-3.6.0.min.js"></script>
     <script src="Views/js/ajax/call.js"></script>
-=======
-    <link rel="stylesheet" type="text/css" href="../../css/discoverize-default.css" />
-    <link rel="stylesheet" type="text/css" href="../../css/style.css" />
-    <!-- <script src="../../js/script.js"></script> -->
-    <script src="../../js/jquery-3.6.0.min.js"></script>
-    <script src="../../js/ajax/call.js"></script>
->>>>>>> Maria
+
+    <link rel="stylesheet" type="text/css" href="Views/css/discoverize-default.css" />
+    <link rel="stylesheet" type="text/css" href="Views/css/style.css" />
+    <!-- <script src="Views/js/script.js"></script> -->
+    <script src="Views/js/jquery-3.6.0.min.js"></script>
+    <script src="Views/js/ajax/call.js"></script>
+
 
     <title>Iglesia Pacto de Vida</title>
     <style>
@@ -49,15 +49,15 @@
         <nav class="navbar navbar-light navbar-default">
             <div class="container-xl justify-content-start">
                 <a class="navbar-brand d-flex position-relative mb-1" href="index.php?access=101"><img loading="lazy"
-                        src="../../img/LOGO02.png" class="navbar-brand-img" alt="Pacto de Vida"
+                        src="Views/img/LOGO02.png" class="navbar-brand-img" alt="Pacto de Vida"
                         style="width: 35%; border-radius: 100%;" /><img loading="lazy"
-                        src="../../img/Logo_recortado.png" style="width: 100%; " class="navbar-brand-img-light"
+                        src="Views/img/Logo_recortado.png" style="width: 100%; " class="navbar-brand-img-light"
                         alt="Pacto de Vida" /></a>
 
                 <div class="ms-auto ps-3 navbar-end d-flex flex-row justify-content-end">
 
                     <button class="btn btn-link btn-light p-0 ms-3 shadow-none"><a class="fas fa-user"
-                            href=""></a></button>
+                            href="index.php?access=U-113"></a></button>
 
                     <button class="btn-close btn-close-menu collapsed ms-3" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false"
@@ -70,25 +70,20 @@
                     <div class="mt-4 d-lg-none"></div>
 
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-<<<<<<< HEAD
                         <li><a class="nav-link active" href="index.php?access=U-101">Inicio</a></li>
-=======
-                        <li><a class="nav-link active" href="../User/home.php">Inicio</a></li>
->>>>>>> Maria
+
+
+
                         <li class="nav-item nav-dropdown dropdown dropdown-hover">
                             <a class="nav-link dropdown-toggle" href="" id="navbarDocs" role="button"
                                 data-bs-toggle="dropdown">Sobre Nosotros</a>
                             <ul class="nav-dropdown-menu dropdown-menu dropdown-menu-end shadow" data-bs-popper>
 
-<<<<<<< HEAD
-                                <li><a class="dropdown-item" href="index.php?access=U-102">Iglesia</a></li>
+                                <li><a class="dropdown-item" href="index.php?access=U-102">Iglesia</a>
+                                </li>
 
                                 <li><a class="dropdown-item" href="index.php?access=U-103">Testimonios</a></li>
-=======
-                                <li><a class="dropdown-item" href="../User/about_us.php">Iglesia</a></li>
 
-                                <li><a class="dropdown-item" href="../User/testimonials.php">Testimonios</a></li>
->>>>>>> Maria
 
                             </ul>
                         </li>
@@ -100,15 +95,15 @@
                                     <span class="dropdown-header text-uppercase fw-bold">Galer&iacute;a</span>
                                 </li>
 
-<<<<<<< HEAD
-                                <li><a class="dropdown-item" href="index.php?access=U-104">Videos</a></li>
+                                <li><a class="dropdown-item" href="index.php?access=U-104">Videos</a>
+                                </li>
 
                                 <li><a class="dropdown-item" href="index.php?access=U-105">Im&aacute;genes</a></li>
-=======
+
                                 <li><a class="dropdown-item" href="../User/videos.php">Videos</a></li>
 
                                 <li><a class="dropdown-item" href="../User/images.php">Im&aacute;genes</a></li>
->>>>>>> Maria
+
 
                                 <li>
                                     <hr class="dropdown-divider" />
@@ -116,26 +111,21 @@
 
                                 <li>
                                     <span class="dropdown-header text-uppercase fw-bold"><a class=""
-<<<<<<< HEAD
                                             href="index.php?access=U-106">En vivos
-=======
-                                            href="../User/live.php">En vivos
->>>>>>> Maria
+
+
+
                                         </a></span>
                                 </li>
 
                                 <li>
                                     <span class="dropdown-header text-uppercase fw-bold"><a class=""
-<<<<<<< HEAD
                                             href="index.php?access=U-107">Eventos</a></span>
-=======
-                                            href="../User/events.php">Eventos</a></span>
->>>>>>> Maria
+
                                 </li>
 
                             </ul>
                         </li>
-<<<<<<< HEAD
                         <li class="nav-item nav-dropdown dropdown dropdown-hover">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDocs" role="button"
                                 data-bs-toggle="dropdown">Cuenta</a>
@@ -153,9 +143,8 @@
                             </ul>
                         </li>
                         <li><a class="nav-link" href="index.php?access=U-112">Cont&aacute;ctenos</a></li>
-=======
-                        <li><a class="nav-link" href="../User/contact.php">Cont&aacute;ctenos</a></li>
->>>>>>> Maria
+
+
 
                     </ul>
                     <!-- /.navbar-nav -->
