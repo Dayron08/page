@@ -14,16 +14,16 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&family=Oswald&family=Zen+Old+Mincho&display=swap"
         rel="stylesheet">
-        
+
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <link rel="stylesheet" href="../../css/estilos.css">
-    <script src="../../js/jquery-3.6.0.min.js"></script>
-    <script src="../../js/ajax/ajaxUser.js"></script>
+    <link rel="stylesheet" href="Views/css/estilos.css">
+    <script src="Views/js/jquery-3.6.0.min.js"></script>
+    <script src="Views/js/ajax/ajaxUser.js"></script>
 
-    
-</head> 
 
- 
+</head>
+
+
 <body>
 
 
@@ -53,9 +53,9 @@
                     <p id="alert_emaill"></p>
 
                     <div class="campoo">
-                    <input type="password" placeholder="Contraseña" id="txt_pass">
-                    <img src="../../img/eyes1 .png" alt="" id="eye">
-                    <p id="alert_passwordd"></p>
+                        <input type="password" placeholder="Contraseña" id="txt_pass">
+                        <img src="Views/img/eyes1 .png" alt="" id="eye">
+                        <p id="alert_passwordd"></p>
                     </div>
 
                     <button type="submit" id="btn_entrar">Entrar</button>
@@ -63,12 +63,12 @@
                     <a class="btn rounded-pill shadow-none me-2 px-4 fw-bold " href="../User/home.php">Menu
                         principal</a>
                 </form>
- 
+
                 <!--Register-->
                 <form action="" method="POST" class="formulario__register">
 
                     <h2>Regístrarse</h2>
-                    
+
                     <input type="number" placeholder="Cedula" id="txt_user_id">
                     <p id="alert_id"></p>
 
@@ -82,12 +82,12 @@
                     <p id="alert_email"></p>
 
                     <div class="campo">
-                    <input type="password" placeholder="Contraseña" id="txt_password">
-                    <img src="../../img/eyes1 .png" alt="" id="eyes">
-                    <p id="alert_password"></p>
+                        <input type="password" placeholder="Contraseña" id="txt_password">
+                        <img src="Views/img/eyes1 .png" alt="" id="eyes">
+                        <p id="alert_password"></p>
                     </div>
- 
-                   
+
+
                     <button class="btn btn-info" id="btn_singUp" type="submit">Registrarse</button>
                     <br>
                     <a class="rounded-pill shadow-none me-2 px-4 fw-bold" href="../user/home.php">Menu principal</a>
@@ -99,7 +99,7 @@
 
     </main>
 
-    <script src="../../js/script.js"></script>
+    <script src="Views/js/script.js"></script>
 </body>
 
 </html>

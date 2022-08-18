@@ -1,7 +1,7 @@
-<?php require_once("../../Includes/header.php");?>
+<?php require_once("Views/Includes/header.php");?>
 
 
-<section id="listing-detail-1" class="section pb-5 pb-lg-6 mb-n-5 vh-350 h-lg-800px" >
+<section id="listing-detail-1" class="section pb-5 pb-lg-6 mb-n-5 vh-350 h-lg-800px">
 
     <div class="container-xl position-relative section-content text-center py-4 mt-6 ">
         <h2 class="display-5 text-white mt-2 mt-lg-4">María José Maroto Alvarado</h2>
@@ -160,7 +160,7 @@
                             aria-labelledby="schedulleTab">
                             <form action="#" class="">
                                 <div class="btn-group w-100 mb-3" role="group">
-                                    <img loading="lazy" src="../../img/20210710_021750_112124.jpg" class="w-100"
+                                    <img loading="lazy" src="Views/img/20210710_021750_112124.jpg" class="w-100"
                                         alt="Image" style="border-radius: 45%; width: 100%; height : 200px; " />
                                 </div>
                                 <!-- /.btn-group -->
@@ -227,7 +227,7 @@
 <!-- #new_imageProfile -->
 
 
-<?php require_once("../../Includes/footer.php");?>
+<?php require_once("Views/Includes/footer.php");?>
 </body>
 
 </html>
