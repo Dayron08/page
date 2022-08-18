@@ -138,7 +138,7 @@ $(document).ready(function () {
     //login
 
     $("#btn_entrar").click(function (e) {
-
+        var data;
         //   e.preventDefault();
 
         var txt_email = $("#txt_email").val();
@@ -184,6 +184,7 @@ $(document).ready(function () {
                             timer: 400
                         })
                         location.href = "../User/home.php";
+
                     } else if (dataresponse == 1) {
                         Swal.fire({
                             position: 'top-end',
@@ -197,6 +198,7 @@ $(document).ready(function () {
                         alert("Datos no encontrados");
                         location.href = "#";
                     }
+                    data = dataresponse;
                 }
             },
 
@@ -212,3 +214,51 @@ $(document).ready(function () {
 
 
 });
+
+
+function prueba(data_respose) {
+    var data = data_respose;
+    $.ajax({
+        url: "../../../Controllers/validateLogin.php",
+        method: "POST",
+        data: {
+            data: data,
+
+            success: function (dataresponse, statustext, response) {
+                if (statustext == "success") {
+                    $("#respuesta").html(dataresponse);
+
+                    if (dataresponse == 0) {
+                        Swal.fire({
+                            position: 'top-end',
+                            icon: 'success',
+                            title: 'Iniciando Sesion',
+                            showConfirmButton: false,
+                            timer: 400
+                        })
+                        location.href = "../User/home.php";
+
+                    } else if (dataresponse == 1) {
+                        Swal.fire({
+                            position: 'top-end',
+                            icon: 'success',
+                            title: 'Iniciando Sesion',
+                            showConfirmButton: false,
+                            timer: 400
+                        })
+                        location.href = "../Admin/home.php";
+                    } else if (dataresponse == 2 || dataresponse == null) {
+                        alert("Datos no encontrados");
+                        location.href = "#";
+                    }
+                    data = dataresponse;
+                }
+            },
+
+            error: function (request, errorcode, errortext) {
+                $("#respuesta").html(errorcode);
+            }
+
+
+        });
+}
