@@ -65,7 +65,7 @@
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li><a class="nav-link active" href="index.php?access=A-201">Inicio</a></li>
 
-                        <li><a class="nav-link active" href="../Admin/home.php">Inicio</a></li>
+
 
                         <li class="nav-item nav-dropdown dropdown dropdown-hover">
                             <a class="nav-link dropdown-toggle" href="" id="navbarDocs" role="button"
@@ -77,9 +77,6 @@
 
                                 <li><a class="dropdown-item" href="index.php?access=A-203">Testimonios</a></li>
 
-                                <li><a class="dropdown-item" href="../Admin/about_us.php">Iglesia</a></li>
-
-                                <li><a class="dropdown-item" href="../Admin/testimonials.php">Testimonios</a></li>
 
 
                             </ul>
@@ -96,10 +93,6 @@
                                 </li>
 
                                 <li><a class="dropdown-item" href="index.php?access=A-205">Im&aacute;genes</a></li>
-
-                                <li><a class="dropdown-item" href="../Admin/videos.php">Videos</a></li>
-
-                                <li><a class="dropdown-item" href="../Admin/images.php">Im&aacute;genes</a></li>
 
                                 <li>
                                     <hr class="dropdown-divider" />

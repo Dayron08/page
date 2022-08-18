@@ -23,7 +23,6 @@
     <div class="container-xl position-relative">
         <?php require("Views/Includes/navBar_Admin_video.php"); ?>
         <div class="row properties g-4 mb-6" id="all_videos">
-
         </div>
         <!-- /.row properties -->
 
