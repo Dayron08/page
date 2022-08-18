@@ -139,6 +139,7 @@ $(document).ready(function () {
 
     $("#btn_entrar").click(function (e) {
         var data;
+
         //   e.preventDefault();
 
         var txt_email = $("#txt_email").val();
@@ -222,43 +223,44 @@ function prueba(data_respose) {
         url: "../../../Controllers/validateLogin.php",
         method: "POST",
         data: {
-            data: data,
+            data: data
+        },
 
-            success: function (dataresponse, statustext, response) {
-                if (statustext == "success") {
-                    $("#respuesta").html(dataresponse);
+        success: function (dataresponse, statustext, response) {
+            if (statustext == "success") {
+                $("#respuesta").html(dataresponse);
 
-                    if (dataresponse == 0) {
-                        Swal.fire({
-                            position: 'top-end',
-                            icon: 'success',
-                            title: 'Iniciando Sesion',
-                            showConfirmButton: false,
-                            timer: 400
-                        })
-                        location.href = "../User/home.php";
+                if (dataresponse == 0) {
+                    Swal.fire({
+                        position: 'top-end',
+                        icon: 'success',
+                        title: 'Iniciando Sesion',
+                        showConfirmButton: false,
+                        timer: 400
+                    })
+                    location.href = "../User/home.php";
 
-                    } else if (dataresponse == 1) {
-                        Swal.fire({
-                            position: 'top-end',
-                            icon: 'success',
-                            title: 'Iniciando Sesion',
-                            showConfirmButton: false,
-                            timer: 400
-                        })
-                        location.href = "../Admin/home.php";
-                    } else if (dataresponse == 2 || dataresponse == null) {
-                        alert("Datos no encontrados");
-                        location.href = "#";
-                    }
-                    data = dataresponse;
+                } else if (dataresponse == 1) {
+                    Swal.fire({
+                        position: 'top-end',
+                        icon: 'success',
+                        title: 'Iniciando Sesion',
+                        showConfirmButton: false,
+                        timer: 400
+                    })
+                    location.href = "../Admin/home.php";
+                } else if (dataresponse == 2 || dataresponse == null) {
+                    alert("Datos no encontrados");
+                    location.href = "#";
                 }
-            },
-
-            error: function (request, errorcode, errortext) {
-                $("#respuesta").html(errorcode);
+                data = dataresponse;
             }
+        },
+
+        error: function (request, errorcode, errortext) {
+            $("#respuesta").html(errorcode);
+        }
 
 
-        });
+    });
 }

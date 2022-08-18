@@ -148,7 +148,7 @@ class SingUp extends Connection_Mysql {
 		$this->execute($this->query);
 	    $row = mysqli_fetch_assoc($this->result);
 		
-		$_SESSION['ID_TIPO'] = ISSET($row["ID_TIPO"]); 
+		$_SESSION['ID_TIPO'] = ISSET($row["ID_TIPO"], $row["ID_REGISTRO_PERSONA"]); 
 		
 		return $row;
 	}
