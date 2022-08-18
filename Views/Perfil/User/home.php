@@ -1,7 +1,7 @@
-<?php require_once("Views/Includes/header.php");?>
+<?php require_once("../../Includes/header.php");?>
 <section id="we-do-2" class="section bg-dark py-5 py-lg-6">
     <div class="bg bg-img position-absolute " data-bg-img=".img">
-        <img loading="lazy" src="Views/img/home.jpg" class="img" alt="Image" />
+        <img loading="lazy" src="../../img/home.jpg" class="img" alt="Image" />
 
         <div class="overlay bg-black position-absolute o-50"></div> <!-- on image-->
     </div>
@@ -71,7 +71,7 @@
                     <div class="swiper-slide w-330px h-330px pe-4 d-flex">
                         <div class="card shadow-sm shadow-hover trans-base zoom-bg-img o-hover-all">
                             <div class="card-img bg bg-img" data-bg-img=".img">
-                                <img loading="lazy" src="Views/img/church/image_01.jpg" class="img" alt="Image" />
+                                <img loading="lazy" src="../../img/church/image_01.jpg" class="img" alt="Image" />
                                 <div class="overlay bg-dark position-absolute o-25 o-50-hover"></div>
                             </div>
                             <!-- /.card-img bg bg-img -->
@@ -83,7 +83,7 @@
                     <div class="swiper-slide w-330px h-330px pe-4 d-flex">
                         <div class="card shadow-sm shadow-hover trans-base zoom-bg-img o-hover-all">
                             <div class="card-img bg bg-img" data-bg-img=".img">
-                                <img loading="lazy" src="Views/img/church/image_02.jpg" class="img" alt="Image" />
+                                <img loading="lazy" src="../../img/church/image_02.jpg" class="img" alt="Image" />
                                 <div class="overlay bg-dark position-absolute o-25 o-50-hover"></div>
                             </div>
                             <!-- /.card-img bg bg-img -->
@@ -111,7 +111,7 @@
                     <div data-swiper-id="#listing-swiper-1-expand-swiper" class="swiper-pagination w-auto bottom-0"
                         data-swiper-pagination-limit="2"></div>
 
-                    <a href="Views/Perfil/User/images.php"
+                    <a href="../../Perfil/User/images.php"
                         class="btn btn-link btn-sm btn-more text-uppercase fw-bold shadow-none o-50 o-100-hover ms-3 trans-base px-0">Todas
                         las imagenes<i class="fas fa-long-arrow-alt-right"></i></a>
                 </div>
@@ -135,13 +135,14 @@
 
                 <form action="#" method="post" class="">
                     <div class="input-group mb-3">
-                        <textarea type="text" class="form-control form-control-lg" placeholder="Testimonio"
+                        <textarea type="text" class="form-control form-control-lg" placeholder="Testimonio" id="txt_testimony"
                             aria-label="Recipient's username" aria-describedby="button-addon2" rows="3" cols="10"
                             maxlength="200"></textarea>
                     </div>
-                    <button class="btn btn-warning btn-lg px-4" type="button" id="button-addon2">Subir</button>
+                    
+                    <button class="btn btn-warning btn-lg px-4" type="submit" id="btn_testimony">Subir</button>
                 </form>
-            </div>
+            </div> 
             <!-- /.col-12 col-lg-6 col-xl-6 py-4 py-lg-7 pe-lg-6 d-flex flex-column justify-content-center -->
 
             <div class="col-12 col-lg-6 col-xl-6">
@@ -251,7 +252,7 @@
                                         <p class="text-secondary text-decoration-none fs-sm mt-auto mb-3 o-75">
                                             &mdash;<span class="fw-bold"> John Doe</span> - Software Deveoloper</p>
                                         <div class="img px-3 px-lg-4">
-                                            <img loading="lazy" src="Views/img/LOGO02.png" class="img rounded-circle"
+                                            <img loading="lazy" src="../../img/LOGO02.png" class="img rounded-circle"
                                                 alt="Image" />
                                         </div>
                                     </blockquote>
@@ -285,7 +286,7 @@
                 <div data-swiper-id="#testimonials-swiper-1-swiper" class="swiper-pagination w-auto bottom-0"
                     data-swiper-pagination-limit="2"></div>
 
-                <a href="Views/Perfil/User/testimonials.php"
+                <a href="../../Perfil/User/testimonials.php"
                     class="btn btn-link btn-sm btn-more text-uppercase fw-bold shadow-none o-50 o-100-hover ms-3 trans-base px-0">Todos
                     los testimonios<i class="fas fa-long-arrow-alt-right"></i></a>
             </div>
@@ -295,4 +296,4 @@
 </section>
 <!-- #testimonials-swiper-1.section py-5 py-lg-6 -->
 
-<?php require_once("Views/Includes/footer.php");?>
+<?php require_once("../../Includes/footer.php");?>

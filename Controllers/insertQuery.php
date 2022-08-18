@@ -2,7 +2,7 @@
 require_once("../Models/singUp.php");
 
 $insert = new SingUp();
- 
+  
 if(isset($_REQUEST['txt_names'])){
    
     $insert -> set_name($_REQUEST["txt_names"]);

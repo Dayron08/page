@@ -58,6 +58,9 @@ class SingUp extends Connection_Mysql {
         $this->consul = $consul;
     }
 
+	public function set_testimony($testimony){
+        $this->testimony = $testimony;
+    }
 
 	// methods to view profile 
 	public function set_p_email($p_email){
@@ -79,7 +82,7 @@ class SingUp extends Connection_Mysql {
 		$this-> database->db_close();
 		return $this->result;
 	}
-	 
+	  
 	public function create() {
 		$this->query = "CALL P_INSERTAR_DATOS_PERSONA_USU(                
 			'".$this->user_id."', 
@@ -104,6 +107,16 @@ class SingUp extends Connection_Mysql {
 			'".$this->subject."',
 			'".$this->consul."');";
 			
+		$this->execute($this->query);
+
+	} 
+ 
+	public function insertTestimony() {
+	
+		$this->query = "CALL P_INSERTAR_PERSONA_TESTIMONIO(                
+			'".$this->testimony."',
+			'".$this->user_id."');"; 
+		// $this->query = "INSERT INTO `persona_testimonios`(`ID_TESTI`, `DSC_TESTIMONIO`, `FECHA_INGRESO`, `ID_REGISTRO_PERSONA`) VALUES (NULL, '".$this->testimony."', '2022/08/17','".$this->user_id."')";
 		$this->execute($this->query);
 
 	} 
@@ -148,7 +161,11 @@ class SingUp extends Connection_Mysql {
 		$this->execute($this->query);
 	    $row = mysqli_fetch_assoc($this->result);
 		
+<<<<<<< HEAD
 		$_SESSION['ID_REGISTRO_PERSONA'] = ISSET($row["ID_REGISTRO_PERSONA"]);  
+=======
+		$_SESSION['ID_REGISTRO_PERSONA'] = ISSET($row["ID_REGISTRO_PERSONA"]); 
+>>>>>>> Maria
 		
 		return $row;
 	}
@@ -187,6 +204,24 @@ class SingUp extends Connection_Mysql {
 		}
 		
 		return $testimonials ;
+
+	}
+
+	public function readConsul() {
+		
+		$this->query = "CALL P_VER_CONSULTAS_BY_FECHA();";
+		$this->execute($this->query);
+
+	   $consul = array();
+		while ($result = mysqli_fetch_assoc($this->result)) {
+			$consul []= array(
+				"subject"=> $result["ASUNTO"],
+				"consul" => $result["DSC_ASUNTO"],
+				"name" => $result["NOMBRE"],
+				"gmail" => $result["CORREO"]);
+		}
+		
+		return $consul ;
 
 	}
 
