@@ -109,13 +109,12 @@
                                 data-bs-toggle="dropdown">Cont&aacute;ctenos</a>
                             <ul class="nav-dropdown-menu dropdown-menu dropdown-menu-end shadow" data-bs-popper>
 
-                                <li><a class="dropdown-item" href="">Iglesia</a></li>
+                                <li><a class="dropdown-item" href="../Admin/contact.php">Iglesia</a></li>
 
-                                <li><a class="dropdown-item" href="../Admin/contact.php">Consultas</a></li>
+                                <li><a class="dropdown-item" href="../Admin/consultation.php">Consultas</a></li>
 
                             </ul>
                         </li>
-
 
                     </ul>
                     <!-- /.navbar-nav -->
