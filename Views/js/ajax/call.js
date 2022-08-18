@@ -142,6 +142,38 @@ $(document).ready(function(e){
         }); 
        
 
+         // lectura para todos los eventos admin
+         var url = "../../../Controllers/call_events.php";
+         $.getJSON(url, function(dato){
+ 
+             $.each(dato, function(i, testimonials){
+                 
+                 var t = 
+                    "<div class=\"col-12 col-sm-6 col-md-3 d-flex\">"+
+                        "<div class=\"card\" style=\"width: 18rem;\">"+
+                            "<img src=\"../../img/nathan-mullet-GoFys2bZJaE-unsplash.jpg\" class=\"card-img-top\" alt=\"...\">"+
+                            "<div class=\"card-body\">"+
+                                "<h5 class=\"card-title\">Japan</h5>"+
+                                "<div class=\"card-footer bg-transparent fs-sm\"><span class=\"o-50\">By</span> <a href=\"\""+
+                                                "class=\"fw-bold o-50 o-100-hover trans-base position-relative zi-20\">John Doe</a> <span"+
+                                                "class=\"o-50\">in</span> <a href=\"\""+
+                                                "class=\"fw-bold o-50 o-100-hover trans-base position-relative zi-20\">News</a>"+
+                                "</div>"+
+                                "<div class=\"d-grid gap-2 d-md-flex justify-content-md-end\">"+
+                                        "<button class=\"btn btn-link me-md-1 mr-1\" type=\"button\"><a id=\"\" class=\"fa fa-trash fa-lg\" href=\"#\"></a></button>"+
+                                        "<button class=\"btn btn-link\" type=\"button\"><a data-bs-toggle=\"modal\" data-bs-target=\"#new_event\" id=\"\" class=\"fa fa-pen fa-lg\" href=\"#\"></a></button>"+
+                                "</div>"+   
+                            "</div>"+
+                        "</div>"+
+                    "</div>";
+
+             
+                 $(t).appendTo("#bodyEvents");   
+                                                     
+             }); 
+ 
+         }); 
+
         $("#btn_query").click(function (e) {
 
             var txt_names = $("#txt_names").val();
