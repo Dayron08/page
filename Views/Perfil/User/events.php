@@ -41,27 +41,9 @@
             </header>
             <!-- /.section-header mb-5 visually-hidden -->
 
-            <div class="row g-4 mb-5">
+            <div class="row g-4 mb-5" id=bodyEventsUser>
 
-            
-                <div class="col-12 col-sm-6 col-md-3 d-flex">
-                    <div class="card card__minimal h-100">
-                        <div class="card-img-top overflow-hidden position-relative">
-                            <img loading="lazy" src="../../img/hero-bg-3000.jpg" class="w-100" alt="Image" />
-                        </div>
-                        <div class="card-body pt-3">
-                            <h3 class="fs-5"><a href="" class="stretched-link">Japan Through The lenses</a></h3>
-                        </div>
-                        <div class="card-footer bg-transparent fs-sm"><span class="o-50">By</span> <a href=""
-                                class="fw-bold o-50 o-100-hover trans-base position-relative zi-20">John Doe</a> <span
-                                class="o-50">in</span> <a href=""
-                                class="fw-bold o-50 o-100-hover trans-base position-relative zi-20">News</a></div>
-                    </div>
-                    <!-- /.card card__minimal -->
-                </div>
-                <!-- /.col-12 col-sm-6 col-md-3 d-flex -->
-
-                <div class="col-12 col-sm-6 col-md-3 d-flex">
+                <!-- <div class="col-12 col-sm-6 col-md-3 d-flex">
                     <div class="card card__minimal h-100">
                         <div class="card-img-top overflow-hidden position-relative">
                             <img loading="lazy" src="../../img/bee-balogun-azEIxYe2usQ-unsplash.jpg" class="w-100"
@@ -75,116 +57,8 @@
                                 class="o-50">in</span> <a href=""
                                 class="fw-bold o-50 o-100-hover trans-base position-relative zi-20">News</a></div>
                     </div>
-                    <!-- /.card card__minimal -->
-                </div>
-                <!-- /.col-12 col-sm-6 col-md-3 d-flex -->
-
-                <div class="col-12 col-sm-6 col-md-3 d-flex">
-                    <div class="card card__minimal h-100">
-                        <div class="card-img-top overflow-hidden position-relative">
-                            <img loading="lazy" src="../../img/JA2TI5OW75FTZBMGHY46TMOS4Q.jpg" class="w-100"
-                                alt="Image" />
-                        </div>
-                        <div class="card-body pt-3">
-                            <h3 class="fs-5"><a href="" class="stretched-link">Japan Through The lenses</a></h3>
-                        </div>
-                        <div class="card-footer bg-transparent fs-sm"><span class="o-50">By</span> <a href=""
-                                class="fw-bold o-50 o-100-hover trans-base position-relative zi-20">John Doe</a> <span
-                                class="o-50">in</span> <a href=""
-                                class="fw-bold o-50 o-100-hover trans-base position-relative zi-20">News</a></div>
-                    </div>
-                    <!-- /.card card__minimal -->
-                </div>
-                <!-- /.col-12 col-sm-6 col-md-3 d-flex -->
-
-                <div class="col-12 col-sm-6 col-md-3 d-flex">
-                    <div class="card card__minimal h-100">
-                        <div class="card-img-top overflow-hidden position-relative">
-                            <img loading="lazy"
-                                src="../../img/spirituality-and-religion-hands-folded-in-prayer-on-holy-bible-in-church-concept-for-faith.jpg"
-                                class="w-100" alt="Image" />
-                        </div>
-                        <div class="card-body pt-3">
-                            <h3 class="fs-5"><a href="" class="stretched-link">Japan Through The lenses</a></h3>
-                        </div>
-                        <div class="card-footer bg-transparent fs-sm"><span class="o-50">By</span> <a href=""
-                                class="fw-bold o-50 o-100-hover trans-base position-relative zi-20">John Doe</a> <span
-                                class="o-50">in</span> <a href=""
-                                class="fw-bold o-50 o-100-hover trans-base position-relative zi-20">News</a></div>
-                    </div>
-                    <!-- /.card card__minimal -->
-                </div>
-                <!-- /.col-12 col-sm-6 col-md-3 d-flex -->
-
-                <div class="col-12 col-sm-6 col-md-3 d-flex">
-                    <div class="card card__minimal h-100">
-                        <div class="card-img-top overflow-hidden position-relative">
-                            <img loading="lazy" src="../../img/nathan-mullet-GoFys2bZJaE-unsplash.jpg" class="w-100"
-                                alt="Image" />
-                        </div>
-                        <div class="card-body pt-3">
-                            <h3 class="fs-5"><a href="" class="stretched-link">Japan Through The lenses</a></h3>
-                        </div>
-                        <div class="card-footer bg-transparent fs-sm"><span class="o-50">By</span> <a href=""
-                                class="fw-bold o-50 o-100-hover trans-base position-relative zi-20">John Doe</a> <span
-                                class="o-50">in</span> <a href=""
-                                class="fw-bold o-50 o-100-hover trans-base position-relative zi-20">News</a></div>
-                    </div>
-                    <!-- /.card card__minimal -->
-                </div>
-                <!-- /.col-12 col-sm-6 col-md-3 d-flex -->
-
-                <div class="col-12 col-sm-6 col-md-3 d-flex">
-                    <div class="card card__minimal h-100">
-                        <div class="card-img-top overflow-hidden position-relative">
-                            <img loading="lazy" src="../../img/edward-cisneros-lpqwPxMVUv0-unsplash.jpg" class="w-100"
-                                alt="Image" />
-                        </div>
-                        <div class="card-body pt-3">
-                            <h3 class="fs-5"><a href="" class="stretched-link">Japan Through The lenses</a></h3>
-                        </div>
-                        <div class="card-footer bg-transparent fs-sm"><span class="o-50">By</span> <a href=""
-                                class="fw-bold o-50 o-100-hover trans-base position-relative zi-20">John Doe</a> <span
-                                class="o-50">in</span> <a href=""
-                                class="fw-bold o-50 o-100-hover trans-base position-relative zi-20">News</a></div>
-                    </div>
-                    <!-- /.card card__minimal -->
-                </div>
-                <!-- /.col-12 col-sm-6 col-md-3 d-flex -->
-
-                <div class="col-12 col-sm-6 col-md-3 d-flex">
-                    <div class="card card__minimal h-100">
-                        <div class="card-img-top overflow-hidden position-relative">
-                            <img loading="lazy" src="../../img/bible_picture.jpg" class="w-100" alt="Image" />
-                        </div>
-                        <div class="card-body pt-3">
-                            <h3 class="fs-5"><a href="" class="stretched-link">Japan Through The lenses</a></h3>
-                        </div>
-                        <div class="card-footer bg-transparent fs-sm"><span class="o-50">By</span> <a href=""
-                                class="fw-bold o-50 o-100-hover trans-base position-relative zi-20">John Doe</a> <span
-                                class="o-50">in</span> <a href=""
-                                class="fw-bold o-50 o-100-hover trans-base position-relative zi-20">News</a></div>
-                    </div>
-                    <!-- /.card card__minimal -->
-                </div>
-                <!-- /.col-12 col-sm-6 col-md-3 d-flex -->
-
-                <div class="col-12 col-sm-6 col-md-3 d-flex">
-                    <div class="card card__minimal h-100">
-                        <div class="card-img-top overflow-hidden position-relative">
-                            <img loading="lazy" src="../../img/bee-balogun-azEIxYe2usQ-unsplash.jpg" class="w-100"
-                                alt="Image" />
-                        </div>
-                        <div class="card-body pt-3">
-                            <h3 class="fs-5"><a href="" class="stretched-link">Japan Through The lenses</a></h3>
-                        </div>
-                        <div class="card-footer bg-transparent fs-sm"><span class="o-50">By</span> <a href=""
-                                class="fw-bold o-50 o-100-hover trans-base position-relative zi-20">John Doe</a> <span
-                                class="o-50">in</span> <a href=""
-                                class="fw-bold o-50 o-100-hover trans-base position-relative zi-20">News</a></div>
-                    </div>
-                    <!-- /.card card__minimal -->
-                </div>
+                   
+                </div> -->
                 <!-- /.col-12 col-sm-6 col-md-3 d-flex -->
             </div>
             <!-- /.row g-4 mb-5 -->
