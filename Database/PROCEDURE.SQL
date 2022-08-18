@@ -420,7 +420,7 @@ CREATE OR REPLACE PROCEDURE P_INSERTAR_PERSONA_TESTIMONIO
         IN P_ID_REGISTRO_PERSONA VARCHAR(50)
     )
     BEGIN
-            INSERT INTO PERSONA_TESTIMONIOS    
+            INSERT INTO PERSONA_TESTIMONIOS
             (
                 ID_TESTI, 
                 FECHA_ACTUAL, 
@@ -430,12 +430,8 @@ CREATE OR REPLACE PROCEDURE P_INSERTAR_PERSONA_TESTIMONIO
             VALUES 
             (
                 NULL,
-                current_timestamp(),  
-                P_DSC_TESTIMONIO, 
-<<<<<<< HEAD
                 current_timestamp(),
-=======
->>>>>>> 87796a8061bde8979d6c2348db71d97154665cdc
+                P_DSC_TESTIMONIO, 
                 P_ID_REGISTRO_PERSONA
             );
             COMMIT;
