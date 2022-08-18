@@ -135,13 +135,13 @@
 
                 <form action="#" method="post" class="">
                     <div class="input-group mb-3">
-                        <textarea type="text" class="form-control form-control-lg" placeholder="Testimonio"
+                        <textarea type="text" class="form-control form-control-lg" placeholder="Testimonio" id="txt_testimony"
                             aria-label="Recipient's username" aria-describedby="button-addon2" rows="3" cols="10"
                             maxlength="200"></textarea>
                     </div>
-                    <button class="btn btn-warning btn-lg px-4" type="button" id="button-addon2">Subir</button>
+                    <button class="btn btn-warning btn-lg px-4" type="button" id="btn_testimony">Subir</button>
                 </form>
-            </div>
+            </div> 
             <!-- /.col-12 col-lg-6 col-xl-6 py-4 py-lg-7 pe-lg-6 d-flex flex-column justify-content-center -->
 
             <div class="col-12 col-lg-6 col-xl-6">
