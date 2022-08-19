@@ -1,6 +1,6 @@
 $(document).ready(function(e){ 
  
- 
+  
     // lectura todos las imagenes
      var url = "../../../Controllers/call_imagesHome.php";
      $.getJSON(url, function(datos){
@@ -70,7 +70,7 @@ $(document).ready(function(e){
               "<div class=\"col-12 col-sm-6 col-lg-4 d-flex align-items-stretch\">"+
                 "<figure class=\"card testimonial h-100 text-center bg-transparent mb-0\">"+
                     "<blockquote class=\"blockquote card-body bg-white shadow-sm rounded d-flex flex-column px-lg-5\">"+
-                        "<button class=\"btn btn-link p-0 ms-4 shadow-none\"><a id=\"buttondelete\" class=\"fa fa-trash fa-lg\" href=\"#\"></a></button>"+
+                        "<button class=\"btn btn-link p-0 ms-4 shadow-none\"><a id=\"buttondelete\" onclick=\"deleteTestimonial('"+testimonials.idTesti+"')\"class=\"fa fa-trash fa-lg\" href=\"#\"></a></button>"+
                         "<input type=\"checkbox\" id=\"check\" >"+
                         "<p class=\"fs-1 text-secondary o-25 mb-0\"><i class=\"fas fa-quote-right\"></i></p>"+
                         "<p class=\"fs-6\">"+testimonials.dsc+"</p>"+

@@ -364,6 +364,7 @@ USE PacVi $$
 CREATE OR REPLACE PROCEDURE P_VER_PERSONA_TESTIMONIO()
     BEGIN
         SELECT
+            PT.ID_TESTI,
             PT.DSC_TESTIMONIO, 
             P.NOMBRE,
             P.APPELLIDOS

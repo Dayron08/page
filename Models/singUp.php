@@ -194,6 +194,7 @@ class SingUp extends Connection_Mysql {
 	   $testimonials = array();
 		while ($result = mysqli_fetch_assoc($this->result)) {
 			$testimonials []= array(
+				"idTesti"=> $result["ID_TESTI"],
 				"dsc"=> $result["DSC_TESTIMONIO"],
 				"name" => $result["NOMBRE"],
 				"lastname" => $result["APPELLIDOS"]);
