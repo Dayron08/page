@@ -259,10 +259,57 @@ $(document).ready(function(e){
         });
 
 
-
-
-
-
  });
+
+ 
+function deleteTestimonial(idTesti){
+
+    $.ajax({
+          url: "../../../Controllers/deleteTestimonial.php",
+          method: "POST",
+          data:{idTesti: idTesti},
+          success: function(dataresponse, statustext, response){
+            if(statustext == "success"){
+              $("#respuesta").html(dataresponse);
+
+              $("#bodytestimonial").html("");
+              // lectura para todos los testimonios 
+                var url = "../../../Controllers/call_testimonials.php";
+                $.getJSON(url, function(dato){
+            
+                    $.each(dato, function(i, testimonials){
+                        
+                        var t = 
+                        "<div class=\"col-12 col-sm-6 col-lg-4 d-flex align-items-stretch\">"+
+                            "<figure class=\"card testimonial h-100 text-center bg-transparent mb-0\">"+
+                                "<blockquote class=\"blockquote card-body bg-white shadow-sm rounded d-flex flex-column px-lg-5\">"+
+                                    "<button class=\"btn btn-link p-0 ms-4 shadow-none\"><a id=\"buttondelete\" onclick=\"deleteTestimonial('"+testimonials.idTesti+"')\"class=\"fa fa-trash fa-lg\" href=\"#\"></a></button>"+
+                                    "<input type=\"checkbox\" id=\"check\" >"+
+                                    "<p class=\"fs-1 text-secondary o-25 mb-0\"><i class=\"fas fa-quote-right\"></i></p>"+
+                                    "<p class=\"fs-6\">"+testimonials.dsc+"</p>"+
+                                "<p class=\"text-secondary text-decoration-none fs-sm mt-auto mb-3 o-75\">&mdash;<span class=\"fw-bold\">-"+testimonials.name+"</span> "+testimonials.lastname+"</p>"+
+                                    "<div class=\"img px-3 px-lg-4\">"+
+                                        "<img loading=\"lazy\" src=\"http://assets.coolorize.com/avatar/256x256/ariel-lustre-368240.jpg\" class=\"img rounded-circle\" alt=\"Image\" />"+
+                                    "</div>"+
+                                "</blockquote>"+
+                            "</figure>"+
+                        "</div>";
+                        
+                        
+                        $(t).appendTo("#bodytestimonial");   
+                                                                
+                    });
+            
+                }); 
+           
+          }
+          },
+          error: function(request, errorcode, errortext){
+              
+          }
+            
+      });
+}
+
 
  

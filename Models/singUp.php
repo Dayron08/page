@@ -30,6 +30,10 @@ class SingUp extends Connection_Mysql {
         $this->user_id = $user_id;
     }
 
+	public function set_id_testi($id){
+        $this->id = $id;
+    }
+
 	public function set_name($name){
         $this->name = $name;
     } 
@@ -278,6 +282,20 @@ class SingUp extends Connection_Mysql {
 		return $testimonial;
 
 	}
+
+	
+	public function deleteTesti() {
+	
+		// $this->query = "CALL P_INSERTAR_PERSONA_TESTIMONIO(                
+		// 	'".$this->testimony."',
+		// 	'".$this->user_id."');"; 
+		
+
+		$this->query = "DELETE FROM `persona_testimonios` WHERE `ID_TESTI` = '".$this->id."'";
+		
+		$this->execute($this->query);
+
+	} 
 
 }
 
