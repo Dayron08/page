@@ -71,7 +71,7 @@
                     </blockquote>
                 </figure>
             </div> -->
-         
+
 
         </div>
         <!-- /.row cities -->

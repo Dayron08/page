@@ -59,7 +59,7 @@ $(document).ready(function (e) {
             $(t).appendTo("#tbodytestimonial");
 
             // lectura para todos los testimonios 
-            var url = "../../../Controllers/call_testimonials.php";
+            var url = "Controllers/call_testimonials.php";
             $.getJSON(url, function (dato) {
 
                 $.each(dato, function (i, testimonials) {
@@ -88,7 +88,7 @@ $(document).ready(function (e) {
             });
 
             // lectura para todos las consultas
-            var url = "../../../Controllers/call_consul.php";
+            var url = "Controllers/call_consul.php";
             $.getJSON(url, function (dato) {
 
                 $.each(dato, function (i, consul) {
@@ -113,7 +113,7 @@ $(document).ready(function (e) {
             });
 
             // lectura para todos los testimonios User
-            var url = "../../../Controllers/call_testimonials.php";
+            var url = "Controllers/call_testimonials.php";
             $.getJSON(url, function (dato) {
 
                 $.each(dato, function (i, testimonials) {
@@ -141,7 +141,7 @@ $(document).ready(function (e) {
 
 
             // lectura para todos los eventos admin
-            var url = "../../../Controllers/call_events.php";
+            var url = "Controllers/call_events.php";
             $.getJSON(url, function (dato) {
 
                 $.each(dato, function (i, events) {
@@ -174,7 +174,7 @@ $(document).ready(function (e) {
 
 
             // lectura para todos los eventos admin
-            var url = "../../../Controllers/call_eventsUsers.php";
+            var url = "Controllers/call_eventsUsers.php";
             $.getJSON(url, function (dato) {
 
                 $.each(dato, function (i, events) {
@@ -210,7 +210,7 @@ $(document).ready(function (e) {
                 var txt_text = $("#txt_text").val();
 
                 $.ajax({
-                    url: "../../../Controllers/insertQuery.php",
+                    url: "Controllers/insertQuery.php",
                     method: "POST",
                     data: { txt_names: txt_names, txt_lastnames: txt_lastnames, txt_gmail: txt_gmail, txt_subject: txt_subject, txt_text: txt_text },
                     success: function (dataresponse, statustext, response) {
@@ -551,7 +551,7 @@ $(document).ready(function (e) {
     function deleteTestimonial(idTesti) {
 
         $.ajax({
-            url: "../../../Controllers/deleteTestimonial.php",
+            url: "Controllers/deleteTestimonial.php",
             method: "POST",
             data: { idTesti: idTesti },
             success: function (dataresponse, statustext, response) {
@@ -560,7 +560,7 @@ $(document).ready(function (e) {
 
                     $("#bodytestimonial").html("");
                     // lectura para todos los testimonios 
-                    var url = "../../../Controllers/call_testimonials.php";
+                    var url = "Controllers/call_testimonials.php";
                     $.getJSON(url, function (dato) {
 
                         $.each(dato, function (i, testimonials) {
@@ -601,7 +601,7 @@ $(document).ready(function (e) {
     function deleteEvent(idEvent) {
 
         $.ajax({
-            url: "../../../Controllers/deleteEvents.php",
+            url: "Controllers/deleteEvents.php",
             method: "POST",
             data: { idEvent: idEvent },
             success: function (dataresponse, statustext, response) {
@@ -610,7 +610,7 @@ $(document).ready(function (e) {
 
                     $("#bodyEvents").html("");
                     // lectura para todos los eventos admin
-                    var url = "../../../Controllers/call_events.php";
+                    var url = "Controllers/call_events.php";
                     $.getJSON(url, function (dato) {
 
                         $.each(dato, function (i, events) {
@@ -653,7 +653,7 @@ $(document).ready(function (e) {
     function deleteConsul(idConsul) {
 
         $.ajax({
-            url: "../../../Controllers/deleteConsul.php",
+            url: "Controllers/deleteConsul.php",
             method: "POST",
             data: { idConsul: idConsul },
             success: function (dataresponse, statustext, response) {
@@ -662,7 +662,7 @@ $(document).ready(function (e) {
 
                     $("#bodyconsul").html("");
                     // lectura para todos las consultas
-                    var url = "../../../Controllers/call_consul.php";
+                    var url = "Controllers/call_consul.php";
                     $.getJSON(url, function (dato) {
 
                         $.each(dato, function (i, consul) {

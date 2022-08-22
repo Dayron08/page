@@ -50,7 +50,7 @@
                 <div class="ms-auto ps-3 navbar-end d-flex flex-row justify-content-end">
 
                     <button class="btn btn-link btn-light p-0 ms-3 shadow-none"><a class="fas fa-user"
-                            href="index.php?access=A-213" id="user_icon"></a></button>
+                            href="index.php?access=A-213"></a></button>
 
                     <button class="btn-close btn-close-menu collapsed ms-3" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false"
@@ -135,12 +135,7 @@
                                 <li><a class="dropdown-item" href="">Iglesia</a>
                                 </li>
 
-                                <li><a class="dropdown-item" href=".index.php?access=A-212">Consultas</a></li>
-
-                                <li><a class="dropdown-item" href="../Admin/contact.php">Iglesia</a></li>
-
-                                <li><a class="dropdown-item" href="../Admin/consultation.php">Consultas</a></li>
-
+                                <li><a class="dropdown-item" href="index.php?access=A-212">Consultas</a></li>
 
                             </ul>
                         </li>

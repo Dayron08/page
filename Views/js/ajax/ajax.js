@@ -115,7 +115,7 @@ $(document).ready(function () {
 
 
         $.ajax({
-            url: "../../../Controllers/singUp_admin.php",
+            url: "Controllers/singUp_admin.php",
             method: "POST",
             data: { txt_user_id: txt_user_id, txt_rol: txt_rol, txt_name: txt_name, txt_surname: txt_surname, txt_password: txt_password, txt_gmail: txt_gmail },
             success: function (dataresponse, statustext, response) {
