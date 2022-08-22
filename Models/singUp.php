@@ -172,7 +172,8 @@ class SingUp extends Connection_Mysql {
 		'".$this->password."');";
 		$this->execute($this->query);
 	    $row = mysqli_fetch_assoc($this->result);
-		
+
+		//meti ID_TIPO
 		$_SESSION['ID_REGISTRO_PERSONA'] = ISSET($row["ID_REGISTRO_PERSONA"]); 
 		
 		return $row;
