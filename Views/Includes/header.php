@@ -124,7 +124,8 @@
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDocs" role="button"
                                 data-bs-toggle="dropdown">Cuenta</a>
                             <ul class="nav-dropdown-menu dropdown-menu dropdown-menu-end shadow" data-bs-popper>
-                                <li><a class="dropdown-item" href="index.php?access=U-108">Perfil</a></li>
+                                <li><a class="dropdown-item" href="index.php?access=U-108" id="view_profile">Perfil</a>
+                                </li>
 
                                 <li><a class="dropdown-item" href="index.php?access=U-109">Privacidad</a></li>
 

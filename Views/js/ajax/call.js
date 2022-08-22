@@ -227,6 +227,140 @@ $(document).ready(function (e) {
 
 
 
+    $("#btn_entrar").click(function (e) {
+        // var data;
+
+        //   e.preventDefault();
+
+        var txt_email = $("#txt_email").val();
+        var validacion = /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
+        vali = validacion.test(txt_email);
+        if (vali == '' || vali != true) {
+            $("#alert_emaill").text("✘ Formato no valido");
+            $("#alert_emaill").css({ "color": "red", "font-family": "Times New Roman', Times, serif;" });
+            return false;
+        } else {
+            $("#alert_emaill").text("");
+            var txt_pass = $("#txt_pass").val();
+            if (txt_pass == '') {
+                $("#alert_passwordd").text("✘ No se permiten campos vacios");
+                $("#alert_passwordd").css({ "color": "red", "font-family": "Times New Roman', Times, serif;" });
+                return false;
+            } else if (txt_pass.length < 8) {
+                $("#alert_passwordd").text("✘ La contraseña debe de tener al menos 8 caracteres");
+                $("#alert_passwordd").css({ "color": "red", "font-family": "Times New Roman', Times, serif;" });
+                return false;
+            } else {
+                $("#alert_passwordd").text("");
+            }
+
+        }
+
+
+        $.ajax({
+            url: "../../../Controllers/validateLogin.php",
+            method: "POST",
+            data: { txt_email: txt_email, txt_pass: txt_pass },
+
+            success: function (dataresponse, statustext, response) {
+                if (statustext == "success") {
+                    $("#respuesta").html(dataresponse);
+
+                    if (dataresponse == 0) {
+                        Swal.fire({
+                            position: 'top-end',
+                            icon: 'success',
+                            title: 'Iniciando Sesion',
+                            showConfirmButton: false,
+                            timer: 400
+                        })
+                        location.href = "../../Perfil/User/home.php";
+
+                    } else if (dataresponse == 1) {
+                        Swal.fire({
+                            position: 'top-end',
+                            icon: 'success',
+                            title: 'Iniciando Sesion',
+                            showConfirmButton: false,
+                            timer: 400
+                        })
+                        location.href = "../../Perfil/Admin/home.php";
+                    } else if (dataresponse == 2 || dataresponse == null) {
+                        alert("Datos no encontrados");
+                        location.href = "#";
+                    }
+                    // data = dataresponse;
+                }
+            },
+
+            error: function (request, errorcode, errortext) {
+                $("#respuesta").html(errorcode);
+            }
+
+
+        });
+
+    });
+    //view profile
+    $("#view_profile").click(function (e) {
+        var url = "../json/id_profile.json";
+
+        $.getJSON(url, function (data) {
+            $.each(data, function (i, data_profile) {
+                // alert(cod_persona+"-"+num_ide+"-"+name+"-"+last_names)
+                $.ajax({
+                    method: "POST",
+                    url: "../Controllers/view_profile.php",
+                    data:
+                    {
+                        id_profile: data.id
+                    },
+                    success: function (response) {
+                        var p =
+                            "<dl class=\"col-6 col - lg - 4 my - 0\">" +
+                            "< dt class=\"fw-normal fs-sm text-uppercase text-secondary\" > N & uacute;mero de identificaci & oacute;n</dt >" +
+                            "<input type=\"text\" class=\"form-control shadow-none mt-3 mb-3\" value=" + data_profile.NUM_IDE + ">" +
+                            "</dl>" +
+                            "<dl class=\"col-6 col-lg-4 my-0\">" +
+                            "<dt class=\"fw-normal fs-sm text-uppercase text-secondary\">Nombre</dt>" +
+                            "<input type=\"text\" class=\"form-control shadow-none mt-3 mb-3\" value=" + data_profile.NOMBRE + ">" +
+                            "</dl>" +
+                            "<dl class=\"col-6 col-lg-4 my-0\">" +
+                            "<dt class=\"fw-normal fs-sm text-uppercase text-secondary\">Apellidos</dt>" +
+                            "<input type=\"text\" class=\"form-control shadow-none mt-3 mb-3\" value=" + data_profile.APPELLIDOS + ">" +
+                            "</dl>" +
+                            "<dl class=\"col-6 col-lg-4 my-0\">" +
+                            "<dt class=\"fw-normal fs-sm text-uppercase text-secondary\">Fecha de nacimiento</dt>" +
+                            "<input type=\"text\" class=\"form-control shadow-none mt-3 mb-3\" value=" + data_profile.FECH_NACIMIENTO + ">" +
+                            "</dl>" +
+                            "<dl class=\"col-6 col-lg-4 my-0\">" +
+                            "<dt class=\"fw-normal fs-sm text-uppercase text-secondary\">G&eacute;nero</dt>" +
+                            "<input type=\"text\" class=\"form-control shadow-none mt-3 mb-3\" value=" + data_profile.GENERO + ">" +
+                            "</dl>";
+
+                        var pc =
+                            "<dl class=\"col-6 col - lg - 4 my - 0\">" +
+                            "< dt class=\"fw-normal fs-sm text-uppercase text-secondary\" >Correo</dt >" +
+                            "<input type=\"text\" class=\"form-control shadow-none mt-3 mb-3\" value=" + data_profile.EMAIL + ">" +
+                            "</dl>" +
+                            "<dl class=\"col-6 col-lg-4 my-0\">" +
+                            "<dt class=\"fw-normal fs-sm text-uppercase text-secondary\">Tel&eacute;fono</dt>" +
+                            "<input type=\"text\" class=\"form-control shadow-none mt-3 mb-3\" value=" + data_profile.TELEFONO + ">" +
+                            "</dl>";
+
+                        var img_url =
+                            "<img loading=\"lazy\" src=" + data_profile.FOTO_PERFIL + " class=\"w-100\" alt=\"Image\" style=\"border-radius: 45%; width: 100%; height : 200px; \" />";
+                        $(p).appendTo("#personal_data");
+                        $(pc).appendTo("#personal_contact_data");
+                    }
+                });
+            });
+        });
+
+
+
+    });
+
 
 
 

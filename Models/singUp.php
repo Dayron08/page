@@ -170,25 +170,29 @@ class SingUp extends Connection_Mysql {
 				"id"=> $result["CEDULA"]);
 		}
 
-		$_SESSION['ID_REGISTRO_PERSONA'] = ISSET($row["CEDULA"]); 
+		$_SESSION['ID_REGISTRO_PERSONA'] = ISSET($row["CEDULA"],$row["ID_TIPO"]); 
 
 		
 		return $person_id;
 	}
 
 	public function call_data_profile() {
-
-		session_start();
-		
 		$this->query = "CALL P_VER_PERFIL(
 		'".$this->person_registration_id."');";
 		$this->execute($this->query);
-	    $row = mysqli_fetch_assoc($this->result);
-
-		$_SESSION['ID_REGISTRO_PERSONA'] = ISSET($row["ID_REGISTRO_PERSONA"], $row["NOMBRE"], $row["APPELLIDOS"], $row["FECH_NACIMIENTO"], $row["GENERO"], $row["EMAIL"], $row["TELEFONO"], $row["IMG_PATH"]); 
-
-		
-		return $row;
+	    $data_profile = array();
+		while ($result = mysqli_fetch_assoc($this->result)) {
+			$data_profile []= array(
+				"FOTO_PERFIL"=> $result["FOTO_PERFIL"],
+				"NUM_IDE" => $result["NUM_IDE"],
+				"NOMBRE" => $result["NOMBRE"],
+				"APPELLIDOS" => $result["APPELLIDOS"],
+				"FECH_NACIMIENTO"=> $result["FECH_NACIMIENTO"],
+				"GENERO"=> $result["GENERO"],
+				"EMAIL"=> $result["EMAIL"],
+				"TELEFONO"=> $result["TELEFONO"]);
+		}
+		return $data_profile;
 	}
 
 

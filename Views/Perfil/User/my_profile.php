@@ -29,65 +29,10 @@
                             aria-labelledby="accordionPropertyDetailsHeading"
                             data-bs-parent="#accordionPropertyDetails">
                             <div class="accordion-body">
-                                <div class="row g-2 mb-3">
-                                    <dl class="col-6 col-lg-4 my-0">
-                                        <dt class="fw-normal fs-sm text-uppercase text-secondary">N&uacute;mero de
-                                            identificaci&oacute;n</dt>
-                                        <input type="text" class="form-control shadow-none mt-3 mb-3">
-                                    </dl>
-                                    <!-- /.col-6 -->
+                                <div class="row g-2 mb-3" id="personal_data">
+                                    <!-- here we will call the personal data with a json-->
 
-                                    <dl class="col-6 col-lg-4 my-0">
-                                        <dt class="fw-normal fs-sm text-uppercase text-secondary">Nombre</dt>
-                                        <input type="text" class="form-control shadow-none mt-3 mb-3">
-                                    </dl>
-                                    <!-- /.col-6 -->
-
-                                    <dl class="col-6 col-lg-4 my-0">
-                                        <dt class="fw-normal fs-sm text-uppercase text-secondary">Apellidos</dt>
-                                        <input type="text" class="form-control shadow-none mt-3 mb-3">
-                                    </dl>
-                                    <!-- /.col-6 -->
-
-                                    <dl class="col-6 col-lg-4 my-0">
-                                        <dt class="fw-normal fs-sm text-uppercase text-secondary">Fecha de nacimiento
-                                        </dt>
-                                        <input type="text" class="form-control shadow-none mt-3 mb-3">
-                                    </dl>
-                                    <!-- /.col-6 -->
-
-                                    <dl class="col-6 col-lg-4 my-0">
-                                        <dt class="fw-normal fs-sm text-uppercase text-secondary">G&eacute;nero</dt>
-                                        <input type="text" class="form-control shadow-none mt-3 mb-3">
-                                    </dl>
-                                    <!-- /.col-6 -->
-                                    <!-- la contrasena se piensa hacer por un login como seguirdad -->
-                                    <!-- <dl class="col-6 col-lg-4 my-0">
-                                        <dt class="fw-normal fs-sm text-uppercase text-secondary">Constrase&ntilde;a
-                                        </dt>
-                                        <input type="text" class="form-control shadow-none mt-3 mb-3">
-                                    </dl> -->
-                                    <!-- /.col-6 -->
-
-                                    <!-- <dl class="col-6 col-lg-4 my-0">
-                                        <dt class="fw-normal fs-sm text-uppercase text-secondary">Fecha de ingreso</dt>
-                                        <input type="text" class="form-control shadow-none mt-3 mb-3">
-                                    </dl> -->
-                                    <!-- /.col-6 -->
-
-                                    <!-- <dl class="col-6 col-lg-4 my-0">
-                                        <dt class="fw-normal fs-sm text-uppercase text-secondary">Tipo de persona</dt>
-                                        <input type="text" class="form-control shadow-none mt-3 mb-3">
-                                    </dl> -->
-                                    <!-- /.col-6 -->
-
-                                    <!-- <dl class="col-6 col-lg-4 my-0">
-                                        <dt class="fw-normal fs-sm text-uppercase text-secondary">Correo</dt>
-                                        <input type="text" class="form-control shadow-none mt-3 mb-3">
-                                    </dl> -->
-                                    <!-- /.col-6 -->
                                 </div>
-                                <!-- /.row -->
                                 <p class="text-light mt-3 d-grid gap-2 d-md-flex justify-content-md-end"">
                                     <a class=" btn btn-warning shadow-none px-4 fw-bold mt-1" href="#"
                                     id="btn_savePersonalInformation"><i class="fas fa-pen"></i> Guardar cambios</a>
@@ -113,19 +58,8 @@
                             aria-labelledby="accordionPropertyDetailsHeading"
                             data-bs-parent="#accordionPropertyDetails">
                             <div class="accordion-body">
-                                <div class="row g-2 mb-3">
-
-                                    <dl class="col-6 col-lg-4 my-0">
-                                        <dt class="fw-normal fs-sm text-uppercase text-secondary">Correo</dt>
-                                        <input type="text" class="form-control shadow-none mt-3 mb-3">
-                                    </dl>
-                                    <!-- /.col-6 -->
-
-                                    <dl class="col-6 col-lg-4 my-0">
-                                        <dt class="fw-normal fs-sm text-uppercase text-secondary">Tel&eacute;fono</dt>
-                                        <input type="text" class="form-control shadow-none mt-3 mb-3">
-                                    </dl>
-                                    <!-- /.col-6 -->
+                                <div class="row g-2 mb-3" id="personal_contact_data">
+                                    <!-- here we will call the personal contact data with a json-->
                                 </div>
                                 <!-- /.row -->
                                 <p class="text-light mt-3 d-grid gap-2 d-md-flex justify-content-md-end">
@@ -159,7 +93,8 @@
                         <div class="tab-pane fade p-3 show active" id="schedulle" role="tabpanel"
                             aria-labelledby="schedulleTab">
                             <form action="#" class="">
-                                <div class="btn-group w-100 mb-3" role="group">
+                                <div class="btn-group w-100 mb-3" role="group" id="url_image">
+                                    <!-- here we will call the image url with a json-->
                                     <img loading="lazy" src="Views/img/20210710_021750_112124.jpg" class="w-100"
                                         alt="Image" style="border-radius: 45%; width: 100%; height : 200px; " />
                                 </div>
