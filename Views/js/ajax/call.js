@@ -258,7 +258,7 @@ $(document).ready(function (e) {
 
 
         $.ajax({
-            url: "../../../Controllers/validateLogin.php",
+            url: "Controllers/validateLogin.php",
             method: "POST",
             data: { txt_email: txt_email, txt_pass: txt_pass },
 
@@ -274,7 +274,7 @@ $(document).ready(function (e) {
                             showConfirmButton: false,
                             timer: 400
                         })
-                        location.href = "../../Perfil/User/home.php";
+                        location.href = "index.php?access=U-101";
 
                     } else if (dataresponse == 1) {
                         Swal.fire({
@@ -284,7 +284,7 @@ $(document).ready(function (e) {
                             showConfirmButton: false,
                             timer: 400
                         })
-                        location.href = "../../Perfil/Admin/home.php";
+                        location.href = "index.php?access=A-201";
                     } else if (dataresponse == 2 || dataresponse == null) {
                         alert("Datos no encontrados");
                         location.href = "#";
@@ -304,7 +304,7 @@ $(document).ready(function (e) {
     //view profile
     $("#view_profile").click(function (e) {
         // alert("estoy aqui");
-        var url = "../js/json/id_perfil.json";
+        var url = "../json/id_perfil.json";
         // alert(url);
         $.getJSON(url, function (data) {
             $.each(data, function (i, data_profile) {
