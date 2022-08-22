@@ -34,6 +34,11 @@ class SingUp extends Connection_Mysql {
         $this->id = $id;
     }
 
+	public function set_id_event($idEvent){
+        $this->idEvent = $idEvent;
+    }
+
+
 	public function set_name($name){
         $this->name = $name;
     } 
@@ -207,7 +212,7 @@ class SingUp extends Connection_Mysql {
 		return $testimonials ;
 
 	}
-
+ 
 	public function readEvents() {
 		
 		$this->query = "CALL P_HISTORICO_EVENTO();";
@@ -216,6 +221,7 @@ class SingUp extends Connection_Mysql {
 	   $events = array();
 		while ($result = mysqli_fetch_assoc($this->result)) {
 			$events []= array(
+				"id"=> $result["ID_EVENT"],
 				"nameEvent"=> $result["NOMBRE_EVENTO"],
 				"name" => $result["ENCARGADO"],
 				"dsc" => $result["DSC_EVENTO"],
@@ -225,7 +231,7 @@ class SingUp extends Connection_Mysql {
 		
 		return $events ;
 
-	}
+	} 
 
 	public function readEventsUsers() {
 		
@@ -292,6 +298,15 @@ class SingUp extends Connection_Mysql {
 		
 
 		$this->query = "DELETE FROM `persona_testimonios` WHERE `ID_TESTI` = '".$this->id."'";
+		
+		$this->execute($this->query);
+
+	} 
+
+	public function deleteEvent() {
+	
+
+		$this->query = "DELETE FROM `eventos` WHERE `ID_EVENT` = '".$this->idEvent."'";
 		
 		$this->execute($this->query);
 
