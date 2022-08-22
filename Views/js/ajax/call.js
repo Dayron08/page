@@ -304,7 +304,7 @@ $(document).ready(function (e) {
     //view profile
     $("#view_profile").click(function (e) {
         // alert("estoy aqui");
-        var url = "id_profile.json";
+        var url = "../js/json/id_perfil.json";
         // alert(url);
         $.getJSON(url, function (data) {
             $.each(data, function (i, data_profile) {
