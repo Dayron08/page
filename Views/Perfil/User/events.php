@@ -41,6 +41,7 @@
             </header>
             <!-- /.section-header mb-5 visually-hidden -->
 
+<<<<<<< HEAD
             <div class="row g-4 mb-5">
                 <div class="col-12 col-sm-6 col-md-3 d-flex">
                     <div class="card card__minimal h-100">
@@ -58,8 +59,11 @@
                     <!-- /.card card__minimal -->
                 </div>
                 <!-- /.col-12 col-sm-6 col-md-3 d-flex -->
+=======
+            <div class="row g-4 mb-5" id=bodyEventsUser>
+>>>>>>> Maria
 
-                <div class="col-12 col-sm-6 col-md-3 d-flex">
+                <!-- <div class="col-12 col-sm-6 col-md-3 d-flex">
                     <div class="card card__minimal h-100">
                         <div class="card-img-top overflow-hidden position-relative">
                             <img loading="lazy" src="Views/img/bee-balogun-azEIxYe2usQ-unsplash.jpg" class="w-100"
@@ -73,6 +77,7 @@
                                 class="o-50">in</span> <a href=""
                                 class="fw-bold o-50 o-100-hover trans-base position-relative zi-20">News</a></div>
                     </div>
+<<<<<<< HEAD
                     <!-- /.card card__minimal -->
                 </div>
                 <!-- /.col-12 col-sm-6 col-md-3 d-flex -->
@@ -183,6 +188,10 @@
                     </div>
                     <!-- /.card card__minimal -->
                 </div>
+=======
+                   
+                </div> -->
+>>>>>>> Maria
                 <!-- /.col-12 col-sm-6 col-md-3 d-flex -->
             </div>
             <!-- /.row g-4 mb-5 -->

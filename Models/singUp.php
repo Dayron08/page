@@ -31,6 +31,18 @@ class SingUp extends Connection_Mysql {
         $this->user_id = $user_id;
     }
 
+	public function set_id_testi($id){
+        $this->id = $id;
+    }
+
+	public function set_id_event($idEvent){
+        $this->idEvent = $idEvent;
+    }
+
+	public function set_id_consul($idConsul){
+        $this->idConsul = $idConsul;
+    } 
+
 	public function set_name($name){
         $this->name = $name;
     } 
@@ -164,6 +176,7 @@ class SingUp extends Connection_Mysql {
 		'".$this->gmail."',
 		'".$this->password."');";
 		$this->execute($this->query);
+
 		$person_id = array();
 		while ($result = mysqli_fetch_assoc($this->result)) {
 			$person_id[]= array(
@@ -174,6 +187,14 @@ class SingUp extends Connection_Mysql {
 
 		
 		return $person_id;
+
+	    $row = mysqli_fetch_assoc($this->result);
+
+		//meti ID_TIPO
+		$_SESSION['ID_REGISTRO_PERSONA'] = ISSET($row["ID_REGISTRO_PERSONA"]); 
+		
+		return $row;
+
 	}
 
 	public function call_data_profile() {
@@ -224,12 +245,52 @@ class SingUp extends Connection_Mysql {
 	   $testimonials = array();
 		while ($result = mysqli_fetch_assoc($this->result)) {
 			$testimonials []= array(
+				"idTesti"=> $result["ID_TESTI"],
 				"dsc"=> $result["DSC_TESTIMONIO"],
 				"name" => $result["NOMBRE"],
 				"lastname" => $result["APPELLIDOS"]);
 		}
 		
 		return $testimonials ;
+
+	}
+ 
+	public function readEvents() {
+		
+		$this->query = "CALL P_HISTORICO_EVENTO();";
+		$this->execute($this->query);
+
+	   $events = array();
+		while ($result = mysqli_fetch_assoc($this->result)) {
+			$events []= array(
+				"id"=> $result["ID_EVENT"],
+				"nameEvent"=> $result["NOMBRE_EVENTO"],
+				"name" => $result["ENCARGADO"],
+				"dsc" => $result["DSC_EVENTO"],
+				"img" => $result["IMG_PATH"],
+				"date" => $result["FECHA_EVENTO"]);
+		}
+		
+		return $events ;
+
+	} 
+
+	public function readEventsUsers() {
+		
+		$this->query = "CALL P_VER_EVENTOS();";
+		$this->execute($this->query);
+
+	   $events = array();
+		while ($result = mysqli_fetch_assoc($this->result)) {
+			$events []= array(
+				"nameEvent"=> $result["NOMBRE_EVENTO"],
+				"name" => $result["ENCARGADO"],
+				"dsc" => $result["DSC_EVENTO"],
+				"img" => $result["IMG_PATH"],
+				"date" => $result["FECHA_EVENTO"]);
+		}
+		
+		return $events ;
 
 	}
 
@@ -257,6 +318,7 @@ class SingUp extends Connection_Mysql {
 	   $consul = array();
 		while ($result = mysqli_fetch_assoc($this->result)) {
 			$consul []= array(
+				"id"=> $result["ID_CONSULTAS"],
 				"subject"=> $result["ASUNTO"],
 				"consul" => $result["DSC_ASUNTO"],
 				"name" => $result["NOMBRE"],
@@ -285,5 +347,37 @@ class SingUp extends Connection_Mysql {
 		return $testimonial;
 
 	}
+	public function deleteTesti() {
+	
+		// $this->query = "CALL P_INSERTAR_PERSONA_TESTIMONIO(                
+		// 	'".$this->testimony."',
+		// 	'".$this->user_id."');"; 
+		
+
+		$this->query = "DELETE FROM `persona_testimonios` WHERE `ID_TESTI` = '".$this->id."'";
+		
+		$this->execute($this->query);
+
+	} 
+
+	public function deleteEvent() {
+	
+
+		$this->query = "DELETE FROM `eventos` WHERE `ID_EVENT` = '".$this->idEvent."'";
+		
+		$this->execute($this->query);
+
+	} 
+
+	public function deleteConsul() {
+	
+
+		$this->query = "DELETE FROM `consultas` WHERE `ID_CONSULTAS` = '".$this->idConsul."'";
+		
+		$this->execute($this->query);
+
+	} 
 
 }
+
+	

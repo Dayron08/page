@@ -35,7 +35,10 @@
                             class="fas fa-trash"></i> Eliminar eventos</a>
 
                 </div>
+ 
+                <div class="row g-4 mb-5" id=bodyEvents>
 
+<<<<<<< HEAD
 
 
                 <?php
@@ -67,6 +70,11 @@
                 }
                 
                 ?>
+=======
+
+                >
+                </div>
+>>>>>>> Maria
 
             </div>
             <!-- /.row g-4 mb-5 -->
