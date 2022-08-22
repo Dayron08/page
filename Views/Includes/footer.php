@@ -124,7 +124,7 @@
 <script src="Views/js/discoverize.js"></script>
 <script src="Views/js/carousel.js"></script>
 <script src="Views/js/script.js"></script>
-<script src="Views/js/ajax/call.js"></script>
+
 
 </body>
 
