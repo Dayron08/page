@@ -1,8 +1,8 @@
-<?php require_once("../../Includes/header.php");?>
+<?php require_once("Views/Includes/header.php");?>
 <section id="page-hero"
     class="section section__inverse justify-content-center py-5 py-lg-6 mb-n5 vh-50 h-lg-480px min-h-330px">
     <div class="bg bg-img position-absolute" data-bg-img=".img">
-        <img loading="lazy" src="../../img/videos_wallpaper.jpg" class="img" alt="Image" />
+        <img loading="lazy" src="Views/img/videos_wallpaper.jpg" class="img" alt="Image" />
 
         <div class="overlay bg-dark position-absolute o-50"></div>
     </div>
@@ -41,43 +41,8 @@
         </div>
         <!-- /.section-filter -->
 
-        <div class="row properties g-4 mb-6">
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex align-items-stretch">
-                <iframe class="w-100" src="https://www.youtube.com/embed/8ZZODSL8pBA" title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-                <!-- /.card -->
-            </div>
-            <!-- /.col-12 col-md-3 d-flex align-items-stretch -->
+        <div class="row properties g-4 mb-6" id="all_videos">
 
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex align-items-stretch">
-                <iframe class="w-100" src="https://www.youtube.com/embed/a5VcoPEaFGM" title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-                <!-- /.card -->
-            </div>
-            <!-- /.col-12 col-md-3 d-flex align-items-stretch -->
-
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex align-items-stretch">
-                <iframe class="w-100" src="https://www.youtube.com/embed/kjHJMYH4w0Q" title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-                <!-- /.card -->
-            </div>
-            <!-- /.col-12 col-md-3 d-flex align-items-stretch -->
-
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex align-items-stretch">
-                <iframe class="w-100" src="https://www.youtube.com/embed/Lo3RbQw1ics" title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-                <!-- /.card -->
-            </div>
-
-            <!-- /.col-12 col-md-3 d-flex align-items-stretch -->
         </div>
         <!-- /.row properties -->
 
@@ -99,4 +64,4 @@
     <!-- /.container-xl -->
 </section>
 <!-- #listing-1.section py-5 -->
-<?php require_once("../../Includes/footer.php");?>
+<?php require_once("Views/Includes/footer.php");?>

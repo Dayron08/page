@@ -1,8 +1,8 @@
-<?php require_once("../../Includes/headerAdmin.php");?>
+<?php require_once("Views/Includes/headerAdmin.php");?>
 <section id="page-hero"
     class="section section__inverse justify-content-center py-5 py-lg-6 mb-n5 vh-50 h-lg-480px min-h-330px">
     <div class="bg bg-img position-absolute" data-bg-img=".img">
-        <img loading="lazy" src="../../img/image_wallpaper.jpg" class="img" alt="Image" />
+        <img loading="lazy" src="Views/img/image_wallpaper.jpg" class="img" alt="Image" />
 
         <div class="overlay bg-dark position-absolute o-50"></div>
     </div>
@@ -18,7 +18,7 @@
 
 <!-- #page-hero.section section__inverse justify-content-center py-5 py-lg-6 mb-n5 vh-50 h-lg-480px min-h-330px -->
 
-<?php require("../../Includes/navBar_Admin_images.php");  ?>
+<?php require("Views/Includes/navBar_Admin_images.php");  ?>
 <!-- #page-hero.section section__inverse justify-content-center pt-6 pb-4 pb-lg-5 pb-xl-6 -->
 <section id="news-1" class="section pb-6 mt-n4 mt-lg-n5 mt-xl-n6">
 
@@ -34,7 +34,7 @@
                 <div class="card-body bg-white shadow-sm rounded d-flex flex-column px-lg-10">
                     <div class="card-img-top overflow-hidden position-relative">
                         <input type="checkbox" value="" id="checkbox_images">
-                        <img loading="lazy" src="../../img/church/image_01.jpg" class="w-100" alt="Image"
+                        <img loading="lazy" src="Views/img/church/image_01.jpg" class="w-100" alt="Image"
                             style="width: 100%; height : 250px;" />
                     </div>
                 </div>
@@ -81,7 +81,7 @@
                 <div class="card-body bg-white shadow-sm rounded d-flex flex-column px-lg-10">
                     <div class="card-img-top overflow-hidden position-relative">
                         <input type="checkbox" value="" id="checkbox_images">
-                        <img loading="lazy" src="../../img/young_people/image_01.jpg" class="w-100" alt="Image"
+                        <img loading="lazy" src="Views/img/young_people/image_01.jpg" class="w-100" alt="Image"
                             style="width: 100%; height : 250px;" />
                     </div>
                 </div>
@@ -127,7 +127,7 @@
                 <div class="card-body bg-white shadow-sm rounded d-flex flex-column px-lg-10">
                     <div class="card-img-top overflow-hidden position-relative">
                         <input type="checkbox" value="" id="checkbox_images">
-                        <img loading="lazy" src="../../img/children/image_02.jpg" class="w-100" alt="Image"
+                        <img loading="lazy" src="Views/img/children/image_02.jpg" class="w-100" alt="Image"
                             style="width: 100%; height : 250px;" />
                     </div>
                 </div>
@@ -202,4 +202,4 @@
 <!-- #new_event -->
 
 
-<?php require_once("../../Includes/footerAdmin.php");?>
+<?php require_once("Views/Includes/footerAdmin.php");?>

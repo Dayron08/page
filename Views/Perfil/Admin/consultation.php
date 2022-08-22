@@ -1,8 +1,8 @@
-<?php require_once("../../Includes/headerAdmin.php");?>
+<?php require_once("Views/Includes/headerAdmin.php");?>
 
 <section id="page-hero" class="section section__inverse justify-content-center pt-6 pb-4 pb-lg-5 pb-xl-6">
     <div class="bg bg-img position-absolute" data-bg-img=".img">
-        <img loading="lazy" src="../../img/events_wallpaper-2.jpg" class="img" alt="Image" />
+        <img loading="lazy" src="Views/img/events_wallpaper-2.jpg" class="img" alt="Image" />
     </div>
     <!-- /.bg bg-img position-absolute -->
 
@@ -17,7 +17,7 @@
                     <p class="mb-0 text-white"><strong>80</strong>&nbsp;Resultados&nbsp;Encontrados</p>
                 </div>
                 <!-- /.col-12 col-md -->
-
+ 
                 <div class="col col-md-auto text-md-end ms-md-auto">
                     <div class="btn-group btn-select-dropdown w-100">
                         <span class="input-group-text fs-sm rounded-0 rounded-start py-0">Ordenar por</span>
@@ -53,30 +53,14 @@
 
     <div class="container-xl position-relative h-100">
 
-        <div class="row cities g-4 mb-5">
-            <div class="col-12 col-sm-6 col-lg-4 d-flex align-items-stretch">
-                <figure class="card testimonial h-100 text-center bg-transparent mb-0">
-                    <blockquote class="blockquote card-body bg-white shadow-sm rounded d-flex flex-column px-lg-5">
-                        <button class="btn btn-link p-0 ms-4 shadow-none"><a id="buttondelete" class="fa fa-trash fa-lg"
-                                href="#"></a></button>
-                        <input type="checkbox" id="check" name="" value=""> <!-- seleccion-->
-                        <p class="fs-1 text-secondary o-25 mb-0">Asunto</p>
-                        <p class="fs-6">Explicabo facere maxime fuga voluptates saepe tenetur veniam iste, vitae
-                            maiores. Quis voluptates unde culpa</p>
-                        <p class="text-secondary text-decoration-none fs-sm mt-auto mb-3 o-75">&mdash;<span
-                                class="fw-bold"> John Doe</span> - jonh@gmail.com</p>
-                    </blockquote>
-                </figure>
-                <!-- /.card -->
-            </div>
-            <!-- /.col-12 col-sm-6 col-lg-4 -->
+        <div class="row cities g-4 mb-5" id="bodyconsul">
 
-            <div class="col-12 col-sm-6 col-lg-4 d-flex align-items-stretch">
+            <!-- <div class="col-12 col-sm-6 col-lg-4 d-flex align-items-stretch">
                 <figure class="card testimonial h-100 text-center bg-transparent mb-0">
                     <blockquote class="blockquote card-body bg-white shadow-sm rounded d-flex flex-column px-lg-5">
                         <button class="btn btn-link p-0 ms-4 shadow-none"><a id="buttondelete" class="fa fa-trash fa-lg"
                                 href="#"></a></button>
-                        <input type="checkbox" id="check" name="" value=""> <!-- seleccion-->
+                        <input type="checkbox" id="check" name="" value=""> 
                         <p class="fs-1 text-secondary o-25 mb-0">Asunto</p>
                         <p class="fs-6">Explicabo facere maxime fuga voluptates saepe tenetur veniam iste, vitae
                             maiores. Quis voluptates unde culpa</p>
@@ -84,76 +68,7 @@
                                 class="fw-bold"> John Doe</span> - jonh@gmail.com</p>
                     </blockquote>
                 </figure>
-                <!-- /.card -->
-            </div>
-            <!-- /.col-12 col-sm-6 col-lg-4 -->
-
-            <div class="col-12 col-sm-6 col-lg-4 d-flex align-items-stretch">
-                <figure class="card testimonial h-100 text-center bg-transparent mb-0">
-                    <blockquote class="blockquote card-body bg-white shadow-sm rounded d-flex flex-column px-lg-5">
-                        <button class="btn btn-link p-0 ms-4 shadow-none"><a id="buttondelete" class="fa fa-trash fa-lg"
-                                href="#"></a></button>
-                        <input type="checkbox" id="check" name="" value=""> <!-- seleccion-->
-                        <p class="fs-1 text-secondary o-25 mb-0">Asunto</p>
-                        <p class="fs-6">Explicabo facere maxime fuga voluptates saepe tenetur veniam iste, vitae
-                            maiores. Quis voluptates unde culpa</p>
-                        <p class="text-secondary text-decoration-none fs-sm mt-auto mb-3 o-75">&mdash;<span
-                                class="fw-bold"> John Doe</span> - jonh@gmail.com</p>
-                    </blockquote>
-                </figure>
-                <!-- /.card -->
-            </div>
-            <!-- /.col-12 col-sm-6 col-lg-4 -->
-
-            <div class="col-12 col-sm-6 col-lg-4 d-flex align-items-stretch">
-                <figure class="card testimonial h-100 text-center bg-transparent mb-0">
-                    <blockquote class="blockquote card-body bg-white shadow-sm rounded d-flex flex-column px-lg-5">
-                        <button class="btn btn-link p-0 ms-4 shadow-none"><a id="buttondelete" class="fa fa-trash fa-lg"
-                                href="#"></a></button>
-                        <input type="checkbox" id="check" name="" value=""> <!-- seleccion-->
-                        <p class="fs-1 text-secondary o-25 mb-0">Asunto</p>
-                        <p class="fs-6">Explicabo facere maxime fuga voluptates saepe tenetur veniam iste, vitae
-                            maiores. Quis voluptates unde culpa</p>
-                        <p class="text-secondary text-decoration-none fs-sm mt-auto mb-3 o-75">&mdash;<span
-                                class="fw-bold"> John Doe</span> - jonh@gmail.com</p>
-                    </blockquote>
-                </figure>
-                <!-- /.card -->
-            </div>
-            <!-- /.col-12 col-sm-6 col-lg-4 -->
-
-            <div class="col-12 col-sm-6 col-lg-4 d-flex align-items-stretch">
-                <figure class="card testimonial h-100 text-center bg-transparent mb-0">
-                    <blockquote class="blockquote card-body bg-white shadow-sm rounded d-flex flex-column px-lg-5">
-                        <button class="btn btn-link p-0 ms-4 shadow-none"><a id="buttondelete" class="fa fa-trash fa-lg"
-                                href="#"></a></button>
-                        <input type="checkbox" id="check" name="" value=""> <!-- seleccion-->
-                        <p class="fs-1 text-secondary o-25 mb-0">Asunto</p>
-                        <p class="fs-6">Explicabo facere maxime fuga voluptates saepe tenetur veniam iste, vitae
-                            maiores. Quis voluptates unde culpa</p>
-                        <p class="text-secondary text-decoration-none fs-sm mt-auto mb-3 o-75">&mdash;<span
-                                class="fw-bold"> John Doe</span> - jonh@gmail.com</p>
-                    </blockquote>
-                </figure>
-                <!-- /.card -->
-            </div>
-            <!-- /.col-12 col-sm-6 col-lg-4 -->
-
-            <div class="col-12 col-sm-6 col-lg-4 d-flex align-items-stretch">
-                <figure class="card testimonial h-100 text-center bg-transparent mb-0">
-                    <blockquote class="blockquote card-body bg-white shadow-sm rounded d-flex flex-column px-lg-5">
-                        <button class="btn btn-link p-0 ms-4 shadow-none"><a id="buttondelete" class="fa fa-trash fa-lg"
-                                href="#"></a></button>
-                        <input type="checkbox" id="check" name="" value=""> <!-- seleccion-->
-                        <p class="fs-1 text-secondary o-25 mb-0">Asunto</p>
-                        <p class="fs-6">Explicabo facere maxime fuga voluptates saepe tenetur veniam iste, vitae
-                            maiores. Quis voluptates unde culpa</p>
-                        <p class="text-secondary text-decoration-none fs-sm mt-auto mb-3 o-75">&mdash;<span
-                                class="fw-bold"> John Doe</span> - jonh@gmail.com</p>
-                    </blockquote>
-                </figure>
-                <!-- /.card -->
-            </div>
+            </div> -->
             <!-- /.col-12 col-sm-6 col-lg-4 -->
         </div>
         <!-- /.row cities -->
@@ -182,4 +97,4 @@
 </section>
 <!-- #testimonials-1.section pb-6 mt-n4 mt-lg-n5 mt-xl-n6 -->
 
-<?php require_once("../../Includes/footerAdmin.php");?>
+<?php require_once("Views/Includes/footerAdmin.php");?>

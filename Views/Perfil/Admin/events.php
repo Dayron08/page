@@ -1,10 +1,10 @@
-<?php require_once("../../Includes/headerAdmin.php");?>
+<?php require_once("Views/Includes/headerAdmin.php");?>
 
 <body>
 
     <section id="page-hero" class="section section__inverse justify-content-center pt-6 pb-4 pb-lg-5 pb-xl-6">
         <div class="bg bg-img position-absolute" data-bg-img=".img"><img loading="lazy"
-                src="../../img/events_wallpaper.jpg" class="img" alt="Image" /></div>
+                src="Views/img/events_wallpaper.jpg" class="img" alt="Image" /></div>
         <!-- /.bg bg-img position-absolute -->
 
         <div class="container-xl position-relative section-content text-center py-4">
@@ -22,43 +22,46 @@
         <!-- /.bg bg-img position-absolute -->
 
         <div class="container-xl position-relative">
-            
 
-            
+
+
             <div class="row g-4 mt-6">
 
                 <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                    <a data-bs-toggle="modal" data-bs-target="#new_event" class="btn btn-success  shadow-none me-2 px-4 fw-bold " href="#"
-                            id="btn_insert_event"><i class="fas fa-plus"></i> Insertar evento</a>
+                    <a data-bs-toggle="modal" data-bs-target="#new_event"
+                        class="btn btn-success  shadow-none me-2 px-4 fw-bold " href="#" id="btn_insert_event"><i
+                            class="fas fa-plus"></i> Insertar evento</a>
                     <a class="btn btn-danger  shadow-none me-2 px-4 fw-bold " href="#" id="btn_delete_event"><i
-                                        class="fas fa-trash"></i> Eliminar eventos</a>      
-               
+                            class="fas fa-trash"></i> Eliminar eventos</a>
+
                 </div>
 
-                
+
 
                 <?php
                 for ($i=0; $i < 8; $i++) { 
                     ?>
 
-            <div class="col-12 col-sm-6 col-md-3 d-flex">
-                <div class="card" style="width: 18rem;">
-                <img src="../../img/nathan-mullet-GoFys2bZJaE-unsplash.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Japan</h5>
-                    <div class="card-footer bg-transparent fs-sm"><span class="o-50">By</span> <a href=""
-                                    class="fw-bold o-50 o-100-hover trans-base position-relative zi-20">John Doe</a> <span
-                                    class="o-50">in</span> <a href=""
+                <div class="col-12 col-sm-6 col-md-3 d-flex">
+                    <div class="card" style="width: 18rem;">
+                        <img src="Views/img/nathan-mullet-GoFys2bZJaE-unsplash.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Japan</h5>
+                            <div class="card-footer bg-transparent fs-sm"><span class="o-50">By</span> <a href=""
+                                    class="fw-bold o-50 o-100-hover trans-base position-relative zi-20">John Doe</a>
+                                <span class="o-50">in</span> <a href=""
                                     class="fw-bold o-50 o-100-hover trans-base position-relative zi-20">News</a>
+                            </div>
+                            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                                <button class="btn btn-link me-md-1 mr-1" type="button"><a id=""
+                                        class="fa fa-trash fa-lg" href="#"></a></button>
+                                <button class="btn btn-link" type="button"><a data-bs-toggle="modal"
+                                        data-bs-target="#new_event" id="" class="fa fa-pen fa-lg" href="#"></a></button>
+                            </div>
+
+                        </div>
                     </div>
-                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                            <button class="btn btn-link me-md-1 mr-1" type="button"><a id="" class="fa fa-trash fa-lg" href="#"></a></button>
-                            <button class="btn btn-link" type="button"><a data-bs-toggle="modal" data-bs-target="#new_event" id="" class="fa fa-pen fa-lg" href="#"></a></button>
-                    </div>
-                   
                 </div>
-                </div>
-            </div>
                 <!-- /.col-12 col-sm-6 col-md-3 d-flex -->
                 <?php
                 }
@@ -141,4 +144,4 @@
         <!-- modal-dialog modal-dialog-centered -->
     </div>
     <!-- #new_event -->
-    <?php require_once("../../Includes/footerAdmin.php");?>
+    <?php require_once("Views/Includes/footerAdmin.php");?>

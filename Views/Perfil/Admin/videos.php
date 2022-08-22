@@ -1,8 +1,8 @@
-<?php require_once("../../Includes/headerAdmin.php");?>
+<?php require_once("Views/Includes/headerAdmin.php");?>
 <section id="page-hero"
     class="section section__inverse justify-content-center py-5 py-lg-6 mb-n5 vh-50 h-lg-480px min-h-330px">
     <div class="bg bg-img position-absolute" data-bg-img=".img">
-        <img loading="lazy" src="../../img/videos_wallpaper.jpg" class="img" alt="Image" />
+        <img loading="lazy" src="Views/img/videos_wallpaper.jpg" class="img" alt="Image" />
 
         <div class="overlay bg-dark position-absolute o-50"></div>
     </div>
@@ -21,124 +21,8 @@
     <!-- /.bg bg-img position-absolute -->
 
     <div class="container-xl position-relative">
-        <?php require("../../Includes/navBar_Admin_video.php"); ?>
-        <div class="row properties g-4 mb-6">
-
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex align-items-stretch">
-
-                <div class="card-body bg-white shadow-sm rounded d-flex flex-column px-lg-10">
-                    <input type="checkbox" value="" id="checkbox_videos">
-                    <iframe class="w-100" src="https://www.youtube.com/embed/a5VcoPEaFGM" title="YouTube video player"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                    <!-- /.card -->
-                </div>
-                <!-- /.card-body -->
-            </div>
-            <!-- /.col-12 col-md-3 d-flex align-items-stretch -->
-
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex align-items-stretch">
-                <div class="card-body bg-white shadow-sm rounded d-flex flex-column px-lg-10">
-                    <input type="checkbox" value="" id="checkbox_videos">
-                    <iframe class="w-100" src="https://www.youtube.com/embed/a5VcoPEaFGM" title="YouTube video player"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                    <!-- /.card -->
-                </div>
-                <!-- /.card-body -->
-            </div>
-            <!-- /.col-12 col-md-3 d-flex align-items-stretch -->
-
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex align-items-stretch">
-                <div class="card-body bg-white shadow-sm rounded d-flex flex-column px-lg-10">
-                    <input type="checkbox" value="" id="checkbox_videos">
-                    <iframe class="w-100" src="https://www.youtube.com/embed/a5VcoPEaFGM" title="YouTube video player"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                    <!-- /.card -->
-                </div>
-                <!-- /.card-body -->
-            </div>
-
-            <!-- /.col-12 col-md-3 d-flex align-items-stretch -->
-
-
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex align-items-stretch">
-                <div class="card-body bg-white shadow-sm rounded d-flex flex-column px-lg-10">
-                    <input type="checkbox" value="" id="checkbox_videos">
-                    <iframe class="w-100" src="https://www.youtube.com/embed/a5VcoPEaFGM" title="YouTube video player"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                    <!-- /.card -->
-                </div>
-                <!-- /.card-body -->
-            </div>
-
-            <!-- /.col-12 col-md-3 d-flex align-items-stretch -->
-
-
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex align-items-stretch">
-                <div class="card-body bg-white shadow-sm rounded d-flex flex-column px-lg-10">
-                    <input type="checkbox" value="" id="checkbox_videos">
-                    <iframe class="w-100" src="https://www.youtube.com/embed/a5VcoPEaFGM" title="YouTube video player"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                    <!-- /.card -->
-                </div>
-                <!-- /.card-body -->
-            </div>
-
-            <!-- /.col-12 col-md-3 d-flex align-items-stretch -->
-
-
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex align-items-stretch">
-                <div class="card-body bg-white shadow-sm rounded d-flex flex-column px-lg-10">
-                    <input type="checkbox" value="" id="checkbox_videos">
-                    <iframe class="w-100" src="https://www.youtube.com/embed/a5VcoPEaFGM" title="YouTube video player"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                    <!-- /.card -->
-                </div>
-                <!-- /.card-body -->
-            </div>
-
-            <!-- /.col-12 col-md-3 d-flex align-items-stretch -->
-
-
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex align-items-stretch">
-                <div class="card-body bg-white shadow-sm rounded d-flex flex-column px-lg-10">
-                    <input type="checkbox" value="" id="checkbox_videos">
-                    <iframe class="w-100" src="https://www.youtube.com/embed/a5VcoPEaFGM" title="YouTube video player"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                    <!-- /.card -->
-                </div>
-                <!-- /.card-body -->
-            </div>
-
-            <!-- /.col-12 col-md-3 d-flex align-items-stretch -->
-
-
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex align-items-stretch">
-                <div class="card-body bg-white shadow-sm rounded d-flex flex-column px-lg-10">
-                    <input type="checkbox" value="" id="checkbox_videos">
-                    <iframe class="w-100" src="https://www.youtube.com/embed/a5VcoPEaFGM" title="YouTube video player"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                    <!-- /.card -->
-                </div>
-                <!-- /.card-body -->
-            </div>
-
-            <!-- /.col-12 col-md-3 d-flex align-items-stretch -->
+        <?php require("Views/Includes/navBar_Admin_video.php"); ?>
+        <div class="row properties g-4 mb-6" id="all_videos">
         </div>
         <!-- /.row properties -->
 
@@ -192,4 +76,4 @@
     <!-- modal-dialog modal-dialog-centered -->
 </div>
 <!-- #new_event -->
-<?php require_once("../../Includes/footerAdmin.php");?>
+<?php require_once("Views/Includes/footerAdmin.php");?>

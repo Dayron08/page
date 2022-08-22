@@ -1,10 +1,10 @@
-<?php require_once("../../Includes/headerAdmin.php");?>
+<?php require_once("Views/Includes/headerAdmin.php");?>
 
 <body>
 
     <section id="page-hero" class="section section__inverse justify-content-center pt-6 pb-4 pb-lg-5 pb-xl-6">
         <div class="bg bg-img position-absolute" data-bg-img=".img"><img loading="lazy"
-                src="../../img/upcoming_events.jpg" class="img" alt="Image" /></div>
+                src="Views/img/upcoming_events.jpg" class="img" alt="Image" /></div>
         <!-- /.bg bg-img position-absolute -->
 
         <div class="container-xl position-relative section-content text-center py-4">
@@ -38,4 +38,4 @@
     <!-- #cities-grid-2.section py-5 py-lg-6 -->
     <!-- #news-1.section pb-6 mt-n4 mt-lg-n5 mt-xl-n6 -->
 
-    <?php require_once("../../Includes/footer.php");?>
+    <?php require_once("Views/Includes/footer.php");?>

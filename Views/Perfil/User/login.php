@@ -15,11 +15,12 @@
         href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&family=Oswald&family=Zen+Old+Mincho&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="../../css/estilos.css">
-    <script src="../../js/jquery-3.6.0.min.js"></script>
-    <script src="../../js/ajax/ajax.js"></script>
-    
-   
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="Views/css/estilos.css">
+    <script src="Views/js/jquery-3.6.0.min.js"></script>
+    <script src="Views/js/ajax/ajaxUser.js"></script>
+
+
 </head>
 
 
@@ -46,13 +47,20 @@
             <!--Formularios de datos-->
             <div class="contenedor__login-register">
                 <!--Login-->
-                <form action="" class="formulario__login">
+                <form action="" method="POST" class="formulario__login">
                     <h2>Iniciar Sesión</h2>
-                    <input type="text" placeholder="Correo Electronico">
-                    <input type="password" placeholder="Contraseña">
-                    <button>Entrar</button>
+                    <input type="text" placeholder="Correo Electronico" id="txt_email">
+                    <p id="alert_emaill"></p>
+
+                    <div class="campoo">
+                        <input type="password" placeholder="Contraseña" id="txt_pass">
+                        <img src="Views/img/eyes1 .png" alt="" id="eye">
+                        <p id="alert_passwordd"></p>
+                    </div>
+
+                    <button type="submit" id="btn_entrar">Entrar</button>
                     <br>
-                    <a class="btn rounded-pill shadow-none me-2 px-4 fw-bold " href="../User/home.php">Menu
+                    <a class="btn rounded-pill shadow-none me-2 px-4 fw-bold " href="index.php?access=U-101">Menu
                         principal</a>
                 </form>
 
@@ -60,25 +68,39 @@
                 <form action="" method="POST" class="formulario__register">
 
                     <h2>Regístrarse</h2>
-                    <span id="alertId"> </span>
-                    <input type="text" placeholder="Cedula" id="txt_user_id">
+
+                    <input type="number" placeholder="Cedula" id="txt_user_id">
+                    <p id="alert_id"></p>
+
                     <input type="text" placeholder="Nombre" id="txt_name">
+                    <p id="alert_name"></p>
+
                     <input type="text" placeholder="Apellidos" id="txt_surname">
+                    <p id="alert_surname"></p>
+
                     <input type="text" placeholder="Correo Electronico" id="txt_gmail">
-                    <input type="password" placeholder="Contraseña" id="txt_password">
+                    <p id="alert_email"></p>
+
+                    <div class="campo">
+                        <input type="password" placeholder="Contraseña" id="txt_password">
+                        <img src="Views/img/eyes1 .png" alt="" id="eyes">
+                        <p id="alert_password"></p>
+                    </div>
 
 
                     <button class="btn btn-info" id="btn_singUp" type="submit">Registrarse</button>
                     <br>
-                    <a class="rounded-pill shadow-none me-2 px-4 fw-bold" href="../User/home.php">Menu principal</a>
+                    <a class="rounded-pill shadow-none me-2 px-4 fw-bold" href="index.php?access=U-101">Menu
+                        principal</a>
 
                 </form>
             </div>
         </div>
 
+
     </main>
 
-    <script src="../../js/script.js"></script>
+    <script src="Views/js/script.js"></script>
 </body>
 
 </html>
