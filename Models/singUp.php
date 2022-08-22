@@ -38,6 +38,9 @@ class SingUp extends Connection_Mysql {
         $this->idEvent = $idEvent;
     }
 
+	public function set_id_consul($idConsul){
+        $this->idConsul = $idConsul;
+    } 
 
 	public function set_name($name){
         $this->name = $name;
@@ -260,6 +263,7 @@ class SingUp extends Connection_Mysql {
 	   $consul = array();
 		while ($result = mysqli_fetch_assoc($this->result)) {
 			$consul []= array(
+				"id"=> $result["ID_CONSULTAS"],
 				"subject"=> $result["ASUNTO"],
 				"consul" => $result["DSC_ASUNTO"],
 				"name" => $result["NOMBRE"],
@@ -307,6 +311,15 @@ class SingUp extends Connection_Mysql {
 	
 
 		$this->query = "DELETE FROM `eventos` WHERE `ID_EVENT` = '".$this->idEvent."'";
+		
+		$this->execute($this->query);
+
+	} 
+
+	public function deleteConsul() {
+	
+
+		$this->query = "DELETE FROM `consultas` WHERE `ID_CONSULTAS` = '".$this->idConsul."'";
 		
 		$this->execute($this->query);
 
