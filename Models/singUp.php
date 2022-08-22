@@ -12,6 +12,7 @@ class SingUp extends Connection_Mysql {
 	// variables to view profile 
 	private $p_email;
 	private $p_password;
+	private $person_registration_id;
 
 	private $result;
 	private $database;
@@ -73,6 +74,10 @@ class SingUp extends Connection_Mysql {
 
 	public function set_subjet($subject){
         $this->subject = $subject;
+    }
+
+	public function set_person_registration_id($set_person_registration_id){
+        $this->set_person_registration_id = $set_person_registration_id;
     }
 
 
@@ -159,13 +164,33 @@ class SingUp extends Connection_Mysql {
 		'".$this->gmail."',
 		'".$this->password."');";
 		$this->execute($this->query);
+		$person_id = array();
+		while ($result = mysqli_fetch_assoc($this->result)) {
+			$person_id[]= array(
+				"id"=> $result["CEDULA"]);
+		}
+
+		$_SESSION['ID_REGISTRO_PERSONA'] = ISSET($row["CEDULA"]); 
+
+		
+		return $person_id;
+	}
+
+	public function call_data_profile() {
+
+		session_start();
+		
+		$this->query = "CALL P_VER_PERFIL(
+		'".$this->person_registration_id."');";
+		$this->execute($this->query);
 	    $row = mysqli_fetch_assoc($this->result);
 
-		$_SESSION['ID_REGISTRO_PERSONA'] = ISSET($row["ID_REGISTRO_PERSONA"]); 
+		$_SESSION['ID_REGISTRO_PERSONA'] = ISSET($row["ID_REGISTRO_PERSONA"], $row["NOMBRE"], $row["APPELLIDOS"], $row["FECH_NACIMIENTO"], $row["GENERO"], $row["EMAIL"], $row["TELEFONO"], $row["IMG_PATH"]); 
 
 		
 		return $row;
 	}
+
 
 	
 

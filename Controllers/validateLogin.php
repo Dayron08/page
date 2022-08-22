@@ -11,6 +11,14 @@ if(isset($_REQUEST['txt_email'])){
  
     $result=$select->read();
     // var_dump($result);
+    $json_string = json_encode($result);
+
+    // echo $json_string;
+
+    $file = "../Views/js/json/id_perfil.json";
+
+    file_put_contents($file, $json_string);
+    
     if($result== null){
         echo "2";
     }else{
