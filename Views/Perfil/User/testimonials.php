@@ -54,42 +54,7 @@
     <div class="container-xl position-relative h-100">
 
         <div class="row cities g-4 mb-5" id="bodytestimonialUser">
-
-            <div class="col-12 col-sm-6 col-lg-4 d-flex align-items-stretch">
-                <figure class="card testimonial h-100 text-center bg-transparent mb-0">
-                    <blockquote class="blockquote card-body bg-white shadow-sm rounded d-flex flex-column px-lg-5">
-                        <p class="fs-1 text-secondary o-25 mb-0"><i class="fas fa-quote-right"></i></p>
-                        <p class="fs-6">Lorem ipsum, dolor sit amet consectetur, adipisicing elit tenetur. Omnis
-                            unde totam minima hic in mollitia</p>
-                        <p class="text-secondary text-decoration-none fs-sm mt-auto mb-3 o-75">&mdash;<span
-                                class="fw-bold"> John Doe</span> - IT Profesional</p>
-                        <div class="img px-3 px-lg-4">
-                            <img loading="lazy" src="http://assets.coolorize.com/avatar/256x256/ariel-lustre-368240.jpg"
-                                class="img rounded-circle" alt="Image" />
-                        </div>
-                    </blockquote>
-                </figure>
-                <!-- /.card -->
-            </div>
-            <!-- /.col-12 col-sm-6 col-lg-4 -->
-
-            <div class="col-12 col-sm-6 col-lg-4 d-flex align-items-stretch">
-                <figure class="card testimonial h-100 text-center bg-transparent mb-0">
-                    <blockquote class="blockquote card-body bg-white shadow-sm rounded d-flex flex-column px-lg-5">
-                        <p class="fs-1 text-secondary o-25 mb-0"><i class="fas fa-quote-right"></i></p>
-                        <p class="fs-6">Omnis unde totam consequatur minima hic in mollitia lorem ipsum, dolor sit
-                            amet consectetur, adipisicing elit</p>
-                        <p class="text-secondary text-decoration-none fs-sm mt-auto mb-3 o-75">&mdash;<span
-                                class="fw-bold"> John Doe</span> - Sales Representative</p>
-                        <div class="img px-3 px-lg-4">
-                            <img loading="lazy" src="http://assets.coolorize.com/avatar/256x256/ben-white-190081.jpg"
-                                class="img rounded-circle" alt="Image" />
-                        </div>
-                    </blockquote>
-                </figure>
-                <!-- /.card -->
-            </div>
-            <!-- /.col-12 col-sm-6 col-lg-4 -->
+            <!-- here will call the testimonials -->
 
 
 
