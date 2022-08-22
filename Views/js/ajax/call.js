@@ -303,14 +303,17 @@ $(document).ready(function (e) {
     });
     //view profile
     $("#view_profile").click(function (e) {
+        // alert("estoy aqui");
         var url = "../json/id_profile.json";
-
+        // alert(url);
         $.getJSON(url, function (data) {
             $.each(data, function (i, data_profile) {
                 // alert(cod_persona+"-"+num_ide+"-"+name+"-"+last_names)
+                console.log(data_profile);
                 $.ajax({
                     method: "POST",
-                    url: "../Controllers/view_profile.php",
+                    url: "../../../Controllers/view_profile.php",
+
                     data:
                     {
                         id_profile: data.id
@@ -352,6 +355,8 @@ $(document).ready(function (e) {
                             "<img loading=\"lazy\" src=" + data_profile.FOTO_PERFIL + " class=\"w-100\" alt=\"Image\" style=\"border-radius: 45%; width: 100%; height : 200px; \" />";
                         $(p).appendTo("#personal_data");
                         $(pc).appendTo("#personal_contact_data");
+                        $(img_url).appendTo("#url_image");
+
                     }
                 });
             });

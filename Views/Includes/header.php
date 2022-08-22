@@ -31,9 +31,6 @@
 
     <link rel="stylesheet" type="text/css" href="Views/css/discoverize-default.css" />
     <link rel="stylesheet" type="text/css" href="Views/css/style.css" />
-    <!-- <script src="Views/js/script.js"></script> -->
-    <script src="Views/js/jquery-3.6.0.min.js"></script>
-    <script src="Views/js/ajax/call.js"></script>
 
 
     <title>Iglesia Pacto de Vida</title>

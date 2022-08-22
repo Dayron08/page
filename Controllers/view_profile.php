@@ -2,6 +2,8 @@
 require_once("../Models/singUp.php");
 
 $call_profile = new SingUp();
+// echo $_REQUEST['id_profile'];
+echo "estoy aqui";
 if(isset($_REQUEST['id_profile'])){
     $call_profile -> set_person_registration_id($_REQUEST["id_profile"]);
 
