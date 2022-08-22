@@ -304,7 +304,7 @@ $(document).ready(function (e) {
     //view profile
     $("#view_profile").click(function (e) {
         // alert("estoy aqui");
-        var url = "../json/id_profile.json";
+        var url = "id_profile.json";
         // alert(url);
         $.getJSON(url, function (data) {
             $.each(data, function (i, data_profile) {
@@ -312,7 +312,7 @@ $(document).ready(function (e) {
                 console.log(data_profile);
                 $.ajax({
                     method: "POST",
-                    url: "../../../Controllers/view_profile.php",
+                    url: "Controllers/view_profile.php",
 
                     data:
                     {
