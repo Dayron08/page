@@ -29,6 +29,7 @@
     <script src="Views/js/jquery-3.6.0.min.js"></script>
     <script src="Views/js/ajax/call.js"></script>
 
+
     <link rel="stylesheet" type="text/css" href="Views/css/discoverize-default.css" />
     <link rel="stylesheet" type="text/css" href="Views/css/style.css" />
 

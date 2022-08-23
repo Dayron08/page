@@ -27,12 +27,9 @@
     <script src="Views/js/jquery-3.6.0.min.js"></script>
     <script src="Views/js/ajax/profileData.js"></script>
     <script src="Views/js/ajax/call.js"></script>
-
+    <script src="Views/js/ajax/ajax_video.js"></script>
 
     <title>Iglesia Pacto de Vida</title>
-    <style>
-
-    </style>
 </head>
 
 <body id="body">

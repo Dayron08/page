@@ -1,7 +1,7 @@
 <?php
-require_once("../Models/singUp.php");
+require_once("../Models/resources.php");
 
-$call_videos = new SingUp();
+$call_videos = new Resources();
  
 $result = $call_videos->view_videos();
 // var_dump($result);

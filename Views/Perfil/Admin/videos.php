@@ -59,12 +59,13 @@
 
                     <div class="mb-3 ">
                         <label for="video_code" class="form-label fs-sm fw-bold">C&oacute;digo</label>
-                        <input type="text" class="form-control shadow-none" id="video_code"
-                            placeholder="Ingrese el c&oacute;digo" />
+                        <input type="text" class="form-control shadow-none" placeholder="Ingrese el c&oacute;digo"
+                            id="video_code" />
                     </div>
 
                     <div class="mb-3">
-                        <button type="submit" class="btn btn-primary w-100 text-uppercase fw-bold">Agregar</button>
+                        <button type="submit" class="btn btn-primary w-100 text-uppercase fw-bold "
+                            id="btn_video_code">Agregar</button>
                     </div>
                 </form>
 

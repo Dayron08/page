@@ -118,6 +118,7 @@
 <script rel="stylesheet" type="text/css" href="../js/jquery-3.6.0.min.js"></script>
 <script src="Views/js/discoverize.js"></script>
 <script src="Views/js/carousel.js"></script>
+<!-- <script src="Views/js/ajax/ajax_video.js"></script> -->
 
 </body>
 
