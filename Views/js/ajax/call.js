@@ -332,26 +332,58 @@ $(document).ready(function(e){
 
 
         $("#btn_add").click(function (e) {
-
-
-            // var txt_managerName = $("#txt_event_managerName").val();
-            // var txt_nameEvent = $("#txt_event_name").val();
-            // var txt_desc = $("#txt_event_desc").val();
-            // var txt_date = $("#txt_event_date").val();
-            // var txt_time = $("#txt_event_time").val();
-            // var txt_image= $("#txt_event_image").val();
-
            
+            var txt_managerName = $("#txt_event_managerName").val();
+            if(txt_managerName == 0){
+                $("#txt_managerName").text("✘ Espacio obligatorio");
+                $("#txt_managerName").css({"color" : "red","font-family": "Times New Roman', Times, serif;"});
+                return false;
+            }else{
+                $("#txt_managerName").text("");
 
+                var txt_nameEvent = $("#txt_event_name").val();
+                if(txt_nameEvent == ''){
+                    $("#txt_eventname").text("✘ Espacio obligatorio");
+                    $("#txt_eventname").css({"color" : "red","font-family": "Times New Roman', Times, serif;"});
+                    return false;
+                }else{
+                    $("#txt_eventname").text("");
+                    var txt_desc = $("#txt_event_desc").val();
+                    if(txt_desc==''){
+                        $("#txt_desc").text("✘ Espacio obligatorio");
+                        $("#txt_desc").css({"color" : "red","font-family": "Times New Roman', Times, serif;"});
+                        return false;
 
-
-
-
-
-
-
-
-            
+                    }else{
+                        $("#txt_desc").text("");
+                        var txt_date = $("#txt_event_date").val();
+                        if(txt_date ==''){
+                            $("#txt_eventdate").text("✘ Espacio obligatorio");
+                            $("#txt_eventdate").css({"color" : "red","font-family": "Times New Roman', Times, serif;"});
+                            return false;
+                        }else{
+                            $("#txt_eventdate").text("");
+                            var txt_time = $("#txt_event_time").val();
+                            if(txt_time==''){
+                                $("#txt_eventtime").text("✘ Espacio obligatorio");
+                                $("#txt_eventtime").css({"color" : "red","font-family": "Times New Roman', Times, serif;"});
+                                return false;
+                            }else{
+                                $("#txt_eventtime").text("");
+                                var txt_image= $("#txt_event_image").val();
+                                if(txt_image==''){
+                                    $("#txt_eventimg").text("✘ Espacio obligatorio");
+                                    $("#txt_eventimg").css({"color" : "red","font-family": "Times New Roman', Times, serif;"});
+                                    return false;
+                                }else{
+                                    $("#txt_eventimg").text("");
+                                }
+                                
+                            }
+                        }
+                    }
+                }
+            }
                 
             $.ajax({
                 url: "../../../Controllers/insertEvent.php",
