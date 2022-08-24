@@ -232,6 +232,60 @@ class SingUp extends Connection_Mysql {
 
 	}
 
+	public function readimagesTown() {
+		
+		
+		$this->query = 
+		"CALL P_VER_FOTOS_CODIGO_P();";
+		
+		$this->execute($this->query);
+		$imagesTown = array();
+		while ($result = mysqli_fetch_assoc($this->result)) {
+			$imagesTown[]= array(
+				"id"=> $result["ID_IMAGEN"],
+				"image" => $result["DIRECCION_DE_IMAGEN"]);
+		}
+
+		return $imagesTown;
+
+	}
+
+	public function readimagesYoung() {
+		
+		
+		$this->query = 
+		"CALL P_VER_FOTOS_CODIGO_J();";
+		
+		$this->execute($this->query);
+		$imagesYoung = array();
+		while ($result = mysqli_fetch_assoc($this->result)) {
+			$imagesYoung[]= array(
+				"id"=> $result["ID_IMAGEN"],
+				"image" => $result["DIRECCION_DE_IMAGEN"]);
+		}
+		
+		return $imagesYoung;
+
+	}
+
+	public function readimagesChildren() {
+		
+		
+		$this->query = 
+		"CALL P_VER_FOTOS_CODIGO_N();";
+		
+		$this->execute($this->query);
+		$imagesYoung = array();
+		while ($result = mysqli_fetch_assoc($this->result)) {
+			$imagesYoung[]= array(
+				"id"=> $result["ID_IMAGEN"],
+				"image" => $result["DIRECCION_DE_IMAGEN"]);
+		}
+		
+		return $imagesYoung;
+
+	}
+
 
 	public function readTestimonials() {
 		

@@ -1,13 +1,12 @@
-<?php require_once("../../Includes/headerAdmin.php");?>
-<section id="page-hero"
-    class="section section__inverse justify-content-center py-5 py-lg-6 mb-n5 vh-50 h-lg-480px min-h-330px">
+<?php require_once("../../Includes/headerAdmin.php"); ?>
+<section id="page-hero" class="section section__inverse justify-content-center py-5 py-lg-6 mb-n5 vh-50 h-lg-480px min-h-330px">
     <div class="bg bg-img position-absolute" data-bg-img=".img">
         <img loading="lazy" src="../../img/image_wallpaper.jpg" class="img" alt="Image" />
 
         <div class="overlay bg-dark position-absolute o-50"></div>
     </div>
     <!-- /.bg bg-img position-absolute -->
- 
+
     <div class="container-xl position-relative section-content text-center py-4">
         <h2 class="display-5 text-white mt-3 mt-lg-4">Imagenes Relacionadas</h2>
 
@@ -26,25 +25,18 @@
 
     <div class="container-xl position-relative">
 
-        <div class="row g-3 mb-5">
-            <?php
-            for ($i=0; $i < 8; $i++) { 
-                ?>
-            <div class="col-12 col-sm-6 col-md-3 d-flex">
-                <div class="card-body bg-white shadow-sm rounded d-flex flex-column px-lg-10">
-                    <div class="card-img-top overflow-hidden position-relative">
-                        <input type="checkbox" value="" id="checkbox_images">
-                        <img loading="lazy" src="../../img/church/image_01.jpg" class="w-100" alt="Image"
-                            style="width: 100%; height : 250px;" />
-                    </div>
-                </div>
-                <!-- /.card-body -->
-            </div>
-            <!-- /.col-12 col-sm-6 col-md-3 d-flex -->
-            <?php
-            }
-            ?>
+        <div class="row g-3 mb-5" id="bodyimgtown">
 
+                <!-- <div class="col-12 col-sm-6 col-md-3 d-flex">
+                    <div class="card-body bg-white shadow-sm rounded d-flex flex-column px-lg-10">
+                        <div class="card-img-top overflow-hidden position-relative">
+                            <input type="checkbox" value="" id="checkbox_images">
+                            <img loading="lazy" src="../../img/church/image_01.jpg" class="w-100" alt="Image" style="width: 100%; height : 250px;" />
+                        </div>
+                    </div>
+
+                </div>  -->
+        
         </div>
         <!-- /.row g-4 mb-5 -->
 
@@ -73,24 +65,17 @@
     <h1 class="titulo_galeria mt-5" style="text-align: center;">Nuestros Jóvenes</h1>
     <div class="container-xl position-relative">
 
-        <div class="row g-3 mb-5">
-            <?php
-            for ($i=0; $i < 8; $i++) { 
-                ?>
-            <div class="col-12 col-sm-6 col-md-3 d-flex">
-                <div class="card-body bg-white shadow-sm rounded d-flex flex-column px-lg-10">
-                    <div class="card-img-top overflow-hidden position-relative">
-                        <input type="checkbox" value="" id="checkbox_images">
-                        <img loading="lazy" src="../../img/young_people/image_01.jpg" class="w-100" alt="Image"
-                            style="width: 100%; height : 250px;" />
+        <div class="row g-3 mb-5" id="bodyimgyoung">
+           
+                <!-- <div class="col-12 col-sm-6 col-md-3 d-flex">
+                    <div class="card-body bg-white shadow-sm rounded d-flex flex-column px-lg-10">
+                        <div class="card-img-top overflow-hidden position-relative">
+                            <input type="checkbox" value="" id="checkbox_images">
+                            <img loading="lazy" src="../../img/young_people/image_01.jpg" class="w-100" alt="Image" style="width: 100%; height : 250px;" />
+                        </div>
                     </div>
                 </div>
-                <!-- /.card-body -->
-            </div>
-            <!-- /.col-12 col-sm-6 col-md-3 d-flex -->
-            <?php
-            }
-            ?>
+            -->
         </div>
         <!-- /.row g-4 mb-5 -->
 
@@ -118,25 +103,19 @@
     <h1 class="titulo_galeria mt-7" style="text-align: center;">Nuestros Ni&ntilde;os</h1>
     <div class="container-xl position-relative">
 
-        <div class="row g-3 mb-5">
+        <div class="row g-3 mb-5"  id="bodyimgChildren">
 
-            <?php
-            for ($i=0; $i < 8; $i++) { 
-                ?>
-            <div class="col-12 col-sm-6 col-md-3 d-flex">
-                <div class="card-body bg-white shadow-sm rounded d-flex flex-column px-lg-10">
-                    <div class="card-img-top overflow-hidden position-relative">
-                        <input type="checkbox" value="" id="checkbox_images">
-                        <img loading="lazy" src="../../img/children/image_02.jpg" class="w-100" alt="Image"
-                            style="width: 100%; height : 250px;" />
+<!--         
+                <div class="col-12 col-sm-6 col-md-3 d-flex">
+                    <div class="card-body bg-white shadow-sm rounded d-flex flex-column px-lg-10">
+                        <div class="card-img-top overflow-hidden position-relative">
+                            <input type="checkbox" value="" id="checkbox_images">
+                            <img loading="lazy" src="../../img/children/image_02.jpg" class="w-100" alt="Image" style="width: 100%; height : 250px;" />
+                        </div>
                     </div>
-                </div>
-                <!-- /.card-body -->
-            </div>
-            <!-- /.col-12 col-sm-6 col-md-3 d-flex -->
-            <?php
-            }
-            ?>
+                </div> -->
+                <!-- /.col-12 col-sm-6 col-md-3 d-flex -->
+          
         </div>
         <!-- /.row g-4 mb-5 -->
 
@@ -163,8 +142,7 @@
 <div class="modal fade" id="new_image" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered modal-sm">
         <div class="modal-content">
-            <button class="btn-close btn-close-menu position-absolute top-0 start-100 translate-middle" type="button"
-                data-bs-dismiss="modal" aria-label="Close">
+            <button class="btn-close btn-close-menu position-absolute top-0 start-100 translate-middle" type="button" data-bs-dismiss="modal" aria-label="Close">
                 <span class="btn-close-icon"></span>
             </button>
 
@@ -202,4 +180,4 @@
 <!-- #new_event -->
 
 
-<?php require_once("../../Includes/footerAdmin.php");?>
+<?php require_once("../../Includes/footerAdmin.php"); ?>

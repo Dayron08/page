@@ -1,7 +1,7 @@
 $(document).ready(function(e){ 
  
 
-    // lectura todos las imagenes
+    // lectura todos las imagenes home
      var url = "../../../Controllers/call_imagesHome.php";
      $.getJSON(url, function(datos){
   
@@ -32,6 +32,78 @@ $(document).ready(function(e){
          });
  
      }); 
+
+      // lectura todos las imagenes Admin Pueblo
+      var url = "../../../Controllers/call_imagesTown.php";
+      $.getJSON(url, function(datos){
+   
+          $.each(datos, function(i, imagesTown){
+               
+             var tr = 
+                    "<div class=\"col-12 col-sm-6 col-md-3 d-flex\">"+
+                        "<div class=\"card-body bg-white shadow-sm rounded d-flex flex-column px-lg-10\">"+
+                            "<div class=\"card-img-top overflow-hidden position-relative\">"+
+                                "<input type=\"checkbox\" id=\"checkbox_images\">"+
+                                "<img loading=\"lazy\" src=\"../../img/church/"+imagesTown.image+"\" class=\"w-100\" alt=\"Image\""+
+                                    "style=\"width: 100%; height : 250px;\" />"+
+                            "</div>"+
+                        "</div>"+
+                    "</div>";
+
+            
+              $(tr).appendTo("#bodyimgtown");   
+                                                   
+          });
+  
+      }); 
+
+      // lectura todos las imagenes Admin Jovenes
+      var url = "../../../Controllers/call_imagesYoung.php";
+      $.getJSON(url, function(datos){
+   
+          $.each(datos, function(i, imagesYoung){
+               
+             var tr = 
+                    "<div class=\"col-12 col-sm-6 col-md-3 d-flex\">"+
+                        "<div class=\"card-body bg-white shadow-sm rounded d-flex flex-column px-lg-10\">"+
+                            "<div class=\"card-img-top overflow-hidden position-relative\">"+
+                                "<input type=\"checkbox\" id=\"checkbox_images\">"+
+                                "<img loading=\"lazy\" src=\"../../img/young_people/"+imagesYoung.image+"\"  class=\"w-100\" alt=\"Image\""+
+                                    "style=\"width: 100%; height : 250px;\" />"+
+                            "</div>"+
+                        "</div>"+
+                    "</div>";
+
+            
+              $(tr).appendTo("#bodyimgyoung");   
+                                                   
+          });
+  
+      }); 
+
+      // lectura todos las imagenes Admin Ni;os
+      var url = "../../../Controllers/call_imagesChildren.php";
+      $.getJSON(url, function(datos){
+   
+          $.each(datos, function(i, imagesChildren){
+               
+             var tr = 
+                    "<div class=\"col-12 col-sm-6 col-md-3 d-flex\">"+
+                        "<div class=\"card-body bg-white shadow-sm rounded d-flex flex-column px-lg-10\">"+
+                            "<div class=\"card-img-top overflow-hidden position-relative\">"+
+                                "<input type=\"checkbox\" id=\"checkbox_images\">"+
+                                "<img loading=\"lazy\" src=\"../../img/children/"+imagesChildren.image+"\"  class=\"w-100\" alt=\"Image\""+
+                                    "style=\"width: 100%; height : 250px;\" />"+
+                            "</div>"+
+                        "</div>"+
+                    "</div>";
+
+            
+              $(tr).appendTo("#bodyimgChildren");   
+                                                   
+          });
+  
+      }); 
 
 
     //  // lectura testimonios en home 
@@ -261,12 +333,15 @@ $(document).ready(function(e){
 
         $("#btn_add").click(function (e) {
 
-            var txt_managerName = $("#txt_event_managerName").val();
-            var txt_nameEvent = $("#txt_event_name").val();
-            var txt_desc = $("#txt_event_desc").val();
-            var txt_date = $("#txt_event_date").val();
-            var txt_time = $("#txt_event_time").val();
-            var txt_image= $("#txt_event_image").val();
+
+            // var txt_managerName = $("#txt_event_managerName").val();
+            // var txt_nameEvent = $("#txt_event_name").val();
+            // var txt_desc = $("#txt_event_desc").val();
+            // var txt_date = $("#txt_event_date").val();
+            // var txt_time = $("#txt_event_time").val();
+            // var txt_image= $("#txt_event_image").val();
+
+           
                 
             $.ajax({
                 url: "../../../Controllers/insertEvent.php",
