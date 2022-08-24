@@ -1,6 +1,6 @@
 $(document).ready(function(e){ 
  
-  
+
     // lectura todos las imagenes
      var url = "../../../Controllers/call_imagesHome.php";
      $.getJSON(url, function(datos){
@@ -233,7 +233,7 @@ $(document).ready(function(e){
 
         $("#btn_testimony").click(function (e) {
 
-            e.preventDefault();
+           
 
             var txt_testimony = $("#txt_testimony").val();
             var txt_person = "30528745";
@@ -243,6 +243,35 @@ $(document).ready(function(e){
                 url: "../../../Controllers/insertTestimony.php",
                 method: "POST", 
                 data : {txt_testimony : txt_testimony, txt_person : txt_person},
+                success: function(dataresponse, statustext, response){
+                    if(statustext == "success"){
+                        console.log("exitosamente")
+
+
+                    }
+                },
+                error: function(request, errorcode, errortext){
+                    console.log("errorrrrrr")
+
+                }
+            });
+
+        });
+
+
+        $("#btn_add").click(function (e) {
+
+            var txt_managerName = $("#txt_event_managerName").val();
+            var txt_nameEvent = $("#txt_event_name").val();
+            var txt_desc = $("#txt_event_desc").val();
+            var txt_date = $("#txt_event_date").val();
+            var txt_time = $("#txt_event_time").val();
+            var txt_image= $("#txt_event_image").val();
+                
+            $.ajax({
+                url: "../../../Controllers/insertEvent.php",
+                method: "POST", 
+                data : {txt_managerName : txt_managerName, txt_nameEvent: txt_nameEvent, txt_desc : txt_desc, txt_date : txt_date, txt_time : txt_time, txt_image : txt_image },
                 success: function(dataresponse, statustext, response){
                     if(statustext == "success"){
                         console.log("exitosamente")
@@ -409,4 +438,22 @@ function deleteConsul(idConsul){
       });
 }
  
+
+// function previewFile() {
+//     var preview = document.querySelector('img');
+//     var file    = document.querySelector('input[type=file]').files[0];
+//     var reader  = new FileReader();
+  
+//     reader.onloadend = function () {
+//       preview.src = reader.result;
+//     }
+  
+//     if (file) {
+//       reader.readAsDataURL(file);
+//     } else {
+//       preview.src = "";
+//     }
+// }
+
+
  

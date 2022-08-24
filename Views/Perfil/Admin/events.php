@@ -38,7 +38,7 @@
                 <div class="row g-4 mb-5" id=bodyEvents>
 
 
-                >
+                
                 </div>
 
             </div>
@@ -69,43 +69,46 @@
                     type="button" data-bs-dismiss="modal" aria-label="Close">
                     <span class="btn-close-icon"></span>
                 </button>
-
+ 
                 <div class="modal-body p-4">
                     <form action="" method="post">
                         <h6 class="mb-4" style="text-align: center;">Evento</h6>
 
                         <div class="mb-3 ">
                             <label for="event_managerName" class="form-label fs-sm fw-bold">Nombre del encargado</label>
-                            <input type="text" class="form-control shadow-none" id="event_managerName" />
+                            <input type="text" class="form-control shadow-none" id="txt_event_managerName" />
                         </div>
 
                         <div class="mb-3">
                             <label for="event_name" class="form-label fs-sm fw-bold">Nombre del evento</label>
-                            <input type="text" class="form-control shadow-none" id="event_name" />
+                            <input type="text" class="form-control shadow-none" id="txt_event_name" />
                         </div>
 
                         <div class="mb-3">
                             <label for="event_desc" class="form-label fs-sm fw-bold">Descripci&oacute;n</label>
-                            <textarea class="form-control shadow-none" id="event_desc" cols="35" rows="2"></textarea>
+                            <textarea class="form-control shadow-none" id="txt_event_desc" cols="35" rows="2"></textarea>
                         </div>
 
                         <div class="mb-3">
                             <label for="event_date" class="form-label fs-sm fw-bold">Fecha del evento</label>
-                            <input type="date" class="form-control shadow-none" id="event_date" />
+                            <input type="date" class="form-control shadow-none" id="txt_event_date" />
                         </div>
 
                         <div class="mb-3">
                             <label for="event_time" class="form-label fs-sm fw-bold">Hora</label>
-                            <input type="time" class="form-control shadow-none" id="event_time" />
+                            <input type="time" class="form-control shadow-none" id="txt_event_time" />
                         </div>
 
                         <div class="mb-3">
-                            <label for="event_image" class="form-label fs-sm fw-bold">Insertar Imagen</label>
-                            <input type="file" class="form-control shadow-none" id="event_image" />
+                            <label for="event_image" class="form-label fs-sm fw-bold">Insertar nombre de la Imagen</label>
+                            <input type="text" class="form-control shadow-none" id="txt_event_image" />
                         </div>
 
+
+                        <!-- <img style="width: 289px; height: 200px;" src="../../../../../../../Users/XPC/Pictures/image_01.jpg" class="card-img-top" alt="..."> -->
+
                         <div class="mb-3">
-                            <button type="submit" class="btn btn-primary w-100 text-uppercase fw-bold">Agregar</button>
+                            <button type="submit" class="btn btn-primary w-100 text-uppercase fw-bold" id="btn_add">Agregar</button>
                         </div>
                     </form>
 

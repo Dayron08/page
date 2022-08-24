@@ -54,6 +54,26 @@ class SingUp extends Connection_Mysql {
         $this->surname = $surname;
     }
 
+	public function set_nameEvent($nameEvent){
+        $this->nameEvent = $nameEvent;
+    }
+
+	public function set_dscEvent($dscEvent){
+        $this->dscEvent = $dscEvent;
+    }
+
+	public function set_dateEvent($dateEvent){
+        $this->dateEvent = $dateEvent;
+    }
+
+	public function set_timeEvent($timeEvent){
+        $this->timeEvent = $timeEvent;
+    }
+
+	public function set_imageEvent($imageEvent){
+        $this->imageEvent = $imageEvent;
+    }
+
 	public function set_password($password){
         $this->password = $password;
     }
@@ -133,7 +153,21 @@ class SingUp extends Connection_Mysql {
 
 	} 
 
+	public function insertEvent() {
+	
+		$this->query = "CALL P_INSERTAR_EVENTO(                
+			'".$this->name."',
+			'".$this->nameEvent."',
+			'".$this->timeEvent."',
+			'".$this->imageEvent."',
+			'".$this->dscEvent."',
+			'".$this->dateEvent."');"; 
+		// $this->query = "INSERT INTO `persona_testimonios`(`ID_TESTI`, `DSC_TESTIMONIO`, `FECHA_INGRESO`, `ID_REGISTRO_PERSONA`) VALUES (NULL, '".$this->testimony."', '2022/08/17','".$this->user_id."')";
+		$this->execute($this->query);
 
+	} 
+
+	
 	public function insertAdmin() {
 		$this->query = "CALL P_INSERTAR_DATOS_PERSONA_ADMIN(                
 			'".$this->user_id."', 
@@ -297,12 +331,11 @@ class SingUp extends Connection_Mysql {
 	
 	public function deleteTesti() {
 	
-		// $this->query = "CALL P_INSERTAR_PERSONA_TESTIMONIO(                
-		// 	'".$this->testimony."',
-		// 	'".$this->user_id."');"; 
+		$this->query = "CALL P_ELIMINAR_PERSONA_TESTIMONIO(                
+			'".$this->id."');"; 
 		
 
-		$this->query = "DELETE FROM `persona_testimonios` WHERE `ID_TESTI` = '".$this->id."'";
+		// $this->query = "DELETE FROM `persona_testimonios` WHERE `ID_TESTI` = '".$this->id."'";
 		
 		$this->execute($this->query);
 
@@ -310,17 +343,22 @@ class SingUp extends Connection_Mysql {
 
 	public function deleteEvent() {
 	
+		$this->query = "CALL P_ELIMINAR_EVENTO(                
+			'".$this->idEvent."');"; 
+		
 
-		$this->query = "DELETE FROM `eventos` WHERE `ID_EVENT` = '".$this->idEvent."'";
+		// $this->query = "DELETE FROM `eventos` WHERE `ID_EVENT` = '".$this->idEvent."'";
 		
 		$this->execute($this->query);
 
 	} 
 
 	public function deleteConsul() {
-	
 
-		$this->query = "DELETE FROM `consultas` WHERE `ID_CONSULTAS` = '".$this->idConsul."'";
+		$this->query = "CALL P_ELIMINAR_CONSULTA(                
+			'".$this->idConsul."');"; 
+	
+		// $this->query = "DELETE FROM `consultas` WHERE `ID_CONSULTAS` = '".$this->idConsul."'";
 		
 		$this->execute($this->query);
 
