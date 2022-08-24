@@ -342,6 +342,16 @@ $(document).ready(function(e){
             // var txt_image= $("#txt_event_image").val();
 
            
+
+
+
+
+
+
+
+
+
+            
                 
             $.ajax({
                 url: "../../../Controllers/insertEvent.php",
