@@ -216,7 +216,7 @@ $(document).ready(function () {
     });
     // *********************************JSON OBJETS*************************************************************
     // update
-    $.getJSON("../../js/json/Event.json", function (data) {
+    $.getJSON("../json/Event.json", function (data) {
         $.each(data, function (i, event) {
 
             $("#txt_Id").val(event.id);
