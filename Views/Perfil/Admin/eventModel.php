@@ -5,15 +5,12 @@
 <div class="">
         <div class="modal-dialog modal-dialog-centered modal-sm">
             <div class="modal-content">
+
+
                 <div class="modal-body p-4">
                     <form action="" method="post">
                         <h6 class="mb-4" style="text-align: center;"> Actualizar Evento</h6>
 
-                        <div class="mb-3 ">
-                            <label for="" class="form-label fs-sm fw-bold"></label>
-                            <input type="hidden" class="form-control shadow-none" id="txt_Id" />
-                            <p id="txt_id"></p>
-                        </div>
 
                         <div class="mb-3 ">
                             <label for="event_managerName" class="form-label fs-sm fw-bold">Nombre del encargado</label>
@@ -51,11 +48,19 @@
                             <p id="txt_eventimg"></p>
                         </div>
 
+                        <input type="hidden" class="form-control shadow-none" id="txt_Id" />
+                         
+                       
+
                         <!-- <img style="width: 289px; height: 200px;" src="../../../../../../../Users/XPC/Pictures/image_01.jpg" class="card-img-top" alt="..."> -->
 
-                        <div class="mb-3">
-                            <button type="submit" class="btn btn-primary w-100 text-uppercase fw-bold" id="btn_update">Agregar cambios</button>
+                        <div class="d-grid gap-2 col-6 mx-auto">
+                            <button type="submit" class="btn btn-success w-100 text-uppercase fw-bold" id="button_update">Agregar cambios</button>
+                            <button type="submit" class="btn btn-danger w-100 text-uppercase fw-bold"  id="button_cancel" ><a href="../Admin/events.php">Cancelar</a></button>
+                        
                         </div>
+
+                        
                     </form>
 
                 </div>

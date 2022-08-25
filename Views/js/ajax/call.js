@@ -9,6 +9,7 @@ $(document).ready(function(e){
             $("#txt_Eventname").val(event.nameEvent);
             $("#txt_Desc").val(event.dsc);
             $("#txt_Eventdate").val(event.date);
+            $("#txt_Eventtime").val(event.time);
             $("#txt_Eventimg").val(event.img);
             
     
@@ -422,10 +423,11 @@ $(document).ready(function(e){
         });
 
 
-        $("#btn_update").click(function(e){
+        $("#button_update").click(function(e){
  
-            var txt_id= $("#txt_Id").val();
-            var txt_name= $("#txt_Name").val();
+         
+            var txt_Id= $("#txt_Id").val();
+            var txt_Name= $("#txt_Name").val();
             var txt_Eventname= $("#txt_Eventname").val();
             var txt_Desc= $("#txt_Desc").val();
             var txt_Eventdate= $("#txt_Eventdate").val();
@@ -436,13 +438,15 @@ $(document).ready(function(e){
             $.ajax({
                 url: "../../../Controllers/update_Event.php",
                 method: "POST",
-                data:{txt_id: txt_id, txt_name: txt_name, txt_Eventname: txt_Eventname, txt_Desc: txt_Desc , txt_Eventdate: txt_Eventdate, 
+                data:{txt_Id: txt_Id, txt_Name: txt_Name, txt_Eventname: txt_Eventname, txt_Desc: txt_Desc , txt_Eventdate: txt_Eventdate, 
                      txt_Eventtime: txt_Eventtime, txt_Eventimg: txt_Eventimg},
 
                 success: function(dataresponse, statustext, response){
                     if(statustext == "success"){
                         $("#respuesta").html(dataresponse);
-    
+
+                        location.href="../Admin/events.php";
+                        // window.location("../Admin/events.php")
                     } 
                 },
                 error: function(request, errorcode, errortext){
@@ -619,6 +623,12 @@ function deleteConsul(idConsul){
 //       preview.src = "";
 //     }
 // }
+
+function cancelar() {
+    
+    location.href="../Admin/events.php";
+
+}
 
 function getEvent(id){
 
