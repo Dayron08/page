@@ -41,6 +41,7 @@
             </header>
             <!-- /.section-header mb-5 visually-hidden -->
 
+
             <div class="row g-4 mb-5">
                 <div class="col-12 col-sm-6 col-md-3 d-flex">
                     <div class="card card__minimal h-100">
@@ -59,7 +60,10 @@
                 </div>
                 <!-- /.col-12 col-sm-6 col-md-3 d-flex -->
 
-                <div class="col-12 col-sm-6 col-md-3 d-flex">
+                <div class="row g-4 mb-5" id=bodyEventsUser>
+
+
+                    <!-- <div class="col-12 col-sm-6 col-md-3 d-flex">
                     <div class="card card__minimal h-100">
                         <div class="card-img-top overflow-hidden position-relative">
                             <img loading="lazy" src="Views/img/bee-balogun-azEIxYe2usQ-unsplash.jpg" class="w-100"
@@ -73,7 +77,8 @@
                                 class="o-50">in</span> <a href=""
                                 class="fw-bold o-50 o-100-hover trans-base position-relative zi-20">News</a></div>
                     </div>
-                    <!-- /.card card__minimal -->
+
+                    /.card card__minimal -->
                 </div>
                 <!-- /.col-12 col-sm-6 col-md-3 d-flex -->
 
@@ -183,24 +188,28 @@
                     </div>
                     <!-- /.card card__minimal -->
                 </div>
-                <!-- /.col-12 col-sm-6 col-md-3 d-flex -->
-            </div>
-            <!-- /.row g-4 mb-5 -->
 
-            <footer class="section-footer d-flex justify-content-center">
-                <div class="btn-toolbar mb-0 me-3" role="toolbar">
-                    <div class="btn-group me-2" role="group">
-                        <a href="#" class="btn btn-outline-dark btn-default btn-sm px-3">Anterior</a>
-                        <a href="#" class="btn btn-outline-dark btn-default btn-sm active px-3">1</a>
-                        <a href="#" class="btn btn-outline-dark btn-default btn-sm px-3">2</a>
-                        <a href="#" class="btn btn-outline-dark btn-default btn-sm px-3">3</a>
-                        <a href="#" class="btn btn-outline-dark btn-default btn-sm px-3">4</a>
-                        <a href="#" class="btn btn-outline-dark btn-default btn-sm px-3">5</a>
-                        <a href="#" class="btn btn-outline-dark btn-default btn-sm px-3">Siguiente</a>
-                    </div>
+
+            </div>
+
+            <!-- /.col-12 col-sm-6 col-md-3 d-flex -->
+        </div>
+        <!-- /.row g-4 mb-5 -->
+
+        <footer class="section-footer d-flex justify-content-center">
+            <div class="btn-toolbar mb-0 me-3" role="toolbar">
+                <div class="btn-group me-2" role="group">
+                    <a href="#" class="btn btn-outline-dark btn-default btn-sm px-3">Anterior</a>
+                    <a href="#" class="btn btn-outline-dark btn-default btn-sm active px-3">1</a>
+                    <a href="#" class="btn btn-outline-dark btn-default btn-sm px-3">2</a>
+                    <a href="#" class="btn btn-outline-dark btn-default btn-sm px-3">3</a>
+                    <a href="#" class="btn btn-outline-dark btn-default btn-sm px-3">4</a>
+                    <a href="#" class="btn btn-outline-dark btn-default btn-sm px-3">5</a>
+                    <a href="#" class="btn btn-outline-dark btn-default btn-sm px-3">Siguiente</a>
                 </div>
-            </footer>
-            <!-- /.section-footer d-flex justify-content-center -->
+            </div>
+        </footer>
+        <!-- /.section-footer d-flex justify-content-center -->
         </div>
         <!-- /.container-xl -->
     </section>

@@ -34,39 +34,17 @@
                     <a class="btn btn-danger  shadow-none me-2 px-4 fw-bold " href="#" id="btn_delete_event"><i
                             class="fas fa-trash"></i> Eliminar eventos</a>
 
+
+                </div>
+
+                <div class="row g-4 mb-5" id=bodyEvents>
+
+
+
+
                 </div>
 
 
-
-                <?php
-                for ($i=0; $i < 8; $i++) { 
-                    ?>
-
-                <div class="col-12 col-sm-6 col-md-3 d-flex">
-                    <div class="card" style="width: 18rem;">
-                        <img src="Views/img/nathan-mullet-GoFys2bZJaE-unsplash.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Japan</h5>
-                            <div class="card-footer bg-transparent fs-sm"><span class="o-50">By</span> <a href=""
-                                    class="fw-bold o-50 o-100-hover trans-base position-relative zi-20">John Doe</a>
-                                <span class="o-50">in</span> <a href=""
-                                    class="fw-bold o-50 o-100-hover trans-base position-relative zi-20">News</a>
-                            </div>
-                            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                                <button class="btn btn-link me-md-1 mr-1" type="button"><a id=""
-                                        class="fa fa-trash fa-lg" href="#"></a></button>
-                                <button class="btn btn-link" type="button"><a data-bs-toggle="modal"
-                                        data-bs-target="#new_event" id="" class="fa fa-pen fa-lg" href="#"></a></button>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                <!-- /.col-12 col-sm-6 col-md-3 d-flex -->
-                <?php
-                }
-                
-                ?>
 
             </div>
             <!-- /.row g-4 mb-5 -->
@@ -99,40 +77,51 @@
 
                 <div class="modal-body p-4">
                     <form action="" method="post">
-                        <h6 class="mb-4" style="text-align: center;">Evento</h6>
+                        <h6 class="mb-4" style="text-align: center;">Insertar Evento</h6>
 
                         <div class="mb-3 ">
                             <label for="event_managerName" class="form-label fs-sm fw-bold">Nombre del encargado</label>
-                            <input type="text" class="form-control shadow-none" id="event_managerName" />
+                            <input type="text" class="form-control shadow-none" id="txt_event_managerName" />
+                            <p id="txt_managerName"></p>
                         </div>
 
                         <div class="mb-3">
                             <label for="event_name" class="form-label fs-sm fw-bold">Nombre del evento</label>
-                            <input type="text" class="form-control shadow-none" id="event_name" />
+                            <input type="text" class="form-control shadow-none" id="txt_event_name" />
+                            <p id="txt_eventname"></p>
                         </div>
 
                         <div class="mb-3">
                             <label for="event_desc" class="form-label fs-sm fw-bold">Descripci&oacute;n</label>
-                            <textarea class="form-control shadow-none" id="event_desc" cols="35" rows="2"></textarea>
+                            <textarea class="form-control shadow-none" id="txt_event_desc" cols="35"
+                                rows="2"></textarea>
+                            <p id="txt_desc"></p>
                         </div>
 
                         <div class="mb-3">
                             <label for="event_date" class="form-label fs-sm fw-bold">Fecha del evento</label>
-                            <input type="date" class="form-control shadow-none" id="event_date" />
+                            <input type="date" class="form-control shadow-none" id="txt_event_date" />
+                            <p id="txt_eventdate"></p>
                         </div>
 
                         <div class="mb-3">
                             <label for="event_time" class="form-label fs-sm fw-bold">Hora</label>
-                            <input type="time" class="form-control shadow-none" id="event_time" />
+                            <input type="time" class="form-control shadow-none" id="txt_event_time" />
+                            <p id="txt_eventtime"></p>
                         </div>
 
                         <div class="mb-3">
-                            <label for="event_image" class="form-label fs-sm fw-bold">Insertar Imagen</label>
-                            <input type="file" class="form-control shadow-none" id="event_image" />
+                            <label for="event_image" class="form-label fs-sm fw-bold">Insertar nombre de la
+                                Imagen</label>
+                            <input type="text" class="form-control shadow-none" id="txt_event_image" />
+                            <p id="txt_eventimg"></p>
                         </div>
 
+                        <!-- <img style="width: 289px; height: 200px;" src="../../../../../../../Users/XPC/Pictures/image_01.jpg" class="card-img-top" alt="..."> -->
+
                         <div class="mb-3">
-                            <button type="submit" class="btn btn-primary w-100 text-uppercase fw-bold">Agregar</button>
+                            <button type="submit" class="btn btn-primary w-100 text-uppercase fw-bold"
+                                id="btn_add">Agregar</button>
                         </div>
                     </form>
 
