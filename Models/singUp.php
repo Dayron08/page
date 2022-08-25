@@ -329,6 +329,7 @@ class SingUp extends Connection_Mysql {
 		
 		
 		$this->query = "SELECT `ID_EVENT`,`NOMBRE_EVENTO`,`HORA_EVENTO`,`ENCARGADO`, `DSC_EVENTO`,`IMG_PATH`,`FECHA_EVENTO` FROM `eventos` WHERE `ID_EVENT` = '".$this->idEvent."'";
+		
 		$this->execute($this->query);
 
 	   $event = array();
