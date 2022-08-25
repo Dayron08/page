@@ -360,6 +360,7 @@ class SingUp extends Connection_Mysql {
 				"name" => $result["ENCARGADO"],
 				"dsc" => $result["DSC_EVENTO"],
 				"img" => $result["IMG_PATH"],
+				"time" => $result["HORA_EVENTO"],
 				"date" => $result["FECHA_EVENTO"]);
 		}
 		

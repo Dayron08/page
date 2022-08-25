@@ -280,7 +280,12 @@ $(document).ready(function(e){
                                    "<div class=\"card-footer bg-transparent fs-sm\"><span class=\"o-50\"> Por </span> <a "+
                                                    "class=\"fw-bold o-50 o-100-hover trans-base position-relative zi-20\">"+events.name+"</a><br> <span"+
                                                    "class=\"o-50\"> Fecha: </span>"+events.date+"<a href=\"\""+
+                                                   "class=\"fw-bold o-50 o-100-hover trans-base position-relative zi-20\"></a><br><span"+
+                                                   "class=\"o-50\"> Hora: </span>"+events.time+"<a href=\"\""+
+                                                   "class=\"fw-bold o-50 o-100-hover trans-base position-relative zi-20\"></a><br><span"+
+                                                   "class=\"o-50\"> Descripcion: </span>"+events.dsc+"<a href=\"\""+
                                                    "class=\"fw-bold o-50 o-100-hover trans-base position-relative zi-20\"></a>"+
+                                                   
                                    "</div>"+  
                                "</div>"+
                            "</div>"+
@@ -624,16 +629,9 @@ function deleteConsul(idConsul){
 //     }
 // }
 
-function cancelar() {
-    
-    location.href="../Admin/events.php";
-
-}
 
 function getEvent(id){
 
-
-    
     $.ajax({
       url: "../../../Controllers/get_event.php",
       method: "POST",
@@ -642,11 +640,7 @@ function getEvent(id){
         //console.log(response)
           if(statustext == "success"){
               $("#respuesta").html(dataresponse);
-             
-           
-
-    
-            
+          
           } //termina if
       },
       error: function(request, errorcode, errortext){
@@ -654,9 +648,8 @@ function getEvent(id){
       }
   
     });
-
-          
-  }
+      
+}
  
 
  
