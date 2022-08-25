@@ -1,6 +1,21 @@
 $(document).ready(function(e){ 
- 
 
+    // update
+    $.getJSON("../../js/json/Event.json", function(data) {
+        $.each(data, function(i, event) {
+    
+            $("#txt_Id").val(event.id);
+            $("#txt_Name").val(event.name);
+            $("#txt_Eventname").val(event.nameEvent);
+            $("#txt_Desc").val(event.dsc);
+            $("#txt_Eventdate").val(event.date);
+            $("#txt_Eventimg").val(event.img);
+            
+    
+          });
+    
+      });  
+ 
     // lectura todos las imagenes home
      var url = "../../../Controllers/call_imagesHome.php";
      $.getJSON(url, function(datos){
@@ -233,13 +248,15 @@ $(document).ready(function(e){
                                 "</div>"+
                                 "<div class=\"d-grid gap-2 d-md-flex justify-content-md-end\">"+
                                         "<button class=\"btn btn-link me-md-1 mr-1\" type=\"button\"><a id=\"btn_delete\" onclick=\"deleteEvent('"+events.id+"')\" class=\"fa fa-trash fa-lg\" href=\"#\"></a></button>"+
-                                        "<button class=\"btn btn-link\" type=\"button\"><a data-bs-toggle=\"modal\" data-bs-target=\"#new_event\" id=\"\" class=\"fa fa-pen fa-lg\" href=\"#\"></a></button>"+
+                                        "<button class=\"btn btn-link\" type=\"submit\"><a id=\"btn_update\" onclick=\"getEvent('"+events.id+"')\" class=\"fa fa-pen fa-lg\" href=\"../../Perfil/Admin/eventModel.php\"></a></button>"+
                                 "</div>"+   
                             "</div>"+
                         "</div>"+
                     "</div>";
  
              
+
+                  
                  $(t).appendTo("#bodyEvents");   
                                                      
              }); 
@@ -404,6 +421,37 @@ $(document).ready(function(e){
 
         });
 
+
+        $("#btn_update").click(function(e){
+ 
+            var txt_id= $("#txt_Id").val();
+            var txt_name= $("#txt_Name").val();
+            var txt_Eventname= $("#txt_Eventname").val();
+            var txt_Desc= $("#txt_Desc").val();
+            var txt_Eventdate= $("#txt_Eventdate").val();
+            var  txt_Eventtime= $("#txt_Eventtime").val();
+            var  txt_Eventimg= $("#txt_Eventimg").val();
+            
+        
+            $.ajax({
+                url: "../../../Controllers/update_Event.php",
+                method: "POST",
+                data:{txt_id: txt_id, txt_name: txt_name, txt_Eventname: txt_Eventname, txt_Desc: txt_Desc , txt_Eventdate: txt_Eventdate, 
+                     txt_Eventtime: txt_Eventtime, txt_Eventimg: txt_Eventimg},
+
+                success: function(dataresponse, statustext, response){
+                    if(statustext == "success"){
+                        $("#respuesta").html(dataresponse);
+    
+                    } 
+                },
+                error: function(request, errorcode, errortext){
+                    $("#respuesta").html(errorcode);
+                }
+        
+            });
+      
+        });
 
  });
 
@@ -572,5 +620,33 @@ function deleteConsul(idConsul){
 //     }
 // }
 
+function getEvent(id){
+
+
+    
+    $.ajax({
+      url: "../../../Controllers/get_event.php",
+      method: "POST",
+      data:{id: id},
+      success: function(dataresponse, statustext, response){
+        //console.log(response)
+          if(statustext == "success"){
+              $("#respuesta").html(dataresponse);
+             
+           
+
+    
+            
+          } //termina if
+      },
+      error: function(request, errorcode, errortext){
+          $("#respuesta").html(errorcode);
+      }
+  
+    });
+
+          
+  }
+ 
 
  

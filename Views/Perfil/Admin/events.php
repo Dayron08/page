@@ -31,7 +31,7 @@
                     <a data-bs-toggle="modal" data-bs-target="#new_event" class="btn btn-success  shadow-none me-2 px-4 fw-bold " href="#"
                             id="btn_insert_event"><i class="fas fa-plus"></i> Insertar evento</a>
                     <a class="btn btn-danger  shadow-none me-2 px-4 fw-bold " href="#" id="btn_delete_event"><i
-                                        class="fas fa-trash"></i> Eliminar eventos</a>      
+                                         class="fas fa-trash"></i> Eliminar eventos</a>      
                
                 </div>
  
@@ -72,7 +72,7 @@
  
                 <div class="modal-body p-4">
                     <form action="" method="post">
-                        <h6 class="mb-4" style="text-align: center;">Evento</h6>
+                        <h6 class="mb-4" style="text-align: center;">Insertar Evento</h6>
 
                         <div class="mb-3 ">
                             <label for="event_managerName" class="form-label fs-sm fw-bold">Nombre del encargado</label>
@@ -125,4 +125,7 @@
         <!-- modal-dialog modal-dialog-centered -->
     </div>
     <!-- #new_event -->
+    
+
+
     <?php require_once("../../Includes/footerAdmin.php");?>

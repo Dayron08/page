@@ -167,7 +167,6 @@ class SingUp extends Connection_Mysql {
 
 	} 
 
-	
 	public function insertAdmin() {
 		$this->query = "CALL P_INSERTAR_DATOS_PERSONA_ADMIN(                
 			'".$this->user_id."', 
@@ -325,6 +324,27 @@ class SingUp extends Connection_Mysql {
 
 	} 
 
+	public function getEvent() {
+		
+		
+		$this->query = "SELECT `ID_EVENT`,`NOMBRE_EVENTO`,`ENCARGADO`, `DSC_EVENTO`,`IMG_PATH`,`FECHA_EVENTO` FROM `eventos` WHERE `ID_EVENT` = '".$this->idEvent."'";
+		$this->execute($this->query);
+
+	   $event = array();
+		while ($result = mysqli_fetch_assoc($this->result)) {
+			$event []= array(
+				"id"=> $result["ID_EVENT"],
+				"nameEvent"=> $result["NOMBRE_EVENTO"],
+				"name" => $result["ENCARGADO"],
+				"dsc" => $result["DSC_EVENTO"],
+				"img" => $result["IMG_PATH"],
+				"date" => $result["FECHA_EVENTO"]);
+		}
+		
+		return $event ;
+
+	} 
+
 	public function readEventsUsers() {
 		
 		$this->query = "CALL P_VER_EVENTOS();";
@@ -417,6 +437,22 @@ class SingUp extends Connection_Mysql {
 		$this->execute($this->query);
 
 	} 
+
+	public function UpdateEvent() {
+	
+		$this->query = "CALL P_INSERTAR_EVENTO(                
+			'".$this->name."',
+			'".$this->nameEvent."',
+			'".$this->timeEvent."',
+			'".$this->imageEvent."',
+			'".$this->dscEvent."',
+			'".$this->dateEvent."');"; 
+		
+		
+		$this->execute($this->query);
+
+	} 
+	
 
 }
 
