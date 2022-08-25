@@ -41,7 +41,7 @@
         </div>
         <!-- /.section-filter -->
 
-        <div class="row properties g-4 mb-6" id="all_videos">
+        <div class="row properties g-4 mb-6" id="all_videos_user">
 
         </div>
         <!-- /.row properties -->
