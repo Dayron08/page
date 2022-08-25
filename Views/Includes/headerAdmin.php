@@ -132,12 +132,7 @@
                                 <li><a class="dropdown-item" href="">Iglesia</a>
                                 </li>
 
-                                <li><a class="dropdown-item" href=".index.php?access=A-212">Consultas</a></li>
-
-                                <li><a class="dropdown-item" href="../Admin/contact.php">Iglesia</a></li>
-
-                                <li><a class="dropdown-item" href="../Admin/consultation.php">Consultas</a></li>
-
+                                <li><a class="dropdown-item" href="index.php?access=A-212">Consultas</a></li>
 
                             </ul>
                         </li>
