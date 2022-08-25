@@ -1,8 +1,8 @@
-<?php require_once("../../Includes/headerAdmin.php");?>
+<?php require_once("Views/Includes/headerAdmin.php");?>
 
 <body>
 
-<div class="">
+    <div class="">
         <div class="modal-dialog modal-dialog-centered modal-sm">
             <div class="modal-content">
 
@@ -43,24 +43,27 @@
                         </div>
 
                         <div class="mb-3">
-                            <label for="event_image" class="form-label fs-sm fw-bold">Insertar nombre de la Imagen</label>
+                            <label for="event_image" class="form-label fs-sm fw-bold">Insertar nombre de la
+                                Imagen</label>
                             <input type="text" class="form-control shadow-none" id="txt_Eventimg" />
                             <p id="txt_eventimg"></p>
                         </div>
 
                         <input type="hidden" class="form-control shadow-none" id="txt_Id" />
-                         
-                       
 
-                        <!-- <img style="width: 289px; height: 200px;" src="../../../../../../../Users/XPC/Pictures/image_01.jpg" class="card-img-top" alt="..."> -->
+
+
+                        <!-- <img style="width: 289px; height: 200px;" src="Views/Views/Views/../Users/XPC/Pictures/image_01.jpg" class="card-img-top" alt="..."> -->
 
                         <div class="d-grid gap-2 col-6 mx-auto">
-                            <button type="submit" class="btn btn-success w-100 text-uppercase fw-bold" id="button_update">Agregar cambios</button>
-                            <button type="submit" class="btn btn-danger w-100 text-uppercase fw-bold"  id="button_cancel" ><a href="../Admin/events.php">Cancelar</a></button>
-                        
+                            <button type="submit" class="btn btn-success w-100 text-uppercase fw-bold"
+                                id="button_update">Agregar cambios</button>
+                            <button type="submit" class="btn btn-danger w-100 text-uppercase fw-bold"
+                                id="button_cancel"><a href="../Admin/events.php">Cancelar</a></button>
+
                         </div>
 
-                        
+
                     </form>
 
                 </div>
@@ -72,4 +75,4 @@
     </div>
 
 
-    <?php require_once("../../Includes/footerAdmin.php");?>
+    <?php require_once("Views/Includes/footerAdmin.php");?>

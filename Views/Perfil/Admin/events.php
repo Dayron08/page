@@ -117,7 +117,7 @@
                             <p id="txt_eventimg"></p>
                         </div>
 
-                        <!-- <img style="width: 289px; height: 200px;" src="../../../../../../../Users/XPC/Pictures/image_01.jpg" class="card-img-top" alt="..."> -->
+                        <!-- <img style="width: 289px; height: 200px;" src="Views/Views/Views/../Users/XPC/Pictures/image_01.jpg" class="card-img-top" alt="..."> -->
 
                         <div class="mb-3">
                             <button type="submit" class="btn btn-primary w-100 text-uppercase fw-bold"
