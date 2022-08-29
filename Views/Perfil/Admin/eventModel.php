@@ -59,7 +59,7 @@
                             <button type="submit" class="btn btn-success w-100 text-uppercase fw-bold"
                                 id="button_update">Agregar cambios</button>
                             <button type="submit" class="btn btn-danger w-100 text-uppercase fw-bold"
-                                id="button_cancel"><a href="../Admin/events.php">Cancelar</a></button>
+                                id="button_cancel"><a href="index.php?access=A-207">Cancelar</a></button>
 
                         </div>
 

@@ -323,7 +323,6 @@ class SingUp extends Connection_Mysql {
 	   $testimonials = array();
 		while ($result = mysqli_fetch_assoc($this->result)) {
 			$testimonials []= array(
-				"idTesti"=> $result["ID_TESTI"],
 				"dsc"=> $result["DSC_TESTIMONIO"],
 				"name" => $result["NOMBRE"],
 				"lastname" => $result["APPELLIDOS"]);
@@ -341,7 +340,6 @@ class SingUp extends Connection_Mysql {
 	   $events = array();
 		while ($result = mysqli_fetch_assoc($this->result)) {
 			$events []= array(
-				"id"=> $result["ID_EVENT"],
 				"nameEvent"=> $result["NOMBRE_EVENTO"],
 				"name" => $result["ENCARGADO"],
 				"dsc" => $result["DSC_EVENTO"],

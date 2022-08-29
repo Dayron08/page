@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
     // update
-    $.getJSON("../../js/json/Event.json", function (data) {
+    $.getJSON("Views/js/json/Event.json", function (data) {
         $.each(data, function (i, event) {
 
             $("#txt_Id").val(event.id);
@@ -27,7 +27,7 @@ $(document).ready(function () {
                 "<div class=\"swiper-slide w-330px h-330px pe-4 d-flex\">" +
                 "<div class=\"card shadow-sm shadow-hover trans-base zoom-bg-img o-hover-all\">" +
                 "<div class=\"card-img bg bg-img\" data-bg-img=\".img\">" +
-                "<img alt=\"Image\" src=\"../../img/" + images.image + "\" />" +
+                "<img alt=\"Image\" src=\"Views/img/" + images.image + "\" />" +
                 "<div class=\"overlay bg-dark position-absolute o-25 o-50-hover\"></div>" +
                 "</div>" +
                 "</div>" +
@@ -53,7 +53,7 @@ $(document).ready(function () {
                 "<div class=\"card-body bg-white shadow-sm rounded d-flex flex-column px-lg-10\">" +
                 "<div class=\"card-img-top overflow-hidden position-relative\">" +
                 "<input type=\"checkbox\" id=\"checkbox_images\">" +
-                "<img loading=\"lazy\" src=\"../../img/church/" + imagesTown.image + "\" class=\"w-100\" alt=\"Image\"" +
+                "<img loading=\"lazy\" src=\"Views/img/church/" + imagesTown.image + "\" class=\"w-100\" alt=\"Image\"" +
                 "style=\"width: 100%; height : 250px;\" />" +
                 "</div>" +
                 "</div>" +
@@ -79,7 +79,7 @@ $(document).ready(function () {
                 "<div class=\"card-body bg-white shadow-sm rounded d-flex flex-column px-lg-10\">" +
                 "<div class=\"card-img-top overflow-hidden position-relative\">" +
                 "<input type=\"checkbox\" id=\"checkbox_images\">" +
-                "<img loading=\"lazy\" src=\"../../img/children/" + imagesChildren.image + "\"  class=\"w-100\" alt=\"Image\"" +
+                "<img loading=\"lazy\" src=\"Views/img/children/" + imagesChildren.image + "\"  class=\"w-100\" alt=\"Image\"" +
                 "style=\"width: 100%; height : 250px;\" />" +
                 "</div>" +
                 "</div>" +
@@ -157,7 +157,7 @@ $(document).ready(function () {
             var t =
                 "<div class=\"col-12 col-sm-6 col-md-3 d-flex\">" +
                 "<div class=\"card\" style=\"width: 18rem;\">" +
-                "<img style=\"width: 289px; height: 200px;\" src=\"../../img/" + events.img + "\" class=\"card-img-top\" alt=\"...\">" +
+                "<img style=\"width: 289px; height: 200px;\" src=\"Views/img/events/" + events.img + "\" class=\"card-img-top\" alt=\"...\">" +
                 "<div class=\"card-body\">" +
                 "<h5 class=\"card-title\">" + events.nameEvent + "</h5>" +
                 "<div class=\"card-footer bg-transparent fs-sm\"><span class=\"o-50\"> Por </span> <a " +
@@ -167,7 +167,7 @@ $(document).ready(function () {
                 "</div>" +
                 "<div class=\"d-grid gap-2 d-md-flex justify-content-md-end\">" +
                 "<button class=\"btn btn-link me-md-1 mr-1\" type=\"button\"><a id=\"btn_delete\" onclick=\"deleteEvent('" + events.id + "')\" class=\"fa fa-trash fa-lg\" href=\"#\"></a></button>" +
-                "<button class=\"btn btn-link\" type=\"submit\"><a id=\"btn_update\" onclick=\"getEvent('" + events.id + "')\" class=\"fa fa-pen fa-lg\" href=\"../../Perfil/Admin/eventModel.php\"></a></button>" +
+                "<button class=\"btn btn-link\" type=\"submit\"><a id=\"btn_update\" onclick=\"getEvent('" + events.id + "')\" class=\"fa fa-pen fa-lg\" href=\"Views/Perfil/Admin/eventModel.php\"></a></button>" +
                 "</div>" +
                 "</div>" +
                 "</div>" +
@@ -191,7 +191,7 @@ $(document).ready(function () {
             var t =
                 "<div class=\"col-12 col-sm-6 col-md-3 d-flex\">" +
                 "<div class=\"card\" style=\"width: 18rem;\">" +
-                "<img style=\"width: 289px; height: 200px;\" src=\"../../img/" + events.img + "\" class=\"card-img-top\" alt=\"...\">" +
+                "<img style=\"width: 289px; height: 200px;\" src=\"Views/img/" + events.img + "\" class=\"card-img-top\" alt=\"...\">" +
                 "<div class=\"card-body\">" +
                 "<h5 class=\"card-title\">" + events.nameEvent + "</h5>" +
                 "<div class=\"card-footer bg-transparent fs-sm\"><span class=\"o-50\"> Por </span> <a " +
@@ -324,7 +324,7 @@ $(document).ready(function () {
                 "<div class=\"card-body bg-white shadow-sm rounded d-flex flex-column px-lg-10\">" +
                 "<div class=\"card-img-top overflow-hidden position-relative\">" +
                 "<input type=\"checkbox\" id=\"checkbox_images\">" +
-                "<img loading=\"lazy\" src=\"../../img/young_people/" + imagesYoung.image + "\"  class=\"w-100\" alt=\"Image\"" +
+                "<img loading=\"lazy\" src=\"Views/img/young_people/" + imagesYoung.image + "\"  class=\"w-100\" alt=\"Image\"" +
                 "style=\"width: 100%; height : 250px;\" />" +
                 "</div>" +
                 "</div>" +
@@ -455,7 +455,7 @@ $(document).ready(function () {
             var t =
                 "<div class=\"col-12 col-sm-6 col-md-3 d-flex\">" +
                 "<div class=\"card\" style=\"width: 18rem;\">" +
-                "<img style=\"width: 289px; height: 200px;\" src=\"../../img/" + events.img + "\" class=\"card-img-top\" alt=\"...\">" +
+                "<img style=\"width: 289px; height: 200px;\" src=\"Views/img/" + events.img + "\" class=\"card-img-top\" alt=\"...\">" +
                 "<div class=\"card-body\">" +
                 "<h5 class=\"card-title\">" + events.nameEvent + "</h5>" +
                 "<div class=\"card-footer bg-transparent fs-sm\"><span class=\"o-50\"> Por </span> <a " +
@@ -465,7 +465,7 @@ $(document).ready(function () {
                 "</div>" +
                 "<div class=\"d-grid gap-2 d-md-flex justify-content-md-end\">" +
                 "<button class=\"btn btn-link me-md-1 mr-1\" type=\"button\"><a id=\"btn_delete\" onclick=\"deleteEvent('" + events.id + "')\" class=\"fa fa-trash fa-lg\" href=\"#\"></a></button>" +
-                "<button class=\"btn btn-link\" type=\"submit\"><a id=\"btn_update\" onclick=\"getEvent('" + events.id + "')\" class=\"fa fa-pen fa-lg\" href=\"../../Perfil/Admin/eventModel.php\"></a></button>" +
+                "<button class=\"btn btn-link\" type=\"submit\"><a id=\"btn_update\" onclick=\"getEvent('" + events.id + "')\" class=\"fa fa-pen fa-lg\" href=\"index.php?access=A-214\"></a></button>" +
                 "</div>" +
                 "</div>" +
                 "</div>" +
@@ -489,7 +489,7 @@ $(document).ready(function () {
             var t =
                 "<div class=\"col-12 col-sm-6 col-md-3 d-flex\">" +
                 "<div class=\"card\" style=\"width: 18rem;\">" +
-                "<img style=\"width: 289px; height: 200px;\" src=\"../../img/" + events.img + "\" class=\"card-img-top\" alt=\"...\">" +
+                "<img style=\"width: 289px; height: 200px;\" src=\"Views/img/" + events.img + "\" class=\"card-img-top\" alt=\"...\">" +
                 "<div class=\"card-body\">" +
                 "<h5 class=\"card-title\">" + events.nameEvent + "</h5>" +
                 "<div class=\"card-footer bg-transparent fs-sm\"><span class=\"o-50\"> Por </span> <a " +
@@ -1260,7 +1260,7 @@ function deleteEvent(idEvent) {
                         var t =
                             "<div class=\"col-12 col-sm-6 col-md-3 d-flex\">" +
                             "<div class=\"card\" style=\"width: 18rem;\">" +
-                            "<img style=\"width: 289px; height: 200px;\" src=\"../../img/" + events.img + "\" class=\"card-img-top\" alt=\"...\">" +
+                            "<img style=\"width: 289px; height: 200px;\" src=\"Views/img/" + events.img + "\" class=\"card-img-top\" alt=\"...\">" +
                             "<div class=\"card-body\">" +
                             "<h5 class=\"card-title\">" + events.nameEvent + "</h5>" +
                             "<div class=\"card-footer bg-transparent fs-sm\"><span class=\"o-50\"> Por </span> <a " +

@@ -1,8 +1,8 @@
 <?php
 class viewModels{
     protected static function get_models_view($route){
-        $white_List=["User/home","User/about_us","User/testimonials","User/videos","User/images", "User/live", "User/events", "User/my_profile","User/privacy","User/terms_and_conditions","User/close_session","User/contact", "User/login","Admin/home","Admin/about_us","Admin/testimonials","Admin/videos","Admin/images", "Admin/live", "Admin/events","Admin/my_profile","Admin/privacy","Admin/terms_and_conditions","Admin/close_session", "Admin/contact", "Admin/login"];
-        $get_list=["U-101","U-102","U-103","U-104","U-105","U-106","U-107","U-108","U-109","U-110","U-111","U-112","U-113","A-201","A-202","A-203","A-204","A-205","A-206","A-207","A-208","A-209","A-210","A-211","A-212","A-213"];
+        $white_List=["User/home","User/about_us","User/testimonials","User/videos","User/images", "User/live", "User/events", "User/my_profile","User/privacy","User/terms_and_conditions","User/close_session","User/contact", "User/login","Admin/home","Admin/about_us","Admin/testimonials","Admin/videos","Admin/images", "Admin/live", "Admin/events","Admin/my_profile","Admin/privacy","Admin/terms_and_conditions","Admin/close_session", "Admin/contact", "Admin/login", "Admin/eventModel"];
+        $get_list=["U-101","U-102","U-103","U-104","U-105","U-106","U-107","U-108","U-109","U-110","U-111","U-112","U-113","A-201","A-202","A-203","A-204","A-205","A-206","A-207","A-208","A-209","A-210","A-211","A-212","A-213","A-214"];
         if(in_array($route, $get_list)){
             switch ($route) {
                 //user
@@ -85,6 +85,9 @@ class viewModels{
                     break;
                 case "A-213":
                     $module_access = $white_List[25];
+                    break;
+                case "A-214":
+                    $module_access = $white_List[26];
                     break;
                 
             }
