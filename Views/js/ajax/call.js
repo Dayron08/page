@@ -48,7 +48,7 @@ $(document).ready(function(e){
          });
  
      }); 
-
+ 
       // lectura todos las imagenes Admin Pueblo
       var url = "../../../Controllers/call_imagesTown.php";
       $.getJSON(url, function(datos){
@@ -59,8 +59,8 @@ $(document).ready(function(e){
                     "<div class=\"col-12 col-sm-6 col-md-3 d-flex\">"+
                         "<div class=\"card-body shadow-sm rounded d-flex flex-column \">"+
                             "<div class=\"card-img-top overflow-hidden position-relative\">"+
-                                "<button class=\"btn btn-link p-0 ms-4 shadow-none\"><a id=\"delete_images\" onclick=\"deleteTestimonial('')\"class=\"fa fa-trash fa-lg\" href=\"#\"></a></button>"+
-                            // "<input type=\"checkbox\" id=\"checkbox_images\">"+
+                                "<button class=\"btn btn-link p-0 ms-4 shadow-none\"><a id=\"delete_images\" onclick=\"deleteImages('"+imagesTown.id+"')\"class=\"fa fa-trash fa-lg\" href=\"#\"></a></button>"+
+                                 // "<input type=\"checkbox\" id=\"checkbox_images\">"+
                                 "<img loading=\"lazy\" src=\"../../img/church/"+imagesTown.image+"\" alt=\"Image\""+
                                     "style=\"width: 100%; height : 250px;\" />"+
                             "</div>"+
@@ -84,10 +84,10 @@ $(document).ready(function(e){
                     "<div class=\"col-12 col-sm-6 col-md-3 d-flex\">"+
                         "<div class=\"card-body shadow-sm rounded d-flex flex-column px-lg-10\">"+
                             "<div class=\"card-img-top overflow-hidden position-relative\">"+
-                                "<button class=\"btn btn-link p-0 ms-4 shadow-none\"><a id=\"delete_images\" onclick=\"deleteTestimonial('')\"class=\"fa fa-trash fa-lg\" href=\"#\"></a></button>"+
+                            "<button class=\"btn btn-link p-0 ms-4 shadow-none\"><a id=\"delete_images\" onclick=\"deleteImages('"+imagesYoung.id+"')\" class=\"fa fa-trash fa-lg\" href=\"#\"></a></button>"+
                             // "<input type=\"checkbox\" id=\"checkbox_images\">"+
                                 "<img loading=\"lazy\" src=\"../../img/young_people/"+imagesYoung.image+"\"  alt=\"Image\""+
-                                    "style=\"width: 100%; height : 250px;\" />"+
+                                "style=\"width: 100%; height : 250px;\" />"+
                             "</div>"+
                         "</div>"+
                     "</div>";
@@ -107,10 +107,10 @@ $(document).ready(function(e){
                
              var tr = 
                     "<div class=\"col-12 col-sm-6 col-md-3 d-flex\">"+
-                        "<div class=\"card-body shadow-sm rounded d-flex flex-column px-lg-10\">"+   
-                            "<div class=\"card-img-top overflow-hidden position-relative\">"+
-                                "<button class=\"btn btn-link p-0 ms-4 shadow-none\"><a id=\"delete_images\" onclick=\"deleteTestimonial('')\"class=\"fa fa-trash fa-lg\" href=\"#\"></a></button>"+
-                                // "<input type=\"checkbox\" id=\"checkbox_images\">"+
+                        "<div class=\"card-body shadow-sm rounded d-flex flex-column px-lg-10\">"+
+                             "<div class=\"card-img-top overflow-hidden position-relative\">"+
+                             "<button class=\"btn btn-link p-0 ms-4 shadow-none\"><a id=\"delete_images\" onclick=\"deleteImages('"+imagesChildren.id+"')\" class=\"fa fa-trash fa-lg\" href=\"#\"></a></button>"+
+                             // "<input type=\"checkbox\" id=\"checkbox_images\">"+
                                 "<img loading=\"lazy\" src=\"../../img/children/"+imagesChildren.image+"\"  alt=\"Image\""+
                                     "style=\"width: 100%; height : 250px;\" />"+
                             "</div>"+
@@ -123,6 +123,80 @@ $(document).ready(function(e){
           });
   
       }); 
+
+
+       // lectura todos las imagenes User Pueblo
+       var url = "../../../Controllers/call_imagesTown.php";
+       $.getJSON(url, function(datos){
+    
+           $.each(datos, function(i, imagesTown){
+                
+              var tr = 
+                     "<div class=\"col-12 col-sm-6 col-md-3 d-flex\">"+
+                         "<div class=\"card-body shadow-sm rounded d-flex flex-column \">"+
+                             "<div class=\"card-img-top overflow-hidden position-relative\">"+
+                                  // "<input type=\"checkbox\" id=\"checkbox_images\">"+
+                                 "<img loading=\"lazy\" src=\"../../img/church/"+imagesTown.image+"\" alt=\"Image\""+
+                                     "style=\"width: 100%; height : 250px;\" />"+
+                             "</div>"+
+                         "</div>"+
+                     "</div>";
+ 
+             
+               $(tr).appendTo("#bodyUserimgtown");   
+                                                    
+           });
+   
+       }); 
+
+        // lectura todos las imagenes User Jovenes
+        var url = "../../../Controllers/call_imagesYoung.php";
+        $.getJSON(url, function(datos){
+
+            $.each(datos, function(i, imagesYoung){
+                
+                var tr = 
+                        "<div class=\"col-12 col-sm-6 col-md-3 d-flex\">"+
+                            "<div class=\"card-body shadow-sm rounded d-flex flex-column px-lg-10\">"+
+                                "<div class=\"card-img-top overflow-hidden position-relative\">"+
+                                // "<input type=\"checkbox\" id=\"checkbox_images\">"+
+                                    "<img loading=\"lazy\" src=\"../../img/young_people/"+imagesYoung.image+"\"  alt=\"Image\""+
+                                    "style=\"width: 100%; height : 250px;\" />"+
+                                "</div>"+
+                            "</div>"+
+                        "</div>";
+
+                
+                $(tr).appendTo("#bodyUserimgyoung");   
+                                                    
+            });
+        }); 
+
+        // lectura todos las imagenes User Ni;os
+        var url = "../../../Controllers/call_imagesChildren.php";
+        $.getJSON(url, function(datos){
+
+            $.each(datos, function(i, imagesChildren){
+                
+                var tr = 
+                        "<div class=\"col-12 col-sm-6 col-md-3 d-flex\">"+
+                            "<div class=\"card-body shadow-sm rounded d-flex flex-column px-lg-10\">"+
+                                "<div class=\"card-img-top overflow-hidden position-relative\">"+
+                                     // "<input type=\"checkbox\" id=\"checkbox_images\">"+
+                                    "<img loading=\"lazy\" src=\"../../img/children/"+imagesChildren.image+"\"  alt=\"Image\""+
+                                        "style=\"width: 100%; height : 250px;\" />"+
+                                "</div>"+
+                            "</div>"+
+                        "</div>";
+
+                $(tr).appendTo("#bodyUserimgChildren");   
+                                                    
+            });
+
+        }); 
+
+
+
 
 
     //  // lectura testimonios en home 
@@ -605,6 +679,106 @@ function deleteConsul(idConsul){
         
             }); 
            
+          }
+          },
+          error: function(request, errorcode, errortext){
+              
+          }
+            
+      });
+}
+
+
+function deleteImages(id){
+
+    $.ajax({
+          url: "../../../Controllers/deleteImages.php",
+          method: "POST",
+          data:{id: id},
+          success: function(dataresponse, statustext, response){
+            if(statustext == "success"){
+              $("#respuesta").html(dataresponse);
+
+              $("#bodyimgtown").html("");
+              $("#bodyimgyoung").html(""); 
+              $("#bodyimgChildren").html(""); 
+
+              // lectura todos las imagenes Admin Pueblo
+            var url = "../../../Controllers/call_imagesTown.php";
+            $.getJSON(url, function(datos){
+        
+                $.each(datos, function(i, imagesTown){
+                    
+                    var tr = 
+                            "<div class=\"col-12 col-sm-6 col-md-3 d-flex\">"+
+                                "<div class=\"card-body shadow-sm rounded d-flex flex-column \">"+
+                                    "<div class=\"card-img-top overflow-hidden position-relative\">"+
+                                        "<button class=\"btn btn-link p-0 ms-4 shadow-none\"><a id=\"delete_images\" onclick=\"deleteImages('"+imagesTown.id+"')\"class=\"fa fa-trash fa-lg\" href=\"#\"></a></button>"+
+                                        // "<input type=\"checkbox\" id=\"checkbox_images\">"+
+                                        "<img loading=\"lazy\" src=\"../../img/church/"+imagesTown.image+"\" alt=\"Image\""+
+                                            "style=\"width: 100%; height : 250px;\" />"+
+                                    "</div>"+
+                                "</div>"+
+                            "</div>";
+
+                    
+                    $(tr).appendTo("#bodyimgtown");   
+                                                        
+                });
+        
+            }); 
+
+            // lectura todos las imagenes Admin Jovenes
+            var url = "../../../Controllers/call_imagesYoung.php";
+            $.getJSON(url, function(datos){
+        
+                $.each(datos, function(i, imagesYoung){
+                    
+                    var tr = 
+                            "<div class=\"col-12 col-sm-6 col-md-3 d-flex\">"+
+                                "<div class=\"card-body shadow-sm rounded d-flex flex-column px-lg-10\">"+
+                                    "<div class=\"card-img-top overflow-hidden position-relative\">"+
+                                    "<button class=\"btn btn-link p-0 ms-4 shadow-none\"><a id=\"delete_images\" onclick=\"deleteImages('"+imagesYoung.id+"')\" class=\"fa fa-trash fa-lg\" href=\"#\"></a></button>"+
+                                    // "<input type=\"checkbox\" id=\"checkbox_images\">"+
+                                        "<img loading=\"lazy\" src=\"../../img/young_people/"+imagesYoung.image+"\"  alt=\"Image\""+
+                                        "style=\"width: 100%; height : 250px;\" />"+
+                                    "</div>"+
+                                "</div>"+
+                            "</div>";
+
+                    
+                    $(tr).appendTo("#bodyimgyoung");   
+                                                        
+                });
+        
+            }); 
+
+            // lectura todos las imagenes Admin Ni;os
+            var url = "../../../Controllers/call_imagesChildren.php";
+            $.getJSON(url, function(datos){
+        
+                $.each(datos, function(i, imagesChildren){
+                    
+                    var tr = 
+                            "<div class=\"col-12 col-sm-6 col-md-3 d-flex\">"+
+                                "<div class=\"card-body shadow-sm rounded d-flex flex-column px-lg-10\">"+
+                                    "<div class=\"card-img-top overflow-hidden position-relative\">"+
+                                    "<button class=\"btn btn-link p-0 ms-4 shadow-none\"><a id=\"delete_images\" onclick=\"deleteImages('"+imagesChildren.id+"')\" class=\"fa fa-trash fa-lg\" href=\"#\"></a></button>"+
+                                    // "<input type=\"checkbox\" id=\"checkbox_images\">"+
+                                        "<img loading=\"lazy\" src=\"../../img/children/"+imagesChildren.image+"\"  alt=\"Image\""+
+                                            "style=\"width: 100%; height : 250px;\" />"+
+                                    "</div>"+
+                                "</div>"+
+                            "</div>";
+
+                    
+                    $(tr).appendTo("#bodyimgChildren");   
+                                                        
+                });
+        
+            }); 
+
+
           }
           },
           error: function(request, errorcode, errortext){

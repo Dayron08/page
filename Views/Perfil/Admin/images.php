@@ -36,7 +36,7 @@
                     </div>
 
                 </div>  -->
-        
+                
         </div>
         <!-- /.row g-4 mb-5 -->
 
@@ -58,7 +58,6 @@
     <!-- /.container-xl -->
 </section>
 <!-- #news-1.section pb-6 mt-n4 mt-lg-n5 mt-xl-n6 -->
-
 
 
 <section id="news-1" class="section pb-4 mt-n4 mt-lg-n5 mt-xl-n6">

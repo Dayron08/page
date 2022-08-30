@@ -38,6 +38,10 @@ class SingUp extends Connection_Mysql {
         $this->idEvent = $idEvent;
     }
 
+	public function set_id_images($idImagen){
+        $this->idImagen = $idImagen;
+    }
+
 	public function set_id_consul($idConsul){
         $this->idConsul = $idConsul;
     } 
@@ -440,6 +444,17 @@ class SingUp extends Connection_Mysql {
 			'".$this->idConsul."');"; 
 	
 		// $this->query = "DELETE FROM `consultas` WHERE `ID_CONSULTAS` = '".$this->idConsul."'";
+		
+		$this->execute($this->query);
+
+	} 
+
+	public function deleteImages() {
+
+		// $this->query = "CALL P_ELIMINAR_CONSULTA(                
+		// 	'".$this->idConsul."');"; 
+	
+		$this->query = "DELETE FROM `galeria` WHERE `ID_IMAGEN` = '".$this->idImagen."'";
 		
 		$this->execute($this->query);
 
