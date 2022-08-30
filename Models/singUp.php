@@ -326,6 +326,11 @@ class SingUp extends Connection_Mysql {
 
 	}
  
+		
+
+
+
+
 	public function readEvents() {
 		
 		$this->query = "CALL P_HISTORICO_EVENTO();";
