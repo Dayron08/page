@@ -11,14 +11,14 @@
 
         <p class="lead mb-4 mb-lg-5">Preguntas de los usuarios</p>
 
-        <div class="section-filter pt-4">
+        <!-- <div class="section-filter pt-4">
             <div class="row g-3">
                 <div class="col-12 col-md section-content text-center text-md-start">
                     <p class="mb-0 text-white"><strong>80</strong>&nbsp;Resultados&nbsp;Encontrados</p>
-                </div>
+                </div> -->
                 <!-- /.col-12 col-md -->
  
-                <div class="col col-md-auto text-md-end ms-md-auto">
+                <!-- <div class="col col-md-auto text-md-end ms-md-auto">
                     <div class="btn-group btn-select-dropdown w-100">
                         <span class="input-group-text fs-sm rounded-0 rounded-start py-0">Ordenar por</span>
 
@@ -32,15 +32,15 @@
 
                             <li><a class="dropdown-item fs-sm text-black" href="#" data-value="2">Por nombre</a></li>
                         </ul>
-                        <!-- /.dropdown-menu w-100 -->
+                        
                     </div>
-                    <!-- /.btn-group w-100 btn-select-dropdown -->
-                </div>
+                    
+                </div> -->
                 <!-- /.col col-md-auto text-md-end ms-md-auto -->
 
-            </div>
-            <!-- /.row -->
-        </div>
+            <!-- </div>
+            
+        </div> -->
         <!-- /.section-filter -->
     </div>
     <!-- /.container-xl position-relative -->
@@ -87,10 +87,10 @@
             </div>
         </footer>
         <!-- /.section-footer d-flex justify-content-center -->
-        <p class="text-light">
+        <!-- <p class="text-light">
             <a class="btn btn-danger rounded-pill shadow-none me-2 px-4 fw-bold " href="#" id="btn_login"><i
                     class="fas fa-trash"></i> Eliminar todos </a>
-        </p>
+        </p> -->
         <!-- /.text-light -->
     </div>
     <!-- /.container-xl position-relative -->

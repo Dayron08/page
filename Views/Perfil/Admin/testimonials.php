@@ -18,7 +18,7 @@
                 </div>
                 <!-- /.col-12 col-md -->
  
-                <div class="col col-md-auto text-md-end ms-md-auto">
+                <!-- <div class="col col-md-auto text-md-end ms-md-auto">
                     <div class="btn-group btn-select-dropdown w-100">
                         <span class="input-group-text fs-sm rounded-0 rounded-start py-0">Ordenar por</span>
 
@@ -32,10 +32,10 @@
 
                             <li><a class="dropdown-item fs-sm text-black" href="#" data-value="2">Por nombre</a></li>
                         </ul>
-                        <!-- /.dropdown-menu w-100 -->
+                      
                     </div>
-                    <!-- /.btn-group w-100 btn-select-dropdown -->
-                </div>
+               
+                </div> -->
                 <!-- /.col col-md-auto text-md-end ms-md-auto -->
 
             </div>
@@ -72,10 +72,10 @@
                 </div>
             </div>
         </footer>
-        <p class="text-light">
+        <!-- <p class="text-light">
             <a class="btn btn-danger rounded-pill shadow-none me-2 px-4 fw-bold " href="#"
                 id=""><i class="fas fa-trash"></i> Eliminar todos </a>
-        </p>
+        </p> -->
         <!-- /.section-footer d-flex justify-content-center -->
     </div>
     <!-- /.container-xl position-relative -->

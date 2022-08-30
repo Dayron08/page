@@ -34,8 +34,8 @@
 </section>
 <!-- #we-do-2.section bg-dark py-5 py-lg-6 -->
 
-<section class="section " id="welcome_video">
-    <!-- /.bg bg-img position-absolute -->
+<!-- <section class="section " id="welcome_video">
+
     <div class="container-xl position-relative">
 
 
@@ -45,11 +45,11 @@
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
         </div>
-        <!-- /.row cities -->
+       
 
     </div>
-    <!-- /.container-xl -->
-</section>
+  
+</section> -->
 <!-- #cities-grid-2.section py-5 py-lg-6 -->
 
 <section id="galery" class="section py-5 py-lg-6">
@@ -69,19 +69,6 @@
             <div id="listing-swiper-1-expand-swiper" class="swiper expand-w" data-js-swiper="auto">
                 <div class="swiper-wrapper" id="tbodyimg">
 
-
-
-                    <div class="swiper-slide w-330px h-330px pe-4 d-flex">
-                        <div class="card shadow-sm shadow-hover trans-base zoom-bg-img o-hover-all">
-                            <div class="card-img bg bg-img" data-bg-img=".img">
-                                <img loading="lazy" src="../../img/church/image_01.jpg" class="img" alt="Image" />
-                                <div class="overlay bg-dark position-absolute o-25 o-50-hover"></div>
-                            </div>
-                            <!-- /.card-img bg bg-img -->
-
-                        </div>
-                        <!-- /.card -->
-                    </div>
 
 
                 </div>

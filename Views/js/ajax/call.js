@@ -27,7 +27,7 @@ $(document).ready(function(e){
                 "<div class=\"swiper-slide w-330px h-330px pe-4 d-flex\">"+
                     "<div class=\"card shadow-sm shadow-hover trans-base zoom-bg-img o-hover-all\">"+
                         "<div class=\"card-img bg bg-img\" data-bg-img=\".img\">"+
-                            "<img alt=\"Image\" src=\"../../img/"+images.image+"\" />"+
+                            "<img alt=\"Image\" src=\"../../img/"+images.image+"\" style=\"width: 330px; height : 330px;\"/>"+
                             "<div class=\"overlay bg-dark position-absolute o-25 o-50-hover\"></div>"+
                         "</div>"+ 
                     "</div>"+
@@ -57,10 +57,10 @@ $(document).ready(function(e){
                
              var tr = 
                     "<div class=\"col-12 col-sm-6 col-md-3 d-flex\">"+
-                        "<div class=\"card-body bg-white shadow-sm rounded d-flex flex-column px-lg-10\">"+
+                        "<div class=\"card-body shadow-sm rounded d-flex flex-column \">"+
                             "<div class=\"card-img-top overflow-hidden position-relative\">"+
-                                "<input type=\"checkbox\" id=\"checkbox_images\">"+
-                                "<img loading=\"lazy\" src=\"../../img/church/"+imagesTown.image+"\" class=\"w-100\" alt=\"Image\""+
+                                // "<input type=\"checkbox\" id=\"checkbox_images\">"+
+                                "<img loading=\"lazy\" src=\"../../img/church/"+imagesTown.image+"\" alt=\"Image\""+
                                     "style=\"width: 100%; height : 250px;\" />"+
                             "</div>"+
                         "</div>"+
@@ -81,10 +81,10 @@ $(document).ready(function(e){
                
              var tr = 
                     "<div class=\"col-12 col-sm-6 col-md-3 d-flex\">"+
-                        "<div class=\"card-body bg-white shadow-sm rounded d-flex flex-column px-lg-10\">"+
+                        "<div class=\"card-body shadow-sm rounded d-flex flex-column px-lg-10\">"+
                             "<div class=\"card-img-top overflow-hidden position-relative\">"+
-                                "<input type=\"checkbox\" id=\"checkbox_images\">"+
-                                "<img loading=\"lazy\" src=\"../../img/young_people/"+imagesYoung.image+"\"  class=\"w-100\" alt=\"Image\""+
+                                // "<input type=\"checkbox\" id=\"checkbox_images\">"+
+                                "<img loading=\"lazy\" src=\"../../img/young_people/"+imagesYoung.image+"\"  alt=\"Image\""+
                                     "style=\"width: 100%; height : 250px;\" />"+
                             "</div>"+
                         "</div>"+
@@ -105,10 +105,12 @@ $(document).ready(function(e){
                
              var tr = 
                     "<div class=\"col-12 col-sm-6 col-md-3 d-flex\">"+
-                        "<div class=\"card-body bg-white shadow-sm rounded d-flex flex-column px-lg-10\">"+
+                        "<div class=\"card-body shadow-sm rounded d-flex flex-column px-lg-10\">"+
+                        "<button class=\"btn btn-link p-0 ms-4 shadow-none\"><a onclick=\"deleteTestimonial('')\"class=\"fa fa-trash fa-lg\" href=\"#\"></a></button>"+
+                               
                             "<div class=\"card-img-top overflow-hidden position-relative\">"+
-                                "<input type=\"checkbox\" id=\"checkbox_images\">"+
-                                "<img loading=\"lazy\" src=\"../../img/children/"+imagesChildren.image+"\"  class=\"w-100\" alt=\"Image\""+
+                                // "<input type=\"checkbox\" id=\"checkbox_images\">"+
+                                "<img loading=\"lazy\" src=\"../../img/children/"+imagesChildren.image+"\"  alt=\"Image\""+
                                     "style=\"width: 100%; height : 250px;\" />"+
                             "</div>"+
                         "</div>"+
@@ -159,7 +161,6 @@ $(document).ready(function(e){
                 "<figure class=\"card testimonial h-100 text-center bg-transparent mb-0\">"+
                     "<blockquote class=\"blockquote card-body bg-white shadow-sm rounded d-flex flex-column px-lg-5\">"+
                         "<button class=\"btn btn-link p-0 ms-4 shadow-none\"><a id=\"buttondelete\" onclick=\"deleteTestimonial('"+testimonials.idTesti+"')\"class=\"fa fa-trash fa-lg\" href=\"#\"></a></button>"+
-                        "<input type=\"checkbox\" id=\"check\" >"+
                         "<p class=\"fs-1 text-secondary o-25 mb-0\"><i class=\"fas fa-quote-right\"></i></p>"+
                         "<p class=\"fs-6\">"+testimonials.dsc+"</p>"+
                        "<p class=\"text-secondary text-decoration-none fs-sm mt-auto mb-3 o-75\">&mdash;<span class=\"fw-bold\">-"+testimonials.name+"</span> "+testimonials.lastname+"</p>"+
@@ -188,7 +189,7 @@ $(document).ready(function(e){
                   "<figure class=\"card testimonial h-100 text-center bg-transparent mb-0\">"+
                       "<blockquote class=\"blockquote card-body bg-white shadow-sm rounded d-flex flex-column px-lg-5\">"+
                           "<button class=\"btn btn-link p-0 ms-4 shadow-none\"><a id=\"buttondelete\" onclick=\"deleteConsul('"+consul.id+"')\"class=\"fa fa-trash fa-lg\" href=\"#\"></a></button>"+
-                          "<input type=\"checkbox\" id=\"check\" >"+
+                        //   "<input type=\"checkbox\" id=\"check\" >"+
                           "<p class=\"fs-1 text-secondary o-25 mb-0\">"+consul.subject+"</p>"+
                           "<p class=\"fs-6\">"+consul.consul+"</p>"+
                          "<p class=\"text-secondary text-decoration-none fs-sm mt-auto mb-3 o-75\">&mdash;<span class=\"fw-bold\">"+consul.name+"</span>  -"+consul.gmail+"</p>"+
@@ -249,7 +250,7 @@ $(document).ready(function(e){
                                 "</div>"+
                                 "<div class=\"d-grid gap-2 d-md-flex justify-content-md-end\">"+
                                         "<button class=\"btn btn-link me-md-1 mr-1\" type=\"button\"><a id=\"btn_delete\" onclick=\"deleteEvent('"+events.id+"')\" class=\"fa fa-trash fa-lg\" href=\"#\"></a></button>"+
-                                        "<button class=\"btn btn-link\" type=\"submit\"><a id=\"btn_update\" onclick=\"getEvent('"+events.id+"')\" class=\"fa fa-pen fa-lg\" href=\"../../Perfil/Admin/eventModel.php\"></a></button>"+
+                                        "<button class=\"btn btn-link\" type=\"submit\"><a id=\"btn_update\" onclick=\"getEvent('"+events.id+"')\" href=\"../../Perfil/Admin/eventupdate.php\" class=\"fa fa-pen fa-lg\" ></a></button>"+
                                 "</div>"+   
                             "</div>"+
                         "</div>"+

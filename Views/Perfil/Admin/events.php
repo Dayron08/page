@@ -30,8 +30,8 @@
                 <div class="d-grid gap-2 d-md-flex justify-content-md-end">
                     <a data-bs-toggle="modal" data-bs-target="#new_event" class="btn btn-success  shadow-none me-2 px-4 fw-bold " href="#"
                             id="btn_insert_event"><i class="fas fa-plus"></i> Insertar evento</a>
-                    <a class="btn btn-danger  shadow-none me-2 px-4 fw-bold " href="#" id="btn_delete_event"><i
-                                         class="fas fa-trash"></i> Eliminar eventos</a>      
+                    <!-- <a class="btn btn-danger  shadow-none me-2 px-4 fw-bold " href="#" id="btn_delete_event"><i
+                    class="fas fa-trash"></i> Eliminar eventos</a>       -->
                
                 </div>
  
