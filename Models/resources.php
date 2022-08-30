@@ -4,6 +4,7 @@ require_once('main_model.php');
 class Resources extends Connection_Mysql {
 	// insert video
 	private $video_code;
+	private $category;
 
     //variables to this class
 	private $result;
@@ -30,7 +31,8 @@ class Resources extends Connection_Mysql {
 	}
 	  
 	public function insert_video() {
-		$this->query = "CALL P_INSERTAR_VIDEO(                
+		$this->query = "CALL P_INSERTAR_VIDEO(     
+			'".$this->category."',           
 			'".$this->video_code."');";
 			
 		$this->execute($this->query);
@@ -51,6 +53,9 @@ class Resources extends Connection_Mysql {
 		return $video;
 
 	}
+
+
+
 
 
 }
