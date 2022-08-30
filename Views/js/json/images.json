@@ -1,14 +1,1 @@
-[
-    {
-        "id": "1",
-        "image": "image_01.jpg"
-    },
-    {
-        "id": "2",
-        "image": "image_02.jpg"
-    },
-    {
-        "id": "3",
-        "image": "image_01.jpg"
-    }
-]
+[{"id":"1","image":"image_01.jpg"},{"id":"2","image":"image_02.jpg"},{"id":"3","image":"image_01.jpg"}]
