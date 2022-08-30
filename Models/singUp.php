@@ -71,6 +71,10 @@ class SingUp extends Connection_Mysql {
         $this->dateEvent = $dateEvent;
     }
 
+	public function set_date($date){
+        $this->date = $date;
+    }
+
 	public function set_timeEvent($timeEvent){
         $this->timeEvent = $timeEvent;
     }
@@ -90,6 +94,14 @@ class SingUp extends Connection_Mysql {
 
 	public function set_password($password){
         $this->password = $password;
+    }
+
+	public function set_gender($gender){
+        $this->gender = $gender;
+    }
+
+	public function set_dateadmission($dateadmission){
+        $this->dateadmission = $dateadmission;
     }
 
 	public function set_gmail($gmail){
@@ -493,6 +505,22 @@ class SingUp extends Connection_Mysql {
 			'".$this->imageEvent."',
 			'".$this->dscEvent."',
 			'".$this->dateEvent."');"; 
+		
+		
+		$this->execute($this->query);
+
+	} 
+
+	public function UpdateMyprofile() {
+	 
+		// $this->query = "CALL P_ACTUALIZAR_EVENTO(                
+		// 	'".$this->idEvent."',
+		// 	'".$this->name."',
+		// 	'".$this->nameEvent."',
+		// 	'".$this->timeEvent."',
+		// 	'".$this->imageEvent."',
+		// 	'".$this->dscEvent."',
+		// 	'".$this->dateEvent."');"; 
 		
 		
 		$this->execute($this->query);

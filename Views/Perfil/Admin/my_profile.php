@@ -1,8 +1,4 @@
-<?php require_once("../../Includes/headerAdmin.php");
-if(isset($_REQUEST['TELEFONO'])){
-    $name = $_REQUEST['NOMBRE'];
-}
-?>
+<?php require_once("../../Includes/headerAdmin.php");?>
 <section id="page-hero"
     class="section section__inverse justify-content-center py-5 py-lg-6 mb-n5 vh-350 h-lg-1000px min-h-1000px">
     <div class="bg bg-img position-absolute" data-bg-img=".img">
@@ -41,21 +37,21 @@ if(isset($_REQUEST['TELEFONO'])){
                                     <dl class="col-6 col-lg-4 my-0">
                                         <dt class="fw-normal fs-sm text-uppercase text-secondary">N&uacute;mero de
                                             identificaci&oacute;n</dt>
-                                        <input type="text" class="form-control shadow-none mt-3 mb-3" value="NO">
+                                        <input type="text" class="form-control shadow-none mt-3 mb-3" id="txt_id" value="">
                                     </dl>
                                     <!-- /.col-6 -->
 
                                     <dl class="col-6 col-lg-4 my-0">
                                         <dt class="fw-normal fs-sm text-uppercase text-secondary">Nombre</dt>
-                                        <input type="text" class="form-control shadow-none mt-3 mb-3"
-                                            value="<?=$name?>">
+                                        <input type="text" class="form-control shadow-none mt-3 mb-3" id="txt_name"
+                                            value="">
                                     </dl>
                                     <!-- /.col-6 -->
 
                                     <dl class="col-6 col-lg-4 my-0">
                                         <dt class="fw-normal fs-sm text-uppercase text-secondary">Apellidos</dt>
-                                        <input type="text" class="form-control shadow-none mt-3 mb-3"
-                                            value="<?=$surname?>">
+                                        <input type="text" class="form-control shadow-none mt-3 mb-3" id="txt_surname"
+                                            value="">
                                     </dl>
                                     <!-- /.col-6 -->
 
@@ -63,37 +59,37 @@ if(isset($_REQUEST['TELEFONO'])){
                                         <dt class="fw-normal fs-sm text-uppercase text-secondary">Fecha de
                                             nacimiento
                                         </dt>
-                                        <input type="text" class="form-control shadow-none mt-3 mb-3"
-                                            value="<?=$date_of_birth?>">
+                                        <input type="text" class="form-control shadow-none mt-3 mb-3" id="txt_date"
+                                            value="">
                                     </dl>
                                     <!-- /.col-6 -->
 
                                     <dl class="col-6 col-lg-4 my-0">
                                         <dt class="fw-normal fs-sm text-uppercase text-secondary">G&eacute;nero</dt>
-                                        <input type="text" class="form-control shadow-none mt-3 mb-3"
-                                            value="<?=$gender?>">
+                                        <input type="text" class="form-control shadow-none mt-3 mb-3" id="txt_gender"
+                                            value="">
                                     </dl>
                                     <!-- /.col-6 -->
 
                                     <dl class="col-6 col-lg-4 my-0">
                                         <dt class="fw-normal fs-sm text-uppercase text-secondary">Constrase&ntilde;a
                                         </dt>
-                                        <input type="password" class="form-control shadow-none mt-3 mb-3"
-                                            value="<?=$pass?>">
+                                        <input type="password" class="form-control shadow-none mt-3 mb-3" id="txt_passwordd"
+                                            value="">
                                     </dl>
                                     <!-- /.col-6 -->
 
                                     <dl class="col-6 col-lg-4 my-0">
                                         <dt class="fw-normal fs-sm text-uppercase text-secondary">Fecha de ingreso
                                         </dt>
-                                        <input type="text" class="form-control shadow-none mt-3 mb-3" value="NO">
+                                        <input type="text" class="form-control shadow-none mt-3 mb-3" id="txt_admission" value="">
                                     </dl>
                                     <!-- /.col-6 -->
 
                                     <dl class="col-6 col-lg-4 my-0">
                                         <dt class="fw-normal fs-sm text-uppercase text-secondary">Tipo de persona
                                         </dt>
-                                        <input type="text" class="form-control shadow-none mt-3 mb-3" value="NO">
+                                        <input type="text" class="form-control shadow-none mt-3 mb-3" id="txt_rol" value="">
                                     </dl>
                                     <!-- /.col-6 -->
 

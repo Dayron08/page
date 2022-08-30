@@ -570,28 +570,28 @@ $(document).ready(function(e){
 
         $("#btn_savePersonalInformation").click(function(e){
  
-         
-            var txt_Id= $("#txt_Id").val();
-            var txt_Name= $("#txt_Name").val();
-            var txt_Eventname= $("#txt_Eventname").val();
-            var txt_Desc= $("#txt_Desc").val();
-            var txt_Eventdate= $("#txt_Eventdate").val();
-            var  txt_Eventtime= $("#txt_Eventtime").val();
-            var  txt_Eventimg= $("#txt_Eventimg").val();
+          
+            var txt_Id= $("#txt_id").val();
+            var txt_Name= $("#txt_name").val();
+            var txt_surname= $("#txt_surname").val();
+            var txt_date= $("#txt_date").val();
+            var txt_gender= $("#txt_gender").val();
+            var txt_passwordd= $("#txt_passwordd").val();
+            var txt_admission= $("#txt_admission").val();
+            var txt_rol= $("#txt_rol").val();
             
         
             $.ajax({
-                url: "../../../Controllers/update_Event.php",
+                url: "../../../Controllers/update_Myprofile.php",
                 method: "POST",
-                data:{txt_Id: txt_Id, txt_Name: txt_Name, txt_Eventname: txt_Eventname, txt_Desc: txt_Desc , txt_Eventdate: txt_Eventdate, 
-                     txt_Eventtime: txt_Eventtime, txt_Eventimg: txt_Eventimg},
+                data:{txt_Id: txt_Id, txt_Name: txt_Name, txt_surname: txt_surname, txt_date: txt_date , txt_gender: txt_gender, 
+                    txt_passwordd: txt_passwordd, txt_admission: txt_admission, txt_rol: txt_rol},
 
                 success: function(dataresponse, statustext, response){
                     if(statustext == "success"){
                         $("#respuesta").html(dataresponse);
 
-                        location.href="../Admin/events.php";
-                        // window.location("../Admin/events.php")
+                        
                     } 
                 },
                 error: function(request, errorcode, errortext){
