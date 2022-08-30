@@ -112,7 +112,7 @@ class Resources extends Connection_Mysql {
 
 	public function deletelive() {
 	// se necesita procedimiento
-		$this->query = "CALL P_ELIMINAR_VIDEO(                
+		$this->query = "CALL P_ELIMINAR_ENVIVO(                
 			'".$this->live_code."');"; 		
 		$this->execute($this->query);
 
