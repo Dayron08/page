@@ -880,11 +880,11 @@ DELIMITER$$
 USE PacVi $$
 CREATE OR REPLACE PROCEDURE P_VER_ENVIVO()
     BEGIN
-      SELECT URL AS DIRECCION_DE_EN_VIVO FROM VIDEOS_ENVIVOS
+      SELECT ID_VIDEO, URL AS DIRECCION_DE_EN_VIVO FROM VIDEOS_ENVIVOS
       WHERE CATEGORIA='E';
     END$$
 DELIMITER; 
 
-
+DAYRON RECIBE A JOSUE COMO 
 
 ----------------------------------------------------------------------FIN--------------------------------------------------------------------
