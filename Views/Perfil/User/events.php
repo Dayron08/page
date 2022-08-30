@@ -13,15 +13,15 @@
 
             <p class="lead mb-4 mb-lg-5">Comparte con nosotros!</p>
 
-            <div class="section-filter pt-4">
+            <!-- <div class="section-filter pt-4">
                 <div class="row g-3">
                     <div class="col-12 col-md section-content text-center text-md-start">
                         <p class="mb-0"><strong>80</strong>&nbsp;Results&nbsp;Found</p>
                     </div>
-                    <!-- /.col-12 col-md -->
+                    
                 </div>
-                <!-- /.row -->
-            </div>
+              
+            </div> -->
             <!-- /.section-filter -->
         </div>
         <!-- /.container-xl position-relative -->

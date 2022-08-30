@@ -13,9 +13,9 @@
 
         <div class="section-filter pt-4">
             <div class="row g-3">
-                <div class="col-12 col-md section-content text-center text-md-start">
+                <!-- <div class="col-12 col-md section-content text-center text-md-start">
                     <p class="mb-0 text-white"><strong>80</strong>&nbsp;Resultados&nbsp;Encontrados</p>
-                </div>
+                </div> -->
                 <!-- /.col-12 col-md -->
  
                 <!-- <div class="col col-md-auto text-md-end ms-md-auto">

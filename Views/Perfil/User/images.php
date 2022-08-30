@@ -30,7 +30,7 @@
             for ($i=0; $i < 8; $i++) { 
                 ?>
             <div class="col-12 col-sm-6 col-md-3 d-flex">
-                <div class="card-body bg-white shadow-sm rounded d-flex flex-column px-lg-10">
+                <div class="card-body shadow-sm rounded d-flex flex-column px-lg-10">
                     <div class="card-img-top overflow-hidden position-relative">
 
                         <img loading="lazy" src="../../img/church/image_01.jpg" class="w-100" alt="Image"
@@ -77,7 +77,7 @@
             for ($i=0; $i < 8; $i++) { 
                 ?>
             <div class="col-12 col-sm-6 col-md-3 d-flex">
-                <div class="card-body bg-white shadow-sm rounded d-flex flex-column px-lg-10">
+                <div class="card-body  shadow-sm rounded d-flex flex-column px-lg-10">
                     <div class="card-img-top overflow-hidden position-relative">
 
                         <img loading="lazy" src="../../img/young_people/image_01.jpg" class="w-100" alt="Image"
@@ -123,7 +123,7 @@
             for ($i=0; $i < 8; $i++) { 
                 ?>
             <div class="col-12 col-sm-6 col-md-3 d-flex">
-                <div class="card-body bg-white shadow-sm rounded d-flex flex-column px-lg-10">
+                <div class="card-body  shadow-sm rounded d-flex flex-column px-lg-10">
                     <div class="card-img-top overflow-hidden position-relative">
 
                         <img loading="lazy" src="../../img/children/image_02.jpg" class="w-100" alt="Image"
