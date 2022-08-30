@@ -449,7 +449,7 @@ class SingUp extends Connection_Mysql {
 		// $this->query = "CALL P_ELIMINAR_CONSULTA(                
 		// 	'".$this->idConsul."');"; 
 	
-		$this->query = "DELETE FROM `galeria` WHERE `ID_IMAGEN` = '".$this->idConsul."'";
+		$this->query = "DELETE FROM `galeria` WHERE `ID_IMAGEN` = '".$this->idImagen."'";
 		
 		$this->execute($this->query);
 
