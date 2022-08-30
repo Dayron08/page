@@ -3,17 +3,17 @@ require_once("../Models/singUp.php");
 
 $delete = new SingUp();
   
-if(isset($_REQUEST['idConsul'])){
-   
-    $delete -> set_id_consul($_REQUEST["idConsul"]);
+    if(isset($_REQUEST['id'])){
+    
+        $delete -> set_id_images($_REQUEST["id"]);
 
 
-    if($delete->deleteConsul()){
-        echo "Exitosamente";
+        if($delete->deleteImages()){
+            echo "Exitosamente";
+        }else{
+            echo "Error";
+        }
+        
     }else{
-        echo "Error";
+        echo ("Error al esperar los datos");
     }
-     
-}else{
-    echo ("Error al esperar los datos");
-}
