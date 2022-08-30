@@ -867,7 +867,8 @@ CREATE OR REPLACE PROCEDURE P_VER_ENVIVO()
       SELECT URL AS DIRECCION_DE_EN_VIVO FROM VIDEOS_ENVIVOS
       WHERE CATEGORIA='E';
     END$$
-DELIMITER;
+DELIMITER; 
+
 
 
 ----------------------------------------------------------------------FIN--------------------------------------------------------------------
