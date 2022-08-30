@@ -1274,7 +1274,20 @@ function deleteTestimonial(idTesti) {
 }
 
 function deleteVideo(idVideo) {
-    alert("Estoy");
+    $.ajax({
+        url: "Controllers/insertEvent.php",
+        method: "POST",
+        data: { txt_managerName: txt_managerName, txt_nameEvent: txt_nameEvent, txt_desc: txt_desc, txt_date: txt_date, txt_time: txt_time, txt_image: txt_image },
+        success: function (response) {
+            if (statustext == "success") {
+                console.log("exitosamente")
+            }
+        },
+        error: function (request, errorcode, errortext) {
+            console.log("errorrrrrr")
+
+        }
+    });
 }
 function deleteEvent(idEvent) {
 
