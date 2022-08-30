@@ -292,26 +292,16 @@ $(document).ready(function () {
     var url = "Controllers/call_lives.php";
     $.getJSON(url, function (dato) {
 
-        $.each(dato, function (i, videos) {
+        $.each(dato, function (i, lives) {
 
             var v =
 
-                "<div class=\"col-4 col-sm-6 col-md-4 col-lg-4 d-flex align-items-stretch\">" +
-
-                "<div class=\"card-body bg-white shadow-sm rounded d-flex flex-column px-lg-10\">" +
-                "<iframe class=\"w - 50\" src = \"https://www.youtube.com/embed/" + videos.url + "\" title = \"YouTube video player\"frameborder = \"0\"allow = \"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\"allowfullscreen ></iframe > " +
-
-                "<div class=\"d-grid gap-2 d-md-flex justify-content-center \">" +
-                "<button class=\"btn btn-link me-md-1 mr-1 mt-5\" type=\"submit\"><a id=\"btn_delete\" onclick=\"deleteVideo('" + videos.codigo + "')\"class=\"fa fa-trash fa-lg \" style=\"font-size:24px;color:red;\" href=\"#\"></a></button>" +
-                "</div>" +
+                "<div class=\"row cities g-4 mb-5 mt-3\">" +
+                "<iframe width=\"700\" height=\"700\" src=\"https://www.facebook.com/pactodevida/videos/" + lives.url + "\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>" +
+                "</div>"
 
 
-                "</div >" +
-
-                "</div >";
-
-
-            $(v).appendTo("#all_videos");
+            $(v).appendTo("#lives_admin");
 
         });
 

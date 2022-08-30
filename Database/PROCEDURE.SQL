@@ -776,4 +776,48 @@ CREATE OR REPLACE PROCEDURE P_VALI_LOGIN
             WHERE PC.EMAIL =P_CORREO  AND P.PASSWORD_PERSONA = P_PASSWORD;
         END$$
 DELIMITER;
+
+--------------------------------------------------------ENVIVO
+---------PD PARA ELIMINAR
+DELIMITER $$
+USE PacVi $$
+CREATE OR REPLACE PROCEDURE P_ELIMINAR_ENVIVO()
+    BEGIN
+        DELETE FROM VIDEOS_ENVIVOS WHERE CATEGORIA='E' ;
+    END$$
+DELIMITER ;
+
+DELIMITER $$
+USE PacVi $$
+CREATE OR REPLACE PROCEDURE P_ELIMINAR_ENVIVO_ID
+(
+    IN P_ID_VIDEO VARCHAR(30)
+)
+    BEGIN
+        DELETE FROM VIDEOS_ENVIVOS WHERE 
+        ID_VIDEO = P_ID_VIDEO AND CATEGORIA='E' ;
+    END$$
+DELIMITER ;
+
+---------PD PARA PINTAR 
+DELIMITER$$
+USE PacVi $$
+CREATE OR REPLACE PROCEDURE P_VER_ENVIVO()
+    BEGIN
+      SELECT ID_VIDEO, URL AS DIRECCION_DE_EN_VIVO FROM VIDEOS_ENVIVOS
+      WHERE CATEGORIA='E';
+    END$$
+DELIMITER; 
+
+CREATE DEFINER=`root`@`localhost` PROCEDURE `P_VER_ENVIVO` ()   
+    BEGIN
+        SELECT
+        ID_VIDEO ,
+            URL AS DIRECCION_DE_EN_VIVO FROM VIDEOS_ENVIVOS
+
+        WHERE CATEGORIA ='E' ;
+    END$$
+DAYRON RECIBE A JOSUE COMO 
+
+----------------------------------------------------------------------FIN--------------------------------------------------------------------
 ----------------------------------------------------------------------FIN--------------------------------------------------------------------

@@ -96,7 +96,7 @@ class Resources extends Connection_Mysql {
 
 	public function view_liveVideos() {
 		// se necesita procedimiento
-		$this->query = "CALL P_VER_VIDEO_RECIENTE();";
+		$this->query = "CALL P_VER_ENVIVO();";
 		$this->execute($this->query);
 
 	   $lives = array();
@@ -112,7 +112,7 @@ class Resources extends Connection_Mysql {
 
 	public function deletelive() {
 	// se necesita procedimiento
-		$this->query = "CALL P_ELIMINAR_ENVIVO(                
+		$this->query = "CALL P_ELIMINAR_ENVIVO_ID(                
 			'".$this->live_code."');"; 		
 		$this->execute($this->query);
 
