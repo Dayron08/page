@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 26, 2022 at 12:54 AM
+-- Generation Time: Aug 30, 2022 at 03:41 AM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 8.1.6
 
@@ -109,6 +109,10 @@ CREATE DEFINER=`root`@`localhost` PROCEDURE `P_ELIMINAR_DATOS_PERSONA` (IN `P_ID
             ID_REGISTRO_PERSONA = P_ID_REGISTRO_PERSONA;
     END$$
 
+CREATE DEFINER=`root`@`localhost` PROCEDURE `P_ELIMINAR_ENVIVO` ()   BEGIN
+        DELETE FROM VIDEOS_ENVIVOS WHERE CATEGORIA='E' ;
+    END$$
+
 CREATE DEFINER=`root`@`localhost` PROCEDURE `P_ELIMINAR_EVENTO` (IN `P_ID_EVENT` INT)   BEGIN
         DELETE FROM EVENTOS where
             ID_EVENT = P_ID_EVENT;
@@ -125,8 +129,8 @@ CREATE DEFINER=`root`@`localhost` PROCEDURE `P_ELIMINAR_PERSONA_TESTIMONIO` (IN 
     END$$
 
 CREATE DEFINER=`root`@`localhost` PROCEDURE `P_ELIMINAR_VIDEO` (IN `P_ID_VIDEO` VARCHAR(30))   BEGIN
-        DELETE FROM VIDEOS where
-            ID_VIDEO = P_ID_VIDEO;
+        DELETE FROM VIDEOS_ENVIVOS where
+            ID_VIDEO = P_ID_VIDEO AND CATEGORIA= 'V';
     END$$
 
 CREATE DEFINER=`root`@`localhost` PROCEDURE `P_HISTORICO_EVENTO` ()   BEGIN
@@ -301,14 +305,32 @@ CREATE DEFINER=`root`@`localhost` PROCEDURE `P_INSERTAR_PERSONA_TESTIMONIO` (IN 
             COMMIT;
     END$$
 
-CREATE DEFINER=`root`@`localhost` PROCEDURE `P_INSERTAR_VIDEO` (IN `P_URL` VARCHAR(300))   BEGIN
-            INSERT INTO VIDEOS     
+CREATE DEFINER=`root`@`localhost` PROCEDURE `P_INSERTAR_VIDEO` (IN `P_URL` VARCHAR(300), IN `P_CATEGORIA` VARCHAR(300))   BEGIN
+            INSERT INTO VIDEOS_ENVIVOS     
             (
+                CATEGORIA,
                 URL, 
                 FECHA 
             )
             VALUES 
             (
+                P_CATEGORIA,
+                P_URL,
+                CONVERT(current_timestamp(),DATE)
+            );
+            COMMIT;
+    END$$
+
+CREATE DEFINER=`root`@`localhost` PROCEDURE `P_INSERTAR_VIDEO_ENVIVOS` (IN `P_CATEGORIA` VARCHAR(300), IN `P_URL` VARCHAR(300))   BEGIN
+            INSERT INTO VIDEOS_ENVIVOS     
+            (
+                CATEGORIA,
+                URL, 
+                FECHA 
+            )
+            VALUES 
+            (
+                P_CATEGORIA,
                 P_URL,
                 CONVERT(current_timestamp(),DATE)
             );
@@ -478,9 +500,9 @@ CREATE DEFINER=`root`@`localhost` PROCEDURE `P_VER_USUARIO_PERFIL` (IN `P_ID_REG
 
 CREATE DEFINER=`root`@`localhost` PROCEDURE `P_VER_VIDEO_FECHA_ANTIGUO` ()   BEGIN
         SELECT
-            URL AS DIRECCION_DE_VIDEO
-        FROM VIDEOS 
-        ORDER BY  FECHA ASC;
+            URL AS DIRECCION_DE_VIDEO FROM VIDEOS_ENVIVOS 
+            WHERE CATEGORIA ='V' 
+            ORDER BY  FECHA ASC ;
     END$$
 
 CREATE DEFINER=`root`@`localhost` PROCEDURE `P_VER_VIDEO_POR_FECHA` (IN `P_FECHA` DATE)   BEGIN
@@ -488,14 +510,14 @@ CREATE DEFINER=`root`@`localhost` PROCEDURE `P_VER_VIDEO_POR_FECHA` (IN `P_FECHA
         SET BUSQUEDAD_F :=P_FECHA;
         SELECT
             URL AS DIRECCION_DE_VIDEO,FECHA AS FECHA_DE_PUBLICACION
-        FROM VIDEOS
-        WHERE FECHA = BUSQUEDAD_F;
+        FROM VIDEOS_ENVIVOS
+        WHERE FECHA = BUSQUEDAD_F AND CATEGORIA='V';
     END$$
 
 CREATE DEFINER=`root`@`localhost` PROCEDURE `P_VER_VIDEO_RECIENTE` ()   BEGIN
         SELECT
-            URL AS DIRECCION_DE_VIDEO
-        FROM VIDEOS;
+            URL AS DIRECCION_DE_VIDEO FROM VIDEOS_ENVIVOS
+        WHERE CATEGORIA ='V' ;
     END$$
 
 DELIMITER ;
@@ -662,22 +684,24 @@ INSERT INTO `tipo_persona` (`ID_TIPO`, `DSC_TIPO`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `videos`
+-- Table structure for table `videos_envivos`
 --
 
-CREATE TABLE `videos` (
+CREATE TABLE `videos_envivos` (
   `ID_VIDEO` int(11) NOT NULL,
+  `CATEGORIA` varchar(2) DEFAULT NULL,
   `URL` varchar(300) DEFAULT NULL,
   `FECHA` date DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `videos`
+-- Dumping data for table `videos_envivos`
 --
 
-INSERT INTO `videos` (`ID_VIDEO`, `URL`, `FECHA`) VALUES
-(1, '../../1', '2022-07-28'),
-(2, '../../2', '2022-07-28');
+INSERT INTO `videos_envivos` (`ID_VIDEO`, `CATEGORIA`, `URL`, `FECHA`) VALUES
+(13, 'V', 'VIDEO DE CHARLA', '2022-08-29'),
+(36, 'E', 'EN VIVO6 ', '2022-08-29'),
+(37, 'E', 'EN VIVO7 ', '2022-08-29');
 
 --
 -- Indexes for dumped tables
@@ -729,9 +753,9 @@ ALTER TABLE `tipo_persona`
   ADD PRIMARY KEY (`ID_TIPO`);
 
 --
--- Indexes for table `videos`
+-- Indexes for table `videos_envivos`
 --
-ALTER TABLE `videos`
+ALTER TABLE `videos_envivos`
   ADD PRIMARY KEY (`ID_VIDEO`);
 
 --
@@ -769,10 +793,10 @@ ALTER TABLE `persona_testimonios`
   MODIFY `ID_TESTI` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `videos`
+-- AUTO_INCREMENT for table `videos_envivos`
 --
-ALTER TABLE `videos`
-  MODIFY `ID_VIDEO` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+ALTER TABLE `videos_envivos`
+  MODIFY `ID_VIDEO` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
 
 --
 -- Constraints for dumped tables
@@ -795,6 +819,20 @@ ALTER TABLE `persona_contacto`
 --
 ALTER TABLE `persona_testimonios`
   ADD CONSTRAINT `ID_REGISTRO_PERSONA_PTFK` FOREIGN KEY (`ID_REGISTRO_PERSONA`) REFERENCES `persona` (`ID_REGISTRO_PERSONA`) ON DELETE CASCADE;
+
+DELIMITER $$
+--
+-- Events
+--
+CREATE DEFINER=`root`@`localhost` EVENT `BORRADO_ENVIVO` ON SCHEDULE EVERY 3 MINUTE STARTS '2022-08-29 18:08:00' ON COMPLETION PRESERVE DISABLE COMMENT 'SE ELIMINAR EL ENVIVO EN 3M' DO BEGIN
+        CALL P_ELIMINAR_ENVIVO();
+    END$$
+
+CREATE DEFINER=`root`@`localhost` EVENT `BORRAR_EVENTO` ON SCHEDULE EVERY 1 DAY STARTS '2022-08-30 00:00:00' ON COMPLETION PRESERVE ENABLE DO BEGIN
+        CALL P_ELIMINAR_ENVIVO();
+    END$$
+
+DELIMITER ;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

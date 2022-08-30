@@ -120,18 +120,19 @@ $(document).ready(function () {
             data: { txt_user_id: txt_user_id, txt_rol: txt_rol, txt_name: txt_name, txt_surname: txt_surname, txt_password: txt_password, txt_gmail: txt_gmail },
             success: function (dataresponse, statustext, response) {
                 if (statustext == "success") {
-                    console.log("exitosamente")
+                    alert("exitosamente")
 
 
                 }
             },
             error: function (request, errorcode, errortext) {
-                console.log("errorrrrrr")
+                alert("errorrrrrr")
             }
         });
 
 
     });
+
 
 
 

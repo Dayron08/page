@@ -22,6 +22,10 @@ class Resources extends Connection_Mysql {
         $this->video_code = $video_code;
     }
 
+	public function set_category($category){
+        $this->category = $category;
+    }
+
 
 	private function execute($query){
 
@@ -31,7 +35,7 @@ class Resources extends Connection_Mysql {
 	}
 	  
 	public function insert_video() {
-		$this->query = "CALL P_INSERTAR_VIDEO(     
+		$this->query = "CALL P_INSERTAR_VIDEO_ENVIVOS(     
 			'".$this->category."',           
 			'".$this->video_code."');";
 			

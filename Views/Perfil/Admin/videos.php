@@ -11,7 +11,7 @@
     <div class="container-xl position-relative section-content text-center py-4">
         <h2 class="display-5 text-white mt-3 mt-lg-4">Videos sobre predicas</h2>
 
-        <p class="lead mb-4 mb-lg-5">Iglesia Pacto de Vida</p>
+        <p class="lead mb-4 mb-lg-5 ">Iglesia Pacto de Vida</p>
     </div>
     <!-- /.container-xl position-relative -->
 </section>
@@ -22,7 +22,7 @@
 
     <div class="container-xl position-relative">
         <?php require("Views/Includes/navBar_Admin_video.php"); ?>
-        <div class="row properties g-4 mb-6" id="all_videos">
+        <div class="row properties g-7" id="all_videos">
         </div>
         <!-- /.row properties -->
 
@@ -56,16 +56,23 @@
             <div class="modal-body p-4">
                 <form action="" method="post">
                     <h6 class="mb-4" style="text-align: center;">Ingresar c&oacute;digo del evento</h6>
+                    <div class="mb-3 ">
+                        <label for="txt_category" id="lb_video_code"
+                            class="form-label fs-sm fw-bold">Categor&iacute;a</label>
+                        <input type="text" class="form-control shadow-none" id="txt_category" name="video_code"
+                            value="V" disabled />
+                    </div>
 
                     <div class="mb-3 ">
-                        <label for="video_code" class="form-label fs-sm fw-bold">C&oacute;digo</label>
+                        <label for="txt_video_code" id="lb_video_code"
+                            class="form-label fs-sm fw-bold">C&oacute;digo</label>
                         <input type="text" class="form-control shadow-none" placeholder="Ingrese el c&oacute;digo"
-                            id="video_code" />
+                            id="txt_video_code" name="txt_video_code" />
                     </div>
 
                     <div class="mb-3">
                         <button type="submit" class="btn btn-primary w-100 text-uppercase fw-bold "
-                            id="btn_video_code">Agregar</button>
+                            id="btn_video">Agregar</button>
                     </div>
                 </form>
 

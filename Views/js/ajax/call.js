@@ -148,6 +148,7 @@ $(document).ready(function () {
     });
 
 
+
     // lectura para todos los eventos admin
     var url = "Controllers/call_events.php";
     $.getJSON(url, function (dato) {
@@ -266,11 +267,15 @@ $(document).ready(function () {
 
             var v =
 
-                "<div class=\"col-12 col-sm-6 col-md-4 col-lg-3 d-flex align-items-stretch\">" +
+                "<div class=\"col-4 col-sm-6 col-md-4 col-lg-4 d-flex align-items-stretch\">" +
 
                 "<div class=\"card-body bg-white shadow-sm rounded d-flex flex-column px-lg-10\">" +
-                "<input type=\"checkbox\" id = \"checkbox_videos\">" +
-                "<iframe class=\"w - 100\" src = \"https://www.youtube.com/embed/" + videos.url + "\" title = \"YouTube video player\"frameborder = \"0\"allow = \"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\"allowfullscreen ></iframe > " +
+                "<iframe class=\"w - 50\" src = \"https://www.youtube.com/embed/" + videos.url + "\" title = \"YouTube video player\"frameborder = \"0\"allow = \"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\"allowfullscreen ></iframe > " +
+
+                "<div class=\"d-grid gap-2 d-md-flex justify-content-center \">" +
+                "<button class=\"btn btn-link me-md-1 mr-1 mt-5\" type=\"submit\"><a id=\"btn_delete\" onclick=\"deleteVideo('" + videos.id + "')\"class=\"fa fa-trash fa-lg \" style=\"font-size:24px;color:red;\" href=\"#\"></a></button>" +
+                "</div>" +
+
 
                 "</div >" +
 
@@ -657,6 +662,35 @@ $(document).ready(function () {
     });
 
     // *********************************EVENTS JQUERY*************************************************************
+    $("#btn_video").click(function (e) {
+        var txt_video_code = $("#txt_video_code").val();
+        if (txt_video_code == '') {
+            $("#lb_txt_video_code").text("✘ Espacio obligatorio el codigo");
+            $("#lb_txt_video_code").css({ "color": "red", "font-family": "Times New Roman', Times, serif;" });
+            return false;
+        }
+        var txt_category = $("#txt_category").val();
+        $.ajax({
+            url: "Controllers/insertVideo.php",
+            method: "POST",
+            data: { txt_video_code: txt_video_code, txt_category: txt_category },
+            success: function (dataresponse, statustext, response) {
+
+                Swal.fire({
+                    position: 'top-end',
+                    icon: 'success',
+                    title: 'Video Insertado',
+                    showConfirmButton: false,
+                    timer: 400
+                })
+
+            },
+            error: function (request, errorcode, errortext) {
+                console.log("errorrrrrr")
+            }
+        });
+
+    });
     $("#btn_query").click(function (e) {
 
         var txt_names = $("#txt_names").val();
@@ -1239,7 +1273,9 @@ function deleteTestimonial(idTesti) {
     });
 }
 
-
+function deleteVideo(idVideo) {
+    alert("Estoy");
+}
 function deleteEvent(idEvent) {
 
     $.ajax({
