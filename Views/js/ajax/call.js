@@ -273,7 +273,7 @@ $(document).ready(function () {
                 "<iframe class=\"w - 50\" src = \"https://www.youtube.com/embed/" + videos.url + "\" title = \"YouTube video player\"frameborder = \"0\"allow = \"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\"allowfullscreen ></iframe > " +
 
                 "<div class=\"d-grid gap-2 d-md-flex justify-content-center \">" +
-                "<button class=\"btn btn-link me-md-1 mr-1 mt-5\" type=\"submit\"><a id=\"btn_delete\" onclick=\"deleteVideo('" + videos.id + "')\"class=\"fa fa-trash fa-lg \" style=\"font-size:24px;color:red;\" href=\"#\"></a></button>" +
+                "<button class=\"btn btn-link me-md-1 mr-1 mt-5\" type=\"submit\"><a id=\"btn_delete\" onclick=\"deleteVideo('" + videos.codigo + "')\"class=\"fa fa-trash fa-lg \" style=\"font-size:24px;color:red;\" href=\"#\"></a></button>" +
                 "</div>" +
 
 
@@ -288,6 +288,34 @@ $(document).ready(function () {
 
     });
 
+    // this is to see lives
+    var url = "Controllers/call_lives.php";
+    $.getJSON(url, function (dato) {
+
+        $.each(dato, function (i, videos) {
+
+            var v =
+
+                "<div class=\"col-4 col-sm-6 col-md-4 col-lg-4 d-flex align-items-stretch\">" +
+
+                "<div class=\"card-body bg-white shadow-sm rounded d-flex flex-column px-lg-10\">" +
+                "<iframe class=\"w - 50\" src = \"https://www.youtube.com/embed/" + videos.url + "\" title = \"YouTube video player\"frameborder = \"0\"allow = \"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\"allowfullscreen ></iframe > " +
+
+                "<div class=\"d-grid gap-2 d-md-flex justify-content-center \">" +
+                "<button class=\"btn btn-link me-md-1 mr-1 mt-5\" type=\"submit\"><a id=\"btn_delete\" onclick=\"deleteVideo('" + videos.codigo + "')\"class=\"fa fa-trash fa-lg \" style=\"font-size:24px;color:red;\" href=\"#\"></a></button>" +
+                "</div>" +
+
+
+                "</div >" +
+
+                "</div >";
+
+
+            $(v).appendTo("#all_videos");
+
+        });
+
+    });
     // lectura para todos los testimonios 
     var url = "Controllers/call_testimonials.php";
     $.getJSON(url, function (dato) {
@@ -674,6 +702,36 @@ $(document).ready(function () {
             url: "Controllers/insertVideo.php",
             method: "POST",
             data: { txt_video_code: txt_video_code, txt_category: txt_category },
+            success: function (dataresponse, statustext, response) {
+
+                Swal.fire({
+                    position: 'top-end',
+                    icon: 'success',
+                    title: 'Video Insertado',
+                    showConfirmButton: false,
+                    timer: 400
+                })
+
+            },
+            error: function (request, errorcode, errortext) {
+                console.log("errorrrrrr")
+            }
+        });
+
+    });
+
+    $("#btn_live_video").click(function (e) {
+        var txt_video_code_live = $("#txt_video_code_live").val();
+        if (txt_video_code_live == '') {
+            $("#lb_video_code_live").text("✘ Espacio obligatorio el codigo");
+            $("#lb_video_code_live").css({ "color": "red", "font-family": "Times New Roman', Times, serif;" });
+            return false;
+        }
+        var txt_category_live = $("#txt_category_live").val();
+        $.ajax({
+            url: "Controllers/insertVideoLive.php",
+            method: "POST",
+            data: { txt_video_code_live: txt_video_code_live, txt_category_live: txt_category_live },
             success: function (dataresponse, statustext, response) {
 
                 Swal.fire({
@@ -1274,20 +1332,52 @@ function deleteTestimonial(idTesti) {
 }
 
 function deleteVideo(idVideo) {
+    var id_Video = idVideo;
+
+    if (id_Video == '') {
+        alert('No se pudo borrar el video');
+    }
     $.ajax({
-        url: "Controllers/insertEvent.php",
+        url: "Controllers/deleteVideo.php",
         method: "POST",
-        data: { txt_managerName: txt_managerName, txt_nameEvent: txt_nameEvent, txt_desc: txt_desc, txt_date: txt_date, txt_time: txt_time, txt_image: txt_image },
+        data: { id_Video: id_Video },
         success: function (response) {
-            if (statustext == "success") {
-                console.log("exitosamente")
-            }
+            $("#all_videos").html("");
+            // this is to see videos
+            var url = "Controllers/call_videos.php";
+            $.getJSON(url, function (dato) {
+
+                $.each(dato, function (i, videos) {
+
+                    var v =
+
+                        "<div class=\"col-4 col-sm-6 col-md-4 col-lg-4 d-flex align-items-stretch\">" +
+
+                        "<div class=\"card-body bg-white shadow-sm rounded d-flex flex-column px-lg-10\">" +
+                        "<iframe class=\"w - 50\" src = \"https://www.youtube.com/embed/" + videos.url + "\" title = \"YouTube video player\"frameborder = \"0\"allow = \"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\"allowfullscreen ></iframe > " +
+
+                        "<div class=\"d-grid gap-2 d-md-flex justify-content-center \">" +
+                        "<button class=\"btn btn-link me-md-1 mr-1 mt-5\" type=\"submit\"><a id=\"btn_delete\" onclick=\"deleteVideo('" + videos.codigo + "')\"class=\"fa fa-trash fa-lg \" style=\"font-size:24px;color:red;\" href=\"#\"></a></button>" +
+                        "</div>" +
+
+
+                        "</div >" +
+
+                        "</div >";
+
+
+                    $(v).appendTo("#all_videos");
+
+                });
+
+            });
         },
         error: function (request, errorcode, errortext) {
             console.log("errorrrrrr")
 
         }
     });
+    return true;
 }
 function deleteEvent(idEvent) {
 

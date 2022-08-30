@@ -59,7 +59,7 @@
                     <div class="mb-3 ">
                         <label for="txt_category" id="lb_video_code"
                             class="form-label fs-sm fw-bold">Categor&iacute;a</label>
-                        <input type="text" class="form-control shadow-none" id="txt_category" name="video_code"
+                        <input type="text" class="form-control shadow-none" id="txt_category" name="txt_category"
                             value="V" disabled />
                     </div>
 
@@ -83,5 +83,5 @@
     </div>
     <!-- modal-dialog modal-dialog-centered -->
 </div>
-<!-- #new_event -->
+<!-- #new_video -->
 <?php require_once("Views/Includes/footerAdmin.php");?>

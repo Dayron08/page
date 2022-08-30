@@ -7,7 +7,6 @@ if(isset($_REQUEST['txt_video_code'])){
 
     $insert -> set_video_code($_REQUEST["txt_video_code"]);
     $insert -> set_category($_REQUEST["txt_category"]);
-    echo($_REQUEST['sel_category']);
     if($insert->insert_video()){
         echo "Exitosamente";
     }else{

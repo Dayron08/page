@@ -517,7 +517,7 @@ CREATE DEFINER=`root`@`localhost` PROCEDURE `P_VER_VIDEO_POR_FECHA` (IN `P_FECHA
 -- Cambio en el procedimiento, id_video
 CREATE DEFINER=`root`@`localhost` PROCEDURE `P_VER_VIDEO_RECIENTE` ()   BEGIN
         SELECT
-        ID_VIDEO,
+        ID_VIDEO ,
             URL AS DIRECCION_DE_VIDEO FROM VIDEOS_ENVIVOS
 
         WHERE CATEGORIA ='V' ;
