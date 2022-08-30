@@ -25,7 +25,7 @@
 
     <div class="container-xl position-relative">
 
-        <div class="row g-3 mb-5" id="bodyimgtown">
+        <div class="row g-3 mb-5" id="bodyUserimgtown">
            
 
         </div>
@@ -56,7 +56,7 @@
     <h1 class="titulo_galeria mt-5" style="text-align: center;">Nuestros Jóvenes</h1>
     <div class="container-xl position-relative">
 
-        <div class="row g-3 mb-5" id="bodyimgyoung">
+        <div class="row g-3 mb-5" id="bodyUserimgyoung">
            
         </div>
         <!-- /.row g-4 mb-5 -->
@@ -85,7 +85,7 @@
     <h1 class="titulo_galeria mt-7" style="text-align: center;">Nuestros Ni&ntilde;os</h1>
     <div class="container-xl position-relative">
 
-        <div class="row g-3 mb-5" id="bodyimgChildren">
+        <div class="row g-3 mb-5" id="bodyUserimgChildren">
  
             
         </div>
