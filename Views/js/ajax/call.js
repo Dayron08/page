@@ -59,7 +59,8 @@ $(document).ready(function(e){
                     "<div class=\"col-12 col-sm-6 col-md-3 d-flex\">"+
                         "<div class=\"card-body shadow-sm rounded d-flex flex-column \">"+
                             "<div class=\"card-img-top overflow-hidden position-relative\">"+
-                                // "<input type=\"checkbox\" id=\"checkbox_images\">"+
+                                "<button class=\"btn btn-link p-0 ms-4 shadow-none\"><a id=\"delete_images\" onclick=\"deleteTestimonial('')\"class=\"fa fa-trash fa-lg\" href=\"#\"></a></button>"+
+                            // "<input type=\"checkbox\" id=\"checkbox_images\">"+
                                 "<img loading=\"lazy\" src=\"../../img/church/"+imagesTown.image+"\" alt=\"Image\""+
                                     "style=\"width: 100%; height : 250px;\" />"+
                             "</div>"+
@@ -83,7 +84,8 @@ $(document).ready(function(e){
                     "<div class=\"col-12 col-sm-6 col-md-3 d-flex\">"+
                         "<div class=\"card-body shadow-sm rounded d-flex flex-column px-lg-10\">"+
                             "<div class=\"card-img-top overflow-hidden position-relative\">"+
-                                // "<input type=\"checkbox\" id=\"checkbox_images\">"+
+                                "<button class=\"btn btn-link p-0 ms-4 shadow-none\"><a id=\"delete_images\" onclick=\"deleteTestimonial('')\"class=\"fa fa-trash fa-lg\" href=\"#\"></a></button>"+
+                            // "<input type=\"checkbox\" id=\"checkbox_images\">"+
                                 "<img loading=\"lazy\" src=\"../../img/young_people/"+imagesYoung.image+"\"  alt=\"Image\""+
                                     "style=\"width: 100%; height : 250px;\" />"+
                             "</div>"+
@@ -105,10 +107,9 @@ $(document).ready(function(e){
                
              var tr = 
                     "<div class=\"col-12 col-sm-6 col-md-3 d-flex\">"+
-                        "<div class=\"card-body shadow-sm rounded d-flex flex-column px-lg-10\">"+
-                        "<button class=\"btn btn-link p-0 ms-4 shadow-none\"><a onclick=\"deleteTestimonial('')\"class=\"fa fa-trash fa-lg\" href=\"#\"></a></button>"+
-                               
+                        "<div class=\"card-body shadow-sm rounded d-flex flex-column px-lg-10\">"+   
                             "<div class=\"card-img-top overflow-hidden position-relative\">"+
+                                "<button class=\"btn btn-link p-0 ms-4 shadow-none\"><a id=\"delete_images\" onclick=\"deleteTestimonial('')\"class=\"fa fa-trash fa-lg\" href=\"#\"></a></button>"+
                                 // "<input type=\"checkbox\" id=\"checkbox_images\">"+
                                 "<img loading=\"lazy\" src=\"../../img/children/"+imagesChildren.image+"\"  alt=\"Image\""+
                                     "style=\"width: 100%; height : 250px;\" />"+

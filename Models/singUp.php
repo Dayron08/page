@@ -194,12 +194,10 @@ class SingUp extends Connection_Mysql {
 		return $this->result;
 	}
 
-	
 
 	public function read() {
 
 		session_start();
-		
 		$this->query = "CALL P_VALI_LOGIN(
 		'".$this->gmail."',
 		'".$this->password."');";

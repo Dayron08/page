@@ -25,24 +25,8 @@
 
     <div class="container-xl position-relative">
 
-        <div class="row g-3 mb-5">
-            <?php
-            for ($i=0; $i < 8; $i++) { 
-                ?>
-            <div class="col-12 col-sm-6 col-md-3 d-flex">
-                <div class="card-body shadow-sm rounded d-flex flex-column px-lg-10">
-                    <div class="card-img-top overflow-hidden position-relative">
-
-                        <img loading="lazy" src="../../img/church/image_01.jpg" class="w-100" alt="Image"
-                            style="width: 100%; height : 250px;" />
-                    </div>
-                </div>
-                <!-- /.card-body -->
-            </div>
-            <!-- /.col-12 col-sm-6 col-md-3 d-flex -->
-            <?php
-            }
-            ?>
+        <div class="row g-3 mb-5" id="bodyimgtown">
+           
 
         </div>
         <!-- /.row g-4 mb-5 -->
@@ -72,24 +56,8 @@
     <h1 class="titulo_galeria mt-5" style="text-align: center;">Nuestros Jóvenes</h1>
     <div class="container-xl position-relative">
 
-        <div class="row g-3 mb-5">
-            <?php
-            for ($i=0; $i < 8; $i++) { 
-                ?>
-            <div class="col-12 col-sm-6 col-md-3 d-flex">
-                <div class="card-body  shadow-sm rounded d-flex flex-column px-lg-10">
-                    <div class="card-img-top overflow-hidden position-relative">
-
-                        <img loading="lazy" src="../../img/young_people/image_01.jpg" class="w-100" alt="Image"
-                            style="width: 100%; height : 250px;" />
-                    </div>
-                </div>
-                <!-- /.card-body -->
-            </div>
-            <!-- /.col-12 col-sm-6 col-md-3 d-flex -->
-            <?php
-            }
-            ?>
+        <div class="row g-3 mb-5" id="bodyimgyoung">
+           
         </div>
         <!-- /.row g-4 mb-5 -->
 
@@ -117,25 +85,9 @@
     <h1 class="titulo_galeria mt-7" style="text-align: center;">Nuestros Ni&ntilde;os</h1>
     <div class="container-xl position-relative">
 
-        <div class="row g-3 mb-5">
-
-            <?php
-            for ($i=0; $i < 8; $i++) { 
-                ?>
-            <div class="col-12 col-sm-6 col-md-3 d-flex">
-                <div class="card-body  shadow-sm rounded d-flex flex-column px-lg-10">
-                    <div class="card-img-top overflow-hidden position-relative">
-
-                        <img loading="lazy" src="../../img/children/image_02.jpg" class="w-100" alt="Image"
-                            style="width: 100%; height : 250px;" />
-                    </div>
-                </div>
-                <!-- /.card-body -->
-            </div>
-            <!-- /.col-12 col-sm-6 col-md-3 d-flex -->
-            <?php
-            }
-            ?>
+        <div class="row g-3 mb-5" id="bodyimgChildren">
+ 
+            
         </div>
         <!-- /.row g-4 mb-5 -->
 
