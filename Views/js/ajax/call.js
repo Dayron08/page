@@ -48,7 +48,7 @@ $(document).ready(function(e){
          });
  
      }); 
-
+ 
       // lectura todos las imagenes Admin Pueblo
       var url = "../../../Controllers/call_imagesTown.php";
       $.getJSON(url, function(datos){
@@ -87,7 +87,7 @@ $(document).ready(function(e){
                                 "<button class=\"btn btn-link p-0 ms-4 shadow-none\"><a id=\"delete_images\" onclick=\"deleteTestimonial('')\"class=\"fa fa-trash fa-lg\" href=\"#\"></a></button>"+
                             // "<input type=\"checkbox\" id=\"checkbox_images\">"+
                                 "<img loading=\"lazy\" src=\"../../img/young_people/"+imagesYoung.image+"\"  alt=\"Image\""+
-                                    "style=\"width: 100%; height : 250px;\" />"+
+                                "style=\"width: 100%; height : 250px;\" />"+
                             "</div>"+
                         "</div>"+
                     "</div>";
