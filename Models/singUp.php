@@ -19,6 +19,7 @@ class SingUp extends Connection_Mysql {
 
 	public $status_id;
 	public $status;
+	public $i;
 
 	public function __construct()
 	{
@@ -76,6 +77,15 @@ class SingUp extends Connection_Mysql {
 
 	public function set_imageEvent($imageEvent){
         $this->imageEvent = $imageEvent;
+    }
+
+	
+	public function set_image($image){
+        $this->image = $image;
+    }
+
+	public function set_category($category){
+        $this->category = $category;
     }
 
 	public function set_password($password){
@@ -153,6 +163,16 @@ class SingUp extends Connection_Mysql {
 			'".$this->testimony."',
 			'".$this->user_id."');"; 
 		// $this->query = "INSERT INTO `persona_testimonios`(`ID_TESTI`, `DSC_TESTIMONIO`, `FECHA_INGRESO`, `ID_REGISTRO_PERSONA`) VALUES (NULL, '".$this->testimony."', '2022/08/17','".$this->user_id."')";
+		$this->execute($this->query);
+
+	} 
+
+	public function insertImage() {
+	
+		// $this->query = "CALL P_INSERTAR_PERSONA_TESTIMONIO(                
+		// 	'".$this->testimony."',
+		// 	'".$this->user_id."');"; 
+		$this->query = "INSERT INTO `galeria`(`ID_IMAGEN`, `CODIGO_IMG`, `IMG_PATH`, `FECHA`) VALUES (NULL, '".$this->category."', '".$this->image."' ,'2022/08/17')";
 		$this->execute($this->query);
 
 	} 
@@ -395,12 +415,15 @@ class SingUp extends Connection_Mysql {
 		$this->query = "CALL P_VER_PERSONA_TESTIMONIO();";
 		$this->execute($this->query);
 
+		
+
 	   $testimonial = array();
-		while ($result = mysqli_fetch_assoc($this->result)) {
+		while (($result = mysqli_fetch_assoc($this->result))) {
 			$testimonial []= array(
 				"dsc"=> $result["DSC_TESTIMONIO"],
 				"name" => $result["NOMBRE"],
 				"lastname" => $result["APPELLIDOS"]);
+			
 		}
 		
 		
@@ -446,10 +469,10 @@ class SingUp extends Connection_Mysql {
 
 	public function deleteImages() {
 
-		// $this->query = "CALL P_ELIMINAR_CONSULTA(                
-		// 	'".$this->idConsul."');"; 
+		$this->query = "CALL P_ELIMINAR_IMAGEN(                
+			'".$this->idImagen."');"; 
 	
-		$this->query = "DELETE FROM `galeria` WHERE `ID_IMAGEN` = '".$this->idImagen."'";
+		// $this->query = "DELETE FROM `galeria` WHERE `ID_IMAGEN` = '".$this->idImagen."'";
 		
 		$this->execute($this->query);
 

@@ -14,7 +14,7 @@
     </div>
     <!-- /.container-xl position-relative -->
 </section>
-
+ 
 <!-- #page-hero.section section__inverse justify-content-center py-5 py-lg-6 mb-n5 vh-50 h-lg-480px min-h-330px -->
 
 <?php require("../../Includes/navBar_Admin_images.php");  ?>
@@ -150,20 +150,19 @@
                     <h6 class="mb-4" style="text-align: center;">Ingresar c&oacute;digo del evento</h6>
 
                     <div class="mb-3 ">
-                        <label for="video_code" class="form-label fs-sm fw-bold">C&oacute;digo</label>
-                        <input type="file" class="form-control shadow-none" id="video_code" />
+                        <label for="video_code" class="form-label fs-sm fw-bold">Seleccione Imagen</label>
+                        <input type="text" class="form-control shadow-none" id="txt_img" />
                     </div>
                     <div class="mb-3">
-                        <label for="sel_video_category" class="form-label fs-sm fw-bold">C&oacute;digo</label>
-                        <select id="sel_video_category" name="sel_video_category" class="form-control">
-                            <option value="">Categor&iacute;a</option>
+                        <label for="sel_video_category" class="form-label fs-sm fw-bold">Seleccione categoria</label>
+                        <select id="sel_category" name="sel_video_category" class="form-control">
                             <option value="C-P">Pueblo</option>
                             <option value="C-J">J&oacute;venes</option>
                             <option value="C-N">Ni&ntilde;os</option>
                         </select>
                     </div>
                     <div class="mb-3">
-                        <button type="submit" class="btn btn-primary w-100 text-uppercase fw-bold">Agregar</button>
+                        <button type="submit" id="btn_Insertimg" class="btn btn-primary w-100 text-uppercase fw-bold">Agregar</button>
                     </div>
 
 

@@ -504,6 +504,35 @@ $(document).ready(function(e){
         });
 
 
+        $("#btn_Insertimg").click(function (e) {
+
+           
+
+            var txt_img = $("#txt_img").val();
+            var sel_category = $("#sel_category").val();
+            
+
+                
+            $.ajax({
+                url: "../../../Controllers/insertImage.php",
+                method: "POST", 
+                data : {txt_img  : txt_img ,sel_category : sel_category},
+                success: function(dataresponse, statustext, response){
+                    if(statustext == "success"){
+                        console.log("exitosamente")
+
+
+                    }
+                },
+                error: function(request, errorcode, errortext){
+                    console.log("errorrrrrr")
+
+                }
+            });
+
+        });
+
+
         $("#button_update").click(function(e){
  
          
