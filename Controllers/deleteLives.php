@@ -13,7 +13,7 @@ if(isset($_REQUEST['id_live'])){
     }else{
         echo "Error";
     }
-     
+
 }else{
     echo ("Error al esperar los datos");
 }

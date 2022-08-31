@@ -32,8 +32,6 @@
 
 
 
-                <!-- /.row cities -->
-
             </div>
             <!-- /.container-xl -->
         </div>

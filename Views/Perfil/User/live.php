@@ -21,16 +21,9 @@
 
     <section class="section " id="welcome_vide">
         <!-- /.bg bg-img position-absolute -->
-        <div class="container-xl position-relative">
+        <div class="container-xl position-relative" id="lives_user">
 
 
-            <div class="row cities g-4 mb-5 mt-3">
-                <iframe width="700" height="700" src="https://www.youtube.com/embed/Lo3RbQw1ics"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-            </div>
-            <!-- /.row cities -->
 
         </div>
         <!-- /.container-xl -->

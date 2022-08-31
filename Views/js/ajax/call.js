@@ -288,20 +288,40 @@ $(document).ready(function () {
 
     });
 
-    // this is to see lives
+    // this is to see lives in admin
     var url = "Controllers/call_lives.php";
     $.getJSON(url, function (dato) {
 
         $.each(dato, function (i, lives) {
-
             var v =
+                "<div class=\"card-body bg-white shadow-sm rounded d-flex flex-column px-lg-12 mt-5 mb-5\">" +
+                "<button class=\"btn btn-link mt-2 mb-5\" type=\"submit\"><a id=\"btn_delete\" onclick=\"deleteLive('" + lives.codigo + "')\"class=\"fa fa-trash fa-lg \" style=\"font-size:24px;color:red;\" href=\"#\"></a></button>" +
+                "<div class=\"row cities g-4 mb-0\">" +
+                "<iframe width=\"500\" height=\"500\" src=\"https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fpactodevida%2Fvideos%2F" + lives.url + "%2F&show_text=false&t=0\"  style=\"border: none; overflow:hidden\" scrolling=\"no\" frameborder=\"0\" allowfullscreen = \"true\" allow = \"autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share\"  ></iframe > " +
 
-                "<div class=\"row cities g-4 mb-5 mt-3\">" +
-                "<iframe width=\"700\" height=\"700\" src=\"https://www.facebook.com/pactodevida/videos/" + lives.url + "\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>" +
                 "</div>"
 
+            "</div >" +
+                $(v).appendTo("#lives_admin");
 
-            $(v).appendTo("#lives_admin");
+        });
+
+    });
+
+    // this is to see lives in user
+    var url = "Controllers/call_lives.php";
+    $.getJSON(url, function (dato) {
+
+        $.each(dato, function (i, lives) {
+            var v =
+                "<div class=\"card-body bg-white shadow-sm rounded d-flex flex-column px-lg-12 mt-5 mb-5\">" +
+                "<div class=\"row cities g-4 mb-0\">" +
+                "<iframe width=\"500\" height=\"500\" src=\"https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fpactodevida%2Fvideos%2F" + lives.url + "%2F&show_text=false&t=0\"  style=\"border: none; overflow:hidden\" scrolling=\"no\" frameborder=\"0\" allowfullscreen = \"true\" allow = \"autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share\"  ></iframe > " +
+
+                "</div>"
+
+            "</div >" +
+                $(v).appendTo("#lives_user");
 
         });
 
@@ -1357,6 +1377,47 @@ function deleteVideo(idVideo) {
 
 
                     $(v).appendTo("#all_videos");
+
+                });
+
+            });
+        },
+        error: function (request, errorcode, errortext) {
+            console.log("errorrrrrr")
+
+        }
+    });
+    return true;
+}
+
+function deleteLive(idLive) {
+    var id_live = idLive;
+
+    if (id_live == '') {
+        alert('No se pudo borrar el video');
+    }
+    $.ajax({
+        url: "Controllers/deleteLives.php",
+        method: "POST",
+        data: { id_live: id_live },
+        success: function (response) {
+            $("#lives_admin").html("");
+            // this is to see videos
+            // this is to see lives
+            var url = "Controllers/call_lives.php";
+            $.getJSON(url, function (dato) {
+
+                $.each(dato, function (i, lives) {
+                    var v =
+                        "<div class=\"card-body bg-white shadow-sm rounded d-flex flex-column px-lg-12\">" +
+                        "<button class=\"btn btn-link mt-2 mb-5\" type=\"submit\"><a id=\"btn_delete\" onclick=\"deleteLive('" + lives.codigo + "')\"class=\"fa fa-trash fa-lg \" style=\"font-size:24px;color:red;\" href=\"#\"></a></button>" +
+                        "<div class=\"row cities g-4 mb-0\">" +
+                        "<iframe width=\"500\" height=\"500\" src=\"https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fpactodevida%2Fvideos%2F" + lives.url + "%2F&show_text=false&t=0\"  style=\"border: none; overflow:hidden\" scrolling=\"no\" frameborder=\"0\" allowfullscreen = \"true\" allow = \"autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share\"  ></iframe > " +
+
+                        "</div>"
+
+                    "</div >" +
+                        $(v).appendTo("#lives_admin");
 
                 });
 

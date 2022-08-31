@@ -90,7 +90,12 @@ class Resources extends Connection_Mysql {
 			'".$this->live_code."',             
 			'".$this->live_category."');";           
 				
-		$this->execute($this->query);
+		
+		if($this->execute($this->query)){
+			return true;
+		}else{
+			return false;
+		}
 
 	} 
 
@@ -114,7 +119,11 @@ class Resources extends Connection_Mysql {
 	// se necesita procedimiento
 		$this->query = "CALL P_ELIMINAR_ENVIVO_ID(                
 			'".$this->live_code."');"; 		
-		$this->execute($this->query);
+		if($this->execute($this->query)){
+			return true;
+		}else{
+			return false;
+		}
 
 	} 
 
