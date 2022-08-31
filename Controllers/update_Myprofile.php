@@ -5,7 +5,7 @@ $update = new SingUp();
    
 if(isset($_REQUEST['txt_Id'])){
   
-
+ 
     $update -> set_user_id($_REQUEST["txt_Id"]);
     $update -> set_name($_REQUEST["txt_Name"]);
     $update -> set_surname($_REQUEST["txt_surname"]);
