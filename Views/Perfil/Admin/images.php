@@ -147,7 +147,7 @@
 
             <div class="modal-body p-4">
                 <form action="" method="post">
-                    <h6 class="mb-4" style="text-align: center;">Ingresar c&oacute;digo del evento</h6>
+                    <h6 class="mb-4" style="text-align: center;">Insertar nueva imagen</h6>
 
                     <div class="mb-3 ">
                         <label for="video_code" class="form-label fs-sm fw-bold">Seleccione Imagen</label>
