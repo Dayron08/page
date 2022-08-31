@@ -264,7 +264,6 @@ $(document).ready(function () {
     $.getJSON(url, function (dato) {
 
         $.each(dato, function (i, videos) {
-
             var v =
 
                 "<div class=\"col-4 col-sm-6 col-md-4 col-lg-4 d-flex align-items-stretch\">" +
