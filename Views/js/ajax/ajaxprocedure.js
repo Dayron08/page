@@ -376,12 +376,48 @@ $(document).ready(function(e){
 
         $("#btn_query").click(function (e) {
 
-            var txt_names = $("#txt_names").val();
-            var txt_lastnames = $("#txt_lastnames").val();
-            var txt_gmail = $("#txt_gmail").val();
-            var txt_subject = $("#txt_subject").val();
-            var txt_text = $("#txt_text").val();
-                
+
+            var txt_names = $("#txt_name").val();
+            if (txt_names == '') {
+                $("#alert_name").text("✘ Espacio obligatorio");
+                $("#alert_name").css({ "color": "red", "font-family": "Times New Roman', Times, serif;" });
+                return false;
+            } else {
+                $("#alert_name").text("");
+                var txt_lastnames = $("#txt_lastnames").val();
+                if (txt_lastnames == '') {
+                    $("#alert_lastnames").text("✘ Espacio obligatorio");
+                    $("#alert_lastnames").css({ "color": "red", "font-family": "Times New Roman', Times, serif;" });
+                    return false;
+                } else {
+                    $("#alert_lastnames").text("");
+                    var txt_gmail = $("#txt_gmail").val();
+                    if (txt_gmail == '') {
+                        $("#alert_gmail").text("✘ Espacio obligatorio");
+                        $("#alert_gmail").css({ "color": "red", "font-family": "Times New Roman', Times, serif;" });
+                        return false;
+                    } else {
+                        $("#alert_gmail").text("");
+                        var txt_subject = $("#txt_subject").val();
+                        if (txt_subject == '') {
+                            $("#alert_subject").text("✘ Espacio obligatorio");
+                            $("#alert_subject").css({ "color": "red", "font-family": "Times New Roman', Times, serif;" });
+                            return false;
+                        } else {
+                            $("#alert_subject").text("");
+                            var txt_text = $('#txt_text').val();
+                            if (txt_text == '') {
+                                $("#alert_consulta").text("✘ Espacio obligatorio");
+                                $("#alert_consulta").css({ "color": "red", "font-family": "Times New Roman', Times, serif;" });
+                                return false;
+                            } else {
+                                $("#alert_consulta").text("");
+                            }
+                        }
+                    }
+                }
+            }
+            
             $.ajax({
                 url: "../../../Controllers/insertQuery.php",
                 method: "POST",

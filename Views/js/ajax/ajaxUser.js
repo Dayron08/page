@@ -201,49 +201,6 @@ $(document).ready(function() {
 
     });
 
-    $("#btn_query").click(function(e) {
-        //   e.preventDefault();
-
-        var txt_name = $("#txt_name").val();
-        if (txt_name == '') {
-            $("#alert_name").text("✘ Formato no valido");
-            $("#alert_name").css({ "color": "red", "font-family": "Times New Roman', Times, serif;" });
-            return false;
-        } else {
-            $("#alert_name").text("");
-            var txt_lastnames = $("#txt_lastnames").val();
-            if (txt_lastnames == '') {
-                $("#alert_lastnames").text("✘ Formato no valido");
-                $("#alert_lastnames").css({ "color": "red", "font-family": "Times New Roman', Times, serif;" });
-                return false;
-            } else {
-                $("#alert_lastnames").text("");
-                var txt_gmail = $("#txt_gmail").val();
-                if (txt_gmail == '') {
-                    $("#alert_gmail").text("✘ Formato no valido");
-                    $("#alert_gmail").css({ "color": "red", "font-family": "Times New Roman', Times, serif;" });
-                    return false;
-                } else {
-                    $("#alert_gmail").text("");
-                    var txt_subject = $("#txt_subject").val();
-                    if (txt_subject == '') {
-                        $("#alert_subject").text("✘ Formato no valido");
-                        $("#alert_subject").css({ "color": "red", "font-family": "Times New Roman', Times, serif;" });
-                        return false;
-                    } else {
-                        var txt_text = $('txt_text').val();
-                        if (txt_text == '') {
-                            $("#alert_consulta").text("✘ Formato no valido");
-                            $("#alert_consulta").css({ "color": "red", "font-family": "Times New Roman', Times, serif;" });
-                            return false;
-                        } else {
-                            $("#alert_consulta").text("");
-                        }
-                    }
-                }
-            }
-        }
-
-    });
+   
 
 });
