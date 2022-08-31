@@ -522,7 +522,7 @@ class SingUp extends Connection_Mysql {
 			'".$this->date."',
 			'".$this->gender."',
 			'".$this->gmail."',
-			'".$this->phone."',);"; 
+			'".$this->phone."');"; 
 
 		// $this->query = "UPDATE `persona` SET `ID_REGISTRO_PERSONA`='".$this->user_id."',`NOMBRE`= '".$this->name."',
 		// `APPELLIDOS`='".$this->surname."',`FECH_NACIMIENTO`='".$this->date."',`GENERO`= '".$this->gender."',`PASSWORD_PERSONA`='".$this->password."',

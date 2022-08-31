@@ -11,7 +11,6 @@ if(isset($_REQUEST['txt_id'])){
     echo ($_REQUEST["txt_surname"]);
     echo ($_REQUEST["txt_date"]);
     echo ($_REQUEST["txt_gender"]);
-    echo ($_REQUEST["txt_passwordd"]);
     echo ($_REQUEST["txt_gmail"]);
     echo ($_REQUEST["txt_phone"]);
 
