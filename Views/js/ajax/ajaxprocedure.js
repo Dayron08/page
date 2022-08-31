@@ -392,9 +392,11 @@ $(document).ready(function(e){
                 } else {
                     $("#alert_lastnames").text("");
                     var txt_gmail = $("#txt_gmail").val();
-                    if (txt_gmail == '') {
-                        $("#alert_gmail").text("✘ Espacio obligatorio");
-                        $("#alert_gmail").css({ "color": "red", "font-family": "Times New Roman', Times, serif;" });
+                    var validacion=/^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
+                    vali= validacion.test(txt_gmail);
+                    if(vali=='' || vali!=true){
+                        $("#alert_gmail").text("✘ Formato no valido");
+                        $("#alert_gmail").css({"color" : "red","font-family": "Times New Roman', Times, serif;"});
                         return false;
                     } else {
                         $("#alert_gmail").text("");
