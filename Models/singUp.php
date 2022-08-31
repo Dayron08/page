@@ -108,6 +108,10 @@ class SingUp extends Connection_Mysql {
         $this->gmail = $gmail;
     }
 
+	public function set_phone($phone){
+        $this->phone = $phone;
+    }
+
 	public function set_query($query){
         $this->query = $query;
     }
@@ -510,17 +514,22 @@ class SingUp extends Connection_Mysql {
 		$this->execute($this->query);
 
 	} 
-
+ 
 	public function UpdateMyprofile() {
 	 
-		// $this->query = "CALL P_ACTUALIZAR_EVENTO(                
-		// 	'".$this->idEvent."',
+		// $this->query = "CALL P_ACTUALIZAR_DATOS_PERSONA_USU(                
+		// 	'".$this->user_id."',
 		// 	'".$this->name."',
-		// 	'".$this->nameEvent."',
-		// 	'".$this->timeEvent."',
-		// 	'".$this->imageEvent."',
-		// 	'".$this->dscEvent."',
-		// 	'".$this->dateEvent."');"; 
+		// 	'".$this->surname."',
+		// 	'".$this->date."',
+		// 	'".$this->gender."',
+		// 	'".$this->password."',
+		// 	'".$this->gmail."',
+		// 	'".$this->phone."',);"; 
+
+		$this->query = "UPDATE `persona` SET `ID_REGISTRO_PERSONA`='".$this->user_id."',`NOMBRE`= '".$this->name."',
+		`APPELLIDOS`='".$this->surname."',`FECH_NACIMIENTO`='".$this->date."',`GENERO`= '".$this->gender."',`PASSWORD_PERSONA`='".$this->password."',
+		`FECHA_REGISTRO`='2022/08/22',`TIPO_PERSONA`= 1 WHERE `ID_REGISTRO_PERSONA`='".$this->user_id."'";
 		
 		
 		$this->execute($this->query);
