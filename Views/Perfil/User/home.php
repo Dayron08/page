@@ -172,6 +172,10 @@
                         <div class="row testimonials g-4" id="tbodytestimonial">
 
 
+
+
+
+
                             <!-- /.col-6 col-md d-flex align-items-stretch -->
                         </div>
                         <!-- /.row testimonials  -->
@@ -180,7 +184,7 @@
                 </div>
                 <!-- /.swiper-slide -->
 
-                <div class="swiper-slide">
+                <!-- <div class="swiper-slide">
                     <div class="container-xl position-relative">
                         <div class="row testimonials g-4">
                             <div class="col-12 col-md d-flex align-items-stretch">
@@ -197,11 +201,11 @@
                                             <img src="" />
                                         </div>
                                     </blockquote>
-                                </figure>
-                                <!-- /.card -->
-                            </div>
-                            <!-- /.col-12 col-md d-flex align-items-stretch -->
-
+                                </figure> -->
+                <!-- /.card -->
+                <!-- </div> -->
+                <!-- /.col-12 col-md d-flex align-items-stretch -->
+                <!-- 
                             <div class="col-6 col-md d-flex align-items-stretch">
                                 <figure class="card testimonial h-100 text-start bg-transparent mb-0">
                                     <blockquote
@@ -216,12 +220,12 @@
                                             <img src="" />
                                         </div>
                                     </blockquote>
-                                </figure>
-                                <!-- /.card -->
-                            </div>
-                            <!-- /.col-6 col-md d-flex align-items-stretch -->
+                                </figure> -->
+                <!-- /.card -->
+                <!-- </div> -->
+                <!-- /.col-6 col-md d-flex align-items-stretch -->
 
-                            <div class="col-6 col-md d-flex align-items-stretch">
+                <!-- <div class="col-6 col-md d-flex align-items-stretch">
                                 <figure class="card testimonial h-100 text-start bg-transparent mb-0">
                                     <blockquote
                                         class="cardsbg blockquote card-body shadow-sm rounded d-flex flex-column px-lg-5">
@@ -231,33 +235,33 @@
                                         <p class="text-secondary text-decoration-none fs-sm mt-auto mb-3 o-75">
                                             &mdash;<span class="fw-bold"> John Doe</span> - Software Deveoloper</p>
                                         <div class="img px-3 px-lg-4">
-                                            <img loading="lazy" src="../../img/LOGO02.png" class="img rounded-circle"
+                                            <img src="../../web/img/LOGO02.png" class="img rounded-circle"
                                                 alt="Image" />
                                         </div>
                                     </blockquote>
-                                </figure>
-                                <!-- /.card -->
-                            </div>
-                            <!-- /.col-6 col-md d-flex align-items-stretch -->
-                        </div>
-                        <!-- /.row testimonials  -->
-                    </div>
-                    <!-- /.container-xl position-relative -->
-                </div>
+                                </figure> -->
+                <!-- /.card -->
+                <!-- </div> -->
+                <!-- /.col-6 col-md d-flex align-items-stretch -->
+                <!-- </div> -->
+                <!-- /.row testimonials  -->
+                <!-- </div> -->
+                <!-- /.container-xl position-relative -->
+                <!-- </div> -->
                 <!-- /.swiper-slide -->
             </div>
             <!-- /.swiper-wrapper -->
         </div>
         <!-- /#testimonials-swiper-1-swiper.swiper -->
 
-        <div class="swiper-navigation-container container-xl">
+        <!-- <div class="swiper-navigation-container container-xl">
             <a href="#testimonials-swiper-1-swiper"
                 class="swiper-button-next btn btn-primary btn-default shadow-none o-50 o-100-hover"><i
                     class="d-inline-block fas fa-angle-right"></i></a>
             <a href="#testimonials-swiper-1-swiper"
                 class="swiper-button-prev btn btn-primary btn-default shadow-none o-50 o-100-hover"><i
                     class="d-inline-block fas fa-angle-left"></i></a>
-        </div>
+        </div> -->
         <!-- /.swiper-navigation container-xl -->
 
         <div class="swiper-pagination-container container-xl">
@@ -265,7 +269,7 @@
                 <div data-swiper-id="#testimonials-swiper-1-swiper" class="swiper-pagination w-auto bottom-0"
                     data-swiper-pagination-limit="2"></div>
 
-                <a href="../../Perfil/User/testimonials.php"
+                <a href="../../Perfil/Admin/testimonials.php"
                     class="btn btn-link btn-sm btn-more text-uppercase fw-bold shadow-none o-50 o-100-hover ms-3 trans-base px-0">Todos
                     los testimonios<i class="fas fa-long-arrow-alt-right"></i></a>
             </div>

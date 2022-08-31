@@ -5,7 +5,7 @@ $selecttestimonial = new SingUp();
   
 $result = $selecttestimonial->readTestimonialsHome();
 
- 
+  
 $json_string = json_encode($result);
 
 echo $json_string;
