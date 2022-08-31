@@ -580,7 +580,7 @@ $(document).ready(function(e){
             var txt_admission= $("#txt_admission").val();
             var txt_rol= $("#txt_rol").val();
             
-        
+         
             $.ajax({
                 url: "../../../Controllers/update_Myprofile.php",
                 method: "POST",
