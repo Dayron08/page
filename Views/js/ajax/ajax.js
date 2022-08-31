@@ -113,7 +113,7 @@ $(document).ready(function () {
             }
         }
 
-
+        e.preventDefault();
         $.ajax({
             url: "Controllers/singUp_admin.php",
             method: "POST",

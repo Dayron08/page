@@ -117,10 +117,10 @@ class SingUp extends Connection_Mysql {
 		$this->password = $password_ecrypted;
 	}
 
-	// public function password_decryption($pass){
-	// 	$password_deciphered = password_verify($pass, $new );
-	// 	$this->password = $password_deciphered;
-	// }
+	public function password_decryption($pass){
+		$password_deciphered = password_verify($pass, $new );
+		$this->password = $password_deciphered;
+	}
 
 
 	private function execute($query){
