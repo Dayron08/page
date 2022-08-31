@@ -19,10 +19,10 @@
             <div class="col col-md-auto text-md-end ms-md-auto">
                 <div class="btn-group btn-select-dropdown w-100 mt-3">
 
-                    <p class="text-dark">
+                    <!-- <p class="text-dark">
                        
                     <label>Buscar por fecha</label><input type="date" id="example" class="form-control me-2 px-4 fw-bold ">
-                    </p>
+                    </p> -->
                     <!-- /.text-light -->
                     <!-- /.text-light -->
                 </div>

@@ -111,13 +111,15 @@
                 <h2 class="fs-1 mb-3 text-bla">Cuentanos tu experiencia</h2>
                 <p class="lead mb-4">Comparte un testimonio para que las otras personas puedan conocer tu experiencia
                 </p>
-
+ 
                 <form action="#" method="post" class="">
                     <div class="input-group mb-3">
                         <textarea type="text" class="form-control form-control-lg" placeholder="Testimonio" id="txt_testimony"
                             aria-label="Recipient's username" aria-describedby="button-addon2" rows="3" cols="10"
                             maxlength="200"></textarea>
+                           
                     </div>
+                    <p id="alert_testimony"></p>
                     
                     <button class="btn btn-warning btn-lg px-4" type="submit" id="btn_testimony">Subir</button>
                 </form>

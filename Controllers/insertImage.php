@@ -12,6 +12,7 @@
 // }
 
 
+ 
 require_once("../Models/singUp.php");
 
 $insert = new SingUp();
