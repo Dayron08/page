@@ -96,8 +96,9 @@
                                 <div class="col-md-4">
                                     <div class="form-floating">
                                         <input type="text" class="form-control border-0 bg-light"
-                                            placeholder="Your Name" id="txt_names" />
+                                            placeholder="Your Name" id="txt_name" />
                                         <label>Nombre</label>
+                                        <p id="alert_name"></p>
                                     </div>
                                 </div> 
                                 <div class="col-md-4">
@@ -105,6 +106,7 @@
                                         <input type="text" class="form-control border-0 bg-light"
                                             placeholder="Your LastName" id="txt_lastnames" />
                                         <label>Apellidos</label>
+                                        <p id="alert_lastnames"></p>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
@@ -112,6 +114,7 @@
                                         <input type="email" class="form-control border-0 bg-light"
                                             placeholder="Your Email" id="txt_gmail" />
                                         <label>Email</label>
+                                        <p id="alert_gmail"></p>
                                     </div>
                                 </div>
                                 <div class="col-12">
@@ -119,6 +122,7 @@
                                         <input type="text" class="form-control border-0 bg-light" placeholder="Subject"
                                             id="txt_subject" />
                                         <label>Asunto</label>
+                                        <p id="alert_subject"></p>
                                     </div>
                                 </div>
                                 <div class="col-12">
@@ -126,6 +130,7 @@
                                         <textarea class="form-control border-0 bg-light" placeholder=""
                                             style="height: 150px" id="txt_text"></textarea>
                                         <label>Consulta</label>
+                                        <p id="alert_consulta"></p>
                                     </div>
                                 </div>
 
