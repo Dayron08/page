@@ -430,13 +430,13 @@ class SingUp extends Connection_Mysql {
 
 	}
 
-
+ 
 	public function readTestimonialsHome() {
 		
-		$this->query = "CALL P_VER_PERSONA_TESTIMONIO();";
+		$this->query = "CALL P_VER_PERSONA_TESTIMONIO3();";
 		$this->execute($this->query);
 
-		
+		 
 
 	   $testimonial = array();
 		while (($result = mysqli_fetch_assoc($this->result))) {

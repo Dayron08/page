@@ -223,7 +223,7 @@ $(document).ready(function(e){
          });
  
      }); 
-
+ 
 
        // lectura para todos los testimonios 
        var url = "../../../Controllers/call_testimonials.php";
