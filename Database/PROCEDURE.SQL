@@ -974,5 +974,23 @@ DELIMITER;
 CALL P_ACTUALIZAR_PASSWORD('305200304','NEW_PASSWORD');
 
 CALL P_VER_ENVIVO();
+--------------------------------------------NOMBRE_ROL
+DELIMITER $$
+USE PacVi $$
+CREATE OR REPLACE PROCEDURE P_VER_NOMBRE_ROL
+    (   
+        IN P_ID_REGISTRO_PERSONA VARCHAR(50)
+    )
+    BEGIN
+        SELECT
+            TP.DSC_TIPO,
+            P.NOMBRE,
+            P.APPELLIDOS
+        FROM TIPO_PERSONA TP 
+        INNER JOIN PERSONA P ON (P.TIPO_PERSONA = TP.ID_TIPO)
+        WHERE P.ID_REGISTRO_PERSONA = P_ID_REGISTRO_PERSONA;
+    END$$
+DELIMITER;
 
+CALL P_VER_NOMBRE_ROL('305200304');
 ----------------------------------------------------------------------FIN--------------------------------------------------------------------
