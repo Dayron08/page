@@ -151,7 +151,7 @@
 
                     <div class="mb-3 ">
                         <label for="video_code" class="form-label fs-sm fw-bold">Seleccione Imagen</label>
-                        <input type="text" class="form-control shadow-none" id="txt_img" />
+                        <input type="file" class="form-control shadow-none" id="txt_img" />
                     </div>
                     <div class="mb-3">
                         <label for="sel_video_category" class="form-label fs-sm fw-bold">Seleccione categoria</label>
