@@ -103,6 +103,22 @@
 
                             </ul>
                         </li>
+                        <li class="nav-item nav-dropdown dropdown dropdown-hover">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDocs" role="button"
+                                data-bs-toggle="dropdown">Cuenta</a>
+                            <ul class="nav-dropdown-menu dropdown-menu dropdown-menu-end shadow" data-bs-popper>
+                                <li><a class="dropdown-item" href="../User/my_profile.php">Perfil</a></li>
+
+                                <li><a class="dropdown-item" href="">Privacidad</a></li>
+
+                                <li><a class="dropdown-item" href="">T&eacute;rmino y
+                                        condiciones</a></li>
+
+                                <li><a class="dropdown-item" href="">Cerrar Sesi&oacute;n</a></li>
+
+
+                            </ul>
+                        </li>
                         <li><a class="nav-link" href="../User/contact.php">Cont&aacute;ctenos</a></li>
 
                     </ul>
