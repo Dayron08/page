@@ -576,9 +576,9 @@ $(document).ready(function(e){
             var txt_surname= $("#txt_surname").val();
             var txt_date= $("#txt_date").val();
             var txt_gender= $("#txt_gender").val();
-            var txt_passwordd= $("#txt_passwordd").val();
-            var txt_admission= $("#txt_admission").val();
-            var txt_rol= $("#txt_rol").val();
+            // var txt_passwordd= $("#txt_passwordd").val();
+            // var txt_admission= $("#txt_admission").val();
+            // var txt_rol= $("#txt_rol").val();
             var txt_gmail= $("#txt_gmail").val();
             var txt_phone= $("#txt_phone").val();
 
@@ -588,7 +588,7 @@ $(document).ready(function(e){
                 url: "../../../Controllers/update_Myprofile.php",
                 method: "POST",
                 data:{txt_id: txt_id, txt_Name: txt_Name, txt_surname: txt_surname, txt_date: txt_date , txt_gender: txt_gender, 
-                    txt_passwordd: txt_passwordd, txt_admission: txt_admission, txt_rol: txt_rol, txt_gmail: txt_gmail, txt_phone: txt_phone},
+                   txt_gmail: txt_gmail, txt_phone: txt_phone},
 
                 success: function(dataresponse, statustext, response){
                     if(statustext == "success"){
