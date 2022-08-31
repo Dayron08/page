@@ -436,8 +436,6 @@ class SingUp extends Connection_Mysql {
 		$this->query = "CALL P_VER_PERSONA_TESTIMONIO3();";
 		$this->execute($this->query);
 
-		 
-
 	   $testimonial = array();
 		while (($result = mysqli_fetch_assoc($this->result))) {
 			$testimonial []= array(
@@ -517,19 +515,18 @@ class SingUp extends Connection_Mysql {
  
 	public function UpdateMyprofile() {
 	 
-		// $this->query = "CALL P_ACTUALIZAR_DATOS_PERSONA_USU(                
-		// 	'".$this->user_id."',
-		// 	'".$this->name."',
-		// 	'".$this->surname."',
-		// 	'".$this->date."',
-		// 	'".$this->gender."',
-		// 	'".$this->password."',
-		// 	'".$this->gmail."',
-		// 	'".$this->phone."',);"; 
+		$this->query = "CALL P_ACTUALIZAR_DATOS_PERSONA_USU(                
+			'".$this->user_id."',
+			'".$this->name."',
+			'".$this->surname."',
+			'".$this->date."',
+			'".$this->gender."',
+			'".$this->gmail."',
+			'".$this->phone."',);"; 
 
-		$this->query = "UPDATE `persona` SET `ID_REGISTRO_PERSONA`='".$this->user_id."',`NOMBRE`= '".$this->name."',
-		`APPELLIDOS`='".$this->surname."',`FECH_NACIMIENTO`='".$this->date."',`GENERO`= '".$this->gender."',`PASSWORD_PERSONA`='".$this->password."',
-		`FECHA_REGISTRO`='2022/08/22',`TIPO_PERSONA`= 1 WHERE `ID_REGISTRO_PERSONA`='".$this->user_id."'";
+		// $this->query = "UPDATE `persona` SET `ID_REGISTRO_PERSONA`='".$this->user_id."',`NOMBRE`= '".$this->name."',
+		// `APPELLIDOS`='".$this->surname."',`FECH_NACIMIENTO`='".$this->date."',`GENERO`= '".$this->gender."',`PASSWORD_PERSONA`='".$this->password."',
+		// `FECHA_REGISTRO`='2022/08/22',`TIPO_PERSONA`= 1 WHERE `ID_REGISTRO_PERSONA`='".$this->user_id."'";
 		
 		
 		$this->execute($this->query);

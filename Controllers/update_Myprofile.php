@@ -20,7 +20,7 @@ if(isset($_REQUEST['txt_id'])){
     $update -> set_surname($_REQUEST["txt_surname"]);
     $update -> set_date($_REQUEST["txt_date"]);
     $update -> set_gender($_REQUEST["txt_gender"]);
-    $update -> set_password($_REQUEST["txt_passwordd"]);
+    // $update -> set_password($_REQUEST["txt_passwordd"]);
     // $update -> set_dateadmission($_REQUEST["txt_admission"]);
     // $update -> set_rol($_REQUEST["txt_rol"]);
     $update -> set_gmail($_REQUEST["txt_gmail"]);

@@ -71,26 +71,26 @@
                                     </dl>
                                     <!-- /.col-6 -->
 
-                                    <dl class="col-6 col-lg-4 my-0">
+                                    <!-- <dl class="col-6 col-lg-4 my-0">
                                         <dt class="fw-normal fs-sm text-uppercase text-secondary">Constrase&ntilde;a
                                         </dt>
                                         <input type="password" class="form-control shadow-none mt-3 mb-3" id="txt_passwordd"
                                             value="">
-                                    </dl>
+                                    </dl> -->
                                     <!-- /.col-6 -->
 
-                                    <dl class="col-6 col-lg-4 my-0">
+                                    <!-- <dl class="col-6 col-lg-4 my-0">
                                         <dt class="fw-normal fs-sm text-uppercase text-secondary">Fecha de ingreso
                                         </dt>
                                         <input type="text" class="form-control shadow-none mt-3 mb-3" id="txt_admission" value="">
-                                    </dl>
+                                    </dl> -->
                                     <!-- /.col-6 -->
 
-                                    <dl class="col-6 col-lg-4 my-0">
+                                    <!-- <dl class="col-6 col-lg-4 my-0">
                                         <dt class="fw-normal fs-sm text-uppercase text-secondary">Tipo de persona
                                         </dt>
                                         <input type="text" class="form-control shadow-none mt-3 mb-3" id="txt_rol" value="">
-                                    </dl>
+                                    </dl> -->
                                     <!-- /.col-6 -->
 
                                     <dl class="col-6 col-lg-4 my-0">
