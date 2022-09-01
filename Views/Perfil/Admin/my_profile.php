@@ -9,7 +9,7 @@
     <!-- /.bg bg-img position-absolute -->
 
     <div class="container-xl position-relative section-content text-center ">
-        <h2 class="display-5 text-white mt-3 mt-lg-4">María José Maroto Alvarado</h2>
+    <strong> <input class="display-5 text-white text-center mt-3 mt-lg-4" id="txt_user" style="background-color: transparent;"></strong>
 
         <p class="lead mb-lg-5">Usuario</p>
 
@@ -37,7 +37,7 @@
                                     <dl class="col-6 col-lg-4 my-0">
                                         <dt class="fw-normal fs-sm text-uppercase text-secondary">N&uacute;mero de
                                             identificaci&oacute;n</dt>
-                                        <input type="text" class="form-control shadow-none mt-3 mb-3" id="txt_id" value="305200304">
+                                        <input type="text" class="form-control shadow-none mt-3 mb-3" id="txt_id" value="">
                                     </dl>
                                     <!-- /.col-6 -->
 

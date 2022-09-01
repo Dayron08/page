@@ -4,6 +4,7 @@ $(document).ready(function(e) {
     $.getJSON("../../js/json/Event.json", function(data) {
         $.each(data, function(i, event) {
 
+           
             $("#txt_Id").val(event.id);
             $("#txt_Name").val(event.name);
             $("#txt_Eventname").val(event.nameEvent);
@@ -20,7 +21,8 @@ $(document).ready(function(e) {
      // update profile
      $.getJSON("../../js/json/profile.json", function(data) {
         $.each(data, function(i, profile) {
-
+ 
+            $("#txt_user").val(profile.name + " " + profile.lastname);
             $("#txt_ide").val(profile.id);
             $("#txt_name").val(profile.name);
             $("#txt_surname").val(profile.lastname);

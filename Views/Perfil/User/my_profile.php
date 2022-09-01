@@ -11,7 +11,7 @@
     <!-- /.bg bg-img position-absolute -->
 
     <div class="container-xl position-relative section-content text-center ">
-        <h2 class="display-5 text-white mt-3 mt-lg-4">María José Maroto Alvarado</h2>
+       <strong> <input class="display-5 text-white text-center mt-3 mt-lg-4" id="txt_user" style="background-color: transparent;"></strong>
 
         <p class="lead mb-lg-5">Usuario</p>
 

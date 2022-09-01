@@ -6,7 +6,7 @@ $select = new SingUp();
 $select -> set_user_id($_REQUEST["idUser"]);
 
 $result = $select->getProfile();
- 
+  
 $json_string = json_encode($result);
 
 echo $json_string;
