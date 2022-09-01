@@ -112,10 +112,10 @@ class SingUp extends Connection_Mysql {
         $this->set_person_registration_id = $set_person_registration_id;
     }
 
-	public function password_encryption($pass){
-		$password_ecrypted = password_hash($pass, PASSWORD_DEFAULT);
-		$this->password = $password_ecrypted;
-	}
+	// public function password_encryption($pass){
+	// 	$password_ecrypted = password_hash($pass, PASSWORD_DEFAULT);
+	// 	$this->password = $password_ecrypted;
+	// }
 
 	// public function password_decryption($pass){
 	// 	$password_deciphered = password_verify($pass, $new );
