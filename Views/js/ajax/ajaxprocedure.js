@@ -488,8 +488,6 @@ $(document).ready(function(e) {
 
 
         var txt_testimony = $("#txt_testimony").val();
-
-
         if (txt_testimony == '') {
             $("#alert_testimony").text("✘ No se permiten campos vacios");
             $("#alert_testimony").css({ "color": "red", "font-family": "Times New Roman', Times, serif;" });
@@ -511,8 +509,6 @@ $(document).ready(function(e) {
             var txt_person = "30528745";
 
         }
-
-
 
 
         $.ajax({

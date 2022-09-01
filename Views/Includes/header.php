@@ -127,8 +127,7 @@
                             //     echo ("diferente a null");
 
                             //    } 
-                               
-                               
+
                                ?> -->
                             
                                 <input type="hidden" placeholder="" id="txt_id" value=<?php echo $_SESSION['ID_REGISTRO_PERSONA']; ?> >
