@@ -404,6 +404,7 @@ class SingUp extends Connection_Mysql {
 		while ($result = mysqli_fetch_assoc($this->result)) {
 			$user []= array(
 				"id"=> $result["CEDULA"],
+				"rol"=> $result["DSC_TIPO"],
 				"name"=> $result["NOMBRE"],
 				"lastname" => $result["APPELLIDOS"],
 				"date" => $result["FECH_NACIMIENTO"],

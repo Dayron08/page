@@ -12,8 +12,8 @@
 
     <div class="container-xl position-relative section-content text-center ">
        <strong> <input class="display-5 text-white text-center mt-3 mt-lg-4" id="txt_user" style="background-color: transparent;"></strong>
-
-        <p class="lead mb-lg-5">Usuario</p>
+    <br>
+       <input class="lead mb-lg-5 text-white text-center" id="txt_rol" style="background-color: transparent;">
 
 
     </div>
