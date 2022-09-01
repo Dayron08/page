@@ -233,11 +233,11 @@ class SingUp extends Connection_Mysql {
 		$this->result = mysqli_fetch_assoc($this->result);
 		return $this->result;
 	}
-
+ 
 
 	public function read() {
 
-		session_start();
+		
 		$this->query = "CALL P_VALI_LOGIN(
 		'".$this->gmail."',
 		'".$this->password."');";
@@ -245,8 +245,8 @@ class SingUp extends Connection_Mysql {
 	    $row = mysqli_fetch_assoc($this->result);
 
 		//meti ID_TIPO
-		$_SESSION['ID_REGISTRO_PERSONA'] = ISSET($row["ID_REGISTRO_PERSONA"]); 
-		
+		// $_SESSION['ID_REGISTRO_PERSONA'] = ISSET($row["ID_REGISTRO_PERSONA"]); 
+		//$_SESSION['ID_REGISTRO_PERSONA'] = "305200304"; 
 		return $row;
 	}
 

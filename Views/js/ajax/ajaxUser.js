@@ -157,7 +157,7 @@ $(document).ready(function() {
 
         }
 
-
+ 
         $.ajax({
             url: "../../../Controllers/validateLogin.php",
             method: "POST",
@@ -167,6 +167,8 @@ $(document).ready(function() {
                 if (statustext == "success") {
                     $("#respuesta").html(dataresponse);
 
+
+                    // alert (dataresponse)
                     if (dataresponse == 0) {
                         Swal.fire({
                             position: 'top-end',

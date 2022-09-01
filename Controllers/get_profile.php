@@ -1,6 +1,6 @@
 <?php
 require_once("../Models/singUp.php");
-
+ 
 $select = new SingUp();
 
 $select -> set_user_id($_REQUEST["idUser"]);
