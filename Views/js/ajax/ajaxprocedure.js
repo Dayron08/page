@@ -23,6 +23,7 @@ $(document).ready(function(e) {
         $.each(data, function(i, profile) {
  
             $("#txt_user").val(profile.name + " " + profile.lastname);
+            $("#txt_rol").val(profile.rol);
             $("#txt_ide").val(profile.id);
             $("#txt_name").val(profile.name);
             $("#txt_surname").val(profile.lastname);

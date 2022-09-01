@@ -12,8 +12,8 @@
 
     <div class="container-xl position-relative section-content text-center ">
        <strong> <input class="display-5 text-white text-center mt-3 mt-lg-4" id="txt_user" style="background-color: transparent;"></strong>
-
-        <p class="lead mb-lg-5">Usuario</p>
+    <br>
+       <input class="lead mb-lg-5 text-white text-center" id="txt_rol" style="background-color: transparent;">
 
 
     </div>
@@ -71,28 +71,6 @@
                                         <input type="text" class="form-control shadow-none mt-3 mb-3" id="txt_gender"
                                             value="">
                                     </dl>
-                                    <!-- /.col-6 -->
-
-                                    <!-- <dl class="col-6 col-lg-4 my-0">
-                                        <dt class="fw-normal fs-sm text-uppercase text-secondary">Constrase&ntilde;a
-                                        </dt>
-                                        <input type="password" class="form-control shadow-none mt-3 mb-3" id="txt_passwordd"
-                                            value="">
-                                    </dl> -->
-                                    <!-- /.col-6 -->
-
-                                    <!-- <dl class="col-6 col-lg-4 my-0">
-                                        <dt class="fw-normal fs-sm text-uppercase text-secondary">Fecha de ingreso
-                                        </dt>
-                                        <input type="text" class="form-control shadow-none mt-3 mb-3" id="txt_admission" value="">
-                                    </dl> -->
-                                    <!-- /.col-6 -->
-
-                                    <!-- <dl class="col-6 col-lg-4 my-0">
-                                        <dt class="fw-normal fs-sm text-uppercase text-secondary">Tipo de persona
-                                        </dt>
-                                        <input type="text" class="form-control shadow-none mt-3 mb-3" id="txt_rol" value="">
-                                    </dl> -->
                                     <!-- /.col-6 -->
 
                                     <dl class="col-6 col-lg-4 my-0">
