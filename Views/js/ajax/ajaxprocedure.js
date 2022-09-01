@@ -21,13 +21,14 @@ $(document).ready(function(e) {
      $.getJSON("../../js/json/profile.json", function(data) {
         $.each(data, function(i, profile) {
 
+            $("#txt_ide").val(profile.id);
             $("#txt_name").val(profile.name);
             $("#txt_surname").val(profile.lastname);
             $("#txt_date").val(profile.date);
-            $("#txt_genero").val(profile.gender);
+            $("#txt_gender").val(profile.gender);
             $("#txt_gmail").val(profile.email);
             $("#txt_phone").val(profile.phone);
-
+ 
 
         });
 
