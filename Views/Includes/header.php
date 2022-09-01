@@ -7,7 +7,7 @@
     // $_SESSION['ID_REGISTRO_PERSONA'] = null;
 
 
-    // $_SESSION['Prueba'] = "hola";
+   
                       
 ?>
 
