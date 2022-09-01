@@ -1,3 +1,16 @@
+<?php 
+                                
+    // session_destroy();
+    session_start();
+
+    // session_start();
+    // $_SESSION['ID_REGISTRO_PERSONA'] = null;
+
+
+   
+                      
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -103,12 +116,16 @@
                                 </li>
 
                             </ul>
-                        </li>
+                        </li> 
                         <li class="nav-item nav-dropdown dropdown dropdown-hover">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDocs" role="button"
                                 data-bs-toggle="dropdown">Cuenta</a>
                             <ul class="nav-dropdown-menu dropdown-menu dropdown-menu-end shadow" data-bs-popper>
-                                <li><button><a class="dropdown-item" href="../Admin/my_profile.php">Perfil</a></li></button>
+                                
+                            
+                                <input type="hidden" placeholder="" id="txt_id" value=<?php echo $_SESSION['ID_REGISTRO_PERSONA']; ?> >
+
+                                <li><a id="btn_profile"class="dropdown-item" href="../Admin/my_profile.php">Perfil</a></li>
 
                                 <li><a class="dropdown-item" href="">Privacidad</a></li>
 
