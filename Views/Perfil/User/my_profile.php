@@ -39,7 +39,7 @@
                                     <dl class="col-6 col-lg-4 my-0">
                                         <dt class="fw-normal fs-sm text-uppercase text-secondary">N&uacute;mero de
                                             identificaci&oacute;n</dt>
-                                        <input type="text" class="form-control shadow-none mt-3 mb-3" id="txt_id" value="305200304">
+                                        <input type="text" class="form-control shadow-none mt-3 mb-3" id="txt_id" value="">
                                     </dl>
                                     <!-- /.col-6 -->
 
@@ -182,7 +182,7 @@
     <!-- /.container-xl position-relative -->
 </section>
 
-
+<!-- /.section -->
 <div class="modal fade" id="new_imageProfile" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered modal-sm">
         <div class="modal-content">

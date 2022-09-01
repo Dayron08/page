@@ -389,6 +389,8 @@ $(document).ready(function(e) {
             
         // var idUser= "305200304";
         var idUser = $("#txt_id").val();
+        // alert (idUser)
+
         $.ajax({
                     url: "../../../Controllers/get_profile.php",
                     method: "POST",
