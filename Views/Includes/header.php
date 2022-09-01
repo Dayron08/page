@@ -27,7 +27,7 @@
     <!-- <script src="../../js/script.js"></script> -->
     <script src="../../js/jquery-3.6.0.min.js"></script>
     <script src="../../js/ajax/ajaxprocedure.js"></script>
-    <script src="../../js/ajax/ajaxprofile.js"></script>
+
 
 
     <title>Iglesia Pacto de Vida</title>

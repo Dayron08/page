@@ -395,6 +395,8 @@ class SingUp extends Connection_Mysql {
 		 
 		$this->query = "CALL P_VER_PERFIL(
 		'".$this->user_id."');";
+
+		// $this->query = "SELECT * FROM `persona` WHERE `ID_REGISTRO_PERSONA` = '".$this->user_id."'";
 		
 		$this->execute($this->query);
 

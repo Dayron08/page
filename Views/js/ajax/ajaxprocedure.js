@@ -17,6 +17,22 @@ $(document).ready(function(e) {
 
     });
 
+     // update profile
+     $.getJSON("../../js/json/profile.json", function(data) {
+        $.each(data, function(i, profile) {
+
+            $("#txt_name").val(profile.name);
+            $("#txt_surname").val(profile.lastname);
+            $("#txt_date").val(profile.date);
+            $("#txt_genero").val(profile.gender);
+            $("#txt_gmail").val(profile.email);
+            $("#txt_phone").val(profile.phone);
+
+
+        });
+
+    });
+
     // lectura todos las imagenes home
     var url = "../../../Controllers/call_imagesHome.php";
     $.getJSON(url, function(datos) {
@@ -367,6 +383,36 @@ $(document).ready(function(e) {
         });
 
     });
+
+
+    $("#btn_profile").click(function(e) {
+            
+        var idUser= "305200304";
+
+        $.ajax({
+                    url: "../../../Controllers/get_profile.php",
+                    method: "POST",
+                    data: { idUser:idUser },
+                    success: function(dataresponse, statustext, response) {
+                        //console.log(response)
+                        if (statustext == "success") {
+                            $("#respuesta").html(dataresponse);
+                        
+                            // alert(dataresponse)
+
+                        } //termina if
+                    },
+                    error: function(request, errorcode, errortext) {
+                        $("#respuesta").html(errorcode);
+                    }
+            
+        });
+
+
+
+
+    });
+
 
     $("#btn_query").click(function(e) {
 
