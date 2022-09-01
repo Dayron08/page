@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.0
+-- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
-
--- Server version: 10.4.24-MariaDB
--- PHP Version: 8.1.6
+-- Servidor: 127.0.0.1
+-- Tiempo de generación: 02-09-2022 a las 01:41:15
+-- Versión del servidor: 10.4.20-MariaDB
+-- Versión de PHP: 8.0.9
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,14 +18,14 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `pacvi`
+-- Base de datos: `pacvi`
 --
 
 DELIMITER $$
 --
--- Procedures
+-- Procedimientos
 --
-CREATE DEFINER=`root`@`localhost` PROCEDURE `P_ACTUALIZAR_DATOS_PERSONA_ADMIN` (IN `P_ID_REGISTRO_PERSONA` VARCHAR(30), IN `P_NOMBRE` VARCHAR(30), IN `P_APPELLIDOS` VARCHAR(60), IN `P_FECH_NACIMIENTO` DATE, IN `P_GENERO` VARCHAR(2), IN `P_TIPO_PERSONA` CHAR(2), IN `P_PASSWORD_PERSONA` VARCHAR(50), IN `P_ID_CONTACTO` VARCHAR(30), IN `P_EMAIL` VARCHAR(50), IN `P_TELEFONO` INT(30), IN `P_FOTO_PERFIL` VARCHAR(300))   BEGIN
+CREATE DEFINER=`root`@`localhost` PROCEDURE `P_ACTUALIZAR_DATOS_PERSONA_ADMIN` (IN `P_ID_REGISTRO_PERSONA` VARCHAR(30), IN `P_NOMBRE` VARCHAR(30), IN `P_APPELLIDOS` VARCHAR(60), IN `P_FECH_NACIMIENTO` DATE, IN `P_GENERO` VARCHAR(2), IN `P_TIPO_PERSONA` CHAR(2), IN `P_EMAIL` VARCHAR(50), IN `P_TELEFONO` INT(30))  BEGIN
         DECLARE PERSONA_CEDULA VARCHAR(30);
         SET PERSONA_CEDULA :=P_ID_REGISTRO_PERSONA;
         UPDATE PERSONA SET 
@@ -33,8 +33,7 @@ CREATE DEFINER=`root`@`localhost` PROCEDURE `P_ACTUALIZAR_DATOS_PERSONA_ADMIN` (
             APPELLIDOS = P_APPELLIDOS ,
             FECH_NACIMIENTO = P_FECH_NACIMIENTO ,
             GENERO = P_GENERO,
-            TIPO_PERSONA = P_TIPO_PERSONA,
-            PASSWORD_PERSONA=P_PASSWORD_PERSONA
+            TIPO_PERSONA = P_TIPO_PERSONA
         WHERE 
             ID_REGISTRO_PERSONA = PERSONA_CEDULA;
         UPDATE PERSONA_CONTACTO SET 
@@ -45,27 +44,25 @@ CREATE DEFINER=`root`@`localhost` PROCEDURE `P_ACTUALIZAR_DATOS_PERSONA_ADMIN` (
         COMMIT;
     END$$
 
-CREATE DEFINER=`root`@`localhost` PROCEDURE `P_ACTUALIZAR_DATOS_PERSONA_USU` (IN `P_ID_REGISTRO_PERSONA` VARCHAR(30), IN `P_NOMBRE` VARCHAR(30), IN `P_APPELLIDOS` VARCHAR(60), IN `P_FECH_NACIMIENTO` DATE, IN `P_GENERO` VARCHAR(2), IN `P_PASSWORD_PERSONA` VARCHAR(50), IN `P_ID_CONTACTO` VARCHAR(30), IN `P_EMAIL` VARCHAR(50), IN `P_TELEFONO` INT(30), IN `P_FOTO_PERFIL` VARCHAR(300))   BEGIN 
+CREATE DEFINER=`root`@`localhost` PROCEDURE `P_ACTUALIZAR_DATOS_PERSONA_USU` (IN `P_ID_REGISTRO_PERSONA` VARCHAR(30), IN `P_NOMBRE` VARCHAR(30), IN `P_APPELLIDOS` VARCHAR(60), IN `P_FECH_NACIMIENTO` DATE, IN `P_GENERO` VARCHAR(2), IN `P_EMAIL` VARCHAR(50), IN `P_TELEFONO` INT(30))  BEGIN 
         DECLARE PERSONA_CEDULA VARCHAR(30);
         SET PERSONA_CEDULA :=P_ID_REGISTRO_PERSONA;
         UPDATE PERSONA SET 
             NOMBRE = P_NOMBRE ,
             APPELLIDOS = P_APPELLIDOS ,
             FECH_NACIMIENTO = P_FECH_NACIMIENTO ,
-            GENERO = P_GENERO,
-            PASSWORD_PERSONA=P_PASSWORD_PERSONA
+            GENERO = P_GENERO
         WHERE 
             ID_REGISTRO_PERSONA = PERSONA_CEDULA;
         UPDATE PERSONA_CONTACTO SET 
             EMAIL = P_EMAIL ,
-            TELEFONO = P_TELEFONO,
-            FOTO_PERFIL = P_FOTO_PERFIL
+            TELEFONO = P_TELEFONO
         WHERE 
             ID_REGISTRO_PERSONA = PERSONA_CEDULA;
         COMMIT;
     END$$
 
-CREATE DEFINER=`root`@`localhost` PROCEDURE `P_ACTUALIZAR_EVENTO` (IN `P_ID_EVENT` INT, IN `P_ENCARGADO` VARCHAR(200), IN `P_NOMBRE_EVENTO` VARCHAR(100), IN `P_HORA_EVENTO` TIME, IN `P_IMG_PATH` VARCHAR(500), IN `P_DSC_EVENTO` VARCHAR(100), IN `P_FECHA_EVENTO` DATE)   BEGIN 
+CREATE DEFINER=`root`@`localhost` PROCEDURE `P_ACTUALIZAR_EVENTO` (IN `P_ID_EVENT` INT, IN `P_ENCARGADO` VARCHAR(200), IN `P_NOMBRE_EVENTO` VARCHAR(100), IN `P_HORA_EVENTO` TIME, IN `P_IMG_PATH` VARCHAR(500), IN `P_DSC_EVENTO` VARCHAR(100), IN `P_FECHA_EVENTO` DATE)  BEGIN 
         UPDATE EVENTOS SET 
             ENCARGADO = P_ENCARGADO ,
             NOMBRE_EVENTO = P_NOMBRE_EVENTO ,
@@ -78,7 +75,21 @@ CREATE DEFINER=`root`@`localhost` PROCEDURE `P_ACTUALIZAR_EVENTO` (IN `P_ID_EVEN
         COMMIT;
     END$$
 
-CREATE DEFINER=`root`@`localhost` PROCEDURE `P_ACTUALIZAR_PERSONA_TESTIMONIO` (IN `P_ID_REGISTRO_PERSONA` VARCHAR(30), IN `P_DSC_TESTIMONIO` VARCHAR(500))   BEGIN 
+CREATE DEFINER=`root`@`localhost` PROCEDURE `P_ACTUALIZAR_FOTO` (IN `P_ID_REGISTRO_PERSONA` VARCHAR(30), IN `P_FOTO` VARCHAR(300))  BEGIN 
+    DECLARE PERSONA_CEDULA VARCHAR(30);
+    SET PERSONA_CEDULA := P_ID_REGISTRO_PERSONA;
+    UPDATE PERSONA_CONTACTO SET FOTO_PERFIL = P_FOTO 
+        WHERE ID_REGISTRO_PERSONA = PERSONA_CEDULA;
+    END$$
+
+CREATE DEFINER=`root`@`localhost` PROCEDURE `P_ACTUALIZAR_PASSWORD` (IN `P_ID_REGISTRO_PERSONA` VARCHAR(30), IN `P_PASSWORD_PERSONA` VARCHAR(50))  BEGIN 
+    DECLARE PERSONA_CEDULA VARCHAR(30);
+    SET PERSONA_CEDULA := P_ID_REGISTRO_PERSONA;
+    UPDATE PERSONA SET PASSWORD_PERSONA = HEX(AES_ENCRYPT(P_PASSWORD_PERSONA,"ORPe0YdjNKPOPg7VMKbN"))
+        WHERE ID_REGISTRO_PERSONA = PERSONA_CEDULA;
+    END$$
+
+CREATE DEFINER=`root`@`localhost` PROCEDURE `P_ACTUALIZAR_PERSONA_TESTIMONIO` (IN `P_ID_REGISTRO_PERSONA` VARCHAR(30), IN `P_DSC_TESTIMONIO` VARCHAR(500))  BEGIN 
         UPDATE PERSONA_TESTIMONIOS SET 
             
             DSC_TESTIMONIO= P_DSC_TESTIMONIO
@@ -87,7 +98,7 @@ CREATE DEFINER=`root`@`localhost` PROCEDURE `P_ACTUALIZAR_PERSONA_TESTIMONIO` (I
         COMMIT;
     END$$
 
-CREATE DEFINER=`root`@`localhost` PROCEDURE `P_ASISTIR_EVENTO_USU` (IN `P_ASISTENCIA` INT(1))   BEGIN
+CREATE DEFINER=`root`@`localhost` PROCEDURE `P_ASISTIR_EVENTO_USU` (IN `P_ASISTENCIA` INT(1))  BEGIN
             INSERT INTO EVENTOS     
             (
                 ASISTENCIA
@@ -99,47 +110,47 @@ CREATE DEFINER=`root`@`localhost` PROCEDURE `P_ASISTIR_EVENTO_USU` (IN `P_ASISTE
             COMMIT;
     END$$
 
-CREATE DEFINER=`root`@`localhost` PROCEDURE `P_ELIMINAR_CONSULTA` (IN `P_ID_CONSULTAS` INT)   BEGIN
+CREATE DEFINER=`root`@`localhost` PROCEDURE `P_ELIMINAR_CONSULTA` (IN `P_ID_CONSULTAS` INT)  BEGIN
         DELETE FROM CONSULTAS where
             ID_CONSULTAS = P_ID_CONSULTAS;
     END$$
 
-CREATE DEFINER=`root`@`localhost` PROCEDURE `P_ELIMINAR_DATOS_PERSONA` (IN `P_ID_REGISTRO_PERSONA` VARCHAR(30))   BEGIN
+CREATE DEFINER=`root`@`localhost` PROCEDURE `P_ELIMINAR_DATOS_PERSONA` (IN `P_ID_REGISTRO_PERSONA` VARCHAR(30))  BEGIN
         DELETE FROM PERSONA WHERE
             ID_REGISTRO_PERSONA = P_ID_REGISTRO_PERSONA;
     END$$
 
-CREATE DEFINER=`root`@`localhost` PROCEDURE `P_ELIMINAR_ENVIVO` ()   BEGIN
+CREATE DEFINER=`root`@`localhost` PROCEDURE `P_ELIMINAR_ENVIVO` ()  BEGIN
         DELETE FROM VIDEOS_ENVIVOS WHERE CATEGORIA='E' ;
     END$$
 
-CREATE DEFINER=`root`@`localhost` PROCEDURE `P_ELIMINAR_EVENTO` (IN `P_ID_EVENT` INT)   BEGIN
+CREATE DEFINER=`root`@`localhost` PROCEDURE `P_ELIMINAR_EVENTO` (IN `P_ID_EVENT` INT)  BEGIN
         DELETE FROM EVENTOS where
             ID_EVENT = P_ID_EVENT;
     END$$
 
-CREATE DEFINER=`root`@`localhost` PROCEDURE `P_ELIMINAR_IMAGEN` (IN `P_ID_IMAGEN` VARCHAR(30))   BEGIN
+CREATE DEFINER=`root`@`localhost` PROCEDURE `P_ELIMINAR_IMAGEN` (IN `P_ID_IMAGEN` VARCHAR(30))  BEGIN
         DELETE FROM GALERIA where
             ID_IMAGEN = P_ID_IMAGEN;
     END$$
 
-CREATE DEFINER=`root`@`localhost` PROCEDURE `P_ELIMINAR_PERSONA_TESTIMONIO` (IN `P_ID_TESTI` INT)   BEGIN
+CREATE DEFINER=`root`@`localhost` PROCEDURE `P_ELIMINAR_PERSONA_TESTIMONIO` (IN `P_ID_TESTI` INT)  BEGIN
         DELETE FROM PERSONA_TESTIMONIOS where
             ID_TESTI = P_ID_TESTI;
     END$$
 
-CREATE DEFINER=`root`@`localhost` PROCEDURE `P_ELIMINAR_VIDEO` (IN `P_ID_VIDEO` VARCHAR(30))   BEGIN
-        DELETE FROM VIDEOS_ENVIVOS where
-            ID_VIDEO = P_ID_VIDEO AND CATEGORIA= 'V';
+CREATE DEFINER=`root`@`localhost` PROCEDURE `P_ELIMINAR_VIDEO` (IN `P_ID_VIDEO` VARCHAR(30))  BEGIN
+        DELETE FROM VIDEOS where
+            ID_VIDEO = P_ID_VIDEO;
     END$$
 
-CREATE DEFINER=`root`@`localhost` PROCEDURE `P_HISTORICO_EVENTO` ()   BEGIN
-        SELECT IMG_PATH,ENCARGADO,NOMBRE_EVENTO,DSC_EVENTO,FECHA_EVENTO,HORA_EVENTO
+CREATE DEFINER=`root`@`localhost` PROCEDURE `P_HISTORICO_EVENTO` ()  BEGIN
+        SELECT ID_EVENT,IMG_PATH,ENCARGADO,NOMBRE_EVENTO,DSC_EVENTO,FECHA_EVENTO,HORA_EVENTO
         FROM EVENTOS
         ORDER BY  FECHA_EVENTO ASC ,HORA_EVENTO ASC;
     END$$
 
-CREATE DEFINER=`root`@`localhost` PROCEDURE `P_INSERTAR_CONSULTA` (IN `P_NOMBRE` VARCHAR(30), IN `P_APPELLIDOS` VARCHAR(30), IN `P_CORREO` VARCHAR(50), IN `P_ASUNTO` VARCHAR(100), IN `P_DSC_ASUNTO` VARCHAR(500))   BEGIN
+CREATE DEFINER=`root`@`localhost` PROCEDURE `P_INSERTAR_CONSULTA` (IN `P_NOMBRE` VARCHAR(30), IN `P_APPELLIDOS` VARCHAR(30), IN `P_CORREO` VARCHAR(50), IN `P_ASUNTO` VARCHAR(100), IN `P_DSC_ASUNTO` VARCHAR(500))  BEGIN
             INSERT INTO CONSULTAS     
             (
                 ID_CONSULTAS,
@@ -163,7 +174,7 @@ CREATE DEFINER=`root`@`localhost` PROCEDURE `P_INSERTAR_CONSULTA` (IN `P_NOMBRE`
             COMMIT;
     END$$
 
-CREATE DEFINER=`root`@`localhost` PROCEDURE `P_INSERTAR_DATOS_PERSONA_ADMIN` (IN `P_ID_REGISTRO_PERSONA` VARCHAR(50), IN `P_NOMBRE` VARCHAR(30), IN `P_APPELLIDOS` VARCHAR(60), IN `P_FECH_NACIMIENTO` DATE, IN `P_GENERO` VARCHAR(2), IN `P_TIPO_PERSONA` CHAR(2), IN `P_PASSWORD_PERSONA` VARCHAR(50), IN `P_EMAIL` VARCHAR(50), IN `P_TELEFONO` INT(30), IN `P_FOTO_PERFIL` VARCHAR(300))   BEGIN
+CREATE DEFINER=`root`@`localhost` PROCEDURE `P_INSERTAR_DATOS_PERSONA_ADMIN` (IN `P_ID_REGISTRO_PERSONA` VARCHAR(50), IN `P_NOMBRE` VARCHAR(30), IN `P_APPELLIDOS` VARCHAR(60), IN `P_TIPO_PERSONA` CHAR(2), IN `P_PASSWORD_PERSONA` VARCHAR(50), IN `P_EMAIL` VARCHAR(50))  BEGIN
             INSERT INTO PERSONA     
             (
                 ID_REGISTRO_PERSONA,  
@@ -180,11 +191,11 @@ CREATE DEFINER=`root`@`localhost` PROCEDURE `P_INSERTAR_DATOS_PERSONA_ADMIN` (IN
                 P_ID_REGISTRO_PERSONA, 
                 P_NOMBRE, 
                 P_APPELLIDOS, 
-                P_FECH_NACIMIENTO, 
-                P_GENERO,
+                NULL, 
+                NULL,
                 CONVERT(CURRENT_TIMESTAMP,DATE),
                 P_TIPO_PERSONA,
-                P_PASSWORD_PERSONA
+                HEX(AES_ENCRYPT(P_PASSWORD_PERSONA,"ORPe0YdjNKPOPg7VMKbN"))
             );
             INSERT INTO PERSONA_CONTACTO
             (
@@ -198,14 +209,14 @@ CREATE DEFINER=`root`@`localhost` PROCEDURE `P_INSERTAR_DATOS_PERSONA_ADMIN` (IN
             (
                 NULL,
                 P_EMAIL,
-                P_TELEFONO,
-                P_FOTO_PERFIL,
+                NULL,
+                NULL,
                 P_ID_REGISTRO_PERSONA
             );
             COMMIT;
     END$$
 
-CREATE DEFINER=`root`@`localhost` PROCEDURE `P_INSERTAR_DATOS_PERSONA_USU` (IN `P_ID_REGISTRO_PERSONA` VARCHAR(50), IN `P_NOMBRE` VARCHAR(30), IN `P_APPELLIDOS` VARCHAR(60), IN `P_FECH_NACIMIENTO` DATE, IN `P_GENERO` VARCHAR(2), IN `P_PASSWORD_PERSONA` VARCHAR(50), IN `P_EMAIL` VARCHAR(50), IN `P_TELEFONO` INT(30), IN `P_FOTO_PERFIL` VARCHAR(300))   BEGIN
+CREATE DEFINER=`root`@`localhost` PROCEDURE `P_INSERTAR_DATOS_PERSONA_USU` (IN `P_ID_REGISTRO_PERSONA` VARCHAR(50), IN `P_NOMBRE` VARCHAR(30), IN `P_APPELLIDOS` VARCHAR(60), IN `P_PASSWORD_PERSONA` VARCHAR(50), IN `P_EMAIL` VARCHAR(50))  BEGIN
             INSERT INTO PERSONA     
             (
                 ID_REGISTRO_PERSONA,  
@@ -222,11 +233,11 @@ CREATE DEFINER=`root`@`localhost` PROCEDURE `P_INSERTAR_DATOS_PERSONA_USU` (IN `
                 P_ID_REGISTRO_PERSONA, 
                 P_NOMBRE, 
                 P_APPELLIDOS, 
-                P_FECH_NACIMIENTO, 
-                P_GENERO,
+                NULL, 
+                NULL,
                 CONVERT(CURRENT_TIMESTAMP,DATE),
                 0,
-                P_PASSWORD_PERSONA
+                HEX(AES_ENCRYPT(P_PASSWORD_PERSONA,"ORPe0YdjNKPOPg7VMKbN"))
             );
             INSERT INTO PERSONA_CONTACTO
             (
@@ -240,14 +251,14 @@ CREATE DEFINER=`root`@`localhost` PROCEDURE `P_INSERTAR_DATOS_PERSONA_USU` (IN `
             (
                 NULL,
                 P_EMAIL,
-                P_TELEFONO,
-                P_FOTO_PERFIL,
+                NULL,
+                NULL,
                 P_ID_REGISTRO_PERSONA
             );
             COMMIT;
     END$$
 
-CREATE DEFINER=`root`@`localhost` PROCEDURE `P_INSERTAR_EVENTO` (IN `P_ENCARGADO` VARCHAR(200), IN `P_NOMBRE_EVENTO` VARCHAR(100), IN `P_HORA_EVENTO` TIME, IN `P_IMG_PATH` VARCHAR(500), IN `P_DSC_EVENTO` VARCHAR(100), IN `P_FECHA_EVENTO` DATE)   BEGIN
+CREATE DEFINER=`root`@`localhost` PROCEDURE `P_INSERTAR_EVENTO` (IN `P_ENCARGADO` VARCHAR(200), IN `P_NOMBRE_EVENTO` VARCHAR(100), IN `P_HORA_EVENTO` TIME, IN `P_IMG_PATH` VARCHAR(500), IN `P_DSC_EVENTO` VARCHAR(100), IN `P_FECHA_EVENTO` DATE)  BEGIN
             INSERT INTO EVENTOS     
             (
                 ID_EVENT,
@@ -273,7 +284,7 @@ CREATE DEFINER=`root`@`localhost` PROCEDURE `P_INSERTAR_EVENTO` (IN `P_ENCARGADO
             COMMIT;
     END$$
 
-CREATE DEFINER=`root`@`localhost` PROCEDURE `P_INSERTAR_GALERIA` (IN `P_IMG_PATH` VARCHAR(300))   BEGIN
+CREATE DEFINER=`root`@`localhost` PROCEDURE `P_INSERTAR_GALERIA` (IN `P_IMG_PATH` VARCHAR(300))  BEGIN
             INSERT INTO GALERIA     
             (
                 IMG_PATH, 
@@ -287,8 +298,8 @@ CREATE DEFINER=`root`@`localhost` PROCEDURE `P_INSERTAR_GALERIA` (IN `P_IMG_PATH
             COMMIT;
     END$$
 
-CREATE DEFINER=`root`@`localhost` PROCEDURE `P_INSERTAR_PERSONA_TESTIMONIO` (IN `P_DSC_TESTIMONIO` VARCHAR(500), IN `P_ID_REGISTRO_PERSONA` VARCHAR(50))   BEGIN
-            INSERT INTO PERSONA_TESTIMONIOS    
+CREATE DEFINER=`root`@`localhost` PROCEDURE `P_INSERTAR_PERSONA_TESTIMONIO` (IN `P_DSC_TESTIMONIO` VARCHAR(500), IN `P_ID_REGISTRO_PERSONA` VARCHAR(50))  BEGIN
+            INSERT INTO PERSONA_TESTIMONIOS
             (
                 ID_TESTI, 
                 FECHA_ACTUAL, 
@@ -298,48 +309,29 @@ CREATE DEFINER=`root`@`localhost` PROCEDURE `P_INSERTAR_PERSONA_TESTIMONIO` (IN 
             VALUES 
             (
                 NULL,
-                current_timestamp(),  
+                current_timestamp(),
                 P_DSC_TESTIMONIO, 
                 P_ID_REGISTRO_PERSONA
             );
             COMMIT;
     END$$
 
-CREATE DEFINER=`root`@`localhost` PROCEDURE `P_INSERTAR_VIDEO` (IN `P_URL` VARCHAR(300), IN `P_CATEGORIA` VARCHAR(300))   BEGIN
-            INSERT INTO VIDEOS_ENVIVOS     
+CREATE DEFINER=`root`@`localhost` PROCEDURE `P_INSERTAR_VIDEO` (IN `P_URL` VARCHAR(300))  BEGIN
+            INSERT INTO VIDEOS     
             (
-                CATEGORIA,
                 URL, 
                 FECHA 
             )
             VALUES 
             (
-                P_CATEGORIA,
                 P_URL,
                 CONVERT(current_timestamp(),DATE)
             );
             COMMIT;
     END$$
 
-CREATE DEFINER=`root`@`localhost` PROCEDURE `P_INSERTAR_VIDEO_ENVIVOS` (IN `P_CATEGORIA` VARCHAR(300), IN `P_URL` VARCHAR(300))   BEGIN
-            INSERT INTO VIDEOS_ENVIVOS     
-            (
-                CATEGORIA,
-                URL, 
-                FECHA 
-            )
-            VALUES 
-            (
-                P_CATEGORIA,
-                P_URL,
-                CONVERT(current_timestamp(),DATE)
-            );
-            COMMIT;
-    END$$
-
-CREATE DEFINER=`root`@`localhost` PROCEDURE `P_VALI_LOGIN` (IN `P_CORREO` VARCHAR(50), IN `P_PASSWORD` VARCHAR(50))   BEGIN
+CREATE DEFINER=`root`@`localhost` PROCEDURE `P_VALI_LOGIN` (IN `P_CORREO` VARCHAR(50), IN `P_PASSWORD` VARCHAR(50))  BEGIN
             SELECT
-                ID_REGISTRO_PERSONA AS CEDULA,
                 TP.ID_TIPO,
                 TP.DSC_TIPO AS ROL,
                 P.ID_REGISTRO_PERSONA AS CEDULA
@@ -349,33 +341,42 @@ CREATE DEFINER=`root`@`localhost` PROCEDURE `P_VALI_LOGIN` (IN `P_CORREO` VARCHA
             WHERE PC.EMAIL =P_CORREO  AND P.PASSWORD_PERSONA = P_PASSWORD;
         END$$
 
-CREATE DEFINER=`root`@`localhost` PROCEDURE `P_VER_CONSULTAS_BY_FECHA` ()   BEGIN
-        SELECT FECHA_ACTUAL AS FECHA_DE_RECIBIDO, NOMBRE,APPELLIDOS,CORREO,DSC_ASUNTO
+CREATE DEFINER=`root`@`localhost` PROCEDURE `P_VER_CAT_IMG` (IN `P_IMG_PATH` VARCHAR(30))  BEGIN
+        DECLARE NOMBRE VARCHAR(30);
+        SET NOMBRE := P_IMG_PATH;
+        SELECT
+                CODIGO_IMG
+            FROM GALERIA 
+        WHERE IMG_PATH =NOMBRE ;
+    END$$
+
+CREATE DEFINER=`root`@`localhost` PROCEDURE `P_VER_CONSULTAS_BY_FECHA` ()  BEGIN
+        SELECT FECHA_ACTUAL AS FECHA_DE_RECIBIDO,ID_CONSULTAS, NOMBRE,APPELLIDOS,CORREO,ASUNTO,DSC_ASUNTO
         FROM CONSULTAS 
         ORDER BY FECHA_ACTUAL ASC;
     END$$
 
-CREATE DEFINER=`root`@`localhost` PROCEDURE `P_VER_EVENTO` (IN `P_ID_EVENT` INT)   BEGIN
+CREATE DEFINER=`root`@`localhost` PROCEDURE `P_VER_EVENTO` (IN `P_ID_EVENT` INT)  BEGIN
         SELECT ID_EVENT,NOMBRE_EVENTO,HORA_EVENTO,ENCARGADO, DSC_EVENTO,IMG_PATH,FECHA_EVENTO
         FROM eventos 
         WHERE ID_EVENT = P_ID_EVENT;
     END$$
 
-CREATE DEFINER=`root`@`localhost` PROCEDURE `P_VER_EVENTOS` ()   BEGIN
+CREATE DEFINER=`root`@`localhost` PROCEDURE `P_VER_EVENTOS` ()  BEGIN
         SELECT IMG_PATH,ENCARGADO,NOMBRE_EVENTO,DSC_EVENTO,FECHA_EVENTO,HORA_EVENTO
         FROM EVENTOS 
         WHERE FECHA_EVENTO >=  FECHA_ACTUAL
         ORDER BY  FECHA_EVENTO, HORA_EVENTO ASC;
     END$$
 
-CREATE DEFINER=`root`@`localhost` PROCEDURE `P_VER_FOTOS` ()   BEGIN
+CREATE DEFINER=`root`@`localhost` PROCEDURE `P_VER_FOTOS` ()  BEGIN
         SELECT
             ID_IMAGEN,
-            IMG_PATH
+            IMG_PATH 
         FROM GALERIA ;
     END$$
 
-CREATE DEFINER=`root`@`localhost` PROCEDURE `P_VER_FOTOS_CODIGO_J` ()   BEGIN
+CREATE DEFINER=`root`@`localhost` PROCEDURE `P_VER_FOTOS_CODIGO_J` ()  BEGIN
         SELECT
             ID_IMAGEN,
             CODIGO_IMG AS CATEGORIA,
@@ -385,7 +386,7 @@ CREATE DEFINER=`root`@`localhost` PROCEDURE `P_VER_FOTOS_CODIGO_J` ()   BEGIN
         WHERE CODIGO_IMG = 'C-J';
     END$$
 
-CREATE DEFINER=`root`@`localhost` PROCEDURE `P_VER_FOTOS_CODIGO_N` ()   BEGIN
+CREATE DEFINER=`root`@`localhost` PROCEDURE `P_VER_FOTOS_CODIGO_N` ()  BEGIN
         SELECT
             ID_IMAGEN,
             CODIGO_IMG AS CATEGORIA,
@@ -395,7 +396,7 @@ CREATE DEFINER=`root`@`localhost` PROCEDURE `P_VER_FOTOS_CODIGO_N` ()   BEGIN
         WHERE CODIGO_IMG = 'C-N';
     END$$
 
-CREATE DEFINER=`root`@`localhost` PROCEDURE `P_VER_FOTOS_CODIGO_P` ()   BEGIN
+CREATE DEFINER=`root`@`localhost` PROCEDURE `P_VER_FOTOS_CODIGO_P` ()  BEGIN
         SELECT
             ID_IMAGEN,
             CODIGO_IMG AS CATEGORIA,
@@ -405,7 +406,7 @@ CREATE DEFINER=`root`@`localhost` PROCEDURE `P_VER_FOTOS_CODIGO_P` ()   BEGIN
         WHERE CODIGO_IMG = 'C-P';
     END$$
 
-CREATE DEFINER=`root`@`localhost` PROCEDURE `P_VER_FOTOS_FECHA` (IN `P_FECHA` DATE)   BEGIN
+CREATE DEFINER=`root`@`localhost` PROCEDURE `P_VER_FOTOS_FECHA` (IN `P_FECHA` DATE)  BEGIN
         DECLARE BUSQUEDAD_F DATE;
         SET BUSQUEDAD_F :=P_FECHA;
         SELECT
@@ -415,15 +416,26 @@ CREATE DEFINER=`root`@`localhost` PROCEDURE `P_VER_FOTOS_FECHA` (IN `P_FECHA` DA
         WHERE FECHA = BUSQUEDAD_F;
     END$$
 
-CREATE DEFINER=`root`@`localhost` PROCEDURE `P_VER_FOTOS_FECHA_DESC` ()   BEGIN
+CREATE DEFINER=`root`@`localhost` PROCEDURE `P_VER_FOTOS_FECHA_DESC` ()  BEGIN
         SELECT
             IMG_PATH AS DIRECCION_DE_IMAGEN
         FROM GALERIA
         ORDER BY FECHA DESC;
     END$$
 
-CREATE DEFINER=`root`@`localhost` PROCEDURE `P_VER_PERFIL` (IN `P_ID_REGISTRO_PERSONA` VARCHAR(50))   BEGIN
+CREATE DEFINER=`root`@`localhost` PROCEDURE `P_VER_NOMBRE_ROL` (IN `P_ID_REGISTRO_PERSONA` VARCHAR(50))  BEGIN
         SELECT
+            TP.DSC_TIPO,
+            P.NOMBRE,
+            P.APPELLIDOS
+        FROM TIPO_PERSONA TP 
+        INNER JOIN PERSONA P ON (P.TIPO_PERSONA = TP.ID_TIPO)
+        WHERE P.ID_REGISTRO_PERSONA = P_ID_REGISTRO_PERSONA;
+    END$$
+
+CREATE DEFINER=`root`@`localhost` PROCEDURE `P_VER_PERFIL` (IN `P_ID_REGISTRO_PERSONA` VARCHAR(50))  BEGIN
+        SELECT
+            TP.DSC_TIPO,
             P.ID_REGISTRO_PERSONA AS CEDULA,
             PC.FOTO_PERFIL,
             P.NOMBRE,
@@ -438,7 +450,7 @@ CREATE DEFINER=`root`@`localhost` PROCEDURE `P_VER_PERFIL` (IN `P_ID_REGISTRO_PE
         WHERE P.ID_REGISTRO_PERSONA = P_ID_REGISTRO_PERSONA;
     END$$
 
-CREATE DEFINER=`root`@`localhost` PROCEDURE `P_VER_PERSONAS` ()   BEGIN
+CREATE DEFINER=`root`@`localhost` PROCEDURE `P_VER_PERSONAS` ()  BEGIN
         SELECT
             TP.DSC_TIPO AS TIPO_DE_PERMISO,
             P.NOMBRE,
@@ -452,8 +464,9 @@ CREATE DEFINER=`root`@`localhost` PROCEDURE `P_VER_PERSONAS` ()   BEGIN
         INNER JOIN PERSONA_CONTACTO PC ON (PC.ID_REGISTRO_PERSONA = P.ID_REGISTRO_PERSONA);
     END$$
 
-CREATE DEFINER=`root`@`localhost` PROCEDURE `P_VER_PERSONA_TESTIMONIO` ()   BEGIN
+CREATE DEFINER=`root`@`localhost` PROCEDURE `P_VER_PERSONA_TESTIMONIO` ()  BEGIN
         SELECT
+            PT.ID_TESTI,
             PT.DSC_TESTIMONIO, 
             P.NOMBRE,
             P.APPELLIDOS
@@ -461,7 +474,18 @@ CREATE DEFINER=`root`@`localhost` PROCEDURE `P_VER_PERSONA_TESTIMONIO` ()   BEGI
         INNER JOIN PERSONA P ON (P.ID_REGISTRO_PERSONA = PT.ID_REGISTRO_PERSONA);
     END$$
 
-CREATE DEFINER=`root`@`localhost` PROCEDURE `P_VER_PERSONA_TESTIMONIO_BY_FECHA_RECIENTE` ()   BEGIN
+CREATE DEFINER=`root`@`localhost` PROCEDURE `P_VER_PERSONA_TESTIMONIO3` ()  BEGIN
+        SELECT
+            PT.ID_TESTI,
+            PT.DSC_TESTIMONIO, 
+            P.NOMBRE,
+            P.APPELLIDOS
+        FROM PERSONA_TESTIMONIOS PT 
+        INNER JOIN PERSONA P ON (P.ID_REGISTRO_PERSONA = PT.ID_REGISTRO_PERSONA) 
+        ORDER BY FECHA_ACTUAL DESC LIMIT 3 ;
+    END$$
+
+CREATE DEFINER=`root`@`localhost` PROCEDURE `P_VER_PERSONA_TESTIMONIO_BY_FECHA_RECIENTE` ()  BEGIN
         
         SELECT
             PT.DSC_TESTIMONIO, 
@@ -472,7 +496,7 @@ CREATE DEFINER=`root`@`localhost` PROCEDURE `P_VER_PERSONA_TESTIMONIO_BY_FECHA_R
         ORDER BY PT.FECHA_ACTUAL DESC;
     END$$
 
-CREATE DEFINER=`root`@`localhost` PROCEDURE `P_VER_PERSONA_TESTIMONIO_ORDER_ASC` ()   BEGIN
+CREATE DEFINER=`root`@`localhost` PROCEDURE `P_VER_PERSONA_TESTIMONIO_ORDER_ASC` ()  BEGIN
         SELECT
             PT.DSC_TESTIMONIO, 
             P.NOMBRE,
@@ -482,7 +506,7 @@ CREATE DEFINER=`root`@`localhost` PROCEDURE `P_VER_PERSONA_TESTIMONIO_ORDER_ASC`
         ORDER BY P.NOMBRE ASC;
     END$$
 
-CREATE DEFINER=`root`@`localhost` PROCEDURE `P_VER_USUARIO_PERFIL` (IN `P_ID_REGISTRO_PERSONA` VARCHAR(50))   BEGIN
+CREATE DEFINER=`root`@`localhost` PROCEDURE `P_VER_USUARIO_PERFIL` (IN `P_ID_REGISTRO_PERSONA` VARCHAR(50))  BEGIN
         SELECT
             PC.FOTO_PERFIL,
             P.NOMBRE,
@@ -498,29 +522,26 @@ CREATE DEFINER=`root`@`localhost` PROCEDURE `P_VER_USUARIO_PERFIL` (IN `P_ID_REG
         WHERE P.ID_REGISTRO_PERSONA = P_ID_REGISTRO_PERSONA;
     END$$
 
-CREATE DEFINER=`root`@`localhost` PROCEDURE `P_VER_VIDEO_FECHA_ANTIGUO` ()   BEGIN
+CREATE DEFINER=`root`@`localhost` PROCEDURE `P_VER_VIDEO_FECHA_ANTIGUO` ()  BEGIN
         SELECT
-            URL AS DIRECCION_DE_VIDEO FROM VIDEOS_ENVIVOS 
-            WHERE CATEGORIA ='V' 
-            ORDER BY  FECHA ASC ;
+            URL AS DIRECCION_DE_VIDEO
+        FROM VIDEOS 
+        ORDER BY  FECHA ASC;
     END$$
 
-CREATE DEFINER=`root`@`localhost` PROCEDURE `P_VER_VIDEO_POR_FECHA` (IN `P_FECHA` DATE)   BEGIN
+CREATE DEFINER=`root`@`localhost` PROCEDURE `P_VER_VIDEO_POR_FECHA` (IN `P_FECHA` DATE)  BEGIN
         DECLARE BUSQUEDAD_F DATE;
         SET BUSQUEDAD_F :=P_FECHA;
         SELECT
             URL AS DIRECCION_DE_VIDEO,FECHA AS FECHA_DE_PUBLICACION
-        FROM VIDEOS_ENVIVOS
-        WHERE FECHA = BUSQUEDAD_F AND CATEGORIA='V';
+        FROM VIDEOS
+        WHERE FECHA = BUSQUEDAD_F;
     END$$
 
--- Cambio en el procedimiento, id_video
-CREATE DEFINER=`root`@`localhost` PROCEDURE `P_VER_VIDEO_RECIENTE` ()   BEGIN
+CREATE DEFINER=`root`@`localhost` PROCEDURE `P_VER_VIDEO_RECIENTE` ()  BEGIN
         SELECT
-        ID_VIDEO ,
-            URL AS DIRECCION_DE_VIDEO FROM VIDEOS_ENVIVOS
-
-        WHERE CATEGORIA ='V' ;
+            URL AS DIRECCION_DE_VIDEO
+        FROM VIDEOS;
     END$$
 
 DELIMITER ;
@@ -528,7 +549,7 @@ DELIMITER ;
 -- --------------------------------------------------------
 
 --
--- Table structure for table `consultas`
+-- Estructura de tabla para la tabla `consultas`
 --
 
 CREATE TABLE `consultas` (
@@ -542,17 +563,17 @@ CREATE TABLE `consultas` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `consultas`
+-- Volcado de datos para la tabla `consultas`
 --
 
 INSERT INTO `consultas` (`ID_CONSULTAS`, `FECHA_ACTUAL`, `NOMBRE`, `APPELLIDOS`, `CORREO`, `ASUNTO`, `DSC_ASUNTO`) VALUES
 (1, '2022-07-27 22:36:31', 'Dayron', 'Luna Gamboa', 'ldayron500@gmail.com', '', 'Me podrían brindar información sobre los horarios de las reuniones, saludos.'),
-(2, '2022-07-28 22:36:31', 'RANDALL', 'GUZMAN', 'ran67@gmail.com', '', 'Me podrían indicar el horario de las reuniones, gracias');
+(3, '2022-09-01 05:44:54', 'RANDALL', 'j', 'ran@676gmail.com', 'lo', 'hhhhhhhhhhhhhhhh');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `eventos`
+-- Estructura de tabla para la tabla `eventos`
 --
 
 CREATE TABLE `eventos` (
@@ -567,7 +588,7 @@ CREATE TABLE `eventos` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `eventos`
+-- Volcado de datos para la tabla `eventos`
 --
 
 INSERT INTO `eventos` (`ID_EVENT`, `ENCARGADO`, `NOMBRE_EVENTO`, `HORA_EVENTO`, `IMG_PATH`, `DSC_EVENTO`, `FECHA_EVENTO`, `FECHA_ACTUAL`) VALUES
@@ -575,12 +596,12 @@ INSERT INTO `eventos` (`ID_EVENT`, `ENCARGADO`, `NOMBRE_EVENTO`, `HORA_EVENTO`, 
 (2, 'MARCO', 'ORACION ', '19:30:00', '../../', 'ORACION POR TODOS LAS PERSONAS', '2022-07-15', '2022-07-29'),
 (3, 'VINICIO', 'ORACION NIÑOS', '07:30:00', '../../', 'ORACION POR TODOS LAS PERSONAS', '2022-07-27', '2022-07-29'),
 (4, 'JOSE', 'ORACION NIÑOS', '15:30:00', '../../', 'ORACION POR TODOS LAS PERSONAS', '2022-07-13', '2022-07-29'),
-(5, 'CARLOS', 'ORACION NIÑOS', '17:00:00', '../../', 'ORACION POR TODOS LAS PERSONAS', '2022-10-30', '2022-07-29');
+(6, 'Josue', 'TCU', '19:40:00', 'contact_wallpaper.jpg', 'JJJJJJ', '2022-09-21', '2022-09-01');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `galeria`
+-- Estructura de tabla para la tabla `galeria`
 --
 
 CREATE TABLE `galeria` (
@@ -591,64 +612,68 @@ CREATE TABLE `galeria` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `galeria`
+-- Volcado de datos para la tabla `galeria`
 --
 
 INSERT INTO `galeria` (`ID_IMAGEN`, `CODIGO_IMG`, `IMG_PATH`, `FECHA`) VALUES
-(1, 'C-P', '../../IMG1', '2022-07-28'),
-(2, 'C-N', '../../IMG2', '2022-07-28');
+(1, 'C-P', 'image_01.jpg', '2022-07-28'),
+(2, 'C-N', 'image_03.JPG', '2022-07-28');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `persona`
+-- Estructura de tabla para la tabla `persona`
 --
 
 CREATE TABLE `persona` (
   `ID_REGISTRO_PERSONA` varchar(50) NOT NULL,
   `NOMBRE` varchar(30) NOT NULL,
   `APPELLIDOS` varchar(30) NOT NULL,
-  `FECH_NACIMIENTO` date NOT NULL,
-  `GENERO` char(2) NOT NULL,
+  `FECH_NACIMIENTO` date DEFAULT NULL,
+  `GENERO` char(2) DEFAULT NULL,
   `PASSWORD_PERSONA` varchar(50) NOT NULL,
   `FECHA_REGISTRO` date DEFAULT NULL,
   `TIPO_PERSONA` int(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `persona`
+-- Volcado de datos para la tabla `persona`
 --
 
 INSERT INTO `persona` (`ID_REGISTRO_PERSONA`, `NOMBRE`, `APPELLIDOS`, `FECH_NACIMIENTO`, `GENERO`, `PASSWORD_PERSONA`, `FECHA_REGISTRO`, `TIPO_PERSONA`) VALUES
+('302490378', 'Veronica', 'alfaro ', '2002-04-13', 'F', 'B56751FDB9050F6C5A322CBAC44F0436', '2022-09-01', 0),
+('30429563', 'WENDY', 'GOMEZ', '2002-05-12', 'F', '75A5313CAE5AF03AA79FFC0B0841A4F5', '2022-09-01', 1),
 ('305200304', 'RANDALL', 'GUZMAN ', '1999-09-27', 'M', 'X!J_gD27', '2022-07-28', 0),
-('30528745', 'HANNAH', 'GOMEZ', '2002-05-12', 'F', 'HOLA', '2022-07-28', 1);
+('30528745', 'HANNAH', 'GOM', '2002-05-12', 'F', 'HOLA123456', '2022-07-28', 1);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `persona_contacto`
+-- Estructura de tabla para la tabla `persona_contacto`
 --
 
 CREATE TABLE `persona_contacto` (
   `ID_CONTACTO` int(11) NOT NULL,
   `EMAIL` varchar(50) NOT NULL,
-  `TELEFONO` varchar(30) NOT NULL,
+  `TELEFONO` varchar(30) DEFAULT NULL,
   `FOTO_PERFIL` varchar(300) DEFAULT NULL,
   `ID_REGISTRO_PERSONA` varchar(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `persona_contacto`
+-- Volcado de datos para la tabla `persona_contacto`
 --
 
 INSERT INTO `persona_contacto` (`ID_CONTACTO`, `EMAIL`, `TELEFONO`, `FOTO_PERFIL`, `ID_REGISTRO_PERSONA`) VALUES
 (1, 'ran@676gmail.com', '83195333', '../NUEVA_FOTO', '305200304'),
-(2, 'HANNAH@gmail.com', '86457396', '../FOTO', '30528745');
+(2, 'm@gmail.com', '86457396', '../FOTO', '30528745'),
+(3, 'verogmail.com', '85129636', NULL, '302490378'),
+(4, 'wendy@gmail.com', '87459683', NULL, '30429563');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `persona_testimonios`
+-- Estructura de tabla para la tabla `persona_testimonios`
 --
 
 CREATE TABLE `persona_testimonios` (
@@ -659,16 +684,17 @@ CREATE TABLE `persona_testimonios` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `persona_testimonios`
+-- Volcado de datos para la tabla `persona_testimonios`
 --
 
 INSERT INTO `persona_testimonios` (`ID_TESTI`, `FECHA_ACTUAL`, `DSC_TESTIMONIO`, `ID_REGISTRO_PERSONA`) VALUES
-(1, '2022-08-18 02:43:48', 'DIOS ME AYUDO A CONSEGUIR PAZ', '305200304');
+(1, '2022-08-18 02:43:48', 'DIOS ME AYUDO A CONSEGUIR PAZ', '305200304'),
+(4, '2022-09-01 05:39:02', 'Una serie de experiencias reales de la salvación de Dios en desastres y enfermedades. Lee estos testimonios cristianos para fortalecer tu fe y obtener nuevas inspiraciones. Últimas noticias de Dios. ¡', '30528745');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tipo_persona`
+-- Estructura de tabla para la tabla `tipo_persona`
 --
 
 CREATE TABLE `tipo_persona` (
@@ -677,7 +703,7 @@ CREATE TABLE `tipo_persona` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `tipo_persona`
+-- Volcado de datos para la tabla `tipo_persona`
 --
 
 INSERT INTO `tipo_persona` (`ID_TIPO`, `DSC_TIPO`) VALUES
@@ -687,7 +713,7 @@ INSERT INTO `tipo_persona` (`ID_TIPO`, `DSC_TIPO`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `videos_envivos`
+-- Estructura de tabla para la tabla `videos_envivos`
 --
 
 CREATE TABLE `videos_envivos` (
@@ -698,139 +724,134 @@ CREATE TABLE `videos_envivos` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `videos_envivos`
+-- Volcado de datos para la tabla `videos_envivos`
 --
 
 INSERT INTO `videos_envivos` (`ID_VIDEO`, `CATEGORIA`, `URL`, `FECHA`) VALUES
-(13, 'V', 'VIDEO DE CHARLA', '2022-08-29'),
-(36, 'E', 'EN VIVO6 ', '2022-08-29'),
-(37, 'E', 'EN VIVO7 ', '2022-08-29');
+(1, 'V', '../../1', '2022-07-28'),
+(2, 'V', '../../2', '2022-07-28');
 
 --
--- Indexes for dumped tables
+-- Índices para tablas volcadas
 --
 
 --
--- Indexes for table `consultas`
+-- Indices de la tabla `consultas`
 --
 ALTER TABLE `consultas`
   ADD PRIMARY KEY (`ID_CONSULTAS`);
 
 --
--- Indexes for table `eventos`
+-- Indices de la tabla `eventos`
 --
 ALTER TABLE `eventos`
   ADD PRIMARY KEY (`ID_EVENT`);
 
 --
--- Indexes for table `galeria`
+-- Indices de la tabla `galeria`
 --
 ALTER TABLE `galeria`
   ADD PRIMARY KEY (`ID_IMAGEN`);
 
 --
--- Indexes for table `persona`
+-- Indices de la tabla `persona`
 --
 ALTER TABLE `persona`
   ADD PRIMARY KEY (`ID_REGISTRO_PERSONA`),
   ADD KEY `FK1_TIPO_PERSONA` (`TIPO_PERSONA`);
 
 --
--- Indexes for table `persona_contacto`
+-- Indices de la tabla `persona_contacto`
 --
 ALTER TABLE `persona_contacto`
   ADD PRIMARY KEY (`ID_CONTACTO`),
   ADD KEY `ID_REGISTRO_PERSONA_CFK1` (`ID_REGISTRO_PERSONA`);
 
 --
--- Indexes for table `persona_testimonios`
+-- Indices de la tabla `persona_testimonios`
 --
 ALTER TABLE `persona_testimonios`
   ADD PRIMARY KEY (`ID_TESTI`),
   ADD KEY `ID_REGISTRO_PERSONA_PTFK` (`ID_REGISTRO_PERSONA`);
 
 --
--- Indexes for table `tipo_persona`
+-- Indices de la tabla `tipo_persona`
 --
 ALTER TABLE `tipo_persona`
   ADD PRIMARY KEY (`ID_TIPO`);
 
 --
--- Indexes for table `videos_envivos`
+-- Indices de la tabla `videos_envivos`
 --
 ALTER TABLE `videos_envivos`
   ADD PRIMARY KEY (`ID_VIDEO`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT de las tablas volcadas
 --
 
 --
--- AUTO_INCREMENT for table `consultas`
+-- AUTO_INCREMENT de la tabla `consultas`
 --
 ALTER TABLE `consultas`
-  MODIFY `ID_CONSULTAS` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `ID_CONSULTAS` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT for table `eventos`
+-- AUTO_INCREMENT de la tabla `eventos`
 --
 ALTER TABLE `eventos`
-  MODIFY `ID_EVENT` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `ID_EVENT` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
--- AUTO_INCREMENT for table `galeria`
+-- AUTO_INCREMENT de la tabla `galeria`
 --
 ALTER TABLE `galeria`
-  MODIFY `ID_IMAGEN` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `ID_IMAGEN` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT for table `persona_contacto`
+-- AUTO_INCREMENT de la tabla `persona_contacto`
 --
 ALTER TABLE `persona_contacto`
-  MODIFY `ID_CONTACTO` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `ID_CONTACTO` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT for table `persona_testimonios`
+-- AUTO_INCREMENT de la tabla `persona_testimonios`
 --
 ALTER TABLE `persona_testimonios`
-  MODIFY `ID_TESTI` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `ID_TESTI` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT for table `videos_envivos`
+-- AUTO_INCREMENT de la tabla `videos_envivos`
 --
 ALTER TABLE `videos_envivos`
-  MODIFY `ID_VIDEO` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
+  MODIFY `ID_VIDEO` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- Constraints for dumped tables
+-- Restricciones para tablas volcadas
 --
 
 --
--- Constraints for table `persona`
+-- Filtros para la tabla `persona`
 --
 ALTER TABLE `persona`
   ADD CONSTRAINT `FK1_TIPO_PERSONA` FOREIGN KEY (`TIPO_PERSONA`) REFERENCES `tipo_persona` (`ID_TIPO`);
 
 --
--- Constraints for table `persona_contacto`
+-- Filtros para la tabla `persona_contacto`
 --
 ALTER TABLE `persona_contacto`
   ADD CONSTRAINT `ID_REGISTRO_PERSONA_CFK1` FOREIGN KEY (`ID_REGISTRO_PERSONA`) REFERENCES `persona` (`ID_REGISTRO_PERSONA`) ON DELETE CASCADE;
 
 --
--- Constraints for table `persona_testimonios`
+-- Filtros para la tabla `persona_testimonios`
 --
 ALTER TABLE `persona_testimonios`
   ADD CONSTRAINT `ID_REGISTRO_PERSONA_PTFK` FOREIGN KEY (`ID_REGISTRO_PERSONA`) REFERENCES `persona` (`ID_REGISTRO_PERSONA`) ON DELETE CASCADE;
 
 DELIMITER $$
 --
--- Events
+-- Eventos
 --
-CREATE DEFINER=`root`@`localhost` EVENT `BORRADO_ENVIVO` ON SCHEDULE EVERY 3 MINUTE STARTS '2022-08-29 18:08:00' ON COMPLETION PRESERVE DISABLE COMMENT 'SE ELIMINAR EL ENVIVO EN 3M' DO BEGIN
-        CALL P_ELIMINAR_ENVIVO();
-    END$$
-
 CREATE DEFINER=`root`@`localhost` EVENT `BORRAR_EVENTO` ON SCHEDULE EVERY 1 DAY STARTS '2022-08-30 00:00:00' ON COMPLETION PRESERVE ENABLE DO BEGIN
         CALL P_ELIMINAR_ENVIVO();
     END$$
