@@ -391,6 +391,29 @@ class SingUp extends Connection_Mysql {
 
 	} 
 
+	public function getProfile() {
+		 
+		$this->query = "CALL P_VER_PERFIL(
+		'".$this->user_id."');";
+		
+		$this->execute($this->query);
+
+	   $user = array();
+		while ($result = mysqli_fetch_assoc($this->result)) {
+			$user []= array(
+				"id"=> $result["CEDULA"],
+				"name"=> $result["NOMBRE"],
+				"lastname" => $result["APPELLIDOS"],
+				"date" => $result["FECH_NACIMIENTO"],
+				"gender" => $result["GENERO"],
+				"email" => $result["EMAIL"],
+				"phone" => $result["TELEFONO"]);
+		}
+		
+		return $user ;
+
+	} 
+
 	public function readEventsUsers() {
 		
 		$this->query = "CALL P_VER_EVENTOS();";

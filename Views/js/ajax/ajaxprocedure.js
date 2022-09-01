@@ -239,9 +239,6 @@ $(document).ready(function(e) {
                 "<p class=\"fs-1 text-secondary o-25 mb-0\"><i class=\"fas fa-quote-right\"></i></p>" +
                 "<p class=\"fs-6\">" + testimonials.dsc + "</p>" +
                 "<p class=\"text-secondary text-decoration-none fs-sm mt-auto mb-3 o-75\">&mdash;<span class=\"fw-bold\">-" + testimonials.name + "</span> " + testimonials.lastname + "</p>" +
-                "<div class=\"img px-3 px-lg-4\">" +
-                "<img loading=\"lazy\" src=\"http://assets.coolorize.com/avatar/256x256/ariel-lustre-368240.jpg\" class=\"img rounded-circle\" alt=\"Image\" />" +
-                "</div>" +
                 "</blockquote>" +
                 "</figure>" +
                 "</div>";
@@ -291,9 +288,6 @@ $(document).ready(function(e) {
                 "<p class=\"fs-1 text-secondary o-25 mb-0\"><i class=\"fas fa-quote-right\"></i></p>" +
                 "<p class=\"fs-6\">" + testimonials.dsc + "</p>" +
                 "<p class=\"text-secondary text-decoration-none fs-sm mt-auto mb-3 o-75\">&mdash;<span class=\"fw-bold\">-" + testimonials.name + "</span> " + testimonials.lastname + "</p>" +
-                "<div class=\"img px-3 px-lg-4\">" +
-                "<img loading=\"lazy\" src=\"http://assets.coolorize.com/avatar/256x256/ariel-lustre-368240.jpg\" class=\"img rounded-circle\" alt=\"Image\" />" +
-                "</div>" +
                 "</blockquote>" +
                 "</figure>" +
                 "</div>";
@@ -440,6 +434,9 @@ $(document).ready(function(e) {
     });
 
 
+
+
+
     $("#btn_testimony").click(function(e) {
 
 
@@ -455,16 +452,18 @@ $(document).ready(function(e) {
             $("#alert_testimony").text("✘ No se permiten números");
             $("#alert_testimony").css({ "color": "red", "font-family": "Times New Roman', Times, serif;" });
             return false;
-        } else if (!txt_testimony.length > 200) {
+        } else if (txt_testimony.length > 200) {
             $("#alert_testimony").text("✘ No se permiten mas de 200 caracteres");
             $("#alert_testimony").css({ "color": "red", "font-family": "Times New Roman', Times, serif;" });
             return false;
-        } else if (!txt_testimony.length < 100) {
+        } else if (txt_testimony.length < 100) {
             $("#alert_testimony").text("✘ Debes de digitar mas de 100 caracteres");
             $("#alert_testimony").css({ "color": "red", "font-family": "Times New Roman', Times, serif;" });
             return false;
         } else {
             $("#alert_testimony").text("");
+            var txt_person = "30528745";
+
         }
 
 

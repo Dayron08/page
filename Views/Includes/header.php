@@ -27,6 +27,8 @@
     <!-- <script src="../../js/script.js"></script> -->
     <script src="../../js/jquery-3.6.0.min.js"></script>
     <script src="../../js/ajax/ajaxprocedure.js"></script>
+    <script src="../../js/ajax/ajaxprofile.js"></script>
+
 
     <title>Iglesia Pacto de Vida</title>
     <style>
@@ -107,7 +109,7 @@
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDocs" role="button"
                                 data-bs-toggle="dropdown">Cuenta</a>
                             <ul class="nav-dropdown-menu dropdown-menu dropdown-menu-end shadow" data-bs-popper>
-                                <li><a class="dropdown-item" href="../User/my_profile.php">Perfil</a></li>
+                                <li><a id="btn_profile"class="dropdown-item" href="../User/my_profile.php">Perfil</a></li>
 
                                 <li><a class="dropdown-item" href="">Privacidad</a></li>
 
