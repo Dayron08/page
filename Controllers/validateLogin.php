@@ -19,13 +19,14 @@ if(isset($_REQUEST['txt_email'])){
         echo "2";
     }else{
         if($result["ID_TIPO"] == 0){ 
-            // $_SESSION['ID_REGISTRO_PERSONA'] = "305200304";
-            $_SESSION['ID_REGISTRO_PERSONA'] = ISSET($row["CEDULA"]); 
+            // $_SESSION['ID_REGISTRO_PERSONA'] = "305240627";
+            $_SESSION['ID_REGISTRO_PERSONA'] = $result["CEDULA"]; 
             echo "0";
             
         }else if($result["ID_TIPO"] == 1){
-            // $_SESSION['ID_REGISTRO_PERSONA'] = "305200304"; 
-            $_SESSION['ID_REGISTRO_PERSONA'] = ISSET($row["CEDULA"]); 
+            // $_SESSION['ID_REGISTRO_PERSONA'] = "305240627"; 
+            $_SESSION['ID_REGISTRO_PERSONA'] = $result["CEDULA"]; 
+            // $_SESSION['ID_REGISTRO_PERSONA'] = ISSET($result["CEDULA"]); 
             echo "1";
         }
     }
