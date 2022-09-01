@@ -1,0 +1,943 @@
+-------------------------------------------------------------PERSONA-----------------------------------------------------
+----------------INSERTAR LISTO-- USUARIO LISTO
+DELIMITER $$
+USE PacVi $$
+CREATE OR REPLACE PROCEDURE P_INSERTAR_DATOS_PERSONA_USU
+    (
+        -- PERSONA 
+        IN P_ID_REGISTRO_PERSONA VARCHAR(50) ,
+        IN P_NOMBRE VARCHAR(30),
+        IN P_APPELLIDOS VARCHAR(60),
+        IN P_FECH_NACIMIENTO DATE ,
+        IN P_GENERO VARCHAR(2),
+        IN P_PASSWORD_PERSONA VARCHAR(50),
+        --PERSONA_CONTACTO
+        IN P_EMAIL VARCHAR(50),
+        IN P_TELEFONO INT(30),
+        IN P_FOTO_PERFIL VARCHAR(300) 
+    )
+    BEGIN
+            INSERT INTO PERSONA     
+            (
+                ID_REGISTRO_PERSONA,  
+                NOMBRE, 
+                APPELLIDOS, 
+                FECH_NACIMIENTO, 
+                GENERO,
+                FECHA_REGISTRO,
+                TIPO_PERSONA,
+                PASSWORD_PERSONA
+            )
+            VALUES 
+            (
+                P_ID_REGISTRO_PERSONA, 
+                P_NOMBRE, 
+                P_APPELLIDOS, 
+                P_FECH_NACIMIENTO, 
+                P_GENERO,
+                CONVERT(CURRENT_TIMESTAMP,DATE),
+                0,
+                P_PASSWORD_PERSONA
+            );
+            INSERT INTO PERSONA_CONTACTO
+            (
+                ID_CONTACTO,
+                EMAIL,
+                TELEFONO,
+                FOTO_PERFIL,
+                ID_REGISTRO_PERSONA
+            )
+            VALUES
+            (
+                NULL,
+                P_EMAIL,
+                P_TELEFONO,
+                P_FOTO_PERFIL,
+                P_ID_REGISTRO_PERSONA
+            );
+            COMMIT;
+    END$$
+DELIMITER ;
+--PRUEBA DE INSERCCION,EXITOSA
+CALL P_INSERTAR_DATOS_PERSONA_USU('305200304','RANDALL','GUZMAN ','1999/09/27','M','X!J_gD27','ran@676gmail.com','83195333','../NUEVA_FOTO');
+
+-------------ACTUALIZAR--USUARIO
+DELIMITER $$
+USE PacVi $$
+CREATE OR REPLACE PROCEDURE P_ACTUALIZAR_DATOS_PERSONA_USU
+    (
+        IN P_ID_REGISTRO_PERSONA VARCHAR(30),
+        IN P_NOMBRE VARCHAR(30),
+        IN P_APPELLIDOS VARCHAR(60),
+        IN P_FECH_NACIMIENTO DATE,
+        IN P_GENERO VARCHAR(2),
+        IN P_PASSWORD_PERSONA VARCHAR(50),
+        --PERSONA_CONTACTO
+        IN P_EMAIL VARCHAR(50),
+        IN P_TELEFONO INT(30)
+    )
+    BEGIN 
+        DECLARE PERSONA_CEDULA VARCHAR(30);
+        SET PERSONA_CEDULA :=P_ID_REGISTRO_PERSONA;
+        UPDATE PERSONA SET 
+            NOMBRE = P_NOMBRE ,
+            APPELLIDOS = P_APPELLIDOS ,
+            FECH_NACIMIENTO = P_FECH_NACIMIENTO ,
+            GENERO = P_GENERO,
+            PASSWORD_PERSONA=P_PASSWORD_PERSONA
+        WHERE 
+            ID_REGISTRO_PERSONA = PERSONA_CEDULA;
+
+        UPDATE PERSONA_CONTACTO SET 
+            EMAIL = P_EMAIL ,
+            TELEFONO = P_TELEFONO
+        WHERE 
+            ID_REGISTRO_PERSONA = PERSONA_CEDULA;
+
+        COMMIT;
+    END$$
+DELIMITER;
+--PRUEBA 
+CALL P_ACTUALIZAR_DATOS_PERSONA_USU('305200304','RANDALL','GUZMAN ','1999/09/27','M','HOLAQ','305200304','ran@676gmail.com','83195333','NUEVA_FOTO');
+
+-- AQUI SE VA A PINTAR LA INFO DE LA PERSONA 
+DELIMITER $$
+USE PacVi $$
+CREATE OR REPLACE PROCEDURE P_VER_PERFIL
+    (   
+        IN P_ID_REGISTRO_PERSONA VARCHAR(50)
+    )
+    BEGIN
+        SELECT
+            TP.DSC_TIPO,
+            P.ID_REGISTRO_PERSONA AS CEDULA,
+            PC.FOTO_PERFIL,
+            P.NOMBRE,
+            P.APPELLIDOS,
+            P.FECH_NACIMIENTO,
+            P.GENERO,
+            PC.EMAIL,
+            PC.TELEFONO
+        FROM TIPO_PERSONA TP 
+        INNER JOIN PERSONA P ON (P.TIPO_PERSONA = TP.ID_TIPO)
+        INNER JOIN PERSONA_CONTACTO PC ON (PC.ID_REGISTRO_PERSONA = P.ID_REGISTRO_PERSONA)
+        WHERE P.ID_REGISTRO_PERSONA = P_ID_REGISTRO_PERSONA;
+    END$$
+
+DELIMITER;
+--PRUEBA EXITOSA
+CALL P_VER_PERFIL('305200304');
+
+------------INSERTAR-ADMIN
+DELIMITER $$
+USE PacVi $$
+CREATE OR REPLACE PROCEDURE P_INSERTAR_DATOS_PERSONA_ADMIN
+    (
+        -- PERSONA 
+        IN P_ID_REGISTRO_PERSONA VARCHAR(50) ,
+        IN P_NOMBRE VARCHAR(30),
+        IN P_APPELLIDOS VARCHAR(60),
+        IN P_FECH_NACIMIENTO DATE ,
+        IN P_GENERO VARCHAR(2),
+        IN P_TIPO_PERSONA CHAR(2),
+        IN P_PASSWORD_PERSONA VARCHAR(50),
+        --PERSONA_CONTACTO
+        IN P_EMAIL VARCHAR(50),
+        IN P_TELEFONO INT(30),
+        IN P_FOTO_PERFIL VARCHAR(300) 
+    )
+    BEGIN
+            INSERT INTO PERSONA     
+            (
+                ID_REGISTRO_PERSONA,  
+                NOMBRE, 
+                APPELLIDOS, 
+                FECH_NACIMIENTO, 
+                GENERO,
+                FECHA_REGISTRO
+                TIPO_PERSONA,
+                PASSWORD_PERSONA
+            )
+            VALUES 
+            (
+                P_ID_REGISTRO_PERSONA, 
+                P_NOMBRE, 
+                P_APPELLIDOS, 
+                P_FECH_NACIMIENTO, 
+                P_GENERO,
+                CONVERT(CURRENT_TIMESTAMP,DATE),
+                P_TIPO_PERSONA,
+                P_PASSWORD_PERSONA
+            );
+            INSERT INTO PERSONA_CONTACTO
+            (
+                ID_CONTACTO,
+                EMAIL,
+                TELEFONO,
+                FOTO_PERFIL,
+                ID_REGISTRO_PERSONA
+            )
+            VALUES
+            (
+                NULL,
+                P_EMAIL,
+                P_TELEFONO,
+                P_FOTO_PERFIL,
+                P_ID_REGISTRO_PERSONA
+            );
+            COMMIT;
+    END$$
+DELIMITER;
+--PRUEBA EXITOSA
+CALL P_INSERTAR_DATOS_PERSONA_ADMIN('30528745','HANNAH','GOMEZ','2002/05/12','F','1','HOLA','HANNAH@gmail.com','86457396','../FOTO');
+
+----------ACTUALIZAR-PERSONA
+DELIMITER $$
+USE PacVi $$
+CREATE OR REPLACE PROCEDURE P_ACTUALIZAR_DATOS_PERSONA_ADMIN
+    (
+        IN P_ID_REGISTRO_PERSONA VARCHAR(30),
+        IN P_NOMBRE VARCHAR(30),
+        IN P_APPELLIDOS VARCHAR(60),
+        IN P_FECH_NACIMIENTO DATE,
+        IN P_GENERO VARCHAR(2),
+        IN P_TIPO_PERSONA CHAR(2),
+        IN P_PASSWORD_PERSONA VARCHAR(50),
+        --PERSONA_CONTACTO
+        IN P_ID_CONTACTO VARCHAR(30),
+        IN P_EMAIL VARCHAR(50),
+        IN P_TELEFONO INT(30),
+        IN P_FOTO_PERFIL VARCHAR(300)
+    )
+    BEGIN
+        DECLARE PERSONA_CEDULA VARCHAR(30);
+        SET PERSONA_CEDULA :=P_ID_REGISTRO_PERSONA;
+        UPDATE PERSONA SET 
+            NOMBRE = P_NOMBRE ,
+            APPELLIDOS = P_APPELLIDOS ,
+            FECH_NACIMIENTO = P_FECH_NACIMIENTO ,
+            GENERO = P_GENERO,
+            TIPO_PERSONA = P_TIPO_PERSONA,
+            PASSWORD_PERSONA=P_PASSWORD_PERSONA
+        WHERE 
+            ID_REGISTRO_PERSONA = PERSONA_CEDULA;
+        UPDATE PERSONA_CONTACTO SET 
+            EMAIL = P_EMAIL ,
+            TELEFONO = P_TELEFONO
+        WHERE 
+            ID_REGISTRO_PERSONA = PERSONA_CEDULA;
+        COMMIT;
+    END$$
+DELIMITER;
+--PRUEBA EXITOSA
+CALL P_ACTUALIZAR_DATOS_PERSONA_ADMIN('30528745','DIANA','BARRANTES','2002/05/12','F','1','HOLA_12','30528745','DIANAB@gmail.com','87459683','FOTO_PERFIL');
+
+------------------ELIMINAR
+DELIMITER $$
+USE PacVi $$
+CREATE OR REPLACE PROCEDURE P_ELIMINAR_DATOS_PERSONA
+    (
+        IN P_ID_REGISTRO_PERSONA VARCHAR(30)
+    )
+    BEGIN
+        DELETE FROM PERSONA WHERE
+            ID_REGISTRO_PERSONA = P_ID_REGISTRO_PERSONA;
+    END$$
+DELIMITER ;
+--PRUEBA ELIMINAR,EXITOSA
+CALL P_ELIMINAR_DATOS_PERSONA('305200304');
+
+--------------------VER LISTO
+DELIMITER $$
+USE PacVi $$
+CREATE OR REPLACE PROCEDURE P_VER_PERSONAS()
+    BEGIN
+        SELECT
+            TP.DSC_TIPO AS TIPO_DE_PERMISO,
+            P.NOMBRE,
+            P.APPELLIDOS,
+            TIMESTAMPDIFF(YEAR,P.FECH_NACIMIENTO,CURDATE()) AS EDAD,
+            P.GENERO,
+            PC.EMAIL,
+            PC.TELEFONO
+        FROM TIPO_PERSONA TP 
+        INNER JOIN PERSONA P ON (P.TIPO_PERSONA = TP.ID_TIPO)
+        INNER JOIN PERSONA_CONTACTO PC ON (PC.ID_REGISTRO_PERSONA = P.ID_REGISTRO_PERSONA);
+    END$$
+DELIMITER;
+--PRUEBA VER,PERSONA, EXITOSA
+CALL P_VER_PERSONAS();
+
+---------------------------------------------------------GALERIA-------------------------------------------------------------------------
+--INSERTAR, CAMBIO POR EL ID A PONER LA VARA NORMAL
+DELIMITER $$
+USE PacVi $$
+CREATE OR REPLACE PROCEDURE P_INSERTAR_GALERIA
+    (
+        IN P_CODIGO_IMG VARCHAR(3),
+        IN P_IMG_PATH VARCHAR(300)
+
+    )
+    BEGIN
+            INSERT INTO GALERIA     
+            (
+                CODIGO_IMG,
+                IMG_PATH,
+                FECHA 
+            )
+            VALUES 
+            (
+                P_CODIGO_IMG,
+                P_IMG_PATH,
+                CONVERT(current_timestamp(),DATE)
+            );
+            COMMIT;
+    END$$
+DELIMITER ;
+DROP PROCEDURE P_INSERTAR_GALERIA;
+--PRUEBA EXITOSA
+CALL P_INSERTAR_GALERIA('C-P','IMAGE' );
+
+-- ELIMINAR 
+DELIMITER $$
+USE PacVi $$
+CREATE OR REPLACE PROCEDURE P_ELIMINAR_IMAGEN
+    (
+        IN P_ID_IMAGEN VARCHAR(30)
+    )
+    BEGIN
+        DELETE FROM GALERIA where
+            ID_IMAGEN = P_ID_IMAGEN;
+    END$$
+DELIMITER ;
+--PRUEBA EXITOSA
+CALL P_ELIMINAR_IMAGEN('1');
+
+----------CONSULTA IMAGENES
+
+------NORMAL
+DELIMITER $$
+USE PacVi $$
+CREATE OR REPLACE PROCEDURE P_VER_FOTOS()
+    BEGIN
+        SELECT
+            ID_IMAGEN,
+            IMG_PATH 
+        FROM GALERIA ;
+    END$$
+DELIMITER;
+CALL P_VER_FOTOS();
+-----CONSULTA FECHA
+DELIMITER $$
+USE PacVi $$
+CREATE OR REPLACE PROCEDURE P_VER_FOTOS_FECHA_DESC()
+    BEGIN
+        SELECT
+            IMG_PATH AS DIRECCION_DE_IMAGEN
+        FROM GALERIA
+        ORDER BY FECHA DESC;
+    END$$
+DELIMITER;
+CALL P_VER_FOTOS_FECHA_DESC();
+-----CONSULTA FECHA POR CALENDER
+DELIMITER $$
+USE PacVi $$
+CREATE OR REPLACE PROCEDURE P_VER_FOTOS_FECHA
+    (
+        IN P_FECHA DATE
+    )
+    BEGIN
+        DECLARE BUSQUEDAD_F DATE;
+        SET BUSQUEDAD_F :=P_FECHA;
+        SELECT
+            IMG_PATH AS DIRECCION_DE_IMAGEN,
+            FECHA AS FOTO_SUBIDA
+        FROM GALERIA
+        WHERE FECHA = BUSQUEDAD_F;
+    END$$
+DELIMITER;
+--PRUEBA EXITOSA
+CALL P_VER_FOTOS_FECHA('2022/07/28');
+
+---------------------------------------------------------PERSONA_TESTIMONIOS(Mariay Randall)-------------------------------------------------------------------------
+-----------------SELECT
+---------NORMAL
+DELIMITER $$
+USE PacVi $$
+CREATE OR REPLACE PROCEDURE P_VER_PERSONA_TESTIMONIO()
+    BEGIN
+        SELECT
+            PT.ID_TESTI,
+            PT.DSC_TESTIMONIO, 
+            P.NOMBRE,
+            P.APPELLIDOS
+        FROM PERSONA_TESTIMONIOS PT 
+        INNER JOIN PERSONA P ON (P.ID_REGISTRO_PERSONA = PT.ID_REGISTRO_PERSONA); 
+    END$$
+DELIMITER;
+---PRUEBA EXITOSA
+CALL P_VER_PERSONA_TESTIMONIO();
+
+-- ------ASC
+DELIMITER $$
+USE PacVi $$
+CREATE OR REPLACE PROCEDURE P_VER_PERSONA_TESTIMONIO_ORDER_ASC()
+    BEGIN
+        SELECT
+            PT.DSC_TESTIMONIO, 
+            P.NOMBRE,
+            P.APPELLIDOS
+        FROM PERSONA_TESTIMONIOS PT 
+        INNER JOIN PERSONA P ON (P.ID_REGISTRO_PERSONA = PT.ID_REGISTRO_PERSONA)
+        ORDER BY P.NOMBRE ASC;
+    END$$
+DELIMITER;
+--PRUEBA EXITOSA
+CALL P_VER_PERSONA_TESTIMONIO_ORDER_ASC();
+
+------FECHA
+---RECIENTE
+DELIMITER $$
+USE PacVi $$
+CREATE OR REPLACE PROCEDURE P_VER_PERSONA_TESTIMONIO_BY_FECHA_RECIENTE()
+    BEGIN
+        
+        SELECT
+            PT.DSC_TESTIMONIO, 
+            P.NOMBRE,
+            P.APPELLIDOS
+        FROM PERSONA_TESTIMONIOS PT 
+        INNER JOIN PERSONA P ON (P.ID_REGISTRO_PERSONA = PT.ID_REGISTRO_PERSONA)
+        ORDER BY PT.FECHA_ACTUAL DESC;
+    END$$
+DELIMITER;
+--PRUEBA EXITOSA
+CALL  P_VER_PERSONA_TESTIMONIO_BY_FECHA_RECIENTE();
+
+--INSERTAR
+DELIMITER $$
+USE PacVi $$
+CREATE OR REPLACE PROCEDURE P_INSERTAR_PERSONA_TESTIMONIO
+    (
+        -- PERSONA TESTIMONIO
+        IN P_DSC_TESTIMONIO VARCHAR(500),
+        IN P_ID_REGISTRO_PERSONA VARCHAR(50)
+    )
+    BEGIN
+            INSERT INTO PERSONA_TESTIMONIOS
+            (
+                ID_TESTI, 
+                FECHA_ACTUAL, 
+                DSC_TESTIMONIO,
+                ID_REGISTRO_PERSONA
+            )
+            VALUES 
+            (
+                NULL,
+                current_timestamp(),
+                P_DSC_TESTIMONIO, 
+                P_ID_REGISTRO_PERSONA
+            );
+            COMMIT;
+    END$$
+DELIMITER ;
+--PRUEBA EXISOTSA
+CALL P_INSERTAR_PERSONA_TESTIMONIO('DIOS ME AYUDO A CONSEGUIR PAZ','305200304');
+CALL P_INSERTAR_PERSONA_TESTIMONIO('DIOS ME AYUDO A CONSEGUIR PAZ Y AMOR','3056390526');
+
+
+--ELIMINAR
+DELIMITER $$
+USE PacVi $$
+CREATE OR REPLACE PROCEDURE P_ELIMINAR_PERSONA_TESTIMONIO
+    (
+        IN P_ID_TESTI INT
+    )
+    BEGIN
+        DELETE FROM PERSONA_TESTIMONIOS where
+            ID_TESTI = P_ID_TESTI;
+    END$$
+DELIMITER ;
+--PRUEBA EXITOSA
+CALL P_ELIMINAR_PERSONA_TESTIMONIO(3);
+
+--ACTUALIZAR
+DELIMITER $$
+USE PacVi $$
+CREATE OR REPLACE PROCEDURE P_ACTUALIZAR_PERSONA_TESTIMONIO
+    (
+        IN P_ID_REGISTRO_PERSONA VARCHAR(30),
+        IN P_DSC_TESTIMONIO VARCHAR(500)
+    )
+    BEGIN 
+        UPDATE PERSONA_TESTIMONIOS SET 
+            
+            DSC_TESTIMONIO= P_DSC_TESTIMONIO
+        WHERE 
+            ID_REGISTRO_PERSONA = P_ID_REGISTRO_PERSONA;
+        COMMIT;
+    END$$
+DELIMITER;
+--PRUEBA EXITOSA
+CALL P_ACTUALIZAR_PERSONA_TESTIMONIO('305200304','AMEN SIN TILDE');
+
+
+---------------------------------------------------------CONSULTAS(Josue y Dayron)-------------------------------------------------------------------------
+-------INSERTAR
+DELIMITER $$
+USE Pacvi $$ 
+CREATE OR REPLACE PROCEDURE P_INSERTAR_CONSULTA 
+    (
+        IN P_NOMBRE VARCHAR(30),
+        IN P_APPELLIDOS VARCHAR(30),
+        IN P_CORREO VARCHAR(50),
+        IN P_ASUNTO VARCHAR(100),
+        IN P_DSC_ASUNTO VARCHAR(500)
+    )
+    BEGIN
+            INSERT INTO CONSULTAS     
+            (
+                ID_CONSULTAS,
+                FECHA_ACTUAL,
+                NOMBRE,
+                APPELLIDOS,
+                CORREO,
+                ASUNTO,
+                DSC_ASUNTO
+            )
+            VALUES 
+            (
+                NULL,
+                CURRENT_TIMESTAMP(),
+                P_NOMBRE,
+                P_APPELLIDOS,
+                P_CORREO,
+                P_ASUNTO,
+                P_DSC_ASUNTO
+            );
+            COMMIT;
+    END$$
+DELIMITER ;
+CALL P_INSERTAR_CONSULTA('Dayron', 'Luna Gamboa', 'ldayron500@gmail.com', 'Me podrían brindar información sobre los horarios de las reuniones, saludos.');
+CALL P_INSERTAR_CONSULTA('RANDALL', 'GUZMAN', 'ran67@gmail.com', 'Me podrían indicar el horario de las reuniones, gracias');
+-----ELIMINAR
+
+DELIMITER $$
+USE Pacvi $$
+CREATE OR REPLACE PROCEDURE P_ELIMINAR_CONSULTA
+    (
+        IN P_ID_CONSULTAS INT
+    )
+    BEGIN
+        DELETE FROM CONSULTAS where
+            ID_CONSULTAS = P_ID_CONSULTAS;
+    END$$
+DELIMITER ;
+
+CALL P_ELIMINAR_CONSULTA (1);
+
+---VER CONSULTAS
+DELIMITER $$
+USE PacVi $$
+CREATE OR REPLACE PROCEDURE P_VER_CONSULTAS_BY_FECHA()
+    BEGIN
+        SELECT FECHA_ACTUAL AS FECHA_DE_RECIBIDO,ID_CONSULTAS, NOMBRE,APPELLIDOS,CORREO,ASUNTO,DSC_ASUNTO
+        FROM CONSULTAS 
+        ORDER BY FECHA_ACTUAL ASC;
+    END$$
+DELIMITER;
+--PRUEBA EXITOSA
+CALL P_VER_CONSULTAS_BY_FECHA();
+---------------------------------------------------------EVENTOS------------------------------------------------------------------------------
+--VER EVENTO
+DELIMITER $$
+USE PacVi $$
+CREATE OR REPLACE PROCEDURE P_VER_EVENTOS()
+    BEGIN
+        SELECT IMG_PATH,ENCARGADO,NOMBRE_EVENTO,DSC_EVENTO,FECHA_EVENTO,HORA_EVENTO
+        FROM EVENTOS 
+        WHERE FECHA_EVENTO >=  FECHA_ACTUAL
+        ORDER BY  FECHA_EVENTO, HORA_EVENTO ASC;
+    END$$
+DELIMITER;
+--PRUEBA EXITOSA
+CALL P_VER_EVENTOS();
+----------EVENTOS PASADOS
+
+
+DELIMITER $$
+USE PacVi $$
+CREATE OR REPLACE PROCEDURE P_VER_EVENTO
+(
+    IN P_ID_EVENT INT 
+)
+    BEGIN
+        SELECT ID_EVENT,NOMBRE_EVENTO,HORA_EVENTO,ENCARGADO, DSC_EVENTO,IMG_PATH,FECHA_EVENTO
+        FROM eventos 
+        WHERE ID_EVENT = P_ID_EVENT;
+    END$$
+DELIMITER;
+
+DELIMITER $$
+USE PacVi $$
+CREATE OR REPLACE PROCEDURE P_HISTORICO_EVENTO()
+    BEGIN
+        SELECT ID_EVENT,IMG_PATH,ENCARGADO,NOMBRE_EVENTO,DSC_EVENTO,FECHA_EVENTO,HORA_EVENTO
+        FROM EVENTOS
+        ORDER BY  FECHA_EVENTO ASC ,HORA_EVENTO ASC;
+    END$$
+DELIMITER;
+----
+CALL P_HISTORICO_EVENTO();
+--INSERTAR
+DELIMITER $$
+USE PacVi $$
+CREATE OR REPLACE PROCEDURE P_INSERTAR_EVENTO
+    (
+        IN P_ENCARGADO VARCHAR(200),
+        IN P_NOMBRE_EVENTO VARCHAR(100),
+        IN P_HORA_EVENTO TIME,
+        IN P_IMG_PATH VARCHAR(500),
+        IN P_DSC_EVENTO VARCHAR(100),
+        IN P_FECHA_EVENTO DATE
+    )
+    BEGIN
+            INSERT INTO EVENTOS     
+            (
+                ID_EVENT,
+                ENCARGADO, 
+                NOMBRE_EVENTO,
+                HORA_EVENTO, 
+                IMG_PATH, 
+                DSC_EVENTO, 
+                FECHA_EVENTO, 
+                FECHA_ACTUAL
+            )
+            VALUES 
+            (
+                NULL,
+                P_ENCARGADO, 
+                P_NOMBRE_EVENTO,
+                P_HORA_EVENTO, 
+                P_IMG_PATH, 
+                P_DSC_EVENTO, 
+                P_FECHA_EVENTO, 
+                current_timestamp()
+            );
+            COMMIT;
+    END$$
+DELIMITER;
+--PRUEBA EXITOSA
+CALL P_INSERTAR_EVENTO('ALAN', 'ORACION NIÑOS','07:30:00' ,'../../','ORACION POR TODOS LAS PERSONAS', '2022-07-10');
+CALL P_INSERTAR_EVENTO('VINICIO', 'ORACION NIÑOS','17:00:00' ,'../../','ORACION POR TODOS LAS PERSONAS', '2022-10-30');
+
+--ACTUALIZAR 
+DELIMITER $$
+USE PacVi $$
+CREATE OR REPLACE PROCEDURE P_ACTUALIZAR_EVENTO
+    (
+        IN P_ID_EVENT INT,
+        IN P_ENCARGADO VARCHAR(200),
+        IN P_NOMBRE_EVENTO VARCHAR(100),
+        IN P_HORA_EVENTO TIME,
+        IN P_IMG_PATH VARCHAR(500),
+        IN P_DSC_EVENTO VARCHAR(100),
+        IN P_FECHA_EVENTO DATE
+    )
+    BEGIN 
+        UPDATE EVENTOS SET 
+            ENCARGADO = P_ENCARGADO ,
+            NOMBRE_EVENTO = P_NOMBRE_EVENTO ,
+            HORA_EVENTO = P_HORA_EVENTO,
+            IMG_PATH = P_IMG_PATH ,
+            DSC_EVENTO = P_DSC_EVENTO,
+            FECHA_EVENTO = P_FECHA_EVENTO
+        WHERE 
+            ID_EVENT = P_ID_EVENT;
+        COMMIT;
+    END$$
+DELIMITER;
+--PRUEBA EXITOSA
+CALL P_ACTUALIZAR_EVENTO(4,'ANTONIO', 'ORACION NIÑOS','07:40:00' ,'../../','ORACION POR TODOS LAS PERSONAS', '2022-07-10');
+
+-- ELIMINAR 
+DELIMITER $$
+USE PacVi $$
+CREATE OR REPLACE PROCEDURE P_ELIMINAR_EVENTO
+    (
+        IN P_ID_EVENT INT
+    )
+    BEGIN
+        DELETE FROM EVENTOS where
+            ID_EVENT = P_ID_EVENT;
+    END$$
+DELIMITER ;
+--PRUEBA EXITOSA
+CALL P_ELIMINAR_EVENTO(5);
+----------------------------------------------------------VIDEOS--------------------------------------------------------------------------
+--INSERTAR
+DELIMITER $$
+USE PacVi $$
+CREATE OR REPLACE PROCEDURE P_INSERTAR_VIDEO
+    (
+        IN P_URL VARCHAR(300)
+    )
+    BEGIN
+            INSERT INTO VIDEOS     
+            (
+                URL, 
+                FECHA 
+            )
+            VALUES 
+            (
+                P_URL,
+                CONVERT(current_timestamp(),DATE)
+            );
+            COMMIT;
+    END$$
+DELIMITER ;
+DROP PROCEDURE P_INSERTAR_VIDEO;
+--PRUEBA EXITOSA
+CALL P_INSERTAR_VIDEO('../../1');
+
+-- ELIMINAR 
+DELIMITER $$
+USE PacVi $$
+CREATE OR REPLACE PROCEDURE P_ELIMINAR_VIDEO
+    (
+        IN P_ID_VIDEO VARCHAR(30)
+    )
+    BEGIN
+        DELETE FROM VIDEOS where
+            ID_VIDEO = P_ID_VIDEO;
+    END$$
+DELIMITER ;
+--PRUEBA EXITOSA
+CALL P_ELIMINAR_VIDEO('1');
+
+--CONSULTAS
+--VIDEOS MAS ANTIGUOS
+DELIMITER $$
+USE PacVi $$
+CREATE OR REPLACE PROCEDURE P_VER_VIDEO_FECHA_ANTIGUO()
+    BEGIN
+        SELECT
+            URL AS DIRECCION_DE_VIDEO
+        FROM VIDEOS 
+        ORDER BY  FECHA ASC;
+    END$$
+DELIMITER;
+--VIDEO MAS RECIENTE
+DELIMITER $$
+USE PacVi $$
+CREATE OR REPLACE PROCEDURE P_VER_VIDEO_RECIENTE()
+    BEGIN
+        SELECT
+            URL AS DIRECCION_DE_VIDEO
+        FROM VIDEOS;
+    END$$
+DELIMITER;
+--PRUEBA EXITOSA
+CALL P_VER_VIDEO_RECIENTE();
+
+----VER VIDEO POR CALENDER
+DELIMITER $$
+USE PacVi $$
+CREATE OR REPLACE PROCEDURE P_VER_VIDEO_POR_FECHA
+    (
+        IN P_FECHA DATE
+    )
+    BEGIN
+        DECLARE BUSQUEDAD_F DATE;
+        SET BUSQUEDAD_F :=P_FECHA;
+        SELECT
+            URL AS DIRECCION_DE_VIDEO,FECHA AS FECHA_DE_PUBLICACION
+        FROM VIDEOS
+        WHERE FECHA = BUSQUEDAD_F;
+    END$$
+DELIMITER;
+------------PRUEBA EXITOSA
+CALL P_VER_VIDEO_POR_FECHA('2022/07/28');
+
+
+
+---------------------------------VERIFICAR PERSONA
+DELIMITER $$
+USE PacVi $$
+CREATE OR REPLACE PROCEDURE P_VALI_LOGIN
+    (
+        IN P_CORREO VARCHAR(50),
+        IN P_PASSWORD VARCHAR(50)
+    )
+        BEGIN
+            SELECT
+                TP.ID_TIPO,
+                TP.DSC_TIPO AS ROL,
+                P.ID_REGISTRO_PERSONA AS CEDULA
+            FROM TIPO_PERSONA TP
+            INNER JOIN PERSONA P ON (P.TIPO_PERSONA = TP.ID_TIPO)
+            INNER JOIN PERSONA_CONTACTO PC ON (PC.ID_REGISTRO_PERSONA = P.ID_REGISTRO_PERSONA)
+            WHERE PC.EMAIL =P_CORREO  AND P.PASSWORD_PERSONA = P_PASSWORD;
+        END$$
+DELIMITER;
+
+--------------------------------------------------------ENVIVO
+---------PD PARA ELIMINAR
+DELIMITER $$
+USE PacVi $$
+CREATE OR REPLACE PROCEDURE P_ELIMINAR_ENVIVO()
+    BEGIN
+        DELETE FROM VIDEOS_ENVIVOS WHERE CATEGORIA='E' ;
+    END$$
+DELIMITER ;
+
+DELIMITER $$
+USE PacVi $$
+CREATE OR REPLACE PROCEDURE P_ELIMINAR_ENVIVO_ID
+(
+    IN P_ID_VIDEO VARCHAR(30)
+)
+    BEGIN
+        DELETE FROM VIDEOS_ENVIVOS WHERE 
+        ID_VIDEO = P_ID_VIDEO AND CATEGORIA='E' ;
+    END$$
+DELIMITER ;
+
+---------PD PARA PINTAR 
+DELIMITER$$
+USE PacVi $$
+CREATE OR REPLACE PROCEDURE P_VER_ENVIVO()
+    BEGIN
+      SELECT ID_VIDEO, URL AS DIRECCION_DE_EN_VIVO FROM VIDEOS_ENVIVOS
+      WHERE CATEGORIA='E';
+    END$$
+DELIMITER; 
+
+CREATE DEFINER=`root`@`localhost` PROCEDURE `P_VER_ENVIVO` ()   
+    BEGIN
+        SELECT
+        ID_VIDEO ,
+            URL AS DIRECCION_DE_EN_VIVO FROM VIDEOS_ENVIVOS
+
+        WHERE CATEGORIA ='E' ;
+    END$$
+DAYRON RECIBE A JOSUE COMO 
+
+----------------------------------------------------------------------FIN--------------------------------------------------------------------
+----------------------------------------------------------------------FIN--------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------
+
+---------------------------------------PD TESTI SOLO 3
+DELIMITER $$
+USE PacVi $$
+CREATE OR REPLACE PROCEDURE P_VER_PERSONA_TESTIMONIO3()
+    BEGIN
+        SELECT
+            PT.ID_TESTI,
+            PT.DSC_TESTIMONIO, 
+            P.NOMBRE,
+            P.APPELLIDOS
+        FROM PERSONA_TESTIMONIOS PT 
+        INNER JOIN PERSONA P ON (P.ID_REGISTRO_PERSONA = PT.ID_REGISTRO_PERSONA) 
+        ORDER BY FECHA_ACTUAL DESC LIMIT 3 ;
+    END$$
+DELIMITER;
+--PRUEBA EXIOTSA
+CALL P_VER_PERSONA_TESTIMONIO3();
+-------------------------------PD ACTUALIZAR DATOS DEL USUARIO
+DELIMITER $$
+USE PacVi $$
+CREATE OR REPLACE PROCEDURE P_ACTUALIZAR_DATOS_PERSONA_USU
+    (
+        IN P_ID_REGISTRO_PERSONA VARCHAR(30),
+        IN P_NOMBRE VARCHAR(30),
+        IN P_APPELLIDOS VARCHAR(60),
+        IN P_FECH_NACIMIENTO DATE,
+        IN P_GENERO VARCHAR(2),
+        --PERSONA_CONTACTO
+        IN P_EMAIL VARCHAR(50),
+        IN P_TELEFONO INT(30)
+    )
+    BEGIN 
+        DECLARE PERSONA_CEDULA VARCHAR(30);
+        SET PERSONA_CEDULA :=P_ID_REGISTRO_PERSONA;
+
+        UPDATE PERSONA SET 
+            NOMBRE = P_NOMBRE ,
+            APPELLIDOS = P_APPELLIDOS ,
+            FECH_NACIMIENTO = P_FECH_NACIMIENTO ,
+            GENERO = P_GENERO
+        WHERE 
+            ID_REGISTRO_PERSONA = PERSONA_CEDULA;
+
+        UPDATE PERSONA_CONTACTO SET 
+            EMAIL = P_EMAIL ,
+            TELEFONO = P_TELEFONO
+        WHERE 
+            ID_REGISTRO_PERSONA = PERSONA_CEDULA;
+        COMMIT;
+    END$$
+DELIMITER;
+
+CALL P_ACTUALIZAR_DATOS_PERSONA_USU('305200304','RANDALL','GUZMAN ', '1999/09/27',  'M',  'ran@gmail.com', '83195333');
+
+------------------------------------------------------------------PD PARA FOTO
+DELIMITER$$
+USE PacVi$$
+CREATE OR REPLACE PROCEDURE P_ACTUALIZAR_FOTO
+    (
+        IN P_ID_REGISTRO_PERSONA VARCHAR(30),
+        IN P_FOTO VARCHAR(300)
+    )
+    BEGIN 
+    DECLARE PERSONA_CEDULA VARCHAR(30);
+    SET PERSONA_CEDULA := P_ID_REGISTRO_PERSONA;
+
+    UPDATE PERSONA_CONTACTO SET FOTO_PERFIL = P_FOTO 
+        WHERE ID_REGISTRO_PERSONA = PERSONA_CEDULA;
+    END$$
+DELIMITER;
+
+CALL P_ACTUALIZAR_FOTO('305200304','FOTO_RANDALL');
+
+-----------------------------------------------------------PD PARA ACTUALIZAR CONTRASEÑA
+DELIMITER$$
+USE PacVi$$
+CREATE OR REPLACE PROCEDURE P_ACTUALIZAR_PASSWORD
+    (
+        IN P_ID_REGISTRO_PERSONA VARCHAR(30),
+        IN P_PASSWORD_PERSONA  VARCHAR(50)
+    )
+    BEGIN 
+    DECLARE PERSONA_CEDULA VARCHAR(30);
+    SET PERSONA_CEDULA := P_ID_REGISTRO_PERSONA;
+
+    UPDATE PERSONA SET PASSWORD_PERSONA = P_PASSWORD_PERSONA 
+        WHERE ID_REGISTRO_PERSONA = PERSONA_CEDULA;
+    END$$
+DELIMITER;
+
+CALL P_ACTUALIZAR_PASSWORD('305200304','NEW_PASSWORD');
+
+------------------------------------------------------NOMBRE_ROL
+CALL P_VER_ENVIVO();
+DELIMITER $$
+USE PacVi $$
+CREATE OR REPLACE PROCEDURE P_VER_NOMBRE_ROL
+    (   
+        IN P_ID_REGISTRO_PERSONA VARCHAR(50)
+    )
+    BEGIN
+        SELECT
+            TP.DSC_TIPO,
+            P.NOMBRE,
+            P.APPELLIDOS
+        FROM TIPO_PERSONA TP 
+        INNER JOIN PERSONA P ON (P.TIPO_PERSONA = TP.ID_TIPO)
+        WHERE P.ID_REGISTRO_PERSONA = P_ID_REGISTRO_PERSONA;
+    END$$
+DELIMITER;
+
+CALL P_VER_NOMBRE_ROL('305200304');
+
+----------------------------------------------------------------------FIN--------------------------------------------------------------------
