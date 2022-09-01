@@ -109,6 +109,7 @@ CREATE OR REPLACE PROCEDURE P_VER_PERFIL
     )
     BEGIN
         SELECT
+            TP.DSC_TIPO,
             P.ID_REGISTRO_PERSONA AS CEDULA,
             PC.FOTO_PERFIL,
             P.NOMBRE,
