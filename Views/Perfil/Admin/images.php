@@ -123,8 +123,8 @@
                     <h6 class="mb-4" style="text-align: center;">Insertar nueva imagen</h6>
 
                     <div class="mb-3 ">
-                        <label for="txt_img" class="form-label fs-sm fw-bold">Seleccione Imagen</label>
-                        <input type="file" class="form-control shadow-none" id="txt_img" name="txt_img" />
+                        <label for="img_file" class="form-label fs-sm fw-bold">Seleccione Imagen</label>
+                        <input type="file" class="form-control shadow-none" id="img_file" name="img_file" />
                     </div>
                     <div class="mb-3">
                         <label for="sel_category" class="form-label fs-sm fw-bold">Seleccione categoria</label>

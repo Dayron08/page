@@ -959,26 +959,33 @@ $(document).ready(function () {
 
     });
 
-
     $("#btn_Insertimg").click(function (e) {
-
-
-
-        var txt_img = $("#txt_img").val();
+        e.preventDefault();
+        var img_file_name = $("#img_file").val();
         var sel_category = $("#sel_category").val();
-
-
-
         $.ajax({
-            url: "Controllers/insertImage.php",
+            url: "Controllers/insert_imageBD.php",
             method: "POST",
-            data: { txt_img: txt_img, sel_category: sel_category },
+            data: { img_file_name: img_file_name, sel_category: sel_category },
             success: function (dataresponse, statustext, response) {
-                if (statustext == "success") {
-                    console.log("exitosamente")
+                var img_file = $("#img_file").prop('files')[0];
+                var form_data = new FormData();
+                form_data.append('file', img_file);
+
+                $.ajax({
+                    url: 'Controllers/insert_image.php', // <-- point to server-side PHP script 
+                    dataType: 'text',  // <-- what to expect back from the PHP script, if anything
+                    cache: false,
+                    contentType: false,
+                    processData: false,
+                    data: form_data,
+                    method: "POST",
+                    success: function (dataresponse, statustext, response) {
+
+                    }
 
 
-                }
+                });
             },
             error: function (request, errorcode, errortext) {
                 console.log("errorrrrrr")
@@ -987,7 +994,6 @@ $(document).ready(function () {
         });
 
     });
-
 
 
     $("#btn_testimony").click(function (e) {

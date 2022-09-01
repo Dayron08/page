@@ -11,6 +11,10 @@ class Resources extends Connection_Mysql {
 	private $live_category;
 	private $live_code;
 
+	// image
+	private $category_image;
+	private $path_img;
+
     //variables to this class
 	private $result;
 	private $database;
@@ -43,6 +47,13 @@ class Resources extends Connection_Mysql {
         $this->live_code = $live_code;
     }
 
+	public function set_category_image($category_image){
+        $this->category_image = $category_image;
+    }
+
+	public function set_path_img($image_name){
+		$this->path_img = $image_name;
+    }
 
 	private function execute($query){
 
@@ -119,6 +130,21 @@ class Resources extends Connection_Mysql {
 	// se necesita procedimiento
 		$this->query = "CALL P_ELIMINAR_ENVIVO_ID(                
 			'".$this->live_code."');"; 		
+		if($this->execute($this->query)){
+			return true;
+		}else{
+			return false;
+		}
+
+	} 
+
+	public function insertImage() {
+	
+		$this->query = "CALL P_INSERTAR_GALERIA(  
+			'".$this->category_image."',             
+			'".$this->path_img."');";           
+				
+		
 		if($this->execute($this->query)){
 			return true;
 		}else{

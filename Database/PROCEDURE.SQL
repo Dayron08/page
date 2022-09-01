@@ -274,25 +274,29 @@ DELIMITER $$
 USE PacVi $$
 CREATE OR REPLACE PROCEDURE P_INSERTAR_GALERIA
     (
+        IN P_CODIGO_IMG VARCHAR(3),
         IN P_IMG_PATH VARCHAR(300)
+
     )
     BEGIN
             INSERT INTO GALERIA     
             (
-                IMG_PATH, 
+                CODIGO_IMG,
+                IMG_PATH,
                 FECHA 
             )
             VALUES 
             (
+                P_CODIGO_IMG,
                 P_IMG_PATH,
                 CONVERT(current_timestamp(),DATE)
             );
             COMMIT;
     END$$
-DELIMITER;
+DELIMITER ;
 DROP PROCEDURE P_INSERTAR_GALERIA;
 --PRUEBA EXITOSA
-CALL P_INSERTAR_GALERIA('../../');
+CALL P_INSERTAR_GALERIA('C-P','IMAGE' );
 
 -- ELIMINAR 
 DELIMITER $$
