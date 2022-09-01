@@ -455,10 +455,16 @@ $(document).ready(function(e) {
             $("#alert_testimony").text("✘ No se permiten números");
             $("#alert_testimony").css({ "color": "red", "font-family": "Times New Roman', Times, serif;" });
             return false;
-        } else if (!txt_testimony.length <= 200) {
+        } else if (!txt_testimony.length > 200) {
             $("#alert_testimony").text("✘ No se permiten mas de 200 caracteres");
             $("#alert_testimony").css({ "color": "red", "font-family": "Times New Roman', Times, serif;" });
             return false;
+        } else if (!txt_testimony.length < 100) {
+            $("#alert_testimony").text("✘ Debes de digitar mas de 100 caracteres");
+            $("#alert_testimony").css({ "color": "red", "font-family": "Times New Roman', Times, serif;" });
+            return false;
+        } else {
+            $("#alert_testimony").text("");
         }
 
 
