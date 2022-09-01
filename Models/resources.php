@@ -14,6 +14,8 @@ class Resources extends Connection_Mysql {
 	// image
 	private $category_image;
 	private $path_img;
+	private $image_name;
+	private $image;
 
     //variables to this class
 	private $result;
@@ -53,6 +55,10 @@ class Resources extends Connection_Mysql {
 
 	public function set_path_img($image_name){
 		$this->path_img = $image_name;
+    }
+
+	public function set_image_name($image){
+		$this->image = $image;
     }
 
 	private function execute($query){
@@ -153,8 +159,10 @@ class Resources extends Connection_Mysql {
 
 	} 
 
-
-
-
-
+	public function search_folder() {
+		$this->query = "SELECT CODIGO_IMG FROM GALERIA WHERE IMG_PATH = '".$this->image."';";	
+		$this->execute($this->query);
+		$this->result = mysqli_fetch_assoc($this->result);
+		return $this->result;
+	} 
 }
