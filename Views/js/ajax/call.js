@@ -970,7 +970,7 @@ $(document).ready(function () {
 
 
         $.ajax({
-            url: "../../../Controllers/insertImage.php",
+            url: "Controllers/insertImage.php",
             method: "POST",
             data: { txt_img: txt_img, sel_category: sel_category },
             success: function (dataresponse, statustext, response) {
