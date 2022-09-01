@@ -25,25 +25,10 @@
 
     <div class="container-xl position-relative">
 
-        <div class="row g-3 mb-5">
+        <div class="row g-3 mb-5" id="bodyUserimgtown">
 
         </div>
         <!-- /.row g-4 mb-5 -->
-
-        <footer class="section-footer d-flex justify-content-center">
-            <div class="btn-toolbar mb-0 me-3" role="toolbar">
-                <div class="btn-group me-2" role="group">
-                    <a href="#" class="btn btn-outline-primary btn-default btn-sm px-3">Anterior</a>
-                    <a href="#" class="btn btn-outline-primary btn-default btn-sm active px-3">1</a>
-                    <a href="#" class="btn btn-outline-primary btn-default btn-sm px-3">2</a>
-                    <a href="#" class="btn btn-outline-primary btn-default btn-sm px-3">3</a>
-                    <a href="#" class="btn btn-outline-primary btn-default btn-sm px-3">4</a>
-                    <a href="#" class="btn btn-outline-primary btn-default btn-sm px-3">5</a>
-                    <a href="#" class="btn btn-outline-primary btn-default btn-sm px-3">Siguiente</a>
-                </div>
-            </div>
-        </footer>
-        <!-- /.section-footer d-flex justify-content-center -->
     </div>
     <!-- /.container-xl -->
 </section>
@@ -55,25 +40,8 @@
     <h1 class="titulo_galeria mt-5" style="text-align: center;">Nuestros Jóvenes</h1>
     <div class="container-xl position-relative">
 
-        <div class="row g-3 mb-5">
+        <div class="row g-3 mb-5" id="bodyUserimgyoung">
         </div>
-        <!-- /.row g-4 mb-5 -->
-
-
-        <footer class="section-footer d-flex justify-content-center">
-            <div class="btn-toolbar mb-0 me-3" role="toolbar">
-                <div class="btn-group me-2" role="group">
-                    <a href="#" class="btn btn-outline-primary btn-default btn-sm px-3">Anterior</a>
-                    <a href="#" class="btn btn-outline-primary btn-default btn-sm active px-3">1</a>
-                    <a href="#" class="btn btn-outline-primary btn-default btn-sm px-3">2</a>
-                    <a href="#" class="btn btn-outline-primary btn-default btn-sm px-3">3</a>
-                    <a href="#" class="btn btn-outline-primary btn-default btn-sm px-3">4</a>
-                    <a href="#" class="btn btn-outline-primary btn-default btn-sm px-3">5</a>
-                    <a href="#" class="btn btn-outline-primary btn-default btn-sm px-3">Siguiente</a>
-                </div>
-            </div>
-        </footer>
-        <!-- /.section-footer d-flex justify-content-center -->
     </div>
     <!-- /.container-xl -->
 </section>
@@ -83,26 +51,11 @@
     <h1 class="titulo_galeria mt-7" style="text-align: center;">Nuestros Ni&ntilde;os</h1>
     <div class="container-xl position-relative">
 
-        <div class="row g-3 mb-5">
+        <div class="row g-3 mb-5" id="bodyUserimgChildren">
 
         </div>
         <!-- /.row g-4 mb-5 -->
 
-
-        <footer class="section-footer d-flex justify-content-center">
-            <div class="btn-toolbar mb-0 me-3" role="toolbar">
-                <div class="btn-group me-2" role="group">
-                    <a href="#" class="btn btn-outline-primary btn-default btn-sm px-3">Anterior</a>
-                    <a href="#" class="btn btn-outline-primary btn-default btn-sm active px-3">1</a>
-                    <a href="#" class="btn btn-outline-primary btn-default btn-sm px-3">2</a>
-                    <a href="#" class="btn btn-outline-primary btn-default btn-sm px-3">3</a>
-                    <a href="#" class="btn btn-outline-primary btn-default btn-sm px-3">4</a>
-                    <a href="#" class="btn btn-outline-primary btn-default btn-sm px-3">5</a>
-                    <a href="#" class="btn btn-outline-primary btn-default btn-sm px-3">Siguiente</a>
-                </div>
-            </div>
-        </footer>
-        <!-- /.section-footer d-flex justify-content-center -->
     </div>
     <!-- /.container-xl -->
 </section>

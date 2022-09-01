@@ -26,7 +26,7 @@
                     plataformas</h1>
             </div>
             <div class="row text-center">
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <a href="https://www.facebook.com/pactodevida">
                         <span class="fa-stack fa-4x">
                             <img loading="lazy" src="Views/img/Facebook.png" class="img" alt="Image" width="100" />
@@ -35,7 +35,7 @@
                         <p class="text-muted">Iglesia Pacto de vida</p>
                     </a>
                 </div>
-                <div class="col-md-3">
+                <!-- <div class="col-md-3">
                     <a href="">
                         <span class="fa-stack fa-4x">
                             <img src="Views/img/instagram.png" class="img" alt="Image" width="100" />
@@ -43,8 +43,8 @@
                         <h4 class="my-3">Instagram</h4>
                         <p class="text-muted">Iglesia Pacto de vida</p>
                     </a>
-                </div>
-                <div class="col-md-3">
+                </div> -->
+                <div class="col-md-4">
                     <a href="https://api.whatsapp.com/send?phone=83195333">
                         <span class="fa-stack fa-4x">
                             <img loading="lazy" src="Views/img/WhatsApp.png" class="img" alt="Image" width="180" />
@@ -53,7 +53,7 @@
                         <p class="text-muted">88889999</p>
                     </a>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <a href="https://www.youtube.com/channel/UCjQ7pvR-L9Kh8SGJPBQ0mIw">
                         <span class="fa-stack fa-4x">
                             <img loading="lazy" src="Views/img/Youtube.png" class="img" alt="Image" width="100" />

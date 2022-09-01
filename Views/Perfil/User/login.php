@@ -63,7 +63,7 @@
                     <a class="btn rounded-pill shadow-none me-2 px-4 fw-bold " href="index.php?access=U-101">Menu
                         principal</a>
                 </form>
-
+ 
                 <!--Register-->
                 <form action="" method="POST" class="formulario__register">
 

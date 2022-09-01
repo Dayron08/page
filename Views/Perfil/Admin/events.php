@@ -28,12 +28,10 @@
             <div class="row g-4 mt-6">
 
                 <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+
                     <a data-bs-toggle="modal" data-bs-target="#new_event"
                         class="btn btn-success  shadow-none me-2 px-4 fw-bold " href="#" id="btn_insert_event"><i
                             class="fas fa-plus"></i> Insertar evento</a>
-                    <a class="btn btn-danger  shadow-none me-2 px-4 fw-bold " href="#" id="btn_delete_event"><i
-                            class="fas fa-trash"></i> Eliminar eventos</a>
-
 
                 </div>
 
@@ -47,22 +45,6 @@
 
 
             </div>
-            <!-- /.row g-4 mb-5 -->
-
-            <footer class="section-footer d-flex justify-content-center">
-                <div class="btn-toolbar mb-0 me-3" role="toolbar">
-                    <div class="btn-group me-2" role="group">
-                        <a href="#" class="btn btn-outline-dark btn-default btn-sm px-3">Anterior</a>
-                        <a href="#" class="btn btn-outline-dark btn-default btn-sm active px-3">1</a>
-                        <a href="#" class="btn btn-outline-dark btn-default btn-sm px-3">2</a>
-                        <a href="#" class="btn btn-outline-dark btn-default btn-sm px-3">3</a>
-                        <a href="#" class="btn btn-outline-dark btn-default btn-sm px-3">4</a>
-                        <a href="#" class="btn btn-outline-dark btn-default btn-sm px-3">5</a>
-                        <a href="#" class="btn btn-outline-dark btn-default btn-sm px-3">Siguiente</a>
-                    </div>
-                </div>
-            </footer>
-            <!-- /.section-footer d-flex justify-content-center -->
         </div>
         <!-- /.container-xl -->
     </section>

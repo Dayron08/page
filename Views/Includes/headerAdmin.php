@@ -1,3 +1,16 @@
+<?php 
+                                
+    // session_destroy();
+    session_start();
+
+    // session_start();
+    // $_SESSION['ID_REGISTRO_PERSONA'] = null;
+
+
+   
+                      
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,7 +29,7 @@
         rel="stylesheet" />
 
     <!-- Flaticons - used for property category icons -->
-    <link rel="stylesheet" type="text/css" href="../fonts/flaticon.css" />
+    <link rel="stylesheet" type="text/css" href="Views/fonts/flaticon.css" />
 
     <!-- Swiper-CSS -->
     <link rel="stylesheet" href="https://unpkg.com/swiper@7.0.6/swiper-bundle.min.css" />
@@ -28,6 +41,7 @@
     <script src="Views/js/ajax/call.js"></script>
     <script src="Views/js/ajax/ajax.js"></script>
 
+
     <title>Iglesia Pacto de Vida</title>
 </head>
 
@@ -37,7 +51,7 @@
         data-sticky-hide="true" data-switch-class="shadow-none|shadow">
         <nav class="navbar navbar-light navbar-default">
             <div class="container-xl justify-content-start">
-                <a class="navbar-brand d-flex position-relative mb-1" href="home.php"><img loading="lazy"
+                <a class="navbar-brand d-flex position-relative mb-1" href="index.php?access=A-201"><img loading="lazy"
                         src="Views/img/LOGO02.png" class="navbar-brand-img" alt="Pacto de Vida"
                         style="width: 35%; border-radius: 100%;" /><img loading="lazy"
                         src="Views/img/Logo_recortado.png" style="width: 100%; " class="navbar-brand-img-light"
@@ -47,7 +61,6 @@
 
                     <button class="btn btn-link btn-light p-0 ms-3 shadow-none"><a class="fas fa-user"
                             href="index.php?access=A-213" id="user_icon"></a></button>
-
                     <button class="btn-close btn-close-menu collapsed ms-3" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false"
                         aria-label="Toggle navigation">
@@ -111,14 +124,20 @@
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDocs" role="button"
                                 data-bs-toggle="dropdown">Cuenta</a>
                             <ul class="nav-dropdown-menu dropdown-menu dropdown-menu-end shadow" data-bs-popper>
-                                <li><a class="dropdown-item" href="index.php?access=A-208">Perfil</a></li>
 
-                                <li><a class="dropdown-item" href="index.php?access=A-209">Privacidad</a></li>
 
-                                <li><a class="dropdown-item" href="index.php?access=A-210">T&eacute;rmino y
+                                <input type="hidden" placeholder="" id="txt_id"
+                                    value=<?php echo $_SESSION['ID_REGISTRO_PERSONA']; ?>>
+
+                                <li><a id="btn_profile" class="dropdown-item" href="index.php?access=A-208">Perfil</a>
+                                </li>
+
+                                <li><a class="dropdown-item" href="">Privacidad</a></li>
+
+                                <li><a class="dropdown-item" href="">T&eacute;rmino y
                                         condiciones</a></li>
 
-                                <li><a class="dropdown-item" href="index.php?access=A-211">Cerrar Sesi&oacute;n</a></li>
+                                <li><a class="dropdown-item" href="">Cerrar Sesi&oacute;n</a></li>
 
 
                             </ul>

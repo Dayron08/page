@@ -1,8 +1,5 @@
-<?php require_once("Views/Includes/headerAdmin.php");
-if(isset($_REQUEST['TELEFONO'])){
-    $name = $_REQUEST['NOMBRE'];
-}
-?>
+<?php require_once("Views/Includes/headerAdmin.php");?>
+
 <section id="page-hero"
     class="section section__inverse justify-content-center py-5 py-lg-6 mb-n5 vh-350 h-lg-1000px min-h-1000px">
     <div class="bg bg-img position-absolute" data-bg-img=".img">
@@ -13,9 +10,10 @@ if(isset($_REQUEST['TELEFONO'])){
     <!-- /.bg bg-img position-absolute -->
 
     <div class="container-xl position-relative section-content text-center ">
-        <h2 class="display-5 text-white mt-3 mt-lg-4">María José Maroto Alvarado</h2>
+        <strong> <input class="display-5 text-white text-center mt-3 mt-lg-4" id="txt_user"
+                style="background-color: transparent;"></strong>
 
-        <p class="lead mb-lg-5">Usuario</p>
+        <input class="lead mb-lg-5" id="txt_rol">
 
 
     </div>
@@ -41,21 +39,22 @@ if(isset($_REQUEST['TELEFONO'])){
                                     <dl class="col-6 col-lg-4 my-0">
                                         <dt class="fw-normal fs-sm text-uppercase text-secondary">N&uacute;mero de
                                             identificaci&oacute;n</dt>
-                                        <input type="text" class="form-control shadow-none mt-3 mb-3" value="NO">
+                                        <input type="text" class="form-control shadow-none mt-3 mb-3" id="txt_ide"
+                                            value="">
                                     </dl>
                                     <!-- /.col-6 -->
 
                                     <dl class="col-6 col-lg-4 my-0">
                                         <dt class="fw-normal fs-sm text-uppercase text-secondary">Nombre</dt>
-                                        <input type="text" class="form-control shadow-none mt-3 mb-3"
-                                            value="<?=$name?>">
+                                        <input type="text" class="form-control shadow-none mt-3 mb-3" id="txt_name"
+                                            value="">
                                     </dl>
                                     <!-- /.col-6 -->
 
                                     <dl class="col-6 col-lg-4 my-0">
                                         <dt class="fw-normal fs-sm text-uppercase text-secondary">Apellidos</dt>
-                                        <input type="text" class="form-control shadow-none mt-3 mb-3"
-                                            value="<?=$surname?>">
+                                        <input type="text" class="form-control shadow-none mt-3 mb-3" id="txt_surname"
+                                            value="">
                                     </dl>
                                     <!-- /.col-6 -->
 
@@ -63,97 +62,49 @@ if(isset($_REQUEST['TELEFONO'])){
                                         <dt class="fw-normal fs-sm text-uppercase text-secondary">Fecha de
                                             nacimiento
                                         </dt>
-                                        <input type="text" class="form-control shadow-none mt-3 mb-3"
-                                            value="<?=$date_of_birth?>">
+                                        <input type="date" class="form-control shadow-none mt-3 mb-3" id="txt_date"
+                                            value="">
                                     </dl>
                                     <!-- /.col-6 -->
 
                                     <dl class="col-6 col-lg-4 my-0">
                                         <dt class="fw-normal fs-sm text-uppercase text-secondary">G&eacute;nero</dt>
-                                        <input type="text" class="form-control shadow-none mt-3 mb-3"
-                                            value="<?=$gender?>">
+                                        <input type="text" class="form-control shadow-none mt-3 mb-3" id="txt_gender"
+                                            value="">
                                     </dl>
-                                    <!-- /.col-6 -->
-
-                                    <dl class="col-6 col-lg-4 my-0">
-                                        <dt class="fw-normal fs-sm text-uppercase text-secondary">Constrase&ntilde;a
-                                        </dt>
-                                        <input type="password" class="form-control shadow-none mt-3 mb-3"
-                                            value="<?=$pass?>">
-                                    </dl>
-                                    <!-- /.col-6 -->
-
-                                    <dl class="col-6 col-lg-4 my-0">
-                                        <dt class="fw-normal fs-sm text-uppercase text-secondary">Fecha de ingreso
-                                        </dt>
-                                        <input type="text" class="form-control shadow-none mt-3 mb-3" value="NO">
-                                    </dl>
-                                    <!-- /.col-6 -->
-
-                                    <dl class="col-6 col-lg-4 my-0">
-                                        <dt class="fw-normal fs-sm text-uppercase text-secondary">Tipo de persona
-                                        </dt>
-                                        <input type="text" class="form-control shadow-none mt-3 mb-3" value="NO">
-                                    </dl>
-                                    <!-- /.col-6 -->
-
-                                </div>
-                                <!-- /.row -->
-                                <p class="text-light mt-3 d-grid gap-2 d-md-flex justify-content-md-end">
-                                    <a class=" btn btn-warning shadow-none px-4 fw-bold mt-1" href="#"
-                                        id="btn_savePersonalInformation"><i class="fas fa-pen"></i> Guardar cambios</a>
-                                </p>
-                                <!-- /.text-light -->
-                            </div>
-                        </div>
-                        <!-- /#accordionPropertyDetailsCollapse.accordion-collapse collapse  show -->
-                    </div>
-                    <!-- /.accordion-item  rounded shadow-sm -->
-                </div>
-                <!-- /.accordion  mb-4" id="accordionPropertyDetails -->
-
-                <div class="accordion mb-4" id="accordionPropertyDetails">
-                    <div class="accordion-item rounded shadow-sm">
-                        <h2 class="accordion-header" id="accordionPropertyDetailsHeading">
-                            <button class="accordion-button fs-5" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#accordionPropertyDetailsCollapse" aria-expanded="true"
-                                aria-controls="accordionPropertyDetailsCollapse">Datos de contacto</button>
-                        </h2>
-
-                        <div id="accordionPropertyDetailsCollapse" class="accordion-collapse collapse show"
-                            aria-labelledby="accordionPropertyDetailsHeading"
-                            data-bs-parent="#accordionPropertyDetails">
-                            <div class="accordion-body">
-                                <div class="row g-2 mb-3">
 
                                     <dl class="col-6 col-lg-4 my-0">
                                         <dt class="fw-normal fs-sm text-uppercase text-secondary">Correo</dt>
-                                        <input type="text" class="form-control shadow-none mt-3 mb-3"
-                                            alue="<?=$email?>">
+                                        <input type="text" class="form-control shadow-none mt-3 mb-3" id="txt_gmail"
+                                            value="">
                                     </dl>
-                                    <!-- /.col-6 -->
 
                                     <dl class="col-6 col-lg-4 my-0">
                                         <dt class="fw-normal fs-sm text-uppercase text-secondary">Tel&eacute;fono
                                         </dt>
-                                        <input type="text" class="form-control shadow-none mt-3 mb-3"
-                                            alue="<?=$phone?>">
+                                        <input type="text" class="form-control shadow-none mt-3 mb-3" id="txt_phone"
+                                            value="">
                                     </dl>
                                     <!-- /.col-6 -->
+
+
                                 </div>
-                                <!-- /.row -->
+
+
                                 <p class="text-light mt-3 d-grid gap-2 d-md-flex justify-content-md-end">
                                     <a class=" btn btn-warning shadow-none px-4 fw-bold mt-1" href="#"
-                                        id="btn_saveContactData"><i class="fas fa-pen"></i> Guardar cambios</a>
+                                        id="btn_saveData"><i class="fas fa-pen"></i> Guardar cambios</a>
                                 </p>
-                                <!-- /.text-light -->
                             </div>
-
                         </div>
                         <!-- /#accordionPropertyDetailsCollapse.accordion-collapse collapse  show -->
                     </div>
+
                     <!-- /.accordion-item  rounded shadow-sm -->
                 </div>
+                <!-- /.accordion  mb-4" id="accordionPropertyDetails -->
+
+
                 <!-- /.accordion  mb-4" id="accordionPropertyDetails -->
 
             </div>

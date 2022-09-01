@@ -26,7 +26,7 @@
                     plataformas</h1>
             </div>
             <div class="row text-center">
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <a href="https://www.facebook.com/pactodevida">
                         <span class="fa-stack fa-4x">
                             <img loading="lazy" src="Views/img/Facebook.png" class="img" alt="Image" width="100" />
@@ -35,7 +35,7 @@
                         <p class="text-muted">Iglesia Pacto de vida</p>
                     </a>
                 </div>
-                <div class="col-md-3">
+                <!-- <div class="col-md-3">
                     <a href="">
                         <span class="fa-stack fa-4x">
                             <img src="Views/img/instagram.png" class="img" alt="Image" width="100" />
@@ -43,8 +43,8 @@
                         <h4 class="my-3">Instagram</h4>
                         <p class="text-muted">Iglesia Pacto de vida</p>
                     </a>
-                </div>
-                <div class="col-md-3">
+                </div> -->
+                <div class="col-md-4">
                     <a href="https://api.whatsapp.com/send?phone=83195333">
                         <span class="fa-stack fa-4x">
                             <img loading="lazy" src="Views/img/WhatsApp.png" class="img" alt="Image" width="180" />
@@ -53,7 +53,7 @@
                         <p class="text-muted">88889999</p>
                     </a>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <a href="https://www.youtube.com/channel/UCjQ7pvR-L9Kh8SGJPBQ0mIw">
                         <span class="fa-stack fa-4x">
                             <img loading="lazy" src="Views/img/Youtube.png" class="img" alt="Image" width="100" />
@@ -96,8 +96,9 @@
                                 <div class="col-md-4">
                                     <div class="form-floating">
                                         <input type="text" class="form-control border-0 bg-light"
-                                            placeholder="Your Name" id="txt_names" />
+                                            placeholder="Your Name" id="txt_name" />
                                         <label>Nombre</label>
+                                        <p id="alert_name"></p>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
@@ -105,6 +106,7 @@
                                         <input type="text" class="form-control border-0 bg-light"
                                             placeholder="Your LastName" id="txt_lastnames" />
                                         <label>Apellidos</label>
+                                        <p id="alert_lastnames"></p>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
@@ -112,6 +114,7 @@
                                         <input type="email" class="form-control border-0 bg-light"
                                             placeholder="Your Email" id="txt_gmail" />
                                         <label>Email</label>
+                                        <p id="alert_gmail"></p>
                                     </div>
                                 </div>
                                 <div class="col-12">
@@ -119,6 +122,7 @@
                                         <input type="text" class="form-control border-0 bg-light" placeholder="Subject"
                                             id="txt_subject" />
                                         <label>Asunto</label>
+                                        <p id="alert_subject"></p>
                                     </div>
                                 </div>
                                 <div class="col-12">
@@ -126,6 +130,7 @@
                                         <textarea class="form-control border-0 bg-light" placeholder=""
                                             style="height: 150px" id="txt_text"></textarea>
                                         <label>Consulta</label>
+                                        <p id="alert_consulta"></p>
                                     </div>
                                 </div>
 

@@ -4,7 +4,7 @@
         <div class="row g-3">
             <div class="col col-md-auto text-md-auto ms-md-5">
                 <br>
-                <p class="mb-0"><strong>80</strong>&nbsp;Results&nbsp;Found</p>
+                <!-- <p class="mb-0"><strong>80</strong>&nbsp;Results&nbsp;Found</p> -->
 
                 <p class="text-light mt-3">
                     <a data-bs-toggle="modal" data-bs-target="#new_image"
@@ -19,17 +19,18 @@
             <div class="col col-md-auto text-md-end ms-md-auto">
                 <div class="btn-group btn-select-dropdown w-100 mt-3">
 
-                    <p class="text-light">
-                        <input type="date" id="example" class="form-control me-2 px-4 fw-bold ">
-                    </p>
+                    <!-- <p class="text-dark">
+                       
+                    <label>Buscar por fecha</label><input type="date" id="example" class="form-control me-2 px-4 fw-bold ">
+                    </p> -->
                     <!-- /.text-light -->
                     <!-- /.text-light -->
                 </div>
                 <!-- /.btn-group w-100 btn-select-dropdown -->
-                <p class="text-light">
+                <!-- <p class="text-light">
                     <a class="btn btn-danger rounded-pill shadow-none me-2 px-4 fw-bold " href="#" id="btn_delete"><i
                             class="fas fa-trash"></i> Eliminar imagenes seleccionadas</a>
-                </p>
+                </p> -->
                 <!-- /.text-light -->
 
             </div>

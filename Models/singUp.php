@@ -20,6 +20,7 @@ class SingUp extends Connection_Mysql {
 
 	public $status_id;
 	public $status;
+	public $i;
 
 	public function __construct()
 	{
@@ -37,6 +38,10 @@ class SingUp extends Connection_Mysql {
 
 	public function set_id_event($idEvent){
         $this->idEvent = $idEvent;
+    }
+
+	public function set_id_images($idImagen){
+        $this->idImagen = $idImagen;
     }
 
 	public function set_id_consul($idConsul){
@@ -67,6 +72,10 @@ class SingUp extends Connection_Mysql {
         $this->dateEvent = $dateEvent;
     }
 
+	public function set_date($date){
+        $this->date = $date;
+    }
+
 	public function set_timeEvent($timeEvent){
         $this->timeEvent = $timeEvent;
     }
@@ -75,12 +84,33 @@ class SingUp extends Connection_Mysql {
         $this->imageEvent = $imageEvent;
     }
 
+	
+	public function set_image($image){
+        $this->image = $image;
+    }
+
+	public function set_category($category){
+        $this->category = $category;
+    }
+
 	public function set_password($password){
         $this->password = $password;
     }
 
+	public function set_gender($gender){
+        $this->gender = $gender;
+    }
+
+	public function set_dateadmission($dateadmission){
+        $this->dateadmission = $dateadmission;
+    }
+
 	public function set_gmail($gmail){
         $this->gmail = $gmail;
+    }
+
+	public function set_phone($phone){
+        $this->phone = $phone;
     }
 
 	public function set_query($query){
@@ -206,30 +236,21 @@ class SingUp extends Connection_Mysql {
 		$this->result = mysqli_fetch_assoc($this->result);
 		return $this->result;
 	}
-
-	
-
 	public function read() {
 
-		session_start();
-		
-		$this->query = "CALL P_VALI_LOGIN(
-		'".$this->gmail."',
-		'".$this->password."');";
-		$this->execute($this->query);
 
-		$person_id = array();
-		while ($result = mysqli_fetch_assoc($this->result)) {
-			$person_id[]= array(
-				"id"=> $result["CEDULA"]);
-		}
+        $this->query = "CALL P_VALI_LOGIN(
+        '".$this->gmail."',
+        '".$this->password."');";
+        $this->execute($this->query);
+        $row = mysqli_fetch_assoc($this->result);
 
-		$_SESSION['ID_REGISTRO_PERSONA'] = ISSET($row["ID_REGISTRO_PERSONA"]); 
-		
+        //meti ID_TIPO
+        // $_SESSION['ID_REGISTRO_PERSONA'] = ISSET($row["ID_REGISTRO_PERSONA"]); 
+        //$_SESSION['ID_REGISTRO_PERSONA'] = "305200304"; 
+        return $row;
+    }
 
-		
-		return $person_id;
-	}
 
 	public function call_data_profile() {
 		$this->query = "CALL P_VER_PERFIL(
@@ -342,6 +363,11 @@ class SingUp extends Connection_Mysql {
 
 	}
  
+		
+
+
+
+
 	public function readEvents() {
 		
 		$this->query = "CALL P_HISTORICO_EVENTO();";
@@ -382,6 +408,32 @@ class SingUp extends Connection_Mysql {
 		}
 		
 		return $event ;
+
+	} 
+
+	public function getProfile() {
+		 
+		$this->query = "CALL P_VER_PERFIL(
+		'".$this->user_id."');";
+
+		// $this->query = "SELECT * FROM `persona` WHERE `ID_REGISTRO_PERSONA` = '".$this->user_id."'";
+		
+		$this->execute($this->query);
+
+	   $user = array();
+		while ($result = mysqli_fetch_assoc($this->result)) {
+			$user []= array(
+				"id"=> $result["CEDULA"],
+				"rol"=> $result["DSC_TIPO"],
+				"name"=> $result["NOMBRE"],
+				"lastname" => $result["APPELLIDOS"],
+				"date" => $result["FECH_NACIMIENTO"],
+				"gender" => $result["GENERO"],
+				"email" => $result["EMAIL"],
+				"phone" => $result["TELEFONO"]);
+		}
+		
+		return $user ;
 
 	} 
 
@@ -427,18 +479,19 @@ class SingUp extends Connection_Mysql {
 
 	}
 
-
+ 
 	public function readTestimonialsHome() {
 		
-		$this->query = "CALL P_VER_PERSONA_TESTIMONIO();";
+		$this->query = "CALL P_VER_PERSONA_TESTIMONIO3();";
 		$this->execute($this->query);
 
 	   $testimonial = array();
-		while ($result = mysqli_fetch_assoc($this->result)) {
+		while (($result = mysqli_fetch_assoc($this->result))) {
 			$testimonial []= array(
 				"dsc"=> $result["DSC_TESTIMONIO"],
 				"name" => $result["NOMBRE"],
 				"lastname" => $result["APPELLIDOS"]);
+			
 		}
 		
 		
@@ -485,6 +538,17 @@ class SingUp extends Connection_Mysql {
 
 	} 
 
+	public function deleteImages() {
+
+		$this->query = "CALL P_ELIMINAR_IMAGEN(                
+			'".$this->idImagen."');"; 
+	
+		// $this->query = "DELETE FROM `galeria` WHERE `ID_IMAGEN` = '".$this->idImagen."'";
+		
+		$this->execute($this->query);
+
+	} 
+
 	public function UpdateEvent() {
 	 
 		$this->query = "CALL P_ACTUALIZAR_EVENTO(                
@@ -495,6 +559,26 @@ class SingUp extends Connection_Mysql {
 			'".$this->imageEvent."',
 			'".$this->dscEvent."',
 			'".$this->dateEvent."');"; 
+		
+		
+		$this->execute($this->query);
+
+	} 
+ 
+	public function UpdateMyprofile() {
+	 
+		$this->query = "CALL P_ACTUALIZAR_DATOS_PERSONA_USU(                
+			'".$this->user_id."',
+			'".$this->name."',
+			'".$this->surname."',
+			'".$this->date."',
+			'".$this->gender."',
+			'".$this->gmail."',
+			'".$this->phone."');"; 
+
+		// $this->query = "UPDATE `persona` SET `ID_REGISTRO_PERSONA`='".$this->user_id."',`NOMBRE`= '".$this->name."',
+		// `APPELLIDOS`='".$this->surname."',`FECH_NACIMIENTO`='".$this->date."',`GENERO`= '".$this->gender."',`PASSWORD_PERSONA`='".$this->password."',
+		// `FECHA_REGISTRO`='2022/08/22',`TIPO_PERSONA`= 1 WHERE `ID_REGISTRO_PERSONA`='".$this->user_id."'";
 		
 		
 		$this->execute($this->query);

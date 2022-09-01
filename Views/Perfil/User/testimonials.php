@@ -13,29 +13,7 @@
 
         <div class="section-filter pt-4">
             <div class="row g-3">
-                <div class="col-12 col-md section-content text-center text-md-start">
-                    <p class="mb-0 text-white"><strong>80</strong>&nbsp;Resultados&nbsp;Encontrados</p>
-                </div>
-                <!-- /.col-12 col-md -->
 
-                <div class="col col-md-auto text-md-end ms-md-auto">
-                    <div class="btn-group btn-select-dropdown w-100">
-                        <span class="input-group-text fs-sm rounded-0 rounded-start py-0">Ordenar por</span>
-
-                        <button type="button"
-                            class="btn btn-sm btn-primary btn-default dropdown-toggle d-flex align-items-center justify-content-between shadow-none fw-bold"
-                            data-bs-toggle="dropdown" aria-expanded="false">Recientes</button>
-
-                        <ul class="dropdown-menu dropdown-menu-end w-100">
-                            <li><a class="dropdown-item fs-sm active text-black" href="#" data-value="1">Recientes</a>
-                            </li>
-
-                            <li><a class="dropdown-item fs-sm text-black" href="#" data-value="2">Por nombre</a></li>
-                        </ul>
-                        <!-- /.dropdown-menu w-100 -->
-                    </div>
-                    <!-- /.btn-group w-100 btn-select-dropdown -->
-                </div>
                 <!-- /.col col-md-auto text-md-end ms-md-auto -->
 
             </div>
@@ -60,21 +38,6 @@
 
         </div>
         <!-- /.row cities -->
-
-        <footer class="section-footer d-flex justify-content-center">
-            <div class="btn-toolbar mb-0 me-3" role="toolbar">
-                <div class="btn-group me-2" role="group">
-                    <a href="#" class="btn btn-outline-dark btn-default btn-sm px-3">Anterior</a>
-                    <a href="#" class="btn btn-outline-dark btn-default btn-sm active px-3">1</a>
-                    <a href="#" class="btn btn-outline-dark btn-default btn-sm px-3">2</a>
-                    <a href="#" class="btn btn-outline-dark btn-default btn-sm px-3">3</a>
-                    <a href="#" class="btn btn-outline-dark btn-default btn-sm px-3">4</a>
-                    <a href="#" class="btn btn-outline-dark btn-default btn-sm px-3">5</a>
-                    <a href="#" class="btn btn-outline-dark btn-default btn-sm px-3">Siguiente</a>
-                </div>
-            </div>
-        </footer>
-        <!-- /.section-footer d-flex justify-content-center -->
     </div>
     <!-- /.container-xl position-relative -->
 </section>

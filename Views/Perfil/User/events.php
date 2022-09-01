@@ -13,15 +13,15 @@
 
             <p class="lead mb-4 mb-lg-5">Comparte con nosotros!</p>
 
-            <div class="section-filter pt-4">
+            <!-- <div class="section-filter pt-4">
                 <div class="row g-3">
                     <div class="col-12 col-md section-content text-center text-md-start">
                         <p class="mb-0"><strong>80</strong>&nbsp;Results&nbsp;Found</p>
                     </div>
-                    <!-- /.col-12 col-md -->
+                    
                 </div>
-                <!-- /.row -->
-            </div>
+              
+            </div> -->
             <!-- /.section-filter -->
         </div>
         <!-- /.container-xl position-relative -->
@@ -45,34 +45,8 @@
             <div class="row g-4 mb-5">
 
                 <div class="row g-4 mb-5" id=bodyEventsUser>
-
-
                 </div>
-                <!-- /.col-12 col-sm-6 col-md-3 d-flex -->
-
-
-            </div>
-
-            <!-- /.col-12 col-sm-6 col-md-3 d-flex -->
-        </div>
-        <!-- /.row g-4 mb-5 -->
-
-        <footer class="section-footer d-flex justify-content-center">
-            <div class="btn-toolbar mb-0 me-3" role="toolbar">
-                <div class="btn-group me-2" role="group">
-                    <a href="#" class="btn btn-outline-dark btn-default btn-sm px-3">Anterior</a>
-                    <a href="#" class="btn btn-outline-dark btn-default btn-sm active px-3">1</a>
-                    <a href="#" class="btn btn-outline-dark btn-default btn-sm px-3">2</a>
-                    <a href="#" class="btn btn-outline-dark btn-default btn-sm px-3">3</a>
-                    <a href="#" class="btn btn-outline-dark btn-default btn-sm px-3">4</a>
-                    <a href="#" class="btn btn-outline-dark btn-default btn-sm px-3">5</a>
-                    <a href="#" class="btn btn-outline-dark btn-default btn-sm px-3">Siguiente</a>
-                </div>
-            </div>
-        </footer>
-        <!-- /.section-footer d-flex justify-content-center -->
-        </div>
-        <!-- /.container-xl -->
+                <!-- /.container-xl -->
     </section>
     <!-- #news-1.section pb-6 mt-n4 mt-lg-n5 mt-xl-n6 -->
 

@@ -7,11 +7,12 @@ $(document).ready(function () {
     imgs.onclick = function () { // onlcick event
         if (flagg == 3) {
             input.type = 'text';
-            eyes.src = 'img/eyes2 .png';//open eyes
+
+            eyes.src = '../../img/eyes2 .png'; //open eyes
             flagg = 4;
         } else {
             input.type = 'password';
-            eyes.src = 'img/eyes1 .png';//close eyes
+            eyes.src = '../../img/eyes1 .png'; //close eyes
             flagg = 3;
         }
     }
@@ -23,14 +24,17 @@ $(document).ready(function () {
     imglogin.onclick = function () { // onlcick event
         if (flag == 0) {
             inputt.type = 'text';
-            eye.src = 'img/eyes2 .png';//open eyes
+
+            eye.src = '../../img/eyes2 .png'; //open eyes
             flag = 1;
         } else {
             inputt.type = 'password';
-            eye.src = 'img/eyes1 .png';//close eyes
+            eye.src = '../../img/eyes1 .png'; //close eyes
+
             flag = 0;
         }
     }
+
 
     $("#btn_singUp").click(function (e) {
 
@@ -110,7 +114,9 @@ $(document).ready(function () {
             url: "Controllers/singUp.php",
             method: "POST",
             data: { txt_user_id: txt_user_id, txt_name: txt_name, txt_surname: txt_surname, txt_password: txt_password, txt_gmail: txt_gmail },
+
             success: function (dataresponse, statustext, response) {
+
                 if (statustext == "success") {
                     console.log("exitosamente")
 
@@ -129,8 +135,8 @@ $(document).ready(function () {
 
     //login
 
+
     $("#btn_entrar").click(function (e) {
-        // alert("estoy dentro")
         //   e.preventDefault();
 
         var txt_email = $("#txt_email").val();
@@ -156,17 +162,13 @@ $(document).ready(function () {
             }
 
         }
-
-
         $.ajax({
             url: "Controllers/validateLogin.php",
             method: "POST",
             data: { txt_email: txt_email, txt_pass: txt_pass },
-
             success: function (dataresponse, statustext, response) {
                 if (statustext == "success") {
                     $("#respuesta").html(dataresponse);
-
                     if (dataresponse == 0) {
                         Swal.fire({
                             position: 'top-end',
@@ -191,7 +193,6 @@ $(document).ready(function () {
                     }
                 }
             },
-
             error: function (request, errorcode, errortext) {
                 $("#respuesta").html(errorcode);
             }

@@ -24,7 +24,6 @@
 
 </head>
 
-
 <body>
 
 
@@ -92,7 +91,7 @@
 
                     <div class="campo">
                         <input type="password" placeholder="Contraseña" id="txt_password">
-                        <img src="Views/img/eyes1 .png" alt="" id="eyes">
+                        <img src="Views/img/eyes1.png" alt="" id="eyes">
                         <p id="alert_password"></p>
                     </div>
 

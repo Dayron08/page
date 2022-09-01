@@ -27,29 +27,12 @@
 
         <div class="row g-3 mb-5" id="bodyimgtown">
 
-
         </div>
         <!-- /.row g-4 mb-5 -->
-
-        <footer class="section-footer d-flex justify-content-center">
-            <div class="btn-toolbar mb-0 me-3" role="toolbar">
-                <div class="btn-group me-2" role="group">
-                    <a href="#" class="btn btn-outline-primary btn-default btn-sm px-3">Anterior</a>
-                    <a href="#" class="btn btn-outline-primary btn-default btn-sm active px-3">1</a>
-                    <a href="#" class="btn btn-outline-primary btn-default btn-sm px-3">2</a>
-                    <a href="#" class="btn btn-outline-primary btn-default btn-sm px-3">3</a>
-                    <a href="#" class="btn btn-outline-primary btn-default btn-sm px-3">4</a>
-                    <a href="#" class="btn btn-outline-primary btn-default btn-sm px-3">5</a>
-                    <a href="#" class="btn btn-outline-primary btn-default btn-sm px-3">Siguiente</a>
-                </div>
-            </div>
-        </footer>
-        <!-- /.section-footer d-flex justify-content-center -->
     </div>
     <!-- /.container-xl -->
 </section>
 <!-- #news-1.section pb-6 mt-n4 mt-lg-n5 mt-xl-n6 -->
-
 
 
 <section id="news-1" class="section pb-4 mt-n4 mt-lg-n5 mt-xl-n6">
@@ -60,22 +43,6 @@
 
         </div>
         <!-- /.row g-4 mb-5 -->
-
-
-        <footer class="section-footer d-flex justify-content-center">
-            <div class="btn-toolbar mb-0 me-3" role="toolbar">
-                <div class="btn-group me-2" role="group">
-                    <a href="#" class="btn btn-outline-primary btn-default btn-sm px-3">Anterior</a>
-                    <a href="#" class="btn btn-outline-primary btn-default btn-sm active px-3">1</a>
-                    <a href="#" class="btn btn-outline-primary btn-default btn-sm px-3">2</a>
-                    <a href="#" class="btn btn-outline-primary btn-default btn-sm px-3">3</a>
-                    <a href="#" class="btn btn-outline-primary btn-default btn-sm px-3">4</a>
-                    <a href="#" class="btn btn-outline-primary btn-default btn-sm px-3">5</a>
-                    <a href="#" class="btn btn-outline-primary btn-default btn-sm px-3">Siguiente</a>
-                </div>
-            </div>
-        </footer>
-        <!-- /.section-footer d-flex justify-content-center -->
     </div>
     <!-- /.container-xl -->
 </section>
@@ -89,22 +56,6 @@
 
         </div>
         <!-- /.row g-4 mb-5 -->
-
-
-        <footer class="section-footer d-flex justify-content-center">
-            <div class="btn-toolbar mb-0 me-3" role="toolbar">
-                <div class="btn-group me-2" role="group">
-                    <a href="#" class="btn btn-outline-primary btn-default btn-sm px-3">Anterior</a>
-                    <a href="#" class="btn btn-outline-primary btn-default btn-sm active px-3">1</a>
-                    <a href="#" class="btn btn-outline-primary btn-default btn-sm px-3">2</a>
-                    <a href="#" class="btn btn-outline-primary btn-default btn-sm px-3">3</a>
-                    <a href="#" class="btn btn-outline-primary btn-default btn-sm px-3">4</a>
-                    <a href="#" class="btn btn-outline-primary btn-default btn-sm px-3">5</a>
-                    <a href="#" class="btn btn-outline-primary btn-default btn-sm px-3">Siguiente</a>
-                </div>
-            </div>
-        </footer>
-        <!-- /.section-footer d-flex justify-content-center -->
     </div>
     <!-- /.container-xl -->
 </section>
@@ -137,6 +88,7 @@
                     <div class="mb-3">
                         <button type="submit" id="btn_Insertimg"
                             class="btn btn-primary w-100 text-uppercase fw-bold">Agregar</button>
+
                     </div>
 
 

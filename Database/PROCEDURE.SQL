@@ -73,10 +73,8 @@ CREATE OR REPLACE PROCEDURE P_ACTUALIZAR_DATOS_PERSONA_USU
         IN P_GENERO VARCHAR(2),
         IN P_PASSWORD_PERSONA VARCHAR(50),
         --PERSONA_CONTACTO
-        IN P_ID_CONTACTO VARCHAR(30),
         IN P_EMAIL VARCHAR(50),
-        IN P_TELEFONO INT(30),
-        IN P_FOTO_PERFIL VARCHAR(300)
+        IN P_TELEFONO INT(30)
     )
     BEGIN 
         DECLARE PERSONA_CEDULA VARCHAR(30);
@@ -92,8 +90,7 @@ CREATE OR REPLACE PROCEDURE P_ACTUALIZAR_DATOS_PERSONA_USU
 
         UPDATE PERSONA_CONTACTO SET 
             EMAIL = P_EMAIL ,
-            TELEFONO = P_TELEFONO,
-            FOTO_PERFIL = P_FOTO_PERFIL
+            TELEFONO = P_TELEFONO
         WHERE 
             ID_REGISTRO_PERSONA = PERSONA_CEDULA;
 
@@ -112,6 +109,7 @@ CREATE OR REPLACE PROCEDURE P_VER_PERFIL
     )
     BEGIN
         SELECT
+            TP.DSC_TIPO,
             P.ID_REGISTRO_PERSONA AS CEDULA,
             PC.FOTO_PERFIL,
             P.NOMBRE,
@@ -125,6 +123,8 @@ CREATE OR REPLACE PROCEDURE P_VER_PERFIL
         INNER JOIN PERSONA_CONTACTO PC ON (PC.ID_REGISTRO_PERSONA = P.ID_REGISTRO_PERSONA)
         WHERE P.ID_REGISTRO_PERSONA = P_ID_REGISTRO_PERSONA;
     END$$
+
+DELIMITER;
 --PRUEBA EXITOSA
 CALL P_VER_PERFIL('305200304');
 
@@ -824,4 +824,120 @@ CREATE DEFINER=`root`@`localhost` PROCEDURE `P_VER_ENVIVO` ()
 DAYRON RECIBE A JOSUE COMO 
 
 ----------------------------------------------------------------------FIN--------------------------------------------------------------------
+----------------------------------------------------------------------FIN--------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------
+
+---------------------------------------PD TESTI SOLO 3
+DELIMITER $$
+USE PacVi $$
+CREATE OR REPLACE PROCEDURE P_VER_PERSONA_TESTIMONIO3()
+    BEGIN
+        SELECT
+            PT.ID_TESTI,
+            PT.DSC_TESTIMONIO, 
+            P.NOMBRE,
+            P.APPELLIDOS
+        FROM PERSONA_TESTIMONIOS PT 
+        INNER JOIN PERSONA P ON (P.ID_REGISTRO_PERSONA = PT.ID_REGISTRO_PERSONA) 
+        ORDER BY FECHA_ACTUAL DESC LIMIT 3 ;
+    END$$
+DELIMITER;
+--PRUEBA EXIOTSA
+CALL P_VER_PERSONA_TESTIMONIO3();
+-------------------------------PD ACTUALIZAR DATOS DEL USUARIO
+DELIMITER $$
+USE PacVi $$
+CREATE OR REPLACE PROCEDURE P_ACTUALIZAR_DATOS_PERSONA_USU
+    (
+        IN P_ID_REGISTRO_PERSONA VARCHAR(30),
+        IN P_NOMBRE VARCHAR(30),
+        IN P_APPELLIDOS VARCHAR(60),
+        IN P_FECH_NACIMIENTO DATE,
+        IN P_GENERO VARCHAR(2),
+        --PERSONA_CONTACTO
+        IN P_EMAIL VARCHAR(50),
+        IN P_TELEFONO INT(30)
+    )
+    BEGIN 
+        DECLARE PERSONA_CEDULA VARCHAR(30);
+        SET PERSONA_CEDULA :=P_ID_REGISTRO_PERSONA;
+
+        UPDATE PERSONA SET 
+            NOMBRE = P_NOMBRE ,
+            APPELLIDOS = P_APPELLIDOS ,
+            FECH_NACIMIENTO = P_FECH_NACIMIENTO ,
+            GENERO = P_GENERO
+        WHERE 
+            ID_REGISTRO_PERSONA = PERSONA_CEDULA;
+
+        UPDATE PERSONA_CONTACTO SET 
+            EMAIL = P_EMAIL ,
+            TELEFONO = P_TELEFONO
+        WHERE 
+            ID_REGISTRO_PERSONA = PERSONA_CEDULA;
+        COMMIT;
+    END$$
+DELIMITER;
+
+CALL P_ACTUALIZAR_DATOS_PERSONA_USU('305200304','RANDALL','GUZMAN ', '1999/09/27',  'M',  'ran@gmail.com', '83195333');
+
+------------------------------------------------------------------PD PARA FOTO
+DELIMITER$$
+USE PacVi$$
+CREATE OR REPLACE PROCEDURE P_ACTUALIZAR_FOTO
+    (
+        IN P_ID_REGISTRO_PERSONA VARCHAR(30),
+        IN P_FOTO VARCHAR(300)
+    )
+    BEGIN 
+    DECLARE PERSONA_CEDULA VARCHAR(30);
+    SET PERSONA_CEDULA := P_ID_REGISTRO_PERSONA;
+
+    UPDATE PERSONA_CONTACTO SET FOTO_PERFIL = P_FOTO 
+        WHERE ID_REGISTRO_PERSONA = PERSONA_CEDULA;
+    END$$
+DELIMITER;
+
+CALL P_ACTUALIZAR_FOTO('305200304','FOTO_RANDALL');
+
+-----------------------------------------------------------PD PARA ACTUALIZAR CONTRASEÑA
+DELIMITER$$
+USE PacVi$$
+CREATE OR REPLACE PROCEDURE P_ACTUALIZAR_PASSWORD
+    (
+        IN P_ID_REGISTRO_PERSONA VARCHAR(30),
+        IN P_PASSWORD_PERSONA  VARCHAR(50)
+    )
+    BEGIN 
+    DECLARE PERSONA_CEDULA VARCHAR(30);
+    SET PERSONA_CEDULA := P_ID_REGISTRO_PERSONA;
+
+    UPDATE PERSONA SET PASSWORD_PERSONA = P_PASSWORD_PERSONA 
+        WHERE ID_REGISTRO_PERSONA = PERSONA_CEDULA;
+    END$$
+DELIMITER;
+
+CALL P_ACTUALIZAR_PASSWORD('305200304','NEW_PASSWORD');
+
+------------------------------------------------------NOMBRE_ROL
+CALL P_VER_ENVIVO();
+DELIMITER $$
+USE PacVi $$
+CREATE OR REPLACE PROCEDURE P_VER_NOMBRE_ROL
+    (   
+        IN P_ID_REGISTRO_PERSONA VARCHAR(50)
+    )
+    BEGIN
+        SELECT
+            TP.DSC_TIPO,
+            P.NOMBRE,
+            P.APPELLIDOS
+        FROM TIPO_PERSONA TP 
+        INNER JOIN PERSONA P ON (P.TIPO_PERSONA = TP.ID_TIPO)
+        WHERE P.ID_REGISTRO_PERSONA = P_ID_REGISTRO_PERSONA;
+    END$$
+DELIMITER;
+
+CALL P_VER_NOMBRE_ROL('305200304');
+
 ----------------------------------------------------------------------FIN--------------------------------------------------------------------

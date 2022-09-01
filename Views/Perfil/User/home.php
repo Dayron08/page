@@ -20,7 +20,7 @@
 
                 <p class="text-light">
 
-                    <a class="btn btn-warning rounded-pill shadow-none me-2 px-4 fw-bold " href="../User/login.php"
+                    <a class="btn btn-warning rounded-pill shadow-none me-2 px-4 fw-bold " href="index.php?access=U-113"
                         id="btn_login"><i class="fas fa-user"></i> Se parte de nosotros</a>
                 </p>
 
@@ -34,8 +34,8 @@
 </section>
 <!-- #we-do-2.section bg-dark py-5 py-lg-6 -->
 
-<section class="section " id="welcome_video">
-    <!-- /.bg bg-img position-absolute -->
+<!-- <section class="section " id="welcome_video">
+   
     <div class="container-xl position-relative">
 
 
@@ -45,11 +45,11 @@
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
         </div>
-        <!-- /.row cities -->
+       
 
     </div>
-    <!-- /.container-xl -->
-</section>
+    
+</section> -->
 <!-- #cities-grid-2.section py-5 py-lg-6 -->
 
 <section id="galery" class="section py-5 py-lg-6">
@@ -68,29 +68,7 @@
             <div id="listing-swiper-1-expand-swiper" class="swiper expand-w" data-js-swiper="auto">
                 <div class="swiper-wrapper" id="tbodyimg">
 
-                    <div class="swiper-slide w-330px h-330px pe-4 d-flex">
-                        <div class="card shadow-sm shadow-hover trans-base zoom-bg-img o-hover-all">
-                            <div class="card-img bg bg-img" data-bg-img=".img">
-                                <img loading="lazy" src="Views/img/church/image_01.jpg" class="img" alt="Image" />
-                                <div class="overlay bg-dark position-absolute o-25 o-50-hover"></div>
-                            </div>
-                            <!-- /.card-img bg bg-img -->
 
-                        </div>
-                        <!-- /.card -->
-                    </div>
-
-                    <div class="swiper-slide w-330px h-330px pe-4 d-flex">
-                        <div class="card shadow-sm shadow-hover trans-base zoom-bg-img o-hover-all">
-                            <div class="card-img bg bg-img" data-bg-img=".img">
-                                <img loading="lazy" src="Views/img/church/image_02.jpg" class="img" alt="Image" />
-                                <div class="overlay bg-dark position-absolute o-25 o-50-hover"></div>
-                            </div>
-                            <!-- /.card-img bg bg-img -->
-
-                        </div>
-                        <!-- /.card -->
-                    </div>
                 </div>
                 <!-- /.swiper-wrapper -->
             </div>
@@ -111,7 +89,7 @@
                     <div data-swiper-id="#listing-swiper-1-expand-swiper" class="swiper-pagination w-auto bottom-0"
                         data-swiper-pagination-limit="2"></div>
 
-                    <a href="Views/Perfil/User/images.php"
+                    <a href="index.php?access=U-105"
                         class="btn btn-link btn-sm btn-more text-uppercase fw-bold shadow-none o-50 o-100-hover ms-3 trans-base px-0">Todas
                         las imagenes<i class="fas fa-long-arrow-alt-right"></i></a>
                 </div>
@@ -135,10 +113,13 @@
 
                 <form action="#" method="post" class="">
                     <div class="input-group mb-3">
+
                         <textarea type="text" class="form-control form-control-lg" placeholder="Testimonio"
                             id="txt_testimony" aria-label="Recipient's username" aria-describedby="button-addon2"
                             rows="3" cols="10" maxlength="200"></textarea>
+
                     </div>
+                    <p id="alert_testimony"></p>
 
                     <button class="btn btn-warning btn-lg px-4" type="submit" id="btn_testimony">Subir</button>
                 </form>
@@ -193,101 +174,29 @@
                         <div class="row testimonials g-4" id="tbodytestimonial">
 
 
+
+
+
+
                             <!-- /.col-6 col-md d-flex align-items-stretch -->
                         </div>
                         <!-- /.row testimonials  -->
                     </div>
                     <!-- /.container-xl position-relative -->
                 </div>
-                <!-- /.swiper-slide -->
 
-                <div class="swiper-slide">
-                    <div class="container-xl position-relative">
-                        <div class="row testimonials g-4">
-                            <div class="col-12 col-md d-flex align-items-stretch">
-                                <figure class="card testimonial h-100 text-start bg-transparent mb-0">
-                                    <blockquote
-                                        class="cardsbg blockquote card-body  shadow-sm rounded d-flex flex-column px-lg-5">
-                                        <p class="fs-1 text-secondary o-25 mb-0"><i class="fas fa-quote-right"></i></p>
-                                        <p class="fs-6">La Hermana Arredondo testifica cómo conoció la Iglesia y cómo
-                                            ésta le ha ayudado en su vida. Ella sabe que ha sido guiada por el Espíritu
-                                        </p>
-                                        <p class="text-secondary text-decoration-none fs-sm mt-auto mb-3 o-75">
-                                            &mdash;<span class="fw-bold"> John Doe</span> - IT Profesional</p>
-                                        <div class="img px-3 px-lg-4">
-                                            <img src="" />
-                                        </div>
-                                    </blockquote>
-                                </figure>
-                                <!-- /.card -->
-                            </div>
-                            <!-- /.col-12 col-md d-flex align-items-stretch -->
-
-                            <div class="col-6 col-md d-flex align-items-stretch">
-                                <figure class="card testimonial h-100 text-start bg-transparent mb-0">
-                                    <blockquote
-                                        class="cardsbg blockquote card-body shadow-sm rounded d-flex flex-column px-lg-5">
-                                        <p class="fs-1 text-secondary o-25 mb-0"><i class="fas fa-quote-right"></i></p>
-                                        <p class="fs-6">La Hermana Arredondo testifica cómo conoció la Iglesia y cómo
-                                            ésta le ha ayudado en su vida. Ella sabe que ha sido guiada por el Espíritu
-                                        </p>
-                                        <p class="text-secondary text-decoration-none fs-sm mt-auto mb-3 o-75">
-                                            &mdash;<span class="fw-bold"> John Doe</span> - IT Profesional</p>
-                                        <div class="img px-3 px-lg-4">
-                                            <img src="" />
-                                        </div>
-                                    </blockquote>
-                                </figure>
-                                <!-- /.card -->
-                            </div>
-                            <!-- /.col-6 col-md d-flex align-items-stretch -->
-
-                            <div class="col-6 col-md d-flex align-items-stretch">
-                                <figure class="card testimonial h-100 text-start bg-transparent mb-0">
-                                    <blockquote
-                                        class="cardsbg blockquote card-body shadow-sm rounded d-flex flex-column px-lg-5">
-                                        <p class="fs-1 text-secondary o-25 mb-0"><i class="fas fa-quote-right"></i></p>
-                                        <p class="fs-6">Explicabo facere maxime fuga voluptates saepe tenetur veniam
-                                            iste, vitae maiores. Quis voluptates unde culpa</p>
-                                        <p class="text-secondary text-decoration-none fs-sm mt-auto mb-3 o-75">
-                                            &mdash;<span class="fw-bold"> John Doe</span> - Software Deveoloper</p>
-                                        <div class="img px-3 px-lg-4">
-                                            <img loading="lazy" src="Views/img/LOGO02.png" class="img rounded-circle"
-                                                alt="Image" />
-                                        </div>
-                                    </blockquote>
-                                </figure>
-                                <!-- /.card -->
-                            </div>
-                            <!-- /.col-6 col-md d-flex align-items-stretch -->
-                        </div>
-                        <!-- /.row testimonials  -->
-                    </div>
-                    <!-- /.container-xl position-relative -->
-                </div>
-                <!-- /.swiper-slide -->
             </div>
             <!-- /.swiper-wrapper -->
         </div>
-        <!-- /#testimonials-swiper-1-swiper.swiper -->
 
-        <div class="swiper-navigation-container container-xl">
-            <a href="#testimonials-swiper-1-swiper"
-                class="swiper-button-next btn btn-primary btn-default shadow-none o-50 o-100-hover"><i
-                    class="d-inline-block fas fa-angle-right"></i></a>
-            <a href="#testimonials-swiper-1-swiper"
-                class="swiper-button-prev btn btn-primary btn-default shadow-none o-50 o-100-hover"><i
-                    class="d-inline-block fas fa-angle-left"></i></a>
-        </div>
-        <!-- /.swiper-navigation container-xl -->
 
         <div class="swiper-pagination-container container-xl">
             <div class="d-flex flex-row justify-content-start">
                 <div data-swiper-id="#testimonials-swiper-1-swiper" class="swiper-pagination w-auto bottom-0"
                     data-swiper-pagination-limit="2"></div>
 
-                <a href="Views/Perfil/User/testimonials.php"
-                    class="btn btn-link btn-sm btn-more text-uppercase fw-bold shadow-none o-50 o-100-hover ms-3 trans-base px-0">Todos
+                <a href="index.php?access=U-103" class="btn btn-link btn-sm btn-more text-uppercase fw-bold shadow-none o-50 o-100-hover ms-3
+                    trans-base px-0">Todos
                     los testimonios<i class="fas fa-long-arrow-alt-right"></i></a>
             </div>
         </div>
