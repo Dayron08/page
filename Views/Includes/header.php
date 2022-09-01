@@ -121,9 +121,17 @@
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDocs" role="button"
                                 data-bs-toggle="dropdown">Cuenta</a>
                             <ul class="nav-dropdown-menu dropdown-menu dropdown-menu-end shadow" data-bs-popper>
+                               <!-- <?php
+                            //    if($_SESSION['ID_REGISTRO_PERSONA'] != null ){
+
+                            //     echo ("diferente a null");
+
+                            //    } 
+                               
+                               
+                               ?> -->
                             
                                 <input type="hidden" placeholder="" id="txt_id" value=<?php echo $_SESSION['ID_REGISTRO_PERSONA']; ?> >
-
 
                                 <li><a id="btn_profile"class="dropdown-item" href="../User/my_profile.php">Perfil</a></li>
 
