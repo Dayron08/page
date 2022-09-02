@@ -948,9 +948,6 @@ function deleteTestimonial(idTesti) {
                             "<p class=\"fs-1 text-secondary o-25 mb-0\"><i class=\"fas fa-quote-right\"></i></p>" +
                             "<p class=\"fs-6\">" + testimonials.dsc + "</p>" +
                             "<p class=\"text-secondary text-decoration-none fs-sm mt-auto mb-3 o-75\">&mdash;<span class=\"fw-bold\">-" + testimonials.name + "</span> " + testimonials.lastname + "</p>" +
-                            "<div class=\"img px-3 px-lg-4\">" +
-                            "<img loading=\"lazy\" src=\"http://assets.coolorize.com/avatar/256x256/ariel-lustre-368240.jpg\" class=\"img rounded-circle\" alt=\"Image\" />" +
-                            "</div>" +
                             "</blockquote>" +
                             "</figure>" +
                             "</div>";
