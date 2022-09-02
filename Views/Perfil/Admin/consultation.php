@@ -2,7 +2,7 @@
 
 <section id="page-hero" class="section section__inverse justify-content-center pt-6 pb-4 pb-lg-5 pb-xl-6">
     <div class="bg bg-img position-absolute" data-bg-img=".img">
-        <img loading="lazy" src="Views/img/events_wallpaper-2.jpg" class="img" alt="Image" />
+        <img loading="lazy" src="Views/img/events_wallpaper.jpg" class="img" alt="Image" />
     </div>
     <!-- /.bg bg-img position-absolute -->
 
@@ -16,9 +16,9 @@
                 <div class="col-12 col-md section-content text-center text-md-start">
                     <p class="mb-0 text-white"><strong>80</strong>&nbsp;Resultados&nbsp;Encontrados</p>
                 </div> -->
-                <!-- /.col-12 col-md -->
- 
-                <!-- <div class="col col-md-auto text-md-end ms-md-auto">
+        <!-- /.col-12 col-md -->
+
+        <!-- <div class="col col-md-auto text-md-end ms-md-auto">
                     <div class="btn-group btn-select-dropdown w-100">
                         <span class="input-group-text fs-sm rounded-0 rounded-start py-0">Ordenar por</span>
 
@@ -36,9 +36,9 @@
                     </div>
                     
                 </div> -->
-                <!-- /.col col-md-auto text-md-end ms-md-auto -->
+        <!-- /.col col-md-auto text-md-end ms-md-auto -->
 
-            <!-- </div>
+        <!-- </div>
             
         </div> -->
         <!-- /.section-filter -->

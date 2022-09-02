@@ -48,7 +48,7 @@ $(document).ready(function () {
                 "<div class=\"swiper-slide w-330px h-330px pe-4 d-flex\">" +
                 "<div class=\"card shadow-sm shadow-hover trans-base zoom-bg-img o-hover-all\">" +
                 "<div class=\"card-img bg bg-img\" data-bg-img=\".img\">" +
-                "<img alt=\"Image\" src=\"Views/img/" + images.image + "\" style=\"width: 330px; height : 330px;\"/>" +
+                "<img alt=\"Image\" src=\"Views/img/church/" + images.image + "\" style=\"width: 330px; height : 330px;\"/>" +
                 "<div class=\"overlay bg-dark position-absolute o-25 o-50-hover\"></div>" +
                 "</div>" +
                 "</div>" +
