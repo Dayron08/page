@@ -41,7 +41,7 @@
                                         <dt class="fw-normal fs-sm text-uppercase text-secondary">N&uacute;mero de
                                             identificaci&oacute;n</dt>
                                         <input type="text" class="form-control shadow-none mt-3 mb-3" id="txt_ide"
-                                            value="">
+                                            value="" disabled>
                                     </dl>
                                     <!-- /.col-6 -->
 
