@@ -202,7 +202,11 @@ class SingUp extends Connection_Mysql {
 			'".$this->imageEvent."',
 			'".$this->dscEvent."',
 			'".$this->dateEvent."');"; 
-		$this->execute($this->query);
+			if($this->execute($this->query)){
+				return true;
+			}else{
+				return false;
+			}
 
 	} 
 

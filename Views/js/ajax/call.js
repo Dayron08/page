@@ -2,7 +2,7 @@ $(document).ready(function () {
 
 
     // update
-    $.getJSON("../../js/json/Event.json", function (data) {
+    $.getJSON("Views/js/json/Event.json", function (data) {
         $.each(data, function (i, event) {
 
 
@@ -20,7 +20,7 @@ $(document).ready(function () {
     });
 
     // update profile
-    $.getJSON("../../js/json/profile.json", function (data) {
+    $.getJSON("Views/js/json/profile.json", function (data) {
         $.each(data, function (i, profile) {
 
             $("#txt_user").val(profile.name + " " + profile.lastname);
@@ -330,7 +330,7 @@ $(document).ready(function () {
             var t =
                 "<div class=\"col-12 col-sm-6 col-md-3 d-flex\">" +
                 "<div class=\"card\" style=\"width: 18rem;\">" +
-                "<img style=\"width: 289px; height: 200px;\" src=\"Views/img/" + events.img + "\" class=\"card-img-top\" alt=\"...\">" +
+                "<img style=\"width: 289px; height: 200px;\" src=\"Views/img/events/" + events.img + "\" class=\"card-img-top\" alt=\"...\">" +
                 "<div class=\"card-body\">" +
                 "<h5 class=\"card-title\">" + events.nameEvent + "</h5>" +
                 "<div class=\"card-footer bg-transparent fs-sm\"><span class=\"o-50\"> Por </span> <a " +
@@ -340,7 +340,7 @@ $(document).ready(function () {
                 "</div>" +
                 "<div class=\"d-grid gap-2 d-md-flex justify-content-md-end\">" +
                 "<button class=\"btn btn-link me-md-1 mr-1\" type=\"button\"><a id=\"btn_delete\" onclick=\"deleteEvent('" + events.id + "')\" class=\"fa fa-trash fa-lg\" href=\"#\"></a></button>" +
-                "<button class=\"btn btn-link\" type=\"submit\"><a id=\"btn_update\" onclick=\"getEvent('" + events.id + "')\" href=\"../../Perfil/Admin/eventupdate.php\" class=\"fa fa-pen fa-lg\" ></a></button>" +
+                "<button class=\"btn btn-link\" type=\"submit\"><a id=\"btn_update\" onclick=\"getEvent('" + events.id + "')\" href=\"index.php?access=A-216\" class=\"fa fa-pen fa-lg\" ></a></button>" +
                 "</div>" +
                 "</div>" +
                 "</div>" +
@@ -365,7 +365,7 @@ $(document).ready(function () {
             var t =
                 "<div class=\"col-12 col-sm-6 col-md-3 d-flex\">" +
                 "<div class=\"card\" style=\"width: 18rem;\">" +
-                "<img style=\"width: 289px; height: 200px;\" src=\"Views/img/" + events.img + "\" class=\"card-img-top\" alt=\"...\">" +
+                "<img style=\"width: 289px; height: 200px;\" src=\"Views/img/events/" + events.img + "\" class=\"card-img-top\" alt=\"...\">" +
                 "<div class=\"card-body\">" +
                 "<h5 class=\"card-title\">" + events.nameEvent + "</h5>" +
                 "<div class=\"card-footer bg-transparent fs-sm\"><span class=\"o-50\"> Por </span> <a " +
@@ -539,7 +539,6 @@ $(document).ready(function () {
 
 
     $("#btn_add").click(function (e) {
-
         var txt_managerName = $("#txt_event_managerName").val();
         if (txt_managerName == 0) {
             $("#txt_managerName").text("✘ Espacio obligatorio");
@@ -577,8 +576,8 @@ $(document).ready(function () {
                             return false;
                         } else {
                             $("#txt_eventtime").text("");
-                            var txt_image = $("#txt_event_image").val();
-                            if (txt_image == '') {
+                            var event_image_file = $("#event_image_file").val();
+                            if (event_image_file == '') {
                                 $("#txt_eventimg").text("✘ Espacio obligatorio");
                                 $("#txt_eventimg").css({ "color": "red", "font-family": "Times New Roman', Times, serif;" });
                                 return false;
@@ -595,13 +594,27 @@ $(document).ready(function () {
         $.ajax({
             url: "Controllers/insertEvent.php",
             method: "POST",
-            data: { txt_managerName: txt_managerName, txt_nameEvent: txt_nameEvent, txt_desc: txt_desc, txt_date: txt_date, txt_time: txt_time, txt_image: txt_image },
+            data: { txt_managerName: txt_managerName, txt_nameEvent: txt_nameEvent, txt_desc: txt_desc, txt_date: txt_date, txt_time: txt_time, event_image_file: event_image_file },
             success: function (dataresponse, statustext, response) {
-                if (statustext == "success") {
-                    console.log("exitosamente")
+                var event_image_file = $("#event_image_file").prop('files')[0];
+                var form_data = new FormData();
+                form_data.append('file', event_image_file);
+
+                $.ajax({
+                    url: 'Controllers/insertEventFolder.php', // <-- point to server-side PHP script 
+                    dataType: 'text',  // <-- what to expect back from the PHP script, if anything
+                    cache: false,
+                    contentType: false,
+                    processData: false,
+                    data: form_data,
+                    method: "POST",
+                    success: function (dataresponse, statustext, response) {
+
+                    }
 
 
-                }
+                });
+
             },
             error: function (request, errorcode, errortext) {
                 console.log("errorrrrrr")
@@ -612,7 +625,6 @@ $(document).ready(function () {
     });
 
 
-    // $("#btn_Insertimg").click(function (e) {
 
 
 
@@ -667,12 +679,24 @@ $(document).ready(function () {
             },
 
             success: function (dataresponse, statustext, response) {
-                if (statustext == "success") {
-                    $("#respuesta").html(dataresponse);
+                var img_file = $("#txt_Eventimg").prop('files')[0];
+                var form_data = new FormData();
+                form_data.append('file', img_file);
 
-                    location.href = "../Admin/events.php";
-                    // window.location("../Admin/events.php")
-                }
+                $.ajax({
+                    url: 'Controllers/update_Event_Folder.php', // <-- point to server-side PHP script 
+                    dataType: 'text',  // <-- what to expect back from the PHP script, if anything
+                    cache: false,
+                    contentType: false,
+                    processData: false,
+                    data: form_data,
+                    method: "POST",
+                    success: function (dataresponse, statustext, response) {
+
+                    }
+
+
+                });
             },
             error: function (request, errorcode, errortext) {
                 $("#respuesta").html(errorcode);
@@ -884,9 +908,8 @@ $(document).ready(function () {
 
     });
 
-
     $("#btn_Insertimg").click(function (e) {
-        e.preventDefault();
+        // e.preventDefault();
         var img_file_name = $("#img_file").val();
         var sel_category = $("#sel_category").val();
         $.ajax({
@@ -920,6 +943,7 @@ $(document).ready(function () {
         });
 
     });
+
 
 });
 
@@ -990,7 +1014,7 @@ function deleteEvent(idEvent) {
                         var t =
                             "<div class=\"col-12 col-sm-6 col-md-3 d-flex\">" +
                             "<div class=\"card\" style=\"width: 18rem;\">" +
-                            "<img style=\"width: 289px; height: 200px;\" src=\"Views/img/" + events.img + "\" class=\"card-img-top\" alt=\"...\">" +
+                            "<img style=\"width: 289px; height: 200px;\" src=\"Views/img/events/" + events.img + "\" class=\"card-img-top\" alt=\"...\">" +
                             "<div class=\"card-body\">" +
                             "<h5 class=\"card-title\">" + events.nameEvent + "</h5>" +
                             "<div class=\"card-footer bg-transparent fs-sm\"><span class=\"o-50\"> Por </span> <a " +

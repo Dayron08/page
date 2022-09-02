@@ -164,9 +164,11 @@ class Resources extends Connection_Mysql {
 	} 
 
 	public function search_folder() {
-		$this->query = "SELECT CODIGO_IMG FROM GALERIA WHERE IMG_PATH = '".$this->image."';";	
+		$this->query = "CALL P_VER_CAT_IMG(  
+			'".$this->image."');";   
 		$this->execute($this->query);
 		$this->result = mysqli_fetch_assoc($this->result);
 		return $this->result;
+		
 	} 
 }

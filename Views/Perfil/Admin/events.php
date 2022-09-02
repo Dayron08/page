@@ -93,9 +93,9 @@
                         </div>
 
                         <div class="mb-3">
-                            <label for="event_image" class="form-label fs-sm fw-bold">Insertar nombre de la
+                            <label for="event_image_file" class="form-label fs-sm fw-bold">Insertar nombre de la
                                 Imagen</label>
-                            <input type="text" class="form-control shadow-none" id="txt_event_image" />
+                            <input type="file" class="form-control shadow-none" id="event_image_file" />
                             <p id="txt_eventimg"></p>
                         </div>
 
