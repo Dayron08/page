@@ -886,7 +886,6 @@ $(document).ready(function () {
 
 
     $("#btn_Insertimg").click(function (e) {
-        e.preventDefault();
         var img_file_name = $("#img_file").val();
         var sel_category = $("#sel_category").val();
         $.ajax({
