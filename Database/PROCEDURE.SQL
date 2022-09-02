@@ -891,4 +891,128 @@ DELIMITER;
 
 CALL P_VER_NOMBRE_ROL('305200304');
 
+
+----------------------------------------------------------VIDEOS--------------------------------------------------------------------------
+--INSERTAR
+DELIMITER $$
+USE PacVi $$
+CREATE OR REPLACE PROCEDURE P_INSERTAR_VIDEO_ENVIVOS
+    (
+        IN P_CATEGORIA VARCHAR(300),
+        IN P_URL VARCHAR(300)
+        
+    )
+    BEGIN
+            INSERT INTO VIDEOS_ENVIVOS     
+            (
+                CATEGORIA,
+                URL, 
+                FECHA 
+            )
+            VALUES 
+            (
+                P_CATEGORIA,
+                P_URL,
+                CONVERT(current_timestamp(),DATE)
+            );
+            COMMIT;
+    END$$
+DELIMITER ;
+--PRUEBA EXITOSA
+CALL P_INSERTAR_VIDEO_ENVIVOS('E','EN VIVO6 ');
+
+-- ELIMINAR 
+DELIMITER $$
+USE PacVi $$
+CREATE OR REPLACE PROCEDURE P_ELIMINAR_VIDEO
+    (
+        IN P_ID_VIDEO VARCHAR(30)
+    )
+    BEGIN
+        DELETE FROM VIDEOS_ENVIVOS WHERE
+            ID_VIDEO = P_ID_VIDEO AND CATEGORIA= 'V';
+    END$$
+DELIMITER ;
+--PRUEBA EXITOSA
+CALL P_ELIMINAR_VIDEO('14');
+
+
+
+
+
+--CONSULTAS
+--VIDEOS MAS ANTIGUOS
+DELIMITER $$
+USE PacVi $$
+CREATE OR REPLACE PROCEDURE P_VER_VIDEO_FECHA_ANTIGUO()
+    BEGIN
+        SELECT
+            URL AS DIRECCION_DE_VIDEO FROM VIDEOS_ENVIVOS 
+            WHERE CATEGORIA ='V' 
+            ORDER BY  FECHA ASC ;
+    END$$
+DELIMITER;
+--VIDEO MAS RECIENTE ESTE ES MAS A UTILIZAR
+DELIMITER $$
+USE PacVi $$
+CREATE OR REPLACE PROCEDURE P_VER_VIDEO_RECIENTE()
+    BEGIN
+        SELECT
+            ID_VIDEO,URL AS DIRECCION_DE_VIDEO FROM VIDEOS_ENVIVOS
+        WHERE CATEGORIA ='V' ;
+    END$$
+DELIMITER;
+--PRUEBA EXITOSA
+CALL P_VER_VIDEO_RECIENTE();
+
+----VER VIDEO POR CALENDER
+DELIMITER $$
+USE PacVi $$
+CREATE OR REPLACE PROCEDURE P_VER_VIDEO_POR_FECHA
+    (
+        IN P_FECHA DATE
+    )
+    BEGIN
+        DECLARE BUSQUEDAD_F DATE;
+        SET BUSQUEDAD_F :=P_FECHA;
+        SELECT
+            URL AS DIRECCION_DE_VIDEO,FECHA AS FECHA_DE_PUBLICACION
+        FROM VIDEOS_ENVIVOS
+        WHERE FECHA = BUSQUEDAD_F AND CATEGORIA='V';
+    END$$
+DELIMITER;
+------------PRUEBA EXITOSA
+CALL P_VER_VIDEO_POR_FECHA('2022/08/29');
+
+--------------------------------------------------------ENVIVO
+---------PD PARA ELIMINAR
+DELIMITER $$
+USE PacVi $$
+CREATE OR REPLACE PROCEDURE P_ELIMINAR_ENVIVO()
+    BEGIN
+        DELETE FROM VIDEOS_ENVIVOS WHERE CATEGORIA='E' ;
+    END$$
+DELIMITER ;
+
+DELIMITER $$
+USE PacVi $$
+CREATE OR REPLACE PROCEDURE P_ELIMINAR_ENVIVO_ID
+(
+    IN P_ID_VIDEO VARCHAR(30)
+)
+    BEGIN
+        DELETE FROM VIDEOS_ENVIVOS WHERE 
+        ID_VIDEO = P_ID_VIDEO AND CATEGORIA='E' ;
+    END$$
+DELIMITER ;
+
+---------PD PARA PINTAR 
+DELIMITER$$
+USE PacVi $$
+CREATE OR REPLACE PROCEDURE P_VER_ENVIVO()
+    BEGIN
+      SELECT ID_VIDEO, URL AS DIRECCION_DE_EN_VIVO FROM VIDEOS_ENVIVOS
+      WHERE CATEGORIA='E';
+    END$$
+DELIMITER; 
 ----------------------------------------------------------------------FIN--------------------------------------------------------------------
