@@ -394,7 +394,7 @@ $(document).ready(function () {
 
         // var idUser= "305200304";
         var idUser = $("#txt_id").val();
-        // alert (idUser)
+       
 
         $.ajax({
             url: "Controllers/get_profile.php",
@@ -743,7 +743,10 @@ $(document).ready(function () {
                     $("#respuesta").html(dataresponse);
                     alert(dataresponse)
 
+        
+
                 }
+
             },
             error: function (request, errorcode, errortext) {
                 $("#respuesta").html(errorcode);

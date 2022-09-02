@@ -177,7 +177,7 @@ $(document).ready(function () {
                             showConfirmButton: false,
                             timer: 400
                         })
-                        location.href = "Views/Perfil/User/home.php";
+                        location.href = "index.php?access=U-101";
                     } else if (dataresponse == 1) {
                         Swal.fire({
                             position: 'top-end',
@@ -186,7 +186,7 @@ $(document).ready(function () {
                             showConfirmButton: false,
                             timer: 400
                         })
-                        location.href = "Views/Perfil/Admin/home.php";
+                        location.href = "index.php?access=A-201";
                     } else if (dataresponse == 2 || dataresponse == null) {
                         alert("Datos no encontrados");
                         location.href = "#";
