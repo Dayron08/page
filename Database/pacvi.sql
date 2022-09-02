@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 02-09-2022 a las 01:41:15
+-- Tiempo de generación: 02-09-2022 a las 03:05:53
 -- Versión del servidor: 10.4.20-MariaDB
 -- Versión de PHP: 8.0.9
 
@@ -124,6 +124,11 @@ CREATE DEFINER=`root`@`localhost` PROCEDURE `P_ELIMINAR_ENVIVO` ()  BEGIN
         DELETE FROM VIDEOS_ENVIVOS WHERE CATEGORIA='E' ;
     END$$
 
+CREATE DEFINER=`root`@`localhost` PROCEDURE `P_ELIMINAR_ENVIVO_ID` (IN `P_ID_VIDEO` VARCHAR(30))  BEGIN
+        DELETE FROM VIDEOS_ENVIVOS WHERE 
+        ID_VIDEO = P_ID_VIDEO AND CATEGORIA='E' ;
+    END$$
+
 CREATE DEFINER=`root`@`localhost` PROCEDURE `P_ELIMINAR_EVENTO` (IN `P_ID_EVENT` INT)  BEGIN
         DELETE FROM EVENTOS where
             ID_EVENT = P_ID_EVENT;
@@ -140,8 +145,8 @@ CREATE DEFINER=`root`@`localhost` PROCEDURE `P_ELIMINAR_PERSONA_TESTIMONIO` (IN 
     END$$
 
 CREATE DEFINER=`root`@`localhost` PROCEDURE `P_ELIMINAR_VIDEO` (IN `P_ID_VIDEO` VARCHAR(30))  BEGIN
-        DELETE FROM VIDEOS where
-            ID_VIDEO = P_ID_VIDEO;
+        DELETE FROM VIDEOS_ENVIVOS WHERE
+            ID_VIDEO = P_ID_VIDEO AND CATEGORIA= 'V';
     END$$
 
 CREATE DEFINER=`root`@`localhost` PROCEDURE `P_HISTORICO_EVENTO` ()  BEGIN
@@ -330,6 +335,22 @@ CREATE DEFINER=`root`@`localhost` PROCEDURE `P_INSERTAR_VIDEO` (IN `P_URL` VARCH
             COMMIT;
     END$$
 
+CREATE DEFINER=`root`@`localhost` PROCEDURE `P_INSERTAR_VIDEO_ENVIVOS` (IN `P_CATEGORIA` VARCHAR(300), IN `P_URL` VARCHAR(300))  BEGIN
+            INSERT INTO VIDEOS_ENVIVOS     
+            (
+                CATEGORIA,
+                URL, 
+                FECHA 
+            )
+            VALUES 
+            (
+                P_CATEGORIA,
+                P_URL,
+                CONVERT(current_timestamp(),DATE)
+            );
+            COMMIT;
+    END$$
+
 CREATE DEFINER=`root`@`localhost` PROCEDURE `P_VALI_LOGIN` (IN `P_CORREO` VARCHAR(50), IN `P_PASSWORD` VARCHAR(50))  BEGIN
             SELECT
                 TP.ID_TIPO,
@@ -354,6 +375,11 @@ CREATE DEFINER=`root`@`localhost` PROCEDURE `P_VER_CONSULTAS_BY_FECHA` ()  BEGIN
         SELECT FECHA_ACTUAL AS FECHA_DE_RECIBIDO,ID_CONSULTAS, NOMBRE,APPELLIDOS,CORREO,ASUNTO,DSC_ASUNTO
         FROM CONSULTAS 
         ORDER BY FECHA_ACTUAL ASC;
+    END$$
+
+CREATE DEFINER=`root`@`localhost` PROCEDURE `P_VER_ENVIVO` ()  BEGIN
+      SELECT ID_VIDEO, URL AS DIRECCION_DE_EN_VIVO FROM VIDEOS_ENVIVOS
+      WHERE CATEGORIA='E';
     END$$
 
 CREATE DEFINER=`root`@`localhost` PROCEDURE `P_VER_EVENTO` (IN `P_ID_EVENT` INT)  BEGIN
@@ -524,9 +550,9 @@ CREATE DEFINER=`root`@`localhost` PROCEDURE `P_VER_USUARIO_PERFIL` (IN `P_ID_REG
 
 CREATE DEFINER=`root`@`localhost` PROCEDURE `P_VER_VIDEO_FECHA_ANTIGUO` ()  BEGIN
         SELECT
-            URL AS DIRECCION_DE_VIDEO
-        FROM VIDEOS 
-        ORDER BY  FECHA ASC;
+            URL AS DIRECCION_DE_VIDEO FROM VIDEOS_ENVIVOS 
+            WHERE CATEGORIA ='V' 
+            ORDER BY  FECHA ASC ;
     END$$
 
 CREATE DEFINER=`root`@`localhost` PROCEDURE `P_VER_VIDEO_POR_FECHA` (IN `P_FECHA` DATE)  BEGIN
@@ -534,14 +560,14 @@ CREATE DEFINER=`root`@`localhost` PROCEDURE `P_VER_VIDEO_POR_FECHA` (IN `P_FECHA
         SET BUSQUEDAD_F :=P_FECHA;
         SELECT
             URL AS DIRECCION_DE_VIDEO,FECHA AS FECHA_DE_PUBLICACION
-        FROM VIDEOS
-        WHERE FECHA = BUSQUEDAD_F;
+        FROM VIDEOS_ENVIVOS
+        WHERE FECHA = BUSQUEDAD_F AND CATEGORIA='V';
     END$$
 
 CREATE DEFINER=`root`@`localhost` PROCEDURE `P_VER_VIDEO_RECIENTE` ()  BEGIN
         SELECT
-            URL AS DIRECCION_DE_VIDEO
-        FROM VIDEOS;
+            ID_VIDEO,URL AS DIRECCION_DE_VIDEO FROM VIDEOS_ENVIVOS
+        WHERE CATEGORIA ='V' ;
     END$$
 
 DELIMITER ;
@@ -568,7 +594,8 @@ CREATE TABLE `consultas` (
 
 INSERT INTO `consultas` (`ID_CONSULTAS`, `FECHA_ACTUAL`, `NOMBRE`, `APPELLIDOS`, `CORREO`, `ASUNTO`, `DSC_ASUNTO`) VALUES
 (1, '2022-07-27 22:36:31', 'Dayron', 'Luna Gamboa', 'ldayron500@gmail.com', '', 'Me podrían brindar información sobre los horarios de las reuniones, saludos.'),
-(3, '2022-09-01 05:44:54', 'RANDALL', 'j', 'ran@676gmail.com', 'lo', 'hhhhhhhhhhhhhhhh');
+(3, '2022-09-01 05:44:54', 'RANDALL', 'j', 'ran@676gmail.com', 'lo', 'hhhhhhhhhhhhhhhh'),
+(4, '2022-09-02 00:24:28', 'Luis', 'Redondo', 'm@gmail.com', 'Matricula', 'hola queria preguntar sobre ');
 
 -- --------------------------------------------------------
 
@@ -592,10 +619,6 @@ CREATE TABLE `eventos` (
 --
 
 INSERT INTO `eventos` (`ID_EVENT`, `ENCARGADO`, `NOMBRE_EVENTO`, `HORA_EVENTO`, `IMG_PATH`, `DSC_EVENTO`, `FECHA_EVENTO`, `FECHA_ACTUAL`) VALUES
-(1, 'ALAN', 'ORACION NIÑOS', '07:30:00', '../../', 'ORACION POR TODOS LAS PERSONAS', '2022-07-10', '2022-07-29'),
-(2, 'MARCO', 'ORACION ', '19:30:00', '../../', 'ORACION POR TODOS LAS PERSONAS', '2022-07-15', '2022-07-29'),
-(3, 'VINICIO', 'ORACION NIÑOS', '07:30:00', '../../', 'ORACION POR TODOS LAS PERSONAS', '2022-07-27', '2022-07-29'),
-(4, 'JOSE', 'ORACION NIÑOS', '15:30:00', '../../', 'ORACION POR TODOS LAS PERSONAS', '2022-07-13', '2022-07-29'),
 (6, 'Josue', 'TCU', '19:40:00', 'contact_wallpaper.jpg', 'JJJJJJ', '2022-09-21', '2022-09-01');
 
 -- --------------------------------------------------------
@@ -616,8 +639,7 @@ CREATE TABLE `galeria` (
 --
 
 INSERT INTO `galeria` (`ID_IMAGEN`, `CODIGO_IMG`, `IMG_PATH`, `FECHA`) VALUES
-(1, 'C-P', 'image_01.jpg', '2022-07-28'),
-(2, 'C-N', 'image_03.JPG', '2022-07-28');
+(4, 'C-P', 'image_01.jpg', NULL);
 
 -- --------------------------------------------------------
 
@@ -688,7 +710,6 @@ CREATE TABLE `persona_testimonios` (
 --
 
 INSERT INTO `persona_testimonios` (`ID_TESTI`, `FECHA_ACTUAL`, `DSC_TESTIMONIO`, `ID_REGISTRO_PERSONA`) VALUES
-(1, '2022-08-18 02:43:48', 'DIOS ME AYUDO A CONSEGUIR PAZ', '305200304'),
 (4, '2022-09-01 05:39:02', 'Una serie de experiencias reales de la salvación de Dios en desastres y enfermedades. Lee estos testimonios cristianos para fortalecer tu fe y obtener nuevas inspiraciones. Últimas noticias de Dios. ¡', '30528745');
 
 -- --------------------------------------------------------
@@ -728,7 +749,7 @@ CREATE TABLE `videos_envivos` (
 --
 
 INSERT INTO `videos_envivos` (`ID_VIDEO`, `CATEGORIA`, `URL`, `FECHA`) VALUES
-(1, 'V', '../../1', '2022-07-28'),
+(1, 'V', 'Qee7spAIHuQ', '2022-07-28'),
 (2, 'V', '../../2', '2022-07-28');
 
 --
@@ -794,19 +815,19 @@ ALTER TABLE `videos_envivos`
 -- AUTO_INCREMENT de la tabla `consultas`
 --
 ALTER TABLE `consultas`
-  MODIFY `ID_CONSULTAS` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `ID_CONSULTAS` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT de la tabla `eventos`
 --
 ALTER TABLE `eventos`
-  MODIFY `ID_EVENT` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `ID_EVENT` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT de la tabla `galeria`
 --
 ALTER TABLE `galeria`
-  MODIFY `ID_IMAGEN` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `ID_IMAGEN` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT de la tabla `persona_contacto`
@@ -818,7 +839,7 @@ ALTER TABLE `persona_contacto`
 -- AUTO_INCREMENT de la tabla `persona_testimonios`
 --
 ALTER TABLE `persona_testimonios`
-  MODIFY `ID_TESTI` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `ID_TESTI` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT de la tabla `videos_envivos`
