@@ -150,7 +150,7 @@
                                 <li><a class="dropdown-item" href="index.php?access=A-212">Iglesia</a>
                                 </li>
 
-                                <li><a class="dropdown-item" href="">Consultas</a></li>
+                                <li><a class="dropdown-item" href="index.php?access=A-215">Consultas</a></li>
 
                             </ul>
                         </li>
