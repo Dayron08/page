@@ -8,11 +8,11 @@ $(document).ready(function () {
         if (flagg == 3) {
             input.type = 'text';
 
-            eyes.src = '../../img/eyes2 .png'; //open eyes
+            eyes.src = 'Views/img/eyes2 .png'; //open eyes
             flagg = 4;
         } else {
             input.type = 'password';
-            eyes.src = '../../img/eyes1 .png'; //close eyes
+            eyes.src = 'Views/img/eyes1 .png'; //close eyes
             flagg = 3;
         }
     }
@@ -25,11 +25,11 @@ $(document).ready(function () {
         if (flag == 0) {
             inputt.type = 'text';
 
-            eye.src = '../../img/eyes2 .png'; //open eyes
+            eye.src = 'Views/img/eyes2 .png'; //open eyes
             flag = 1;
         } else {
             inputt.type = 'password';
-            eye.src = '../../img/eyes1 .png'; //close eyes
+            eye.src = 'Views/img/eyes1 .png'; //close eyes
 
             flag = 0;
         }

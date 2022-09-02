@@ -679,6 +679,7 @@ $(document).ready(function () {
             },
 
             success: function (dataresponse, statustext, response) {
+
                 var img_file = $("#txt_Eventimg").prop('files')[0];
                 var form_data = new FormData();
                 form_data.append('file', img_file);
@@ -697,6 +698,7 @@ $(document).ready(function () {
 
 
                 });
+                location.href = "index.php?access=A-207";
             },
             error: function (request, errorcode, errortext) {
                 $("#respuesta").html(errorcode);

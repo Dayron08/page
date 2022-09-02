@@ -1,14 +1,12 @@
 <?php 
                                 
     // session_destroy();
-    // session_start();
+    session_start();
 
     // session_start();
     // $_SESSION['ID_REGISTRO_PERSONA'] = null;
 
 
-   
-                      
 ?>
 
 <!DOCTYPE html>
