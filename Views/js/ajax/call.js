@@ -923,7 +923,7 @@ $(document).ready(function () {
 });
 
 function deleteTestimonial(idTesti) {
-     
+
     $.ajax({
         url: "Controllers/deleteTestimonial.php",
         method: "POST",

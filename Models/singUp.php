@@ -165,12 +165,8 @@ class SingUp extends Connection_Mysql {
 			'".$this->user_id."', 
 			'".$this->name."',
 			'".$this->surname."',
-			NULL,
-			NULL,
 			'".$this->password."',
-			'".$this->gmail."',
-			NULL,
-			NULL);";
+			'".$this->gmail."');";
 			
 		$this->execute($this->query);
 
@@ -215,13 +211,9 @@ class SingUp extends Connection_Mysql {
 			'".$this->user_id."', 
 			'".$this->name."',
 			'".$this->surname."',
-			NULL,
-			NULL,
 			'".$this->rol."',
 			'".$this->password."',
-			'".$this->gmail."',
-			NULL,
-			NULL);";
+			'".$this->gmail."');";
 			
 		$this->execute($this->query);
 
