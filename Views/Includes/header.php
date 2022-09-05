@@ -7,8 +7,6 @@
     // $_SESSION['ID_REGISTRO_PERSONA'] = null;
 
 
-   
-                      
 ?>
 
 <!DOCTYPE html>

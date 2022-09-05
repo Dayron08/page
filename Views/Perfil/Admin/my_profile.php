@@ -11,9 +11,10 @@
 
     <div class="container-xl position-relative section-content text-center ">
         <strong> <input class="display-5 text-white text-center mt-3 mt-lg-4" id="txt_user"
-                style="background-color: transparent;"></strong>
+                style="background-color: transparent;" disabled></strong>
 
-        <input class="lead mb-lg-5" id="txt_rol">
+        <br>
+        <input class="lead mb-lg-5 text-white text-center" id="txt_rol" style="background-color: transparent;" disabled>
 
 
     </div>
@@ -40,7 +41,10 @@
                                         <dt class="fw-normal fs-sm text-uppercase text-secondary">N&uacute;mero de
                                             identificaci&oacute;n</dt>
                                         <input type="text" class="form-control shadow-none mt-3 mb-3" id="txt_ide"
-                                            value="">
+                                            <<<<<<< HEAD value="">
+                                        =======
+                                        value="" disabled>
+                                        >>>>>>> main
                                     </dl>
                                     <!-- /.col-6 -->
 

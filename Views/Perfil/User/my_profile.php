@@ -4,7 +4,7 @@
 <section id="page-hero"
     class="section section__inverse justify-content-center py-5 py-lg-6 mb-n5 vh-350 h-lg-1000px min-h-1000px">
     <div class="bg bg-img position-absolute" data-bg-img=".img">
-        <img loading="lazy" src="../../img/home.jpg" class="img" alt="Image" />
+        <img loading="lazy" src="Views/img/home.jpg" class="img" alt="Image" />
 
         <div class="overlay bg-dark position-absolute o-50"></div>
     </div>
@@ -12,9 +12,9 @@
 
     <div class="container-xl position-relative section-content text-center ">
         <strong> <input class="display-5 text-white text-center mt-3 mt-lg-4" id="txt_user"
-                style="background-color: transparent;"></strong>
+                style="background-color: transparent;" disabled></strong>
         <br>
-        <input class="lead mb-lg-5 text-white text-center" id="txt_rol" style="background-color: transparent;">
+        <input class="lead mb-lg-5 text-white text-center" id="txt_rol" style="background-color: transparent;" disabled>
 
 
     </div>
@@ -41,7 +41,7 @@
                                         <dt class="fw-normal fs-sm text-uppercase text-secondary">N&uacute;mero de
                                             identificaci&oacute;n</dt>
                                         <input type="text" class="form-control shadow-none mt-3 mb-3" id="txt_ide"
-                                            value="">
+                                            value="" disabled>
                                     </dl>
                                     <!-- /.col-6 -->
 

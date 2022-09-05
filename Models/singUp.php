@@ -202,7 +202,11 @@ class SingUp extends Connection_Mysql {
 			'".$this->imageEvent."',
 			'".$this->dscEvent."',
 			'".$this->dateEvent."');"; 
-		$this->execute($this->query);
+			if($this->execute($this->query)){
+				return true;
+			}else{
+				return false;
+			}
 
 	} 
 
@@ -355,9 +359,6 @@ class SingUp extends Connection_Mysql {
 
 	}
  
-		
-
-
 
 
 	public function readEvents() {
@@ -379,6 +380,56 @@ class SingUp extends Connection_Mysql {
 		return $events ;
 
 	} 
+
+	public function getEvent() {
+		 
+		$this->query = "CALL P_VER_EVENTO(
+		'".$this->idEvent."');";
+		
+		$this->execute($this->query);
+
+	   $event = array();
+		while ($result = mysqli_fetch_assoc($this->result)) {
+			$event []= array(
+				"id"=> $result["ID_EVENT"],
+				"nameEvent"=> $result["NOMBRE_EVENTO"],
+				"name" => $result["ENCARGADO"],
+				"dsc" => $result["DSC_EVENTO"],
+				"img" => $result["IMG_PATH"],
+				"time" => $result["HORA_EVENTO"],
+				"date" => $result["FECHA_EVENTO"]);
+		}
+		
+		return $event ;
+
+	} 
+
+	public function getProfile() {
+		 
+		$this->query = "CALL P_VER_PERFIL(
+		'".$this->user_id."');";
+
+		// $this->query = "SELECT * FROM `persona` WHERE `ID_REGISTRO_PERSONA` = '".$this->user_id."'";
+		
+		$this->execute($this->query);
+
+	   $user = array();
+		while ($result = mysqli_fetch_assoc($this->result)) {
+			$user []= array(
+				"id"=> $result["CEDULA"],
+				"rol"=> $result["DSC_TIPO"],
+				"name"=> $result["NOMBRE"],
+				"lastname" => $result["APPELLIDOS"],
+				"date" => $result["FECH_NACIMIENTO"],
+				"gender" => $result["GENERO"],
+				"email" => $result["EMAIL"],
+				"phone" => $result["TELEFONO"]);
+		}
+		
+		return $user ;
+
+	} 
+
 
 	public function getEvent() {
 		 

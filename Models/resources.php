@@ -67,15 +67,6 @@ class Resources extends Connection_Mysql {
 		$this-> database->db_close();
 		return $this->result;
 	}
-	  
-	public function insert_video() {
-		$this->query = "CALL P_INSERTAR_VIDEO_ENVIVOS(     
-			'".$this->category."',           
-			'".$this->video_code."');";
-			
-		$this->execute($this->query);
-
-	}
 
     public function view_videos() {
 		
@@ -101,11 +92,24 @@ class Resources extends Connection_Mysql {
 
 	} 
 
+	public function insert_video() {   
+		$this->query = "CALL P_INSERTAR_VIDEO_ENVIVOS(  
+			'".$this->category."',
+			'".$this->video_code."');";         
+			
+		if($this->execute($this->query)){
+			return true;
+		}else{
+			return false;
+		}
+
+	}
+
 	public function insert_live() {
 	
-		$this->query = "CALL P_INSERTAR_VIDEO(  
-			'".$this->live_code."',             
-			'".$this->live_category."');";           
+		$this->query = "CALL P_INSERTAR_VIDEO_ENVIVOS(  
+			'".$this->live_category."',
+			'".$this->live_code."');";           
 				
 		
 		if($this->execute($this->query)){
@@ -125,7 +129,7 @@ class Resources extends Connection_Mysql {
 		while ($result = mysqli_fetch_assoc($this->result)) {
 			$lives []= array(
 				"codigo"=> $result["ID_VIDEO"],
-				"url"=> $result["DIRECCION_DE_VIDEO"]);
+				"url"=> $result["DIRECCION_DE_EN_VIVO"]);
 		}
 		
 		return $lives;
@@ -160,9 +164,11 @@ class Resources extends Connection_Mysql {
 	} 
 
 	public function search_folder() {
-		$this->query = "SELECT CODIGO_IMG FROM GALERIA WHERE IMG_PATH = '".$this->image."';";	
+		$this->query = "CALL P_VER_CAT_IMG(  
+			'".$this->image."');";   
 		$this->execute($this->query);
 		$this->result = mysqli_fetch_assoc($this->result);
 		return $this->result;
+		
 	} 
 }

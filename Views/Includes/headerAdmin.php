@@ -147,10 +147,10 @@
                                 data-bs-toggle="dropdown">Cont&aacute;ctenos</a>
                             <ul class="nav-dropdown-menu dropdown-menu dropdown-menu-end shadow" data-bs-popper>
 
-                                <li><a class="dropdown-item" href="">Iglesia</a>
+                                <li><a class="dropdown-item" href="index.php?access=A-212">Iglesia</a>
                                 </li>
 
-                                <li><a class="dropdown-item" href="index.php?access=A-212">Consultas</a></li>
+                                <li><a class="dropdown-item" href="index.php?access=A-215">Consultas</a></li>
 
                             </ul>
                         </li>

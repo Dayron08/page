@@ -6,7 +6,10 @@
     <section id="page-hero"
         class="section section__inverse justify-content-center py-5 py-lg-6 mb-n5 vh-350 h-lg-1000px min-h-1000px">
         <div class="bg bg-img position-absolute" data-bg-img=".img">
-            <img loading="lazy" src="../../img/contact_wallpaper.jpg" class="img" alt="Image" />
+            <<<<<<< HEAD <img loading="lazy" src="../../img/contact_wallpaper.jpg" class="img" alt="Image" />
+            =======
+            <img loading="lazy" src="Views/img/contact_wallpaper.jpg" class="img" alt="Image" />
+            >>>>>>> main
 
             <div class="overlay bg-dark position-absolute o-50"></div>
         </div>
@@ -53,9 +56,9 @@
                             </div>
 
                             <div class="mb-3">
-                                <label for="event_image" class="form-label fs-sm fw-bold">Insertar nombre de la
+                                <label for="txt_Eventimg" class="form-label fs-sm fw-bold">Insertar nombre de la
                                     Imagen</label>
-                                <input type="text" class="form-control shadow-none" id="txt_Eventimg" />
+                                <input type="file" class="form-control shadow-none" id="txt_Eventimg" />
                                 <p id="txt_eventimg"></p>
                             </div>
 

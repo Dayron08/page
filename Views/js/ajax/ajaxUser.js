@@ -8,11 +8,11 @@ $(document).ready(function () {
         if (flagg == 3) {
             input.type = 'text';
 
-            eyes.src = '../../img/eyes2 .png'; //open eyes
+            eyes.src = 'Views/img/eyes2 .png'; //open eyes
             flagg = 4;
         } else {
             input.type = 'password';
-            eyes.src = '../../img/eyes1 .png'; //close eyes
+            eyes.src = 'Views/img/eyes1 .png'; //close eyes
             flagg = 3;
         }
     }
@@ -25,11 +25,11 @@ $(document).ready(function () {
         if (flag == 0) {
             inputt.type = 'text';
 
-            eye.src = '../../img/eyes2 .png'; //open eyes
+            eye.src = 'Views/img/eyes2 .png'; //open eyes
             flag = 1;
         } else {
             inputt.type = 'password';
-            eye.src = '../../img/eyes1 .png'; //close eyes
+            eye.src = 'Views/img/eyes1 .png'; //close eyes
 
             flag = 0;
         }
@@ -177,7 +177,7 @@ $(document).ready(function () {
                             showConfirmButton: false,
                             timer: 400
                         })
-                        location.href = "Views/Perfil/User/home.php";
+                        location.href = "index.php?access=U-101";
                     } else if (dataresponse == 1) {
                         Swal.fire({
                             position: 'top-end',
@@ -186,7 +186,7 @@ $(document).ready(function () {
                             showConfirmButton: false,
                             timer: 400
                         })
-                        location.href = "Views/Perfil/Admin/home.php";
+                        location.href = "index.php?access=A-201";
                     } else if (dataresponse == 2 || dataresponse == null) {
                         alert("Datos no encontrados");
                         location.href = "#";
