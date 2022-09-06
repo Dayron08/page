@@ -132,11 +132,6 @@
                                 <li><a id="btn_profile" class="dropdown-item" href="index.php?access=A-208">Perfil</a>
                                 </li>
 
-                                <li><a class="dropdown-item" href="">Privacidad</a></li>
-
-                                <li><a class="dropdown-item" href="">T&eacute;rmino y
-                                        condiciones</a></li>
-
                                 <li><a class="dropdown-item" href="">Cerrar Sesi&oacute;n</a></li>
 
 
