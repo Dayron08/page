@@ -949,6 +949,48 @@ $(document).ready(function () {
 
     });
 
+    $("#btn_image").click(function (e) {
+
+        e.preventDefault();
+        // e.preventDefault();
+        var img_file_profile = $("#image_profile").val();
+        // var txt_id = $("#txt_id").val();
+        var txt_id = "305200304";
+        alert(txt_id)
+      
+        $.ajax({
+            url: "Controllers/update_imageprofileBD.php",
+            method: "POST",
+            data: { img_file_profile: img_file_profile, txt_id: txt_id},
+            success: function (dataresponse, statustext, response) {
+                var img_file = $("#img_file").prop('files')[0];
+                var form_data = new FormData();
+                form_data.append('file', img_file);
+
+                $.ajax({
+                    url: 'Controllers/insertImageProfile.php', // <-- point to server-side PHP script 
+                    dataType: 'text',  // <-- what to expect back from the PHP script, if anything
+                    cache: false,
+                    contentType: false,
+                    processData: false,
+                    data: form_data,
+                    method: "POST",
+                    success: function (dataresponse, statustext, response) {
+
+                    }
+
+
+                });
+            },
+            error: function (request, errorcode, errortext) {
+                console.log("errorrrrrr")
+
+            }
+        });
+
+    });
+
+
 
 });
 

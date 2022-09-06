@@ -1,3 +1,4 @@
+
 <?php require_once("Views/Includes/header.php");?>
 
 
@@ -126,7 +127,7 @@
                             <form action="#" class="">
 
                                 <div class="btn-group w-100 mb-3" role="group">
-                                    <img loading="lazy" src="../../img/<?=$profile_photo?>.jpg" class="w-100"
+                                    <img loading="lazy" src="../../img/" class="w-100"
                                         alt="Image" style="border-radius: 45%; width: 100%; height : 200px; " />
 
                                 </div>
@@ -174,12 +175,13 @@
             <div class="modal-body p-4">
                 <form action="" method="post">
                     <h6 class="mb-4" style="text-align: center;">Ingresar nueva imagen</h6>
+                   
 
                     <div class="mb-3 ">
-                        <input type="file" class="form-control shadow-none" id="video_code" />
+                        <input type="file" class="form-control shadow-none" id="image_profile" />
                     </div>
                     <div class="mb-3">
-                        <button type="submit" class="btn btn-primary w-100 text-uppercase fw-bold">Agregar</button>
+                        <button type="submit" class="btn btn-primary w-100 text-uppercase fw-bold" id="btn_image">Agregar</button>
                     </div>
 
 

@@ -33,6 +33,10 @@ class Resources extends Connection_Mysql {
         $this->video_code = $video_code;
     }
 
+	public function set_id($id){
+        $this->id = $id;
+    }
+
 	public function set_category($category){
         $this->category = $category;
     }
@@ -152,6 +156,21 @@ class Resources extends Connection_Mysql {
 	
 		$this->query = "CALL P_INSERTAR_GALERIA(  
 			'".$this->category_image."',             
+			'".$this->path_img."');";           
+				
+		
+		if($this->execute($this->query)){
+			return true;
+		}else{
+			return false;
+		}
+
+	} 
+
+	public function updateImage() {
+	
+		$this->query = "CALL P_ACTUALIZAR_FOTO( 
+			'".$this->id."',             
 			'".$this->path_img."');";           
 				
 		
