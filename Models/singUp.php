@@ -8,6 +8,8 @@ class SingUp extends Connection_Mysql {
 	private $surname;
 	private $password;
 
+	//profile
+	private $id_person;
 
 	// variables to view profile 
 	private $p_email;
@@ -123,6 +125,10 @@ class SingUp extends Connection_Mysql {
 
 	public function set_testimony($testimony){
         $this->testimony = $testimony;
+    }
+
+	public function set_id_person($id_person){
+        $this->id_person = $id_person;
     }
 
 	// methods to view profile 
@@ -406,6 +412,23 @@ class SingUp extends Connection_Mysql {
 
 	} 
 
+
+	public function get_image_profile() {
+		 
+		$this->query = "CALL P_VER_PERFIL(
+		'".$this->id_person."');";
+		
+		$this->execute($this->query);
+
+	   $event = array();
+		while ($result = mysqli_fetch_assoc($this->result)) {
+			$event []= array(
+				"id_person"=> $result["FOTO_PERFIL"]);
+		}
+		
+		return $event ;
+
+	} 
 
 	public function getEvent() {
 		 

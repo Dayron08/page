@@ -41,10 +41,7 @@
                                         <dt class="fw-normal fs-sm text-uppercase text-secondary">N&uacute;mero de
                                             identificaci&oacute;n</dt>
                                         <input type="text" class="form-control shadow-none mt-3 mb-3" id="txt_ide"
-                                            <<<<<<< HEAD value="">
-                                        =======
-                                        value="" disabled>
-                                        >>>>>>> main
+                                            value="" disabled>
                                     </dl>
                                     <!-- /.col-6 -->
 
@@ -128,9 +125,8 @@
                         <div class="tab-pane fade p-3 show active" id="schedulle" role="tabpanel"
                             aria-labelledby="schedulleTab">
                             <form action="#" class="">
-                                <div class="btn-group w-100 mb-3" role="group">
-                                    <img loading="lazy" src="Views/img/<?=$profile_photo?>.jpg" class="w-100"
-                                        alt="Image" style="border-radius: 45%; width: 100%; height : 200px; " />
+                                <div class="btn-group w-100 mb-3" role="group" id="img_profile_U">
+
                                 </div>
                                 <!-- /.btn-group -->
 

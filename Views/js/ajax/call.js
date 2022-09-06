@@ -146,6 +146,38 @@ $(document).ready(function () {
     });
 
 
+    // To create a json object with img of person in admin
+    var url = "Controllers/call_imagePerson.php";
+    $.getJSON(url, function (datos) {
+
+        $.each(datos, function (i, imageProfileA) {
+
+            var tr =
+                "<img loading=\"lazy\" src=\"" + imageProfileA.id_person + "\" class=\"w - 100\" alt = \"Image\" style = \"border-radius: 45%; width: 100%; height : 200px; \" /> ";
+
+
+            $(tr).appendTo("#img_profile_A");
+
+        });
+
+    });
+
+    // To create a json object with img of person in user
+    var url = "Controllers/call_imagePerson.php";
+    $.getJSON(url, function (datos) {
+
+        $.each(datos, function (i, imageProfileU) {
+
+            var tr =
+                "<img loading=\"lazy\" src=\"" + imageProfileU.id_person + "\" class=\"w - 100\" alt = \"Image\" style = \"border-radius: 45%; width: 100%; height : 200px; \" /> ";
+
+
+            $(tr).appendTo("#img_profile_U");
+
+        });
+
+    });
+
     // lectura todos las imagenes User Pueblo
     var url = "Controllers/call_imagesTown.php";
     $.getJSON(url, function (datos) {
@@ -947,6 +979,8 @@ $(document).ready(function () {
         });
 
     });
+
+
 
 });
 
