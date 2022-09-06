@@ -19,6 +19,8 @@ $(document).ready(function () {
 
     });
 
+
+
     // update profile
     $.getJSON("Views/js/json/profile.json", function (data) {
         $.each(data, function (i, profile) {
@@ -32,6 +34,29 @@ $(document).ready(function () {
             $("#txt_gender").val(profile.gender);
             $("#txt_gmail").val(profile.email);
             $("#txt_phone").val(profile.phone);
+
+
+        });
+
+    });
+    $.getJSON("Views/js/json/profile.json", function (data) {
+        $.each(data, function (i, imageProfileA) {
+            var img =
+                "<img loading=\"lazy\" src=\"Views/img/profile/" + imageProfileA.id_person + "\" class=\"w - 100\" alt = \"Image\" style = \"border-radius: 45%; width: 100%; height : 200px; \" /> ";
+
+            $(img).appendTo("#img_profile_A");
+
+
+        });
+
+    });
+
+    $.getJSON("Views/js/json/profile.json", function (data) {
+        $.each(data, function (i, imageProfileA) {
+            var img =
+                "<img loading=\"lazy\" src=\"Views/img/profile/" + imageProfileA.id_person + "\" class=\"w - 100\" alt = \"Image\" style = \"border-radius: 45%; width: 100%; height : 200px; \" /> ";
+
+            $(img).appendTo("#img_profile_U");
 
 
         });
@@ -53,15 +78,6 @@ $(document).ready(function () {
                 "</div>" +
                 "</div>" +
                 "</div>";
-
-            //     "<div class=\"swiper-slide w-330px h-330px pe-4 d-flex\">"+
-            //         "<div class=\"card shadow-sm shadow-hover trans-base zoom-bg-img o-hover-all\">"+
-            //             "<div class=\"card-img bg bg-img\" data-bg-img=\".img\">"+
-            //                 "<img class=\"img\" alt=\"Image\" src=\"Views/img/"+images.image+"\" />"+
-            //                 "<div class=\"overlay bg-dark position-absolute o-25 o-50-hover\"></div>"+
-            //             "</div>"+ 
-            //         "</div>"+
-            //   "</div>";
 
 
             $(tr).appendTo("#tbodyimg");
@@ -146,37 +162,7 @@ $(document).ready(function () {
     });
 
 
-    // To create a json object with img of person in admin
-    var url = "Controllers/call_imagePerson.php";
-    $.getJSON(url, function (datos) {
 
-        $.each(datos, function (i, imageProfileA) {
-
-            var tr =
-                "<img loading=\"lazy\" src=\"" + imageProfileA.id_person + "\" class=\"w - 100\" alt = \"Image\" style = \"border-radius: 45%; width: 100%; height : 200px; \" /> ";
-
-
-            $(tr).appendTo("#img_profile_A");
-
-        });
-
-    });
-
-    // To create a json object with img of person in user
-    var url = "Controllers/call_imagePerson.php";
-    $.getJSON(url, function (datos) {
-
-        $.each(datos, function (i, imageProfileU) {
-
-            var tr =
-                "<img loading=\"lazy\" src=\"" + imageProfileU.id_person + "\" class=\"w - 100\" alt = \"Image\" style = \"border-radius: 45%; width: 100%; height : 200px; \" /> ";
-
-
-            $(tr).appendTo("#img_profile_U");
-
-        });
-
-    });
 
     // lectura todos las imagenes User Pueblo
     var url = "Controllers/call_imagesTown.php";
@@ -448,8 +434,9 @@ $(document).ready(function () {
 
 
 
-
     });
+
+
 
 
     $("#btn_query").click(function (e) {
@@ -982,20 +969,20 @@ $(document).ready(function () {
 
     $("#btn_image").click(function (e) {
 
-        
+
         // e.preventDefault();
         var img_file_profile = $("#image_profile").val();
         var txt_id = $("#txt_id").val();
-  
+
         // alert(txt_id)
-      
-      
+
+
         $.ajax({
             url: "Controllers/update_imageprofileBD.php",
             method: "POST",
-            data: { img_file_profile: img_file_profile, txt_id: txt_id},
+            data: { img_file_profile: img_file_profile, txt_id: txt_id },
             success: function (dataresponse, statustext, response) {
-               
+
                 var img_file = $("#image_profile").prop('files')[0];
                 var form_data = new FormData();
                 form_data.append('file', img_file);

@@ -402,6 +402,7 @@ class SingUp extends Connection_Mysql {
 				"rol"=> $result["DSC_TIPO"],
 				"name"=> $result["NOMBRE"],
 				"lastname" => $result["APPELLIDOS"],
+				"img" => $result["FOTO_PERFIL"],
 				"date" => $result["FECH_NACIMIENTO"],
 				"gender" => $result["GENERO"],
 				"email" => $result["EMAIL"],
@@ -412,23 +413,6 @@ class SingUp extends Connection_Mysql {
 
 	} 
 
-
-	public function get_image_profile() {
-		 
-		$this->query = "CALL P_VER_PERFIL(
-		'".$this->id_person."');";
-		
-		$this->execute($this->query);
-
-	   $event = array();
-		while ($result = mysqli_fetch_assoc($this->result)) {
-			$event []= array(
-				"id_person"=> $result["FOTO_PERFIL"]);
-		}
-		
-		return $event ;
-
-	} 
 
 	public function getEvent() {
 		 
