@@ -175,7 +175,8 @@
             <div class="modal-body p-4">
                 <form action="" method="post">
                     <h6 class="mb-4" style="text-align: center;">Ingresar nueva imagen</h6>
-                   
+                    <input type="hidden" placeholder="" id="txt_id"
+                                    value=<?php echo $_SESSION['ID_REGISTRO_PERSONA']; ?>>
 
                     <div class="mb-3 ">
                         <input type="file" class="form-control shadow-none" id="image_profile" />

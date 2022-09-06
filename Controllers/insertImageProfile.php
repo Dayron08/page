@@ -6,7 +6,7 @@ $call_category_image = new Resources();
 if(isset($_FILES['file']["name"])){
     $image_name = $_FILES['file']["name"];
     $result = $call_category_image -> set_image_name($image_name);
-    $folder ='';
+   
 
     $folder = '../Views/img/profile';
 

@@ -173,7 +173,6 @@ class Resources extends Connection_Mysql {
 			'".$this->id."',             
 			'".$this->path_img."');";           
 				
-		
 		if($this->execute($this->query)){
 			return true;
 		}else{
