@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 02-09-2022 a las 03:05:53
+-- Tiempo de generación: 06-09-2022 a las 04:12:47
 -- Versión del servidor: 10.4.20-MariaDB
 -- Versión de PHP: 8.0.9
 
@@ -289,14 +289,16 @@ CREATE DEFINER=`root`@`localhost` PROCEDURE `P_INSERTAR_EVENTO` (IN `P_ENCARGADO
             COMMIT;
     END$$
 
-CREATE DEFINER=`root`@`localhost` PROCEDURE `P_INSERTAR_GALERIA` (IN `P_IMG_PATH` VARCHAR(300))  BEGIN
-            INSERT INTO GALERIA     
+CREATE DEFINER=`root`@`localhost` PROCEDURE `P_INSERTAR_GALERIA` (IN `P_CODIGO_IMG` VARCHAR(3), IN `P_IMG_PATH` VARCHAR(300))  BEGIN
+            INSERT INTO GALERIA
             (
-                IMG_PATH, 
+                CODIGO_IMG,
+                IMG_PATH,
                 FECHA 
             )
             VALUES 
             (
+                P_CODIGO_IMG,
                 P_IMG_PATH,
                 CONVERT(current_timestamp(),DATE)
             );
@@ -324,29 +326,11 @@ CREATE DEFINER=`root`@`localhost` PROCEDURE `P_INSERTAR_PERSONA_TESTIMONIO` (IN 
 CREATE DEFINER=`root`@`localhost` PROCEDURE `P_INSERTAR_VIDEO` (IN `P_URL` VARCHAR(300))  BEGIN
             INSERT INTO VIDEOS     
             (
-                CATEGORIA,
                 URL, 
                 FECHA 
             )
             VALUES 
             (
-                P_CATEGORIA,
-                P_URL,
-                CONVERT(current_timestamp(),DATE)
-            );
-            COMMIT;
-    END$$
-
-CREATE DEFINER=`root`@`localhost` PROCEDURE `P_INSERTAR_VIDEO_ENVIVOS` (IN `P_CATEGORIA` VARCHAR(300), IN `P_URL` VARCHAR(300))   BEGIN
-            INSERT INTO VIDEOS_ENVIVOS     
-            (
-                CATEGORIA,
-                URL, 
-                FECHA 
-            )
-            VALUES 
-            (
-                P_CATEGORIA,
                 P_URL,
                 CONVERT(current_timestamp(),DATE)
             );
@@ -371,7 +355,6 @@ CREATE DEFINER=`root`@`localhost` PROCEDURE `P_INSERTAR_VIDEO_ENVIVOS` (IN `P_CA
 
 CREATE DEFINER=`root`@`localhost` PROCEDURE `P_VALI_LOGIN` (IN `P_CORREO` VARCHAR(50), IN `P_PASSWORD` VARCHAR(50))  BEGIN
             SELECT
-                ID_REGISTRO_PERSONA AS CEDULA,
                 TP.ID_TIPO,
                 TP.DSC_TIPO AS ROL,
                 P.ID_REGISTRO_PERSONA AS CEDULA
@@ -638,7 +621,10 @@ CREATE TABLE `eventos` (
 --
 
 INSERT INTO `eventos` (`ID_EVENT`, `ENCARGADO`, `NOMBRE_EVENTO`, `HORA_EVENTO`, `IMG_PATH`, `DSC_EVENTO`, `FECHA_EVENTO`, `FECHA_ACTUAL`) VALUES
-(6, 'Josue', 'TCU', '19:40:00', 'contact_wallpaper.jpg', 'JJJJJJ', '2022-09-21', '2022-09-01');
+(6, 'Josue', 'TCU', '19:40:00', 'contact_wallpaper.jpg', 'JJJJJJ', '2022-09-21', '2022-09-01'),
+(8, 'M', 'H', '02:16:00', 'contact_wallpaper.jpg', 'jk', '2022-09-10', '2022-09-01'),
+(9, 'M', 'M', '02:04:00', 'image_01.jpg', 'jjjjjjjjjjjj', '2022-09-23', '2022-09-01'),
+(10, 'K', 'H', '02:04:00', 'image_01.jpg', 'k', '2022-09-17', '2022-09-01');
 
 -- --------------------------------------------------------
 
@@ -684,7 +670,7 @@ CREATE TABLE `persona` (
 INSERT INTO `persona` (`ID_REGISTRO_PERSONA`, `NOMBRE`, `APPELLIDOS`, `FECH_NACIMIENTO`, `GENERO`, `PASSWORD_PERSONA`, `FECHA_REGISTRO`, `TIPO_PERSONA`) VALUES
 ('302490378', 'Veronica', 'alfaro ', '2002-04-13', 'F', 'B56751FDB9050F6C5A322CBAC44F0436', '2022-09-01', 0),
 ('30429563', 'WENDY', 'GOMEZ', '2002-05-12', 'F', '75A5313CAE5AF03AA79FFC0B0841A4F5', '2022-09-01', 1),
-('305200304', 'RANDALL', 'GUZMAN ', '1999-09-27', 'M', 'X!J_gD27', '2022-07-28', 0),
+('305200304', 'Josue', 'Redondo', '1999-09-27', 'M', 'X!J_gD27', '2022-07-28', 0),
 ('30528745', 'HANNAH', 'GOM', '2002-05-12', 'F', 'HOLA123456', '2022-07-28', 1);
 
 -- --------------------------------------------------------
@@ -706,7 +692,7 @@ CREATE TABLE `persona_contacto` (
 --
 
 INSERT INTO `persona_contacto` (`ID_CONTACTO`, `EMAIL`, `TELEFONO`, `FOTO_PERFIL`, `ID_REGISTRO_PERSONA`) VALUES
-(1, 'ran@676gmail.com', '83195333', '../NUEVA_FOTO', '305200304'),
+(1, 'ran@676gmail.com', '83195333', 'image_03.JPG', '305200304'),
 (2, 'm@gmail.com', '86457396', '../FOTO', '30528745'),
 (3, 'verogmail.com', '85129636', NULL, '302490378'),
 (4, 'wendy@gmail.com', '87459683', NULL, '30429563');
@@ -768,8 +754,7 @@ CREATE TABLE `videos_envivos` (
 --
 
 INSERT INTO `videos_envivos` (`ID_VIDEO`, `CATEGORIA`, `URL`, `FECHA`) VALUES
-(1, 'V', 'Qee7spAIHuQ', '2022-07-28'),
-(2, 'V', '../../2', '2022-07-28');
+(1, 'V', 'Qee7spAIHuQ', '2022-07-28');
 
 --
 -- Índices para tablas volcadas
@@ -840,13 +825,13 @@ ALTER TABLE `consultas`
 -- AUTO_INCREMENT de la tabla `eventos`
 --
 ALTER TABLE `eventos`
-  MODIFY `ID_EVENT` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `ID_EVENT` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT de la tabla `galeria`
 --
 ALTER TABLE `galeria`
-  MODIFY `ID_IMAGEN` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `ID_IMAGEN` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT de la tabla `persona_contacto`
