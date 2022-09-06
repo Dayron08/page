@@ -42,7 +42,7 @@ $(document).ready(function () {
     $.getJSON("Views/js/json/profile.json", function (data) {
         $.each(data, function (i, imageProfileA) {
             var img =
-                "<img loading=\"lazy\" src=\"Views/img/profile/" + imageProfileA.id_person + "\" class=\"w - 100\" alt = \"Image\" style = \"border-radius: 45%; width: 100%; height : 200px; \" /> ";
+                "<img loading=\"lazy\" src=\"Views/img/profile/" + imageProfileA.img + "\" class=\"w - 100\" alt = \"Image\" style = \"border-radius: 45%; width: 100%; height : 200px; \" /> ";
 
             $(img).appendTo("#img_profile_A");
 
@@ -54,7 +54,7 @@ $(document).ready(function () {
     $.getJSON("Views/js/json/profile.json", function (data) {
         $.each(data, function (i, imageProfileA) {
             var img =
-                "<img loading=\"lazy\" src=\"Views/img/profile/" + imageProfileA.id_person + "\" class=\"w - 100\" alt = \"Image\" style = \"border-radius: 45%; width: 100%; height : 200px; \" /> ";
+                "<img loading=\"lazy\" src=\"Views/img/profile/" + imageProfileA.img + "\" class=\"w - 100\" alt = \"Image\" style = \"border-radius: 45%; width: 100%; height : 200px; \" /> ";
 
             $(img).appendTo("#img_profile_U");
 

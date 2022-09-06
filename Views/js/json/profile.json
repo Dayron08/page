@@ -1,1 +1,13 @@
-[]
+[
+    {
+        "id": "305200304",
+        "rol": "USER",
+        "name": "RANDALL",
+        "lastname": "GUZMAN ",
+        "img": "0c941d8e13f5c6560d94b9d9a1b24094.jpg",
+        "date": "1999-09-27",
+        "gender": "M",
+        "email": "ran@676gmail.com",
+        "phone": "83195333"
+    }
+]
