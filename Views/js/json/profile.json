@@ -1,1 +1,12 @@
-[{"id":"305200304","rol":"USER","name":"Josue","lastname":"Redondo","date":"1999-09-27","gender":"M","email":"ran@676gmail.com","phone":"83195333"}]
+[
+    {
+        "id": "305200304",
+        "rol": "USER",
+        "name": "Josue",
+        "lastname": "Redondo",
+        "date": "1999-09-27",
+        "gender": "M",
+        "email": "ran@676gmail.com",
+        "phone": "83195333"
+    }
+]

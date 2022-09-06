@@ -324,11 +324,29 @@ CREATE DEFINER=`root`@`localhost` PROCEDURE `P_INSERTAR_PERSONA_TESTIMONIO` (IN 
 CREATE DEFINER=`root`@`localhost` PROCEDURE `P_INSERTAR_VIDEO` (IN `P_URL` VARCHAR(300))  BEGIN
             INSERT INTO VIDEOS     
             (
+                CATEGORIA,
                 URL, 
                 FECHA 
             )
             VALUES 
             (
+                P_CATEGORIA,
+                P_URL,
+                CONVERT(current_timestamp(),DATE)
+            );
+            COMMIT;
+    END$$
+
+CREATE DEFINER=`root`@`localhost` PROCEDURE `P_INSERTAR_VIDEO_ENVIVOS` (IN `P_CATEGORIA` VARCHAR(300), IN `P_URL` VARCHAR(300))   BEGIN
+            INSERT INTO VIDEOS_ENVIVOS     
+            (
+                CATEGORIA,
+                URL, 
+                FECHA 
+            )
+            VALUES 
+            (
+                P_CATEGORIA,
                 P_URL,
                 CONVERT(current_timestamp(),DATE)
             );
@@ -353,6 +371,7 @@ CREATE DEFINER=`root`@`localhost` PROCEDURE `P_INSERTAR_VIDEO_ENVIVOS` (IN `P_CA
 
 CREATE DEFINER=`root`@`localhost` PROCEDURE `P_VALI_LOGIN` (IN `P_CORREO` VARCHAR(50), IN `P_PASSWORD` VARCHAR(50))  BEGIN
             SELECT
+                ID_REGISTRO_PERSONA AS CEDULA,
                 TP.ID_TIPO,
                 TP.DSC_TIPO AS ROL,
                 P.ID_REGISTRO_PERSONA AS CEDULA

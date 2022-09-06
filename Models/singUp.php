@@ -8,6 +8,8 @@ class SingUp extends Connection_Mysql {
 	private $surname;
 	private $password;
 
+	//profile
+	private $id_person;
 
 	// variables to view profile 
 	private $p_email;
@@ -123,6 +125,10 @@ class SingUp extends Connection_Mysql {
 
 	public function set_testimony($testimony){
         $this->testimony = $testimony;
+    }
+
+	public function set_id_person($id_person){
+        $this->id_person = $id_person;
     }
 
 	// methods to view profile 
@@ -350,7 +356,6 @@ class SingUp extends Connection_Mysql {
 	   $testimonials = array();
 		while ($result = mysqli_fetch_assoc($this->result)) {
 			$testimonials []= array(
-				"idTesti"=> $result["ID_TESTI"],
 				"dsc"=> $result["DSC_TESTIMONIO"],
 				"name" => $result["NOMBRE"],
 				"lastname" => $result["APPELLIDOS"]);
@@ -370,7 +375,6 @@ class SingUp extends Connection_Mysql {
 	   $events = array();
 		while ($result = mysqli_fetch_assoc($this->result)) {
 			$events []= array(
-				"id"=> $result["ID_EVENT"],
 				"nameEvent"=> $result["NOMBRE_EVENTO"],
 				"name" => $result["ENCARGADO"],
 				"dsc" => $result["DSC_EVENTO"],
@@ -382,31 +386,6 @@ class SingUp extends Connection_Mysql {
 		return $events ;
 
 	} 
-
-
-	public function getEvent() {
-		 
-		$this->query = "CALL P_VER_EVENTO(
-		'".$this->idEvent."');";
-		
-		$this->execute($this->query);
-
-	   $event = array();
-		while ($result = mysqli_fetch_assoc($this->result)) {
-			$event []= array(
-				"id"=> $result["ID_EVENT"],
-				"nameEvent"=> $result["NOMBRE_EVENTO"],
-				"name" => $result["ENCARGADO"],
-				"dsc" => $result["DSC_EVENTO"],
-				"img" => $result["IMG_PATH"],
-				"time" => $result["HORA_EVENTO"],
-				"date" => $result["FECHA_EVENTO"]);
-		}
-		
-		return $event ;
-
-	} 
-
 	public function getProfile() {
 		 
 		$this->query = "CALL P_VER_PERFIL(
@@ -430,6 +409,47 @@ class SingUp extends Connection_Mysql {
 		}
 		
 		return $user ;
+
+	} 
+
+
+	public function get_image_profile() {
+		 
+		$this->query = "CALL P_VER_PERFIL(
+		'".$this->id_person."');";
+		
+		$this->execute($this->query);
+
+	   $event = array();
+		while ($result = mysqli_fetch_assoc($this->result)) {
+			$event []= array(
+				"id_person"=> $result["FOTO_PERFIL"]);
+		}
+		
+		return $event ;
+
+	} 
+
+	public function getEvent() {
+		 
+		$this->query = "CALL P_VER_EVENTO(
+		'".$this->idEvent."');";
+		
+		$this->execute($this->query);
+
+	   $event = array();
+		while ($result = mysqli_fetch_assoc($this->result)) {
+			$event []= array(
+				"id"=> $result["ID_EVENT"],
+				"nameEvent"=> $result["NOMBRE_EVENTO"],
+				"name" => $result["ENCARGADO"],
+				"dsc" => $result["DSC_EVENTO"],
+				"img" => $result["IMG_PATH"],
+				"time" => $result["HORA_EVENTO"],
+				"date" => $result["FECHA_EVENTO"]);
+		}
+		
+		return $event ;
 
 	} 
 
