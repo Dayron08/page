@@ -951,12 +951,12 @@ $(document).ready(function () {
 
     $("#btn_image").click(function (e) {
 
-        e.preventDefault();
+        
         // e.preventDefault();
         var img_file_profile = $("#image_profile").val();
         var txt_id = $("#txt_id").val();
   
-        alert(txt_id)
+        // alert(txt_id)
       
       
         $.ajax({
